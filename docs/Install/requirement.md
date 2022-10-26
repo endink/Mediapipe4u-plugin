@@ -3,7 +3,6 @@ sort: 1
 ---
 
 # 环境要求   
-{% include list.liquid %}
 
 *请仔细阅读以下章节，确认你的环境是否满足 **MediaPipe4U** 要求。*
 
