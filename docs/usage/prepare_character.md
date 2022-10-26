@@ -26,9 +26,13 @@ sort: 1
 
 [![动画蓝图节点](./images/anim_nodes.jpg "Shiprock")](images/anim_nodes.jpg)   
 
+--- 
+
 ## 动画蓝图核心节点   
 
-**MediaPipePoseSolver**: 身体动补算解节点，负责计算身体骨骼旋转，参数如下：
+### MediaPipePoseSolver
+
+身体动补算解节点，负责计算身体骨骼旋转，参数如下：   
 
 |参数|类型|说明|
 |---|----|-----|
@@ -48,9 +52,14 @@ Smooth     | float (0-1.0)     | 动作平滑度，该参数影响阻尼滤波�
 
 > 说明：KalmanQ\KalmanR 参数默认因为不常用，默认显示不是 pin，所以节点上可能不能看到， 但是你可以在右侧细节面板中看见
 
-**MediaPipeHandSolver**: 手指动补算解节点，负责计算手指骨骼旋转，参数同 **MediaPipePoseSolver**。
+### MediaPipeHandSolver   
 
-**MediaPipeLocationSolver**: 动补位移算解节点，负责计算角色位移（相同参数不再介绍）：   
+手指动补算解节点，负责计算手指骨骼旋转，参数同 **MediaPipePoseSolver**
+
+
+### MediaPipeLocationSolver
+
+动补位移算解节点，负责计算角色位移（相同参数不再介绍）：   
 
 |参数|类型|说明|
 |---|----|-----|
@@ -62,7 +71,9 @@ Smooth     | float (0-1.0)     | 动作平滑度，该参数影响阻尼滤波�
 |MovementScale | FVector | 角色三个朝向（X,Y,Z）运动的效果缩放，同 speed 参数类似，但是可以精确控制各个轴向的移动效果 |
    
 
-## 动画蓝图参数：
+--- 
+
+## 动画蓝图参数
 
 ### 骨骼绑定
 
