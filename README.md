@@ -1,5 +1,7 @@
 # Mediapipe4U 插件
 
+[English Document is here (sorry it's google translate)](https://github-com.translate.goog/endink/Mediapipe4u-plugin?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
+
 基于 MediaPipe 的 UnrealEngine 动作捕捉插件。   
 
 目录：
@@ -223,7 +225,7 @@ MediaPipe 运行时需要一些组件，下面分别介绍：
 静态图片图像源，该组件通过输入单张的图片到 MediaPipe 完成算解过程。
 > 注意，单张图片会自动启用 mediapipe static 模式，算解过程将得到优化，所以请勿自己实现单张图片的动补，使用该组件即可
 
-**GStreamerImageSourceComponent**  
+**GStreamerImageSourceComponent** （需要 MediaPipeGStreamer Plugin） 
 
 GStramer 图像源，该组件实现了从 GStramer 获取视频流作为图像源。   
 可以把 GStreamerImageSourceComponent 视为一个视频播放器，他提供了播放、暂停、跳转到时间点等能力。
