@@ -3,15 +3,22 @@ sort: 1
 ---
 # 准备动补角色（Character)
 
-1. 创建一个动画蓝图，基类选择 MediaPipeAnimInstance ：   
+## 创建动画蓝图
 
+1. 创建一个动画蓝图，基类选择 MediaPipeAnimInstance。
+
+基类选择 MediaPipeAnimInstance ！
+基类选择 MediaPipeAnimInstance ！
+基类选择 MediaPipeAnimInstance ！
+
+重要的事情说三遍
 
 [![创建动画蓝图](./images/create_anim_blueprint.jpg "Shiprock")](images/create_anim_blueprint.jpg)
 
 
 > 必须使用这个基类，否则无法正常使用使用动补功能   
 
-2. 在动画蓝图左侧选择打开显示继承的变量，确保你可以看到 mediapipe 变量   
+1. 在动画蓝图左侧选择打开显示继承的变量，确保你可以看到 mediapipe 变量   
 
 [![配置动画蓝图](./images/configure_anim_blueprint.jpg "Shiprock")](images/configure_anim_blueprint.jpg)
 
