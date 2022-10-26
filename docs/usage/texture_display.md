@@ -1,13 +1,15 @@
 ---
 sort: 3
 ---
-# 会显图像
+# 回显图像
 
 你可能希望在屏幕上显示图像源中的图像，**MediaPipe4U** 提供了回调函数，方便你在材质或 UMG 渲染图像源中的图片。
 
 [![image callback](./images/texture_callback.jpg "Shiprock")](images/texture_callback.jpg)
 
 **UMediaPipeHolisticComponent** 组件上提供了 OnVideoTextureCreated 事件，通过绑定该事件，你可以得到一个 Texture2D 对象，使用它来渲染。
+
+> 视频动补、图片动补和摄像头动补均可以使用该事件。
 
 蓝图实例如下：
 
