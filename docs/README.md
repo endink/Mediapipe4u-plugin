@@ -1,6 +1,8 @@
 # Mediapipe4U 插件
 
-[English Document is here (sorry it's google translate)](https://github-com.translate.goog/endink/Mediapipe4u-plugin?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
+- [中文文档](http://opensource.labijie.com/Mediapipe4u-plugin/)   
+
+- [English Document is here (sorry it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sch=http&_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
 基于 MediaPipe 的 UnrealEngine 动作捕捉插件。   
 
