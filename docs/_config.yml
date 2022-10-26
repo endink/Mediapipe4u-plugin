@@ -1,6 +1,6 @@
-title: RunDocs
-lang: en
-description: Extends the continuous integration documentation capabilities of GitHub pages for everyone!
+title: MediaPipe4U Doc
+lang: zh-cn
+description: 基于 MediaPipe 的 UnrealEngine 动补插件
 
 remote_theme: rundocs/jekyll-rtd-theme
 
