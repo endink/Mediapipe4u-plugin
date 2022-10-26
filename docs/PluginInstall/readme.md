@@ -2,7 +2,8 @@
 sort: 1
 ---
 
-# 插件安装
+# 插件安装   
+{% include list.liquid %}
 
 ## 系统要求：
 
