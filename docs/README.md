@@ -1,6 +1,6 @@
 # Mediapipe4U 插件
 
-- [中文文档](http://opensource.labijie.com/Mediapipe4u-plugin/)   
+- [中文文档](https://opensource.labijie.com/Mediapipe4u-plugin/)   
 
 - [English Document is here (sorry it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sch=http&_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
