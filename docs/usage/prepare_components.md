@@ -47,7 +47,7 @@ https://google.github.io/mediapipe/solutions/holistic.html
 
 该组件提供将 MediaPipe 作为 LiveLink 源的能力，这样你可以像使用 Arkit 一样通过在动画蓝图中添加 LiveLinkPose 节点使用 MediaPipe4U 的面补功能，更多 LiveLink 详细信息请参阅 Unreal 官方文档。
 
-### 创建 Actor
+## 创建 Actor
 
 创建一个 Actor，并添加上述组件，添加后你的 Actor 看起来应该如下图：
 
