@@ -1,3 +1,7 @@
+---
+sort: 1
+---
+
 # 安装和配置
 {% include list.liquid %}
 
