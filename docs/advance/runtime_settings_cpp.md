@@ -9,7 +9,7 @@ sort: 2
 
 你可以通过 **UMediaPipeUtils** 类方便的访问 **MediaPipe4U** 的组件，例如： MediaPipeAnimInstance,UMediaPipeHolisticComponent 等
 
-## 访问 MediaPipe 算解器（solver）
+## 访问 MediaPipe 算解器(solver)
 
 ```cpp
 
