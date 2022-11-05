@@ -7,9 +7,9 @@ sort: 1
 
 1. 创建一个动画蓝图，基类选择 MediaPipeAnimInstance。
 
-基类选择 MediaPipeAnimInstance ！
-基类选择 MediaPipeAnimInstance ！
-基类选择 MediaPipeAnimInstance ！
+基类选择 MediaPipeAnimInstance ！   
+基类选择 MediaPipeAnimInstance ！   
+基类选择 MediaPipeAnimInstance ！   
 
 重要的事情说三遍
 
@@ -120,6 +120,18 @@ MediaPipe4U 理论上支持所有的人形骨骼，并不要求你的骨骼名�
 **SolveLocation**   
 
 是否算接位移   
+
+**LiveLinkSubject**
+
+该属性仅提供 C++ 时方便设置 livelink 的主体，**MediaPipe4U** 并没有在任何代码中使用该变量。   
+如果你没有使用该变量，请忽略它。
+
+**LiveLinkEnabled**
+该属性仅提供 C++ 时方便设置 livelink 可用性，**MediaPipe4U** 并没有在任何代码中使用该变量。   
+如果你没有使用该变量，请忽略它。
+
+
+
 
 ---
 
