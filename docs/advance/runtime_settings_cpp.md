@@ -9,7 +9,7 @@ sort: 2
 
 你可以通过 **UMediaPipeUtils** 类方便的访问 **MediaPipe4U** 的组件，例如： MediaPipeAnimInstance,UMediaPipeHolisticComponent 等
 
-## 通过代码在运行时访问各个 MediaPipe 算解器（solver）
+## 访问 MediaPipe 算解器（solver）
 
 ```cpp
 
@@ -88,7 +88,9 @@ void SetFingerSmooth(float Value)
 	}
 }
 
-## 控制关节锁定（是否算接具体关节）
+## 控制关节锁定
+
+锁定表示在驱动模型过程中是否锁定关节，
 
 ```cpp
 UMediaPipeAnimInstance* animInstance;
