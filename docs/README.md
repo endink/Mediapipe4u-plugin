@@ -32,6 +32,11 @@ Download the latest version:
 
 [奶牛快传](https://cowtransfer.com/s/19753afb6f9049)
 
+Demo Project:   
+https://github.com/endink/MediaPipe4U-Demo   
+
+> Demo 工程不包含插件，你自行下载插件，放到该工程的 Plugins 目录
+
 
 **演示 DEMO**
 
