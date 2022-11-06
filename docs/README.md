@@ -37,6 +37,12 @@ https://github.com/endink/MediaPipe4U-Demo
 
 > Demo 工程不包含插件，你自行下载插件，放到该工程的 Plugins 目录
 
+**Follow Me**
+
+[B站](https://space.bilibili.com/481665211)   
+
+[Youtube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
+
 
 **演示 DEMO**
 
