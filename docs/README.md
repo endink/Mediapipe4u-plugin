@@ -26,6 +26,13 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 ---
 
+Download the latest version:
+
+[Google Drive](https://drive.google.com/file/d/1Wu81cJ1-TX5eJH-czoAD4uai-ct4uEfW/view?usp=sharing)
+
+[奶牛快传](https://cowtransfer.com/s/19753afb6f9049)
+
+
 **演示 DEMO**
 
 [![MediaPipe4U Demo Video](https://res.cloudinary.com/marcomontalbano/image/upload/v1666755370/video_to_markdown/images/youtube--a0Ug_bFGQYk-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/a0Ug_bFGQYk)
