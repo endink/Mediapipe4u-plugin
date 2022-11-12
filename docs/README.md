@@ -28,9 +28,9 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 Download the latest version:
 
-[Google Drive](https://drive.google.com/file/d/1Wu81cJ1-TX5eJH-czoAD4uai-ct4uEfW/view?usp=sharing)
+[One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzV1QZRaxrsAMhczL?e=JoaUs5)(2022-11-12)
 
-[奶牛快传](https://cowtransfer.com/s/19753afb6f9049)
+[奶牛快传](https://cowtransfer.com/s/f7b58f18b8c94e) (2022-11-12)
 
 Demo Project:   
 https://github.com/endink/MediaPipe4U-Demo   
@@ -50,3 +50,10 @@ https://github.com/endink/MediaPipe4U-Demo
 
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
+## 更新日志
+
+### 2022-11-12
+
+- [修复] 图片动补重复释放内存引起崩溃的问题
+- [修复] 启动时 GStreamer 未配置导致 UE Editor 崩溃，改为延迟启动
+- [修复] 上半身模式脊柱锁定无效问题
