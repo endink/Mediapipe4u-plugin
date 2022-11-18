@@ -52,8 +52,14 @@ https://github.com/endink/MediaPipe4U-Demo
 
 ## 更新日志
 
+### 2022-11-18
+
+- [fix] 自定义骨骼映射无效的严重 BUG， 感谢网友 **[Gobcurry](https://github.com/Gobcurry)** 抽出宝贵时间发现问题。（issue: #2）
+- [new] 新增骨骼映射资产 (Remap Asset)，动画蓝图骨骼映射使用映射资产。
+- [remove] 动画蓝图中移除 BoneSettings 变量，不再通过 BoneSettings 配置骨骼，请使用新的映射资产映射。
+
 ### 2022-11-12
 
-- [修复] 图片动补重复释放内存引起崩溃的问题
-- [修复] 启动时 GStreamer 未配置导致 UE Editor 崩溃，改为延迟启动
-- [修复] 上半身模式脊柱锁定无效问题
+- [fix] 图片动补重复释放内存引起崩溃的问题
+- [fix] 启动时 GStreamer 未配置导致 UE Editor 崩溃，改为延迟启动
+- [fix] 上半身模式脊柱锁定无效问题
