@@ -56,6 +56,7 @@ https://github.com/endink/MediaPipe4U-Demo
 
 - [fix] 自定义骨骼映射无效的严重 BUG， 感谢网友 **[Gobcurry](https://github.com/Gobcurry)** 抽出宝贵时间发现问题。（issue: #2）
 - [new] 新增骨骼映射资产 (Remap Asset)，动画蓝图骨骼映射使用映射资产。
+- [new] 手腕扭曲矫正，通过肘部随动旋转简单矫正手腕扭曲变形。
 - [remove] 动画蓝图中移除 BoneSettings 变量，不再通过 BoneSettings 配置骨骼，请使用新的映射资产映射。
 
 ### 2022-11-12
