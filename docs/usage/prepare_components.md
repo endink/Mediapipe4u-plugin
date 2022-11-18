@@ -1,5 +1,5 @@
 ---
-sort: 2
+sort: 3
 ---
 # 准备 MediaPipe 运行时组件（Component）
 

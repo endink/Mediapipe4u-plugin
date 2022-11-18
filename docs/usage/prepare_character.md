@@ -87,15 +87,13 @@ MediaPipe4U 理论上支持所有的人形骨骼，并不要求你的骨骼名�
 **BonePreset**    
 使用骨骼预设：
 - VRM: Vroid 骨骼, 支持通过 Vroid Studio 创建的角色
-- UE5：UE5曼尼（mannequin 小金人）的骨骼，该骨骼其实也兼容 UE4 的曼尼（小白人）、
-- Custom: 自定义骨骼（使用 **BoneSettings** 中配置的骨骼）
+- UE5：UE5曼尼（mannequin 小金人）的骨骼，该骨骼其实也兼容 UE4 的曼尼（小白人）、Metahuman
+- Custom: 自定义骨骼（关于自定义骨骼，下一小节详细说明）
 
+**BoneRemap**    
 
-**BoneSettings**    
-人形骨骼配置信息
-> BoneSettings 仅当 BonePreset 设置为 Custom 时才可编辑
+自定义骨骼映射 （关于自定义骨骼，下一小节详细说明）。   
 
-根据“模型要求”一节提到的信息配置模型骨骼
 
 ### 算解控制
 
