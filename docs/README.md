@@ -28,9 +28,11 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 Download the latest version:
 
-[One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzWBOpaGnC-suv0lU?e=meQSrq)(2022-11-18)
+紧急下架，有重大 BUG，请耐心等待~
 
-[奶牛快传](https://cowtransfer.com/s/c19a584cc8f44d) (2022-11-18)
+<!-- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzWBOpaGnC-suv0lU?e=meQSrq)(2022-11-18)
+
+[奶牛快传](https://cowtransfer.com/s/c19a584cc8f44d) (2022-11-18) -->
 
 Demo Project:   
 https://github.com/endink/MediaPipe4U-Demo   
