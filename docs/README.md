@@ -30,9 +30,9 @@ Download the latest version:
 
 紧急下架，有重大 BUG，请耐心等待~
 
-<!-- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzWBOpaGnC-suv0lU?e=meQSrq)(2022-11-18)
+[One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzWHLacQyu4K4Iky6?e=tFlQBH)(2022-11-22)
 
-[奶牛快传](https://cowtransfer.com/s/c19a584cc8f44d) (2022-11-18) -->
+[奶牛快传](https://cowtransfer.com/s/5f63dfaa628c41) (2022-11-22) -->
 
 Demo Project:   
 https://github.com/endink/MediaPipe4U-Demo   
@@ -53,6 +53,12 @@ https://github.com/endink/MediaPipe4U-Demo
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
 ## 更新日志
+
+### 2022-11-18
+
+- [new] 集成 UnrealEngine OpenCV，升级到 4.5.5
+- [fix] Pose 算解器骨骼缓存 BUG
+- [new] 兼容UrealEngine 5.1 API (目前仍然使用 5.0 编译)
 
 ### 2022-11-18
 
