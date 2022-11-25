@@ -1,10 +1,25 @@
 # Mediapipe4U 插件
 
+基于 MediaPipe 的 UnrealEngine 动作捕捉插件。 
+
 - [中文文档](https://opensource.labijie.com/Mediapipe4u-plugin/)   
 
 - [English Document is here (sorry it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sch=http&_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
-基于 MediaPipe 的 UnrealEngine 动作捕捉插件。   
+
+**下载地址**   
+
+- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzWHLacQyu4K4Iky6?e=tFlQBH)(2022-11-25)
+
+- [奶牛快传](https://1drv.ms/u/s!AkmROUeQfSBjzWQbzHFGIwPOnnPh?e=CzSwx7) (2022-11-25)
+
+
+**Demo Project**   
+- https://github.com/endink/MediaPipe4U-Demo  
+
+> Demo 工程不包含插件，你自行下载插件，放到该工程的 Plugins 目录
+
+  
 
 ---
 ## 性能表现：
@@ -26,18 +41,6 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 ---
 
-Download the latest version:
-
-紧急下架，有重大 BUG，请耐心等待~
-
-[One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzWHLacQyu4K4Iky6?e=tFlQBH)(2022-11-22)
-
-[奶牛快传](https://cowtransfer.com/s/5f63dfaa628c41) (2022-11-22) -->
-
-Demo Project:   
-https://github.com/endink/MediaPipe4U-Demo   
-
-> Demo 工程不包含插件，你自行下载插件，放到该工程的 Plugins 目录
 
 **Follow Me**
 
@@ -54,7 +57,12 @@ https://github.com/endink/MediaPipe4U-Demo
 
 ## 更新日志
 
-### 2022-11-18
+### 2022-11-25
+
+- [fix] Pose 算解器骨骼映射索引超出范围错误，感谢网友 **[tiantianaixuexi](https://github.com/tiantianaixuexi)** 提交反馈（#3）
+- [improve] 骨骼缓存时机变为第一帧数据，解决多次重复发生缓存
+
+### 2022-11-22
 
 - [new] 集成 UnrealEngine OpenCV，升级到 4.5.5
 - [fix] Pose 算解器骨骼缓存 BUG
