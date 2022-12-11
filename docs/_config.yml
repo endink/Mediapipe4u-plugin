@@ -3,7 +3,7 @@ lang: zh-cn
 description: 基于 MediaPipe 的 UnrealEngine 动补插件
 
 # remote_theme: rundocs/jekyll-rtd-theme\
-remote_theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 
 readme_index:
   with_frontmatter: true
