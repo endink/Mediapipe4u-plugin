@@ -2,7 +2,8 @@ title: MediaPipe4U Doc
 lang: zh-cn
 description: 基于 MediaPipe 的 UnrealEngine 动补插件
 
-remote_theme: rundocs/jekyll-rtd-theme
+# remote_theme: rundocs/jekyll-rtd-theme\
+remote_theme: minimal-mistakes-jekyll
 
 readme_index:
   with_frontmatter: true
