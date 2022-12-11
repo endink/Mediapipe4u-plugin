@@ -13,3 +13,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+plugins:
+  - jemoji
+  - jekyll-avatar
+  - jekyll-mentions
+
