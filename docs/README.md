@@ -62,6 +62,14 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 ## 更新日志
 
+### 2022-12-20
+- [new] 支持头部算解器（从 face mesh 计算头部旋转）
+- [new] 关节扭曲校正
+- [new] 关节二次平滑支持（C++）
+- [new] 前胸 (chest) 关节映射
+- [fix] 侧身时位移计算错误
+- [fix] 脊柱锁定不生效
+
 ### 2022-11-25
 
 - [fix] Pose 算解器骨骼映射索引超出范围错误，感谢网友 **[tiantianaixuexi](https://github.com/tiantianaixuexi)** 提交反馈（#3）
