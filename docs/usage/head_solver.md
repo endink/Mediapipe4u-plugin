@@ -15,7 +15,7 @@ sort: 4
 
 要使用头部算解器只需要完成以下步骤：
 
-1. 在动画蓝图（继承自 **MediaPipeAnimInstance**）将 ** SolveHeadFromFaceMesh ** 变量设置为 true。
+1. 在动画蓝图（继承自 **MediaPipeAnimInstance**）将 **SolveHeadFromFaceMesh** 变量设置为 true。
 2. 在动画蓝图中加入 **MediaPipeHeadSolver** 节点。
 
 
