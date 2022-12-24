@@ -24,20 +24,20 @@ sort: 3
 
 ```cpp
 FTwistCorrectionSettings settings;
-settings.HeadCorrectAlpha = 0.8f;
-settings.WristCorrectAlpha = 0.15f;
-settings.LowerArmCorrectAlpha = 0.5f;
+settings.HeadCorrectAlpha = 0.5f;
+settings.WristCorrectAlpha = 0.85f;
+settings.LowerArmCorrectAlpha = 0.15f;
 UMediaPipeUtils::SetTwistCorrectionSettings(animInstance, settings);
 
 ```
 
 ## 校正属性
 
-|属性|说明|
-|-----|------|
-|HeadCorrectAlpha| 0-1 的值，表示头部校正骨骼在轴线上的旋转权重，用来校正头部旋转，仅校正 Roll 方向的旋转 |
-|WristCorrectAlpha| 0-1 的值，表示手腕校正骨骼(默认为 Lower Arm)在轴线上的旋转权重 |
-|LowerArmCorrectAlpha| 0-1 的值，表示肘关节校正骨骼(Upper Arm)在轴线上的旋转权重 |
+|属性|默认是|说明|
+|-----|----|------|
+|HeadCorrectAlpha|0.5| 0-1 的值，表示头部校正骨骼在轴线上的旋转权重，用来校正头部旋转，仅校正 Roll 方向的旋转 |
+|WristCorrectAlpha|0.85| 0-1 的值，表示手腕校正骨骼(默认为 Lower Arm)在轴线上的旋转权重 |
+|LowerArmCorrectAlpha|0.15| 0-1 的值，表示肘关节校正骨骼(Upper Arm)在轴线上的旋转权重 |
 
 
 **手腕校正效果**
