@@ -54,6 +54,7 @@ sort: 5
 
 默认情况下 **MediaPipeLiveLinkComponent** 使用的主体名称为 "MediaPipe", 你可以通过 **MediaPipeLiveLinkComponent** 的 Subject 字段来修改主体名称。
 
-### 表情平滑度
+### 消除抖动
 
- 你可以通过 **MediaPipeLiveLinkComponent** 的 BlendShapeSmooth 来调整表情的平滑度，数值越大平滑度越高。
+你可以通过 **MediaPipeLiveLinkComponent** 的 **BlendShapeSmooth** 属性来调整表情的平滑度，数值越大平滑度越高。  
+如果表情抖动严重，可以通过 **MediaPipeLiveLinkComponent** 的 **AlgorithmicDeNoise** 属性来消除算法噪声。  

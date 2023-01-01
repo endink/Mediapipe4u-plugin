@@ -9,9 +9,9 @@
 
 **下载地址**   
 
-- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzWQbzHFGIwPOnnPh?e=9AQAhu)(2022-12-20)
+- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzWto_NHbyzdMwe4-?e=syEZBD)(2023-01-01)
 
-- [奶牛快传](https://cowtransfer.com/s/a0623e49848c42) (2022-12-20)
+- [奶牛快传](https://cowtransfer.com/s/c301e4055eb344) (2023-01-01)
 
 
 **Demo Project**   
@@ -61,6 +61,14 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
 ## 更新日志
+
+### 2023-01-01
+- [fix]带有初始旋转角度的模型扭曲矫正错误
+- [new]扭曲矫正开关，可以控制是否开启扭曲矫正
+- [new]表情捕捉标定功能加入
+- [new]表情捕捉重制:
+- [new]表情降噪与平滑参数
+- [new]膝盖极像开关（矫正膝盖侧弯问题）
 
 ### 2022-12-20
 - [new] BVH 导出
