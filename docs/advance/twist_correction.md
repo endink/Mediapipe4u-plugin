@@ -19,6 +19,11 @@ sort: 3
 
 > 同时支持蓝图和 C++ 获取校正参数（权重），并且可以在运行过程中动态调整。
 
+## 启用扭曲矫正
+
+默认情况，扭曲矫正是关闭的，你可以通过将 **MediaPipeAnimInstance**的 **TwistCorrectionEnabled** 属性设置为 **true** 开启扭曲矫正。
+
+
 ## 在蓝图中设置校正权重  
 
 [![twist correction](./images/update_twist_correction_settings.jpg "correction")](images/update_twist_correction_settings.jpg)
@@ -38,7 +43,6 @@ UMediaPipeUtils::SetTwistCorrectionSettings(animInstance, settings);
 
 |属性|默认值|说明|
 |-----|----|------|
-|Enabled|true|是否启用扭曲矫正|
 |HeadCorrectAlpha|0.5| 0-1 的值，表示头部校正骨骼在轴线上的旋转权重，用来校正头部旋转，仅校正 Roll 方向的旋转 |
 |WristCorrectAlpha|0.85| 0-1 的值，表示手腕校正骨骼(默认为 Lower Arm)在轴线上的旋转权重 |
 |LowerArmCorrectAlpha|0.15| 0-1 的值，表示肘关节校正骨骼(Upper Arm)在轴线上的旋转权重 |

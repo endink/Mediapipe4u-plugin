@@ -42,6 +42,7 @@ Smooth     | float (0-1.0)     | 动作平滑度，该参数影响阻尼滤波�
 |LockLegs| bool | 是否锁定整个大腿( Leg )到脚踝 (Foot) 的骨骼 |
 |LockHips| bool | 是否锁定盆骨，模型通常通常以盆骨作为根骨，锁定盆骨后人物将不会整体旋转 |
 |LockSpine| bool | 是否锁定脊柱，锁定后角色上半身将不能旋转 |
+|LockChest| bool | 是否锁定前胸。**注意**：如果 LockSpine 设为 **true**, 前胸也也将被锁定 |
 |LockHead| bool | 是否锁定头部，锁定后角色头部不能旋转 |
 |LockHand| bool | 是否锁定手部，锁定后角色手腕、手指将不能旋转，**注意**： LockShoudlers 被设为锁定时，手部也会强制锁定 |
 |LockKnee| bool | 是否锁定膝盖，锁定后角色膝盖不能旋转，**注意**： LockLegs 被设为锁定时，膝盖也会强制锁定 |
@@ -78,59 +79,39 @@ Smooth     | float (0-1.0)     | 动作平滑度，该参数影响阻尼滤波�
 
 ## 动画蓝图参数
 
-### 骨骼绑定
-
-MediaPipe4U 理论上支持所有的人形骨骼，并不要求你的骨骼名称和必须遵循某一规范，同时，提供了两种预设以减少配置骨骼的枯燥工作。
 
 你可以在动画蓝图上左侧 tab 页找到 MediaPipeAnimInstance 的参数（MediaPipe 类别下）
 
 [![动画蓝图节点](./images/anim_vars.jpg "Shiprock")](images/anim_vars.jpg)   
 
+|参数（变量）名| 默认值|说明 |
+|-------|--------|---------------------------------|
+|BonePreset| UE5 |要使用的预设骨骼 |
+|BoneRemap| NULL |自定义骨骼映射资源 （关于自定义骨骼，会在[**自定义骨骼**](./custom_skeleton.md)中详细说明），仅当 **BonePreset** 为 Custom 时该属性有效。|
+|ResetOnPiplineStop|true|是否在 MediaPipe 停止时（停止动补时）将角色骨骼旋转回复到最初状态。|
+|MinPoseScoreThresh|0.5|关节算解的阈值，0~1之间，仅当评分高于该值时才计算相关的关节点。|
+|SolveFingers|true|是否算解手指动作(需要 MediaPipe Hand Solver 动画蓝图节点)， 当 SolveFinger 开启时手腕旋转使用 MediaPipe Hand 地标计算（更加精确），当 SolveFinger 关闭后使用 MediaPipe Pose 地标计算手腕|
+|SolveFace|true|是否算解面部表情（仅在使用了 MediaPipe LiveLink 时有效）|
+|SolveLocation|true|是否算解位移|
+|TwistCorrectionEnabled|false|是否算解位移|
+|SolveHeadFromFaceMesh|false|是否从头部地标算解头部旋转，当 SolveHeadFromFaceMesh 开启时手腕旋转使用 FaceMesh 地标计算（更加精确）头部，当 SolveHeadFromFaceMesh 关闭后使用 MediaPipe Pose 地标计算|
+|LiveLinkSubject||为了方便开发预设的参数，你可以使用它或忽略它，它并没有被 MediaPipe4U 使用。 |
+|LiveLinkEnabled|true|为了方便开发预设的参数，你可以使用它或忽略它，它并没有被 MediaPipe4U 使用。 |
 
-**BonePreset**    
-使用骨骼预设：
+   
+> 注意: 如果**SolveFingers**设置 **true**，但是 MediaPipe Pose Solver 动画蓝图节点锁定了手部（**LockHand** 设为 **true**)时，将不会进行手指算解。   
+
+---   
+## 骨骼绑定
+
+MediaPipe4U 理论上支持所有的人形骨骼，并不要求你的骨骼名称和必须遵循某一规范，同时，提供了以下预设模型，可以减少配置骨骼的枯燥工作。   
+
+通过 **BonePreset** 切换骨骼预设：   
+
 - UE5：UE5曼尼（mannequin 小金人）的骨骼，该骨骼其实也兼容 UE4 的曼尼（小白人）、Metahuman
 - VRoid (VRM): 使用 VRoid Studio 制作的 VRM 模型骨骼
 - CharacterCreator: 使用 CharacterCreator3/4 角色的标准骨骼
 - Custom: 自定义骨骼（关于自定义骨骼，下一小节详细说明）
-
-**BoneRemap**    
-
-自定义骨骼映射资源 （关于自定义骨骼，会在[**自定义骨骼**](./custom_skeleton.md)中详细说明），仅当 **BonePreset** 为 Custom 时该属性有效。   
-
-
-### 算解控制
-
-
-**ResetOnPiplineStop**     
-
-是否在 MediaPipe 停止时（停止动补时）将角色骨骼旋转回复到最初状态。
-
-**SolveHand**
-
-是否算解手掌（包括手指）动作
-
-**SolveFingers**
-
-是否算解手指动作， 注意，当 SolveHand 为 false 时，即使 SolveFingers 为 true 也不会算解手指，当 SolveFinger 开启时手腕旋转使用 MediaPipe 手部地标计算（更加精确），当 SolveFinger 关闭后使用 MediaPipe POSE 地标计算手腕
-
-
-**SolveFace**
-
-是否算解面部表情（仅在使用了 MediaPipe LiveLink 时有效）
-
-**SolveLocation**   
-
-是否算接位移   
-
-**LiveLinkSubject**
-
-该属性仅提供 C++ 时方便设置 livelink 的主体，**MediaPipe4U** 并没有在任何代码中使用该变量。   
-如果你没有使用该变量，请忽略它。
-
-**LiveLinkEnabled**
-该属性仅提供 C++ 时方便设置 livelink 可用性，**MediaPipe4U** 并没有在任何代码中使用该变量。   
-如果你没有使用该变量，请忽略它。
 
 
 

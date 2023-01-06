@@ -9,9 +9,9 @@
 
 **下载地址**   
 
-- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzXmaOj71HF9DJJev?e=7xGnnB)(2023-01-04)
+- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzXvX7qfJhFyChA8k?e=aGB4eB)(2023-01-06)
 
-- [奶牛快传](https://cowtransfer.com/s/53b67ec867e24b) (2023-01-04)
+- [奶牛快传](https://cowtransfer.com/s/991de643ce1840) (2023-01-06)
 
 
 **Demo Project**   
@@ -61,6 +61,9 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
 ## 更新日志
+
+### 2023-01-06
+- [fix]骨骼层级刷新错误（[issue #10](https://github.com/endink/Mediapipe4u-plugin/issues/10), 感谢 **[Muscaric](https://github.com/Muscaric)** 提供反馈）
 
 ### 2023-01-04
 - [fix]带有初始旋转角度的模型扭曲矫正错误
