@@ -10,7 +10,7 @@ sort: 3
 
 **MediaPipe4U**中的扭曲校正包含了手腕，肘关节和头部:   
 
-[![twist correction](./images/twist_correction.gif "correction")](images/twist_correction.gif)
+[![twist correction](./images/twist_enable.jpg "correction")](images/twist_enable.jpg)
 
 - Wrist Correct：手腕 (Hand) 使用前臂 (LowerArm) 来进行校正。
 - Lower Arm Correct：前臂 (Lower Arm) 使用上臂 (UpperArm) 来进行校正。
@@ -21,7 +21,9 @@ sort: 3
 
 ## 启用扭曲矫正
 
-默认情况，扭曲矫正是关闭的，你可以通过将 **MediaPipeAnimInstance**的 **TwistCorrectionEnabled** 属性设置为 **true** 开启扭曲矫正。
+默认情况，扭曲矫正是关闭的，你可以通过将 **MediaPipeAnimInstance**的 **TwistCorrectionEnabled** 属性设置为 **true** 开启扭曲矫正。   
+
+[![twist correction](./images/twist_enable.jpg "correction")](images/twist_correction.gif)
 
 
 ## 在蓝图中设置校正权重  
