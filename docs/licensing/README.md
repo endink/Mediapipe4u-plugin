@@ -24,3 +24,5 @@ sort: 99
 ## 运行时获取插件授权信息
 
 **UMediaPipeUtils** 的 **PluginInfo** 函数可以获取到插件信息，其中包含了有授权有效期信息
+
+{% include list.liquid %}
