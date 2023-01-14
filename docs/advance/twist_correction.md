@@ -8,9 +8,11 @@ sort: 3
 更上层关节的扭曲，实际上，这只是把扭曲分摊到关节链上以缓解末端关节的过度扭曲。    
 > 如果有专用的矫正骨骼，建议关闭（将 **TwistCorrectionSettings** 中的 **Enabled** 属性设为 false）插件中的矫正算法，使用后期动画蓝图处理关节扭曲。
 
-**MediaPipe4U**中的扭曲校正包含了手腕，肘关节和头部:   
+扭曲矫正原理示意见下面的动图：
 
-[![twist correction](./images/twist_enable.jpg "correction")](images/twist_enable.jpg)
+[![twist correction](./images/twist_correction.gif "correction")](images/twist_correction.gif)
+
+**MediaPipe4U**中的扭曲校正包含了手腕，肘关节和头部:   
 
 - Wrist Correct：手腕 (Hand) 使用前臂 (LowerArm) 来进行校正。
 - Lower Arm Correct：前臂 (Lower Arm) 使用上臂 (UpperArm) 来进行校正。
