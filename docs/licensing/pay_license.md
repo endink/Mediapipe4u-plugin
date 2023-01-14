@@ -44,5 +44,3 @@ sort: 3
 2. 是否可以直接获得源代码？   
 
 可以，高价，请自行带价咨询，不报价，带价询问，不会和你讨价还价，价格不够直接拒绝。
-
-[![动画蓝图节点](images/plugin_info_func.jpg "Shiprock")](images/plugin_info_func.jpg)   
