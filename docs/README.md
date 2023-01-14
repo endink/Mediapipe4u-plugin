@@ -9,9 +9,9 @@
 
 **下载地址**   
 
-- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzXvX7qfJhFyChA8k?e=aGB4eB)(2023-01-06)
+- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzX5-8uLo7lj1nYUs?e=DY88QW)(2023-01-15)
 
-- [奶牛快传](https://cowtransfer.com/s/991de643ce1840) (2023-01-06)
+- [奶牛快传](https://cowtransfer.com/s/18d585edadcb48) (2023-01-15)
 
 
 **Demo Project**   
@@ -61,6 +61,20 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
 ## 更新日志
+
+### 2023-01-15
+- [new]前胸关节如果配置映射，自动获取颈骨（neck）的父关节作为前胸
+- [new]头部算解器添加新的滤波算法，减少抖动（效果明显）
+- [new]半身模式不只是锁定关节了，半身模式脊柱骨骼添加新的滤波算法（效果明显）
+- [new]**StandardMediaPipeAnimInstance** 正式可用，可以通过 C++ 代码为角色动态设置 MediaPipe 动补（运行时附加动画蓝图，不用在编辑器中绑定骨骼制作动画蓝图，适用于动态加载模型场景）
+- [fix]自定义骨骼无效（[issue #13](https://github.com/endink/Mediapipe4u-plugin/issues/13) 无法验证，本机测试无误）
+- [fix]编辑器模式下，偶尔多播委托失效导致动补停住
+- [fix]图片动补模式下，当前图片源（ImageSource）属性为空
+- [fix]半身动补模式，头部扭曲矫正可能失效
+
+- [improve]mediapipe 底层代码改进，开启关闭 pipeline 现在是线程安全的，回调事件只会在游戏线程执行（方便更新 UI）
+- [improve]提高膝盖极向准确性，减少膝盖扭曲（膝盖极像开关即将移除）
+
 
 ### 2023-01-06
 - [fix]骨骼层级刷新错误（[issue #10](https://github.com/endink/Mediapipe4u-plugin/issues/10), 感谢 **[Muscaric](https://github.com/Muscaric)** 提供反馈）
