@@ -91,7 +91,6 @@ Smooth     | float (0-1.0)     | 动作平滑度，该参数影响阻尼滤波�
 |ResetOnPiplineStop|true|是否在 MediaPipe 停止时（停止动补时）将角色骨骼旋转回复到最初状态。|
 |MinPoseScoreThresh|0.5|关节算解的阈值，0~1之间，仅当评分高于该值时才计算相关的关节点。|
 |SolveFingers|true|是否算解手指动作(需要 MediaPipe Hand Solver 动画蓝图节点)， 当 SolveFinger 开启时手腕旋转使用 MediaPipe Hand 地标计算（更加精确），当 SolveFinger 关闭后使用 MediaPipe Pose 地标计算手腕|
-|SolveFace|true|是否算解面部表情（仅在使用了 MediaPipe LiveLink 时有效）|
 |SolveLocation|true|是否算解位移|
 |TwistCorrectionEnabled|false|是否算解位移|
 |SolveHeadFromFaceMesh|false|是否从头部地标算解头部旋转，当 SolveHeadFromFaceMesh 开启时手腕旋转使用 FaceMesh 地标计算（更加精确）头部，当 SolveHeadFromFaceMesh 关闭后使用 MediaPipe Pose 地标计算|

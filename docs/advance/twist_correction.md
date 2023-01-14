@@ -14,7 +14,7 @@ sort: 3
 
 - Wrist Correct：手腕 (Hand) 使用前臂 (LowerArm) 来进行校正。
 - Lower Arm Correct：前臂 (Lower Arm) 使用上臂 (UpperArm) 来进行校正。
-- Head Correct：头部 (Head) 使用头部父骨骼，通知是颈骨 (Neck) 来进行校正。    
+- Head Correct：头部 (Head) 使用头部父骨骼，通常是颈骨 (Neck) 来进行校正。    
 
 
 > 同时支持蓝图和 C++ 获取校正参数（权重），并且可以在运行过程中动态调整。

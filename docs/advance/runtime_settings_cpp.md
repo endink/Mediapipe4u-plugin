@@ -75,7 +75,7 @@ void SetPoseSmooth(float Value)
 ```
 
 ## 控制手指平滑度
-
+```cpp
 void SetFingerSmooth(float Value)
 {
 	if (MediaPipeCharacter)
@@ -87,6 +87,7 @@ void SetFingerSmooth(float Value)
 		}
 	}
 }
+```
 
 ## 控制关节锁定
 
