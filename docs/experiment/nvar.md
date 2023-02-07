@@ -110,8 +110,11 @@ Nvidia Maxine AR SDK | 0.8.2
 
 与 **MediaPipe4U** 动作捕捉集成只需要设置 **NvARLiveLinkActor** 上的变量为 **true** 即可。
 
+[![NvAR](./nvar/nvar_enable_start_with_mediapipe.jpg "NvAR")](./nvar/nvar_enable_start_with_mediapipe.jpg)
+
 **了解原理：**
 MediaPipe 动作捕捉也要消费图像帧数据，通过设置 **NvARLiveLinkActor** 上的变量为 **true** ，使得 **NvARLiveLinkActor** 伴随 **MediaPipeHolisticComponent** 自动启停，你无需管理 **NvARLiveLinkActor** 的启动或停止， 并且自动消费来自 MediaPipe 的图像帧数据（视频、摄像头或者图片） 。
+
 
 ### 5. 独立使用 NvAR 表情捕捉
 

@@ -187,3 +187,5 @@ public:
 - UnregisterImageConsumer
 
 
+[![ImageConsumer](./images/image_consumer_blueprint_register.jpg "ImageConsumer")](./images/image_consumer_blueprint_register.jpg)
+
