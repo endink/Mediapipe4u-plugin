@@ -24,9 +24,15 @@ sort: 1
 - 兼容Apple Arkit 标准的 51 个 blend shape 名称（不支持 tongueOut）。
 - 支持头部旋转 BlendShape, 如果你使用骨骼旋转头部，你需要自行将头部旋转的曲数值映射到骨骼旋转。
 
+
+演示效果：
+
 [![MediaPipe4UNvAR](https://res.cloudinary.com/marcomontalbano/image/upload/v1675773553/video_to_markdown/images/youtube--bPKSgkCx2kw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/bPKSgkCx2kw "MediaPipe4UNvAR")
 
-（图片来自 Nvidia）
+国内用户 Youtube 打不开，转到 B 站视频：
+
+[B站演示效果](https://www.bilibili.com/video/BV1sD4y1N7HX/?share_source=copy_web&vd_source=f77a8ce9c4c322dcc88515970bea1630)
+
 
 关于 **NvAR** 的相信信息，你看这里：   
 https://developer.nvidia.com/maxine
