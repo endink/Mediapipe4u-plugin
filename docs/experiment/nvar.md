@@ -99,7 +99,9 @@ Nvidia Maxine AR SDK | 0.8.2
 >    
 > - 如果你想要在 **MediaPipe4U** 动作捕捉的同时，通过 NvAR 表情捕捉，本小步骤指引你完成这个功能。  
 > - 如果你希望单独使用 **NvARLiveLinkActor** 从图像源中捕捉表情而不使用 **MediaPipe4U** 的动作捕捉功能，那么请跳过本小节，阅读小节 **5**
-> 
+>
+
+
 与 **MediaPipe4U** 动作捕捉集成只需要设置 **NvARLiveLinkActor** 上的变量为 **true** 即可。
 
 **了解原理：**
@@ -107,7 +109,8 @@ MediaPipe 动作捕捉也要消费图像帧数据，通过设置 **NvARLiveLinkA
 
 ### 5. 独立使用 NvAR 表情捕捉
 
-暂缺文档
+暂缺文档   
+
 <!-- > 如果你阅读过本节开头的"基本原理", 你就知道 NvAR 需要消费图像帧来计算表情权重。
 > 帧由图像源提供，图像源在 MediaPipe4U 中被抽象为 **MediaPipeImageSource** (实际它是一个 **IMediaPipeImageSource** 接口)。
 
