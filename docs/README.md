@@ -62,6 +62,19 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 ## 更新日志
 
+# ### 2023-02-05 （milestone）   
+# > 得益于全新重构的底层代码，减少了一次图片内存复制，这个版本带来了帧率提升
+# - [new] **Nvidia Maxine AR** 表情捕捉集成（<mark>Experimental</mark>）
+# - [new] 图片、摄像头、视频捕获图像回显都支持开启 MediaPipe 装饰（Annotated）模式了，便于分析动补帧
+# - [new] 摄像头动补加入了限制图片分辨率能力，在低端机器上可以有效提升帧率
+# - [new] 全新重构的底层图片池，可以和任何第三方图片处理库集成（集成用例： NvAR 集成）
+# - [new] 修正头部算机器 Roll 偏差
+# - [new] *MediaPipeLiveLink* 可以被禁用，多个 LiveLink 源同时工作时避免不必要的开销
+# - [imporve] Streaming Image 改进了图片帧对象池（C++）
+# - [imporve] **MediaPipeImageSource** 简化，方便和任何的图片源集成（C++）
+# - [fix] **MediaPipeLinkLink** 表情捕捉卡顿的严重性能问题 (<mark>Big Bug</mark>)
+# - [fix] 重置缓存可能存在线程不安全问题，（[BUG #18](https://github.com/endink/Mediapipe4u-plugin/issues/18)）   
+
 ### 2023-01-15
 - [new]前胸关节如果未配置映射，自动获取颈骨（neck）的父关节作为前胸
 - [new]头部算解器添加新的滤波算法，减少抖动（效果明显）

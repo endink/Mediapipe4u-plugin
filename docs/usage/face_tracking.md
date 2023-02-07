@@ -1,7 +1,7 @@
 ---
 sort: 5
 ---
-# 表情捕捉（实验性）
+# 表情捕捉
 
 **MediaPipe4U** 能够不依赖 Iphone/IPad (Apple Arkit) 完成简单面补表情捕捉    
 > 目前该功能很初级，不推荐使用，如果有条件，你还是应该使用 Apple Arkit 面补设备。    
@@ -56,5 +56,11 @@ sort: 5
 
 ### 消除抖动
 
-你可以通过 **MediaPipeLiveLinkComponent** 的 **BlendShapeSmooth** 属性来调整表情的平滑度，数值越大平滑度越高。  
-如果表情抖动严重，可以通过 **MediaPipeLiveLinkComponent** 的 **AlgorithmicDeNoise** 属性来消除算法噪声。  
+
+你可以通过 **MediaPipeLiveLinkComponent** 包含一些属性来调整表情的平滑度。     
+
+|变量名   | 取值范围  |说明|
+|---------|---------- |----|
+|EyesSmooth|0 - 1.0|眼睛的平滑程度|
+|FaceSmooth|0 - 1.0|脸部其他部位的平滑程度|
+|AlgorithmicDeNoise|0-1.0|算法降噪的强度，用来消除数据中的抖动噪声|
