@@ -79,7 +79,7 @@ Nvidia Maxine AR SDK | 0.8.2
 
 从以下网址下载适合你的显卡的组件包：   
 
-[https://www.nvidia.cn/geforce/broadcasting/broadcast-sdk/resources/](https://www.nvidia.cn/geforce/broadcasting/broadcast-sdk/resources/)
+[https://www.nvidia.com/broadcast-sdk-resources](https://www.nvidia.com/broadcast-sdk-resources)
 
 [![NvAR](./nvar/download_nvar.jpg "NvAR")](nvar/download_nvar.jpg)
 
