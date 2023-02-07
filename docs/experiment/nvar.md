@@ -56,7 +56,7 @@ Nvidia Maxine AR SDK | 0.8.2
 
 详细的系统和软件要求请阅读这里：
 
-https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html
+[https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html](https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html)
 
 **注意:**不同的显卡有不同的可再发现组件包，如何阅读请继续阅读下面的章节。
 
@@ -72,7 +72,7 @@ https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html
 
 从以下网址下载适合你的显卡的组件包：   
 
-https://www.nvidia.cn/geforce/broadcasting/broadcast-sdk/resources/
+[https://www.nvidia.cn/geforce/broadcasting/broadcast-sdk/resources/](https://www.nvidia.cn/geforce/broadcasting/broadcast-sdk/resources/)
 
 [![NvAR](./nvar/download_nvar.jpg "NvAR")](nvar/download_nvar.jpg)
 
