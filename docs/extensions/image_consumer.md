@@ -129,19 +129,19 @@ public:
 
 ## 注册和注销
 
-当你实现了 **IImageConsumer** 以后，还需要注册你的实现到 **MediaPipe4U** 中，通过调用 **FImageConsumerManager::RegisterConsumer** 函数完成注册。
+当你实现了 **IImageConsumer** 以后，还需要注册你的实现到 **MediaPipe4U** 中，通过调用 **FImageWorkflow::RegisterConsumer** 函数完成注册。
 
-> **FImageConsumerManager** 是单例模式，通过静态函数 **Get** 获取唯一实例。
+> **FImageWorkflow** 是单例模式，通过静态函数 **Get** 获取唯一实例。
 
 ```cpp
 TSharedPtr<IImageConsumer> yourInstance = MakeSharedable<IImageConsumer>(new YourImageConsumerClass());
-FImageConsumerManager::Get().RegisterConsumer(yourInstance);
+FImageWorkflow::Get().RegisterConsumer(yourInstance);
 ```
 
 当你不再需要这个ImageConsumer 的时候，你还可以注销它：
 
 ```cpp
-FImageConsumerManager::Get().UnregisterConsumer(yourInstance);
+FImageWorkflow::Get().UnregisterConsumer(yourInstance);
 ```
 
 > 你也可以让这个实例的 **CanConsume** 返回 **false**, 来达到它"停止工作"的目的。   
@@ -176,7 +176,7 @@ public:
 它只有一个 C++ 纯虚函数，返回一个你实现的 **IImageConsumer**。
 > 可以让组件（Component）同时实现 **IImageConsumer** 和 **IImageConsumerProvider** 接口，在 **GetImageConsumer** 中返回 **this** 来包装一个 UE 组件。
 
-**FImageConsumerManager** 的 **RegisterConsumer** 和 **UnregisterConsumer** 也接受一个 **IImageConsumerProvider** 进行注册/注销。    
+**FImageWorkflow** 的 **RegisterConsumer** 和 **UnregisterConsumer** 也接受一个 **IImageConsumerProvider** 进行注册/注销。    
 > 注意：当你使用 IImageConsumerProvider 时你必须非常小心 UE 的 GC，如果你的实现是一个 UComponent，建议你调用 **AddToRoot** 来放置 GC 将他清理。
 
 **IImageConsumerProvider** 不但可以通过 C++ 代码注册，也可以在蓝图中使用 **MediaPipe4U** 提供的蓝图函数库来注册。
