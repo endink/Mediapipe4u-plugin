@@ -54,9 +54,10 @@ Nvidia Maxine AR SDK | 0.8.2
 
 **NvAR** 必须使用 Nvidia GPU, 只支持以下三种架构
 
-- NVIDIA Turing™, 
-- NVIDIA Ampere™ architecture
-- NVIDIA Ada™ architecture, and have Tensor Cores.
+- **NVIDIA Turing™**: Geforce RTX 20XX
+- **NVIDIA Ampere™**: Geforce RTX 30XX
+- **NVIDIA Ada™**: Geforce RTX 40XX
+- **Other have Tensor Cores**: H100,etg (but no sdk for downloading, ask nvidia ? )
 
 > 官方要求说明：  NVIDIA GeForce RTX 20XX and 30XX Series, Quadro RTX 3000, TITAN RTX, or higher (any NVIDIA GPUs with Tensor Cores)
 
@@ -143,7 +144,7 @@ MediaPipe 动作捕捉也要消费图像帧数据，通过设置 **NvARLiveLinkA
 
 [![NvAR](./nvar/nvar_put_livelink_node.jpg "NvAR")](./nvar/nvar_put_livelink_node.jpg)
 
-> 你也可以通过 PoseAsset 进行驱动面部动画，同事 ModifyCurve 等节点也可以正常使用。
+> 你也可以通过 PoseAsset 进行驱动面部动画， ModifyCurve 等节点也可以正常使用。
 
 需要注意的是，的 **MediaPipe4UNvAR** 默认使用 "MediaPipe NvAR"（中间包含空格）作为 LiveLink Subject 名称，你的 LiveLink Pose 节点必须和这个名称保持一致。   
 Subject 名称可以通过 **NvARLiveLinkActor** 上的属性 **LiveLinkSubjectName** 进行修改。
