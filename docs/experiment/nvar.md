@@ -111,22 +111,22 @@ MediaPipe 动作捕捉也要消费图像帧数据，通过设置 **NvARLiveLinkA
 
 暂缺文档   
 
-<!-- > 如果你阅读过本节开头的"基本原理", 你就知道 NvAR 需要消费图像帧来计算表情权重。
-> 帧由图像源提供，图像源在 MediaPipe4U 中被抽象为 **MediaPipeImageSource** (实际它是一个 **IMediaPipeImageSource** 接口)。
+<!-- # > 如果你阅读过本节开头的"基本原理", 你就知道 NvAR 需要消费图像帧来计算表情权重。
+# > 帧由图像源提供，图像源在 MediaPipe4U 中被抽象为 **MediaPipeImageSource** (实际它是一个 **IMediaPipeImageSource** 接口)。
+# 
+# - 5.1 准备图像源（**MediaPipeImageSource**）
+# 
+# 在场景中的任意 Actor 上附加一个图像源，**MediaPipe4U** 支持三种开箱即用的图像源：   
+# 
+# - **StaticImageSouceComponent** : 静态图片
+# - **GStreamerImageSourceComponent** ：视频文件
+# - **WebcamImageSourceComponent**: USB 摄像头
+# 
+# > 你也可以实现自己的图片源。但是，实现图像源必须使用 C++ 编程，因为图片源伴随着复杂的异步任务，多线程，图片解码等内容，稍有不当，会造成死锁，程序性能低下等严重问题，所以，用蓝图实现图像源并不合适。
+# > 在 C++ 中，可以通过继承 **MediaPipeImageSourceComponent** 实现自己的图像源，**MediaPipeImageSource** 已经为你处理好多线程，帧缓冲池, 异步消费队列等棘手的问题，你只需要自己完成图片格式解码即可。 -->
 
-- 5.1 准备图像源（**MediaPipeImageSource**）
 
-在场景中的任意 Actor 上附加一个图像源，**MediaPipe4U** 支持三种开箱即用的图像源：   
-
-- **StaticImageSouceComponent** : 静态图片
-- **GStreamerImageSourceComponent** ：视频文件
-- **WebcamImageSourceComponent**: USB 摄像头
-
-> 你也可以实现自己的图片源。但是，实现图像源必须使用 C++ 编程，因为图片源伴随着复杂的异步任务，多线程，图片解码等内容，稍有不当，会造成死锁，程序性能低下等严重问题，所以，用蓝图实现图像源并不合适。
-> 在 C++ 中，可以通过继承 **MediaPipeImageSourceComponent** 实现自己的图像源，**MediaPipeImageSource** 已经为你处理好多线程，帧缓冲池, 异步消费队列等棘手的问题，你只需要自己完成图片格式解码即可。
-
-
-不同的图像源有不同的使用方式，图像源的详细信息你可以查看 [准备 MediaPipe 运行时组件](../usage/prepare_components.md) 一章的内容。 -->
+不同的图像源有不同的使用方式，图像源的详细信息你可以查看 [准备 MediaPipe 运行时组件](../usage/prepare_components.md) 一章的内容。
 
 ### 6. 驱动 3D 角色（Avatar）
 
