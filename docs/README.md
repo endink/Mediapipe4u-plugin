@@ -9,9 +9,9 @@
 
 **下载地址**   
 
-- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzX5-8uLo7lj1nYUs?e=DY88QW)(2023-01-15)
+- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgCcELSM7J4b9xDR?e=KPQOkG)(2023-02-10)
 
-- [奶牛快传](https://cowtransfer.com/s/18d585edadcb48) (2023-01-15)
+- [奶牛快传](https://cowtransfer.com/s/19912856153a45) (2023-02-10)
 
 
 **Demo Project**   
@@ -62,18 +62,26 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 ## 更新日志
 
-<!-- ### 2023-02-05 （milestone）   
-> 得益于全新重构的底层代码，减少了一次图片内存复制，这个版本带来了帧率提升
-- [new] **Nvidia Maxine AR** 表情捕捉集成（<mark>Experimental</mark>）
-- [new] 图片、摄像头、视频捕获图像回显都支持开启 MediaPipe 装饰（Annotated）模式了，便于分析动补帧
-- [new] 摄像头动补加入了限制图片分辨率能力，在低端机器上可以有效提升帧率
-- [new] 全新重构的底层图片池，可以和任何第三方图片处理库集成（集成用例： NvAR 集成）
-- [new] 修正头部算机器 Roll 偏差
-- [new] *MediaPipeLiveLink* 可以被禁用，多个 LiveLink 源同时工作时避免不必要的开销
-- [imporve] Streaming Image 改进了图片帧对象池（C++）
-- [imporve] **MediaPipeImageSource** 简化，方便和任何的图片源集成（C++）
-- [fix] **MediaPipeLinkLink** 表情捕捉卡顿的严重性能问题 (<mark>Big Bug</mark>)
-- [fix] 重置缓存可能存在线程不安全问题，（[BUG #18](https://github.com/endink/Mediapipe4u-plugin/issues/18)）    -->
+### 2023-02-10 （milestone）   
+> 重构底层代码，一致的图片处理工作流，减少了一次图片内存复制，这个版本带来了帧率提升   
+
+:pushpin:**里程碑版本**   
+
+- [new] :fire:预览版质量的 **Nvidia AR** 表情捕捉集成, ([文档](./experiment/README.md)，示例已经包含在 [Demo](https://github.com/endink/MediaPipe4U-Demo) 工程中）
+- [new] 手指矫正，解决手指无法伸直的问题（**TODO**:文档暂缺）
+- [new] **MediaPipeHolistic** 生命周期事件(OnInitialized, OnStarted, OnStopeed)蓝图支持
+- [new] 图片、摄像头、视频图像回显都支持开启/关闭 MediaPipe 装饰（Annotated）模式了，便于分析动补帧
+- [new] 摄像头捕捉加入了限制图片分辨率能力，在低端机器上可以提升帧率 (**TODO**:文档暂缺)
+- [new] 全新重构的图片工作流，可以和任何第三方图片处理库集成（集成用例： NvAR 集成，[文档](./extensions/image_consumer.md)）
+- [new] 修正头部算解器（HeadSolver） Roll 偏差
+- [new] **MediaPipeLiveLink** 可以被禁用，多个主题(LiveLink Subject)同时工作时，禁用不需要的主题可以避免不必要的开销
+- [imporve] 更易于实现的自定义图像源基类 **MediaPipeImageSourceComponent** (C++)
+- [imporve] **MediaPipeRemapAsset** 现在可以在编辑器中导入/导出 Json 文件，方便在多人开发时共享资产
+- [imporve] 摄像头动补也使用异步模式回显图片，提高了性能和帧率
+- [fix] **MediaPipeLinkLink** 表情捕捉卡顿的严重性能问题 (Big Bug)
+- [fix] 重置缓存可能存在线程不安全问题，（[BUG #18](https://github.com/endink/Mediapipe4u-plugin/issues/18)） 
+- [fix] 骨骼绑定缺失时可能引起的程序崩溃
+- [fix] 快速反复启停时导致静态图片绘制出错
 
 ### 2023-01-15
 - [new]前胸关节如果未配置映射，自动获取颈骨（neck）的父关节作为前胸
