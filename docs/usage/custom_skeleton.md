@@ -76,7 +76,7 @@ sort: 2
           └─LeftHand
 ```
 
-**错误的手臂骨骼层级:**     
+**:o:错误的手臂骨骼层级:**     
 > LeftUpperArm - LeftLowerArm1 - LeftLowerArm2 - LeftHand
 ```
 └─LeftUpperArm
