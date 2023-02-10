@@ -3,7 +3,13 @@ sort: 2
 ---
 # 自定义骨骼
 
-**MediaPipe4U** 提供的了 VRoid , UE5 , CharactorCreactor骨骼预设，这些骨骼无需手动映射即可开始动补，如果你的骨骼不是预设骨骼之一，本章节介绍映射任意的骨骼。       
+**MediaPipe4U** 提供的了三种骨骼预设，这些骨骼无需手动映射即可开始动补：   
+
+- UE5：UE5曼尼（小金人）的骨骼，该骨骼其实也兼容 UE4 的曼尼（小白人）、Metahuman
+- VRoid (VRM): 使用 VRoid Studio 制作的 VRM 模型骨骼
+- CharacterCreator: 使用 CharacterCreator3/4 角色的标准骨骼
+
+如果你的骨骼不是预设骨骼之一，本章节介绍映射任意的骨骼。       
 >阅读本节内容之前，请先阅读 [准备动补角色](prepare_character.md) 一节，本节内容假设你已按照 [准备动补角色](prepare_character.md) 小节的步骤完成了动画蓝图节点配置。    
 
 ------   
@@ -25,7 +31,12 @@ sort: 2
 
 [![映射骨骼](./images/remap_window.jpg "Shiprock")](images/remap_window.jpg)  
 
-完成骨骼映射后保存资产，你现在有一个可供 **MediaPipe4U** 驱动的骨骼映射表了。      
+下面是骨骼位置参考图：   
+
+[![映射骨骼](./images/avatar_bones.jpg "Shiprock")](images/avatar_bones.jpg)  
+
+完成骨骼映射后保存资产，你现在有一个可供 **MediaPipe4U** 驱动的骨骼映射表了。    
+
 
 ---    
 
@@ -42,3 +53,34 @@ sort: 2
 
 完成以上设置后保存并编译你的动画蓝图即可开始 MediaPipe 动补。
 
+## 注意事项
+
+你的手臂（**Arm**）和腿（**Leg**）必须是三段式骨骼，否则你将无法使用插件中的**扭曲矫正**和**IK**（PoseSolver 动画蓝图节点的 ArmIK 和 LegIK）功能。   
+以手臂为例说明这个问题：
+
+**正常的手臂骨骼层级:**   
+> LeftUpperArm - LeftLowerArm - LeftHand
+```
+└─LeftUpperArm
+    └─LeftLowerArm
+        └─LeftHand
+```
+或者   
+
+> LeftUpperArm - LeftLowerArm2 - LeftHand   
+> 
+```
+└─LeftUpperArm
+    └─LeftLowerArm1
+    └─LeftLowerArm2
+          └─LeftHand
+```
+
+**错误的手臂骨骼层级:**     
+> LeftUpperArm - LeftLowerArm1 - LeftLowerArm2 - LeftHand
+```
+└─LeftUpperArm
+    └─LeftLowerArm1    （手臂有四段）
+       └─LeftLowerArm2
+          └─LeftHand
+```

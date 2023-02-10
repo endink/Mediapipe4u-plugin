@@ -14,13 +14,13 @@ sort: 1
 
 ---
 
-**MediaPipe4U** 封装了一个名为 "**MediaPipe4UNvAR**" 的插件，将 Nvidia 的算法集成到 MediaPipe4U 的工作流管道，可以让它和 MediaPipe 同时工作。
-**MediaPipe4UNvAR** 可以在不使用 **MediaPipe4U** 动作捕捉的情况下单独工作，但是使用 **MediaPipe4UNvAR** 插件依赖 **MediaPipe4U** 插件（项目种必须包含 **MediaPipe4U** 插件）。    
+**MediaPipe4U** 封装了一个名为 **MediaPipe4UNvAR** 的插件，将 Nvidia 的算法集成到 MediaPipe4U 的工作流管道，可以让它和 MediaPipe 协同工作。
+**MediaPipe4UNvAR** 可以在不使用 **MediaPipe4U** 动作捕捉的情况下单独工作，但是 **MediaPipe4UNvAR** 插件依赖 **MediaPipe4U** 插件（项目中必须包含 **MediaPipe4U** 插件）。    
 
 **MediaPipe4UNvAR** 功能：
 
-- 独立使用，无需 **MediaPipeAnimInstance** 但是依赖 **MediaPipe4U** 的 **ImageSource** 工作流。
-- 兼容 LinkLive ，通过动画蓝图种的 LiveLink 节点消费 **NvAR** 表情算解结果。
+- 独立使用，无需 **MediaPipeAnimInstance** （但是依赖 **MediaPipe4U** 的 **ImageSource** 工作流，项目需要启用 **MediaPipe4U**）
+- 兼容 LinkLive ，支持动画蓝图中的 LiveLink 节点消费 **NvAR** 表情算解结果。
 - 兼容Apple Arkit 标准的 51 个 blend shape 名称（不支持 tongueOut）。
 - 支持头部旋转 BlendShape, 如果你使用骨骼旋转头部，你需要自行将头部旋转的曲数值映射到骨骼旋转。
 
@@ -29,13 +29,13 @@ sort: 1
 
 [![MediaPipe4UNvAR](https://res.cloudinary.com/marcomontalbano/image/upload/v1675773553/video_to_markdown/images/youtube--bPKSgkCx2kw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/bPKSgkCx2kw "MediaPipe4UNvAR")
 
-国内用户 Youtube 打不开，转到 B 站视频：
+国内用户如果 Youtube 打不开，请观看 B 站视频：
 
 [B站演示效果](https://www.bilibili.com/video/BV1sD4y1N7HX/?share_source=copy_web&vd_source=f77a8ce9c4c322dcc88515970bea1630)
 
 
-关于 **NvAR** 的相信信息，你看这里：   
-https://developer.nvidia.com/maxine
+关于 **NvAR** 的相信信息，你看这里：     
+[https://developer.nvidia.com/maxine](https://developer.nvidia.com/maxine)
 
 # 系统要求
 
@@ -47,7 +47,7 @@ Windows OS | 64-bit Windows 10 or later
 NVIDIA Graphics Driver for Windows | 511.65 or later
 Nvidia Maxine AR SDK | 0.8.2
 
-> MediaPipe4U 的 NvAR 插件无论是开发环境和打包后都要求 PC 已经安装 **Nvidia Maxine AR SDK**。
+> MediaPipe4U 的 NvAR 插件无论是开发环境和打包后不熟都要求 PC 已经安装 **Nvidia Maxine AR SDK**。
 > 由于 NvAR 插件体积太大（1G以上），让用户自行安装会更方便，否则你的软件包也将非常大。
 
 ## 硬件要求
@@ -61,13 +61,15 @@ Nvidia Maxine AR SDK | 0.8.2
 
 > 官方要求说明：  NVIDIA GeForce RTX 20XX and 30XX Series, Quadro RTX 3000, TITAN RTX, or higher (any NVIDIA GPUs with Tensor Cores)
 
-详细的系统和软件要求请阅读这里：
+Nvidia 官方的系统和软件要求请阅读这里：
 
 [https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html](https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html)
 
-**注意:**不同的显卡有不同的可再发现组件包，如何阅读请继续阅读下面的章节。
+**注意:**不同的显卡有不同的可再发现组件包，如何使用请继续阅读下面的章节。
 
-## 依赖的 UnrealEngine 插件
+## 启用 UnrealEngine 插件
+
+请启用以下 UnrealEngine 插件：   
 
 - MediaPipe4U
 - LiveLink
@@ -75,7 +77,7 @@ Nvidia Maxine AR SDK | 0.8.2
 
 ## 开始使用
 
-### 1. 安装 Nvidia 的可再发行组件包（Redistributable SDK package
+### 1. 安装 Nvidia 的可再发行组件包（Redistributable SDK package)
 
 从以下网址下载适合你的显卡的组件包：   
 
@@ -87,8 +89,10 @@ Nvidia Maxine AR SDK | 0.8.2
 
 ### 2. 安装 MediaPipe4UNvAr 插件   
 
-从下载插件目录找到插件 MediaPipe4UNvAR 目录，将它到你的 Unreal Egine 项目 Plugins 目录并启用它.
-[![NvAR](./nvar/nvar_plugin_install.jpg "NvAR")](./nvar/nvar_plugin_install.jpg)
+从下载的 MediaPipe4U 插件目录找到 MediaPipe4UNvAR 目录，将它复制到你的 Unreal Egine 项目 Plugins 目录并启用它.   
+
+[![NvAR](./nvar/nvar_plugin_install.jpg "NvAR")](./nvar/nvar_plugin_install.jpg)   
+
 > **MediaPipe4UNvAR** 通过 LiveLink 来驱动角色，因此你也必须在项目中启用 **LiveLink** 插件
 
 ### 3. 添加 NvARLiveLinkActor
@@ -97,23 +101,27 @@ Nvidia Maxine AR SDK | 0.8.2
 
 [![NvAR](./nvar/nvar_put_actor_to_level.jpg "NvAR")](./nvar/nvar_put_actor_to_level.jpg)
 
+---   
 
-### 4. 与 MediaPipe4U 动作捕捉集成
+
 
 > 通过步骤 **3**, 我们已经准备好 **NvARLiveLinkActor** 来消费图像帧数据了。
 >
 > **NvARLiveLinkActor** 可以和 **MediaPipe4U** 动作捕捉协同工作，也可以独立工作。 
 >    
-> - 如果你想要在 **MediaPipe4U** 动作捕捉的同时，通过 NvAR 表情捕捉，本小步骤指引你完成这个功能。  
-> - 如果你希望单独使用 **NvARLiveLinkActor** 从图像源中捕捉表情而不使用 **MediaPipe4U** 的动作捕捉功能，那么请跳过本小节，阅读小节 **5**
+> - 如果你想要在 **MediaPipe4U** 动作捕捉的同时，通过 NvAR 表情捕捉，请j继续阅读小节 **4**。  
+> - 如果你希望单独使用 **NvARLiveLinkActor** 从图像源中捕捉表情而不使用 **MediaPipe4U** 的动作捕捉功能，请阅读小节 **5**
 >
+
+### 4. 与 MediaPipe4U 动作捕捉集成
 
 
 与 **MediaPipe4U** 动作捕捉集成只需要设置 **NvARLiveLinkActor** 上的变量为 **true** 即可。
 
 [![NvAR](./nvar/nvar_enable_start_with_mediapipe.jpg "NvAR")](./nvar/nvar_enable_start_with_mediapipe.jpg)
 
-**了解原理：**
+**了解原理：**   
+
 MediaPipe 动作捕捉也要消费图像帧数据，通过设置 **NvARLiveLinkActor** 上的变量为 **true** ，使得 **NvARLiveLinkActor** 伴随 **MediaPipeHolisticComponent** 自动启停，你无需管理 **NvARLiveLinkActor** 的启动或停止， 并且自动消费来自 MediaPipe 的图像帧数据（视频、摄像头或者图片） 。
 
 
@@ -136,17 +144,22 @@ MediaPipe 动作捕捉也要消费图像帧数据，通过设置 **NvARLiveLinkA
 # > 在 C++ 中，可以通过继承 **MediaPipeImageSourceComponent** 实现自己的图像源，**MediaPipeImageSource** 已经为你处理好多线程，帧缓冲池, 异步消费队列等棘手的问题，你只需要自己完成图片格式解码即可。 -->
 
 
-不同的图像源有不同的使用方式，图像源的详细信息你可以查看 [准备 MediaPipe 运行时组件](../usage/prepare_components.md) 一章的内容。
+<!-- 不同的图像源有不同的使用方式，图像源的详细信息你可以查看 [准备 MediaPipe 运行时组件](../usage/prepare_components.md) 一章的内容。 -->
 
 ### 6. 驱动 3D 角色（Avatar）
 
-和使用 Apple 的 Arkit 一样，通过在动画蓝图中添加 LiveLinkPose 节点，并将 Subject 设置为 MediaPipe NvAR 即可驱动你的 3D 角色。
+和使用 Apple 的 Arkit 一样，通过在动画蓝图中添加 **LiveLinkPose** 节点，并将 Subject 设置为 MediaPipe NvAR 即可。
+
+- 如果你的角色是 BlendShape  (Morph Target), 而且已经是 Arkit 标准表情名称，那么你的角色表情已经可以被驱动。    
+- 如果你的表情是通过骨骼驱动，请使用 PoseAsset 映射曲线名称到你的骨骼动画。
+- 如果你的不是标准的 Arkit 表情名称，那么你可以通过 **ModifyCurve** 或者 **LiveLinkRemapAsset** 来映射他们。
+
+> 关于苹果的52个标准 Blendshape ，请阅读这里：[https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)
 
 [![NvAR](./nvar/nvar_put_livelink_node.jpg "NvAR")](./nvar/nvar_put_livelink_node.jpg)
 
-> 你也可以通过 PoseAsset 进行驱动面部动画， ModifyCurve 等节点也可以正常使用。
 
-需要注意的是，的 **MediaPipe4UNvAR** 默认使用 "MediaPipe NvAR"（中间包含空格）作为 LiveLink Subject 名称，你的 LiveLink Pose 节点必须和这个名称保持一致。   
+需要注意的是，的 **MediaPipe4UNvAR** 默认使用 "MediaPipe NvAR"（中间包含空格）作为 LiveLink Subject 名称，你的 LiveLink Pose 节点上的 Subject 必须和这个名称保持一致。   
 Subject 名称可以通过 **NvARLiveLinkActor** 上的属性 **LiveLinkSubjectName** 进行修改。
 
 ### 7. 属性
@@ -164,5 +177,61 @@ Disabled | 使用禁用 NvAR 功能，当你不再需要 NvAR 表情捕捉时，
 LiveLinkSubjectName | 控制 LiveLink 数据发送到的 LiveLink Subject 名称。
 SmoothParams | 用来平滑表情的滤波算法参数
 SmoothEnabled | 是否启用表情平滑
-bAttachToMediaPipeOnBeginPlay | 是否程序启动后自动将 **NvARLiveLinkActor** 附加到 **MediaPipe4U** 动作捕捉数据管道, 开启此属性后 **NvARLiveLinkActor** 将自动消费来自 MediaPipe 的图像帧产生表情动画
+AttachToMediaPipeOnBeginPlay | 是否程序启动后自动将 **NvARLiveLinkActor** 附加到 **MediaPipe4U** 动作捕捉数据管道, 开启此属性后 **NvARLiveLinkActor** 将自动消费来自 MediaPipe 的图像帧产生表情动画
+
+**附录：Arkit BlendShape 名称**
+|名称|说明|NvAR 支持|
+|----|----|--------|
+|eyeBlinkLeft| 左眼眨眼|Yes|
+|eyeLookDownLeft |左眼目视下方|Yes|
+|eyeLookInLeft |左眼注视鼻尖|Yes|
+|eyeLookOutLeft| 左眼向左看|Yes|
+|eyeLookUpLeft| 左眼目视上方|Yes|
+|eyeSquintLeft| 左眼眯眼|Yes|
+|eyeWideLeft |左眼睁大|Yes|
+|eyeBlinkRight |右眼眨眼|Yes|
+|eyeLookDownRight |右眼目视下方|Yes|
+|eyeLookInRight |右眼注视鼻尖|Yes|
+|eyeLookOutRight |右眼向左看|Yes|
+|eyeLookUpRight |右眼目视上方|Yes|
+|eyeSquintRight| 右眼眯眼|Yes|
+|eyeWideRight |右眼睁大|Yes|
+|jawForward |努嘴时下巴向前|Yes|
+|jawLeft |撇嘴时下巴向左|Yes|
+|jawRight |撇嘴时下巴向右|Yes|
+|jawOpen |张嘴时下巴向下|Yes|
+|mouthClose |闭嘴|Yes|
+|mouthFunnel |稍张嘴并双唇张开|Yes|
+|mouthPucker |抿嘴|Yes|
+|mouthLeft |向左撇嘴|Yes|
+|mouthRight |向右撇嘴|Yes|
+|mouthSmileLeft |左撇嘴笑|Yes|
+|mouthSmileRight| 右撇嘴笑|Yes|
+|mouthFrownLeft |左嘴唇下压|Yes|
+|mouthFrownRight |右嘴唇下压|Yes|
+|mouthDimpleLeft |左嘴唇向后|Yes|
+|mouthDimpleRight |右嘴唇向后|Yes|
+|mouthStretchLeft |左嘴角向左|Yes|
+|mouthStretchRight |右嘴角向右|Yes|
+|mouthRollLower |下嘴唇卷向里|Yes|
+|mouthRollUpper |下嘴唇卷向上|Yes|
+|mouthShrugLower |下嘴唇向下|Yes|
+|mouthShrugUpper |上嘴唇向上|Yes|
+|mouthPressLeft |下嘴唇压向左|Yes|
+|mouthPressRight |下嘴唇压向右|Yes|
+|mouthLowerDownLeft |下嘴唇压向左下|Yes|
+|mouthLowerDownRight |下嘴唇压向右下|Yes|
+|mouthUpperUpLeft |上嘴唇压向左上|Yes|
+|mouthUpperUpRight |上嘴唇压向右上|Yes|
+|browDownLeft |左眉向外|Yes|
+|browDownRight| 右眉向外|Yes|
+|browInnerUp |蹙眉|Yes|
+|browOuterUpLeft |左眉向左上|Yes|
+|browOuterUpRight |右眉向右上|Yes|
+|cheekPuff| 脸颊向外|Yes|
+|cheekSquintLeft |左脸颊向上并回旋|Yes|
+|cheekSquintRight |右脸颊向上并回旋|Yes|
+|noseSneerLeft |左蹙鼻子|Yes|
+|noseSneerRight| 右蹙鼻子|Yes|
+|tongueOut |吐舌头|<mark>No</mark>|
 
