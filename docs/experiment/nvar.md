@@ -4,12 +4,13 @@ sort: 1
 
 # Nvidia Maxine AR
 
-**Nvidia Maxine AR** (以下简称 **NvAR**) 提供了将人脸 Landmarks 拟合到 Blendshape 的算法。   
+如果你拥有 Nvidia 的 RTX 20XX 或更高级的显卡，那么你可以使用 Nvidia 的 **Nvidia Maxine AR** (以下简称 **NvAR**) 来获得一个可以和苹果 Arkit 的面补媲美的方案。    
+**NvAR**提供了将人脸地标（Landmarks）拟合到 Blendshape 的算法, **MediaPipe4UNvAR** 能够让你在 Unreal Engine 里能以最轻松的方式使用这个算法捕捉表情和驱动 3D 角色。 
 
 **基本原理：**  
 
-**NvARLiveLinkActor** 消费来自 **MediaPipeImageSource** 的图像帧到 NvAR 算解器，将输出结果转换成标准 Apple Arkit 的 BlendShape 权重，
-最后，将这些权重以符合 Unreal Engine 要求的格式发送到 LiveLink 总线。  因此，你可以使用标准的 LiveLinkPose 动画蓝图节点接收表情曲线（Curve）驱动你的 3D 角色。
+实现了一个名为 **NvARLiveLinkActor** 的 UE Actor,将来自 **MediaPipeImageSource** 的图像帧投递到 **NvAR** 算解器，将输出结果转换成标准 Apple Arkit 的 BlendShape 权重，
+最后，将这些权重以符合 Unreal Engine 要求的格式发送到 LiveLink 总线。 因此，你可以使用标准的 LiveLinkPose 动画蓝图节点接收表情曲线（Curve）驱动你的 3D 角色。
 
 
 ---
@@ -179,7 +180,8 @@ SmoothParams | 用来平滑表情的滤波算法参数
 SmoothEnabled | 是否启用表情平滑
 AttachToMediaPipeOnBeginPlay | 是否程序启动后自动将 **NvARLiveLinkActor** 附加到 **MediaPipe4U** 动作捕捉数据管道, 开启此属性后 **NvARLiveLinkActor** 将自动消费来自 MediaPipe 的图像帧产生表情动画
 
-**附录：Arkit BlendShape 名称**
+**NvAR Arkit 表情支持情况**   
+
 |名称|说明|NvAR 支持|
 |----|----|--------|
 |eyeBlinkLeft| 左眼眨眼|Yes|
