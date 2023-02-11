@@ -13,6 +13,10 @@
 
 - [奶牛快传](https://cowtransfer.com/s/19912856153a45) (2023-02-10)
 
+> Bug fix 版本, 可以优先使用，解决网络模式下崩溃问题，增强了稳定性，未详细测试，如果有问题请回退到 **2023-02-10**
+> - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgEz6gu8FCr7ibot?e=x79QpF) (2023-02-12)   
+> - [奶牛快传](https://cowtransfer.com/s/2d9013b4330d44) (2023-02-12)      
+
 
 **Demo Project**   
 - https://github.com/endink/MediaPipe4U-Demo  
@@ -61,6 +65,13 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
 ## 更新日志
+
+### 2023-02-12
+
+- [new] MediaPipeAnimInstance 增加手动连接 MediaPipe 功能，当场景中存在多个带有 MediaPipe 动画蓝图的角色时，你可以手动控制驱动其中一个
+- [new] 支持动态切换动画蓝图（SetAnimInstanceClass）后连接 MediaPipe
+- [fix] 网络游戏模式下，**MediaPipeAnimInstance** 可能会崩溃 [BUG #20](https://github.com/endink/Mediapipe4u-plugin/issues/20)
+- [fix] 摄像头动补在 Annotated 回显模式下工作不正常
 
 ### 2023-02-10 （milestone）   
 > 重构底层代码，一致的图片处理工作流，减少了一次图片内存复制，这个版本带来了帧率提升   
