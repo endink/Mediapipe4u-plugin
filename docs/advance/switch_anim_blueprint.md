@@ -24,7 +24,7 @@ sort: 7
 
 ## C++ 中切换动画蓝图
 
-如果你使用 C++ 编程，可以调用 **MediaPipeAnimInstace::Reinitailize** 函数完成这个过程： 
+如果你使用 C++ 编程，可以调用 **MediaPipeAnimInstace::ConnectToMediaPipeInLevel** 函数完成这个过程： 
 
 ```cpp
 USkeletalMeshComponent* Mesh = XXXX;
