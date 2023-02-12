@@ -120,7 +120,7 @@ public:
 |函数|说明|
 |----|----|
 | GetImageId | 帧 id， **MediaPipe4U** 内部使用，你需要知道，由于帧是池化的，这个 id 是会重复的，你不能用它作为图像的唯一标识。 |
-| GetData | 包含图片数据的数字，目前只有 **uint8** 数组。 |
+| GetData | 包含图片数据的数组，目前只有 **uint8** 数组。 |
 | DataSize | 图像数据的字节大小，num * sizeof(uint8)，由于只有 **uint8** 数据，所以他也等于 GetData.Num()。 |
 | Release | :bangbang:当一个 **IImageConsumer** 完成了帧的处理后**必须**调用此方法，让帧能够重新返回帧对象池。 |
 
