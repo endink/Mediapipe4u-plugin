@@ -11,7 +11,7 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 [![MediaPipe4U](./images/holistic.gif "MediaPipe4U")](./images/holistic.gif)
 
 >有关 google mediapipe holistic 详细信息，请访问这里：   
->(https://google.github.io/mediapipe/solutions/holistic.html)[https://google.github.io/mediapipe/solutions/holistic.html]
+>[https://google.github.io/mediapipe/solutions/holistic.html](https://google.github.io/mediapipe/solutions/holistic.html)
 
 ## 限制
 
