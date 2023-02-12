@@ -23,6 +23,11 @@
 
 > Demo 工程不包含插件，你自行下载插件，放到该工程的 Plugins 目录
 
+---   
+
+[![MediaPipe4U](./cover.gif "MediaPipe4U")](./cover.gif)
+
+---   
 
 ---   
 
@@ -57,10 +62,6 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 [Youtube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
 
-
-**演示 DEMO**
-
-[![MediaPipe4U Demo Video](https://res.cloudinary.com/marcomontalbano/image/upload/v1666755370/video_to_markdown/images/youtube--a0Ug_bFGQYk-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/a0Ug_bFGQYk)
 
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
