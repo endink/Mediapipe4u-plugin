@@ -1,5 +1,5 @@
 ---
-sort: 3
+sort: 7
 ---
 
 # 切换动画蓝图
@@ -11,14 +11,16 @@ sort: 3
 [![蓝图操作](images/set_anim_instance_class.jpg "Shiprock")](images/set_anim_instance_class.jpg)   
 
 
-然后，当你切换到一个 **MediaPipeAnimInstace** 的蓝图时，你还需要初始化 MediaPipe 工作环境。    
+然后，当你切换到一个 **MediaPipeAnimInstace** 的蓝图时，你还需要将动画蓝图连接到 MediaPipe 。    
 
 ## 蓝图中切换动画蓝图
 
-在蓝图中你可以使用 **ReinitializeMediaPipeAnimation** 函数完成这个过程：
+在蓝图中你可以使用 **MediaPipeAnimInstace** 的 **ConnectToMediaPipeInLevel** 函数完成这个过程：
 
 
-[![蓝图操作](images/reinitailize_mediapipe_anim.jpg "Shiprock")](images/reinitailize_mediapipe_anim.jpg)   
+[![蓝图操作](images/reinitailize_mediapipe_anim.jpg "Shiprock")](images/reinitailize_mediapipe_anim.jpg)   、
+
+>注意: **ConnectToMediaPipeInLevel** 具有 bool 类型的返回值，用来指示连接 MediaPipe 是否成功
 
 ## C++ 中切换动画蓝图
 
@@ -31,7 +33,7 @@ Mesh->SetAnimInstanceClass(AnimInstanceClass);
 UAnimInstance* AnimInstance = Mesh->GetAnimInstance();
 if(UMediaPipeAnimInstance* MediaPipeAnimInstance = Cast<UMediaPipeAnimInstance>(AnimInstance))
 {
-    if(MediaPipeAnimInstance->ReInitialize())
+    if(MediaPipeAnimInstance->ConnectToMediaPipeInLevel())
     {
         // switch ok
     }
