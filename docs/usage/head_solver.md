@@ -2,7 +2,7 @@
 sort: 4
 ---
 
-# 头部算解器（since v20221220）
+# 头部算解器
 
 通常情况下，**MediaPipe4U** 使用 mediapipe holistic 中的 33 个地标实时计算 3D 模型的姿态，但是在具有脸部特写的场景中，mediapipe holistic 并不能得到精确的头部旋转。
 为此，**MediaPipe4U** 提供的独立头部算解器，该算解器使用 mediapipe face mesh 中的脸部地标来计算头部旋转，因此能够获得更加准确的头部运动数据。
