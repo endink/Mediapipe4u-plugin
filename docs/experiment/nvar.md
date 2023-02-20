@@ -28,7 +28,7 @@ sort: 1
 [B站演示效果](https://www.bilibili.com/video/BV1sD4y1N7HX/?share_source=copy_web&vd_source=f77a8ce9c4c322dcc88515970bea1630)
 
 
-关于 **NvAR** 徐阶4，请看这里：     
+关于 **NvAR** 详细信息，请看这里：     
 [https://developer.nvidia.com/maxine](https://developer.nvidia.com/maxine)
 
 # 系统要求
