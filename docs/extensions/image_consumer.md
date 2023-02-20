@@ -61,10 +61,11 @@ public:
 
 |函数|说明|注意事项|
 |----|----|----|
-| CanConsume | 返回一个值，当为 **true** 时，表示可以消费图像帧，ImageSource 将会回调 Consume 函数，如果为 **false** 表示这个 Comsumer 不接受图像帧，ImageSource 将不会再调用 Consume 函数。 |当 **CanConsume** 返回 **false** 时不能释放 （Release）图像帧，返回 **false** 表示一个 **Consumer** 没有对这一帧图形进行消费。|
-| Consume | 用来消费图像帧。参数说明: **SourceInfo** 图像的高、宽、格式等信息, **Texture**：图像帧的指针，包含图像数据（字节数组）。 |:bangbang:**注意**: 实现 **Consume** 函数不能使用同步模式，堵塞当前线程将导致其他 Consumer 得不到图像帧。|
+| CanConsume | 返回一个值，当为 **true** 时，表示可以消费图像帧，ImageSource 将会回调 Consume 函数，如果为 **false** 表示这个 Comsumer 不接受图像帧，ImageSource 将不会再调用 Consume 函数。 | 不再需要消费图像时，可以返回 **false**，达到 "关闭"的功能。|
+| Consume | 用来消费图像帧。参数说明: **SourceInfo** 图像的高、宽、格式等信息, **Texture**：图像帧的指针，包含图像数据（字节数组）。 |:bangbang:**注意**: <br/>实现 **Consume** 函数不能使用同步模式，堵塞当前线程将导致其他 Consumer 得不到图像帧。<br/>当 **Consume** 返回 **false** 时不能释放 （Release）图像帧，返回 **false** 表示一个 **Consumer** 没有对这一帧图形进行消费。|
 
-> **SourceInfo** 和 **Texture** 都是只读的，你只能读取，不可以修改。
+> **SourceInfo** 和 **Texture** 都是只读的，你只能读取，不可以修改。   
+> **SourceInfo** 存储帧信息，**Texture** 存储帧数据。
 
 **SourceInfo** 结构
 
@@ -85,7 +86,7 @@ struct FImageSourceInfo
 
 |属性|说明 |
 |----|----|
-| Width | 图像大小 (像素) |
+| Width | 图像宽度 (像素) |
 | Height | 图像高度 (像素) |
 | WidthStep | 行数据跨度，（可以不考虑字节对齐，**MediaPipe4U** 中的所有 ImageSource 都没有字节对齐）你可以简单认为 WidthStep = Wdith * NumOfChannels |
 | Format | 格式，因为要兼容 UE，目前 **MediaPipe4U** 只有 RBGA 和 BGRA 两种格式，但是枚举中定义了 mediapipe 支持的所有格式。 | 
