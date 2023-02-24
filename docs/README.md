@@ -11,7 +11,7 @@
 
 - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgCcELSM7J4b9xDR?e=KPQOkG)(2023-02-10)
 
-- [奶牛快传](https://cowtransfer.com/s/19912856153a45) (2023-02-10)
+- [奶牛快传](https://cowtransfer.com/s/d0ceafe0d2cb41) (2023-02-23)
 
 > Bug fix 版本, 可以优先使用，解决网络模式下崩溃问题，增强了稳定性，未详细测试，如果有问题请回退到 **2023-02-10**
 > - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgEz6gu8FCr7ibot?e=x79QpF) (2023-02-12)   

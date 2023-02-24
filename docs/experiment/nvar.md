@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# Nvidia Maxine AR
+# NvAR 表情捕捉
 
 如果你拥有 Nvidia RTX 20XX 或更高级的 GPU，**MediaPipe4UNvAR** 能够帮助你获得一个可以和苹果 Arkit 媲美的表情捕捉方案。    
 
