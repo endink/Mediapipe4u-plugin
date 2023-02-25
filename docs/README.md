@@ -9,13 +9,9 @@
 
 **下载地址**   
 
-- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgCcELSM7J4b9xDR?e=KPQOkG)(2023-02-10)
+- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgQUnM8l4gOrrHyu?e=NJ8lyd)(2023-02-25)
 
-- [奶牛快传](https://cowtransfer.com/s/d0ceafe0d2cb41) (2023-02-23)
-
-> Bug fix 版本, 可以优先使用，解决网络模式下崩溃问题，增强了稳定性，未详细测试，如果有问题请回退到 **2023-02-10**
-> - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgEz6gu8FCr7ibot?e=x79QpF) (2023-02-12)   
-> - [奶牛快传](https://cowtransfer.com/s/2d9013b4330d44) (2023-02-12)      
+- [奶牛快传](https://cowtransfer.com/s/d7251cf7109f46) (2023-02-25)
 
 
 **Demo Project**   
@@ -66,6 +62,15 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
 ## 更新日志
+
+### 2023-02-12
+
+- [new] 加入了指标统计，可以通过 Stat 查看关键性能数据
+- [new] 支持获取图像源的 FPS，方便排查性能问题 
+- [new] IK 驱动模式，方便集成 ControlRig (<mark>实验性</mark>)
+- [imporve] 移除 protobuf 依赖，避免使用 protobuf 的项目打包出现冲突
+- [imporve] 优先摄像头 RBG 编码，某些摄像头默认 YUV 编码时帧率过低
+- [fix] 编辑器中强行退出游戏可能导致崩溃
 
 ### 2023-02-12
 
