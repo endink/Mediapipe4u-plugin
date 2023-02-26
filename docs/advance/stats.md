@@ -8,9 +8,15 @@ sort: 100
 
 ## MediaPipe 统计数据
 
-你可以在 UE Editor 中通过命令 stat mediapie 来打开 **MediaPipe4U** 的统计面板。
+你可以在 UE Editor 的 View Port 菜单中打开 **MediaPipe4U** 的统计面板。   
 
-[![动画蓝图节点](./images/stats.jpg "Shiprock")](./images/stats.jpg)   
+[![统计](./images/stats_menu.jpg "Shiprock")](./images/stats_menu.jpg)   
+
+>也可以使用命令：
+> - stat mediapie
+> - stat nvar
+
+[![统计](./images/stats.jpg "Shiprock")](./images/stats.jpg)   
 
 
 **关键性能**
