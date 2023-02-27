@@ -9,11 +9,10 @@
 
 **下载地址**   
 
-<!-- - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgQUnM8l4gOrrHyu?e=NJ8lyd)(2023-02-25)
+- [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgWrCryGWYDK1SJj?e=7KUhai) (2023-02-27)
 
-- [奶牛快传](https://cowtransfer.com/s/d7251cf7109f46) (2023-02-25) -->
+- [奶牛快传](https://cowtransfer.com/s/148d44d7d7bb48) (2023-02-27)
 
-Please wait...
 
 
 **Demo Project**   
@@ -65,9 +64,16 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 ## 更新日志
 
+### 2023-02-27
+
+- [new] NvAR 统计数据加入（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/advance/stats.html)）
+- [imporve] GStreamer 升级到 1.22.0 （如果出现 GStreamer 相关编译错误，请重新安装 GStreamer Runtime 和 SDK）
+- [fix] :boom::punch::punch::punch: 修复 MediaPipe NvAR 史诗级 BUG，随着启停次数增加，NvAR 帧率逐渐下降 (<mark>如果你使用了 MediaPipe4UNvAR , 必须更新此版本！！！</mark>)
+- [fix] 修复 0225 版本编译错误
+
 ### 2023-02-25
 
-- [new] 加入了指标统计，可以通过 Stat 查看关键性能数据
+- [new] 加入了指标统计，可以通过 Stat 查看关键性能数据 （[文档](https://opensource.labijie.com/Mediapipe4u-plugin/advance/stats.html)）
 - [new] 支持获取图像源的 FPS，方便排查性能问题 
 - [new] IK 驱动模式，方便集成 ControlRig (<mark>实验性</mark>)
 - [imporve] 移除 protobuf 依赖，避免使用 protobuf 的项目打包出现冲突
