@@ -12,7 +12,7 @@
 
 - [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
-**下载地址**   
+## 下载地址   
 
 - **Unreal Engine 5.0**
 
@@ -47,12 +47,12 @@
 
 ---   
 
-**问题反馈**   
+## 问题反馈
 
 如果你遇到问题，请优先查看 [FAQ](./faq)，这里整理了许多网友遇到的问题，或许也是你遇到的问题，如果 FAQ 中找到不到，优先使用 github 提交 issue, 私信可能会导致问题被我遗忘。
 
 ---
-## 性能表现：
+## 性能
 
 由于 MediaPipe Windows 版本不支持 GPU 推理，Windows 依靠 CPU 完成人形姿态预测（具体信息参考 MediaPipe）：
 
