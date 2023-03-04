@@ -4,7 +4,7 @@
 
 ## 文档
 
-- [中文](https://opensource.labijie.com/Mediapipe4u-plugin/)   
+- [简体中文](https://opensource.labijie.com/Mediapipe4u-plugin/)   
 
 - [English (sorry it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sch=http&_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
