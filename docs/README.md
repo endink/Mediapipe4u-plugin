@@ -22,16 +22,12 @@
 
 - **Unreal Engine 5.1**
 
-  - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgbVFvNhEBsnLlvY?e=j5DBW9) (2023-02-27)
+  - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgfAYlgezBGy3_tO?e=hc2qW9) (2023-03-09)
 
-  - [奶牛快传](https://cowtransfer.com/s/51b7a57d8b2144) (2023-02-27)   
+  - [奶牛快传](https://cowtransfer.com/s/698fcaf82a254d) (2023-03-09)   
 
 > Compatible with Unreal Engine 5.1.x is a preview release, please use it carefully for production environments.
   
-
-<mark>注意：</mark>
-
-:red_circle: Unreal 5.1 版本暂不包含 **NvAR** 功能，这是由于 NvAR 代码在 UE 5.1 编译后出现错误, 原因暂未查明，已反馈给 Nvidia，详细信息请看 [issue #26](https://github.com/endink/Mediapipe4u-plugin/issues/26)
 
 
 **Demo Project**   
@@ -82,6 +78,9 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
 ## 更新日志
+
+### 2023-03-09
+- [new] Unreal Engine 5.1 版本加入 NvAR 表情捕捉支持
 
 ### 2023-02-27
 
