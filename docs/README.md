@@ -28,7 +28,8 @@
 
 > Compatible with Unreal Engine 5.1.x is a preview release, please use it carefully for production environments.
   
-
+> 插件由于采用预编译，包含大量 C++ 链接符号和调试符号，解压后会占用 **5G** 磁盘空间（大部分为 Intermediate 中的 UE 生成代码）
+> 你不需要担心磁盘占用问题，这只是开发期间的磁盘占用，在项目打包后，插件磁盘占用大约是 **200M**（主要为 GStreamer 动态库）
 
 **Demo Project**   
 - https://github.com/endink/MediaPipe4U-Demo  
