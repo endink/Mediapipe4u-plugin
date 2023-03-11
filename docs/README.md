@@ -22,9 +22,9 @@
 
 - **Unreal Engine 5.1**
 
-  - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgfAYlgezBGy3_tO?e=hc2qW9) (2023-03-09)
+  - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgibw3mJ9vC1kfwl?e=BDsqXt) (2023-03-11)
 
-  - [奶牛快传](https://cowtransfer.com/s/698fcaf82a254d) (2023-03-09)   
+  - [奶牛快传](https://cowtransfer.com/s/57864613496641) (2023-03-11)   
 
 > Compatible with Unreal Engine 5.1.x is a preview release, please use it carefully for production environments.
   
@@ -79,6 +79,9 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
 ## 更新日志
+
+### 2023-03-11
+- [fix] Unreal Engine 5.1 打包后启动程序死锁（卡住，Blocking）
 
 ### 2023-03-09
 - [new] Unreal Engine 5.1 版本加入 NvAR 表情捕捉支持
