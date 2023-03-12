@@ -13,8 +13,7 @@ body:
     id: m4uver
     attributes:
       label: MediaPipe4U Version
-      description: Which version of MediaPipe4U you used.
-      placeholder: 20230311
+      placeholder: Which version of MediaPipe4U you used.
     validations:
       required: true
   - type: dropdown
