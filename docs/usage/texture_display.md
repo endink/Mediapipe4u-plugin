@@ -7,6 +7,8 @@ sort: 8
 
 [![image callback](./images/texture_callback.jpg "Shiprock")](images/texture_callback.jpg)
 
+## 回调事件
+
 **UMediaPipeHolisticComponent** 组件上提供了 OnVideoTextureCreated 事件，通过绑定该事件，你可以得到一个 Texture2D 对象，使用它来渲染。
 
 > 视频动补、图片动补和摄像头动补均可以使用该事件。
@@ -60,3 +62,15 @@ static bool UMediaPipeUtils::SetTextureToImage(UImage* Image, UTexture2D* Textur
 >TopCenter: 上方中央   
 >BottomCenter: 下方中央   
 >MiddleCenter: 正中
+
+# 回显模式
+
+通过设置 **UMediaPipeHolisticComponent** 的 **VideoDisplay** 属性, 你可以控制图像显示风格，可以显示/隐藏用于分析动补数据的装饰线条。   
+
+
+[![DisplayMode](./images/video_display_mode_component.jpg "DisplayMode")](images/video_display_mode_component.jpg)
+
+下面是不同的 VideoDisplay 值产生的显示效果：
+
+
+[![DisplayMode](./images/video_display_mode.jpg "DisplayMode")](images/video_display_mode.jpg)

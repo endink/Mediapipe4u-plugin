@@ -2,13 +2,19 @@
 sort: 4
 ---
 
-# 镜像/翻转/旋转视频流
+# 镜像/翻转视频流
 
-翻转视频流有两个概念：
+某些情况情况下，你的视频流可能产生画面左右颠倒的情况，或者你希望通过颠倒画面产生不同的动补算解效果，
+你可以通过设置 **UMediaPipeHolisticComponent** 的 **SourceHorizontalFlip** 属性来水平翻转图像。   
 
-1. 在 MediaPipe 工作流中翻转帧（这或许应该叫镜像动画）
-2. 翻转一个图像源（ImageSource）
+[![Video Flip](./images/video_flip.jpg "Video Flip")](images/video_flip.jpg)
 
-总的来说,应该优先通过 ImageSource 来翻转，当前版本中，目前只有 **CameraImageSource** （摄像头视频源） 具有翻转功能，后续会对视频提供翻转支持。
+**注意** : 并不是所有的图像源（Image Source）都支持翻转操作，下面的图像源翻转操作的支持情况：    
+
+|图像源| 图像源说明 |水平翻转支持|
+|--------|------|--------|
+| WebcamImageSource | 摄像头 | Yes |
+| GStreamerImageSource | 视频流 | No |
+| StaticImageSource | 图片 | No |
 
 
