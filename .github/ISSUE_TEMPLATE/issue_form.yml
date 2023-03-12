@@ -25,6 +25,16 @@ body:
         - 5.1.x
     validations:
       required: true
+  - type: dropdown
+    id: uetype
+    attributes:
+      label: UnrealEngine Type
+      description: Which type of Unreal Engine you used.
+      options:
+        - Install From Epic Games Launcher 
+        - Compiled From Source Code
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
