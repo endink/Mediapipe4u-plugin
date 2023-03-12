@@ -12,7 +12,7 @@ body:
     id: m4uver
     attributes:
       label: MediaPipe4U Version
-      placeholder: Which version of MediaPipe4U you used.
+      placeholder: Which version of MediaPipe4U you used, for example, 20230311.
     validations:
       required: true
   - type: dropdown
@@ -29,7 +29,7 @@ body:
     id: uetype
     attributes:
       label: UnrealEngine Type
-      description: Which type of Unreal Engine you used.
+      description: Which type of Unreal Engine you used, very important for some issues.
       options:
         - Install From Epic Games Launcher 
         - Compiled From Source Code
