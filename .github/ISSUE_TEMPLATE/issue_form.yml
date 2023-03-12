@@ -39,7 +39,7 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
+      description: If possible, drag and drop files into the input box to upload upload log files, screenshots, etc. to help me quickly locate the issue.
       placeholder: Tell us what you see!
     validations:
       required: true
