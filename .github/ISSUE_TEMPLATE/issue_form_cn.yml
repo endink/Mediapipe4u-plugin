@@ -26,6 +26,16 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: uetype
+    attributes:
+      label: UnrealEngine 类型
+      description: 你的虚幻引擎类型，对于某些问题，非常重要
+      options:
+        - Launcher
+        - 源码编译
+    validations:
+      required: true
+  - type: dropdown
     id: category
     attributes:
       label: 问题类型
