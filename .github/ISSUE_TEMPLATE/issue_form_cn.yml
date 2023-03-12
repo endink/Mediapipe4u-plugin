@@ -1,0 +1,35 @@
+name: 提交问题
+description: 提交错误
+title: "[Bug]:"
+assignees:
+  - endink
+body:
+  - type: markdown
+    attributes:
+      value: |
+         感谢你报告关于 MediaPipe4U 的问题，让我们一起提高这个项目的质量!
+  - type: input
+    id: m4uver
+    attributes:
+      label: MediaPipe4U 版本
+      placeholder: 你使用哪个版本的 MediaPipe4U (例如:20230311).
+    validations:
+      required: true
+  - type: dropdown
+    id: ueversion
+    attributes:
+      label: UnrealEngine 版本
+      description: 你使用哪个版本的虚幻引擎
+      options:
+        - 5.0.x
+        - 5.1.x
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 错误详细描述
+      description: 如果可能，请提交日志文件，截图等信息，便于我复现这个错误
+      placeholder: 告诉我发生了什么
+    validations:
+      required: true
