@@ -1,4 +1,4 @@
-name: 提交问题
+name: 错误报告（中文）
 description: 提交错误
 title: "[Bug]:"
 assignees:
@@ -25,11 +25,24 @@ body:
         - 5.1.x
     validations:
       required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类型
+      description: 让我知道你遇到的问题是关于哪个方面
+      options:
+        - 插件安装
+        - 运行错误
+        - 项目打包
+        - 二次开发
+        - 其他
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
       label: 错误详细描述
-      description: 如果可能，请提交日志文件，截图等信息，便于我复现这个错误
+      description: 如果可能，请上传日志文件，截图等信息，拖放这些文件到输入框即可上传，便于我复现这个错误
       placeholder: 告诉我发生了什么
     validations:
       required: true
