@@ -1,6 +1,5 @@
-title: YOUR TITLE
-description: YOUR DESCRIPTION
-theme: just-the-docs
+title: MediaPipe4U Plugin
+description: UnrealEngine 插件，基于 Google MediaPipe 完成单目单目摄像头动作捕捉、表情捕捉
 
 url: https://github.coms/endink/mediapipe4u-plugin
 remote_theme: just-the-docs/just-the-docs
