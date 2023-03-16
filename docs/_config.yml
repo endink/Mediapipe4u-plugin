@@ -3,7 +3,7 @@ description: UnrealEngine 插件，基于 Google MediaPipe 完成单目单目摄
 
 url: https://github.coms/endink/mediapipe4u-plugin
 remote_theme: just-the-docs/just-the-docs
-
+color_scheme: dark
 
 exclude:
   - Makefile
@@ -13,4 +13,9 @@ exclude:
 
 plugins:
   - jekyll-default-layout
+
+nav_external_links:
+  - title: Demo Project
+    url: https://github.com/endink/MediaPipe4U-Demo
+    hide_icon: false # set to true to hide the external link icon - defaults to false
 
