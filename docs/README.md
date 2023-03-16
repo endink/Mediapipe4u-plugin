@@ -12,11 +12,11 @@ title: 首页
 
 - [简体中文](https://opensource.labijie.com/Mediapipe4u-plugin/README.html)   
 
-- [English (sorry it's google translate)](https://opensource.labijie.com/Mediapipe4u-plugin/README.html?_x_tr_sch=http&_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
+- [English (sorry it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/README.html?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
-- [日本語 (申し訳ありませんが、それは単なるGoogle翻訳です)](https://opensource.labijie.com/Mediapipe4u-plugin/README.html?_x_tr_sl=zh-CN&_x_tr_tl=ja&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
+- [日本語 (申し訳ありませんが、それは単なるGoogle翻訳です)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/README.html?_x_tr_sl=zh-CN&_x_tr_tl=ja&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
-- [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource.labijie.com/Mediapipe4u-plugin/README.html?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
+- [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/README.html?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
 ## 下载地址   
 
