@@ -96,6 +96,11 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 ## 更新日志
 
+### 2023-03-16
+- [new] 位置算解节点加入 GroundIK，支持将脚贴合到地面（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/location_solver.html)） 
+- [fix] 动画蓝图切换后资源重复释放 (#30)，问题无法复现，需要等待反馈者测试
+- [fix] BVH 插件骨骼节点索引错误 （#28）
+
 ### 2023-03-11
 - [fix] Unreal Engine 5.1 打包后启动程序死锁（卡住，Blocking）
 
