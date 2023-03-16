@@ -1,5 +1,8 @@
 ---
-sort: 100
+layout: default
+title: 统计数据
+parent: 进阶用法
+nav_order: 100
 ---
 
 # 统计数据（Stat）

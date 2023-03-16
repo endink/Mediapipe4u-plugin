@@ -1,5 +1,8 @@
 ---
-sort: 5
+layout: default
+title: 算解器（C++）
+parent: 进阶用法
+nav_order: 25
 ---
 # 算解器 (C++)
    

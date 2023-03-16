@@ -1,6 +1,10 @@
 ---
-sort: 3
+layout: default
+title: 算解器（蓝图）
+parent: 进阶用法
+nav_order: 20
 ---
+
 # 算解器 (蓝图)
 
 **MediaPipe4U** 运行你在运行时动态调整一些参数，例如平滑、滤波器参数、关节锁定等。   

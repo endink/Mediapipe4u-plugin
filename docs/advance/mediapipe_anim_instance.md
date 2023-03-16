@@ -1,5 +1,8 @@
 ---
-sort: 2
+layout: default
+title: MediaPipeAnimInstance
+parent: 进阶用法
+nav_order: 10
 ---
 
 # MediaPipeAnimInstance

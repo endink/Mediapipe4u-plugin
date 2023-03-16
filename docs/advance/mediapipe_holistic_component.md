@@ -1,5 +1,8 @@
 ---
-sort: 1
+layout: default
+title: MediaPipeHolisticComponent
+parent: 进阶用法
+nav_order: 1
 ---
 
 # MediaPipeHolisticComponent

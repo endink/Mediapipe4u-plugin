@@ -1,5 +1,8 @@
 ---
-sort: 3
+layout: default
+nav_order: 3
+title: 进阶用法
+has_children: true
 ---
 # 进阶用法
 

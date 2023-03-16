@@ -1,5 +1,8 @@
 ---
-sort: 7
+layout: default
+title: 关节扭曲矫正
+parent: 进阶用法
+nav_order: 30
 ---
 
 # 关节扭曲校正

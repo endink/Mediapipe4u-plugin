@@ -1,5 +1,8 @@
 ---
-sort: 8
+layout: default
+title: 切换动画蓝图
+parent: 进阶用法
+nav_order: 50
 ---
 
 # 切换动画蓝图

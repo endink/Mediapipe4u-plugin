@@ -1,5 +1,8 @@
 ---
-sort: 6
+layout: default
+title: 手指矫正
+parent: 进阶用法
+nav_order: 40
 ---
 
 # 手指矫正
