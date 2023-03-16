@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 3
+nav_order: 10
 title: 扩展点
 has_children: true
 ---
