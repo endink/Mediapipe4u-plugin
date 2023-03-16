@@ -2,7 +2,7 @@
 layout: default
 nav_order: 1
 title: 准备动补角色
-parent: 基础用法
+parent: 快速入门
 ---
 
 # 准备动补角色（Character)

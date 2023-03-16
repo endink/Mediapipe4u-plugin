@@ -2,7 +2,7 @@
 layout: default
 nav_order: 60
 title: 动补数据导出
-parent: 基础用法
+parent: 快速入门
 ---
 
 # 动补数据导出 

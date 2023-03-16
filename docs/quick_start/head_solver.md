@@ -2,7 +2,7 @@
 layout: default
 nav_order: 40
 title: 头部算解器
-parent: 基础用法
+parent: 快速入门
 ---
 
 # 头部算解器

@@ -2,7 +2,7 @@
 layout: default
 nav_order: 20
 title: 开始动补
-parent: 基础用法
+parent: 快速入门
 ---
 # 开始动补
 

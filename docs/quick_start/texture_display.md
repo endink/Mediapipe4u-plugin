@@ -2,7 +2,7 @@
 layout: default
 nav_order: 60
 title: 图像回显
-parent: 基础用法
+parent: 快速入门
 ---
 # 回显图像
 

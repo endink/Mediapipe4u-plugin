@@ -2,7 +2,7 @@
 layout: default
 nav_order: 50
 title: 半身/全身动补
-parent: 基础用法
+parent: 快速入门
 ---
 # 半身/全身动补
 

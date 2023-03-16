@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 20
+nav_order: 30
 title: 实验性功能
 has_children: true
 ---
