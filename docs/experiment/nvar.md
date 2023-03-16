@@ -1,5 +1,8 @@
 ---
-sort: 1
+layout: default
+title: 实验性功能
+parent: 进阶用法
+nav_order: 1
 ---
 
 # NvAR 表情捕捉
