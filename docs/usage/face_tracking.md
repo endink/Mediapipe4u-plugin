@@ -1,5 +1,8 @@
 ---
-sort: 5
+layout: default
+nav_order: 30
+title: 表情捕捉
+parent: 基础用法
 ---
 # 表情捕捉
 

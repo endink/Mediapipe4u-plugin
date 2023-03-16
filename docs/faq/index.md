@@ -1,5 +1,8 @@
 ---
-sort: 80
+layout: default
+nav_order: 80
+title: 常见问题
+has_children: false
 ---
 
 # 常见问题
@@ -70,6 +73,3 @@ https://docs.metahuman.unrealengine.com/zh-CN/retargeting-animations-to-a-metahu
 ## 如何选择一个好的摄像头？
 
 要买到一个好的摄像头，很难。对于 **MediaPipe4U** 来说画质并不是太重要，**MediaPipe4U** 可以在很低的分辨率下工作良好， 许多摄像头并不能适应快速运动，它们很容易在录像时产生运动模糊，这对于 **MediaPipe4U** 来说是致命的，不了解摄像头的人很难买到一个好的摄像头，我这里不想为摄像头厂商做广告，你选择摄像头时应该重点关注快门速度而不是画质。
-
-
-{% include list.liquid %}

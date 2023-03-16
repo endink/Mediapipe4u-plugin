@@ -1,5 +1,8 @@
 ---
-sort: 1
+layout: default
+title: ImageConsumer
+parent: 扩展点
+nav_order: 1
 ---
 
 # ImageConsumer

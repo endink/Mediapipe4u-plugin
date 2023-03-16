@@ -1,5 +1,8 @@
 ---
-sort: 2
+layout: default
+nav_order: 15
+title: 自定义骨骼
+parent: 基础用法
 ---
 # 自定义骨骼
 

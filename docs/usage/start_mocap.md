@@ -1,5 +1,8 @@
 ---
-sort: 3
+layout: default
+nav_order: 20
+title: 开始动补
+parent: 基础用法
 ---
 # 开始动补
 

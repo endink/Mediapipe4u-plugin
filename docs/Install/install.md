@@ -1,5 +1,8 @@
 ---
-sort: 2
+layout: default
+nav_order: 10
+title: 安装插件
+parent: 安装和配置
 ---
 
 # 安装插件

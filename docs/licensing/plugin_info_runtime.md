@@ -1,5 +1,8 @@
 ---
-sort: 1
+layout: default
+nav_order: 1
+title: 授权有效期
+parent: 软件授权
 ---
 
 # 查看授权有效期

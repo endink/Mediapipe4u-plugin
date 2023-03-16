@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 实验性功能
-parent: 进阶用法
+title: NvAR 表情捕捉
+parent: 实验性功能
 nav_order: 1
 ---
 

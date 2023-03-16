@@ -1,6 +1,10 @@
 ---
-sort: 2
+layout: default
+nav_order: 2
+title: 基础用法
+has_children: true
 ---
+
 # 基础用法
 
 ## MediaPipe4U 支持的功能：

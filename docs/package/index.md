@@ -1,5 +1,8 @@
 ---
-sort: 20
+layout: default
+nav_order: 30
+title: 打包部署
+has_children: true
 ---
 # 打包部署
 
@@ -33,5 +36,3 @@ Launcher 版引擎构打包不需要特别处理，正常打包即可，文档�
 源码版引擎打包请看这里:   
 
 [源码版引擎打包](./source_engine_package.md)
-
-{% include list.liquid %}

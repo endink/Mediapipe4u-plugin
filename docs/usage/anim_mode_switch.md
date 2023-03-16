@@ -1,7 +1,9 @@
 ---
-sort: 6
+layout: default
+nav_order: 50
+title: 半身/全身动补
+parent: 基础用法
 ---
-
 # 半身/全身动补
 
 MediaPipe4U 提供了半身动补和全身动补切换，半身动补将锁住盆骨 (Hips 关节) 和下肢 (Legs)。

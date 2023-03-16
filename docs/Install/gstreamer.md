@@ -1,5 +1,8 @@
 ---
-sort: 3
+layout: default
+nav_order: 20
+title: GStreamer 配置
+parent: 安装和配置
 ---
 
 # GStreamer 配置

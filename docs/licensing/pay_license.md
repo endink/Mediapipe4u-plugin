@@ -1,5 +1,8 @@
 ---
-sort: 3
+layout: default
+nav_order: 3
+title: 安装插件
+parent: 软件授权
 ---
 
 # 商业授权

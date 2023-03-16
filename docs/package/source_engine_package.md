@@ -1,7 +1,9 @@
 ---
-sort: 1
+layout: default
+nav_order: 1
+title: 源码版引擎打包
+parent: 打包部署
 ---
-
 # 源码版引擎打包
 
 从 UnrealEngine 源码编译的引擎（以下简称源码版引擎），打包和普通项目有一定差异，可以遵循以下步骤：

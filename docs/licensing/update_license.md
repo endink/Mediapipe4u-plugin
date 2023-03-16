@@ -1,7 +1,9 @@
 ---
-sort: 2
+layout: default
+nav_order: 2
+title: 更新许可证
+parent: 软件授权
 ---
-
 # 如何更新许可证
 
 你需要停止软件，然后打开插件目录，覆盖已有的许可证文件。
