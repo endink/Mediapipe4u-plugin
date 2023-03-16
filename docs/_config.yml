@@ -3,7 +3,7 @@ description: UnrealEngine 插件，基于 Google MediaPipe 完成单目单目摄
 
 url: https://github.coms/endink/mediapipe4u-plugin
 remote_theme: just-the-docs/just-the-docs
-color_scheme: dark
+# color_scheme: dark
 
 exclude:
   - Makefile
