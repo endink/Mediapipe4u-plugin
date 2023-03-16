@@ -19,3 +19,18 @@ nav_external_links:
     url: https://github.com/endink/MediaPipe4U-Demo
     hide_icon: false # set to true to hide the external link icon - defaults to false
 
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
