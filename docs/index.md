@@ -18,7 +18,6 @@ description: "MediaPipe4U Document Site"
 - 面容表情捕捉
 - 角色移动
 - 动画数据导出（BVH）
-- 通过摄像头
 - 从摄像头捕获
 - 从视频（mp4）捕获
 - 从图片（jpg,png）捕获
