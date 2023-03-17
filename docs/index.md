@@ -3,7 +3,6 @@ layout: default
 title: 首页
 nav_order: 1
 description: "MediaPipe4U Document Site"
-permalink: /
 ---
 
 # MediaPipe4U 简介
