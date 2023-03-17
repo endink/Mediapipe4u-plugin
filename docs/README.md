@@ -1,9 +1,3 @@
----
-layout: default
-nav_order: 0
-title: 首页
----
-
 # Mediapipe4U 插件
 
 基于 MediaPipe 的 UnrealEngine 动作捕捉插件。 

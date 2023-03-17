@@ -2,6 +2,7 @@ title: MediaPipe4U
 description: UnrealEngine 插件，基于 Google MediaPipe 完成单目单目摄像头动作捕捉、表情捕捉
 
 url: https://opensource.labijie.com
+baseurl: "/mediapipe4u-plugin"
 repository: endink/mediaipe4u-plugin # for github-metadata
 remote_theme: just-the-docs/just-the-docs
 # color_scheme: dark
