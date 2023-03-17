@@ -90,10 +90,12 @@ public class MyProjectTarget : TargetRules
 }
 ```
 
-确保你的 **LinkType** 不是 **TargetLinkType.Modular**，**MediaPipe4U** 不支持 **Modular** 编译
+确保你的 **LinkType** 不是 **TargetLinkType.Modular**，**MediaPipe4U** 不支持 **Modular** 编译。   
 
-> LinkType = TargetLinkType.Default; 这行不是必须的，默认是 **Default**。
-> LinkType = TargetLinkType.Monolithic 也是可以的，但是不能是 **Modular** 。
+
+{: .note }
+> LinkType = TargetLinkType.Default; 这行不是必须的，默认是 **Default**。   
+> LinkType = TargetLinkType.Monolithic 也是可以的，但是不能是 **Modular** 。   
 
 ---   
 

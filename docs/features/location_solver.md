@@ -33,9 +33,9 @@ MediaPipe4U 使用一个专门的动画蓝图节点，从动补数据中计算�
 |LockVerticalMove    | false | 当为 **true** 时，将阻止角色进行垂直（上，下）方向的位移。 |
 |LockForwardMove     | false | 当为 **true** 时，将阻止角色进行前后位移。 |
 |CalibrateCountdownSeconds | 5（秒） | 将在开始动补后 X 秒内进行位置校准。 |
-|bUseGroundIK | true | 是否使用地表 IK，关于地表 IK，下面的小节将详细介绍。 |
-| Speed | 0.5 | 预估的视频中人物和相机之间的距离变化的速度（人物远，近），这将影响人物深度信息的计算。 |
-| MovementScale | Vector(1,1,1) | 用于放大（缩小）三个轴向上的位移效果。通常，角色朝向 Y 轴时，X 表示水平方向，Y 表示前后方向，Z 表示垂直方向。 |
+|UseGroundIK | true | 是否使用地表 IK，关于地表 IK，下面的小节将详细介绍。 |
+|Speed | 0.5 | 预估的视频中人物和相机之间的距离变化的速度（人物远，近），这将影响人物深度信息的计算。 |
+|MovementScale | Vector(1,1,1) | 用于放大（缩小）三个轴向上的位移效果。通常，角色朝向 Y 轴时，X 表示水平方向，Y 表示前后方向，Z 表示垂直方向。 |
 
 
 ## 位置校准 (Calibration)
@@ -62,12 +62,13 @@ MediaPipe4U 使用一个专门的动画蓝图节点，从动补数据中计算�
 
 > Ground IK 工作原理：
 > - Ground IK 通过向地面发出射线 (Ray Trace)
-> - 通过射线计算脚离地面的距离
-> - 通过推动角色的盆骨（Hips）消除距离
-> - 计算腿的骨骼链来让姿态自然
+> - 从脚的骨骼射线计算脚离地面的距离
+> - 推动角色的盆骨（Hips）消除距离
+> - 调整腿的骨骼链来让姿态自然
 
 {: .warning }
-由于 Ground IK 通过射线检测（Ray Trace）地面，你需要确保从腿部发出的射线除了地面外不回产生任何碰撞。可以通过单独建立碰撞通道（Collision Channel）来忽略除了地板外的所有碰撞体。
+由于 Ground IK 通过射线检测（Ray Trace）地面，需要确保从腿部发出的射线除了地面外不会产生任何碰撞。可以通过单独建立碰撞通道（Collision Channel）来忽略除了地板外的所有碰撞体。
+因特别注意，Character 的胶囊碰撞体也应该被忽略。   
 关于如何使用碰撞通道，请参考 UnrealEngine 官方文档。
 
 
@@ -77,7 +78,7 @@ MediaPipe4U 使用一个专门的动画蓝图节点，从动补数据中计算�
 [![Ground IK](./images/location_node_detail_ground.jpg "Ground IK")](./images/location_node_detail_ground.jpg)
 
 **CollisionChannel**     
-射线检测的碰撞通道，确保脚部发出的射线只与地面碰撞   
+射线检测的碰撞通道，确保从脚发出的射线只与地面碰撞   
 
 **HipsRotationMultiplier**  
 推动盆骨过程中如果法线偏移，轻微的旋转盆骨，该属性控制旋转的倍数
