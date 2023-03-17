@@ -13,7 +13,6 @@ exclude:
   - Gemfile.lock
 
 plugins:
-  - jemoji
   - jekyll-default-layout
   - jekyll-spaceship
 
