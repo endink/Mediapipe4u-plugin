@@ -16,14 +16,8 @@ has_children: true
 
 | Project | License | 项目链接 |
 |---------| --------| ---------|
-| MediaPipe | Apache 2.0  | [https://github.com/google/mediapipe](https://github.com/google/mediapipe) |
+| Google MediaPipe | Apache 2.0  | [https://github.com/google/mediapipe](https://github.com/google/mediapipe) |
 | Crypto++ | Boost 1.0  | [https://github.com/weidai11/cryptopp](https://github.com/weidai11/cryptopp) |
 | GStreamer | LGPL  | [https://gstreamer.freedesktop.org/](https://gstreamer.freedesktop.org/) |
 
-
 ---   
-
-
-## 运行时获取插件授权信息
-
-**UMediaPipeUtils** 的 **PluginInfo** 函数可以获取到插件信息，其中包含了有授权有效期信息
