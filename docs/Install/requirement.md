@@ -18,7 +18,8 @@ parent: 安装和配置
 |Unreal Engine |5.0.x, 5.1.x|
 
 {: .warning}
-> **MediaPipe4U** 不支持移动平台（手机端）和 Mac 平台。
+> **MediaPipe4U** 不支持移动平台（手机端）和 Mac 平台。   
+>  **MediaPipe4U** 不支 x86 平台。
 
 |硬件|版本|
 |--------|--------------|
