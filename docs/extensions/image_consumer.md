@@ -19,6 +19,7 @@ nav_order: 1
 从图中可以看出，所有的 **ImageConsumer** 都消费**同一帧**图像，并且，他们是**串行**运行的（顺序执行），这是为了让底层的线程管理变得简单，同时可以减少内存复制。
 由于这样的设计，在实现 **ImageConsumer** 时就要求 **ImageConsumer** :heavy_exclamation_mark:不能同步消费图片，同步消费将堵塞下一个 Consumer 接收帧。
 
+{: .highlight }
 >推荐的 **ImageConsumer** 的简单实现模式：缓冲一个队列，当帧到来时只是简单的将其入队 (Enqueue)，然后通过开启后台线程循环消费队列（Dequeue），或者在UE组件的 Tick
 事件中消费缓冲队列中的帧。
 
@@ -33,11 +34,13 @@ nav_order: 1
 实时上，**ImageSource** 内部维护着一个帧对象池，这实际是一个内存池, 当所有的消费者消费完成时，这一帧数据将重新回到池中，帧的内存可以被反复使用从而降低频繁分配和释放内存的开销。
 池中还有其他的空闲帧内存时，就不用担心因为某个 **ImageSource** 消费过慢而影响其他 **ImageConsumer**，**ImageConsumer** 之间可以并行处理互不干扰。
 
+{: .warning }
 > 如果一个 **ImageConsumer** 拿到图像帧长期不消费（没有 Release），**ImageSource** 帧对象池就会被填满，导致 **ImageSource** 无空闲内存可用，从而不再分发图像帧。
 
 **释放**
 
-要让一个图像帧可以重新回到对象池（内存池），只需要在 **ImageConsumer** 完成它的工作后调用帧对象 （IMediaPipeTexture）的 **Release** 函数即可。
+要让一个图像帧可以重新回到对象池（内存池），只需要在 **ImageConsumer** 完成它的工作后调用帧对象 （IMediaPipeTexture）的 **Release** 函数即可。   
+
 > 背后原理：**ImageSource** 对每一个图像帧都维护着一个引用计数，它非常像 C++ 的 shared ptr 设计，但是这是 MediaPipe4U 自己实现的，并不使用 C++ 智能指针。
    
 
@@ -104,7 +107,7 @@ struct FImageSourceInfo
 
 **IMediaPipeTexture 接口**
 
-**MediaPipe4U** 设计了一个简单的图片数据接口，兼容绝大多数流行的图片处理库（内部已经集成了 GStreamer, OpenCV, NvImage），方便转换到各种第三方库的图片数据结构。
+**IMediaPipeTexture** 是一个简单的图片数据接口，兼容绝大多数流行的图片处理库（内部已经集成了 GStreamer, OpenCV, NvImage），方便转换到各种第三方库的图片数据结构。
 
 ```cpp
 
@@ -150,7 +153,8 @@ FImageWorkflow::Get().UnregisterConsumer(yourInstance);
 
 > 你也可以让这个实例的 **CanConsume** 返回 **false**, 来达到让它"停止工作"的目的。   
 
-**注意：** 如果一个 Consumer 不需要消费图像帧时候，强烈建议建议注销或者让它“停止工作”，这样可以提高程序的性能。
+{: .warning }
+> 如果一个 Consumer 不需要消费图像帧时候，强烈建议建议注销或者让它“停止工作”，这样可以提高程序的性能。
 
 ## 与 UObject 集成
 
@@ -192,8 +196,10 @@ IImageConsumer* ANvARLiveLinkActor::GetImageConsumer()
 }
 ```
 
-**FImageWorkflow** 的 **RegisterConsumer** 和 **UnregisterConsumer** 也接受一个 **IImageConsumerProvider** 进行注册/注销。    
-> 注意：当你使用 IImageConsumerProvider 时你必须非常小心 UE 的 GC，如果你的实现是一个 UComponent，建议你调用 **AddToRoot** 来防止 GC 清理它。
+**FImageWorkflow** 的 **RegisterConsumer** 和 **UnregisterConsumer** 也接受一个 **IImageConsumerProvider** 进行注册/注销。   
+
+{: .warning }
+> 当你使用 IImageConsumerProvider 时你必须非常小心 UE 的 GC，如果你的实现是一个 UComponent，建议你调用 **AddToRoot** 来防止 GC 清理它。
 
 由于 **IImageConsumerProvider** 是 UnrealEngine 接口，不但可以通过 C++ 代码注册，也支持在蓝图中使用 **MediaPipe4U** 提供的蓝图函数库来注册。
 
