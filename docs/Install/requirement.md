@@ -68,7 +68,10 @@ MediaPipe4U 适应任意的角色模型的初始 POSE （例如可以是 T-POSE�
 
 ## 面部驱动（实验性）
 
-<mark>这是一个实验性功能，不保证效果，要求苛刻，不建议使用</mark>
+可以不依赖 Iphone 设备，仅使用普通摄像头来驱动角色的 BlendShape，并且完全兼容 LiveLink 协议，使用它就像和使用 Iphone Arkit 捕捉表情完全一样。 
+
+{: .important}
+> 这是一个实验性功能，驱动的表情数量有限，并且对摄像头角度、光线等要求苛刻，不建议写实风格的角色使用。
 
 面部驱动兼容苹果 Arkit 表情，你的 MorphTarget 名称必须满足苹果命名规范，当然你可以通过 RetargetAsset 来适应任意的名称。
 
