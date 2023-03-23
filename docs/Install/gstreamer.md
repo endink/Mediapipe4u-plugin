@@ -14,7 +14,7 @@ parent: 安装和配置
 > UnrealEngine 中的 MediaPlayer 对于一些 H264 编码的视频文件并不能很好的解码。因此，**MediaPipe4U** 使用
 > GStreamer 作为 MediaPlayer 的理想替代品。实际上，GStreamer 的功能非常强大，它支持各种视频文件、视频流（RTMP/FLV等等），WebRTC等等。
 > 
-> GStreamer 是一个流行的开源库，Nvidia 也用它来开发基于视频的 AI 框架，这是可以可靠的视频处理方案。
+> GStreamer 是一个流行的开源库，Nvidia 也用它来开发基于视频的 AI 框架，它绝对是一个可靠的视频处理方案。
 
 
 ## 下载 GStreamer   
