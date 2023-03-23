@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 3
-title: 安装插件
+title: 商业授权
 parent: 软件授权
 ---
 
