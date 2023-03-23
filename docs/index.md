@@ -11,8 +11,8 @@ description: "MediaPipe4U Document Site"
 实时的驱动 3D 角色（数字化身）。
 > 理论上，**MediaPipe4U** 支持驱动任意的 3D 角色，包括 Mannequin, VRM, Metahuman, ReadyPlayerMe 等。
 
-{: .highlight }
-> **你需要知道** 
+{: .highlight-title }
+> 你需要知道
 >   
 > 虽然你可以免费获得授权文件，但是 **MediaPipe4U** 并不是免费软件。   
 > - 我不会对使用免费授权文件的用户做出任何承诺。包括提供免费的授权文件，将来或许也会改变。   
