@@ -114,3 +114,30 @@ Ground IK 会受到很多参数影响，大多数参数使用默认值是合理�
 
 **FeetVerticalOffset**
 脚垂直方向的偏移量（以厘米为单位），如果模型 IK 计算后脚一直陷入地面或浮空（这或许是建模时脚就和根骨骼不在同一平面），你可以通过这个静态的偏移量修正它，正数表示上推（脚默认陷入地面的情况），负数表示下推（脚浮空的情况）。
+
+## 调试绘制
+
+位置节点的 Ground IK 使用过程中，由于射线碰撞或脚步位置问题可能造成 IK 失败，可以通过打开 "DebugDraw" 来绘制出 GroundIK 求解的关键点来定位问题。
+
+要打开调试绘制，请按以下步骤设置：
+
+1. 动画蓝图中选中位置节点
+2. 细节面板中勾选 **DebugDraw** 属性
+3. 运行程序并开始动作捕捉
+
+[![DebugDraw Enable](./images/location_debug_draw_enable.jpg "DebugDraw Enable")](./images/location_debug_draw_enable.jpg)
+
+{: .warning}
+> 如果动画蓝图（MediaPipeAnimationInstance）类上的 **DebugDraw** 为 false, 即使节点上的 **DebugDraw** 属性为 true, 也不会进行调试绘制。
+
+当动补开始后效果如下：
+
+[![DebugDraw](./images/ground_ik_debug_draw.jpg "DebugDraw")](./images/ground_ik_debug_draw.jpg)
+
+图中标注的含义：
+
+1. 绿色盒子：表示 Ground IK 求解后 Foot 骨骼当前位置。
+2. 蓝色盒子：表示 Ground IK 求解前 Foot 骨骼当前位置。
+3. 红色短线条：表示脚掌平面的水平线，该线条因该平行于地面
+4. 从 Foot 发出的射线： **绿色**表示射线发生了碰撞，**红色**表示没有发生碰撞。
+5. 射线检测的碰撞点：正常情况下这个点应该的地面上。
