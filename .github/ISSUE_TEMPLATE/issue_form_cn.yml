@@ -1,6 +1,6 @@
 name: 错误报告（中文）
 description: 反馈关于 MediaPipe4U 使用过程中遇到的问题
-title: "[Bug]:"
+title: ""
 assignees:
   - endink
 body:
