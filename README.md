@@ -1,6 +1,6 @@
 # Mediapipe4U
 
-MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technology for capturing human motion (inclue body, fingers, face) and puppeteering 3D avatar through webcam, videos, and images in realtime.
+MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technology for capturing human motion (include body, fingers, face) and puppeteering 3D avatar through webcam, videos, and images in realtime.
 
 [简体中文](./README_CN.md)
 
