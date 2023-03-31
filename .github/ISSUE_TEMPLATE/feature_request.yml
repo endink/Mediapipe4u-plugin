@@ -1,0 +1,36 @@
+name: "💡 Feature Request"
+description: Create a new ticket for a new feature request
+labels: [
+  "feature request"
+]
+body:
+  - type: input
+    id: compare
+    attributes:
+      label: comparison product
+      placeholder: Let me know if other products implement this feature.
+    validations:
+      required: false
+  - type: dropdown
+    id: feature_cat
+    attributes:
+      label: Feature Category
+      description: Tell me which aspect of the feature this is about.
+      options:
+        - New Runtime Feature
+        - Packaging
+        - Unreal Editor
+        - Enhancement
+        - Blueprint Support
+        - Others
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want
+      description: Describe this feature clearly and let me guide whether I can implement it.
+      placeholder: Describe this feature
+    validations:
+      required: true
+
