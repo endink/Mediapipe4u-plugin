@@ -7,7 +7,7 @@ body:
   - type: input
     id: compare
     attributes:
-      label: comparison product
+      label: Comparison Product
       placeholder: Let me know if other products implement this feature.
     validations:
       required: false
@@ -28,7 +28,7 @@ body:
   - type: textarea
     id: what
     attributes:
-      label: What do you want
+      label: Feature Description
       description: Describe this feature clearly and let me guide whether I can implement it.
       placeholder: Describe this feature
     validations:
