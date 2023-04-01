@@ -84,7 +84,7 @@ MediaPipeFaceLinkActor 通过 Face Solution 支持不同的算法，因为某些
   
 > 目前来说 NvAR 方案精度高于 MediaPipe。
 
-{: important}
+{:.important}
 > 当 MediaPipe4U 动作捕捉开始以后，虽然你可以设置 FaceSolution，但是它并不会生效，必须停止动作捕捉再启动才能切换方案。简单来说，FaceSolution 不能 mediapipe 运行过程中切换。
 
 你可以通过蓝图库 MediaPipeLiveLinkBlueprintLibrary 中的函数 **ListFaceSolutions** 列出当前可用的方案：
@@ -102,7 +102,7 @@ MediaPipeFaceLinkActor 可以按面容的不同区域来平滑表情，主要通
 **SmoothParams** 属性如下：   
 | 属性 | 说明 |
 |:----- |:----|
-| Iterations | 平滑算法迭代次数，主要用来消除抖动，数值越大，抖动越少，但是对表情的敏感度也会越低。 |
+| Iterations     | 平滑算法迭代次数，主要用来消除抖动，数值越大，抖动越少，但是对表情的敏感度也会越低。 |
 | EyesSmooth     | 眼睛区域的 BS 平滑度，0.0 - 1.0, 数值约大，平滑度越高。 |
 | EyeBallsSmooth | 眼球区域的 BS 平滑度，0.0 - 1.0, 数值约大，平滑度越高。 |
 | BrownSmooth    | 眉毛区域的 BS 平滑度，0.0 - 1.0, 数值约大，平滑度越高。 |
@@ -138,7 +138,7 @@ MediaPipeFaceLinkActor 不支持手动启动/停止，而是自动跟随 mediapi
 
 [![PerformCalibration](./images/live_link_perform_calibration.jpg "PerformCalibration")](./images/live_link_perform_calibration.jpg)
 
-{: warning}
+{: .warning}
 > **PerformCalibration** 是一个异步函数，调用结束时面容并不会理解被校准，它需要等待下一帧 blend shapes 数据才能完成校准, 完成校准后会通过 **OnFaceCalibrated** 事件来
 > 通知应用程序。   
 >
@@ -151,7 +151,7 @@ MediaPipeFaceLinkActor 不支持手动启动/停止，而是自动跟随 mediapi
 如果你希望使用上次的校准数据（虽然并不推荐这样做）来校准面容，你也可以使用 **PerformCalibrationImmediately** 函数通过传递一个帧数据来立即校准。
 PerformCalibrationImmediately 函数不关心 mediapipe 是否正在运行，因此你可以在任何时候校准面容。
 
-{: warning}
+{: .warning}
 > 虽然你可以在任何情况下使用 PerformCalibrationImmediately 函数，但是你必须确保你将要校准的 Face Solution 和用来校准的帧数据是相同的 Face Solution，你应该注意下面的问题：    
 > 1. 由于 **MediaPipeFaceLinkActor** 存在自动降级行为，要获取实际正在使用的 FaceSolution， 你不能通过 **FaceSolution** 来获取，而应该使用 **GetActualFaceSolution**
 > 函数来获取正在运行的方案。
