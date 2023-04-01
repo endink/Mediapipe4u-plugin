@@ -2,7 +2,7 @@
 
 MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technology for capturing human motion (include body, fingers, face) and puppeteering 3D avatar through webcam, videos, and images in realtime.
 
-[简体中文](./README_CN.md)
+[中文页面](./README_CN.md)
 
 ## Docment
 
@@ -18,8 +18,8 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [cowtransfer (China)](https://cowtransfer.com/s/67550e0a47c94c) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzgnukXwh-G34dm3W?e=2eOWEr) | 2023-03-16 |
-| UE 5.1 | [cowtransfer (China)](https://cowtransfer.com/s/fc820570589544) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzgqGxF0e7tFHdHCb?e=stAFwP) | 2023-03-16 |
+| UE 5.0 | [cowtransfer (China)](https://cowtransfer.com/s/e7711d7ab2dd48) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzgxonQa0ml_PuFzU?e=Cnydei) | 2023-04-01 |
+| UE 5.1 | [cowtransfer (China)](https://cowtransfer.com/s/8f1f181a691f47) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzguazsZnaIwpCASw?e=zi0jWF) | 2023-04-01 |
   
 
 
@@ -89,7 +89,7 @@ CPU usage：20% (Based on DEMO project)
 ## Update History (Chinese)
 
 ### 2023-04-01
-- [new] 全新的 MediaPipe BlendShapes 求解器，不依赖 Nvidia GPU，兼容苹果 51 个 Arkit 表情 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/face_link_actor.html)。
+- [new] 全新的 MediaPipe BlendShapes 求解器，不依赖 Nvidia GPU，兼容苹果 51 个 Arkit 表情 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/face_link_actor.html))。
 - [new] MediaPipe4U 的 LiveLink 统一成全新的 MediaPipeFaceLinkActor（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/location_solver.html)），支持在 MediaPipe/NvAR 算法切换，可以自动降级算法。 
 - [new] 全新的面容校准（Face Calibration）算法。
 - [new] 动态 MediaPipe Graph 构造支持，支持切换装饰线条显示风格，Pose/Holistic/Face 之间切换。
