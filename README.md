@@ -88,6 +88,22 @@ CPU usage：20% (Based on DEMO project)
 
 ## Update History (Chinese)
 
+### 2023-04-01
+- [new] 全新的 MediaPipe BlendShapes 求解器，不依赖 Nvidia GPU，兼容苹果 51 个 Arkit 表情。
+- [new] MediaPipe4U 的 LiveLink 统一成全新的 MediaPipeFaceLinkActor（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/location_solver.html)），支持在 MediaPipe/NvAR 算法切换，可以自动降级算法。 
+- [new] 全新的面容校准（Face Calibration）算法。
+- [new] 动态 MediaPipe Graph 构造支持，支持切换装饰线条显示风格，Pose/Holistic/Face 之间切换。
+- [new] 位置校准倒计时读秒蓝图支持，方便集成校准 UI (请下载最新的 Demo Project 查看)。
+- [new] GStreamer 使用[GStreamer uridecodebin](https://gstreamer.freedesktop.org/documentation/playback/uridecodebin.html)工作流，支持从 HTTP/RTSP/RMTP/M3U8 等网络协议中解析视频流（#37）。
+- [improve] Pose Solver 优化（Optimization）加入膝盖极像矫正。
+- [improve] GStreamer 显示警告信息，更容易定位产生错误的原因。
+- [improve] MediaPipe 更新到 0.9.2，TFLite 模型更新到最新。
+- [improve] MediaPipe/NvAr 连接库不再使用嵌入 CRT。
+- [improve] MediaPipe/NvAr 中的 OpenCV 支持 Highgui，方便图形调试。
+- [fix] 某些视频文件在缩放时产生异常（#43）。
+- [fix] StaticImageSource 可能引发图片未释放的警告。
+- [fix] GStreamer 出现错误不会自动关闭 Pipline, 从而导致下次启动异常。
+
 ### 2023-03-16
 - [new] 位置算解节点加入 GroundIK，支持将脚贴合到地面（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/location_solver.html)） 
 - [fix] 动画蓝图切换后资源重复释放 (#30)，问题无法复现，需要等待反馈者测试

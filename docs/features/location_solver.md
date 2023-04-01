@@ -2,7 +2,7 @@
 layout: default
 title: 位置算解节点
 parent: 核心功能
-nav_order: 30
+nav_order: 20
 ---
 
 # 位置算解节点
