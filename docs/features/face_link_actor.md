@@ -41,15 +41,9 @@ FaceLinkActor 属性很少，就像 Live Link Face App 一样，表情捕捉本�
 [![FaceLink properties](./images/live_link_actor_detals.jpg "FaceLink properties")](./images/live_link_actor_detals.jpg)
 
 **FaceSolution**    
-FaceLinkActor 可以支持在多种 BlendShape (BS) 求解算法中切换，这里把算法当作算解器使用的"方案（solution）"。
+FaceLinkActor 可以支持在多种 BlendShape (BS) 求解算法中切换，这里的每一种算法就是一个方案（Face Solution）"。
 默认使用 MediaPipe 方案，因为它不依赖任何硬件，有着良好的适用性。FaceSolution 表示使用的方案名称。   
 
-支持的 FaceSolution 名称:
-- MediaPipe
-- NvAR (需要 MediaPipe4U NvAR 插件)
-
-{: important}
-> 当 MediaPipe4U 动作捕捉开始以后，虽然你可以设置 FaceSolution，但是它并不会生效，必须停止动作捕捉再启动才能切换方案。简单来说，FaceSolution 不能 mediapipe 运行过程中切换。
    
 **AllowSolutionDegradation**   
 是否允许方案（solution）降级回退，当 FaceSolution 设置为一个不存在的方案名称时候，如果 bAllowSolutionDegradation 属性设置未 **true**，将会回退到 MediaPipe 方案，
@@ -75,6 +69,26 @@ FaceLinkActor 可以支持在多种 BlendShape (BS) 求解算法中切换，这�
 是否禁用 MediaPipe4U 的 BS 求解，当设置为 **true**，将不会再发送 LiveLink 数据。
    
 ---   
+
+## Face Solution
+
+MediaPipeFaceLinkActor 通过 Face Solution 的形式可以包含多种算法，因为某些算法对硬件需求不同，可以选择适合你的 Face Solution 进行面补。   
+
+**支持的 Face Solution 名称:**
+- MediaPipe
+- NvAR (需要 MediaPipe4U NvAR 插件)   
+  
+> 目前来说 NvAR 方案精度高于 MediaPipe。
+
+{: important}
+> 当 MediaPipe4U 动作捕捉开始以后，虽然你可以设置 FaceSolution，但是它并不会生效，必须停止动作捕捉再启动才能切换方案。简单来说，FaceSolution 不能 mediapipe 运行过程中切换。
+
+你可以通过蓝图库 MediaPipeLiveLinkBlueprintLibrary 中的函数 **ListFaceSolutions** 列出当前可用的方案：
+
+[![List face solutions](./images/live_link_actor_list_face_solution.jpg "List face solutions")](./images/live_link_actor_detals.jpg)
+
+该函数返回一个方案列表和方案个数。
+
 
 ## 平滑   
 
@@ -161,58 +175,58 @@ PerformCalibrationImmediately 函数不关心 mediapipe 是否正在运行，因
 
 |名称               | MediaPipe | NvAR  | 说明|
 |:-----------------|:-----:|:------:|--------:|
-|eyeBlinkLeft      |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左眼眨眼
-|eyeLookDownLeft   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左眼目视下方
-|eyeLookInLeft     |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左眼注视鼻尖
-|eyeLookOutLeft    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左眼向左看
-|eyeLookUpLeft     |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左眼目视上方
-|eyeSquintLeft     |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左眼眯眼
-|eyeWideLeft       |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左眼睁大
-|eyeBlinkRight     |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右眼眨眼
-|eyeLookDownRight  |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右眼目视下方
-|eyeLookInRight    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右眼注视鼻尖
-|eyeLookOutRight   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右眼向左看
-|eyeLookUpRight    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右眼目视上方
-|eyeSquintRight    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |   右眼眯眼
-|eyeWideRight      |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右眼睁大
-|jawForward        |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  努嘴时下巴向前
-|jawLeft           |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  撇嘴时下巴向左
-|jawRight          |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  撇嘴时下巴向右
-|jawOpen           |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  张嘴时下巴向下
-|mouthClose        |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  闭嘴
-|mouthFunnel       |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  稍张嘴并双唇张开
-|mouthPucker       |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  抿嘴
-|mouthLeft         |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  向左撇嘴
-|mouthRight        |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  向右撇嘴
-|mouthSmileLeft    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左撇嘴笑
-|mouthSmileRight   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右撇嘴笑
-|mouthFrownLeft    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左嘴唇下压
-|mouthFrownRight   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右嘴唇下压
-|mouthDimpleLeft   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左嘴唇向后
-|mouthDimpleRight  |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右嘴唇向后
-|mouthStretchLeft  |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左嘴角向左
-|mouthStretchRight |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右嘴角向右
-|mouthRollLower    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  下嘴唇卷向里
-|mouthRollUpper    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  下嘴唇卷向上
-|mouthShrugLower   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  下嘴唇向下
-|mouthShrugUpper   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  上嘴唇向上
-|mouthPressLeft    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  下嘴唇压向左
-|mouthPressRight   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  下嘴唇压向右
-|mouthLowerDownLeft|  :white_check_mark:Yes  |   :white_check_mark:Yes  |  下嘴唇压向左下
-|mouthLowerDownRigh|t :white_check_mark:Yes  |   :white_check_mark:Yes  |  下嘴唇压向右下
-|mouthUpperUpLeft  |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  上嘴唇压向左上
-|mouthUpperUpRight |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  上嘴唇压向右上
-|browDownLeft      |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左眉向外
-|browDownRight     |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右眉向外
-|browInnerUp       |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  蹙眉
-|browOuterUpLeft   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左眉向左上
-|browOuterUpRight  |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右眉向右上
-|cheekPuff         |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  脸颊向外
-|cheekSquintLeft   |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左脸颊向上并回旋
-|cheekSquintRight  |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右脸颊向上并回旋
-|noseSneerLeft     |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  左蹙鼻子
-|noseSneerRight    |  :white_check_mark:Yes  |   :white_check_mark:Yes  |  右蹙鼻子
-|tongueOut         |  :o:No  |   :o:No  |  吐舌头
-|HeadYaw         |  :o:No  |   :white_check_mark:Yes  |  左右转头
-|HeadPitch       |  :o:No  |   :white_check_mark:Yes  |  上下抬头
-|HeadRoll         |  :o:No  |   :white_check_mark:Yes  |  向肩膀偏头
+|eyeBlinkLeft      |  ✅Yes  |   ✅Yes  |  左眼眨眼
+|eyeLookDownLeft   |  ✅Yes  |   ✅Yes  |  左眼目视下方
+|eyeLookInLeft     |  ✅Yes  |   ✅Yes  |  左眼注视鼻尖
+|eyeLookOutLeft    |  ✅Yes  |   ✅Yes  |  左眼向左看
+|eyeLookUpLeft     |  ✅Yes  |   ✅Yes  |  左眼目视上方
+|eyeSquintLeft     |  ✅Yes  |   ✅Yes  |  左眼眯眼
+|eyeWideLeft       |  ✅Yes  |   ✅Yes  |  左眼睁大
+|eyeBlinkRight     |  ✅Yes  |   ✅Yes  |  右眼眨眼
+|eyeLookDownRight  |  ✅Yes  |   ✅Yes  |  右眼目视下方
+|eyeLookInRight    |  ✅Yes  |   ✅Yes  |  右眼注视鼻尖
+|eyeLookOutRight   |  ✅Yes  |   ✅Yes  |  右眼向左看
+|eyeLookUpRight    |  ✅Yes  |   ✅Yes  |  右眼目视上方
+|eyeSquintRight    |  ✅Yes  |   ✅Yes  |   右眼眯眼
+|eyeWideRight      |  ✅Yes  |   ✅Yes  |  右眼睁大
+|jawForward        |  ✅Yes  |   ✅Yes  |  努嘴时下巴向前
+|jawLeft           |  ✅Yes  |   ✅Yes  |  撇嘴时下巴向左
+|jawRight          |  ✅Yes  |   ✅Yes  |  撇嘴时下巴向右
+|jawOpen           |  ✅Yes  |   ✅Yes  |  张嘴时下巴向下
+|mouthClose        |  ✅Yes  |   ✅Yes  |  闭嘴
+|mouthFunnel       |  ✅Yes  |   ✅Yes  |  稍张嘴并双唇张开
+|mouthPucker       |  ✅Yes  |   ✅Yes  |  抿嘴
+|mouthLeft         |  ✅Yes  |   ✅Yes  |  向左撇嘴
+|mouthRight        |  ✅Yes  |   ✅Yes  |  向右撇嘴
+|mouthSmileLeft    |  ✅Yes  |   ✅Yes  |  左撇嘴笑
+|mouthSmileRight   |  ✅Yes  |   ✅Yes  |  右撇嘴笑
+|mouthFrownLeft    |  ✅Yes  |   ✅Yes  |  左嘴唇下压
+|mouthFrownRight   |  ✅Yes  |   ✅Yes  |  右嘴唇下压
+|mouthDimpleLeft   |  ✅Yes  |   ✅Yes  |  左嘴唇向后
+|mouthDimpleRight  |  ✅Yes  |   ✅Yes  |  右嘴唇向后
+|mouthStretchLeft  |  ✅Yes  |   ✅Yes  |  左嘴角向左
+|mouthStretchRight |  ✅Yes  |   ✅Yes  |  右嘴角向右
+|mouthRollLower    |  ✅Yes  |   ✅Yes  |  下嘴唇卷向里
+|mouthRollUpper    |  ✅Yes  |   ✅Yes  |  下嘴唇卷向上
+|mouthShrugLower   |  ✅Yes  |   ✅Yes  |  下嘴唇向下
+|mouthShrugUpper   |  ✅Yes  |   ✅Yes  |  上嘴唇向上
+|mouthPressLeft    |  ✅Yes  |   ✅Yes  |  下嘴唇压向左
+|mouthPressRight   |  ✅Yes  |   ✅Yes  |  下嘴唇压向右
+|mouthLowerDownLeft|  ✅Yes  |   ✅Yes  |  下嘴唇压向左下
+|mouthLowerDownRigh|t ✅Yes  |   ✅Yes  |  下嘴唇压向右下
+|mouthUpperUpLeft  |  ✅Yes  |   ✅Yes  |  上嘴唇压向左上
+|mouthUpperUpRight |  ✅Yes  |   ✅Yes  |  上嘴唇压向右上
+|browDownLeft      |  ✅Yes  |   ✅Yes  |  左眉向外
+|browDownRight     |  ✅Yes  |   ✅Yes  |  右眉向外
+|browInnerUp       |  ✅Yes  |   ✅Yes  |  蹙眉
+|browOuterUpLeft   |  ✅Yes  |   ✅Yes  |  左眉向左上
+|browOuterUpRight  |  ✅Yes  |   ✅Yes  |  右眉向右上
+|cheekPuff         |  ✅Yes  |   ✅Yes  |  脸颊向外
+|cheekSquintLeft   |  ✅Yes  |   ✅Yes  |  左脸颊向上并回旋
+|cheekSquintRight  |  ✅Yes  |   ✅Yes  |  右脸颊向上并回旋
+|noseSneerLeft     |  ✅Yes  |   ✅Yes  |  左蹙鼻子
+|noseSneerRight    |  ✅Yes  |   ✅Yes  |  右蹙鼻子
+|tongueOut         |  ⭕ No  |   ⭕ No  |  吐舌头
+|HeadYaw           |  ⭕ No  |   ✅Yes  |  左右转头
+|HeadPitch         |  ⭕ No  |   ✅Yes  |  上下抬头
+|HeadRoll          |  ⭕ No  |   ✅Yes  |  向肩膀偏头

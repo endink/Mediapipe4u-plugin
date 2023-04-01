@@ -89,7 +89,7 @@ CPU usage：20% (Based on DEMO project)
 ## Update History (Chinese)
 
 ### 2023-04-01
-- [new] 全新的 MediaPipe BlendShapes 求解器，不依赖 Nvidia GPU，兼容苹果 51 个 Arkit 表情。
+- [new] 全新的 MediaPipe BlendShapes 求解器，不依赖 Nvidia GPU，兼容苹果 51 个 Arkit 表情 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/face_link_actor.html)。
 - [new] MediaPipe4U 的 LiveLink 统一成全新的 MediaPipeFaceLinkActor（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/location_solver.html)），支持在 MediaPipe/NvAR 算法切换，可以自动降级算法。 
 - [new] 全新的面容校准（Face Calibration）算法。
 - [new] 动态 MediaPipe Graph 构造支持，支持切换装饰线条显示风格，Pose/Holistic/Face 之间切换。

@@ -16,8 +16,8 @@ nav_order: 100
 [![统计](./images/stats_menu.jpg "Shiprock")](./images/stats_menu.jpg)   
 
 >也可以使用命令：
-> - stat mediapie
-> - stat nvar
+> - stat m4u: 打开 MediaPipe4U 基础统计面板
+> - stat m4ull: 打开 MediaPipe4U Live Link 基础统计面板
 
 [![统计](./images/stats.jpg "Shiprock")](./images/stats.jpg)   
 
