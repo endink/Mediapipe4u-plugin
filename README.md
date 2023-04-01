@@ -14,7 +14,7 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 
 - [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
-## Dowload   
+## Download   
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
