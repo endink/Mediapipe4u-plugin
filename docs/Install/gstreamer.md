@@ -35,8 +35,9 @@ parent: 安装和配置
 
 1. 安装 **libav** 插件集   
 
-{: important}
->默认不会安装来自 FFmepg 的解码组件，这会让你解码一些网络视频流时遇到问题，建议安装 Livav 库包装，它会包含一些功能强大的解码器，基本可以解码市面上常见的视频格式。
+{: .important }
+> 默认只包含了GStramer 官方的视频解码器，这对于解码视频文件已经够用，但是当解码一些网络视频流时会遇到问题，建议安装 Libav 库包装，它会包含一些功能强大的解码器，
+> 基本可以解码市面上常见的视频格式。
 
 [![GStremer Custom Setup](./images/gstreamer_custom_libav_select.jpg "GStremer Custom Setup")](images/gstreamer_custom_libav_select.jpg)
 
@@ -44,12 +45,9 @@ parent: 安装和配置
 
 [![GStremer Custom Setup](./images/gstreamer_custom_qt_exclude.jpg "GStremer Custom Setup")](images/gstreamer_custom_qt_exclude.jpg)
 
-{: important}
->QT 是一个功能强大的 UI 开发框架，但是，对于 MediaPipe4U 来说，它是多余的，我们并不需要它，排除这些库可以减小你的打包尺寸。
+{:.important}
+>QT 是一个功能强大的 UI 开发框架，GStreamer 支持 QT 环境下开发。这对于 MediaPipe4U 来说，它是多余的，我们并不需要它，排除这些库可以减小你的打包尺寸。
 
-[![GStremer Custom Setup](./images/gstreamer_custom_qt_exclude.jpg "GStremer Custom Setup")](images/gstreamer_custom_qt_exclude.jpg)
-
-> 当然，你也可以排除一些变
 
 
 ## 检查 GStreamer 环境变量
