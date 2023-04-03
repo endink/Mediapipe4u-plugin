@@ -92,7 +92,13 @@ CPU usage：20% (Based on DEMO project)
 - [fix] LOD 变化时，如果骨骼变化，引发程序崩溃
 - [fix] MediaPipe 表情解算 BrowDown 时右眼误差
 - [fix] UE Editor 中 LiveLink管理器状态和 MediaPipeFaceLinkActor 不一致
-- [fix] LiveLink Source 无法删除的问题 
+- [fix] MediaPipe4U LiveLink Source 无法删除的问题 
+
+> **Google Translate**
+> - [fix] When the LOD changes, if the skeleton changes, it causes the program to crash
+> - [fix] There is an error in the right eye when MediaPipe face solves BrowDown
+> - [fix] The LiveLink manager state in the UE Editor is inconsistent with the MediaPipeFaceLinkActor
+> - [fix] MediaPipe4U LiveLink Source could not be removed 
    
-[更多更新记录](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)
+[More Update Logs](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)
 
