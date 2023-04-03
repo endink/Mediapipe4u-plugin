@@ -49,7 +49,7 @@ Don't need to worry about disk usage, this is just disk usage during development
 
 ---   
 
-[![MediaPipe4U](./cover.gif "MediaPipe4U")](./cover.gif)
+[![MediaPipe4U](./docs/cover.gif "MediaPipe4U")](./cover.gif)
 
 ---   
 
