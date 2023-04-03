@@ -88,9 +88,11 @@ CPU usage：20% (Based on DEMO project)
 
 ## Update History (Chinese)
 
-### 2023-04-01
+### 2023-04-03
 - [fix] LOD 变化时，如果骨骼变化，引发程序崩溃
 - [fix] MediaPipe 表情解算 BrowDown 时右眼误差
 - [fix] UE Editor 中 LiveLink管理器状态和 MediaPipeFaceLinkActor 不一致
 - [fix] LiveLink Source 无法删除的问题 
+   
+[更多更新记录](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)
 
