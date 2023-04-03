@@ -6,6 +6,11 @@ has_children: false
 ---
 
 ### 2023-04-03
+{: .d-inline-block }
+
+Current
+{: .label .label-green }
+
 - [fix] LOD 变化时，如果骨骼变化，引发程序崩溃
 - [fix] MediaPipe 表情解算 BrowDown 时右眼误差
 - [fix] UE Editor 中 LiveLink管理器状态和 MediaPipeFaceLinkActor 不一致

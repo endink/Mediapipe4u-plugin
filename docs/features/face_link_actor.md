@@ -103,7 +103,7 @@ MediaPipeFaceLinkActor 可以按面容的不同区域来平滑表情，主要通
 
 
 |          属性        |               说明                    |
-|---------------------|---------------------------------------|
+|:---------------------|:---------------------------------------|
 | Iterations |  平滑算法迭代次数，主要用来消除抖动，数值越大，抖动越少，但是对表情的敏感度也会越低。 |
 | EyesSmooth |  眼睛区域的 BS 平滑度，0.0 - 1.0, 数值约大，平滑度越高。 |
 | EyeBallsSmooth |  眼球区域的 BS 平滑度，0.0 - 1.0, 数值约大，平滑度越高。 |
@@ -124,7 +124,7 @@ MediaPipeFaceLinkActor 可以按面容的不同区域来平滑表情，主要通
 
 [![Events](./images/live_link_actor_events.jpg "Events")](./images/live_link_actor_events.jpg)
 
-MediaPipeFaceLinkActor 不支持手动启动/停止，而是自动跟随 mediapipe 启停。为此，MediaPipeFaceLinkActor 暴露了必要的事件，让你指导它何时启动和停止。   
+MediaPipeFaceLinkActor 不支持手动启动/停止，而是自动跟随 mediapipe 启停。为此，MediaPipeFaceLinkActor 暴露了必要的事件，让你知道它何时启动和停止。   
 
 **OnFaceLinkStarted**   
 当 MediaPipeFaceLinkActor 开始表情捕捉流程时触发该事件。   
