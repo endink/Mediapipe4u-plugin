@@ -8,21 +8,13 @@ has_children: false
 
 ### 2023-04-01   
 
-Fix
-{: .label .label-yellow .d-inline-block  }
-LOD 变化时，如果骨骼变化，引发程序崩溃
+Fix {: .label .label-yellow .d-inline-block  } LOD 变化时，如果骨骼变化，引发程序崩溃
 
-Fix
-{: .label .label-yellow .d-inline-block  }
-MediaPipe 表情解算 BrowDown 时右眼误差
+Fix {: .label .label-yellow .d-inline-block  } MediaPipe 表情解算 BrowDown 时右眼误差
 
-Fix
-{: .label .label-yellow .d-inline-block  }
-UE Editor 中 LiveLink管理器状态和 MediaPipeFaceLinkActor 不一致
+Fix {: .label .label-yellow .d-inline-block  } UE Editor 中 LiveLink管理器状态和 MediaPipeFaceLinkActor 不一致
 
-Fix
-{: .label .label-yellow .d-inline-block  }
-LiveLink Source 无法删除的问题 
+Fix {: .label .label-yellow .d-inline-block  } LiveLink Source 无法删除的问题 
 
 
 
