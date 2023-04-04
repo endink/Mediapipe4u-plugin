@@ -49,9 +49,13 @@ Don't need to worry about disk usage, this is just disk usage during development
 
 ---   
 
-[![MediaPipe4U](./docs/cover.gif "MediaPipe4U")](./cover.gif)
+**Video Tutorials (English)**
 
----   
+[![MediaPipeU Metahuman Tutorials](https://res.cloudinary.com/marcomontalbano/image/upload/v1680609544/video_to_markdown/images/youtube--XLmKnG6UMzo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=XLmKnG6UMzo "MediaPipeU Metahuman Tutorials")
+
+**Video Tutorials (Chinese)**
+
+[bilibili](https://www.bilibili.com/video/BV1124y157hz/?share_source=copy_web&vd_source=f77a8ce9c4c322dcc88515970bea1630)
 
 ---   
 
