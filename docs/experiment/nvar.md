@@ -11,14 +11,13 @@ nav_order: 1
 
 [![NvAR](./nvar/nvidia-rtx-ar.jpg "NvAR")](./nvar/nvidia-rtx-ar.jpg)
 
-{: waning}
+{: .waning}
 > 阅读本章内容之前，你必须阅读过[ MediaPipe LiveLink 表情捕捉](../features/face_link_actor.md)相关文档，否则你可能无法理解后面的内容。
 
 ---
 
 **MediaPipe4U** 封装了一个名为 **MediaPipe4UNvAR** 的插件，将 Nvidia 的算法注册成 MediaPipe LiveLink 插件中的一个 BlendShapes 求解方案（Face Solution）。 
- **MediaPipe4UNvAR** 插件加载后将注册一个名为"**NvAR**" 的 BlendShapes 求解方案（Face Solution）到 MediaPipe LiveLink ，你可以通过设置
-  **MediaPipeFaceLinkActor** （MediaPipe LiveLink 插件中的 Actor）的 FaceSolution 属性为 **NvAR** 来使用它。
+你可以通过设置 **MediaPipeFaceLinkActor** （MediaPipe LiveLink 插件中的 Actor）的 FaceSolution 属性为 **NvAR** 来使用它。
 
 
 
@@ -60,7 +59,8 @@ Nvidia 官方的系统和软件要求请阅读这里：
 
 [https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html](https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html)
 
-**注意:**不同的显卡有不同的可再发现组件包，如何使用请继续阅读下面的章节。
+{: .warning}
+>不同的显卡有不同的可再发行组件包。例如：你的 GPU 是 Nvidia 2060， 你不能安装 30XX 的可再发行组件包，这可能导致 NvAR 无法正常工作。
 
 ### UnrealEngine 插件依赖
 
@@ -84,13 +84,14 @@ Nvidia 官方的系统和软件要求请阅读这里：
 
 ### 2. 安装 MediaPipe4UNvAr 插件   
 
-从下载的 MediaPipe4U 插件目录找到 MediaPipe4UNvAR 目录，将它复制到你的 Unreal Egine 项目 Plugins 目录并启用它.   
+从下载的 MediaPipe4U 插件目录找到 **MediaPipe4UNvAR** 目录，将它复制到你的 Unreal Engine 项目 **Plugins** 目录并启用它.   
 
 [![NvAR](./nvar/nvar_plugin_install.jpg "NvAR")](./nvar/nvar_plugin_install.jpg)   
 
 此时，MediaPipe4UNvAr 会自动注册一个名为 **NvAR** 的 Face Solution 到 **MediaPipeFaceLinkActor** (MediaPipe LiveLink 插件中的 Actor), 你可以在 MediaPipeFaceLinkActor 中使用它。
 
 {: .important}
+> MediaPipe4UNvAr 只一个包含算法的插件，本身不包含任何 Unreal Engine 功能，使用这套算法进行表情捕捉你需要 MediaPipe Live Link 插件。
 > 关于如何使用 MediaPipeFaceLinkActor 进行面部捕捉，请阅读：[表情捕捉](../features/face_link_actor.md)
 
 
