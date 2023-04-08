@@ -5,11 +5,15 @@ title: 更新日志
 has_children: false
 ---
 
-### 2023-04-03
+### 2023-04-08
 {: .d-inline-block }
 
 Current
 {: .label .label-green }
+
+[new] 添加 UE 编辑器工具箱功能，方便在编辑器中调试参数 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/ue_editor_toolkits.html))
+
+### 2023-04-03
 
 - [fix] LOD 变化时，如果骨骼变化，引发程序崩溃
 - [fix] MediaPipe 表情解算 BrowDown 时右眼误差

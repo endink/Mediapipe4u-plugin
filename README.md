@@ -19,7 +19,7 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
 | UE 5.0 | [cowtransfer (China)](https://cowtransfer.com/s/468192b5dc704b) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzhRE5StJc1uJ-SRP?e=DFALmH) | 2023-04-03 |
-| UE 5.1 | [cowtransfer (China)](https://cowtransfer.com/s/0a716ad46d0948) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzhMMCW2sFyYQOWav?e=grGhCD) | 2023-04-03 |
+| UE 5.1 | [cowtransfer (China)](https://cowtransfer.com/s/0e308537b3da48) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzhpIH89uYwZifO7e?e=5qXXAH) | 2023-04-08 |
   
 
 
@@ -91,6 +91,14 @@ CPU usage：20% (Based on DEMO project)
 [Youtube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
 
 ## Update History (Chinese)
+
+### 2023-04-08
+- [new] 添加 UE 编辑器工具箱功能，方便在编辑器中调试参数 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/ue_editor_toolkits.html))
+
+> **Google Translate**   
+> - [new] Added UE Editor toolbox functionality to debug parameters in the editor ([文档](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/features/ue_editor_toolkits.html?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp))
+   
+[More Update Logs](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)
 
 ### 2023-04-03
 - [fix] LOD 变化时，如果骨骼变化，引发程序崩溃
