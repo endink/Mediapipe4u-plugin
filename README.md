@@ -55,7 +55,7 @@ Don't need to worry about disk usage, this is just disk usage during development
 
 **Video Tutorials (Chinese)**
 
-[bilibili](https://www.bilibili.com/video/BV1124y157hz/?share_source=copy_web&vd_source=f77a8ce9c4c322dcc88515970bea1630)
+[bilibili](https://www.bilibili.com/video/BV1124y157hz/)
 
 ---   
 

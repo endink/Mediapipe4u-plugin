@@ -38,3 +38,17 @@ description: "MediaPipe4U Document Site"
 - Ground IK: 让脚可以贴合地面
 - Nvidia AR: 通过 Nvidia 机器 AI 技术，获得媲美苹果 Arkit 效果面部 BlendShape 算解
 
+# Metahuman 视频教程
+
+**bilibili (中文) **
+
+[![MediaPipeU Metahuman Tutorials](https://res.cloudinary.com/marcomontalbano/image/upload/v1680609544/video_to_markdown/images/youtube--XLmKnG6UMzo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=XLmKnG6UMzo "MediaPipeU Metahuman Tutorials")
+
+**Youtube (For English)**
+
+[bilibili](https://www.bilibili.com/video/BV1124y157hz/)
+
+# UnrealEngine 5.1 Demo 工程
+
+[https://github.com/endink/MediaPipe4U-Demo](https://github.com/endink/MediaPipe4U-Demo)
+
