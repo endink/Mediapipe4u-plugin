@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 20
-title: 扩展点
+title: 扩展点（C++）
 has_children: true
 ---
 # 扩展点
