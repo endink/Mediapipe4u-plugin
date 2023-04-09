@@ -16,8 +16,8 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/468192b5dc704b) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzhRE5StJc1uJ-SRP?e=DFALmH) | 2023-04-03 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/0a716ad46d0948) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzhMMCW2sFyYQOWav?e=grGhCD) | 2023-04-03 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/96bb1af764574f) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzh6RJys4IM8aYn3s?e=dTCVkJ) | 2023-04-09 |
+| UE 5.1 | [奶牛快传递](https://cowtransfer.com/s/1e711963d7b64b) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzh3Eeq1cxp1nIg8j?e=XnIH3N) | 2023-04-09 |
   
 
 
@@ -44,7 +44,7 @@
 
 - https://github.com/endink/MediaPipe4U-Demo  
 
-> Demo 工程不包含插件，你自行下载插件，放到该工程的 Plugins 目录
+> Demo 工程不包含插件，你需要自行下载插件，放到该工程的 Plugins 目录
 
 ---   
 

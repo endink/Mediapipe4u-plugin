@@ -18,8 +18,8 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [cowtransfer (China)](https://cowtransfer.com/s/468192b5dc704b) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzhRE5StJc1uJ-SRP?e=DFALmH) | 2023-04-03 |
-| UE 5.1 | [cowtransfer (China)](https://cowtransfer.com/s/0a716ad46d0948) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzhMMCW2sFyYQOWav?e=grGhCD) | 2023-04-03 |
+| UE 5.0 | [cowtransfer (China)](https://cowtransfer.com/s/96bb1af764574f) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzh6RJys4IM8aYn3s?e=dTCVkJ) | 2023-04-09 |
+| UE 5.1 | [cowtransfer (China)](https://cowtransfer.com/s/1e711963d7b64b) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzh3Eeq1cxp1nIg8j?e=XnIH3N) | 2023-04-09 |
   
 
 
@@ -92,8 +92,10 @@ CPU usage：20% (Based on DEMO project)
 
 ## Update History (Chinese)
 
-### 2023-04-08
+### 2023-04-09
 - [new] 添加 UE 编辑器工具箱功能，方便在编辑器中调试参数 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/ue_editor_toolkits.html))
+- [fix] ImagePool 特殊情况下可能重复释放 Image 的问题
+- [fix] 动画结束时，多线程操作不当可能引发崩溃
 
 > **Google Translate**   
 > - [new] Added UE Editor toolbox functionality to debug parameters in the editor ([文档](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/features/ue_editor_toolkits.html?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp))
