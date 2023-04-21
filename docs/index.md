@@ -37,6 +37,7 @@ description: "MediaPipe4U Document Site"
 - 动画平滑
 - Ground IK: 让脚可以贴合地面
 - Nvidia AR: 通过 Nvidia 机器 AI 技术，获得媲美苹果 Arkit 效果面部 BlendShape 算解
+- M4U Remoting: Android 设备表情捕捉支持
 
 # Metahuman 视频教程
 

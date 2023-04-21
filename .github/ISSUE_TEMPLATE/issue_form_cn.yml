@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
          感谢你报告关于 MediaPipe4U 的问题，请认真填写这个表单，帮助我节约时间，每个人的时间都是有限的!
+         当我解答你的问题后，希望你也给我反馈，让我知道问题是否解决，这是 github 提 issue 的基本准则 ！
   - type: input
     id: m4uver
     attributes:

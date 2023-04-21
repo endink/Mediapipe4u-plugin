@@ -80,6 +80,7 @@ MediaPipeFaceLinkActor 通过 Face Solution 支持不同的算法，因为某些
 
 **支持的 Face Solution 名称:**
 - MediaPipe
+- Remoting (需要使用 M4URemoting App, 付费版)
 - NvAR (需要 MediaPipe4U NvAR 插件)   
   
 > 目前来说 NvAR 方案精度高于 MediaPipe。
@@ -183,62 +184,62 @@ PerformCalibrationImmediately 函数不关心 mediapipe 是否正在运行，因
 
 # 不同 Face Solution 对 Blend Shapes 的支持
 
-|名称               | MediaPipe | NvAR  | 说明|
-|:-----------------|:-----:|:------:|--------:|
-|eyeBlinkLeft      |  ✅  |   ✅  |  左眼眨眼
-|eyeLookDownLeft   |  ✅  |   ✅  |  左眼目视下方
-|eyeLookInLeft     |  ✅  |   ✅  |  左眼注视鼻尖
-|eyeLookOutLeft    |  ✅  |   ✅  |  左眼向左看
-|eyeLookUpLeft     |  ✅  |   ✅  |  左眼目视上方
-|eyeSquintLeft     |  ✅  |   ✅  |  左眼眯眼
-|eyeWideLeft       |  ✅  |   ✅  |  左眼睁大
-|eyeBlinkRight     |  ✅  |   ✅  |  右眼眨眼
-|eyeLookDownRight  |  ✅  |   ✅  |  右眼目视下方
-|eyeLookInRight    |  ✅  |   ✅  |  右眼注视鼻尖
-|eyeLookOutRight   |  ✅  |   ✅  |  右眼向左看
-|eyeLookUpRight    |  ✅  |   ✅  |  右眼目视上方
-|eyeSquintRight    |  ✅  |   ✅  |   右眼眯眼
-|eyeWideRight      |  ✅  |   ✅  |  右眼睁大
-|jawForward        |  ✅  |   ✅  |  努嘴时下巴向前
-|jawLeft           |  ✅  |   ✅  |  撇嘴时下巴向左
-|jawRight          |  ✅  |   ✅  |  撇嘴时下巴向右
-|jawOpen           |  ✅  |   ✅  |  张嘴时下巴向下
-|mouthClose        |  ✅  |   ✅  |  闭嘴
-|mouthFunnel       |  ✅  |   ✅  |  稍张嘴并双唇张开
-|mouthPucker       |  ✅  |   ✅  |  抿嘴
-|mouthLeft         |  ✅  |   ✅  |  向左撇嘴
-|mouthRight        |  ✅  |   ✅  |  向右撇嘴
-|mouthSmileLeft    |  ✅  |   ✅  |  左撇嘴笑
-|mouthSmileRight   |  ✅  |   ✅  |  右撇嘴笑
-|mouthFrownLeft    |  ✅  |   ✅  |  左嘴唇下压
-|mouthFrownRight   |  ✅  |   ✅  |  右嘴唇下压
-|mouthDimpleLeft   |  ✅  |   ✅  |  左嘴唇向后
-|mouthDimpleRight  |  ✅  |   ✅  |  右嘴唇向后
-|mouthStretchLeft  |  ✅  |   ✅  |  左嘴角向左
-|mouthStretchRight |  ✅  |   ✅  |  右嘴角向右
-|mouthRollLower    |  ✅  |   ✅  |  下嘴唇卷向里
-|mouthRollUpper    |  ✅  |   ✅  |  下嘴唇卷向上
-|mouthShrugLower   |  ✅  |   ✅  |  下嘴唇向下
-|mouthShrugUpper   |  ✅  |   ✅  |  上嘴唇向上
-|mouthPressLeft    |  ✅  |   ✅  |  下嘴唇压向左
-|mouthPressRight   |  ✅  |   ✅  |  下嘴唇压向右
-|mouthLowerDownLeft|  ✅  |   ✅  |  下嘴唇压向左下
-|mouthLowerDownRigh|  ✅  |   ✅  |  下嘴唇压向右下
-|mouthUpperUpLeft  |  ✅  |   ✅  |  上嘴唇压向左上
-|mouthUpperUpRight |  ✅  |   ✅  |  上嘴唇压向右上
-|browDownLeft      |  ✅  |   ✅  |  左眉向外
-|browDownRight     |  ✅  |   ✅  |  右眉向外
-|browInnerUp       |  ✅  |   ✅  |  蹙眉
-|browOuterUpLeft   |  ✅  |   ✅  |  左眉向左上
-|browOuterUpRight  |  ✅  |   ✅  |  右眉向右上
-|cheekPuff         |  ✅  |   ✅  |  脸颊向外
-|cheekSquintLeft   |  ✅  |   ✅  |  左脸颊向上并回旋
-|cheekSquintRight  |  ✅  |   ✅  |  右脸颊向上并回旋
-|noseSneerLeft     |  ✅  |   ✅  |  左蹙鼻子
-|noseSneerRight    |  ✅  |   ✅  |  右蹙鼻子
-|tongueOut         |  ⭕  |   ⭕  |  吐舌头
-|HeadYaw           |  ⭕  |   ✅  |  左右转头
-|HeadPitch         |  ⭕  |   ✅  |  上下抬头
-|HeadRoll          |  ⭕  |   ✅  |  向肩膀偏头
+|名称               | MediaPipe | Remoting | NvAR  | 说明|
+|:-----------------|:-----:|:---:|:------:|--------:|
+|eyeBlinkLeft      |  ✅  |✅  | ✅ |  左眼眨眼
+|eyeLookDownLeft   |  ✅  |✅  | ✅ |  左眼目视下方
+|eyeLookInLeft     |  ✅  |✅  | ✅ |  左眼注视鼻尖
+|eyeLookOutLeft    |  ✅  |✅  | ✅ |  左眼向左看
+|eyeLookUpLeft     |  ✅  |✅  | ✅ |  左眼目视上方
+|eyeSquintLeft     |  ✅  |✅  | ✅ |  左眼眯眼
+|eyeWideLeft       |  ✅  |✅  | ✅ |  左眼睁大
+|eyeBlinkRight     |  ✅  |✅  | ✅ |  右眼眨眼
+|eyeLookDownRight  |  ✅  |✅  | ✅ |  右眼目视下方
+|eyeLookInRight    |  ✅  |✅  | ✅ |  右眼注视鼻尖
+|eyeLookOutRight   |  ✅  |✅  | ✅ |  右眼向左看
+|eyeLookUpRight    |  ✅  |✅  | ✅ |  右眼目视上方
+|eyeSquintRight    |  ✅  |✅  | ✅ |   右眼眯眼
+|eyeWideRight      |  ✅  |✅  | ✅ |  右眼睁大
+|jawForward        |  ✅  |✅  | ✅ |  努嘴时下巴向前
+|jawLeft           |  ✅  |✅  | ✅ |  撇嘴时下巴向左
+|jawRight          |  ✅  |✅  | ✅ |  撇嘴时下巴向右
+|jawOpen           |  ✅  |✅  | ✅ |  张嘴时下巴向下
+|mouthClose        |  ✅  |✅  | ✅ |  闭嘴
+|mouthFunnel       |  ✅  |✅  | ✅ |  稍张嘴并双唇张开
+|mouthPucker       |  ✅  |✅  | ✅ |  抿嘴
+|mouthLeft         |  ✅  |✅  | ✅ |  向左撇嘴
+|mouthRight        |  ✅  |✅  | ✅ |  向右撇嘴
+|mouthSmileLeft    |  ✅  |✅  | ✅ |  左撇嘴笑
+|mouthSmileRight   |  ✅  |✅  | ✅ |  右撇嘴笑
+|mouthFrownLeft    |  ✅  |✅  | ✅ |  左嘴唇下压
+|mouthFrownRight   |  ✅  |✅  | ✅ |  右嘴唇下压
+|mouthDimpleLeft   |  ✅  |✅  | ✅ |  左嘴唇向后
+|mouthDimpleRight  |  ✅  |✅  | ✅ |  右嘴唇向后
+|mouthStretchLeft  |  ✅  |✅  | ✅ |  左嘴角向左
+|mouthStretchRight |  ✅  |✅  | ✅ |  右嘴角向右
+|mouthRollLower    |  ✅  |✅  | ✅ |  下嘴唇卷向里
+|mouthRollUpper    |  ✅  |✅  | ✅ |  下嘴唇卷向上
+|mouthShrugLower   |  ✅  |✅  | ✅ |  下嘴唇向下
+|mouthShrugUpper   |  ✅  |✅  | ✅ |  上嘴唇向上
+|mouthPressLeft    |  ✅  |✅  | ✅ |  下嘴唇压向左
+|mouthPressRight   |  ✅  |✅  | ✅ |  下嘴唇压向右
+|mouthLowerDownLeft|  ✅  |✅  | ✅ |  下嘴唇压向左下
+|mouthLowerDownRigh|  ✅  |✅  | ✅ |  下嘴唇压向右下
+|mouthUpperUpLeft  |  ✅  |✅  | ✅ |  上嘴唇压向左上
+|mouthUpperUpRight |  ✅  |✅  | ✅ |  上嘴唇压向右上
+|browDownLeft      |  ✅  |✅  | ✅ |  左眉向外
+|browDownRight     |  ✅  |✅  | ✅ |  右眉向外
+|browInnerUp       |  ✅  |✅  | ✅ |  蹙眉
+|browOuterUpLeft   |  ✅  |✅  | ✅ |  左眉向左上
+|browOuterUpRight  |  ✅  |✅  | ✅ |  右眉向右上
+|cheekPuff         |  ✅  |✅  | ✅ |  脸颊向外
+|cheekSquintLeft   |  ✅  |✅  | ✅ |  左脸颊向上并回旋
+|cheekSquintRight  |  ✅  |✅  | ✅ |  右脸颊向上并回旋
+|noseSneerLeft     |  ✅  |✅  | ✅ |  左蹙鼻子
+|noseSneerRight    |  ✅  |✅  | ✅ |  右蹙鼻子
+|tongueOut         |  ⭕  |⭕  | ⭕ |  吐舌头
+|HeadYaw           |  ⭕  |⭕  | ✅ |  左右转头
+|HeadPitch         |  ⭕  |⭕  | ✅ |  上下抬头
+|HeadRoll          |  ⭕  |⭕  | ✅ |  向肩膀偏头
 
 > 关于 Arkit 的 BlendShape 标准，你可以查看[这里](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)
