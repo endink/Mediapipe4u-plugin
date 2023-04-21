@@ -10,7 +10,7 @@ nav_order: 31
 M4U Remoting 是一个 Android App, 旨在将 MediaPipe4U 的捕捉能力延申到移动端（当前仅支持 Android），M4U Remoting 还在成长阶段，目前只具备表情捕捉。   
 
 
-{: waning}
+{: warning}
 > M4U Remoting **不包含**在免费授权许可中。   
 > 如果你正在使用 MediaPipe4U 的免费授权许可，你可以在 UE Editor 中体验该功能，但是打包后功能将失效。  
 
