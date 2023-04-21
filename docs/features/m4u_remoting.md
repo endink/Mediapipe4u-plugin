@@ -12,7 +12,7 @@ M4U Remoting 是一个 Android App, 旨在将 MediaPipe4U 的捕捉能力延申�
 
 {: waning}
 > M4U Remoting **不包含**在免费授权许可中。   
-> 如果你正在使用 MediaPipe4U 的免费授权按许可，你可以在 UE Editor 中体验该功能，但是打包后功能将失效。  
+> 如果你正在使用 MediaPipe4U 的免费授权许可，你可以在 UE Editor 中体验该功能，但是打包后功能将失效。  
 
 [![M4U Remoting](./images/remoting_main_ui.jpg "M4U Remoting")](./images/remoting_main_ui.jpg)
 
@@ -42,7 +42,7 @@ MediaPipe4U 插件中内置了名为 **Remoting** 的 Face Solution，用来接�
 1. 启动手机端应用。
 2. 设置好 MediaPipe4U 的表情捕捉功能。
 3. 设置 Face Link Actor 的 Face Solution 为 "**Remoting**"。
-4. 启动使用 MediaPipe4 的项目。
+4. 运行使用 MediaPipe4U 插件的 Unreal Engine 项目。
 
 默认 MediaPipe4U 会在 22345 端口侦听来自 M4U Remoting 的数据包，你也可以修改这个端口号，但是修改端口号以后手机端也必须使用一致的端口号设置。
 
@@ -51,17 +51,17 @@ MediaPipe4U 插件中内置了名为 **Remoting** 的 Face Solution，用来接�
 
 ### 手机端校准命令
 
-M4U Remoting 具有远程控制 MediaPipe4U 的能力，你可以从手段发送校准指令， MediaPipe4U 将进行校准操作，只需在主界面点击 + 按钮。
+M4U Remoting 具有远程控制 MediaPipe4U 的能力，你可以从安卓设备发送校准指令， MediaPipe4U 将进行校准操作，只需在主界面点击 + 按钮。
 
 ### 关于防火墙
 
-你的防火墙可能不允许手机访问主机的端口（默认端口 22345），你可以通过保存以下内容为 bat 文件并执行，让防火墙允许端口传输数据。
+你的防火墙可能不允许手机访问主机的端口（默认端口 22345），你可以通过保存以下内容为 bat 文件并执行，让防火墙允许端口通过。
 
 ```powershell
 netsh advfirewall firewall add rule name="Port22345" dir=in action=allow protocol=UDP localport=22345
 ```
 {: .important}
-> 上述命令保存为 bat 文件后需要用管理员身份执行，对 bat 文件单机鼠标右键，“以管理员身份运行” 即可。
+> 上述命令保存为 bat 文件后需要用管理员身份执行，对 bat 文件点击鼠标右键，“以管理员身份运行” 即可。
 
 
 #### 设置说明
