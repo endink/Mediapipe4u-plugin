@@ -22,6 +22,17 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 | UE 5.1 | [cowtransfer (China)](https://cowtransfer.com/s/1e711963d7b64b) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzh3Eeq1cxp1nIg8j?e=XnIH3N) | 2023-04-09 |
   
 
+## M4U Remoting Download
+
+| Android Version | Download Link | Update |
+|---| --- | --- |
+| Android 7.0 or later | [Download](https://github.com/endink/Mediapipe4u-plugin/releases/download/M4URemoting_20230421/M4URemoting_20230421.apk) | 2023-04-21 |
+
+
+> **About M4U Remoting**   
+> <mark>Note</mark>    
+> This is a commercial license exclusive feature: capturing facial expressions from android device.   
+> Free license only supports using in UE Editor, cannot be packaged this feature !
 
 <!-- > ### 历史版本  
 > 
