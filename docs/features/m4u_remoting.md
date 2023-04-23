@@ -39,7 +39,7 @@ MediaPipe4U 插件中内置了名为 **Remoting** 的 Face Solution，用来接�
 
 ### 使用方法：
 
-1. 启动手机端 M4U Remoting App, 在 Settings 中填写正确的 PC 地址。
+1. 启动手机端 M4U Remoting App, 在 Settings 中填写正确的主机 IP 地址。
 2. 设置好 MediaPipe4U 的表情捕捉功能。
 3. 设置 Face Link Actor 的 Face Solution 为 "**Remoting**"。
 4. 运行使用 MediaPipe4U 插件的 Unreal Engine 项目。
