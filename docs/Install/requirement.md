@@ -16,14 +16,17 @@ parent: 安装和配置
 |--------|--------------|
 |操作系统|Windows10/11 x64|
 |Unreal Engine |5.0.x, 5.1.x|
+|Visual Studio 2022 | 17.5 or later|
+|Windows SDK|10.0.22621 or later|
+|Visual C++ Redistributable|14.35 or later|
 
 {: .warning}
 > **MediaPipe4U** 不支持移动平台（手机端）和 Mac 平台。   
->  **MediaPipe4U** 不支 x86 平台。
+> **MediaPipe4U** 不支 x86 平台。
 
 |硬件|版本|
 |--------|--------------|
-|磁盘空间| 开发：5G, 部署：200M|
+| 磁盘空间 | 开发：5G, 部署：200M|
 
 {: .important}
 > 插件由于采用预编译，包含大量 C++ 链接符号和调试符号，解压后会占用 **5G** 磁盘空间（大部分为 Intermediate 中的 UE 生成代码）

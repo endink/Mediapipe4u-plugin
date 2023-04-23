@@ -27,12 +27,18 @@ has_children: true
    
 ---  
 
+## 打包环境
+
+MediaPipe4U 使用 VS2022 构建，你必须具备以下环境
+
+- Visual Studio 2022
+- WINSDK: 10.0.22621 or later ([下载地址](https://developer.microsoft.com/zh-cn/windows/downloads/windows-sdk/))
+- Visual C++ Redistributable 14.35 or later  ([下载地址](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist))
+
+{: .important}
+> 通常你只需要下载最新的 windows sdk 和 Visual C++ Redistributable， 因为微软会保持这些组件向后兼容，但是 Windows SDK 会对你的系统最低版本有要求。   
+> 例如你下载了 Windows 11 SDK (Ver:10.0.22621) ，如果你使用的 Windows 10, 会要求你的 Windows 10 版本不能低于 1507。   
+
 Launcher 版引擎构打包不需要特别处理，正常打包即可，文档不做说明，关于如何打包 Unreal 项目，请查阅 Unreal Engine 官方文档：   
 
 [https://docs.unrealengine.com/5.0/packaging-unreal-engine-projects/](https://docs.unrealengine.com/5.0/packaging-unreal-engine-projects/)
-
---- 
-
-源码版引擎打包请看这里:   
-
-[源码版引擎打包](./source_engine_package.md)
