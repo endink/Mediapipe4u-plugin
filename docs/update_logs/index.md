@@ -5,11 +5,27 @@ title: 更新日志
 has_children: false
 ---
 
-### 2023-04-08
+### 2023-04-23
 {: .d-inline-block }
 
 Current
-{: .label .label-green }
+{: .label .label-green }   
+
+[new] :fire:加入 M4U Remoting, 支持从安卓设备捕捉表情（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)）。      
+[new] Android 面补工具开放下载（商业授权功能，免费授权无法打包）   
+[new] UE 编辑器工具新功能：    
+- LiveLink 追踪   
+- 位移、姿势校准   
+- 面容校准   
+
+[new] 统一位置、姿态校准，从 AnimationInstance 访问 CalibrationCountDownSeconds 等参数；现在，支持手动校准位置和姿势（:red_circle:Break Changes）。   
+[fix] 动补回调包发生错误时可能导致 texture 被占用无法释放   
+[fix] 退出编辑器时概率引发崩溃   
+[fix] UE 工具箱状态不同步   
+
+
+
+### 2023-04-08
 
 [new] 添加 UE 编辑器工具箱功能，方便在编辑器中调试参数 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/ue_editor_toolkits.html))
 

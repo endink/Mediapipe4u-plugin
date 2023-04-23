@@ -35,7 +35,6 @@ MediaPipe4U 使用一个专门的动画蓝图节点，从动补数据中计算�
 |LockHorizontalMove  | false | 当为 **true** 时，将阻止角色进行水平（左，右）方向的位移。 |
 |LockVerticalMove    | false | 当为 **true** 时，将阻止角色进行垂直（上，下）方向的位移。 |
 |LockForwardMove     | false | 当为 **true** 时，将阻止角色进行前后位移。 |
-|CalibrateCountdownSeconds | 5（秒） | 将在开始动补后 X 秒内进行位置校准。 |
 |UseGroundIK | true | 是否使用地表 IK，关于地表 IK，下面的小节将详细介绍。 |
 |SmoothSpeed | 200 | 用于平滑移动的速度（单位：厘米/秒），防止视频突然切换造成的移动过摆。如果为 0，表示不限制。 |
 |DepthInterpSpeed | 0.5 | 预估的视频中人物和相机之间的距离（相机焦点）变化的速度，这将影响人物深度的计算，通常情况下，你不需要调整此参数。 |
@@ -44,9 +43,11 @@ MediaPipe4U 使用一个专门的动画蓝图节点，从动补数据中计算�
 
 ## 位置校准 (Calibration)
 
-如果使用了位置算解节点，当动补开始以后，**MediaPipe4U** 将自动开始进行位置校准，校准就是通过视频流中的一帧图像作为人物位置参考数据，通过 CalibrateCountdownSeconds 来设置何时抓取这张图片。 
+如果使用了位置算解节点，当动补开始以后，**MediaPipe4U** 将自动开始进行位置校准，校准就是通过视频流中的一帧图像作为人物位置参考数据，通过 MediaPipeAnimationInstance 上的 **CalibrateCountdownSeconds** 属性来设置何时抓取这张图片。    
+你也可以调用 MediaPipeAnimationInstance 的 **PerformCalibration** 函数来手动校准位置。
 
-> 例如 CalibrateCountdownSeconds 设置为 5， 表示大致从第 5 秒的视频中抓取图片作为位置参考。对于摄像头动补而言，CalibrateCountdownSeconds 的含义是，人物站在摄像头图像的正中间，5 秒钟之内保持不动，等待校准完成。
+> 举例：当 CalibrateCountdownSeconds 设置为 5， 表示大致从第 5 秒的视频中抓取图片作为位置参考。   
+> 对于摄像头动补而言，CalibrateCountdownSeconds 的含义是，人物站在摄像头图像的正中间，5 秒钟之内保持不动，等待校准完成。
 
 ---   
 

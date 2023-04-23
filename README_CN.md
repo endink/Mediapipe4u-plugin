@@ -12,33 +12,29 @@
 
 - [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
-## 下载地址   
+## UE 插件下载地址   
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/96bb1af764574f) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzh6RJys4IM8aYn3s?e=dTCVkJ) | 2023-04-09 |
-| UE 5.1 | [奶牛快传递](https://cowtransfer.com/s/1e711963d7b64b) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzh3Eeq1cxp1nIg8j?e=XnIH3N) | 2023-04-09 |
-  
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/947b95fe620e44) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzi-a2mcsbzVxWmpF?e=tzfrm7) | 2023-04-23 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/42ab1e385b8b40) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzi5i8c9VEakVrQES) | 2023-04-23 |
+   
+> 插件由于采用预编译，包含大量 C++ 链接符号和调试符号，解压后会占用 **5G** 磁盘空间（大部分为 Intermediate 中的 UE 生成代码）   
+> 你不需要担心磁盘占用问题，这只是开发期间的磁盘占用，在项目打包后，插件磁盘占用大约是 **200M**（主要为 GStreamer 动态库）
+
+## M4U Remoting App 下载
+
+| Android 版本 | 下载连接 | 更新时间 |
+|---| --- | --- |
+| Android 7.0 or later | [Download](https://github.com/endink/Mediapipe4u-plugin/releases/download/M4URemoting_20230421/M4URemoting_20230421.apk) | 2023-04-21 |
 
 
-<!-- > ### 历史版本  
-> 
-> - **Unreal Engine 5.0**
->
->  - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgWrCryGWYDK1SJj?e=7KUhai) (2023-02-27)
->
->  - [奶牛快传](https://cowtransfer.com/s/148d44d7d7bb48) (2023-02-27)
->
->- **Unreal Engine 5.1**
->
->  - [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzgibw3mJ9vC1kfwl?e=BDsqXt) (2023-03-11)
->
->  - [奶牛快传](https://cowtransfer.com/s/57864613496641) (2023-03-11)    -->
-  
-
-  
-插件由于采用预编译，包含大量 C++ 链接符号和调试符号，解压后会占用 **5G** 磁盘空间（大部分为 Intermediate 中的 UE 生成代码）
-你不需要担心磁盘占用问题，这只是开发期间的磁盘占用，在项目打包后，插件磁盘占用大约是 **200M**（主要为 GStreamer 动态库）
+> **关于 M4U Remoting**   
+>    
+> <mark>Note</mark>    
+> 这是一个付费授权许包含的功能: 可以从安卓设备中捕捉表情。     
+> 免费授权许可用户也可以在编辑器中体验它, 但是它不能被打包，请悉知。   
+> [M4U Remoting 文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)
 
 **Demo Project**   
 
@@ -51,6 +47,11 @@
 [![MediaPipe4U](./cover.gif "MediaPipe4U")](./cover.gif)
 
 ---   
+
+**打包环境要求**   
+- Visual Studio 2022   
+- WINSDK: 10.0.22621 or later ([下载地址](https://developer.microsoft.com/zh-cn/windows/downloads/windows-sdk/))   
+- Visual C++ Redistributable 14.35 or later  ([下载地址](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist))   
 
 ---   
 
