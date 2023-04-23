@@ -39,12 +39,12 @@ MediaPipe4U 插件中内置了名为 **Remoting** 的 Face Solution，用来接�
 
 ### 使用方法：
 
-1. 启动手机端应用。
+1. 启动手机端 M4U Remoting App, 在 Settings 中填写正确的 PC 地址。
 2. 设置好 MediaPipe4U 的表情捕捉功能。
 3. 设置 Face Link Actor 的 Face Solution 为 "**Remoting**"。
 4. 运行使用 MediaPipe4U 插件的 Unreal Engine 项目。
 
-默认 MediaPipe4U 会在 22345 端口侦听来自 M4U Remoting 的数据包，你也可以修改这个端口号，但是修改端口号以后手机端也必须使用一致的端口号设置。
+> 默认 MediaPipe4U 会在 **22345** 端口侦听来自 M4U Remoting 的数据包，你也可以修改这个端口号，但是修改端口号以后手机端也必须使用一致的端口号设置。
 
 [![M4U Remoting](./images/remoting_setup.jpg "M4U Remoting")](./images/remoting_setup.jpg)
 
@@ -70,9 +70,12 @@ netsh advfirewall firewall add rule name="Port22345" dir=in action=allow protoco
 
 |设置项| 说明 |
 |:------|:-----|
+|Host | 运行 MediaPipe4U 的主机 IP 地址。|
+|Port | 运行 MediaPipe4U 的主机开放的通讯端口地址。|
 |Display Face |出于隐私考虑，可以通过这个开关，控制关闭/开启摄像头画面。|
 |Detection Threshold |检测人脸的阈值，数值越大，对人脸清晰度、遮挡等条件越苛刻。|
 |Tacking Threshold |连续侦测人脸的阈值，对于视频流来说，如果能够复用上一帧的人脸数据，例如人脸位置，可以提供计算效率，数值越大，对上一帧的可信度要求越高。|
 |Present Threshold |人脸地标可信度阈值，当检测到人脸地标后对每个区域的的可信度评价，如果低于这个阈值，这个区域表情将算解失败。|
+|Inference | AI 推理方式，优先使用 GPU 加速推理，如果你使用 GPU 出现问题，可以切换到 CPU 推理。|
 
 
