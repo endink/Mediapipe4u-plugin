@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 扩展点（C++）
+title: 扩展点
 parent: 扩展点
 nav_order: 1
 ---
