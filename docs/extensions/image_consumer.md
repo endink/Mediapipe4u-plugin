@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 扩展点
+title: Image Consumer
 parent: 扩展点
 nav_order: 1
 ---
