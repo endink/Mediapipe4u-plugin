@@ -16,9 +16,10 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 >有关 google mediapipe holistic 详细信息，请访问这里：   
 >[https://google.github.io/mediapipe/solutions/holistic.html](https://google.github.io/mediapipe/solutions/holistic.html)
 
-## 限制
-
-由于 **MediaPipeHolisticComponent** 的特殊性，你应该保证整个场景中只有唯一个 **MediaPipeHolisticComponent** 实例。
+{: .warning-title }
+> 限制   
+>   
+>由于 **MediaPipeHolisticComponent** 的特殊性，你应该保证整个场景中只有唯一个 **MediaPipeHolisticComponent** 实例。
 
 ## Google MediaPipe 参数
 
@@ -70,7 +71,7 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 
 ## MediaPipe 原始数据 (C++)
 
-如果你希望获得 google mediapip 的原始数据，例如 Landmars, 你必须使用 C++ 编程，不支持蓝图。    
+如果你希望获得 google mediapip 的原始数据，例如 Landmarks, 你必须使用 C++ 编程，不支持蓝图。    
 你可以通过订阅事件 (Unreal Event) 来侦听来自 mediapipe 的原始数据
 
 |函数|说明|
