@@ -65,13 +65,13 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 |StartCamera| 启动摄像头动补|
 |StartImageSource| 启动其他类型的图像源动补|
 |Stop| 停止动补 |
-|IsNativeImageSource| 指示当前图像源是一个 Native (普通 C++ 实现)图像源还是一个 UObject 图像源，为 **true** 表示 Native 图像源，反之，是一个 UObject 图像源，如果 MediaPipe 没有原型，会返回 false|
+|IsNativeImageSource| 指示当前图像源是一个 Native (普通 C++ 实现)图像源还是一个 UObject 图像源，为 **true** 表示 Native 图像源，反之，是一个 UObject 图像源，如果 MediaPipe 没有运行，会返回 false|
 |IsRunning| 用来判断 MediaPipe 是否已经启动 |
 |GetCurrentCameraParams| 获取当前正在运行的摄像头参数。注意：StartCamera传入的参数可能和此方法返回不一致，设备不支持传入的分辨率或帧率时会自动使用合适的参数打开摄像头 |
 
 ## MediaPipe 原始数据 (C++)
 
-如果你希望获得 google mediapip 的原始数据，例如 Landmarks, 你必须使用 C++ 编程，不支持蓝图。    
+如果你希望获得 google mediapip 的原始数据，例如地标（Landmarks）, 你必须使用 C++ 编程，不支持蓝图。    
 你可以通过订阅事件 (Unreal Event) 来侦听来自 mediapipe 的原始数据
 
 |函数|说明|
