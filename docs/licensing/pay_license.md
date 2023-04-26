@@ -38,9 +38,12 @@ parent: 软件授权
 
 项目持续开发，价格不固定，价格随着更多功能的开发可能发生变化，对于已购买插件的用户，会提前告知价格变化，如你无法接受新价格，你可以固定你的插件当前版本以购买时的价格续费许可证（BUG 修复长期支持）。   
 
+{: .note}
+> Ultimate 版本暂未开放下载和购买
+
 人民币价格表 (不含税)
 
-|     项目   | Trial |Starter|Professional|Ultimate| 特别说明|
+|        | Trial |Starter|Professional|Ultimate| 说明|
 |:---------------|:-----:|:-----:|:----------:|:------:|:------|
 |  年度价格（年/项目）  | Free  | ¥5000 |    ¥7000   | ¥10000 | |
 |  设备价格（每设备）| Free | ¥1500 |    ¥1800   | ¥2000  | |
@@ -61,7 +64,7 @@ parent: 软件授权
 
 USD Price Table （Tax excluded）
 
-|     项目   | Trial |Starter|Professional|Ultimate| Special Note|
+|        | Trial |Starter|Professional|Ultimate| Special Description|
 |:---------------|:-----:|:-----:|:----------:|:------:|:------|
 |  Annual Price（Per Project/Year）       | Free  | $800 |    $1200   | $1600  | |
 |  Device Price (Per Device)   | Free | $250 |    $300   | $350  | |
@@ -80,7 +83,7 @@ USD Price Table （Tax excluded）
 > ⚪ :Means this feature is only available in the UE Editor.
 
 
-{.important}
+{: .important}
 > 免费版本不做任何承诺，付费版本承诺授权有效期内 BUG 及时修复。
 
 
