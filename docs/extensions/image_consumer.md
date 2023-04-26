@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ImageConsumer
+title: 扩展点（C++）
 parent: 扩展点
 nav_order: 1
 ---
