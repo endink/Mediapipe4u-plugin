@@ -64,7 +64,7 @@ netsh advfirewall firewall add rule name="Port22345" dir=in action=allow protoco
 > 上述命令保存为 bat 文件后需要用管理员身份执行，对 bat 文件点击鼠标右键，“以管理员身份运行” 即可。
 
 
-#### 设置说明
+### 设置说明
 
 一般情况下，M4U Remoting 是一个开箱即用的 App， “零配置”即可工作良好，也提供了少量的设置：
 

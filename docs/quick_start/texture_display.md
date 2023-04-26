@@ -10,6 +10,10 @@ parent: 快速入门
 
 [![image callback](./images/texture_callback.jpg "Shiprock")](images/texture_callback.jpg)
 
+学习如何显示追踪图像，最简单的方法是观看入门教程：
+- [Youtube](https://youtu.be/_6OLqClX-Fw)   
+- [bilibili](https://www.bilibili.com/video/BV1zs4y1978J)   
+
 ## 回调事件
 
 **UMediaPipeHolisticComponent** 组件上提供了 OnVideoTextureCreated 事件，通过绑定该事件，你可以得到一个 Texture2D 对象，使用它来渲染。
