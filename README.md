@@ -18,7 +18,7 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [cowtransfer (China)](https://cowtransfer.com/s/947b95fe620e44) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzi-a2mcsbzVxWmpF?e=tzfrm7) | 2023-04-23 |
+| UE 5.0 | [cowtransfer (China)](https://cowtransfer.com/s/54d67876155441) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzju38jL0wvqcVlKO?e=x0UKM3) | 2023-05-05 |
 | UE 5.1 | [cowtransfer (China)](https://cowtransfer.com/s/42ab1e385b8b40) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzi5i8c9VEakVrQES) | 2023-04-23 |
   
 
@@ -101,6 +101,9 @@ CPU usage：20% (Based on DEMO project)
 [Youtube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
 
 ## Latest Update (Chinese)
+
+### 2023-05-05
+[fix] UE5.0 材质打包版本不正确
 
 ### 2023-04-23   
 [new] :fire:加入 M4U Remoting, 支持从安卓设备捕捉表情 （[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)）。   
