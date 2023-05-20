@@ -2,6 +2,7 @@
 layout: default
 title: 算解器（蓝图）
 parent: 进阶用法
+grand_parent: 动作和表情
 nav_order: 20
 ---
 

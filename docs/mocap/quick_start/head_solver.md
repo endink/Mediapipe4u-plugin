@@ -3,6 +3,7 @@ layout: default
 nav_order: 40
 title: 头部算解器
 parent: 快速入门
+grand_parent: 动作和表情
 ---
 
 # 头部算解器

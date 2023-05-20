@@ -3,6 +3,7 @@ layout: default
 nav_order: 1
 title: 准备动补角色
 parent: 快速入门
+grand_parent: 动作和表情
 ---
 
 # 准备动补角色（Character)

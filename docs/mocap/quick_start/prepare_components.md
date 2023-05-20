@@ -3,6 +3,7 @@ layout: default
 nav_order: 10
 title: 准备运行时组件
 parent: 快速入门
+grand_parent: 动作和表情
 ---
 # 准备 MediaPipe 运行时组件（Component）
 

@@ -3,6 +3,7 @@ layout: default
 nav_order: 60
 title: 图像回显
 parent: 快速入门
+grand_parent: 动作和表情
 ---
 # 回显图像
 

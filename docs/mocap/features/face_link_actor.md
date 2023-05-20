@@ -3,6 +3,7 @@ layout: default
 title: 表情捕捉
 parent: 核心功能
 nav_order: 30
+grand_parent: 动作和表情
 ---
 
 # 表情捕捉

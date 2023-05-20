@@ -3,6 +3,7 @@ layout: default
 nav_order: 20
 title: 开始动补
 parent: 快速入门
+grand_parent: 动作和表情
 ---
 # 开始动补
 

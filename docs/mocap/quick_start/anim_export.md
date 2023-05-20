@@ -3,6 +3,7 @@ layout: default
 nav_order: 60
 title: 动补数据导出
 parent: 快速入门
+grand_parent: 动作和表情
 ---
 
 # 动补数据导出 

@@ -2,6 +2,7 @@
 layout: default
 title: Image Consumer
 parent: 扩展点
+grand_parent: 动作和表情
 nav_order: 1
 ---
 

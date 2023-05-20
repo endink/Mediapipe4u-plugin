@@ -3,6 +3,7 @@ layout: default
 nav_order: 50
 title: 半身/全身动补
 parent: 快速入门
+grand_parent: 动作和表情
 ---
 # 半身/全身动补
 

@@ -3,6 +3,7 @@ layout: default
 nav_order: 15
 title: 自定义骨骼
 parent: 快速入门
+grand_parent: 动作和表情
 ---
 # 自定义骨骼
 

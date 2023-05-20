@@ -2,6 +2,7 @@
 layout: default
 title: NvAR 表情捕捉
 parent: 实验性功能
+grand_parent: 动作和表情
 nav_order: 1
 ---
 
