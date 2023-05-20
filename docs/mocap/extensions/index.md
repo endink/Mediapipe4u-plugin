@@ -2,6 +2,7 @@
 layout: default
 nav_order: 20
 title: 扩展点
+parent: 动作和表情
 has_children: true
 ---
 # 扩展点
