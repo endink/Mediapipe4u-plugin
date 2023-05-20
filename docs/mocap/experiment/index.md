@@ -2,6 +2,7 @@
 layout: default
 nav_order: 30
 title: 实验性功能
+parent: 动作和表情
 has_children: true
 ---
 # 实验性功能

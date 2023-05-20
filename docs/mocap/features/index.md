@@ -2,6 +2,7 @@
 layout: default
 nav_order: 3
 title: 核心功能
+parent: 动作和表情
 has_children: true
 ---
 
