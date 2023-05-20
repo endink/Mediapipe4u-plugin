@@ -7,8 +7,11 @@ description: "MediaPipe4U Document Site"
 
 # MediaPipe4U 简介
 
-**MediaPipe4U** 是一个 UnrealEngine 插件，将 Google MediaPipe 技术带入 Unreal Engine ，可以通过普通摄像头、视频文件、图片等媒体，
-实时的驱动 3D 角色（数字化身）。
+**MediaPipe4U** 是一个 UnrealEngine 插件，将众多复杂技术融合到 Unreal Engine , 为你提供一站式的数字人开发解决方案。
+
+## 动作和表情捕捉
+
+使用 Google MediaPipe技术 ，可以通过普通摄像头、视频文件、图片等媒体，实时的驱动 3D 角色（数字化身）。
 > 理论上，**MediaPipe4U** 支持驱动任意的 3D 角色，包括 Mannequin, VRM, Metahuman, ReadyPlayerMe 等。
 
 {: .highlight-title }

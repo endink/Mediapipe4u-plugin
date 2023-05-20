@@ -1,7 +1,8 @@
 ---
 layout: default
-nav_order: 2
+nav_order: 1
 title: 快速入门
+parent: 动作和表情
 has_children: true
 ---
 
