@@ -29,6 +29,13 @@
 | Android 7.0 or later | [Download](https://github.com/endink/Mediapipe4u-plugin/releases/download/M4URemoting_20230421/M4URemoting_20230421.apk) | 2023-04-21 |
 
 
+## 语音包下载
+
+| 语言 | 中国下载 | 全球下载 | Update |
+|---| --- | --- | --- |
+| 中文普通话 | [奶牛快传](https://cowtransfer.com/s/986250aed0314f) | [Github](https://github.com/endink/Mediapipe4u-plugin/releases/download/speech_model_Mandarin_20230521/speech_model_Mandarin_20230521.7z) | 2023-05-21 |
+
+
 > **关于 M4U Remoting**   
 >    
 > <mark>Note</mark>    
