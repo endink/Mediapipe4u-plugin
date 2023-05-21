@@ -103,9 +103,9 @@ CPU usage：20% (Based on DEMO project)
 ## Latest Update (Chinese)
 
 ### 2023-05-21
-[new] 新增 **MediaPipe4USpeech** 插件支持离线 TTS 和音唇同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。
-[new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。
-[fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。
+[new] 新增 **MediaPipe4USpeech** 插件支持离线 TTS 和音唇同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。   
+[new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。   
+[fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。   
 
 ### 2023-05-05
 [fix] UE5.0 材质打包版本不正确
