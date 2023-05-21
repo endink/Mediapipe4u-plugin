@@ -5,11 +5,16 @@ title: 更新日志
 has_children: false
 ---
 
-### 2023-04-23
+### 2023-05-21
 {: .d-inline-block }
 
 Current
 {: .label .label-green }   
+[new] 新增 **MediaPipe4USpeech** 插件支持离线 TTS 和音唇同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。
+[new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。
+[fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。
+
+### 2023-04-23
 
 [new] :fire:加入 M4U Remoting, 支持从安卓设备捕捉表情（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)）。      
 [new] Android 面补工具开放下载（商业授权功能，免费授权无法打包）   

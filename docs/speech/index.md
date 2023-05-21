@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 20
-title: 语音
+title: 语音套件
 has_children: true
 ---
 
