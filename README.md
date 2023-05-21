@@ -19,7 +19,7 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
 | UE 5.0 | [cowtransfer](https://cowtransfer.com/s/54d67876155441) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzju38jL0wvqcVlKO?e=x0UKM3) | 2023-05-05 |
-| UE 5.1 | [cowtransfer)](https://cowtransfer.com/s/42ab1e385b8b40) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzi5i8c9VEakVrQES) | 2023-04-23 |
+| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/42ab1e385b8b40) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzi5i8c9VEakVrQES) | 2023-04-23 |
   
 
   
