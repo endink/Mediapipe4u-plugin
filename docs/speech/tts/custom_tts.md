@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 1
+nav_order: 20
 title: 集成其他TTS方案
 parent: 语音合成(TTS)
 grand_parent: 语音套件
