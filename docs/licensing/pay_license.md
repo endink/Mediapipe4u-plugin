@@ -47,7 +47,7 @@ parent: 软件授权
 |  M4U Remoting Android SDK  |   |        |       |   ✅ | |
 |  BVH 导出        | ✅  |  ✅   |    ✅     |  ✅    | |
 |  虚拟摄像头      |  ⚪  |     |         |  ✅    | |
-|  Lip Sync       |  ⚪  |     |         |  ✅    | |
+|  语音套件       |  ⚪  |     |         |  ✅    | |
 |  VMC 数据导出      | ⚪   |     |         |  ✅    | |
 |  RTMP 推流      |  ⚪  |     |         |  ✅    | |
 |  技术支持      |  Github  |  微信  |  微信  |  微信  | 设备授权低于 4 台仅提供 github 支持 |
@@ -68,7 +68,7 @@ USD Price Table （Tax excluded）
 |  M4U Remoting Android SDK  |   |        |       |   ✅ | |
 |  BVH Export        | ✅  |  ✅   |    ✅     |  ✅    | |
 |  Virtual Camera      |  ⚪  |     |         |  ✅    | |
-|  Lip Sync       |  ⚪  |     |         |  ✅    | |
+|  Speech Suite       |  ⚪  |     |         |  ✅    | |
 |  VMC Export      |  ⚪  |     |         |  ✅    | |
 |  RTMP Push   |  ⚪  |     |         |  ✅    | |
 |  Support      |  Github  | WeChat/Skype  |  WeChat/Skype  |  WeChat/Skype  | If you only purchase the device license, you can only get GitHub technical support if the number of devices is less than 4 |
