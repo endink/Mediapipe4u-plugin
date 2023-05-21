@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 90
-title: 烘焙工具
+title: Control Rig Pose Baker
 parent: UE 工具
 has_children: false
 ---
@@ -12,11 +12,13 @@ has_children: false
 Beta
 {: .label .label-green }  
 
-MediaPipe4U 提供一个烘焙工具，用于将 Control Rig Pose 资产转换为 PoseAsset 资产。
+MediaPipe4U 提供一个烘焙工具，用于将 Control Rig 资产(ControlRig Pose Asset)转换为动画蓝图可用的姿势资产（PoseAsset）。
 
 {: .important}
 > 这对于 Metahuman 使用者来说非常有用。    
+> 
 > Epic 已经为 Metahuman 制作好了音素动画资产，只不过它的格式是 Control Rig Pose。我们没有办法在动画蓝图中直接使用。   
+> 
 > 通过 MediaPipe4U 提供的烘焙工具，可以快速的将这些资产转为动画蓝图可用的 PoseAsset。   
 
 

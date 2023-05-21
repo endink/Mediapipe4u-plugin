@@ -5,7 +5,7 @@ title: 语音套件
 has_children: true
 ---
 
-# 语音
+# 语音套件
 {: .d-inline-block }
 
 New (v20230520)

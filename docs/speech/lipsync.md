@@ -23,28 +23,12 @@ MediaPipe4USpeech 通过集成 OVRLipSync 组件，提供声音和口型同步�
 制作 15 个和 OVRLipSync 匹配的唇形动画，每一个唇形可以是一个 BlendShape 或者一个 PoseAsset 中的曲线。   
 > 具体唇形参考请查看 [OVRLipSync 文档](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference)   
 > 也可以参考此文档最后的附录（来自 Facebook 网站截图）。
+> Pose Asset 中的曲线名称, 或者 BlendShape 名称约定为： SIL、PP、FF、TH、DD、KK、CH、SS、NN、RR、AA、E、I、O、U   
 
-{: .important}
-> Pose Asset 中的曲线名称或 BlendShape 名称必须遵循如下定义：
-> - SIL
-> - PP
-> - FF
-> - TH
-> - DD
-> - KK
-> - CH
-> - SS
-> - NN
-> - RR
-> - AA
-> - E
-> - I
-> - O
-> - U
 
-{: .important}
-> 对于 Metahuman 你可以使用 MediaPipe4U 的 Control Rig Pose Baker 工具快速的烘焙音素姿势资产（Pose Asset）。   
-> 关于 Control Rig Pose Baker 工具，请阅读[文档](../ue_tools/index.md)
+{: .highlight}
+> 对于 **Metahuman** 你可以使用 MediaPipe4U 的 Control Rig Pose Baker 工具快速的烘焙音素姿势资产（Pose Asset）。   
+> 关于 Control Rig Pose Baker 工具，请阅读[文档](../ue_tools/control_rig_pose_baker.md)
 
 
 ## 在动画蓝图中驱动口型动画
