@@ -3,7 +3,6 @@ layout: default
 nav_order: 1
 title: 配置插件
 parent: 语音套件
-has_children: true
 ---
 
 # 配置插件

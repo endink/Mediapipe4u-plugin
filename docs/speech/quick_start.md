@@ -3,7 +3,6 @@ layout: default
 nav_order: 2
 title: 快速入门
 parent: 语音套件
-has_children: true
 ---
 
 ## 快速入门
