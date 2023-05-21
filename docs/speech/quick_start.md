@@ -46,7 +46,7 @@ parent: 语音套件
 
 在动画蓝图中添加 **MediaPipe LipSync** 节点和 Evalute Pose 节点。
 
-[![speech](./images/qs_outline_speech_actor.jpg "speech")](./images/qs_outline_speech_actor.jpg)
+[![speech](./images/lip_sync_anim_blueprint.jpg "speech")](./images/lip_sync_anim_blueprint.jpg)
 
 ### 运行程序
 
