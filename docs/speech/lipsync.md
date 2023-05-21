@@ -20,7 +20,7 @@ MediaPipe4USpeech 通过集成 OVRLipSync 组件，提供声音和口型同步�
 
 ### 关于唇形动画资产制作   
 
-制作 15 个和 OVRLipSync 匹配的唇形动画，每一个唇形可以是一个 BlendShape 或者一个 PoseAsset 中的曲线。   
+制作 15 个和 OVRLipSync 匹配的唇形动画，每一个唇形可以是一个 BlendShape 或者是 PoseAsset 中的一条曲线。   
 > 具体唇形参考请查看 [OVRLipSync 文档](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference)   
 > 也可以参考此文档最后的附录（来自 Facebook 网站截图）。   
 >    

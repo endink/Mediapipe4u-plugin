@@ -18,13 +18,13 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/54d67876155441) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzju38jL0wvqcVlKO?e=x0UKM3) | 2023-05-05 |
-| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/42ab1e385b8b40) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzi5i8c9VEakVrQES) | 2023-04-23 |
+| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/53032f0a9ad24f) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzlHuVnXW-DHlS3Jq?e=Q4TrOA) | 2023-05-21 |
+| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/51224c59e9d64d) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzlAlzXHG4pZaDOTU?e=jdOdGF) | 2023-05-21 |
   
 
   
-> Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **5G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
-> Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **200M** only (most files are GStreamer dynamic library).
+> Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
+> Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).
 
 
 ## M4U Remoting App Download
@@ -109,7 +109,7 @@ CPU usage：20% (Based on DEMO project)
 ## Latest Update (Chinese)
 
 ### 2023-05-21
-[new] 新增 **MediaPipe4USpeech** 插件支持离线 TTS 和音唇同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。   
+[new] 新增 **MediaPipe4USpeech** （商业授权功能，免费授权无法打包）插支持离线 TTS 和音唇同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。   
 [new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。   
 [fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。   
 

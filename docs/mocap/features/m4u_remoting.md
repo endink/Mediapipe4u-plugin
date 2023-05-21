@@ -7,6 +7,13 @@ nav_order: 31
 ---
 
 # M4U Rmoting 
+{: .d-inline-block }
+
+Since v20230423
+{: .label .label-green }
+
+Commerical License
+{: .label .label-yellow }
 
 M4U Remoting 是一个 Android App, 旨在将 MediaPipe4U 的捕捉能力延申到移动端（当前仅支持 Android），M4U Remoting 还在成长阶段，目前只具备表情捕捉。   
 

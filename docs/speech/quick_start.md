@@ -16,19 +16,22 @@ parent: 语音套件
 4. 添加动画蓝图节点
 5. 运行程序
 
-{: .important}
-> 语音套件是一个商业授权功能，只有 Ultimate 版本中包含此功能。   
+{: .warning}
+> 语音套件**不包含**在免费授权许可中。
+> 
+> 语音套件是一个商业授权功能，只有 Ultimate 版本的授权许可能够打包此功能。   
+> 
 > 免费授权版本仅能够在 Ureal Editor 中使用它
 
 下面，详细介绍这些步骤的操作方法。
 
-### 下载语音模型
+### 下载语音包
 
-从 [https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases) 页面中找到 SpeechModels， 下载对应语言的模型包。
+从 [https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases) 页面中找到 **Speech Models**， 下载对应语言的语音包。
 
 ### 准备动画资产
 
-制作一个 PoseAsset， 包含 15 个音素曲线（这里我将他命名为 **Pose_LipSync**）。
+制作一个姿势资产（PoseAsset） 包含 15 个音素曲线（这里我将这个 Pose Asset 命名为 **Pose_LipSync**）。
 
 [![speech](./images/qs_pose_asset.jpg "speech")](./images/qs_pose_asset.jpg)
 
