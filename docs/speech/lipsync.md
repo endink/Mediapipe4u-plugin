@@ -10,6 +10,21 @@ has_children: false
 
 MediaPipe4USpeech 通过集成 OVRLipSync 组件，提供声音和口型同步的能力。   
 
+{: .wanrning}
+> OVRLipSync 库中包单独 Facebook(Meta) License 文件，请严格遵守这些条款。   
+>        
+> MediaPipe4U 依据 [Meta Platforms Technologies SDK License](https://developer.oculus.com/licenses/oculussdk/) 协议 1.1.1 内容分发 OVRLipSync 中的库，并且已在插件中包含单独的 License 文件。   
+>
+> <div markdown="block">   
+> {: .highlight }   
+> 1.1.1 If the SDK includes any libraries,
+> sample source code, or other materials that we make available specifically for incorporation in your Application (as indicated by applicable documentation), 
+> you may incorporate those materials and reproduce and distribute them as part of your Application, including by distributing those materials to third parties contributing to your Application.   
+> </div>   
+>   
+> 对协议的理解如有不妥，请与我联系，我将迅速下架 LipSync 功能。
+
+
 ## 准备资产
 
 1. 制作符合 OVRLipSync 驱动标准的角色   

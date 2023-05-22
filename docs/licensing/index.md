@@ -19,5 +19,7 @@ has_children: true
 | Google MediaPipe | Apache 2.0  | [https://github.com/google/mediapipe](https://github.com/google/mediapipe) |
 | Crypto++ | Boost 1.0  | [https://github.com/weidai11/cryptopp](https://github.com/weidai11/cryptopp) |
 | GStreamer | LGPL  | [https://gstreamer.freedesktop.org/](https://gstreamer.freedesktop.org/) |
+| PaddleLite | Apache 2.0  | [https://github.com/PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) |
+| OVRLipSync | [Meta Special](https://developer.oculus.com/licenses/oculussdk/) | [https://developer.oculus.com/documentation/unreal/audio-ovrlipsync/](https://developer.oculus.com/documentation/unreal/audio-ovrlipsync/) |
 
 ---   
