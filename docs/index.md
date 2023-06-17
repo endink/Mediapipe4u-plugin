@@ -7,12 +7,7 @@ description: "MediaPipe4U Document Site"
 
 # MediaPipe4U 简介
 
-**MediaPipe4U** 是一个 UnrealEngine 插件，将众多复杂技术融合到 Unreal Engine , 为你提供一站式的数字人开发解决方案。
-
-## 动作和表情捕捉
-
-使用 Google MediaPipe技术 ，可以通过普通摄像头、视频文件、图片等媒体，实时的驱动 3D 角色（数字化身）。
-> 理论上，**MediaPipe4U** 支持驱动任意的 3D 角色，包括 Mannequin, VRM, Metahuman, ReadyPlayerMe 等。
+**MediaPipe4U** 是一个 UnrealEngine 插件，将众多复杂技术融合到 Unreal Engine , 提供一站式的数字人开发解决方案。
 
 {: .highlight-title }
 > 你需要知道
@@ -25,6 +20,11 @@ description: "MediaPipe4U Document Site"
 >         
 > 关于授权许可的详细信息，请看[这里](./licensing)。
 
+
+## 动作和表情捕捉（Motion And Face Capture）
+
+使用 Google MediaPipe技术 ，可以通过普通摄像头、视频文件、图片等媒体，实时的驱动 3D 角色（数字化身）。
+> 理论上，**MediaPipe4U** 支持驱动任意的 3D 角色，包括 Mannequin, VRM, Metahuman, ReadyPlayerMe 等。
 
 # 功能
 
@@ -42,7 +42,19 @@ description: "MediaPipe4U Document Site"
 - Nvidia AR: 通过 Nvidia 机器 AI 技术，获得媲美苹果 Arkit 效果面部 BlendShape 算解
 - M4U Remoting: Android 设备表情捕捉
 
-# Metahuman 视频教程
+## 语音套件 (Speech Suite)
+
+提供离线的语音合成、语音识别、并且能够使用声音驱动你的3D 角色（数字化身）的口型动画。   
+
+# 功能   
+
+- 离线语音合成（TTS）
+- 离线语音识别（ASR）
+- 声音和口型同步（LipSync）
+
+# 视频教程
+
+## 动作和表情捕捉（Metahuman）
 
 **Youtube (For English)**   
 

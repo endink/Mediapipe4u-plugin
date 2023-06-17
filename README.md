@@ -108,8 +108,24 @@ CPU usage：20% (Based on DEMO project)
 
 ## Latest Update (Chinese)
 
+### 2023-06-17
+[new] 新增姿态校准功能，纠正 mediapipe 原始数据中脊柱、小腿没有伸直的问题（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。  
+[new] 新增手动校准功能，姿势校准，位置校准均支持手动校准和自动校准设置（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。 
+[new] 新增脊柱旋转模式，有助于运动中稳定脚部（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html)）。 
+[new] 手指捕捉手掌丢失时回弹处理规则 。
+[new] UE Editor 动补工具加入关节锁定、校准等功能。
+[new] UE Editor 动补工具支持对视频文件快进、暂停。
+[improve] mediapipe 升级到最新版（[v0.10.1](https://github.com/google/mediapipe/releases/tag/v0.10.1)）。  
+[improve] Hand Solver：加入手腕旋转阻尼，防止跳变。  
+[improve] LocationSolver: Location IK 算法改进，位移计算更合理。  
+[improve] Ground IK: 脚步和脚踝旋转平滑。  
+[improve] Ground IK: 加入脚步限滑，改善脚步抖动问题。 
+[fix] GroundIK: 检测脚踝位置不正确。  
+[fix] GroundIK: 节点 FeetVerticalOffset 等几个属性设置无效。   
+[fix] ControlRigPose Baker 工具生成的 PoseAsset 不正确。   
+
 ### 2023-05-21
-[new] 新增 **MediaPipe4USpeech** （商业授权功能，免费授权无法打包）插支持离线 TTS 和音唇同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。   
+[new] 新增 **MediaPipe4USpeech** （商业授权功能，免费授权无法打包）插支持离线 TTS 和口型同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。   
 [new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。   
 [fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。   
 

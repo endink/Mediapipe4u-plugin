@@ -6,13 +6,13 @@ parent: UE 工具
 has_children: false
 ---
 
-# 烘焙工具
+# Control Rig Pose Baker
 {: .d-inline-block }
 
 Beta
 {: .label .label-green }  
 
-MediaPipe4U 提供一个烘焙工具，用于将 Control Rig 资产(ControlRig Pose Asset)转换为动画蓝图可用的姿势资产（PoseAsset）。
+MediaPipe4U 提供一个姿势资产烘焙工具，用于将 Control Rig 资产(ControlRig Pose Asset)转换为动画蓝图可用的姿势资产（PoseAsset）。
 
 {: .important}
 > 这对于 Metahuman 使用者来说非常有用。    

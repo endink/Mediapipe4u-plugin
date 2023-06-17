@@ -40,16 +40,23 @@ MediaPipe4U 使用一个专门的动画蓝图节点，从动补数据中计算�
 |SmoothSpeed | 200 | 用于平滑移动的速度（单位：厘米/秒），防止视频突然切换造成的移动过摆。如果为 0，表示不限制。 |
 |DepthInterpSpeed | 0.5 | 预估的视频中人物和相机之间的距离（相机焦点）变化的速度，这将影响人物深度的计算，通常情况下，你不需要调整此参数。 |
 |MovementScale | Vector(1,1,1) | 用于放大（缩小）三个轴向上的位移效果。通常，角色朝向 Y 轴时，X 表示水平方向，Y 表示前后方向，Z 表示垂直方向。 |
+|CountdownCalibrationEnabled | true | 是否在倒计时结束时校准位置。 |
 
 
 ## 位置校准 (Calibration)
 
-如果使用了位置算解节点，当动补开始以后，**MediaPipe4U** 将自动开始进行位置校准，校准就是通过视频流中的一帧图像作为人物位置参考数据，通过 MediaPipeAnimationInstance 上的 **CalibrateCountdownSeconds** 属性来设置何时抓取这张图片。    
-你也可以调用 MediaPipeAnimationInstance 的 **PerformCalibration** 函数来手动校准位置。
+当动补开始以后，**MediaPipe4U** 将自动一个倒计时，倒计时结束时将抓取视频流中的一帧图像作为人物位置参考数据。   
+> 根据 MediaPipeAnimationInstance 上的 **CalibrateCountdownSeconds** 属性来设置这个倒计时是多少秒。       
+你也可以调用 MediaPipeAnimationInstance 的 **CalibrateLocation** 函数来手动校准位置。
 
-> 举例：当 CalibrateCountdownSeconds 设置为 5， 表示大致从第 5 秒的视频中抓取图片作为位置参考。   
-> 对于摄像头动补而言，CalibrateCountdownSeconds 的含义是，人物站在摄像头图像的正中间，5 秒钟之内保持不动，等待校准完成。
+{: .important}
+> MediaPipe4U 的位置校准有两种方式：   
+> 1. **Countdown**：开始动补同时开始校准倒计时，倒计时结束时自动校准（通过 MediaPipeAnimationInstance 上的 **CalibrateCountdownSeconds** 属性设置）
+> 2. **Manual**：手动校准, 通过调用 MediaPipeAnimationInstance 的 **CalibrateLocation** 函数进行位置校准。   
+>   
+> 你可以设置 Location Solver 节点上的 **CountdownCalibrationEnabled** 属性来控制是否运行倒计时自动校准。     
 
+:page_with_curl:要了解更多校准的用法，请阅读[校准](../advance/calibration.md)部分文档。
 ---   
 
 
@@ -89,8 +96,25 @@ Ground IK 会受到很多参数影响，大多数参数使用默认值是合理�
 - FeetDampingDistance
 - JumpVelocityThreshold
 - FeetSmoothSpeed
+- PreventSlidingDistance
 
 ### 完整参数说明
+
+**MoveRoot**
+默认 Ground IK 会移动盆骨修正位置，通过设置该属性为 true， 可以移动根骨骼来修正位置。
+默认值：**false**      
+
+**RotateFootAlignGround**
+是否旋转脚踝来对齐地面，默认会旋转脚踝来贴合地面。但是，高跟鞋场景旋转会不合时宜，可以通过该属性禁用旋转。   
+默认值：**true**      
+
+**FeetRollSmooth**
+脚踝做 Roll 旋转时的平滑度，0-1 之间，数值越大，旋转越平滑。   
+默认值：0.6
+
+**FeetPitchSmooth**
+脚踝做 Pitch 旋转时的平滑度，0-1 之间，数值越大，旋转越平滑。   
+默认值：0.8
 
 **CollisionChannel**     
 射线检测的碰撞通道，确保从脚发出的射线只与地面碰撞   
@@ -124,6 +148,18 @@ Ground IK 会受到很多参数影响，大多数参数使用默认值是合理�
 
 **FeetVerticalOffset**
 脚垂直方向的偏移量（以厘米为单位），如果模型 IK 计算后脚一直陷入地面或浮空（这或许是建模时脚就和根骨骼不在同一平面），你可以通过这个静态的偏移量修正它，正数表示上推（脚默认陷入地面的情况），负数表示下推（脚浮空的情况）。
+
+**bRotateFootAlignGround**
+是否通过旋转脚踝将脚掌与地面对齐。
+默认值：true 
+
+**MoveRoot**
+默认情况下 Ground IK 拉动盆骨（pelvis）消除脚步悬空或下沉。你可以将该属性设为 true，从而让 Ground IK 拉动根骨骼（不推荐）。
+默认值：false
+
+**PreventSlidingDistance**
+抑制滑步产生，可以通过设置一个以厘米为单位的距离值，在这个范围内的脚步滑步会被尽可能的消除。
+默认值：5
 
 ## 调试绘制
 

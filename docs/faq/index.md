@@ -70,6 +70,14 @@ https://docs.metahuman.unrealengine.com/zh-CN/retargeting-animations-to-a-metahu
 
 ---
 
+## 为什么无法从 OBS 虚拟摄像头采集视频？   
+OBS 自带的虚拟摄像头不能很好的兼容 DirectShow 采集，但是已经有人写了插件解决了这个问题，如果你要采集 OBS 画面，可以使用这个 OBS 虚拟摄像头插件:   
+[https://github.com/obsproject/obs-studio/issues/3635](https://github.com/obsproject/obs-studio/issues/3635)
+
+> 关于更多 OBS 虚拟摄像头的 issue 可以看这里：https://github.com/obsproject/obs-studio/issues/3635
+
+---
+
 ## 如何选择一个好的摄像头？
 
 要买到一个好的摄像头，很难。对于 **MediaPipe4U** 来说画质并不是太重要，**MediaPipe4U** 可以在很低的分辨率下工作良好， 许多摄像头并不能适应快速运动，它们很容易在录像时产生运动模糊，这对于 **MediaPipe4U** 来说是致命的，不了解摄像头的人很难买到一个好的摄像头，我这里不想为摄像头厂商做广告，你选择摄像头时应该重点关注快门速度而不是画质。
