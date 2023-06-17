@@ -71,10 +71,11 @@ https://docs.metahuman.unrealengine.com/zh-CN/retargeting-animations-to-a-metahu
 ---
 
 ## 为什么无法从 OBS 虚拟摄像头采集视频？   
-OBS 自带的虚拟摄像头不能很好的兼容 DirectShow 采集，但是已经有人写了插件解决了这个问题，如果你要采集 OBS 画面，可以使用这个 OBS 虚拟摄像头插件:   
-[https://github.com/obsproject/obs-studio/issues/3635](https://github.com/obsproject/obs-studio/issues/3635)
+OBS 自带的虚拟摄像头不能很好的兼容 DirectShow 采集，但是已经有人写了插件解决了这个问题，如果你要采集 OBS 画面，可以使用这个 OBS 虚拟摄像头插件:      
+[OBS Virtual Cam](https://github.com/Avasam/obs-virtual-cam/releases)
 
-> 关于更多 OBS 虚拟摄像头的 issue 可以看这里：https://github.com/obsproject/obs-studio/issues/3635
+> 关于 OBS 虚拟摄像头的无法识别问题，具体可以看这个 issue ：   
+> [https://github.com/obsproject/obs-studio/issues/3635](https://github.com/obsproject/obs-studio/issues/3635)
 
 ---
 
