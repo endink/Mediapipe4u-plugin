@@ -36,7 +36,8 @@ nav_order: 35
 
 ### 运行时倒计时校准
 
-当你把 CalibrationPolicy 属性设置为 **Manual** 时, MediaPipe4U 将不会开始进行倒计时，但是，你可以调用 MediaPipeAnimInstance 上的 **StartCalibrationCountdown** 函数来开始一个校准倒计时。     
+当你把 CalibrationPolicy 属性设置为 **Manual** 时, MediaPipe4U 将不会开始进行倒计时。   
+你可以在任何时候调用 MediaPipeAnimInstance 上的 **StartCalibrationCountdown** 函数来手动开始一个校准倒计时。     
  
 [![calibration](./images/calibration_start_countdown.jpg "calibration")](./images/calibration_start_countdown.jpg)   
    
@@ -46,35 +47,40 @@ nav_order: 35
 
  **控制姿势和位置校准行为**
 
-某些情况下，你可能希望运行时控制倒计时校准的行为，例如：倒计时结束时不进行姿势校准，你可以通过 MediaPipe4U 提供的蓝图函数库来进行这些操作。   
-通过蓝图函数库中的 **SetCountdownCalibrationEnabled** 函数控制倒计时结束时的校准行为。
+默认情况下，校准倒计时结束时，会对位置进行校准，不会对姿势进行校准。你可以在动画蓝图节点上控制这个行为。   
+
+- MediaPipe Pose Solver 节点上的 **CountdownCalibrationEnabled** 可以控制是否在倒计时结束时进行姿势校准。   
+- MediaPipe Location Solver 节点上的 **CountdownCalibrationEnabled** 可以控制是否在倒计时结束时进行位置校准。
+
+{: .important}
+> 位置校准：当位置校准没有被执行时，角色不能进行位移，如果你禁用了到倒计时位置校准，你应该进行手动校准位置的流程。 
+
+[![calibration](./images/calibration_anim_nodes.jpg "calibration")](./images/calibration_anim_nodes.jpg)   
+
+你也可以通过蓝图函数库中的 **SetCountdownCalibrationEnabled** 来达到同样的目的。
 
 > **SetCountdownCalibrationEnabled** 函数返回一个值，指示设置校准的操作是否成功，通常不需要关心这个返回值。
 
 [![calibration](./images/calibration_set_enabled.jpg "calibration")](./images/calibration_set_enabled.jpg)   
 
-{: .warning}
+{: .highlight}
 > 由于姿势校准要求镜头中的人物以标准姿势站立，因此，通常它不适用于视频动补（视频中前几秒人物以标准姿势站立的视频除外）。    
 > 在视频动补前，你可以通过蓝图中调用 **SetCountdownCalibrationEnabled** 函数来禁用姿势的倒计时校准。
 
 > C++ 可通过访问 **UMediaPipeUtils** 蓝图函数类的静态函数执行相同的操作。
 
 
-### 校准类型
-MediaPipe4U 包含位置校准和姿势校准。默认情况下，校准倒计时结束时，会分别进行姿势校准、位置校准，但是你可以在动画蓝图节点上控制这个行为。   
-
-- MediaPipe Pose Solver 节点上的 **CountdownCalibrationEnabled** 可以控制是否在倒计时结束时进行姿势校准。   
-- MediaPipe Location Solver 节点上的 **CountdownCalibrationEnabled** 可以控制是否在倒计时结束时进行位置校准。
+### 姿势校准失效
+运行时的一些操作会导致姿势校准失效，这个时候你需要重新发起姿势校准。
 
 {: .warning}
-> 位置校准：当位置校准没有被执行时，角色不能进行位移，如果你禁用了到倒计时位置校准，你应该进行手动校准位置的流程。 
->
-> 姿势校准：当你运行过程中动态调整设置时，姿势校准数据会被重置，你需要重新校准姿势：   
+> 当你运行过程中动态调整以下设置时，姿势校准数据会被重置：   
 >    
 > - 脊柱俯仰禁用/启用 (SpinePitchEnable)   
 > - 脊柱俯仰跨度（SetHipPitchSpan）   
+> - 关节锁定状态变化
 >    
-> -关于脊柱俯仰，请阅读[姿势算解节点](../features/pose_solver.md)部分文档
+> - 关于脊柱俯仰、跨度等概念，请阅读文档[姿势算解节点：脊柱旋转模式](../features/pose_solver.md)章节部分
   
 ---     
 
