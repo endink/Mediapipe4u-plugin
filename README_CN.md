@@ -16,8 +16,8 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/a406a8ab3e464d) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjznAWapabJgN_C6Cw?e=iLdcav) | 2023-06-17 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/343b0886647c49) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzm9FpvXgGl8_Z3-L?e=ygkl8m) | 2023-06-17 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/fcbdddc02ad64b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjznVcb7SQyoI7bh6G?e=tMm6MT) | 2023-06-20 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/31857947033545) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjznaEnlkwR73HjT-r?e=dOTzAZ) | 2023-06-20 |
    
 > 插件由于采用预编译，包含大量 C++ 链接符号和调试符号，解压后会占用 **5G** 磁盘空间（大部分为 Intermediate 中的 UE 生成代码）   
 > 你不需要担心磁盘占用问题，这只是开发期间的磁盘占用，在项目打包后，插件磁盘占用大约是 **200M**（主要为 GStreamer 动态库）
@@ -43,7 +43,9 @@
 > 免费授权许可用户也可以在编辑器中体验它, 但是它不能被打包，请悉知。   
 > [M4U Remoting 文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)
 
-**Demo Project**   
+## Demo Project   
+
+克隆或下载下列 Github 仓库获得 Demo 工程源代码:
 
 - https://github.com/endink/MediaPipe4U-Demo  
 
@@ -56,9 +58,9 @@
 ---   
 
 **打包环境要求**   
-- Visual Studio 2022   
+- Visual Studio 2022 17.6.3 or later  
 - WINSDK: 10.0.22621 or later ([下载地址](https://developer.microsoft.com/zh-cn/windows/downloads/windows-sdk/))   
-- Visual C++ Redistributable 14.35 or later  ([下载地址](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist))   
+- Visual C++ Redistributable 14.36.32532 or later  ([下载地址](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist))   
 
 ---   
 

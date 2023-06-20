@@ -18,8 +18,8 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/a406a8ab3e464d) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjznAWapabJgN_C6Cw?e=iLdcav) | 2023-06-17 |
-| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/343b0886647c49) | [OneDrive](https://1drv.ms/u/s!AkmROUeQfSBjzm9FpvXgGl8_Z3-L?e=ygkl8m) | 2023-06-17 |
+| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/fcbdddc02ad64b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjznVcb7SQyoI7bh6G?e=tMm6MT) | 2023-06-20 |
+| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/31857947033545) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjznaEnlkwR73HjT-r?e=dOTzAZ) | 2023-06-20 |
   
 
   
@@ -48,8 +48,8 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 | Chinese Mandarin | [cowtransfer](https://cowtransfer.com/s/986250aed0314f) | [Github](https://github.com/endink/Mediapipe4u-plugin/releases/download/speech_model_Mandarin_20230521/speech_model_Mandarin_20230521.7z) | 2023-05-21 |
 
 
-**Demo Project**   
-
+## Demo Project    
+Please clone this repository to get demo project:   
 - https://github.com/endink/MediaPipe4U-Demo  
 
 > The demo project does not contain plugins, you need to download the plugin and copy content to the project's plugins folder to run.
@@ -58,9 +58,9 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 
 
 **Packaging Environment Requirements**   
-- Visual Studio 2022   
+- Visual Studio 2022 17.6.3 or later   
 - WINSDK: 10.0.22621 or later ([下载地址](https://developer.microsoft.com/zh-cn/windows/downloads/windows-sdk/))   
-- Visual C++ Redistributable 14.35 or later  ([下载地址](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist))   
+- Visual C++ Redistributable 14.36.32532 or later  ([下载地址](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist))   
 
 ---
 
@@ -108,6 +108,11 @@ CPU usage：20% (Based on DEMO project)
 
 ## Latest Update (Chinese)
 
+### 2023-06-20
+[new] Pose Solver: 支持开启/关闭姿势优化的具体项。
+[improve] 缩减编译后的体积（磁盘空间占用从 10GB 降低到 6GB）。 
+[fix] 脊柱旋转模式时可能造成姿势校准不正确。     
+
 ### 2023-06-17   
 [new] 新增姿态校准功能，纠正 mediapipe 原始数据中脊柱、小腿没有伸直的问题（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。     
 [new] 新增手动校准功能，姿势校准，位置校准均支持手动校准和自动校准设置（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。    
@@ -128,23 +133,4 @@ CPU usage：20% (Based on DEMO project)
 [new] 新增 **MediaPipe4USpeech** （商业授权功能，免费授权无法打包）插支持离线 TTS 和口型同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。   
 [new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。   
 [fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。   
-
-### 2023-05-05
-[fix] UE5.0 材质打包版本不正确
-
-### 2023-04-23   
-[new] :fire:加入 M4U Remoting, 支持从安卓设备捕捉表情 （[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)）。   
-[new] Android 面补工具开放下载（商业授权功能，免费授权无法打包）   
-[new] UE 编辑器工具新功能：   
-- LiveLink 追踪
-- 位移、姿势校准
-- 面容校准
-
-
-[new] 统一位置、姿态校准，从 AnimationInstance 访问 CalibrationCountDownSeconds 等参数；现在，支持手动校准位置和姿势（:red_circle:Break Changes）。   
-[fix] 动补回调包发生错误时可能导致 texture 被占用无法释放   
-[fix] 退出编辑器时概率引发崩溃   
-[fix] UE 工具箱状态不同步   
-   
-[More Update Logs](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)
 

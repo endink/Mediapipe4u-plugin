@@ -16,9 +16,11 @@ parent: 安装和配置
 |--------|--------------|
 |操作系统|Windows10/11 x64|
 |Unreal Engine |5.0.x, 5.1.x|
-|Visual Studio 2022 | 17.5 or later|
+|Visual Studio 2022 | 17.6.3 or later|
 |Windows SDK|10.0.22621 or later|
-|Visual C++ Redistributable|14.35 or later|
+|Visual C++ Redistributable|14.36.32532 or later|
+
+> 通常 Visual Studio 2022 17.6.3 或更新的版本中包含了必要的 Visual C++ Redistributable    
 
 {: .warning}
 > **MediaPipe4U** 不支持移动平台（手机端）和 Mac 平台。   
