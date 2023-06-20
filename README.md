@@ -108,10 +108,10 @@ CPU usage：20% (Based on DEMO project)
 
 ## Latest Update (Chinese)
 
-### 2023-06-20
-[new] Pose Solver: 支持开启/关闭姿势优化的具体项。
-[improve] 缩减编译后的体积（磁盘空间占用从 10GB 降低到 6GB）。 
-[fix] 脊柱旋转模式时可能造成姿势校准不正确。     
+### 2023-06-20   
+[new] Pose Solver: 支持开启/关闭姿势优化的具体项。   
+[improve] 缩减编译后的体积（磁盘空间占用从 10GB 降低到 6GB）。    
+[fix] 脊柱旋转模式时可能造成姿势校准不正确。        
 
 ### 2023-06-17   
 [new] 新增姿态校准功能，纠正 mediapipe 原始数据中脊柱、小腿没有伸直的问题（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。     
