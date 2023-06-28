@@ -49,6 +49,19 @@ MediaPipe4U 中内置了 4 种图像源：
 
 ---    
 
+## Image Source 高级控制
+你可以通过 MediaPipeHolisticComponent 的属性来控制 Image Source 的高级操作，但是，不是所有的图片源都支持这些操作：
+
+[![M4U Image Source](./images/image_source_advance_control.jpg "M4U Image Source")](./images/image_source_advance_control.jpg)
+
+|控制属性| 说明 |
+|:------|:--------|
+| SourceHorizontalFlip | 水平反转图像 |
+| SourceResolutionLimits | 限制图像分辨率 |
+
+{: .highlight}
+> 使用 **SourceResolutionLimits** 限制图像源的分辨率，可以有效的提升 mediapipe 算解器的性能。
+
 ## StaticImageSourceComponent
 
 ### 打开图片   
@@ -88,7 +101,7 @@ StartCamera 通过传递摄像头编号来开启摄像头，你可以通过 Medi
 [![M4U Image Source](./images/image_source_list_webcams.jpg "M4U Image Source")](./images/image_source_list_webcams.jpg)
 
 {: .highlight}
-> 其中 Provider 参数表示摄像头提供程序，默认是 OpenCV ，当前仅支持 OpenCV 摄像头实现，因此，你不需要关系这个参数。   
+> 其中 Provider 参数表示摄像头提供程序，默认是 OpenCV ，当前仅支持 OpenCV 摄像头实现，因此，你不需要关心这个参数。   
 > 
 > ListWebcams 返回一个 bool 值，指示调用是否成功。
 
@@ -145,6 +158,11 @@ MediaPipe4U 可以和 Unreal Engine 的 MediaPlayer 集成，从 MediaPlayer 中
 > - YUY2（YUNV, YUYV）
 > - NV12
 > - NV21
+>
+> 当前的 MediaPlayerImageSourceComponent 实现中，不支持高级控制（水平反转、分辨率限制）。
+   
+
+推荐使用 GStreamer 图像源来代替 MediaPlayer， 因为 GStreamerImageSourceComponent 有着更好的解码性能，也支持分辨率限制等高级功能。
 
 ### 配置 MediaPlayerImageSourceComponent   
 
