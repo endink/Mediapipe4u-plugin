@@ -108,6 +108,13 @@ CPU usage：20% (Based on DEMO project)
 
 ## Latest Update (Chinese)
 
+### 2023-06-28   
+[new] MediaPlayerImageSource: 支持从 Unreal Engine 的 MediaPlayer 中捕获画面作为图像源（(文档)[https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/image_source.html]）。     
+[imporve] 上半身锁定：支持设置上半身三个轴向的锁定 ((文档)[https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html])。      
+[fix] 修复校准时初始关节带有旋转角校准错误。   
+[fix] 阻尼算法造成的关节扭曲矫正错误。   
+
+
 ### 2023-06-20   
 [new] Pose Solver: 支持开启/关闭姿势优化的具体项。   
 [improve] 缩减编译后的体积（磁盘空间占用从 10GB 降低到 6GB）。    
