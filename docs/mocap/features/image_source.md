@@ -63,12 +63,14 @@ MediaPipe4U 中内置了 4 种图像源：
 MediaPipe4U 内置的 WebcamImageSourceComponent 提供了摄像头采集画面的支持，内部使用 OpenCV 实现，并且只支持 Direct Show 摄像头，如果你的摄像头不支持 Direct Show ，可能无法使用。   
 摄像头采集只需要调用 MediaPipeHolisticComponent 的 StartCamera 函数：  
 
-[![M4U Image Source](./images/image_source_start_camera.jpg "M4U Image Source")](./images/image_source_start_camera.jpg)
+[![M4U Image Source](./images/image_source_start_camera.jpg "M4U Image Source")](./images/image_source_start_camera.jpg)   
 
 StartCamera 参数：   
+
+
 | 参数 | 说明 | 示例 |
-|:----|:-----:|:--------|
-| DeviceId | 从 0 开始的摄像头编号| 0 |
+|:------|:------:|:------|
+| DeviceId | 从 0 开始的摄像头编号 | 0 |
 | ResolutionX | 摄像头水平分辨率 | 1280 |
 | ResolutionY | 摄像头垂直分辨率 | 720 |
 | FPS | 帧率 | 30 |
