@@ -18,8 +18,8 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/fcbdddc02ad64b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjznVcb7SQyoI7bh6G?e=tMm6MT) | 2023-06-20 |
-| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/31857947033545) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjznaEnlkwR73HjT-r?e=dOTzAZ) | 2023-06-20 |
+| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/65dfb07d5ab049) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzn607nI2T98QsMEk?e=EkoGWg) | 2023-06-28 |
+| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/85daff31c6a644) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzn9bhIUyOO4f9Sj1?e=OrYkkR) | 2023-06-28 |
   
 
   
@@ -109,10 +109,11 @@ CPU usage：20% (Based on DEMO project)
 ## Latest Update (Chinese)
 
 ### 2023-06-28   
-[new] MediaPlayerImageSource: 支持从 Unreal Engine 的 MediaPlayer 中捕获画面作为图像源（(文档)[https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/image_source.html]）。     
+[new] :rainbow:MediaPlayerImageSource: 支持从 Unreal Engine 的 MediaPlayer 中捕获画面作为图像源（(文档)[https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/image_source.html]）。     
 [imporve] 上半身锁定：支持设置上半身三个轴向的锁定 ((文档)[https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html])。      
-[fix] 修复校准时初始关节带有旋转角校准错误。   
+[fix] 修复校准时初始关节带有旋转角时产生的校准错误。   
 [fix] 阻尼算法造成的关节扭曲矫正错误。   
+[fix] 半身模式时校准无法正常工作。   
 
 
 ### 2023-06-20   

@@ -16,8 +16,8 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/fcbdddc02ad64b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjznVcb7SQyoI7bh6G?e=tMm6MT) | 2023-06-20 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/31857947033545) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjznaEnlkwR73HjT-r?e=dOTzAZ) | 2023-06-20 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/65dfb07d5ab049) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzn607nI2T98QsMEk?e=EkoGWg) | 2023-06-28 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/85daff31c6a644) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzn9bhIUyOO4f9Sj1?e=OrYkkR) | 2023-06-28 |
    
 > 插件由于采用预编译，包含大量 C++ 链接符号和调试符号，解压后会占用 **5G** 磁盘空间（大部分为 Intermediate 中的 UE 生成代码）   
 > 你不需要担心磁盘占用问题，这只是开发期间的磁盘占用，在项目打包后，插件磁盘占用大约是 **200M**（主要为 GStreamer 动态库）

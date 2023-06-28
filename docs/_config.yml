@@ -3,7 +3,7 @@ description: UnrealEngine 插件，基于 Google MediaPipe 完成单目单目摄
 
 url: https://opensource.labijie.com
 repository: endink/mediaipe4u-plugin # for github-metadata
-remote_theme: just-the-docs/just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.5.3
 # color_scheme: dark
 
 exclude:
