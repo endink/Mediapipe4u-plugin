@@ -66,14 +66,14 @@ MediaPipe4U 内置的 WebcamImageSourceComponent 提供了摄像头采集画面�
 [![M4U Image Source](./images/image_source_start_camera.jpg "M4U Image Source")](./images/image_source_start_camera.jpg)
 
 StartCamera 参数：   
-|参数| 说明 | 示例 |
-|----|-----|--------|
-| DeviceId | 从 0 开始的摄像头编号| 0 | 
-| ResolutionX | 摄像头水平分辨率 | 1280 | 
-| ResolutionY | 摄像头垂直分辨率 | 720 | 
-| FPS | 帧率 | 30 | 
-
-{: important}
+| 参数 | 说明 | 示例 |
+|:----|:-----:|:--------|
+| DeviceId | 从 0 开始的摄像头编号| 0 |
+| ResolutionX | 摄像头水平分辨率 | 1280 |
+| ResolutionY | 摄像头垂直分辨率 | 720 |
+| FPS | 帧率 | 30 |
+   
+{: .important}
 > MediaPipe4U 只查找 Direct Show 摄像头，因此摄像头编号可能和其他软件有所不同。   
 > 
 > 当设置的分辨率摄像头不支持时，会自动寻找合适的分辨率。   
@@ -139,7 +139,7 @@ MediaPipe4U 可以和 Unreal Engine 的 MediaPlayer 集成，从 MediaPlayer 中
 [![M4U Image Source](./images/image_source_mp_properties.jpg "M4U Image Source")](./images/image_source_mp_properties.jpg)
  
 
- ### 开始捕捉
+### 开始捕捉
 
  MediaPlayerImageSourceComponent 会在 MediaPlayer 打开后自动捕捉画面。因此捕捉是通过 MediaPlayer 控制的。
 
