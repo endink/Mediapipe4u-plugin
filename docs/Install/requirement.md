@@ -24,7 +24,7 @@ parent: 安装和配置
 
 {: .warning}
 > **MediaPipe4U** 不支持移动平台（手机端）和 Mac 平台。   
-> **MediaPipe4U** 不支 x86 平台。
+> **MediaPipe4U** 不支持 32 位平台。
 
 |硬件|版本|
 |--------|--------------|

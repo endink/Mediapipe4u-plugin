@@ -109,8 +109,8 @@ CPU usage：20% (Based on DEMO project)
 ## Latest Update (Chinese)
 
 ### 2023-06-28   
-[new] :rainbow:MediaPlayerImageSource: 支持从 Unreal Engine 的 MediaPlayer 中捕获画面作为图像源（(文档)[https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/image_source.html]）。     
-[imporve] 上半身锁定：支持设置上半身三个轴向的锁定 ((文档)[https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html])。      
+[new] :rainbow:MediaPlayerImageSource: 支持从 Unreal Engine 的 MediaPlayer 中捕获画面作为图像源（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/image_source.html)）。     
+[new] 上半身锁定：支持设置上半身三个轴向的锁定 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html))。      
 [fix] 修复校准时初始关节带有旋转角时产生的校准错误。   
 [fix] 阻尼算法造成的关节扭曲矫正错误。   
 [fix] 半身模式时校准无法正常工作。   
