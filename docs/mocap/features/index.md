@@ -21,3 +21,11 @@ has_children: true
 **MediaPipe4U** 主要通过一个 Actor 实现表情捕捉。
 
 - **MediaPipe Face Link Actor**
+
+**MediaPipe4U** 提供了不同形式的图像源（Image Source）用来捕捉动作和表情.
+
+- 静态图片（jpg, png）。   
+- 视频文件 (mp4, avi)。   
+- 流媒体 （RTMP/RSTP/HTTP  
+- 摄像头
+- Unrean Engine Media Player

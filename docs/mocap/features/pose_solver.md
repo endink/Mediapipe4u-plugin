@@ -46,6 +46,8 @@ MediaPipe4U 使用一个专门的动画蓝图节点，从动补数据中计算�
 |UseSpinePitch | bool | 是否使用脊柱俯仰（旋转）。 |
 |HipPitchSpanAngle | int | 0 - 180 的角度数，控制盆骨旋转的跨度。 |
 |bFixMediaPipePose|bool|是否修正原始 mediapipe 动补数据中的细节错误。|
+|UpperBodyLocks| struct | 锁定上半身 pitch, yaw, roll 的旋转。 |
+|TwistCorrectionSettings| strcut | 关节扭曲矫正的权重设置。 |
 
 
 ## 手臂 IK
@@ -145,3 +147,11 @@ MediaPipe4U 中包含盆骨旋转模式，可以极大的改善这一问题，�
 > 不同模型的骨骼设计可能不同，你需要根据你的模型调整合适的值以找到最佳跨度。   
 > 
 > 错误的跨度设置可能造成脊柱部位扭曲，跨度越小，越不容易扭曲，但是盆骨的旋转切换会越多，因此脚步越不稳定。反之，跨度越大，脚部越稳定。
+
+
+## 上半身锁定
+
+支持对上半身三个轴向进行锁定，通过 Pose Solver 节点上的 UpperBodyLocks 来控制。   
+
+轴向的定义如下：   
+[![Pose Node](./images/pose_body_axis.jpg "Pose Node")](./images/pose_body_axis.jpg)
