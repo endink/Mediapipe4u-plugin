@@ -16,14 +16,7 @@ MediaPipe4U 中内置了 4 种图像源：
 - **StaticImageSourceComponent** : 静态图片图像源，支持从 jpg, png 等图片文件捕获图像。   
 - **WebcamImageSourceComponent** ：摄像头图像源，支持从本机摄像头捕获图像。   
 - **GStreamerImageSourceComponent** ：基于 GStreamer 实现的媒体管线，支持从视频文件、在线流媒体（RTMP/RSTP/HTTP 等协议）中捕获图像。   
-- **MediaPlayerImageSourceComponent** ：从 Unreal Engine 的 Media Player 组件中捕获图像。   
-{: .d-inline-block }
-
-Beta
-{: .label .label-yellow } 
-
-Since 20230628
-{: .label .label-green }
+- **MediaPlayerImageSourceComponent** ：从 Unreal Engine 的 Media Player 组件中捕获图像 (beta)。   
 
 {: .important}
 > WebcamImageSourceComponent 内置在 MediaPipeHolisticComponent 中，不需要手动添加。   
@@ -46,7 +39,7 @@ Since 20230628
 > 各种图像源如何使用，请继续阅读本文档下面的内容。
 
 ## Image Source 通用属性
-
+   
 **bCloseWhenMediaPipeStopped**   
 是否在 MediaPipe 动补停止时（例如：调用了 MediaPipeHolisticComponent 的 Stop 函数）自动停止 Image Source (自动关闭文件、MediaPlayer 等)。   
 默认值: **true**
@@ -73,14 +66,14 @@ MediaPipe4U 内置的 WebcamImageSourceComponent 提供了摄像头采集画面�
 [![M4U Image Source](./images/image_source_start_camera.jpg "M4U Image Source")](./images/image_source_start_camera.jpg)
 
 StartCamera 参数：   
-|参数| 说明| 示例 |
-|----| ----| -------|
+|参数| 说明 | 示例 |
+|----|-----|--------|
 | DeviceId | 从 0 开始的摄像头编号| 0 | 
 | ResolutionX | 摄像头水平分辨率 | 1280 | 
 | ResolutionY | 摄像头垂直分辨率 | 720 | 
 | FPS | 帧率 | 30 | 
 
-{: Important}
+{: important}
 > MediaPipe4U 只查找 Direct Show 摄像头，因此摄像头编号可能和其他软件有所不同。   
 > 
 > 当设置的分辨率摄像头不支持时，会自动寻找合适的分辨率。   
@@ -128,7 +121,8 @@ Start 函数参数：
 Beta
 {: .label .label-yellow } 
 
-MediaPipe4U 可以和 Unreal Engine 的 MediaPlayer 集成，从 MediaPlayer 中捕获画面。   
+MediaPipe4U 可以和 Unreal Engine 的 MediaPlayer 集成，从 MediaPlayer 中捕获画面。      
+
 {: .warning}
 > MediaPlayerImageSourceComponent 是一个 Beta 功能，可能存在不稳定性。   
 >   
