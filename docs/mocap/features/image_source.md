@@ -8,6 +8,7 @@ nav_order: 40
 
 # Image Source 
 
+Image Source 表示图像源。   
 MediaPipe4U 将提供图像数据（静态图片、视频流、视频文件）的组件，统一抽象为一个 UE 接口 **IMediaPipeImageSource**， 表示 mediapipe 用于捕捉动作和表情的图像来源。   
 
 ## 内置 Image Source 
@@ -21,7 +22,7 @@ MediaPipe4U 中内置了 4 种图像源：
 {: .important}
 > WebcamImageSourceComponent 内置在 MediaPipeHolisticComponent 中，不需要手动添加。   
 >
-> WebcamImageSourceComponent 的使用是通过调用 MediaPipeHolisticComponent 的 **StartCamera** 函数来使用，不使用 StartImageSource 函数。   
+> WebcamImageSourceComponent 通过调用 MediaPipeHolisticComponent 的 **StartCamera** 函数来使用，不使用 StartImageSource 函数。   
 
 
 
@@ -80,6 +81,17 @@ StartCamera 参数：
 > 
 > 当设置的分辨率摄像头不支持时，会自动寻找合适的分辨率。   
 > 当设置的帧率摄像头不支持时，会自动寻找合适的帧率   
+
+### 列出摄像头   
+StartCamera 通过传递摄像头编号来开启摄像头，你可以通过 MediaPipe4U 的蓝图函数库中的 **ListWebcams** 函数来列出本地机器中所有的摄像头，数组下标（索引）可用于 DeviceId 参数。  
+
+[![M4U Image Source](./images/image_source_list_webcams.jpg "M4U Image Source")](./images/image_source_list_webcams.jpg)
+
+{: .highlight}
+> 其中 Provider 参数表示摄像头提供程序，默认是 OpenCV ，当前仅支持 OpenCV 摄像头实现，因此，你不需要关系这个参数。   
+> 
+> ListWebcams 返回一个 bool 值，指示调用是否成功。
+
 
 ### 关闭摄像头   
 通过调用 MediaPipeHolisticComponent 的 Stop 函数关闭摄像头动补
