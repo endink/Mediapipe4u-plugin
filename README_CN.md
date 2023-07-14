@@ -1,5 +1,12 @@
 # Mediapipe4U 插件
 
+<p align="left">
+    <a href=""><img src="https://img.shields.io/badge/OS-Windows X64-brightgreen.svg"></a>
+    <a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
+    <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
+    <a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.0, 5.1-yellow.svg"></a>
+</p>
+
 MediaPipe4U 解决方案提供了一系列的套件和工具，让你在虚幻引擎项目中快速应用人工智能（AI）和机器学习（ML）技术。您可以立即将这些解决方案集成到你的 UE 项目中，并根据您的需求对其进行自定义。包括动作捕捉、面部表情捕捉、文本到语音转换 （TTS）、语音转换 （ASR） 等。所有功能都是实时的、离线的、低延迟的和易于使用的。
 
 ## 文档
