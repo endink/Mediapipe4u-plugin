@@ -121,3 +121,14 @@ CPU usage：20% (Based on DEMO project)
 [bilibili](https://space.bilibili.com/481665211)   
 
 [Youtube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
+
+## Acknowledge     
+---   
+1. M4U used [MediaPipe](https://github.com/google/mediapipe) for motion capture and face capture.
+2. M4U used [NVIDIA Maxine AR SDK](https://github.com/NVIDIA/MAXINE-AR-SDK) for facal capture.
+3. M4U used [Paddle Speech](https://github.com/PaddlePaddle/PaddleSpeech) for TTS.
+4. M4U used [FunASR](https://github.com/alibaba-damo-academy/FunASR) for ASR.
+5. M4U used [GStreamer](https://gstreamer.freedesktop.org/) for video and live streaming decoding.
+6. M4U borrowed a lot of code from [PowerIK](https://poweranimated.github.io/) for ground ik.
+7. M4U borrowed a lot of ideas from [Kalidokit](https://github.com/yeemachine/kalidokit) for mocap.
+8. M4U borrowed a lot of code from [wongfei](https://github.com/wongfei) for gstreamer/mediapipe integration.
