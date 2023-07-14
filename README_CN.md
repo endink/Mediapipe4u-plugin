@@ -1,6 +1,6 @@
 # Mediapipe4U 插件
 
-基于 MediaPipe 的 UnrealEngine 动作捕捉插件。 
+MediaPipe4U 解决方案提供了一系列的套件和工具，让你在虚幻引擎项目中快速应用人工智能（AI）和机器学习（ML）技术。您可以立即将这些解决方案集成到你的 UE 项目中，并根据您的需求对其进行自定义。包括动作捕捉、面部表情捕捉、文本到语音转换 （TTS）、语音转换 （ASR） 等。所有功能都是实时的、离线的、低延迟的和易于使用的。
 
 ## 文档
 
@@ -18,6 +18,8 @@
 |---| --- | --- |----|
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/65dfb07d5ab049) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzn607nI2T98QsMEk?e=EkoGWg) | 2023-06-28 |
 | UE 5.1 | [奶牛快传](https://cowtransfer.com/s/14fda3e9ca6b46) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzn9bhIUyOO4f9Sj1?e=OrYkkR) | 2023-06-28 |
+
+如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    
 > 插件由于采用预编译，包含大量 C++ 链接符号和调试符号，解压后会占用 **5G** 磁盘空间（大部分为 Intermediate 中的 UE 生成代码）   
 > 你不需要担心磁盘占用问题，这只是开发期间的磁盘占用，在项目打包后，插件磁盘占用大约是 **200M**（主要为 GStreamer 动态库）
@@ -101,4 +103,10 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
+
+## 更新日志
+
+了解每次发布的相信信息，请访问以下页面:   
+
+[Release Notes (简体中文)](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)   
 

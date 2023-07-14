@@ -1,6 +1,6 @@
 # MediaPipe4U
 
-MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technology for capturing human motion (include body, fingers, face) and puppeteering 3D avatar through webcam, videos, and images in realtime.
+MediaPipe4U provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in Unreal Engine Project. You can plug these solutions into your UE project immediately, customize them to your needs. Include motion capture , facial expression capture for your 3D avatar, text to speech (TTS), speech recorgnization (ASR), etc. All features are real-time, off-string, low latency and easy to use 
 
 [中文页面](./README_CN.md)
 
@@ -20,8 +20,11 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 |---| --- | --- |----|
 | UE 5.0 | [cowtransfer](https://cowtransfer.com/s/65dfb07d5ab049) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzn607nI2T98QsMEk?e=EkoGWg) | 2023-06-28 |
 | UE 5.1 | [cowtransfer](https://cowtransfer.com/s/14fda3e9ca6b46) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzn9bhIUyOO4f9Sj1?e=OrYkkR) | 2023-06-28 |
-  
 
+If you want to know what's news in each release, please visit the page below:   
+  
+- [Release Notes (English, it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)   
+- [Release Notes (简体中文)](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)   
 
   
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
@@ -110,40 +113,3 @@ CPU usage：20% (Based on DEMO project)
 [bilibili](https://space.bilibili.com/481665211)   
 
 [Youtube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
-
-## Latest Update (Chinese)
-
-### 2023-06-28   
-[new] :rainbow:MediaPlayerImageSource: 支持从 Unreal Engine 的 MediaPlayer 中捕获画面作为图像源（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/image_source.html)）。     
-[new] 上半身锁定：支持设置上半身三个轴向的锁定 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html))。      
-[fix] 修复校准时初始关节带有旋转角时产生的校准错误。   
-[fix] 阻尼算法造成的关节扭曲矫正错误。   
-[fix] 半身模式时校准无法正常工作。   
-
-
-### 2023-06-20   
-[new] Pose Solver: 支持开启/关闭姿势优化的具体项。   
-[improve] 缩减编译后的体积（磁盘空间占用从 10GB 降低到 6GB）。    
-[fix] 脊柱旋转模式时可能造成姿势校准不正确。        
-
-### 2023-06-17   
-[new] 新增姿态校准功能，纠正 mediapipe 原始数据中脊柱、小腿没有伸直的问题（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。     
-[new] 新增手动校准功能，姿势校准，位置校准均支持手动校准和自动校准设置（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。    
-[new] 新增脊柱旋转模式，有助于运动中稳定脚部（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html)）。    
-[new] 手指捕捉手掌丢失时回弹处理规则 。   
-[new] UE Editor 动补工具加入关节锁定、校准等功能。   
-[new] UE Editor 动补工具支持对视频文件快进、暂停。   
-[improve] mediapipe 升级到最新版（[v0.10.1](https://github.com/google/mediapipe/releases/tag/v0.10.1)）。     
-[improve] Hand Solver：加入手腕旋转阻尼，防止跳变。     
-[improve] LocationSolver: Location IK 算法改进，位移计算更合理。     
-[improve] Ground IK: 脚步和脚踝旋转平滑。     
-[improve] Ground IK: 加入脚步限滑，改善脚步抖动问题。    
-[fix] GroundIK: 检测脚踝位置不正确。     
-[fix] GroundIK: 节点 FeetVerticalOffset 等几个属性设置无效。      
-[fix] ControlRigPose Baker 工具生成的 PoseAsset 不正确。      
-
-### 2023-05-21
-[new] 新增 **MediaPipe4USpeech** （商业授权功能，免费授权无法打包）插支持离线 TTS 和口型同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。   
-[new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。   
-[fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。   
-
