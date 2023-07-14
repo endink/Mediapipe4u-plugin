@@ -22,10 +22,15 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 | UE 5.1 | [cowtransfer](https://cowtransfer.com/s/14fda3e9ca6b46) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzn9bhIUyOO4f9Sj1?e=OrYkkR) | 2023-06-28 |
   
 
+
   
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
 > Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).
 
+
+## License Release
+
+The license file will be published in the [discussion](https://github.com/endink/Mediapipe4u-plugin/discussions/82), and the plugin package file will automatically include an license file.   
 
 ## M4U Remoting App Download
 
