@@ -9,7 +9,7 @@
     <a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.0, 5.1-yellow.svg"></a>
 </p>
 
-MediaPipe4U provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in Unreal Engine Project. You can plug these solutions into your UE project immediately, customize them to your needs. Include motion capture , facial expression capture for your 3D avatar, text to speech (TTS), speech recorgnization (ASR), etc. All features are real-time, off-string, low latency and easy to use 
+MediaPipe4U provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in Unreal Engine project. You can plug these solutions into your UE project immediately, customize them to your needs. Include motion capture , facial expression capture for your 3D avatar, text to speech (TTS), speech recorgnization (ASR), etc. All features are real-time, offline, low latency and easy to use.
 
 
 ## Document
