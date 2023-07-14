@@ -28,7 +28,7 @@ MediaPipe4U is an UnrealEngine plugin that integrated Google Mediapipe technolog
 > Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).
 
 
-## License Release
+## Free License File Release
 
 The license file will be published in the [discussion](https://github.com/endink/Mediapipe4u-plugin/discussions/82), and the plugin package file will automatically include an license file.   
 
