@@ -19,7 +19,7 @@ Current
 [improve] GStreamer 打包时不再打包无用的 PC (C++ package config) 文件，进一步减小打包尺寸。   
 [fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
 
-{: warn}
+{: .warn}
 > [**break change**] :red_circle: 原有的 TTS 模型包格式不再兼容新版插件，升级插件后请删除原有模型包 （speech 目录）, 使用编辑器导入模型包功能导入新得语音模型包。   
 
 
