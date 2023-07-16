@@ -5,7 +5,9 @@ title: 快速入门
 parent: 语音套件
 ---
 
-## 快速入门
+# 快速入门
+
+## 语音合成（TTS）快速入门
 
 此文档描述如何快速使用 MediaPipe4USpeech 插件完成 TTS 和驱动虚拟角色（数字化身）的口型同步。  
 快速使用 MediaPipe4U 的语音套件，只需要几个简单步骤：
@@ -27,7 +29,7 @@ parent: 语音套件
 
 ### 下载语音包
 
-从 [https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases) 页面中找到 **Speech Models**， 下载对应语言的语音包。
+从 [https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases) 页面中找到 **Speech Models**， 下载对应语言的 TTS 模型包。
 
 ### 准备动画资产
 
@@ -57,7 +59,7 @@ parent: 语音套件
 
 [![speech](./images/qs_speech_tools.jpg "speech")](./images/qs_speech_tools.jpg)
 
-## 蓝图函数
+## 蓝图支持
 
 在蓝图中使用 **MediaPipe4USpeech** 的 **SpeakText** 函数，可以进行文本朗读。
 
@@ -67,3 +69,6 @@ parent: 语音套件
 在蓝图中使用 **MediaPipe4USpeech** 的 **StopSpeak** 函数，可以停止朗读。
 
 [![speech](./images/qs_bp_speck_text.jpg "speech")](./images/qs_bp_speck_text.jpg)
+
+## 语音合成（ASR）快速入门
+
