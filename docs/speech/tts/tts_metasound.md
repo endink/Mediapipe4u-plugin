@@ -2,7 +2,7 @@
 layout: default
 nav_order: 10
 title: Metasound 集成
-parent: 语音合成(TTS)
+parent: 语音合成 (TTS)
 grand_parent: 语音套件
 has_children: true
 ---

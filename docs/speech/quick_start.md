@@ -27,7 +27,7 @@ parent: 语音套件
 
 下面，详细介绍这些步骤的操作方法。
 
-### 下载语音包
+### 下载 TTS 模型包
 
 从 [https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases) 页面中找到 **Speech Models**， 下载对应语言的 TTS 模型包。
 
@@ -55,7 +55,7 @@ parent: 语音套件
 
 ### 运行程序
 
-运行程序，如果你在编辑器中运行，可以通过 Speech 编辑工具快速测试语音效果。
+运行程序，如果你在编辑器中运行，可以通过 Speech 编辑器工具快速测试语音合成效果。
 
 [![speech](./images/qs_speech_tools.jpg "speech")](./images/qs_speech_tools.jpg)
 
@@ -70,5 +70,20 @@ parent: 语音套件
 
 [![speech](./images/qs_bp_speck_text.jpg "speech")](./images/qs_bp_speck_text.jpg)
 
-## 语音合成（ASR）快速入门
+---   
 
+## 语音识别（ASR）快速入门
+
+从 [https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases) 页面中找到 **Speech Models**， 下载对应语言的 ASR 模型包。
+
+### 创建 MediaPipeSpeechActor 组件
+
+向场景中添加一个 MediaPipeSpeechActor 组件。
+
+> 操作截图请参看上文的 TTS 操作截图。
+
+### 运行程序
+
+运行程序，如果你在编辑器中运行，可以通过 Speech 编辑器工具快速测试语音识别效果。
+
+[![speech](./images/qs_speech_tools.jpg "speech")](./images/qs_speech_tools.jpg)
