@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 100
-title: 软件授权
+title: 授权许可
 has_children: true
 ---
 # 软件授权
@@ -18,8 +18,19 @@ has_children: true
 |---------| --------| ---------|
 | Google MediaPipe | Apache 2.0  | [https://github.com/google/mediapipe](https://github.com/google/mediapipe) |
 | Crypto++ | Boost 1.0  | [https://github.com/weidai11/cryptopp](https://github.com/weidai11/cryptopp) |
+| Zlib | [Zlib License](https://github.com/madler/zlib/blob/master/LICENSE)  | [https://github.com/madler/zlib](https://github.com/madler/zlib) |
 | GStreamer | LGPL  | [https://gstreamer.freedesktop.org/](https://gstreamer.freedesktop.org/) |
 | PaddleLite | Apache 2.0  | [https://github.com/PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) |
 | OVRLipSync | [Meta Special](https://developer.oculus.com/licenses/oculussdk/) | [https://developer.oculus.com/documentation/unreal/audio-ovrlipsync/](https://developer.oculus.com/documentation/unreal/audio-ovrlipsync/) |
+| FunASR | MIT | [https://github.com/alibaba-damo-academy/FunASR](https://github.com/alibaba-damo-academy/FunASR) |
 
 ---   
+
+{: .warning}
+> 注意，语音识别（ASR）的模型来自阿里达摩院 FunASR 项目，这些模型有自己的许可协议，请务必遵守：    
+> [Model License](https://github.com/alibaba-damo-academy/FunASR/blob/main/MODEL_LICENSE)
+
+
+如果试用版的许可证过期了，但是又没有发布新的插件版本，你可以在[讨论区](https://github.com/endink/Mediapipe4u-plugin/discussions/82) 找到新的许可证。
+
+

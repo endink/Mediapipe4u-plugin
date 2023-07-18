@@ -2,7 +2,7 @@
 layout: default
 nav_order: 3
 title: 商业授权
-parent: 软件授权
+parent: 授权许可
 ---
 
 # 商业授权
@@ -76,8 +76,8 @@ USD Price Table （Tax excluded）
 > ⚪ :Means this feature is only available in the UE Editor.
 
 
-{: .important}
-> 免费版本不做任何承诺，付费版本承诺授权有效期内 BUG 及时修复。
+{: .wanrning}
+> 如果你要购买设备授权，必须提供要部署的设备的机器码，关于机器码如何获取，请阅读 [机器码文档](./device_id.md) 。
 
 
 # 如何付费

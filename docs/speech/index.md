@@ -28,3 +28,6 @@ MediaPipe4U 的语音套件，将 Paddle Speech 和 OVRLipSync 技术融合，�
 
 - 离线语音合成（TTS）
 - 声音和唇形同步
+- 离线语音识别（ASR）
+- 软件降噪
+- 音频重采样支持

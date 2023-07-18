@@ -5,13 +5,13 @@ title: 更新日志
 has_children: false
 ---
 
-### 2023-07-17   
+### 2023-07-18   
 {: .d-inline-block }
 
 Current
 {: .label .label-green }    
 [new] 支持在插件配置界面中更新许可证（文档）。   
-[new] 支持在插件配置界面中语音模型（文档）。   
+[new] 支持在插件配置界面中更新语音模型（文档）。   
 [new] :rainbow: 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字。   
 [new] 支持从蓝图中更新许可证，方便从自己得服务器分发许可证到客户端。   
 [improve] :thumbsup: MediaPipe 升级到 0.10.2, 更新了 google 模型，使用新的 mediapipe solution api，表情捕捉大幅改进，普通摄像头的表情捕捉已经处于 Production Ready 水平了。   

@@ -7,16 +7,30 @@ parent: 语音套件
 
 # 快速入门
 
-## 语音合成（TTS）快速入门
+在开始使用语音套件之前，你必须先下载和安装语音模型包。从 [https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases) 页面中找到 **Speech Models**， 下载对应语言的 TTS 模型包。
+
+
+
+关于语音模型下载和安装的详细说明，请阅读[插件配置](./config.md)文档。   
+
+--- 
+
+## 创建 MediaPipeSpeechActor 组件
+
+向场景中添加一个 MediaPipeSpeechActor 组件。
+
+[![speech](./images/qs_outline_speech_actor.jpg "speech")](./images/qs_outline_speech_actor.jpg)
+
+---
+
+## 使用语音合成（TTS）和口型同步（LipSync）
 
 此文档描述如何快速使用 MediaPipe4USpeech 插件完成 TTS 和驱动虚拟角色（数字化身）的口型同步。  
 快速使用 MediaPipe4U 的语音套件，只需要几个简单步骤：
 
-1. 下载语音模型
-2. 准备动画资产
-3. 创建 MediaPipeSpeechActor 组件
-4. 添加动画蓝图节点
-5. 运行程序
+1. 准备动画资产
+2. 添加动画蓝图节点
+3. 运行程序
 
 {: .warning}
 > 语音套件**不包含**在免费授权许可中。
@@ -25,11 +39,9 @@ parent: 语音套件
 > 
 > 免费授权版本仅能够在 Ureal Editor 中使用它
 
+
 下面，详细介绍这些步骤的操作方法。
 
-### 下载 TTS 模型包
-
-从 [https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases) 页面中找到 **Speech Models**， 下载对应语言的 TTS 模型包。
 
 ### 准备动画资产
 
@@ -41,49 +53,48 @@ parent: 语音套件
 > 音素表情请参考[Lipsync文档](./lipsync.md)或[OVRLipSync文档](https://developer.oculus.com/documentation/unreal/audio-ovrlipsync-viseme-reference)
 
 
-### 创建 MediaPipeSpeechActor 组件
-
-向场景中添加一个 MediaPipeSpeechActor 组件。
-
-[![speech](./images/qs_outline_speech_actor.jpg "speech")](./images/qs_outline_speech_actor.jpg)
-
 ### 添加动画蓝图节点
 
 在动画蓝图中添加 **MediaPipe LipSync** 节点和 Evalute Pose 节点。
 
 [![speech](./images/lip_sync_anim_blueprint.jpg "speech")](./images/lip_sync_anim_blueprint.jpg)
 
-### 运行程序
+## 使用蓝图中进行语音合成
 
-运行程序，如果你在编辑器中运行，可以通过 Speech 编辑器工具快速测试语音合成效果。
-
-[![speech](./images/qs_speech_tools.jpg "speech")](./images/qs_speech_tools.jpg)
-
-## 蓝图支持
-
-在蓝图中使用 **MediaPipe4USpeech** 的 **SpeakText** 函数，可以进行文本朗读。
+在蓝图中使用 **MediaPipeSpeechActor** 的 **SpeakText** 函数，可以进行文本朗读。
 
 [![speech](./images/qs_bp_speck_text.jpg "speech")](./images/qs_bp_speck_text.jpg)
 
 
-在蓝图中使用 **MediaPipe4USpeech** 的 **StopSpeak** 函数，可以停止朗读。
+在蓝图中使用 **MediaPipeSpeechActor** 的 **StopSpeak** 函数，可以停止朗读。
 
 [![speech](./images/qs_bp_speck_text.jpg "speech")](./images/qs_bp_speck_text.jpg)
 
 ---   
 
-## 语音识别（ASR）快速入门
 
-从 [https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases) 页面中找到 **Speech Models**， 下载对应语言的 ASR 模型包。
+## 使用语音识别
 
-### 创建 MediaPipeSpeechActor 组件
+### 绑定语音识别事件
 
-向场景中添加一个 MediaPipeSpeechActor 组件。
+在蓝图中绑定 **MediaPipeSpeechActor** 的 **OnTextRecognized** 事件，可以在事件回调中获取到 ASR 识别到的文本。
 
-> 操作截图请参看上文的 TTS 操作截图。
+[![speech](./images/bind_asr_recognized_event.jpg "speech")](./images/bind_asr_recognized_event.jpg)  
 
-### 运行程序
+### 在蓝图中进行语音识别
 
-运行程序，如果你在编辑器中运行，可以通过 Speech 编辑器工具快速测试语音识别效果。
+在蓝图中调用 **MediaPipeSpeechActor** 的 **StartASR** 函数，可以从默认的音频输入设备（麦克风）中捕获语音数据并识别为文本。   
+
+[![speech](./images/start_asr.jpg "speech")](./images/start_asr.jpg)
+
+在蓝图中调用 **MediaPipeSpeechActor** 的 **StopASR** 函数，可以停止捕获音频数据。   
+
+[![speech](./images/stop_asr.jpg "speech")](./images/stop_asr.jpg)
+
+---   
+
+## 使用 MediaPipe4U Speech 语音识别工具
+
+MediaPipe4U Speech 提供了在 Unreal Editor 中快速测试的语音功能的工具，你可以从 `窗口（Windows）>> MediaPipe4U >> MediaPipe4U Speech` 菜单中打开它。
 
 [![speech](./images/qs_speech_tools.jpg "speech")](./images/qs_speech_tools.jpg)

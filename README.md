@@ -122,8 +122,10 @@ CPU usage：20% (Based on DEMO project)
 
 [Youtube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
 
-## Acknowledge     
 ---   
+
+## Acknowledge     
+
 1. M4U used [MediaPipe](https://github.com/google/mediapipe) for motion capture and face capture.
 2. M4U used [NVIDIA Maxine AR SDK](https://github.com/NVIDIA/MAXINE-AR-SDK) for facal capture.
 3. M4U used [Paddle Speech](https://github.com/PaddlePaddle/PaddleSpeech) for TTS.
