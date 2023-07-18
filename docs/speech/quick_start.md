@@ -59,7 +59,7 @@ parent: 语音套件
 
 [![speech](./images/lip_sync_anim_blueprint.jpg "speech")](./images/lip_sync_anim_blueprint.jpg)
 
-## 使用蓝图中进行语音合成
+### 使用蓝图中进行语音合成
 
 在蓝图中使用 **MediaPipeSpeechActor** 的 **SpeakText** 函数，可以进行文本朗读。
 

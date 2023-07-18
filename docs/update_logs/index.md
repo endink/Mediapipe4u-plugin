@@ -10,16 +10,16 @@ has_children: false
 
 Current
 {: .label .label-green }    
-[new] 支持在插件配置界面中更新许可证（文档）。   
-[new] 支持在插件配置界面中更新语音模型（文档）。   
-[new] :rainbow: 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字。   
+[new] 支持在插件配置界面中更新许可证（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
+[new] 支持在插件配置界面中更新语音模型（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)）。   
+[new] :rainbow: 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字([文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html))。   
 [new] 支持从蓝图中更新许可证，方便从自己得服务器分发许可证到客户端。   
 [improve] :thumbsup: MediaPipe 升级到 0.10.2, 更新了 google 模型，使用新的 mediapipe solution api，表情捕捉大幅改进，普通摄像头的表情捕捉已经处于 Production Ready 水平了。   
 [improve] 使用 Pose Tracker 装饰线条（Annotion）时，不再绘制 ROI 红色线框（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
 [improve] GStreamer 打包时不再打包无用的 PC (C++ package config) 文件，进一步减小打包尺寸。   
 [fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
 
-{: .warn}
+{: .warning}
 > [**break change**] :red_circle: 原有的 TTS 模型包格式不再兼容新版插件，升级插件后请删除原有模型包 （speech 目录）, 使用编辑器导入模型包功能导入新得语音模型包。   
 
 
