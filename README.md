@@ -34,7 +34,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
   - Live link compatible
   - Real-time
   - RGB webcam supported
-- Multi-source capture
+- Multi-source Capture
   - RGB WebCam
   - Video File
   - Image
@@ -42,12 +42,13 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
   - Android Device (M4U Remoting)
 - TTS
   - Offline
-  - Realtime
+  - Real-time
   - Lip-Sync
-- Offline-ASR
+- ASR
   - Offline
-  - Realtime
-- BVH Export
+  - Real-time
+- Animation Data Export
+  - BVH export 
 - Pure plugins
   - No external programs required
   - All in Unreal Engine
