@@ -13,11 +13,33 @@
 <a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
 <a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.0, 5.1, 5.2-purple.svg"></a>
+<p align="center">
+<a href="https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/">最新动态</a>
+| <a href="https://opensource.labijie.com/Mediapipe4u-plugin">文档</a>
+| <a href="#插件下载">下载</a>
+| <a href="https://github.com/endink/MediaPipe4U-Demo">Demo 工程</a>
+| <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/M4U_Remoting_App">M4U Remoting(Android App)</a>
+| <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models">语音模型包</a>
+</p>
 </p>
 
 # 简介
 
 **MediaPipe4U**  提供了一系列的套件和工具，让你在虚幻引擎项目中快速应用人工智能（AI）和机器学习（ML）技术。您可以立即将这些解决方案集成到你的 UE 项目中，并根据您的需求对其进行自定义。包括动作捕捉、面部表情捕捉、语音合成 （TTS）、语音识别 （ASR） 等。所有功能都是实时的、离线的、低延迟的和易于使用的。
+
+# 最新动态
+[new] 支持在插件配置界面中更新许可证（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
+[new] 支持在插件配置界面中更新语音模型（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)）。   
+[new] :rainbow: 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字([文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html))。   
+[new] 支持从蓝图中更新许可证，方便从自己的服务器分发许可证到客户端 （[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
+[improve] :thumbsup: MediaPipe 升级到 0.10.2, 更新了 google 模型，使用新的 mediapipe solution api，表情捕捉大幅改进，普通摄像头的表情捕捉已经处于 Production Ready 水平了。   
+[improve] 使用 Pose Tracker 装饰线条（Annotion）时，不再绘制 ROI 红色线框（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
+[improve] GStreamer 打包时不再打包无用的 PC (C++ package config) 文件，进一步减小打包尺寸。   
+[fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
+
+## Release Notes
+更多更新信息，请查看更新日志:
+- [更新日志](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  
 
 # 功能
 
@@ -63,13 +85,13 @@
 
 - [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
-# 插件下载地址   
+# 插件下载   
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/22d98665cb184e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxne6rVUcKI32o3i?e=RNuSmr) | 2023-07-18 |
 | UE 5.1 | [奶牛快传](https://cowtransfer.com/s/51c6426b832e4f) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxji8GWaGzD6JyHv?e=WTyHcU) | 2023-07-18 |
-<!-- | UE 5.2 | [奶牛快传](https://cowtransfer.com/s/51c6426b832e4f) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxji8GWaGzD6JyHv?e=WTyHcU) | 2023-07-18 | -->
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/1103777d011e47) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxpB9JFHdEfirBy3?e=gDwSN1) | 2023-07-19 |
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    
@@ -80,18 +102,11 @@
 
 授权文件会不定期的在[讨论区](https://github.com/endink/Mediapipe4u-plugin/discussions/82) 中发布, 新版本的插件包中也会自动包含授权文件。   
 
-# M4U Remoting App 下载
+# M4U Remoting App
 
 | Android 版本 | 下载连接 | 更新时间 |
 |---| --- | --- |
 | Android 7.0 or later | [Download](https://github.com/endink/Mediapipe4u-plugin/releases/download/M4URemoting_20230421/M4URemoting_20230421.apk) | 2023-04-21 |
-
-
-# 语音包下载
-
-| 语言 | 中国下载 | 全球下载 | Update |
-|---| --- | --- | --- |
-| 中文普通话 | [奶牛快传](https://cowtransfer.com/s/986250aed0314f) | [Github](https://github.com/endink/Mediapipe4u-plugin/releases/download/speech_model_Mandarin_20230521/speech_model_Mandarin_20230521.7z) | 2023-05-21 |
 
 
 > **关于 M4U Remoting**   
@@ -103,7 +118,7 @@
 
 # Demo 工程
 
-克隆或下载下列 Github 仓库获得 Demo 工程源代码:
+克隆或下载下列 Github 仓库获的 Demo 工程源代码:
 
 - https://github.com/endink/MediaPipe4U-Demo  
 

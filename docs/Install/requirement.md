@@ -15,7 +15,7 @@ parent: 安装和配置
 |软件|版本|
 |--------|--------------|
 |操作系统|Windows10/11 x64|
-|Unreal Engine |5.0.x, 5.1.x|
+|Unreal Engine |5.0.x, 5.1.x, 5.2.x|
 |Visual Studio 2022 | 17.6.3 or later|
 |Windows SDK|10.0.22621 or later|
 |Visual C++ Redistributable|14.36.32532 or later|
@@ -71,14 +71,14 @@ MediaPipe4U 适应任意的角色模型的初始 POSE （例如可以是 T-POSE�
 
 使用 **MediaPipe4U** 的动补功能，你的动画蓝图必须使用插件中的 **MediaPipeAnimInstance** 作为基类。
 
-## 面部驱动（实验性）
+## 面部驱动
 
 可以不依赖 Iphone 设备，仅使用普通摄像头来驱动角色的 BlendShape，并且完全兼容 LiveLink 协议，使用它就像和使用 Iphone Arkit 捕捉表情完全一样。 
 
 {: .important}
-> 这是一个实验性功能，驱动的表情数量有限，并且对摄像头角度、光线等要求苛刻，不建议写实风格的角色使用。
-
-面部驱动兼容苹果 Arkit 表情，你的 MorphTarget 名称必须满足苹果命名规范，当然你可以通过 RetargetAsset 来适应任意的名称。
+> 支持 51 个表情，不支持舌头表情。
+>
+> 表情驱动兼容苹果 Arkit 表情，你的 MorphTarget 名称必须满足苹果命名规范，当然你可以通过 RetargetAsset 来适应任意的名称。
 
 ---
 

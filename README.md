@@ -1,7 +1,7 @@
 [简体中文](./README_CN.md)
 <br>
 <br>
-<p align="center" style="font-size:64px">
+<p align="center">
 <img alt="MediaPipe4U" src="./logo.png">
 <p>
 <p align="center">
@@ -13,11 +13,35 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 <a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
 <a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.0, 5.1, 5.2-purple.svg"></a>
+<p align="center">
+<a href="https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp">News</a>
+| <a href="https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sch=http&_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp">Document</a>
+| <a href="#download">Download</a>
+| <a href="https://github.com/endink/MediaPipe4U-Demo">Demo Project</a>
+| <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/M4U_Remoting_App">M4U Remoting(Android App)</a>
+| <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models">Speech Model Packages</a>
+</p>
 </p>
 
 # Introduction
 
 **MediaPipe4U** provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in Unreal Engine project. You can plug these solutions into your UE project immediately, customize them to your needs. Include motion capture , facial expression capture for your 3D avatar, text to speech (TTS), speech recorgnization (ASR), etc. All features are real-time, offline, low latency and easy to use.
+
+# What's news
+
+[new] Supports updating licenses in the plugin settings view ([Documentation] (https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)).   
+[new] Supports updating the voice model in plugin settings view ([Documentation] (https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)).   
+[new]: rainbow: Added offline speech recognition (ASR) feature (requires downloading the model package) to recognize speech from microphone to text ([Documentation] (https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html)).   
+[new] Support for updating licenses from blueprints（[Documentation](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）.   
+[improve]: thumbsup: MediaPipe upgraded to 0.10.2, updated Google models, used the new Mediapipe solution API, and greatly improved face expression capture.   
+[improve] When using Pose Tracker annotation drawing, ROI red wireframes are no longer drawn (details: [#81] (https://github.com/endink/Mediapipe4u-plugin/issues/81)).   
+[improve] GStreamer no longer include PC (C++ package config) files when packaging project, reducing the packaging size.   
+[fix] Temporarily remove FixMediaPipe as it causes leg jumps (details: [#81] (https://github.com/endink/Mediapipe4u-plugin/issues/81)).   
+
+## Release Notes
+For the release notes, ref below:
+- [Release Notes (English, it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)   
+- [Release Notes (简体中文)](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)   
 
 # Features
 
@@ -69,12 +93,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 |---| --- | --- |----|
 | UE 5.0 | [cowtransfer](https://cowtransfer.com/s/22d98665cb184e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxne6rVUcKI32o3i?e=RNuSmr) | 2023-07-18 |
 | UE 5.1 | [cowtransfer](https://cowtransfer.com/s/51c6426b832e4f) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxji8GWaGzD6JyHv?e=WTyHcU) | 2023-07-18 |
-<!-- | UE 5.2 | [cowtransfer](https://cowtransfer.com/s/51c6426b832e4f) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxji8GWaGzD6JyHv?e=WTyHcU) | 2023-07-18 | -->
-
-If you want to know what's news in each release, please visit the page below:   
-  
-- [Release Notes (English, it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)   
-- [Release Notes (简体中文)](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)   
+| UE 5.2 | [cowtransfer](https://cowtransfer.com/s/1103777d011e47) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxpB9JFHdEfirBy3?e=gDwSN1) | 2023-07-19 |
 
   
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
@@ -85,7 +104,7 @@ If you want to know what's news in each release, please visit the page below:
 
 The license file will be published in the [discussion](https://github.com/endink/Mediapipe4u-plugin/discussions/82), and the plugin package file will automatically include an license file.   
 
-# M4U Remoting App Download
+# M4U Remoting App
 
 | Android Version | Download Link | Update |
 |---| --- | --- |
@@ -99,13 +118,6 @@ The license file will be published in the [discussion](https://github.com/endink
 > Free license only supports using in UE Editor, cannot be packaged this feature.   
 > [M4U Remoting Document](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)
   
-# Speech Model Packages Download
-
-| Language | China Site | Global Site | Update |
-|---| --- | --- | --- |
-| Chinese Mandarin | [cowtransfer](https://cowtransfer.com/s/986250aed0314f) | [Github](https://github.com/endink/Mediapipe4u-plugin/releases/download/speech_model_Mandarin_20230521/speech_model_Mandarin_20230521.7z) | 2023-05-21 |
-
-
 # Demo Project
 Please clone this repository to get demo project:   
 - https://github.com/endink/MediaPipe4U-Demo  

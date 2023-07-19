@@ -9,7 +9,7 @@ has_children: true
 
 # 离线语音识别 (ASR)
 
-MediaPipe4USpeech 内置一个 ULocalTTSSolutionComponent 组件，它提供离线 TTS 能力, 支持你将文本转为 PCM 语音数据输出。
+MediaPipe4USpeech 内置一个 ULocalASRSolutionComponent 组件，它提供离线的端到端的 ASR 能力, 支持你将音频输出转为文本输出。
 
 ---   
 ## 如何使用
@@ -60,7 +60,7 @@ VAD 级别，表示 VAD 检测的激进模式。
 当 **DeNoise** 为 **true** 时，这个属性用于控制噪音的分贝数（通常，在声学领域，分贝值越小，表示的声音越大）。
 
 **MaxVoiceSeconds**    
-音频数据挤压得最大视频长度，即一次识别最多能师表多少秒的音频。
+音频数据缓冲的最大长度（单位：秒），即一次识别最多能识别多少秒的音频。
 
 **MaxSilenceSeconds**   
 当启用 Vad 端点识别时，这个属性控制静音多少秒认为一句话说话结束。
@@ -99,7 +99,8 @@ LocalASRSolutionComponent 包含两种使用方式：
 {: .warning}
 > 无论是否使用端点检测模式，当语音数据超过 **MaxVoiceSeconds** 设定的最大长度时，会自动发送语音数据进行识别。    
 > 
-> 当开启端点检测时，如果语音数据被发送（VAD 识别到说话结束）后，语音数据长度会被重置，然后继续等待下一句语音数据到来，因此可以连续不断的识别长语音。端点检测模式下 **MaxVoiceSeconds**的含义为一句话的最大长度（单位：秒）。
+> 当开启端点检测时，如果语音数据被发送（VAD 识别到说话结束）后，语音数据长度会被重置，然后继续等待下一句语音数据到来，因此可以连续不断的识别长语音。   
+> 端点检测模式下 **MaxVoiceSeconds**的含义为一句话的最大长度（单位：秒）。
 
 
 
