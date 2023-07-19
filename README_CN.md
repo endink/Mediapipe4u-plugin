@@ -2,7 +2,7 @@
 <br>
 <br>
 <p align="center" style="font-size:64px">
-MediaPipe4U
+<img alt="MediaPipe4U" src="./logo.png">
 <p>
 <p align="center">
 一个帮助你集成人工智能和机器学习技术到虚幻引擎的 UE 插件。

@@ -2,7 +2,7 @@
 <br>
 <br>
 <p align="center" style="font-size:64px">
-MediaPipe4U
+<img alt="MediaPipe4U" src="./logo.png">
 <p>
 <p align="center">
 An Unreal Engine plugin that helps you use AI and ML techniques in your unreal engine project.
