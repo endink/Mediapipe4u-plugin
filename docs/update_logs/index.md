@@ -10,74 +10,74 @@ has_children: false
 
 Current
 {: .label .label-green }    
-[new] 支持在插件配置界面中更新许可证（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
-[new] 支持在插件配置界面中更新语音模型（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)）。   
-[new] :rainbow: 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字([文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html))。   
-[new] 支持从蓝图中更新许可证，方便从自己的服务器分发许可证到客户端。   
-[improve] :thumbsup: MediaPipe 升级到 0.10.2, 更新了 google 模型，使用新的 mediapipe solution api，表情捕捉大幅改进，普通摄像头的表情捕捉已经处于 Production Ready 水平了。   
-[improve] 使用 Pose Tracker 装饰线条（Annotion）时，不再绘制 ROI 红色线框（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
-[improve] GStreamer 打包时不再打包无用的 PC (C++ package config) 文件，进一步减小打包尺寸。   
-[fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
+- [new] 支持在插件配置界面中更新许可证（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
+- [new] 支持在插件配置界面中更新语音模型（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)）。   
+- [new] :rainbow: 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字([文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html))。   
+- [new] 支持从蓝图中更新许可证，方便从自己的服务器分发许可证到客户端。   
+- [improve] :thumbsup: MediaPipe 升级到 0.10.2, 更新了 google 模型，使用新的 mediapipe solution api，表情捕捉大幅改进，普通摄像头的表情捕捉已经处于 Production Ready 水平了。   
+- [improve] 使用 Pose Tracker 装饰线条（Annotion）时，不再绘制 ROI 红色线框（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
+- [improve] GStreamer 打包时不再打包无用的 PC (C++ package config) 文件，进一步减小打包尺寸。   
+- [fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
 
 {: .warning}
 > [**break change**] :red_circle: 原有的 TTS 模型包格式不再兼容新版插件，升级插件后请删除原有模型包 （speech 目录）, 使用编辑器导入模型包功能导入新的语音模型包。   
 
 
 ### 2023-06-28   
-[new] :rainbow:MediaPlayerImageSource: 支持从 Unreal Engine 的 MediaPlayer 中捕获画面作为图像源（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/image_source.html)）。     
-[new] 上半身锁定：支持设置上半身三个轴向的锁定 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html))。      
-[fix] 修复校准时初始关节带有旋转角时产生的校准错误。   
-[fix] 阻尼算法造成的关节扭曲矫正错误。   
-[fix] 半身模式时校准无法正常工作。   
+- [new] :rainbow:MediaPlayerImageSource: 支持从 Unreal Engine 的 MediaPlayer 中捕获画面作为图像源（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/image_source.html)）。     
+- [new] 上半身锁定：支持设置上半身三个轴向的锁定 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html))。      
+- [fix] 修复校准时初始关节带有旋转角时产生的校准错误。   
+- [fix] 阻尼算法造成的关节扭曲矫正错误。   
+- [fix] 半身模式时校准无法正常工作。   
 
 
 ### 2023-06-20   
-[new] Pose Solver: 支持开启/关闭姿势优化的具体项。   
-[improve] 缩减编译后的体积（磁盘空间占用从 10GB 降低到 6GB）。    
-[fix] 脊柱旋转模式时可能造成姿势校准不正确。        
+- [new] Pose Solver: 支持开启/关闭姿势优化的具体项。   
+- [improve] 缩减编译后的体积（磁盘空间占用从 10GB 降低到 6GB）。    
+- [fix] 脊柱旋转模式时可能造成姿势校准不正确。        
 
 
 ### 2023-06-17   
-[new] 新增姿态校准功能，纠正 mediapipe 原始数据中脊柱、小腿没有伸直的问题（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。     
-[new] 新增手动校准功能，姿势校准，位置校准均支持手动校准和自动校准设置（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。    
-[new] 新增脊柱旋转模式，有助于运动中稳定脚部（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html)）。    
-[new] 手指捕捉手掌丢失时回弹处理规则 。   
-[new] UE Editor 动补工具加入关节锁定、校准等功能。   
-[new] UE Editor 动补工具支持对视频文件快进、暂停。   
-[improve] mediapipe 升级到最新版（[v0.10.1](https://github.com/google/mediapipe/releases/tag/v0.10.1)）。     
-[improve] Hand Solver：加入手腕旋转阻尼，防止跳变。     
-[improve] LocationSolver: Location IK 算法改进，位移计算更合理。     
-[improve] Ground IK: 脚步和脚踝旋转平滑。     
-[improve] Ground IK: 加入脚步限滑，改善脚步抖动问题。    
-[fix] GroundIK: 检测脚踝位置不正确。     
-[fix] GroundIK: 节点 FeetVerticalOffset 等几个属性设置无效。      
-[fix] ControlRigPose Baker 工具生成的 PoseAsset 不正确。   
+- [new] 新增姿态校准功能，纠正 mediapipe 原始数据中脊柱、小腿没有伸直的问题（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。     
+- [new] 新增手动校准功能，姿势校准，位置校准均支持手动校准和自动校准设置（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html)）。    
+- [new] 新增脊柱旋转模式，有助于运动中稳定脚部（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html)）。    
+- [new] 手指捕捉手掌丢失时回弹处理规则 。   
+- [new] UE Editor 动补工具加入关节锁定、校准等功能。   
+- [new] UE Editor 动补工具支持对视频文件快进、暂停。   
+- [improve] mediapipe 升级到最新版（[v0.10.1](https://github.com/google/mediapipe/releases/tag/v0.10.1)）。     
+- [improve] Hand Solver：加入手腕旋转阻尼，防止跳变。     
+- [improve] LocationSolver: Location IK 算法改进，位移计算更合理。     
+- [improve] Ground IK: 脚步和脚踝旋转平滑。     
+- [improve] Ground IK: 加入脚步限滑，改善脚步抖动问题。    
+- [fix] GroundIK: 检测脚踝位置不正确。     
+- [fix] GroundIK: 节点 FeetVerticalOffset 等几个属性设置无效。      
+- [fix] ControlRigPose Baker 工具生成的 PoseAsset 不正确。   
 
 ### 2023-05-21
 
-[new] 新增 **MediaPipe4USpeech** 插件支持离线 TTS 和音唇同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。   
-[new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。   
-[fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。   
+- [new] 新增 **MediaPipe4USpeech** 插件支持离线 TTS 和音唇同步（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/)）。   
+- [new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。   
+- [fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。   
 
 ### 2023-04-23
 
-[new] :fire:加入 M4U Remoting, 支持从安卓设备捕捉表情（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)）。      
-[new] Android 面补工具开放下载（商业授权功能，免费授权无法打包）   
-[new] UE 编辑器工具新功能：    
-- LiveLink 追踪   
-- 位移、姿势校准   
-- 面容校准   
+- [new] :fire:加入 M4U Remoting, 支持从安卓设备捕捉表情（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)）。      
+- [new] Android 面补工具开放下载（商业授权功能，免费授权无法打包）   
+- [new] UE 编辑器工具新功能：    
+  - LiveLink 追踪   
+  - 位移、姿势校准   
+  - 面容校准   
 
-[new] 统一位置、姿态校准，从 AnimationInstance 访问 CalibrationCountDownSeconds 等参数；现在，支持手动校准位置和姿势（:red_circle:Break Changes）。   
-[fix] 动补回调包发生错误时可能导致 texture 被占用无法释放   
-[fix] 退出编辑器时概率引发崩溃   
-[fix] UE 工具箱状态不同步   
+- [new] 统一位置、姿态校准，从 AnimationInstance 访问 CalibrationCountDownSeconds 等参数；现在，支持手动校准位置和姿势（:red_circle:Break Changes）。   
+- [fix] 动补回调包发生错误时可能导致 texture 被占用无法释放   
+- [fix] 退出编辑器时概率引发崩溃   
+- [fix] UE 工具箱状态不同步   
 
 
 
 ### 2023-04-08
 
-[new] 添加 UE 编辑器工具箱功能，方便在编辑器中调试参数 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/ue_editor_toolkits.html))
+- [new] 添加 UE 编辑器工具箱功能，方便在编辑器中调试参数 ([文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/ue_editor_toolkits.html))
 
 ### 2023-04-03
 

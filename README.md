@@ -29,14 +29,14 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-[new] Supports updating licenses in the plugin settings view （[Documentation](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）.   
-[new] Supports updating the voice model in plugin settings view （[Documentation](https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)）.   
-[new]: rainbow: Added offline speech recognition (ASR) feature (requires downloading the model package) to recognize speech from microphone to text （[Documentation](https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html)）.   
-[new] Support for updating licenses from blueprints（[Documentation](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）.   
-[improve]: thumbsup: MediaPipe upgraded to 0.10.2, updated Google models, used the new Mediapipe solution API, and greatly improved face expression capture.   
-[improve] When using Pose Tracker annotation drawing, ROI red wireframes are no longer drawn (details: #81).   
-[improve] GStreamer no longer include PC (C++ package config) files when packaging project, reducing the packaging size.   
-[fix] Temporarily remove FixMediaPipe as it causes leg jumps (details: #81).   
+- [new] Supports updating licenses in the plugin settings view （[Documentation](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）.   
+- [new] Supports updating the voice model in plugin settings view （[Documentation](https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)）.   
+- [new]:rainbow: Added offline speech recognition (ASR) feature (requires downloading the model package) to recognize speech from microphone to text （[Documentation](https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html)）.   
+- [new] Support for updating licenses from blueprints（[Documentation](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）.   
+- [improve]:thumbsup: MediaPipe upgraded to 0.10.2, updated Google models, used the new Mediapipe solution API, and greatly improved face expression capture.   
+- [improve] When using Pose Tracker annotation drawing, ROI red wireframes are no longer drawn (details: #81).   
+- [improve] GStreamer no longer include PC (C++ package config) files when packaging project, reducing the packaging size.   
+- [fix] Temporarily remove FixMediaPipe as it causes leg jumps (details: #81).   
 
 ## Release Notes
 For the release notes, ref below:

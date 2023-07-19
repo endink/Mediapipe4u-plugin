@@ -28,14 +28,14 @@
 **MediaPipe4U**  提供了一系列的套件和工具，让你在虚幻引擎项目中快速应用人工智能（AI）和机器学习（ML）技术。您可以立即将这些解决方案集成到你的 UE 项目中，并根据您的需求对其进行自定义。包括动作捕捉、面部表情捕捉、语音合成 （TTS）、语音识别 （ASR） 等。所有功能都是实时的、离线的、低延迟的和易于使用的。
 
 # 最新动态
-[new] 支持在插件配置界面中更新许可证（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
-[new] 支持在插件配置界面中更新语音模型（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)）。   
-[new] :rainbow: 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字([文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html))。   
-[new] 支持从蓝图中更新许可证，方便从自己的服务器分发许可证到客户端 （[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
-[improve] :thumbsup: MediaPipe 升级到 0.10.2, 更新了 google 模型，使用新的 mediapipe solution api，表情捕捉大幅改进，普通摄像头的表情捕捉已经处于 Production Ready 水平了。   
-[improve] 使用 Pose Tracker 装饰线条（Annotion）时，不再绘制 ROI 红色线框（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
-[improve] GStreamer 打包时不再打包无用的 PC (C++ package config) 文件，进一步减小打包尺寸。   
-[fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
+- [new] 支持在插件配置界面中更新许可证（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
+- [new] 支持在插件配置界面中更新语音模型（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)）。   
+- [new] :rainbow: 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字([文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html))。   
+- [new] 支持从蓝图中更新许可证，方便从自己的服务器分发许可证到客户端 （[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
+- [improve] :thumbsup: MediaPipe 升级到 0.10.2, 更新了 google 模型，使用新的 mediapipe solution api，表情捕捉大幅改进，普通摄像头的表情捕捉已经处于 Production Ready 水平了。   
+- [improve] 使用 Pose Tracker 装饰线条（Annotion）时，不再绘制 ROI 红色线框（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
+- [improve] GStreamer 打包时不再打包无用的 PC (C++ package config) 文件，进一步减小打包尺寸。   
+- [fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
 
 ## Release Notes
 更多更新信息，请查看更新日志:
