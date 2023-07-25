@@ -32,7 +32,7 @@ parent: 授权许可
 [![Device Id](images/device_id_in_log.jpg "Device Id")](images/device_id_in_log.jpg)   
 
 {: .important}
-> 当你要获取其他机器的机器码时，你可以打包一个程序，放在实际要部署的设备上，启动程序后，在 Saved 文件夹中找到日志文件，从文件或找到这个机器码。
+> 当你要获取其他机器的机器码时，你可以打包一个程序，放在实际要部署的设备上，启动程序后，在 Saved 文件夹中找到日志文件，从日志文件中找到这个机器码。
 
 ## 在蓝图中获取机器码
 
