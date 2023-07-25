@@ -47,9 +47,15 @@ parent: 授权许可
 
 ## Device ID 查看器获取机器码
 
-1. 下载 Device ID 查看器 ([点击这里下载](https://github.com/endink/Mediapipe4u-plugin/releases/download/device_id_viewer/DeviceId.exe))
+1. 下载 Device ID 查看器
 2. 在目标机器上运行查看器。
 3. 从显示的控制台界面中复制机器码。
+   
+
+Device ID 查看器下载地址：   
+
+[https://github.com/endink/Mediapipe4u-plugin/releases/download/device_id_viewer/DeviceId.exe](https://github.com/endink/Mediapipe4u-plugin/releases/download/device_id_viewer/DeviceId.exe)
+
 
 {: .warning}
 > 经用户反馈，部分杀毒软件会将**Device Id 查看器**误报为病毒。    
