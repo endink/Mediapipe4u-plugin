@@ -83,7 +83,7 @@ USD Price Table （Tax excluded）
 # 如何付费
 
 国内用户，通过 QQ 和联系我付费事宜： 27292911   
-海外用户，通过 Email 和我联系：27292911@qq.com
+海外用户，通过 Email 和我联系：sharping@outlook.com
 
 # 其他授权方式
 
