@@ -16,7 +16,7 @@
 <p align="center">
 <a href="https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/">最新动态</a>
 | <a href="https://opensource.labijie.com/Mediapipe4u-plugin">文档</a>
-| <a href="#插件下载">下载</a>
+| <a href="#Download">下载</a>
 | <a href="https://github.com/endink/MediaPipe4U-Demo">Demo 工程</a>
 | <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/M4U_Remoting_App">M4U Remoting(Android App)</a>
 | <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models">语音模型包</a>
@@ -85,7 +85,7 @@
 
 - [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
-# 插件下载   
+# Download
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
