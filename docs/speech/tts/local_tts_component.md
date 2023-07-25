@@ -73,12 +73,6 @@ MediaPipe4USpeech 内置一个 ULocalTTSSolutionComponent 组件，它提供离�
 
 [![IsModelsLoaded](./images/is_model_loaded.jpg "IsModelsLoaded")](./images/is_model_loaded.jpg)
 
-### 文本转语音
-使用 ReLoadConfig 函数重新加载配置。支持在运行过程中重新读取 TTS 配置信息。   
-> 当你有多套 TTS 模型和配置时，这个函数可以用作切换 TTS 模型。
-
-[![ReLoadConfig](./images/tts_load_config.jpg "ReLoadConfig")](./images/tts_load_config.jpg)
-
 
 ## 自定义 TTS 模型
 

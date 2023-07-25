@@ -52,11 +52,11 @@ public:
    
 返回 TTS 文本处理完成的事件。   
 
-**GetWavChunkReceivedEvent**   
+**GetWaveChunkReceivedEvent**   
    
 返回 TTS 分句片段执行完成的事件，如果你的 TTS 不支持分句，你仅在完成时触发一次该事件即可。   
 
-**RaiseWavChunkReceivedEvent**   
+**RaiseWaveChunkReceivedEvent**   
    
 触发一个分句 TTS 片段完成的事件。   
 
