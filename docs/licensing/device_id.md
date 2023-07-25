@@ -15,9 +15,9 @@ parent: 授权许可
 
 获取机器码有以下方式：
 - 在 UE 编辑器中获取机器码
+- 使用 Device ID Viewer （机器码查看器）获取机器码
 - 查看日志获取机器码
 - 使用蓝图函数获取机器码
-- 使用 Device ID Viewer （机器码查看器）获取机器码
 
 ## 在 UE 编辑器中获取机器码
 
@@ -26,25 +26,6 @@ parent: 授权许可
 3. 在MediaPipe4U 插件设置页中找到 Device Id ，这就是当前设备的机器码。
 
 [![Device Id](images/device_id_in_ue.jpg "Device Id")](images/device_id_in_ue.jpg)   
-
-## 从启动日志中获取机器码
-
-在 MediaPipe4U 启动时，会打印一个表格日志，其中包含了机器码。
-
-[![Device Id](images/device_id_in_log.jpg "Device Id")](images/device_id_in_log.jpg)   
-
-{: .important}
-> 当你要获取其他机器的机器码时，推荐使用[`Device ID Viewer`](#Device-ID-Viewer-获取机器码)读取其他设备的机器码。   
-> 你也可以打包一个程序，放在实际要部署的设备上，启动程序后，在 Saved 文件夹中找到日志文件，从日志文件中找到机器码。
-
-## 在蓝图中获取机器码
-
-你可以通过 **GetMediaPipeDeviceId** 函数来获取机器码。  
-
-[![Device Id](images/device_id_in_bp.jpg "Device Id")](images/device_id_in_bp.jpg)   
-
-{: .highlight}
-> C++ 用户可以通过 **UM4ULicenseBlueprintLibrary** 类访问到这两个蓝图函数。
 
 
 ## Device ID Viewer 获取机器码
@@ -65,3 +46,22 @@ Device ID Viewer 下载地址：
 > 你可以关闭杀毒软件后下载查看器程序，获得机器码后将程序删除，然后重新打开杀毒软件。
 
 [![Device Id](images/device.exe.jpg "Device Id")](images/device.exe.jpg)   
+
+## 从启动日志中获取机器码
+
+在 MediaPipe4U 启动时，会打印一个表格日志，其中包含了机器码。
+
+[![Device Id](images/device_id_in_log.jpg "Device Id")](images/device_id_in_log.jpg)   
+
+{: .important}
+> 当你要获取其他机器的机器码时，推荐使用[`Device ID Viewer`](#Device-ID-Viewer-获取机器码)读取其他设备的机器码。   
+> 你也可以打包一个程序，放在实际要部署的设备上，启动程序后，在 Saved 文件夹中找到日志文件，从日志文件中找到机器码。
+
+## 在蓝图中获取机器码
+
+你可以通过 **GetMediaPipeDeviceId** 函数来获取机器码。  
+
+[![Device Id](images/device_id_in_bp.jpg "Device Id")](images/device_id_in_bp.jpg)   
+
+{: .highlight}
+> C++ 用户可以通过 **UM4ULicenseBlueprintLibrary** 类访问到这两个蓝图函数。
