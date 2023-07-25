@@ -25,8 +25,7 @@ parent: 语音套件
 
 ## 使用语音合成（TTS）和口型同步（LipSync）
 
-此文档描述如何快速使用 MediaPipe4USpeech 插件完成 TTS 和驱动虚拟角色（数字化身）的口型同步。  
-快速使用 MediaPipe4U 的语音套件，只需要几个简单步骤：
+使用 MediaPipe4U 的语音合成功能，只需要几个简单步骤：
 
 1. 准备动画资产
 2. 添加动画蓝图节点
@@ -75,17 +74,26 @@ parent: 语音套件
 
 ## 使用语音识别
 
+使用 MediaPipe4U 的语音合成功能，只需要几个简单步骤：
+1. 绑定识别事件获取识别到的文本。
+2. 在蓝图中开始语音识别
+   
+{: .important}
+> 当你不再需要语音识别时，你应该停止语音识别。
+
 ### 绑定语音识别事件
 
 在蓝图中绑定 **MediaPipeSpeechActor** 的 **OnTextRecognized** 事件，可以在事件回调中获取到 ASR 识别到的文本。
 
 [![speech](./images/bind_asr_recognized_event.jpg "speech")](./images/bind_asr_recognized_event.jpg)  
 
-### 在蓝图中进行语音识别
+### 开始语音识别
 
 在蓝图中调用 **MediaPipeSpeechActor** 的 **StartASR** 函数，可以从默认的音频输入设备（麦克风）中捕获语音数据并识别为文本。   
 
 [![speech](./images/start_asr.jpg "speech")](./images/start_asr.jpg)
+
+### 停止语音识别
 
 在蓝图中调用 **MediaPipeSpeechActor** 的 **StopASR** 函数，可以停止捕获音频数据。   
 
@@ -95,7 +103,7 @@ parent: 语音套件
 
 ## 使用 MediaPipe4U 语音工具
 
-MediaPipe4U Speech 提供了在 Unreal Editor 中快速测试的语音功能的工具，你可以从 `窗口（Windows）>> MediaPipe4U >> MediaPipe4U Speech` 菜单中打开它。
+MediaPipe4U Speech 提供了在 Unreal Editor 中快速测试语音功能的工具，你可以从 `窗口（Windows）>> MediaPipe4U >> MediaPipe4U Speech` 菜单中打开它。
 
 [![speech](./images/qs_speech_tools.jpg "speech")](./images/qs_speech_tools.jpg)
 
