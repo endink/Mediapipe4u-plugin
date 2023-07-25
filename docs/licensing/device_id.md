@@ -16,6 +16,7 @@ parent: 授权许可
 - 在 UE 编辑器中获取机器码
 - 查看日志获取机器码
 - 使用蓝图函数获取机器码
+- 使用 DeviceID 查看器获取机器码
 
 ## 在 UE 编辑器中获取机器码
 
@@ -42,3 +43,17 @@ parent: 授权许可
 
 {: .highlight}
 > C++ 用户可以通过 **UM4ULicenseBlueprintLibrary** 类访问到这两个蓝图函数。
+
+
+## Device ID 查看器获取机器码
+
+1. 下载 Device ID 查看器 ([点击这里下载](https://github.com/endink/Mediapipe4u-plugin/releases/download/device_id_viewer/DeviceId.exe))
+2. 在目标机器上运行查看器。
+3. 从显示的控制台界面中复制机器码。
+
+{: .warning}
+> 经用户反馈，部分杀毒软件会将**Device Id 查看器**误报为病毒。    
+> Device Id 查看器会访问 Windows 底层 API 读取硬件信息，但并不会进行任何写操作，也不需要联网，请放心使用。   
+> 你可以关闭杀毒软件后下载查看器程序，获得机器码后将程序删除，然后重新打开杀毒软件。
+
+[![Device Id](images/device.exe.jpg "Device Id")](images/device.exe.jpg)   
