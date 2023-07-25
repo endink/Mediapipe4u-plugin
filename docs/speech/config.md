@@ -16,7 +16,10 @@ parent: 语音套件
 
 ## 安装语音模型包
 
-语音模型包的安装可以通过 UE 编辑器完成，也可以手动复制文件夹的方式来完成。
+语音模型包的安装可以通过 UE 编辑器完成，也可以手动复制文件夹的方式来完成。   
+**语音模型发布页：**     
+
+[https://github.com/endink/Mediapipe4u-plugin/releases](https://github.com/endink/Mediapipe4u-plugin/releases)
 
 ---   
 

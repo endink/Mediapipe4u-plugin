@@ -93,8 +93,13 @@ parent: 语音套件
 
 ---   
 
-## 使用 MediaPipe4U Speech 语音识别工具
+## 使用 MediaPipe4U 语音工具
 
 MediaPipe4U Speech 提供了在 Unreal Editor 中快速测试的语音功能的工具，你可以从 `窗口（Windows）>> MediaPipe4U >> MediaPipe4U Speech` 菜单中打开它。
 
 [![speech](./images/qs_speech_tools.jpg "speech")](./images/qs_speech_tools.jpg)
+
+- 点击 `Text To Speech` 按钮可以朗读输入框中的文字。
+- 点击 `Start ASR` 按钮可以启动麦克风语音识别，将会把识别到的文字输出到界面。
+  
+当 ASR 启动后，如果 VAD 被启用，语音工具界面中的 VAD 状态指示器为绿色时表示有人说话，方便你监视语音识别状态。
