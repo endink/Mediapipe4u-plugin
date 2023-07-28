@@ -66,13 +66,7 @@ VAD 级别，表示 VAD 检测的激进模式。
 当启用 Vad 端点识别时，这个属性控制静音多少秒认为一句话说话结束。
 
 ---   
-## 事件
-
-**OnTextRecognized**   
-当从语音中识别到文本时回调的事件。   
-
-**OnCaptureStopped**  
-当停止从设备采样时回调的事件。
+## 事件   
 
 **OnModelsLoadCompleted**   
 模型加载结束时回调的事件。

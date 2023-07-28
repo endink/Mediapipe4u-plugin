@@ -67,7 +67,34 @@ parent: 语音套件
 
 在蓝图中使用 **MediaPipeSpeechActor** 的 **StopSpeak** 函数，可以停止朗读。
 
-[![speech](./images/qs_bp_speck_text.jpg "speech")](./images/qs_bp_speck_text.jpg)
+[![speech](./images/qs_bp_stop_speck.jpg "speech")](./images/qs_bp_stop_speck.jpg)
+
+### 列出发音人
+
+在蓝图中调用 **MediaPipeSpeechActor** 的 **ListSpeakers** 函数，如果当前 TTS Solution 支持多发音人，可以列出发音人信息。   
+
+[![speech](./images/tts_list_speakers.jpg "speech")](./images/tts_list_speakers.jpg)
+
+> **ListSpeakers** 返回 **true** 表示 TTS 支持多发音人，可以通过访问 Speakers 得到发音人列表，每个发音人包含 Id 和 Name 字段。
+
+### 设置发音人
+
+在蓝图中调用 **MediaPipeSpeechActor** 的 **SetTTSSpeakerId** 函数，如果当前 TTS Solution 支持多发音人，可以设置 TTS 要使用的发音人。   
+
+[![speech](./images/tts_set_speaker_id.jpg "speech")](./images/tts_set_speaker_id.jpg)
+
+{: .warning}
+> **SetTTSSpeakerId** 将返回实际作用的发音人 Id，通常这和你传入的 Id 相同，当你传入一个 TTS 不存在的发音人 ID 时会返回 -1。
+
+### 其他 TTS 蓝图函数
+
+**IsTTSSpeaking**   
+
+判断 TTS 是否正在朗读文本。
+
+**GetTTSSpeakerId**   
+
+获取 TTS 当前正在使用的发音人。
 
 ---   
 
@@ -93,11 +120,19 @@ parent: 语音套件
 
 [![speech](./images/start_asr.jpg "speech")](./images/start_asr.jpg)
 
+{: .warning}
+> 如果你发现无法识别到语音，并且日志中无错误，请检查你的操作系统中的默认声音输入设备是否是你的麦克风，MediaPipe4U Speech 将自动使用操作系统中默认的输入设备。
+
 ### 停止语音识别
 
 在蓝图中调用 **MediaPipeSpeechActor** 的 **StopASR** 函数，可以停止捕获音频数据。   
 
 [![speech](./images/stop_asr.jpg "speech")](./images/stop_asr.jpg)
+
+### 其他 ASR 蓝图函数
+
+**IsASRCapturing**   
+判断 ASR 是否正在识别语音
 
 ---   
 

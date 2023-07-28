@@ -60,6 +60,10 @@ MyProject.uproject 文件中 MediaPipe4U 用到的插件都已经 Enable, 如下
 		{
 			"Name": "MediaPipe4UNvAR",
 			"Enabled": true
+		},
+		{
+			"Name": "MediaPipe4USpeech",
+			"Enabled": true
 		}
 	]
 }
@@ -99,9 +103,9 @@ public class MyProjectTarget : TargetRules
 
 ---   
 
-## 手动 Copy 链接符号文件
+## 手动 Copy C++ 链接符号文件
 
-- 在项目根目录下（.uproject 文件所在目录）创建 **copy_intermediate.bat** ，内容如下：
+- 在项目根目录下（.uproject 文件所在目录）新建 **copy_intermediate.bat** 文件，用记事本打开它，复制下面的文件内容：
 
 ```powershell
 set TARGET_DIR=%~dp0Intermediate
@@ -117,17 +121,31 @@ xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UGStreamer\Intermediate\Build\Win64\UnrealGa
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UBVH\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4ULiveLink\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UNvAR\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4Speech\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 
 pause
 ```
 
-注意：文件第三行中的 MyProject 改为你的项目名称，xcopy 部分可以注释掉你没有用到的插件。
+**注意**：文件第三行中的 MyProject 改为你的项目名称，xcopy 部分可以注释掉你没有用到的插件。
 
-- 执行 **copy_intermediate.bat**
+- 保存 **copy_intermediate.bat** 文件
 
-执行完成后将把链接符号拷贝道你的项目 Build 目录。
-
->  Launcher 版引擎打包时会自动拷贝，源码版引擎不会，需要手动执行这个操作
+- 鼠标双击执行 **copy_intermediate.bat**
+  
+{: .new-title }
+> 这个脚本做了什么 ?
+>
+> 执行脚本后会把链接符号复制到你的项目 Build 目录, 这样你在编译时就不会出现 LINK 2XXX 错误。
+> Launcher 版引擎打包时会自动进行复制操作，源码版引擎不会，所以我们需要这个脚本手动执行这个操作。
+>
+> 
+> xcopy /S /Y "%PLUGIN_DIR%\ `PluginName` \Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+>
+> xcopy 命令这一行是一个固定格式用来复制一个插件的链接符号，每个插件都需要复制。
+> 其中 `PluginName` 可以替换为一个项目中的插件（Plugins 文件夹中的任意插件目录）。
+> 
+> 你可以用这个脚本处理任何预编译的插件打包问题。
+>
 
 ---   
 
