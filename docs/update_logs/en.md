@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 1
-title: Release Notes
+title: English Release Notes
 parent: 更新日志
 ---
 
@@ -18,12 +18,12 @@ Current
 - [new] TTS inference supports Onnx engine and can get a higher quality vocoder.   
 - [new] Add StartCameraAsync function, prevent UI block while camera starting.   
 - [new] TTS blueprint functions added to MediaPipeSpeechActor (some functions in LocalTTSComponent no longer support access in blueprint).   
-- [improve] TTS supports text reading queue, which can read multiple texts one by one (the SpeakText function add the **plugin** parameter).   
+- [improve] TTS supports text reading queue, which can read multiple texts one by one (the `SpeakText` function on `MediaPipeSpeechActor` add the **StopPrevious** parameter).     
 - [improve] When the NvAR SDK is not installed, packaging will no longer fail, but will give a warning message.   
 - [fix] Fixed that if UE Editor's LiveLink UI is opened when start mocap, the program will crash.   
 - [fix] Fix program crash when access UI in ASR speech recognited events ([#90](https://github.com/endink/Mediapipe4u-plugin/issues/90)).   
 - [fix] Fixed the Pose Asset Baker tool crash on UE 5.2 ([#88](https://github.com/endink/Mediapipe4u-plugin/issues/88)).
-- [fix] TTS a small probability that TTS can not be stopped.
+- [fix] A small probability that TTS can not be stopped.
 - [fix] An encoding issue exists in TTS/ASR parsing folders that cause the wrong folder being created on disk.
 
 

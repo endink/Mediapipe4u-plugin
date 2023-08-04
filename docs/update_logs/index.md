@@ -2,7 +2,7 @@
 layout: default
 nav_order: 110
 title: 更新日志
-has_children: false
+has_children: true
 ---
 
 [English] (./en.md)
