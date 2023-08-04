@@ -5,7 +5,7 @@ title: 大语言模型（LLM）
 has_children: true
 ---
 
-# 大模型（LLM）
+# 大语言模型（LLM）
 {: .d-inline-block }
 
 Since v20230805
@@ -25,8 +25,8 @@ MediaPipe4U 封装了一个插件，支持本地部署大语言模型（LLM） �
 > 
 > 免费授权版本仅能够在 Ureal Editor 中使用它
 
-# 开发计划（Road Map）
+# Road Map
 
-[x]本地化部署
-[x]LLaMA2 模型支持
-[ ]GPU 加载
+- [x] 本地化部署
+- [x] LLaMA2 模型支持
+- [ ] GPU 加载
