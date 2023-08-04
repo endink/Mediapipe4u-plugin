@@ -31,7 +31,7 @@
 
 `20230805`   
 
-- [new] :rainbow:新增大语言模型（LLM）功能，支持离线部署并推理 llama2 模型([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/))。   
+- [new] :rainbow:新增**离线**大语言模型（LLM）功能，支持离线部署并推理 llama2 模型([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/))。   
 - [new] :rainbow:新增 LLM Speech 功能，集成语音插件到 LLM， 可以自动朗读模型生成结果。
 - [new] :rainbow:发布新的 ONNX 语音模型包（音质更好），新增四个语音模型包：中文、中文男声、英文、英文女声（[语音包发布页](https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models)）。
 - [new] TTS 推理支持 Onnx 推理，可以使用质量更高的声码器。   
