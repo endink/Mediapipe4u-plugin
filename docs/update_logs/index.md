@@ -5,11 +5,28 @@ title: 更新日志
 has_children: false
 ---
 
-### 2023-07-18   
+[English] (./en.md)
+
+### 2023-08-5   
 {: .d-inline-block }
 
 Current
 {: .label .label-green }    
+- [new] :rainbow:新增大语言模型（LLM）功能，支持离线部署并推理 LLaMA2 模型([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/]))。   
+- [new] :rainbow:新增 LLM Speech 功能，集成语音插件到 LLM， 可以自动朗读模型生成结果。
+- [new] :rainbow:发布新的 ONNX 语音模型包（音质更好），新增四个语音模型包：中文、中文男声、英文、英文女声（[语音包发布页](https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models)）。
+- [new] TTS 推理支持 Onnx 推理，可以使用质量更高的声码器。   
+- [new] 加入异步开启摄像头支持（StartCameraAsync），防止摄像头启动时界面卡顿。   
+- [new] MediaPipeSpeechActor 中加入 TTS 蓝图操作函数（LocalTTSComponent 部分函数不再支持蓝图访问）。   
+- [improve] TTS 支持文本朗读排队，可以连续朗读多个文本（SpeakText 函数新增 StopPrevious 参数）。   
+- [improve] 当 NvAR SDK 未安装时打包不会再失败，而是给出警告信息。   
+- [fix] 修复表情捕捉时如果开启 Unreal Engine 的 LiveLink 界面将导致程序崩溃。   
+- [fix] 修复语音识别事件中直接进行 UI 处理时程序崩溃（[#90](https://github.com/endink/Mediapipe4u-plugin/issues/90)）。   
+- [fix] 修复 Pose Asset Baker 工具在 UE 5.2 版本使用崩溃问题 ([#88](https://github.com/endink/Mediapipe4u-plugin/issues/88))。
+- [fix] TTS 停止朗读小概率发生无法停止。
+- [fix] TTS/ASR 解析文件夹时编码存在问题，可能导致在磁盘创建错误的文件夹。
+
+### 2023-07-18   
 - [new] 支持在插件配置界面中更新许可证（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html)）。   
 - [new] 支持在插件配置界面中更新语音模型（[文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html)）。   
 - [new] :rainbow: 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字([文档](https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html))。   
@@ -17,10 +34,7 @@ Current
 - [improve] :thumbsup: MediaPipe 升级到 0.10.2, 更新了 google 模型，使用新的 mediapipe solution api，表情捕捉大幅改进，普通摄像头的表情捕捉已经处于 Production Ready 水平了。   
 - [improve] 使用 Pose Tracker 装饰线条（Annotion）时，不再绘制 ROI 红色线框（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
 - [improve] GStreamer 打包时不再打包无用的 PC (C++ package config) 文件，进一步减小打包尺寸。   
-- [fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。   
-
-{: .warning}
-> [**break change**] :red_circle: 原有的 TTS 模型包格式不再兼容新版插件，升级插件后请删除原有模型包 （speech 目录）, 使用编辑器导入模型包功能导入新的语音模型包。   
+- [fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: [#81](https://github.com/endink/Mediapipe4u-plugin/issues/81)）。    
 
 
 ### 2023-06-28   
