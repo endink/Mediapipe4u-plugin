@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 2250
+nav_order: 15
 title: 大语言模型（LLM）
 has_children: true
 ---
