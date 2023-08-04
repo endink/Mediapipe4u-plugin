@@ -25,6 +25,9 @@ MediaPipe4U 封装了一个插件，支持本地部署大语言模型（LLM） �
 > 
 > 免费授权版本仅能够在 Ureal Editor 中使用它
 
+---
+[![LLM Tool](./images/llm_tools.jpg "LLM Tool")](./images/llm_tools.jpg)
+
 # Road Map
 
 - [x] 本地化部署
