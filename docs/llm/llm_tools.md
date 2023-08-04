@@ -18,6 +18,8 @@ MediaPipe4ULLM 插件提供了可以 Unreal Editor 中使用的工具，方便�
 
 在 Unreal Engine Editor 打开依次打开菜单 `窗口（Windows）`>>`MediaPipe4U`>>`MediaPipe4U LLM`，你将看到 LLM 工具窗口。
 
+[![LLM Tool](./images/llm_tools.jpg "LLM Tool")](./images/llm_tools.jpg)
+
 
 ### 功能
 
