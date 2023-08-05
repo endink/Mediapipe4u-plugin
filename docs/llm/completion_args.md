@@ -26,7 +26,7 @@ LLaMA 模型推理基于 [llama.cpp](https://github.com/ggerganov/llama.cpp) 项
 {: .highlight}
 > 常用参数：   
 > - `temperature`: 温度表示模型生成内容时的随机性，较低的温度意味着较少的随机性，温度为 0 将始终产生相同的输出
-> - `n_predict`: 通过调整此值，可以影响生成 LLM 文本的长度。较高的值将导致较长的文本，-1 表示不限制文本长度。注意：单位是 token 数量, 并不是字符。
+> - `n_predict`: 通过调整此值，可以影响 LLM 生成文本的长度。较高的值将导致较长的文本，-1 表示不限制文本长度。注意：单位是 token 数量, 并不是字符。
 > - `n_keep`: 虽然模型支持调整上下文固定的 token 数量，但是 MediaPipe4ULLM 会自动计算这个值，因此你无法设置该值。
 
 
@@ -36,7 +36,7 @@ LLaMA 模型推理基于 [llama.cpp](https://github.com/ggerganov/llama.cpp) 项
 `top_k`: Limit the next token selection to the K most probable tokens (default: 40).   
 `top_p`: Limit the next token selection to a subset of tokens with a cumulative probability above a threshold P (default: 0.9).   
 `n_predict`: Set the number of tokens to predict when generating text. **Note:** May exceed the set limit slightly if the last token is a partial multibyte character. When 0, no tokens will be generated but the prompt is evaluated into thecache. (default: 512, -1 = infinity).   
-`n_keep`: Specify the number of tokens from the initial prompt to retain when the model resets its internal context.      
+`n_keep`: Specify the number of tokens from the initial prompt to retain when the model resets its internal context (**Unavailable in MediaPipe4ULLM**).      
 `prompt`: Provide a prompt. Internally, the prompt is compared, and it detects if a part has already been evaluated, and the remaining part will be evaluate. A space is inserted in the front like main.cpp does.   
 `stop`: Specify a array of stopping strings.These words will not be included in the completion, so make sure to add them to the prompt for the next iteration (default: [INST]).   
 `tfs_z`: Enable tail free sampling with parameter z (default: 1.0, 1.0 = disabled).   
