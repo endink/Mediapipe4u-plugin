@@ -6,10 +6,11 @@ parent: 大语言模型（LLM）
 ---
 
 # 会话参数   
-通常，大语言模型都有复杂的参数来控制模型生成内容，为此 MediaPipe4ULLM 使用字符串参数格式适应多种模型，参数格式为：
-```shell
---[参数名]=[参数值]
-```
+通常，大语言模型都有复杂的参数来控制模型生成内容，为此 MediaPipe4ULLM 使用一个字典（Map）来表示会话参数。   
+
+- 字典键：参数名称
+- 字典值: 参数值
+
 
 会话参数可以在聊天过程中随时变更，下面是一个变更会话参数的示例：   
 [![Modify Completion Args](./images/llm_set_complietion_args_bp.jpg "Modify Completion Args")](./images/llm_set_complietion_args_bp.jpg)
