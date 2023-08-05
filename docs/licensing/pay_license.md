@@ -48,6 +48,7 @@ parent: 授权许可
 |  BVH 导出        | ✅  |  ✅   |    ✅     |  ✅    | |
 |  虚拟摄像头      |  ⚪  |     |         |  ✅    | |
 |  语音套件       |  ⚪  |     |         |  ✅    | |
+|  大语言模型（LLM） |  ⚪  |     |         |  ✅    | 当前仅支持 CPU 推理 |
 |  VMC 数据导出      | ⚪   |     |         |  ✅    | |
 |  RTMP 推流      |  ⚪  |     |         |  ✅    | |
 |  技术支持      |  Github  |  微信  |  微信  |  微信  | 设备授权低于 4 台仅提供 github 支持 |
@@ -69,6 +70,7 @@ USD Price Table （Tax excluded）
 |  BVH Export        | ✅  |  ✅   |    ✅     |  ✅    | |
 |  Virtual Camera      |  ⚪  |     |         |  ✅    | |
 |  Speech Suite       |  ⚪  |     |         |  ✅    | |
+|  LLM |  ⚪  |     |         |  ✅    | Currently, only CPU inference is supported |
 |  VMC Export      |  ⚪  |     |         |  ✅    | |
 |  RTMP Push   |  ⚪  |     |         |  ✅    | |
 |  Support      |  Github  | WeChat/Skype  |  WeChat/Skype  |  WeChat/Skype  | If you only purchase the device license, you can only get GitHub technical support if the number of devices is less than 4 |

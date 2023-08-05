@@ -23,6 +23,7 @@ has_children: true
 | PaddleLite | Apache 2.0  | [https://github.com/PaddlePaddle/Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) |
 | OVRLipSync | [Meta Special](https://developer.oculus.com/licenses/oculussdk/) | [https://developer.oculus.com/documentation/unreal/audio-ovrlipsync/](https://developer.oculus.com/documentation/unreal/audio-ovrlipsync/) |
 | FunASR | MIT | [https://github.com/alibaba-damo-academy/FunASR](https://github.com/alibaba-damo-academy/FunASR) |
+| llama.cpp | MIT | [https://github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp) |
 
 ---   
 
