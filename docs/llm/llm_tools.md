@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 20
+nav_order: 100
 title: UE Editor 工具箱
 parent: 大语言模型（LLM）
 ---

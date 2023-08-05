@@ -84,7 +84,7 @@ parent: 大语言模型（LLM）
 
 {: .important}
 > 配置参数的格式为：      
-> --`[参数名]`=`[参数值]`
+> - --`[参数名]`=`[参数值]`
 >
 > 每行一个参数, 前缀 `--` 不可省略
 
@@ -189,6 +189,10 @@ LLM Actor 只需要较少的属性即可工作良好。
 >
 > 开始朗读字符数可能不是`SpeechDelayCharNum`设置的值（通常大于`SpeechDelayCharNum`）, 因为延迟的文本是以句子为单位积累，并不是以字符形式积累。
 
+**CompletionArguments**   
+和模型相关的参数，会应用到聊天会话。   
+不同的模型有不同的参数类型，关于模型参数更多信息，请阅读[会话参数](./completion_args.md)文档。   
+
 
 ### LLMActor 事件   
 
@@ -234,13 +238,29 @@ LLM Actor 只需要较少的属性即可工作良好。
 如果为 **true**, 表示当前有聊天会话（聊天已经开始），否则为 **false**。      
 
 **CancelCompletion**   
-停止 LLM 生成内容，可以理解为取消一轮聊天。
+停止 LLM 生成内容，可以理解为取消一轮聊天。   
+
 {: .important}
 > 执行 `CancelCompletion` 后，这一轮聊天的用户输入和 LLM 输出都不会保存到上下文中，因为取消会中断 LLM 生成内容，不完整的内容不适合放入上下文。   
 
 **IsCompleting**   
 返回一个布尔值，指示 LLM 是否正在生成内容。   
 如果为 **true**, 表示正在生成内容，反之，LLM 正在等待用户输入。   
+
+**ApplyCompletionArguments**   
+应用聊天会话参数。   
+当一个新的聊天会话开始时，`CompletionArguments`中设置的参数会被自动应用。   
+某些情况下你可以希望对话过程中改变参数，设置新的参数到`CompletionArguments`, 然后调用`ApplyCompletionArguments`函数。
+
+{: .important}
+> 模型生成过程中不能调用`ApplyCompletionArguments`函数，你应该在`Chat`函数之前调用`ApplyCompletionArguments`。   
+> 
+> 调用`ApplyCompletionArguments`函数后，后续聊天对话将使用新的参数，可以随时使用聊天会话参数调整一些行为，例如：   
+> - 模型生成内容长度
+> - 重复惩罚
+> - 调整单词出现频率
+>
+> 关于聊天会话参数更多信息，请阅读[会话参数](./completion_args.md)文档。
 
 ---   
 
