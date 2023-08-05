@@ -53,11 +53,11 @@ LLaMA 模型推理基于 [llama.cpp](https://github.com/ggerganov/llama.cpp) 项
 `ignore_eos`: Ignore end of stream token and continue generating (default: false).   
 `logit_bias`: Modify the likelihood of a token appearing in the generated text completion. For example, use `"logit_bias": 15043:1.0` to increase the likelihood of the token 'Hello', or `"logit_bias": 15043:-1.0` to decrease itslikelihood. Setting the value to false, `"logit_bias": 15043:1.0,11111:0.8` ensures that the token `Hello` is never produced (default: '').     
 
-> From [llama.cpp](https://github.com/ggerganov/llama.cpp)
+> 更多模型参数，可以参考 [llama.cpp](https://github.com/ggerganov/llama.cpp)
 
 {: .note}
-> `logit_bias` 和 `stop` 参数的格式和 llama.cpp 中不同，M4U 使用都好分割字符串当作数组，llama.cpp 使用 json 格式：
-> - `logit_bias`格式为 `p1:p1_value,p2:p2-value`。
-> - `logit_bias`格式为 `v1,v2,v3`。
+> `logit_bias` 和 `stop` 参数的格式和 llama.cpp 中不同，M4U 使用英文逗号（,）分割字符串表示数组，llama.cpp 使用 json 格式：
+> - `logit_bias`格式为 `p1:p1_value, p2:p2-value`。
+> - `logit_bias`格式为 `v1, v2, v3`。
 > 
 > - `n_predict`的默认值和 llama.cpp 不同，M4U 使用 **512** 作为默认值。
