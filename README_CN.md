@@ -20,7 +20,9 @@
 | <a href="https://github.com/endink/MediaPipe4U-Demo">Demo 工程</a>
 | <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/M4U_Remoting_App">M4U Remoting(Android App)</a>
 | <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models">语音模型包</a>
-| <a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/pay_license.html">版本比较</a>
+</p>
+<p align="center">
+<a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/pay_license.html">免费版 vs 付费版</a>
 </p>
 </p>
 
