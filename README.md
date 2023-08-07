@@ -32,7 +32,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-`20230805`
+`20230807`
 
 [![LLM Tool](./docs/llm/images/llm_tools.jpg "LLM Tool")](./docs/llm/llm_tools.jpg)
 

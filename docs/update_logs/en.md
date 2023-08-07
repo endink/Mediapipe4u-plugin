@@ -7,7 +7,7 @@ parent: 更新日志
 
 [简体中文](./index.md)
 
-### 2023-08-05   
+### 2023-08-07   
 {: .d-inline-block }
 
 Current
