@@ -43,6 +43,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 - [new] Add StartCameraAsync function, prevent UI block while camera starting.   
 - [new] TTS blueprint functions added to MediaPipeSpeechActor (some functions in LocalTTSComponent no longer support access in blueprint).   
 - [improve] TTS supports text reading queue, which can read multiple texts one by one (the `SpeakText` function on `MediaPipeSpeechActor` add the **StopPrevious** parameter).   
+- [improve] Removes the pdb file to further reduce the package size.   
 - [improve] When the NvAR SDK is not installed, packaging will no longer fail, but will give a warning message.   
 - [fix] Fixed that if UE Editor's LiveLink UI is opened when start mocap, the program will crash.   
 - [fix] Fix program crash when access UI in ASR speech recognited events ([#90](https://github.com/endink/Mediapipe4u-plugin/issues/90)).   
@@ -108,9 +109,9 @@ For the release notes, ref below:
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/22d98665cb184e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxne6rVUcKI32o3i?e=RNuSmr) | 2023-07-18 |
-| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/51c6426b832e4f) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxji8GWaGzD6JyHv?e=WTyHcU) | 2023-07-18 |
-| UE 5.2 | [cowtransfer](https://cowtransfer.com/s/1103777d011e47) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxpB9JFHdEfirBy3?e=gDwSN1) | 2023-07-19 |
+| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/24af2cb737ea4b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzL3p1oJhOwVLtwa?e=0dC6LE) | 2023-08-07 |
+| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/6bc307201a2741) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzG2jd-jJtN9LMWa?e=FBh7UV) | 2023-08-07 |
+| UE 5.2 | [cowtransfer](https://cowtransfer.com/s/3f80899c0a8c44) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzAk1Wl2yf_wa8Ty?e=0ADBWg) | 2023-08-07 |
 
   
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   

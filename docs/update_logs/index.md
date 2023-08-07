@@ -19,6 +19,7 @@ Current
 - [new] 加入异步开启摄像头支持（StartCameraAsync），防止摄像头启动时界面卡顿。   
 - [new] MediaPipeSpeechActor 中加入 TTS 蓝图操作函数（LocalTTSComponent 部分函数不再支持蓝图访问）。   
 - [improve] TTS 支持文本朗读排队，可以连续朗读多个文本（SpeakText 函数新增 StopPrevious 参数）。   
+- [improve] 移除 pdb 文件，进一步缩减打包尺寸。   
 - [improve] 当 NvAR SDK 未安装时打包不会再失败，而是给出警告信息。   
 - [fix] 修复表情捕捉时如果开启 Unreal Engine 的 LiveLink 界面将导致程序崩溃。   
 - [fix] 修复语音识别事件中直接进行 UI 处理时程序崩溃（[#90](https://github.com/endink/Mediapipe4u-plugin/issues/90)）。   

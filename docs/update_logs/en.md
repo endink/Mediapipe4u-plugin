@@ -19,6 +19,7 @@ Current
 - [new] Add StartCameraAsync function, prevent UI block while camera starting.   
 - [new] TTS blueprint functions added to MediaPipeSpeechActor (some functions in LocalTTSComponent no longer support access in blueprint).   
 - [improve] TTS supports text reading queue, which can read multiple texts one by one (the `SpeakText` function on `MediaPipeSpeechActor` add the **StopPrevious** parameter).     
+- [improve] Removes the pdb file to further reduce the package size.   
 - [improve] When the NvAR SDK is not installed, packaging will no longer fail, but will give a warning message.   
 - [fix] Fixed that if UE Editor's LiveLink UI is opened when start mocap, the program will crash.   
 - [fix] Fix program crash when access UI in ASR speech recognited events ([#90](https://github.com/endink/Mediapipe4u-plugin/issues/90)).   

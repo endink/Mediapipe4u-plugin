@@ -32,7 +32,7 @@
 
 # 最新动态
 
-`20230805`   
+`20230807`   
 
 - [new] :rainbow:新增**离线**大语言模型（LLM）功能，支持离线部署并推理 llama2 模型([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/))。   
 - [new] :rainbow:新增 LLM Speech 功能，集成语音插件到 LLM， 可以自动朗读模型生成结果。
@@ -42,6 +42,7 @@
 - [new] MediaPipeSpeechActor 中加入 TTS 蓝图操作函数（LocalTTSComponent 部分函数不再支持蓝图访问）。   
 - [improve] TTS 支持文本朗读排队，可以连续朗读多个文本（SpeakText 函数新增 StopPrevious 参数）。   
 - [improve] 当 NvAR SDK 未安装时打包不会再失败，而是给出警告信息。   
+- [improve] 移除 pdb 文件，进一步缩减打包尺寸。   
 - [fix] 修复表情捕捉时如果开启 Unreal Engine 的 LiveLink 界面将导致程序崩溃。   
 - [fix] 修复语音识别事件中直接进行 UI 处理时程序崩溃（[#90](https://github.com/endink/Mediapipe4u-plugin/issues/90)）。   
 - [fix] 修复 Pose Asset Baker 工具在 UE 5.2 版本使用崩溃问题 ([#88](https://github.com/endink/Mediapipe4u-plugin/issues/88))。
@@ -105,9 +106,9 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/22d98665cb184e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxne6rVUcKI32o3i?e=RNuSmr) | 2023-07-18 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/51c6426b832e4f) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxji8GWaGzD6JyHv?e=WTyHcU) | 2023-07-18 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/1103777d011e47) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxpB9JFHdEfirBy3?e=gDwSN1) | 2023-07-19 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/24af2cb737ea4b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzL3p1oJhOwVLtwa?e=0dC6LE) | 2023-08-07 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/6bc307201a2741) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzG2jd-jJtN9LMWa?e=FBh7UV) | 2023-08-07 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/3f80899c0a8c44) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzAk1Wl2yf_wa8Ty?e=0ADBWg) | 2023-08-07 |
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    
