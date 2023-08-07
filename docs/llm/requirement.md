@@ -53,13 +53,16 @@ parent: 大语言模型（LLM）
 
 ## 性能参考
 
-不同的 CPU 可能对性能产生一定影响，一下为我的开发环境实测的数据：
+不同的 CPU 可能对性能产生一定影响，以下是用非常低端的设备实测的数据：
 
 CPU: AMD3600   
 RAM: 32G   
 GPU: NVIDIA GTX 2060 (6G)   
 
 速度： **5.5**-**6.5** TPS (tokens per second)
+
+{: .highlight}
+> 使用 Intel CPU 推理速度会有提升, 测试数据证明哪怕是低端设备也能运行 LLM 。
 
 
 
