@@ -32,22 +32,14 @@
 
 # 最新动态
 
-`20230807`   
+最后更新：`20230809`   
 
-- [new] :rainbow:新增**离线**大语言模型（LLM）功能，支持离线部署并推理 llama2 模型([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/))。   
-- [new] :rainbow:新增 LLM Speech 功能，集成语音插件到 LLM， 可以自动朗读模型生成结果。
-- [new] :rainbow:发布新的 ONNX 语音模型包（音质更好），新增四个语音模型包：中文、中文男声、英文、英文女声（[语音包发布页](https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models)）。
-- [new] TTS 推理支持 Onnx 推理，可以使用质量更高的声码器。   
-- [new] 加入异步开启摄像头支持（StartCameraAsync），防止摄像头启动时界面卡顿。   
-- [new] MediaPipeSpeechActor 中加入 TTS 蓝图操作函数（LocalTTSComponent 部分函数不再支持蓝图访问）。   
-- [improve] TTS 支持文本朗读排队，可以连续朗读多个文本（SpeakText 函数新增 StopPrevious 参数）。   
-- [improve] 当 NvAR SDK 未安装时打包不会再失败，而是给出警告信息。   
-- [improve] 移除 pdb 文件，进一步缩减打包尺寸。   
-- [fix] 修复表情捕捉时如果开启 Unreal Engine 的 LiveLink 界面将导致程序崩溃。   
-- [fix] 修复语音识别事件中直接进行 UI 处理时程序崩溃（[#90](https://github.com/endink/Mediapipe4u-plugin/issues/90)）。   
-- [fix] 修复 Pose Asset Baker 工具在 UE 5.2 版本使用崩溃问题 ([#88](https://github.com/endink/Mediapipe4u-plugin/issues/88))。
-- [fix] TTS 停止朗读小概率发生无法停止。
-- [fix] TTS/ASR 解析文件夹时编码存在问题，可能导致在磁盘创建错误的文件夹。   
+- [new] :rainbow:聊天运行时（LLMSpeechChatRuntime），仅需要很少简单的蓝图就可以构建复杂的的聊天和问答程序。   
+- [new] 大语言模型加载时支持预热（WarmUp），解决第一轮对话反应慢的问题。  
+- [new] LipSync 支持了 Remap 资产，曲线名称不必遵循 Facebook 的 Viseme 名称，可以运行时映射。    
+- [new] SpeechActor 加入了蓝图函数（IsTTSReady/IsTTSReady）, 用来检查模型是否已经加载。    
+- [imporve] SpeechActor::IsTTSSpeaking 现在可以精准判断是否还在朗读。   
+- [fix] Speech 可能因为编码问题，在磁盘创建无效的空文件夹。   
 
 ## Release Notes
 更多更新信息，请查看更新日志:
@@ -106,9 +98,9 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/24af2cb737ea4b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzL3p1oJhOwVLtwa?e=0dC6LE) | 2023-08-07 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/6bc307201a2741) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzG2jd-jJtN9LMWa?e=FBh7UV) | 2023-08-07 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/3f80899c0a8c44) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzAk1Wl2yf_wa8Ty?e=0ADBWg) | 2023-08-07 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/4af4a8fcb7a843) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzaQWfbL11Q7YWSH?e=liRQHF) | 2023-08-09 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/25fc0247da8140) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzd1TztwkBCrEQUa?e=v5UUSr) | 2023-08-09 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/5b2f37d0baaa4a) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzjpdUVJj_LVQA84?e=QJWOE2) | 2023-08-09 |
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    

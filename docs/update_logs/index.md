@@ -7,11 +7,19 @@ has_children: true
 
 [English] (./en.md)
 
-### 2023-08-07   
+### 2023-08-09   
 {: .d-inline-block }
 
 Current
-{: .label .label-green }    
+{: .label .label-green }   
+- [new] :rainbow:聊天运行时（LLMSpeechChatRuntime），仅需要很少简单的蓝图就可以构建复杂的的聊天和问答程序。   
+- [new] 大语言模型加载时支持预热（WarmUp），解决第一轮对话反应慢的问题。  
+- [new] LipSync 支持了 Remap 资产，曲线名称不必遵循 Facebook 的 Viseme 名称，可以运行时映射。    
+- [new] SpeechActor 加入了蓝图函数（IsTTSReady/IsTTSReady）, 用来检查模型是否已经加载。    
+- [imporve] SpeechActor::IsTTSSpeaking 现在可以精准判断是否还在朗读。   
+- [fix] Speech 可能因为编码问题，在磁盘创建无效的空文件夹。   
+
+### 2023-08-07    
 - [new] :rainbow:新增大语言模型（LLM）功能，支持离线部署并推理 LLaMA2 模型([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/))。   
 - [new] :rainbow:新增 LLM Speech 功能，集成语音插件到 LLM， 可以自动朗读模型生成结果。
 - [new] :rainbow:发布新的 ONNX 语音模型包（音质更好），新增四个语音模型包：中文、中文男声、英文、英文女声（[语音包发布页](https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models)）。
