@@ -5,7 +5,7 @@ title: 更新日志
 has_children: true
 ---
 
-[English] (./en.md)
+[English](./en.md)
 
 ### 2023-08-09   
 {: .d-inline-block }
