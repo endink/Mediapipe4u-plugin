@@ -98,9 +98,11 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/4af4a8fcb7a843) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzaQWfbL11Q7YWSH?e=liRQHF) | 2023-08-09 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/25fc0247da8140) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzd1TztwkBCrEQUa?e=v5UUSr) | 2023-08-09 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/5b2f37d0baaa4a) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzjpdUVJj_LVQA84?e=QJWOE2) | 2023-08-09 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/22d98665cb184e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxne6rVUcKI32o3i?e=RNuSmr) | 2023-07-18 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/51c6426b832e4f) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxji8GWaGzD6JyHv?e=WTyHcU) | 2023-07-18 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/1103777d011e47) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxpB9JFHdEfirBy3?e=gDwSN1) | 2023-07-19 |
+
+**:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**   
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    
