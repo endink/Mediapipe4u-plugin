@@ -75,7 +75,11 @@ parent: 语音套件
 > `Plugins Folder` 是你的项目 Plugins 目录。
 
 {: .highlight}
-> MediaPipe4USpeech 语音合成（TTS）基于 [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech) 开发，使用 PaddleLite 推理库执行推理，理论上，你可以转换任意的 PaddleSpeech 模型到 PaddleLite 格式，
-> 然后将他应用于 **MediaPipe4USpeech**。   
+> MediaPipe4USpeech 语音合成（TTS）基于 [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech) 开发，使用 Onnx 推理库执行推理，理论上，你可以转换任意的 PaddleSpeech 模型到 Onnx 格式，
+> 然后将他应用于 **MediaPipe4USpeech**。  
 >    
 > MediaPipe4USpeech 语音识别（ASR）基于 [FunASR](https://github.com/alibaba-damo-academy/FunASR) 开发，你可以从 [Model Scope](https://www.modelscope.cn/models) 中下载 FunASR 模型， 然后将他应用于 **MediaPipe4USpeech**。
+>
+> 关于如何制作语音模型包，请阅读:
+> - [自定义 TTS 模型](./tts/local_tts_model_package.md)
+> - 自已 ASR 模型 (文档暂缺)
