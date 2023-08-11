@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 20
+nav_order: 30
 title: 构建聊天程序
 parent: 大语言模型（LLM）
 ---
@@ -137,10 +137,6 @@ LLMSpeechChatRuntime 提供了一些蓝图函数，方便你获得 LLMSpeechChat
 
 **IsUserRound**    
 判断是否是助理（Assistant）回合。   
-
-**GetChatStatusText**   
-获取当前聊天流程的状态文字说明。     
-这通常用于界面显示。   
 
 **GetChatStatusText**   
 获取当前聊天流程的状态文字说明。     
