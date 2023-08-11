@@ -7,9 +7,9 @@ parent: 大语言模型（LLM）
 
 # 构建聊天程序
 
-你可以组合 MediaPipe4U 的 MediaPipeSpeechActor 和 LLMActor 构建一个可以通过麦克风语音交互的聊天机器人程序。
-创建一个健壮的聊天程序需要你非常了解 MediaPipe4U 中 TTS, ASR 和 LLM 的细节，即使这样，你可能在一些交互逻辑上不小心犯错。
-为此，MediaPipe4U 提供了一个 **ChatRuntimeActor**，这是一个开箱即用的聊天基本流程对象。帮助你简化聊天程序的构建。
+你可以组合 MediaPipe4U 的 MediaPipeSpeechActor 和 LLMActor 构建一个可以通过麦克风语音交互的聊天机器人程序。   
+创建一个健壮的聊天程序需要你非常了解 MediaPipe4U 中 TTS, ASR 和 LLM 的细节，即使这样，你可能在一些交互逻辑上不小心犯错。   
+为此，MediaPipe4U 提供了一个 **ChatRuntimeActor**，这是一个开箱即用的聊天基本流程对象。帮助你简化聊天程序的构建。   
 
 {: .important}
 > 阅读本文档前，你需要熟悉 MediaPipe4USpeech 和 MediaPipe4ULLM 。
@@ -24,7 +24,7 @@ parent: 大语言模型（LLM）
 ## 准备工作
 
 在开始构建聊天机器人之前，你需要做好以下准备工作：
-1. 安装语言模型包（包括 TTS 模型和 ASR 模型）：[参考文档](../speech/config.md)
+1. 安装语音模型包（包括 TTS 模型和 ASR 模型）：[参考文档](../speech/config.md)
 2. 安装 LLM 模型：[参考文档](./usage.md)
 3. 制作好一个 3D 角色，并且已经配置好 TTS 和 LipSync: [参考文档](../speech/quick_start.md)
 
@@ -70,7 +70,7 @@ LLMSpeechChatRuntime 属性说明：
 模型回答问题时，要求用户输入的最小长度（单位：字符数），当用户输入长度低于这个值时，模型会使用 Tips 回答（如果配置了 Tips）或者忽略本次输入。   
 
 
-**TipsEnabled**
+**TipsEnabled**   
 是否使用固定提示（Tips）。     
 Tips 用来预设一些特定情况下的机器人说辞。例如：推理失败时，用户输入太短等。    
 
