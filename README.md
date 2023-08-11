@@ -32,7 +32,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-Latest update: `20230809`
+Latest update: `20230811`
 
 - [new]:rainbow:LLMSpeechChatRuntime, which requires very few simple blueprints to build complex chat and FAQ programs.   
 - [new] Support warm-up when large language models are loaded, solving the problem of slow response to the first round of dialogue.  
