@@ -103,7 +103,6 @@
 | UE 5.1 | [奶牛快传](https://cowtransfer.com/s/798c1ba466064d) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzrr92e-DKKDPnpl?e=vvLnnw) | 2023-08-11 |
 | UE 5.2 | [奶牛快传](https://cowtransfer.com/s/a956740db7c34a) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzuk22bk29nVpiNL?e=rDs0C1) | 2023-08-11 |
 
-**:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**   
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    

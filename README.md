@@ -104,7 +104,7 @@ For the release notes, ref below:
 | UE 5.1 | [cowtransfer](https://cowtransfer.com/s/798c1ba466064d) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzrr92e-DKKDPnpl?e=vvLnnw) | 2023-08-11 |
 | UE 5.2 | [cowtransfer](https://cowtransfer.com/s/a956740db7c34a) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzuk22bk29nVpiNL?e=rDs0C1) | 2023-08-11 |
 
-**:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**   
+<!-- **:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**    -->
 
   
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
