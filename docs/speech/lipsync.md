@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 20
-title: 音唇同步(Lip Sync)
+title: 口型同步(Lip Sync)
 parent: 语音套件
 has_children: false
 ---

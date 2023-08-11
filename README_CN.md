@@ -39,7 +39,8 @@
 - [new] LipSync 支持了 Remap 资产，曲线名称不必遵循 Facebook 的 Viseme 名称，可以运行时映射。    
 - [new] SpeechActor 加入了蓝图函数（IsTTSReady/IsTTSReady）, 用来检查模型是否已经加载。    
 - [imporve] SpeechActor::IsTTSSpeaking 现在可以精准判断是否还在朗读。   
-- [fix] Speech 可能因为编码问题，在磁盘创建无效的空文件夹。   
+- [fix] Speech 可能因为编码问题，在磁盘创建无效的空文件夹。  
+- [fix] Issues fixed: [#95](https://github.com/endink/Mediapipe4u-plugin/issues/96),[#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)
 
 ## Release Notes
 更多更新信息，请查看更新日志:
@@ -98,9 +99,9 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/22d98665cb184e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxne6rVUcKI32o3i?e=RNuSmr) | 2023-07-18 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/51c6426b832e4f) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxji8GWaGzD6JyHv?e=WTyHcU) | 2023-07-18 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/1103777d011e47) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxpB9JFHdEfirBy3?e=gDwSN1) | 2023-07-19 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/7df4b800321d48) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzznVc0cFmsmh6c3y?e=cdUPjm) | 2023-08-11 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/798c1ba466064d) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzrr92e-DKKDPnpl?e=vvLnnw) | 2023-08-11 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/a956740db7c34a) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzuk22bk29nVpiNL?e=rDs0C1) | 2023-08-11 |
 
 **:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**   
 

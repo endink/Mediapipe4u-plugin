@@ -20,6 +20,7 @@ Current
 - [new] SpeechActor adds new blueprint functions (IsTTSReady/IsTTSReady) to check if the model is loaded.    
 - [imporve] SpeechActor::IsTTSSpeaking You can now accurately determine whether tts is still speaking.   
 - [fix] Speech may create an invalid empty folder on disk due to encoding issues. 
+- [fix] Issues fixed: [#95](https://github.com/endink/Mediapipe4u-plugin/issues/96), [#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)
 
 ### 2023-08-07      
 - [new]: rainbow: Add the large language model (LLM) feature (MediaPipe4ULLM plugin). Supports offline deployment and inference of LLaMA2 models([Document](https://opensource.labijie.com/Mediapipe4u-plugin/llm/)).   

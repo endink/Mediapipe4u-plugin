@@ -40,6 +40,7 @@ Latest update: `20230811`
 - [new] SpeechActor adds new blueprint functions (IsTTSReady/IsTTSReady) to check if the model is loaded.    
 - [imporve] SpeechActor::IsTTSSpeaking You can now accurately determine whether tts is still speaking.   
 - [fix] Speech may create an invalid empty folder on disk due to encoding issues.   
+- [fix] Issues fixed: [#95](https://github.com/endink/Mediapipe4u-plugin/issues/96),[#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)
 
 ## Release Notes
 For the release notes, ref below:
@@ -99,9 +100,9 @@ For the release notes, ref below:
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/22d98665cb184e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxne6rVUcKI32o3i?e=RNuSmr) | 2023-07-18 |
-| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/51c6426b832e4f) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxji8GWaGzD6JyHv?e=WTyHcU) | 2023-07-18 |
-| UE 5.2 | [cowtransfer](https://cowtransfer.com/s/1103777d011e47) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzxpB9JFHdEfirBy3?e=gDwSN1) | 2023-07-19 |
+| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/7df4b800321d48) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzznVc0cFmsmh6c3y?e=cdUPjm) | 2023-08-11 |
+| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/798c1ba466064d) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzrr92e-DKKDPnpl?e=vvLnnw) | 2023-08-11 |
+| UE 5.2 | [cowtransfer](https://cowtransfer.com/s/a956740db7c34a) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjzzuk22bk29nVpiNL?e=rDs0C1) | 2023-08-11 |
 
 **:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**   
 

@@ -18,6 +18,7 @@ Current
 - [new] SpeechActor 加入了蓝图函数（IsTTSReady/IsTTSReady）, 用来检查模型是否已经加载。    
 - [imporve] SpeechActor::IsTTSSpeaking 现在可以精准判断是否还在朗读。   
 - [fix] Speech 可能因为编码问题，在磁盘创建无效的空文件夹。   
+- [fix] Issues fixed: [#95](https://github.com/endink/Mediapipe4u-plugin/issues/96), [#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)
 
 ### 2023-08-07    
 - [new] :rainbow:新增大语言模型（LLM）功能，支持离线部署并推理 LLaMA2 模型([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/))。   

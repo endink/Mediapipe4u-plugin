@@ -35,17 +35,16 @@ parent: 语音套件
 
 {: .highlight}
 > MediaPipe4U Speech 插件设置页中还有模型包状态提示，但这只是粗略的检查模型包文件夹是否存在。   
-> 当模型包没有安装时，状态指示器将显示红色，并又文字提示。   
+> 当模型包没有安装时，状态指示器将显示红色，并有文字提示。   
 >    
 > MediaPipe4U Speech 插件设置页中你还可以快速打开在线的 MediaPipe4U [语音模型包发布页]((https://github.com/endink/Mediapipe4u-plugin/releases))。
 
 
 ---   
 
-### 手动安装安装
-
-当你下载语音模型包之后，进行解压，包含了 **MediaPipe4USpeech** 插件，但是并不包含声学模型和声码器模型，你需要手动下载单独发布的模型包，才能让语音套件功能正常工作。   
-按以下步骤完成 **MediaPipe4USpeech** 的配置：
+### 手动安装
+ 
+可以通过手动解压下载的模型包 .zip 文件来完成安装。
 
 1. 在 [语音模型发布页](https://github.com/endink/Mediapipe4u-plugin/releases) 下载模型包（通常是一个 .zip 压缩文件）
 2. 解压缩模型包文件
@@ -78,7 +77,7 @@ parent: 语音套件
 > MediaPipe4USpeech 语音合成（TTS）基于 [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech) 开发，使用 Onnx 推理库执行推理，理论上，你可以转换任意的 PaddleSpeech 模型到 Onnx 格式，
 > 然后将他应用于 **MediaPipe4USpeech**。  
 >    
-> MediaPipe4USpeech 语音识别（ASR）基于 [FunASR](https://github.com/alibaba-damo-academy/FunASR) 开发，你可以从 [Model Scope](https://www.modelscope.cn/models) 中下载 FunASR 模型， 然后将他应用于 **MediaPipe4USpeech**。
+> MediaPipe4USpeech 语音识别（ASR）基于 [FunASR](https://github.com/alibaba-damo-academy/FunASR) 开发，你可以从 [Model Scope](https://www.modelscope.cn/models) 中下载 FunASR 模型（必须是 ONNX 格式）， 然后将他应用于 **MediaPipe4USpeech**。
 >
 > 关于如何制作语音模型包，请阅读:
 > - [自定义 TTS 模型](./tts/local_tts_model_package.md)
