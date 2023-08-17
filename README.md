@@ -70,13 +70,22 @@ For the release notes, ref below:
   - Model Supports: LLaMA2
   - CPU Inference 
   - Pure C++: Plugin only, no Python or external programs required
+  - Multiple models
+    - LLaMA/LLaMA2
+    - ChatGLM (work in progress)
 - TTS
   - Offline
   - Real-time
   - Lip-Sync
+  - Multiple models
+    - Paddle Speech: Chinese, English 
+    - Bark: 13 languages (work in progress)
 - ASR
   - Offline
   - Real-time
+  - Multiple models
+    - FunASR: Chinese 
+    - Whisper: 99 languages
 - Animation Data Export
   - BVH export 
 - Pure plugins
