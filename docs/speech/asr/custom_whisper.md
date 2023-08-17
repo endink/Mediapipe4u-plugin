@@ -24,12 +24,16 @@ Whisper 各种语言的效果可以参考下面的错误率图表:
 - 德语
 - 日语
 
-
+{: .highlight}
+> Whisper 提供了多种规格模型，推荐使用 small 或 medium 规格的模型以获得最佳的性能和最好的效果。
+>
+> 模型尺寸越大效果越好，但是推理速度也会越慢。
+> 如果你决意使用 large 模型，可以对其进行量化来提升推理性能。
 
 ### TTS 语音模型包结构
 
-MediaPipe4U 对语音包格式做了约定，是一个 GZip 格式的压缩文件，解压后都包含一个 tts 文件夹，tts 文件夹下包含一个 tts.conf 文件，
-通常还包含一个 dict 文件夹和一个 models 文件夹。
+MediaPipe4U 对 ASR 语音包格式做了约定，是一个 GZip 格式的压缩文件，解压后都包含一个 asr 文件夹，asr 文件夹下包含一个 asr.conf 文件，
+通常还包含一个 models 文件夹。
 
 - asr.conf：模型包配置文件
 - models：存放模型的文件夹
