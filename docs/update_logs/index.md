@@ -7,11 +7,17 @@ has_children: true
 
 [English](./en.md)
 
-### 2023-08-11   
+### 2023-08-17   
 {: .d-inline-block }
+- [new] :rainbow: Speech 语音识别 （ASR） 加入 whisper 模型支持（GPU 加速）。   
+- [new] :rainbow: 大语言模型（LLM）支持使用 CUDA 推理([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html))。  
+- [fix] 修复 Speech 模型导入界面卡住的问题（[#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)）。
+- [fix] LLM 推理过程可能导致内存泄露。
 
 Current
-{: .label .label-green }   
+{: .label .label-green }  
+
+### 2023-08-11    
 - [new] :rainbow:聊天运行时（LLMSpeechChatRuntime），仅需要很少简单的蓝图就可以构建复杂的的聊天和问答程序。   
 - [new] 大语言模型加载时支持预热（WarmUp），解决第一轮对话反应慢的问题。  
 - [new] LipSync 支持了 Remap 资产，曲线名称不必遵循 Facebook 的 Viseme 名称，可以运行时映射。    

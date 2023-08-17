@@ -32,15 +32,12 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-Latest update: `20230811`
+Latest update: `20230817`
 
-- [new]:rainbow:LLMSpeechChatRuntime, which requires very few simple blueprints to build complex chat and FAQ programs.   
-- [new] Support warm-up when large language models are loaded, solving the problem of slow response to the first round of dialogue.  
-- [new] LipSync supports Remap assets, and curve names don't have to follow Facebook's Viseme name, and can be mapped at runtime.    
-- [new] SpeechActor adds new blueprint functions (IsTTSReady/IsTTSReady) to check if the model is loaded.    
-- [imporve] SpeechActor::IsTTSSpeaking You can now accurately determine whether tts is still speaking.   
-- [fix] Speech may create an invalid empty folder on disk due to encoding issues.   
-- [fix] Issues fixed: [#95](https://github.com/endink/Mediapipe4u-plugin/issues/96),[#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)
+- [new]:rainbow: Speech ASR supports whisper model (GPU acceleration).   
+- [new]:rainbow: The big language model (LLM) supports CUDA inference ([document](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html)).  
+- [fix] Fixed the issue that the speech model import interface was block ([#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)).
+- [fix] The llm inference process may have caused a memory leak.
 
 ## Release Notes
 For the release notes, ref below:

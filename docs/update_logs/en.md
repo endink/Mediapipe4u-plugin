@@ -7,13 +7,17 @@ parent: 更新日志
 
 [简体中文](./index.md)
 
-
-### 2023-08-11   
+### 2023-08-17      
 {: .d-inline-block }
 
 Current
-{: .label .label-green }   
+{: .label .label-green }  
+- [new]:rainbow: Speech ASR supports whisper model (GPU acceleration).   
+- [new]:rainbow: The big language model (LLM) supports CUDA inference ([Document](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html)).  
+- [fix] Fixed the issue that the speech model import interface was block ([#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)).
+- [fix] The llm inference process may have caused a memory leak.
 
+### 2023-08-11   
 - [new]:rainbow:LLMSpeechChatRuntime, which requires very few simple blueprints to build complex chat and FAQ programs.   
 - [new] Support warm-up when large language models are loaded, solving the problem of slow response to the first round of dialogue.  
 - [new] LipSync supports Remap assets, and curve names don't have to follow Facebook's Viseme name, and can be mapped at runtime.    

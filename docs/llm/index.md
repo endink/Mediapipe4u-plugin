@@ -32,5 +32,6 @@ MediaPipe4U 封装了一个插件，支持本地部署大语言模型（LLM） �
 
 - [x] 本地化部署
 - [x] LLaMA2 模型支持
+- [ ] ChatGLM 支持
 - [ ] GPU 推理
 - [ ] Baby LLaMA (自主训练小模型)

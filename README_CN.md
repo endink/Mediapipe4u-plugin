@@ -32,15 +32,12 @@
 
 # 最新动态
 
-最后更新：`20230811`   
+最后更新：`20230817`   
 
-- [new] :rainbow:聊天运行时（LLMSpeechChatRuntime），仅需要很少简单的蓝图就可以构建复杂的的聊天和问答程序。   
-- [new] 大语言模型加载时支持预热（WarmUp），解决第一轮对话反应慢的问题。  
-- [new] LipSync 支持了 Remap 资产，曲线名称不必遵循 Facebook 的 Viseme 名称，可以运行时映射。    
-- [new] SpeechActor 加入了蓝图函数（IsTTSReady/IsTTSReady）, 用来检查模型是否已经加载。    
-- [imporve] SpeechActor::IsTTSSpeaking 现在可以精准判断是否还在朗读。   
-- [fix] Speech 可能因为编码问题，在磁盘创建无效的空文件夹。  
-- [fix] Issues fixed: [#95](https://github.com/endink/Mediapipe4u-plugin/issues/96),[#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)
+- [new] :rainbow: Speech 语音识别 （ASR） 加入 whisper 模型支持（GPU 加速）。   
+- [new] :rainbow: 大语言模型（LLM）支持使用 CUDA 推理([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html))。  
+- [fix] 修复 Speech 模型导入界面卡住的问题（[#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)）。
+- [fix] LLM 推理过程可能导致内存泄露。
 
 ## Release Notes
 更多更新信息，请查看更新日志:
