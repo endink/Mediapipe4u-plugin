@@ -9,8 +9,16 @@ has_children: true
 
 # 自定义 Whisper 模型
 
-[Whisper](https://github.com/openai/whisper) 是 OpenAI 开源的语音识别模型，MediaPipe4U Speech 对其进行了集成。      
-Whisper 支持 **99** 种语言，MediaPipe4USpeech 中的 Whisper 通过 [whisper.cpp](https://github.com/ggerganov/whisper.cpp) 进行推理，同时配备了 GPU 加速。    
+MediaPipe4U Speech 通过集成 [whisper.cpp](https://github.com/ggerganov/whisper.cpp) 来支持 Whisper 的语言识别。   
+MediaPipe4U Speech 的 Whisper 功能支持 CPU 和 GPU 推理。   
+{: .important}
+> Whisper 的 GPU 推理不依赖于特定显卡供应商，任何支持 Direct3D 11.0 的显卡都支持。 
+
+---   
+## Whisper 简介
+
+[Whisper](https://github.com/openai/whisper) 是 OpenAI 开源的语音识别模型。   
+Whisper 支持 **99** 种语言，MediaPipe4USpeech 中的 Whisper 。    
 > 你可以将任意的 whisper 模型通过 whisper.cpp 的转换工具转换为 gglm 格式以供 MediaPipe4U Speech 来使用。
 
 Whisper 各种语言的效果可以参考下面的错误率图表:
@@ -30,7 +38,7 @@ Whisper 各种语言的效果可以参考下面的错误率图表:
 > 模型尺寸越大效果越好，但是推理速度也会越慢。
 > 如果你决意使用 large 模型，可以对其进行量化来提升推理性能。
 
-### TTS 语音模型包结构
+### ASR 语音模型包结构
 
 MediaPipe4U 对 ASR 语音包格式做了约定，是一个 GZip 格式的压缩文件，解压后都包含一个 asr 文件夹，asr 文件夹下包含一个 asr.conf 文件，
 通常还包含一个 models 文件夹。
@@ -42,7 +50,7 @@ MediaPipe4U 对 ASR 语音包格式做了约定，是一个 GZip 格式的压缩
 
 ```
 ├─asr
-│  │  asr.conf
+│  │─asr.conf
 │  │
 │  └─models
 │          ggml-small.en.bin
