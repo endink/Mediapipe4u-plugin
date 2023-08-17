@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 1
+nav_order: 10
 title: 自定义 Whisper 模型
 parent: 语音识别 (ASR)
 grand_parent: 语音套件
@@ -10,8 +10,20 @@ has_children: true
 # 自定义 Whisper 模型
 
 [Whisper](https://github.com/openai/whisper) 是 OpenAI 开源的语音识别模型，MediaPipe4U Speech 对其进行了集成。      
-Whisper 支持 **99** 种语言，MediaPipe4USpeech 中的 Whisper 通过 [whisper.cpp](https://github.com/ggerganov/whisper.cpp) 进行推理，同时配备了 GPU 加速。
-你可以将任意的 whisper 模型通过 whisper.cpp 的转换工具转换为 gglm 格式，然后通过 MediaPipe4U Speech 来使用。
+Whisper 支持 **99** 种语言，MediaPipe4USpeech 中的 Whisper 通过 [whisper.cpp](https://github.com/ggerganov/whisper.cpp) 进行推理，同时配备了 GPU 加速。    
+> 你可以将任意的 whisper 模型通过 whisper.cpp 的转换工具转换为 gglm 格式以供 MediaPipe4U Speech 来使用。
+
+Whisper 各种语言的效果可以参考下面的错误率图表:
+
+[![Whisper WER](./images/language-breakdown.svg "Whisper WER")](./images/breakdown.svg)
+
+可以看出，Whisper 比较擅长的语言是:
+- 西班牙语
+- 意大利语
+- 葡萄牙语
+- 德语
+- 日语
+
 
 
 ### TTS 语音模型包结构
@@ -32,6 +44,15 @@ MediaPipe4U 对语音包格式做了约定，是一个 GZip 格式的压缩文�
 │          ggml-small.en.bin
 ```
 
+{: .important}
+> asr.conf 文件必须是 utf8 编码的文本文件。
+
+asr.conf 文件每一行是一个模型参数，以 -- 开头，非 -- 开头的行无效，被认为是注释。  
+
+--- 
+
+## 配置参数：   
+
 一个典型的 Whisper 模型包 asr.conf 文件内容如下：
 
 ```shell
@@ -40,15 +61,6 @@ MediaPipe4U 对语音包格式做了约定，是一个 GZip 格式的压缩文�
 --provider=whisper-gpu
 --language=en
 ```
-
-{: .important}
-> asr.conf 文件必须是 utf8 编码的文本文件。
-
-文件每一行是一个模型参数，以 -- 开头，非 -- 开头的行无效，被认为是注释。  
-
---- 
-
-## 配置参数：   
 
 **model_path**   
 表示模型文件的路径。   
@@ -76,13 +88,13 @@ Whisper 模型有两种 provider 值：
 
 [https://huggingface.co/ggerganov/whisper.cpp](https://huggingface.co/ggerganov/whisper.cpp)
 
-你也可以使用 whisper.cpp 来转换原生的 whipser 模型到 gglm 格式，如果你向自己转换，请看[这里](https://github.com/ggerganov/whisper.cpp/blob/master/models/README.md)
+你也可以使用 whisper.cpp 来转换原生的 whipser 模型到 gglm 格式，如果你想自己转换模型，请看[这里](https://github.com/ggerganov/whisper.cpp/blob/master/models/README.md)
 
 
 ---   
 
 ## 模型量化    
 
-量化后的模型运行速度更快，但是精度会有所损失，你可以根据实际情况来选择量化或者不量化。   
+量化后的模型运行速度更快，尺寸更小，但是精度会有所损失，你可以根据实际情况来选择量化或者不量化。   
 
 关于 whisper 模型量化的方法，请看[这里](https://github.com/ggerganov/whisper.cpp#quantization)。

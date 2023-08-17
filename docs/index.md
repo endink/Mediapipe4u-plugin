@@ -21,36 +21,50 @@ description: "MediaPipe4U Document Site"
 > 关于授权许可的详细信息，请看[这里](./licensing)。
 
 
-## 动作和表情捕捉（Motion And Face Capture）
-
-使用 Google MediaPipe技术 ，可以通过普通摄像头、视频文件、图片等媒体，实时的驱动 3D 角色（数字化身）。
-> 理论上，**MediaPipe4U** 支持驱动任意的 3D 角色，包括 Mannequin, VRM, Metahuman, ReadyPlayerMe 等。
-
 # 功能
 
-- 全身/半身动作捕捉
-- 手指捕捉
-- 面容表情捕捉
-- 角色移动
-- 动画数据导出（BVH）
-- 从摄像头捕获
-- 从视频（mp4）捕获
-- 从图片（jpg,png）捕获
-- 关节扭曲矫正
-- 动画平滑
-- Ground IK: 让脚可以贴合地面
-- Nvidia AR: 通过 Nvidia 机器 AI 技术，获得媲美苹果 Arkit 效果面部 BlendShape 算解
-- M4U Remoting: Android 设备表情捕捉
-
-## 语音套件 (Speech Suite)
-
-提供离线的语音合成、语音识别、并且能够使用声音驱动你的3D 角色（数字化身）的口型动画。   
-
-# 功能   
-
-- 离线语音合成（TTS）
-- 离线语音识别（ASR）
-- 声音和口型同步（LipSync）
+- 动作捕捉
+  - 身体运动捕捉
+  - 手指运动捕捉
+  - 位移捕捉
+  - 3D 模型驱动
+  - 实时驱动
+  - 支持普通摄像头
+- 表情捕捉
+  - 面部表情
+  - Arkit Blendshape 兼容 (52 个表情) 
+  - Live link 兼容
+  - 实时驱动
+  - 支持普通摄像头
+- 多捕捉源
+  - 普通摄像头
+  - 视频文件
+  - 图片
+  - 流媒体 (RTMP/SMTP)
+  - 安卓设备（手机、平板） (M4U Remoting)
+- 大语言模型（LLM）
+  - 离线部署和推理
+  - 模型支持: LLaMA2
+  - CPU 推理 
+  - 纯 C++: UE 插件, 无需 Python 和外部程序
+- 语音合成（TTS）
+  - 离线合成
+  - 实时合成
+  - 3D 模型口型同步
+  - 多模型支持
+    - PaddleSpeech: 中文、英文
+    - Bart: 13 种语言
+- 语音识别（ASR）
+  - 离线识别
+  - 实时识别
+  - 多模型支持
+    - FunASR: 中文 
+    - Whisper: 99 种语言
+- 动画导出
+  - BVH 数据导出 
+- 纯插件
+  - 无需外部程序
+  - Unreal Engine 中完成一切
 
 # 视频教程
 
