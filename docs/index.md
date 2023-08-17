@@ -46,7 +46,6 @@ description: "MediaPipe4U Document Site"
   - 离线部署和推理
   - 模型支持: LLaMA2
   - CPU 推理 
-  - 纯 C++: UE 插件, 无需 Python 和外部程序
 - 语音合成（TTS）
   - 离线合成
   - 实时合成

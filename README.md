@@ -46,6 +46,8 @@ For the release notes, ref below:
 
 # Features
 
+:green_heart:All features are pure C++,  no Python or external programs required.
+
 - Motion Capture
   - Motion of the body
   - Motion of the fingers
@@ -69,7 +71,6 @@ For the release notes, ref below:
   - Offline
   - Model Supports: LLaMA2
   - CPU Inference 
-  - Pure C++: Plugin only, no Python or external programs required
   - Multiple models
     - LLaMA/LLaMA2
     - ChatGLM (work in progress)

@@ -43,6 +43,8 @@
 更多更新信息，请查看更新日志:
 - [更新日志](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  
 
+:green_heart:所有的功能都是纯 C++ 的，无需 Python, 无需任何外部程序。
+
 # 功能
 
 - 动作捕捉
@@ -68,7 +70,6 @@
   - 离线部署和推理
   - 模型支持: LLaMA2
   - CPU 推理 
-  - 纯 C++: UE 插件, 无需 Python 和外部程序
 - 语音合成（TTS）
   - 离线合成
   - 实时合成
