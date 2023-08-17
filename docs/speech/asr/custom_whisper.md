@@ -62,8 +62,6 @@ MediaPipe4U 对 ASR 语音包格式做了约定，是一个 GZip 格式的压缩
 {: .important}
 > asr.conf 文件必须是 utf8 编码的文本文件。   
 
-asr.conf 文件每一行是一个模型参数，以 -- 开头，非 -- 开头的行无效，被认为是注释。  
-
 --- 
 
 ## 配置参数：   
@@ -76,6 +74,8 @@ asr.conf 文件每一行是一个模型参数，以 -- 开头，非 -- 开头的
 --provider=whisper-gpu
 --language=en
 ```
+
+asr.conf 文件每一行是一个模型参数，以 `--` 开头，非 `--` 开头的行无效，被认为是注释。  
 
 **model_path**   
 表示模型文件的路径。   
