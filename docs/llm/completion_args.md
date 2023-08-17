@@ -33,7 +33,7 @@ LLaMA 模型推理基于 [llama.cpp](https://github.com/ggerganov/llama.cpp) 项
 > - `n_keep`: 虽然模型支持调整上下文固定的 token 数量，为了防止 token 截断， MediaPipe4ULLM 会自动计算这个值，因此你无法设置该值。
 
 
-**LLaMA 完成参数说明**   
+**LLaMA 完成会话参数说明**   
 
 `temperature`: Adjust the randomness of the generated text (default: 0.8).   
 `top_k`: Limit the next token selection to the K most probable tokens (default: 40).   
