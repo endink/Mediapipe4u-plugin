@@ -60,7 +60,7 @@ MediaPipe4U 对 ASR 语音包格式做了约定，是一个 GZip 格式的压缩
 ```
 
 {: .important}
-> asr.conf 文件必须是 utf8 编码的文本文件。
+> asr.conf 文件必须是 utf8 编码的文本文件。   
 
 asr.conf 文件每一行是一个模型参数，以 -- 开头，非 -- 开头的行无效，被认为是注释。  
 
@@ -80,8 +80,9 @@ asr.conf 文件每一行是一个模型参数，以 -- 开头，非 -- 开头的
 **model_path**   
 表示模型文件的路径。   
 可以是绝对路径，也可以是 `asr.conf` 的相对路径，相对路径通常以 ./ 开头，表示 `asr.conf` 所在的目录。    
+
 {: .important}
-> whisper 模型必须是 ggml 格式的模型，也支持 ggml 量化后的模型。
+> whisper 模型必须是 ggml 格式的模型，也支持 ggml 量化后的模型。   
 
 **provider**   
 模型推理提供程序，如果不填写表示 FunASR 模型（FunASR 模型数量有限，这里不介绍如何制作 FunASR 模型）。    
