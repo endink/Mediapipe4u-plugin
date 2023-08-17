@@ -44,8 +44,10 @@ description: "MediaPipe4U Document Site"
   - 安卓设备（手机、平板） (M4U Remoting)
 - 大语言模型（LLM）
   - 离线部署和推理
-  - 模型支持: LLaMA2
-  - CPU 推理 
+  - CPU/GPU 推理 
+  - 多模型支持
+     - LLaMA/LLaMA2
+     - ChatGLM (开发中...)
 - 语音合成（TTS）
   - 离线合成
   - 实时合成

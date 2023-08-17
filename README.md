@@ -69,8 +69,7 @@ For the release notes, ref below:
   - Android Device (M4U Remoting)
 - LLM
   - Offline
-  - Model Supports: LLaMA2
-  - CPU Inference 
+  - CPU/GPU Inference 
   - Multiple models
     - LLaMA/LLaMA2
     - ChatGLM (work in progress)
