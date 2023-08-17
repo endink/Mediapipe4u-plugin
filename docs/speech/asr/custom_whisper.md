@@ -94,7 +94,8 @@ Whisper 模型有两种 provider 值：
 > whisper 模型的 GPU 推理不依赖 CUDA， 任何 GPU （AMD/Nvidia/Intel）都会获得加速效果。
 
 **language**   
-表示使用的语言，whisper 有多语言模型（支持 99 种语言），但是你需要为推理引擎指定一种语言，目前不支持语言自动识别。   
+表示使用的语言，whisper 有多语言模型（支持 99 种语言），但是你需要为推理引擎指定一种语言，目前不支持语言自动识别。    
+语言代码请看本文档后续的章节。   
 
 ---   
 
@@ -114,3 +115,109 @@ Whisper 模型有两种 provider 值：
 量化后的模型运行速度更快，尺寸更小，但是精度会有所损失，你可以根据实际情况来选择量化或者不量化。   
 
 关于 whisper 模型量化的方法，请看[这里](https://github.com/ggerganov/whisper.cpp#quantization)。
+
+## 语言定义
+
+在配置模型时 language 参数需要指定语言代码，下面是语言代码和语言的对应关系。   
+
+```yaml
+en: english
+zh: chinese
+de: german
+es: spanish
+ru: russian
+ko: korean
+fr: french
+ja: japanese
+pt: portuguese
+tr: turkish
+pl: polish
+ca: catalan
+nl: dutch
+ar: arabic
+sv: swedish
+it: italian
+id: indonesian
+hi: hindi
+fi: finnish
+vi: vietnamese
+he: hebrew
+uk: ukrainian
+el: greek
+ms: malay
+cs: czech
+ro: romanian
+da: danish
+hu: hungarian
+ta: tamil
+no: norwegian
+th: thai
+ur: urdu
+hr: croatian
+bg: bulgarian
+lt: lithuanian
+la: latin
+mi: maori
+ml: malayalam
+cy: welsh
+sk: slovak
+te: telugu
+fa: persian
+lv: latvian
+bn: bengali
+sr: serbian
+az: azerbaijani
+sl: slovenian
+kn: kannada
+et: estonian
+mk: macedonian
+br: breton
+eu: basque
+is: icelandic
+hy: armenian
+ne: nepali
+mn: mongolian
+bs: bosnian
+kk: kazakh
+sq: albanian
+sw: swahili
+gl: galician
+mr: marathi
+pa: punjabi
+si: sinhala
+km: khmer
+sn: shona
+yo: yoruba
+so: somali
+af: afrikaans
+oc: occitan
+ka: georgian
+be: belarusian
+tg: tajik
+sd: sindhi
+gu: gujarati
+am: amharic
+yi: yiddish
+lo: lao
+uz: uzbek
+fo: faroese
+ht: haitian creole
+ps: pashto
+tk: turkmen
+nn: nynorsk
+mt: maltese
+sa: sanskrit
+lb: luxembourgish
+my: myanmar
+bo: tibetan
+tl: tagalog
+mg: malagasy
+as: assamese
+tt: tatar
+haw: hawaiian
+ln: lingala
+ha: hausa
+ba: bashkir
+jw: javanese
+su: sundanese
+```
