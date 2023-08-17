@@ -104,7 +104,7 @@ llama_model_load_internal: model size = 7B
 llama_model_load_internal: ggml ctx size =    0.08 MB
 llama_model_load_internal: mem required  = 3773.79 MB
 ```
-如上日志中 `n_layer` 表示模型层数，`mem required` 表示需要的内存大小，再使用 CUDA 加速时，这也是需要的显存（VRAM）大小。
+如上日志中 `n_layer` 表示模型层数，`mem required` 表示需要的内存大小，当使用 CUDA 加速时，这也是需要的显存（VRAM）大小。
 
 ### 量化后模型大小
 

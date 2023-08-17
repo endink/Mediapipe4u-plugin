@@ -34,7 +34,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 Latest update: `20230817`
 
-- [new]:rainbow: Speech ASR supports whisper model (GPU acceleration).   
+- [new]:rainbow: Speech ASR supports [whisper](https://github.com/openai/whisper) model (GPU acceleration).   
 - [new]:rainbow: The big language model (LLM) supports CUDA inference ([document](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html)).  
 - [fix] Fixed the issue that the speech model import interface was block ([#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)).
 - [fix] The llm inference process may have caused a memory leak.

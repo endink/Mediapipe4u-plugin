@@ -9,7 +9,7 @@ has_children: true
 
 ### 2023-08-17   
 {: .d-inline-block }
-- [new] :rainbow: Speech 语音识别 （ASR） 加入 whisper 模型支持（GPU 加速）。   
+- [new] :rainbow: Speech 语音识别 （ASR） 加入 [whisper](https://github.com/openai/whisper) 模型支持（GPU 加速）。   
 - [new] :rainbow: 大语言模型（LLM）支持使用 CUDA 推理([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html))。  
 - [fix] 修复 Speech 模型导入界面卡住的问题（[#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)）。
 - [fix] LLM 推理过程可能导致内存泄露。
