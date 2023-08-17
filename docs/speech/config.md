@@ -80,5 +80,5 @@ parent: 语音套件
 > MediaPipe4USpeech 语音识别（ASR）基于 [FunASR](https://github.com/alibaba-damo-academy/FunASR) 开发，你可以从 [Model Scope](https://www.modelscope.cn/models) 中下载 FunASR 模型（必须是 ONNX 格式）， 然后将他应用于 **MediaPipe4USpeech**。
 >
 > 关于如何制作语音模型包，请阅读:
-> - [自定义 TTS 模型](./tts/local_tts_model_package.md)
+> - [自定义 PaddleSpeech 模型](./tts/custom_pp_model.md)
 > - 自已 ASR 模型 (文档暂缺)
