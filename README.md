@@ -8,7 +8,7 @@
 An Unreal Engine plugin that helps you use AI and ML techniques in your unreal engine project.
 <br>
 <br>
-<a href=""><img src="https://img.shields.io/badge/OS-Windows X64-brightgreen.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/OS-Windows 10/11 X64-brightgreen.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
@@ -34,10 +34,9 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 Latest update: `20230817`
 
-- [new]:rainbow: Speech ASR supports [whisper](https://github.com/openai/whisper) model (GPU acceleration).   
-- [new]:rainbow: The big language model (LLM) supports CUDA inference ([document](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html)).  
-- [fix] Fixed the issue that the speech model import interface was block ([#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)).
-- [fix] The llm inference process may have caused a memory leak.
+- [fix] Fails if the file path contains characters from a Non-English language.
+- [fix] Error may occur after packaging in LLM , ASR.
+- [fix] Animation blueprint node error when open blueprint editor（[#104](https://github.com/endink/Mediapipe4u-plugin/issues/104), [#101](https://github.com/endink/Mediapipe4u-plugin/issues/101)）
 
 ## Release Notes
 For the release notes, ref below:
@@ -106,9 +105,9 @@ For the release notes, ref below:
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [cowtransfer](https://cowtransfer.com/s/3854688b917941) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz0RskGX7NU9qU4bk?e=kLG0xe) | 2023-08-17 |
-| UE 5.1 | [cowtransfer](https://cowtransfer.com/s/d5689295234243) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz0XI25uZUNaCKvOp?e=c7I7so) | 2023-08-17 |
-| UE 5.2 | [cowtransfer](https://cowtransfer.com/s/bff768c5e7ed4c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz0Z6xNjUQOG3uFJN?e=veOvdU) | 2023-08-17 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/57a395070c8845) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1iFYNzCIvAlGMpq?e=0O6lSE) | 2023-08-29 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/6578dc44a5ec48) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1ekm5kg3XoxnKz2?e=xXhtrk) | 2023-08-29 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/71e9c65db6e443) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1a0lCHIV21sBtMp?e=vKPzjh) | 2023-08-29 |
 
 <!-- **:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**    -->
 
@@ -188,8 +187,9 @@ GPU: Nvidia 1660s
 2. M4U used [NVIDIA Maxine AR SDK](https://github.com/NVIDIA/MAXINE-AR-SDK) for facal capture.
 3. M4U used [Paddle Speech](https://github.com/PaddlePaddle/PaddleSpeech) for TTS.
 4. M4U used [FunASR](https://github.com/alibaba-damo-academy/FunASR) for ASR.
-5. M4U used [GStreamer](https://gstreamer.freedesktop.org/) for video and live streaming decoding.
-6. M4U used [llama.cpp](https://github.com/ggerganov/llama.cpp) for inference of LLaMA2 model.
-7. M4U borrowed a lot of code from [PowerIK](https://poweranimated.github.io/) for ground ik.
-8. M4U borrowed a lot of ideas from [Kalidokit](https://github.com/yeemachine/kalidokit) for mocap.
-9. M4U borrowed a lot of code from [wongfei](https://github.com/wongfei) for gstreamer/mediapipe integration.
+5. M4U used [whisper.cpp](https://github.com/ggerganov/whisper.cpp) for ASR.
+6. M4U used [GStreamer](https://gstreamer.freedesktop.org/) for video and live streaming decoding.
+7. M4U used [llama.cpp](https://github.com/ggerganov/llama.cpp) for inference of LLaMA2 model.
+8. M4U borrowed a lot of code from [PowerIK](https://poweranimated.github.io/) for ground ik.
+9. M4U borrowed a lot of ideas from [Kalidokit](https://github.com/yeemachine/kalidokit) for mocap.
+10. M4U borrowed a lot of code from [wongfei](https://github.com/wongfei) for gstreamer/mediapipe integration.

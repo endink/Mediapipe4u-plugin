@@ -7,11 +7,16 @@ parent: 更新日志
 
 [简体中文](./index.md)
 
-### 2023-08-17      
+### 2023-08-29      
 {: .d-inline-block }
 
 Current
-{: .label .label-green }  
+{: .label .label-green } 
+- [fix] Fails if the file path contains characters from a Non-English language.
+- [fix] Error may occur after packaging in LLM , ASR.
+- [fix] Animation blueprint node error when open blueprint editor: [#104](https://github.com/endink/Mediapipe4u-plugin/issues/104), [#101](https://github.com/endink/Mediapipe4u-plugin/issues/101)
+
+### 2023-08-17      
 - [new]:rainbow: Speech ASR supports [whisper](https://github.com/openai/whisper) model (GPU acceleration).   
 - [new]:rainbow: The big language model (LLM) supports CUDA inference ([Document](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html)).  
 - [fix] Fixed the issue that the speech model import interface was block ([#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)).

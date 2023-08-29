@@ -8,7 +8,7 @@
 一个帮助你集成人工智能和机器学习技术到虚幻引擎的 UE 插件。
 <br>
 <br>
-<a href=""><img src="https://img.shields.io/badge/OS-Windows X64-brightgreen.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/OS-Windows 10/11 X64-brightgreen.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
@@ -32,12 +32,11 @@
 
 # 最新动态
 
-最后更新：`20230817`   
-
-- [new] :rainbow: Speech 语音识别 （ASR） 加入 [whisper](https://github.com/openai/whisper) 模型支持（GPU 加速）。   
-- [new] :rainbow: 大语言模型（LLM）支持使用 CUDA 推理([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html))。  
-- [fix] 修复 Speech 模型导入界面卡住的问题（[#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)）。
-- [fix] LLM 推理过程可能导致内存泄露。
+最后更新：`20230829`   
+ 
+- [fix] 使用 LLM, ASR 加载模型时，如果文件路径包含非英语语言的字符时会失败。
+- [fix] LLM , ASR 打包可能出现无法运行。
+- [fix] 打开动画蓝图时出现错误（[#104](https://github.com/endink/Mediapipe4u-plugin/issues/104), [#101](https://github.com/endink/Mediapipe4u-plugin/issues/101)）
 
 ## Release Notes
 更多更新信息，请查看更新日志:
@@ -105,9 +104,9 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/3854688b917941) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz0RskGX7NU9qU4bk?e=kLG0xe) | 2023-08-17 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/d5689295234243) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz0XI25uZUNaCKvOp?e=c7I7so) | 2023-08-17 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/bff768c5e7ed4c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz0Z6xNjUQOG3uFJN?e=veOvdU) | 2023-08-17 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/57a395070c8845) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1iFYNzCIvAlGMpq?e=0O6lSE) | 2023-08-29 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/6578dc44a5ec48) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1ekm5kg3XoxnKz2?e=xXhtrk) | 2023-08-29 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/71e9c65db6e443) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1a0lCHIV21sBtMp?e=vKPzjh) | 2023-08-29 |
 
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  

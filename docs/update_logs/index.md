@@ -9,13 +9,20 @@ has_children: true
 
 ### 2023-08-17   
 {: .d-inline-block }
+
+Current
+{: .label .label-green }  
+
+- [fix] 使用 LLM, ASR 加载模型时，如果文件路径包含非英语语言的字符时会失败。
+- [fix] LLM , ASR 打包可能出现无法运行。
+- [fix] 打开动画蓝图时出现错误: [#104](https://github.com/endink/Mediapipe4u-plugin/issues/104), [#101](https://github.com/endink/Mediapipe4u-plugin/issues/101)
+
+### 2023-08-17   
 - [new] :rainbow: Speech 语音识别 （ASR） 加入 [whisper](https://github.com/openai/whisper) 模型支持（GPU 加速）。   
 - [new] :rainbow: 大语言模型（LLM）支持使用 CUDA 推理([文档](https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html))。  
 - [fix] 修复 Speech 模型导入界面卡住的问题（[#96](https://github.com/endink/Mediapipe4u-plugin/issues/96)）。
 - [fix] LLM 推理过程可能导致内存泄露。
 
-Current
-{: .label .label-green }  
 
 ### 2023-08-11    
 - [new] :rainbow:聊天运行时（LLMSpeechChatRuntime），仅需要很少简单的蓝图就可以构建复杂的的聊天和问答程序。   
