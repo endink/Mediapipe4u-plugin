@@ -32,7 +32,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-Latest update: `20230819`
+Latest update: `20230829`
 
 - [fix] Fails if the file path contains characters from a Non-English language.
 - [fix] Error may occur after packaging in LLM , ASR.
