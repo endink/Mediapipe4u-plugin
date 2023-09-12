@@ -47,9 +47,6 @@ GStramer 图像源，该组件实现了从 GStramer 获取视频流作为图像�
 
 https://google.github.io/mediapipe/solutions/holistic.html
 
-## MediaPipeLiveLinkComponent
-
-该组件提供将 MediaPipe 作为 LiveLink 源的能力，这样你可以像使用 Arkit 一样通过在动画蓝图中添加 LiveLinkPose 节点使用 MediaPipe4U 的面补功能，更多 LiveLink 详细信息请参阅 Unreal 官方文档。
 
 ## 创建 Actor
 
@@ -59,4 +56,9 @@ https://google.github.io/mediapipe/solutions/holistic.html
 [![MediaPipe 运行时 Actor](./images/mediapipe_runtime_actor.jpg "Shiprock")](images/mediapipe_runtime_actor.jpg)   
 
 
-至此，你已经完成了所有运行 **MediaPipe4U** 动补的准备工作！！！   
+
+至此，你已经完成了所有运行 **MediaPipe4U** 动作捕捉的准备工作！！！ 
+
+{: .important}
+这是一个快速上手的初级教程，并不包含表情捕捉部分功能。   
+如果你还需要从图像源种进行表情捕捉(Facial Expression Capture)，请阅读][表情捕捉文档](../features/face_link_actor.md)
