@@ -10,6 +10,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 <br>
 <img alt="Windows" src="./readme_images/windows_logo.svg">
 <img alt="Android" src="./readme_images/android_logo.svg">
+<img alt="Android" src="./readme_images/linux_logo.svg">
 <br>
 <br>
 <a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-brightgreen.svg"></a>
@@ -134,15 +135,15 @@ For the release notes, ref below:
 
 Now, M4U support Android and Windows (Linux is coming soom)
 
-| Plugins (Modules) | Windows | Android |
-|---| --- | --- |
-| MediaPipe4U             | :heavy_check_mark: | :heavy_check_mark: |
-| MediaPipe4ULiveLink     | :heavy_check_mark: | :heavy_check_mark: |
-| GStreamer               | :heavy_check_mark: | :x: |
-| MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |
-| MediaPipe4UBVH          | :heavy_check_mark: | :x: |
-| MediaPipe4USpeech       | :heavy_check_mark: | :x: |
-| MediaPipe4ULLM          | :heavy_check_mark: | :x: |
+| Plugins (Modules) | Windows | Android | Linux |
+|---| --- | --- | ---- |
+| MediaPipe4U             | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
+| MediaPipe4ULiveLink     | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
+| GStreamer               | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4UBVH          | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4USpeech       | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4ULLM          | :heavy_check_mark: | :x: |Coming Soon|
 
 
 # Free License File Release
