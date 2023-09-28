@@ -46,9 +46,9 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-Latest update: `20230929`
+Latest update: `Coming Soon ...`
 
-- [new] :rainbow: Android packaging support, the development process is fully compatible with Windows.
+- [new] :rainbow: **MediaPipe4U Mobile** Android packaging support, the development process is fully compatible with Windows.
 - [new] :fire: Both `StartCamera` and `StartImageSource` now support truly blueprint-friendly asynchronous functions.
 - [improve] Optimize frame pipline, huge performance improve, now Windows CPU can reach 25 fps (CPU: AMD 3600, Frame Size: 1280 * 720).
 - [breaking change]:rotating_light:Many functions are now BlueprintPure and may require changes to your blueprint.
