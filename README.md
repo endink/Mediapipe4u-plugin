@@ -50,7 +50,7 @@ Latest update: `Coming Soon ...`
 
 - [new] :rainbow: **MediaPipe4U Mobile** Android packaging support, the development process is fully compatible with Windows.
 - [new] :fire: Both `StartCamera` and `StartImageSource` now support truly blueprint-friendly asynchronous functions.
-- [improve] Optimize frame pipline, huge performance improve, now Windows CPU can reach 25 fps (CPU: AMD 3600, Frame Size: 1280 * 720).
+- [improve] Optimize frame pipline, huge performance improve, now Windows CPU can reach **25** fps (CPU: AMD 3600, Frame Size: 1280 * 720).
 - [breaking change]:rotating_light:Many functions are now BlueprintPure and may require changes to your blueprint.
 
 ## Release Notes
@@ -129,6 +129,20 @@ For the release notes, ref below:
   
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
 > Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).
+
+# Cross Platform    
+
+Now, M4U support Android and Windows (Linux is coming soom)
+
+| Plugins (Modules) | Windows | Android |
+|---| --- | --- |
+| MediaPipe4U             | :heavy_check_mark: | :heavy_check_mark: |
+| MediaPipe4ULiveLink     | :heavy_check_mark: | :heavy_check_mark: |
+| GStreamer               | :heavy_check_mark: | :x: |
+| MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |
+| MediaPipe4UBVH          | :heavy_check_mark: | :x: |
+| MediaPipe4USpeech       | :heavy_check_mark: | :x: |
+| MediaPipe4ULLM          | :heavy_check_mark: | :x: |
 
 
 # Free License File Release
