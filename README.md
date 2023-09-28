@@ -50,7 +50,7 @@ Latest update: `20230929`
 
 - [new] :rainbow: Android packaging support, the development process is fully compatible with Windows.
 - [new] :fire: Both `StartCamera` and `StartImageSource` now support truly blueprint-friendly asynchronous functions.
-- [improve] Optimize frame pipline, huge performance improve, now Windows CPU can reach 25 fps (CPU: AMD 3600, Frame Size: 1280*702).
+- [improve] Optimize frame pipline, huge performance improve, now Windows CPU can reach 25 fps (CPU: AMD 3600, Frame Size: 1280 * 720).
 - [breaking change]:rotating_light:Many functions are now BlueprintPure and may require changes to your blueprint.
 
 ## Release Notes
