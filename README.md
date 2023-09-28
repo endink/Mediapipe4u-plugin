@@ -8,8 +8,8 @@
 An Unreal Engine plugin that helps you use AI and ML techniques in your unreal engine project.
 <br>
 <br>
-<img alt="Windows" src="./readme_images/windows_log.svg">
-<img alt="Android" src="./readme_images/android_log.svg">
+<img alt="Windows" src="./readme_images/windows_logo.svg">
+<img alt="Android" src="./readme_images/android_logo.svg">
 <br>
 <br>
 <a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-brightgreen.svg"></a>
