@@ -8,11 +8,18 @@
 An Unreal Engine plugin that helps you use AI and ML techniques in your unreal engine project.
 <br>
 <br>
-<a href=""><img src="https://img.shields.io/badge/OS-Windows 10/11 X64-brightgreen.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
+<a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-brightgreen.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.0, 5.1, 5.2-purple.svg"></a>
+<p align="center">
+  <img alt="Windows" src="./readme_images/windows_logo.svg">
+  <img alt="Android" src="./readme_images/android_logo.svg">
+</p>
+<p align="center">
+  <a href=""><img src="https://img.shields.io/badge/OS-Windows 10/11 X64-brightgreen.svg"></a>
+  <a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
+  <a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
+  <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
+</p>
 <p align="center">
 <a href="https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp">News</a>
 | <a href="#document">Document</a>
