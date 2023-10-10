@@ -13,7 +13,7 @@
 <img alt="Linux" src="./readme_images/linux_logo.svg">
 <br>
 <br>
-<a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-brightgreen.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-red.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.0, 5.1, 5.2-purple.svg"></a>
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/Windows-Win 10/11 X64-brightgreen.svg"></a>
