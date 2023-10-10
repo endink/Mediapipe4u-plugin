@@ -114,9 +114,9 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/357f1ea3468b4e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3h94Dhx7Lh3-BTv?e=Sdlr1P) | 2023-10-10 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/b33bfdbdcd9a4b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3d4Gg2CkhsiRYM-?e=cidqQl) | 2023-10-10 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/8beda46e813641) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3aPSP0Pe9Xrl8mA?e=FDXogv) | 2023-10-10 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/57a395070c8845) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1iFYNzCIvAlGMpq?e=0O6lSE) | 2023-08-29 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/6578dc44a5ec48) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1ekm5kg3XoxnKz2?e=xXhtrk) | 2023-08-29 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/71e9c65db6e443) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1a0lCHIV21sBtMp?e=vKPzjh) | 2023-08-29 |
 
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
