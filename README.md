@@ -41,7 +41,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-Latest update: `Coming Soon ...`
+Latest update: `20231010`
 
 - [new] :rainbow: **MediaPipe4U Mobile** Android packaging support, the development process is fully compatible with Windows.
 - [new] :fire: Both `StartCamera` and `StartImageSource` now support truly blueprint-friendly asynchronous functions.
@@ -115,9 +115,9 @@ For the release notes, ref below:
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/57a395070c8845) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1iFYNzCIvAlGMpq?e=0O6lSE) | 2023-08-29 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/6578dc44a5ec48) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1ekm5kg3XoxnKz2?e=xXhtrk) | 2023-08-29 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/71e9c65db6e443) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1a0lCHIV21sBtMp?e=vKPzjh) | 2023-08-29 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/357f1ea3468b4e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3h94Dhx7Lh3-BTv?e=Sdlr1P) | 2023-08-29 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/b33bfdbdcd9a4b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3d4Gg2CkhsiRYM-?e=cidqQl) | 2023-08-29 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/8beda46e813641) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3aPSP0Pe9Xrl8mA?e=FDXogv) | 2023-08-29 |
 
 <!-- **:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**    -->
 

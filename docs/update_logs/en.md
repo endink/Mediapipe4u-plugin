@@ -7,11 +7,17 @@ parent: 更新日志
 
 [简体中文](./index.md)
 
-### 2023-08-29      
+### 2023-10-10   
 {: .d-inline-block }
 
 Current
 {: .label .label-green } 
+- [new] :rainbow: **MediaPipe4U Mobile** Android packaging support, the development process is fully compatible with Windows.
+- [new] :fire: Both `StartCamera` and `StartImageSource` now support truly blueprint-friendly asynchronous functions.
+- [improve] Optimize frame pipline, huge performance improve, now Windows CPU can reach **25** fps (CPU: AMD 3600, Frame Size: 1280 * 720).
+- [breaking change]:rotating_light:Many functions are now BlueprintPure and may require changes to your blueprint.
+
+### 2023-08-29    
 - [fix] Fails if the file path contains characters from a Non-English language.
 - [fix] Error may occur after packaging in LLM , ASR.
 - [fix] Animation blueprint node error when open blueprint editor: [#104](https://github.com/endink/Mediapipe4u-plugin/issues/104), [#101](https://github.com/endink/Mediapipe4u-plugin/issues/101)

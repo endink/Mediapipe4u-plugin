@@ -41,11 +41,12 @@
 
 # 最新动态
 
-最后更新：`20230829`   
- 
-- [fix] 使用 LLM, ASR 加载模型时，如果文件路径包含非英语语言的字符时会失败。
-- [fix] LLM , ASR 打包可能出现无法运行。
-- [fix] 打开动画蓝图时出现错误（[#104](https://github.com/endink/Mediapipe4u-plugin/issues/104), [#101](https://github.com/endink/Mediapipe4u-plugin/issues/101)）
+最后更新：`20231010`   
+
+- [new] :rainbow: **MediaPipe4U Mobile** 安卓打包编译支持, 开发体验和 Windows 版本保持一致.
+- [new] :fire: `StartCamera` and `StartImageSource` 现在支持蓝图异步函数，蓝图中可以方便的进行异步操作.
+- [improve] 优化帧处理管道, 带来了巨大的性能提升, 现在 windows 动作捕捉可以达到 **25** fps (CPU: AMD 3600, Frame Size: 1280 * 720).
+- [breaking change]:rotating_light:许多函数改为 `BlueprintPure` 模式， 你可能必须修改你的蓝图.
 
 ## Release Notes
 更多更新信息，请查看更新日志:
@@ -113,9 +114,9 @@
 
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/57a395070c8845) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1iFYNzCIvAlGMpq?e=0O6lSE) | 2023-08-29 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/6578dc44a5ec48) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1ekm5kg3XoxnKz2?e=xXhtrk) | 2023-08-29 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/71e9c65db6e443) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1a0lCHIV21sBtMp?e=vKPzjh) | 2023-08-29 |
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/357f1ea3468b4e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3h94Dhx7Lh3-BTv?e=Sdlr1P) | 2023-08-29 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/b33bfdbdcd9a4b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3d4Gg2CkhsiRYM-?e=cidqQl) | 2023-08-29 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/8beda46e813641) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3aPSP0Pe9Xrl8mA?e=FDXogv) | 2023-08-29 |
 
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
