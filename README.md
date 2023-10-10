@@ -16,18 +16,12 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 <a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-brightgreen.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.0, 5.1, 5.2-purple.svg"></a>
 <p align="center">
-  <a href=""><img src="https://img.shields.io/badge/OS-Windows 10/11 X64-brightgreen.svg"></a>
+  <bold style="vertical-align: middle;">Windows: </bold>
+  <a href=""><img src="https://img.shields.io/badge/Windows-Win 10/11 X64-brightgreen.svg"></a>
+  <a href=""><img src="https://img.shields.io/badge/Android->=8.0 (Arm64)-brightgreen.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
-</p>
-<p align="center">
-  <a href=""><img src="https://img.shields.io/badge/Android-》=8.0-brightgreen.svg"></a>
-  <a href=""><img src="https://img.shields.io/badge/NDK-=r25b-orange.svg"></a>
-  <a href=""><img src="https://img.shields.io/badge/Android SDK->=30-orange.svg"></a>
-  <a href=""><img src="https://img.shields.io/badge/Android API Level->=26-aff.svg"></a>
-  <a href=""><img src="https://img.shields.io/badge/NDK API Level->=21-aff.svg"></a>
-  <a href=""><img src="https://img.shields.io/badge/gcc->=9.4-blue.svg"></a>
 </p>
 <p align="center">
 <a href="https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp">News</a>
