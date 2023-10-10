@@ -8,11 +8,21 @@
 一个帮助你集成人工智能和机器学习技术到虚幻引擎的 UE 插件。
 <br>
 <br>
-<a href=""><img src="https://img.shields.io/badge/OS-Windows 10/11 X64-brightgreen.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
+<img alt="Windows" src="./readme_images/windows_logo.svg">
+<img alt="Android" src="./readme_images/android_logo.svg">
+<img alt="Linux" src="./readme_images/linux_logo.svg">
+<br>
+<br>
+<a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-brightgreen.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.0, 5.1, 5.2-purple.svg"></a>
+<p align="center">
+  <bold style="vertical-align: middle;">Windows: </bold>
+  <a href=""><img src="https://img.shields.io/badge/Windows-Win 10/11 X64-brightgreen.svg"></a>
+  <a href=""><img src="https://img.shields.io/badge/Android->=8.0 (Arm64)-brightgreen.svg"></a>
+  <a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
+  <a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
+  <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
+</p>
 <p align="center">
 <a href="https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/">最新动态</a>
 | <a href="https://opensource.labijie.com/Mediapipe4u-plugin">文档</a>
