@@ -16,7 +16,6 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 <a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-brightgreen.svg"></a>
 <a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.0, 5.1, 5.2-purple.svg"></a>
 <p align="center">
-  <bold style="vertical-align: middle;">Windows: </bold>
   <a href=""><img src="https://img.shields.io/badge/Windows-Win 10/11 X64-brightgreen.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Android->=8.0 (Arm64)-brightgreen.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
