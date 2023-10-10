@@ -123,6 +123,21 @@
 > 插件由于采用预编译，包含大量 C++ 链接符号和调试符号，解压后会占用 **5G** 磁盘空间（大部分为 Intermediate 中的 UE 生成代码）   
 > 你不需要担心磁盘占用问题，这只是开发期间的磁盘占用，在项目打包后，插件磁盘占用大约是 **200M**（主要为 GStreamer 动态库）
 
+
+# 跨平台  
+
+现在, M4U 支持 Android 和 Windows (Linux 支持即将到来)，但是各平台支持情况略有不同。
+
+| 插件 (模块) | Windows | Android | Linux |
+|---| --- | --- | ---- |
+| MediaPipe4U             | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
+| MediaPipe4ULiveLink     | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
+| GStreamer               | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4UBVH          | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4USpeech       | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4ULLM          | :heavy_check_mark: | :x: |Coming Soon|
+
 ## 免费授权文件
 
 授权文件会不定期的在[讨论区](https://github.com/endink/Mediapipe4u-plugin/discussions/82) 中发布, 新版本的插件包中也会自动包含授权文件。   

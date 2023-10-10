@@ -9,8 +9,13 @@ parent: 安装和配置
 
 *请仔细阅读以下章节，确认你的环境是否满足 **MediaPipe4U** 要求。*
 
+MediaPipe4U 支持下列的平台：   
+- Windows x64 
+- Android arm64-v8a   
+
 {: .warning}
-> **MediaPipe4U** 不支持 32 位 Windows 平台。
+> **MediaPipe4U** 不支持 32 位 Windows 平台。   
+> **MediaPipe4U** 不支持非 `arm64-v8a` 的 Android（由于 Launcher 版 Unreal Engine 限制）。
 
 |硬件|版本|
 |--------|--------------|
@@ -20,6 +25,22 @@ parent: 安装和配置
 > 插件由于采用预编译，包含大量 C++ 链接符号和调试符号，解压后会占用 **10** 磁盘空间（大部分为 Intermediate 中的 UE 生成代码）
 > 
 > 你不需要担心磁盘占用问题，这只是开发期间的磁盘占用，在项目打包后，插件磁盘占用大约是 **300M**（主要为 GStreamer 动态库和语音模型文件）
+
+
+
+## 跨平台支持
+
+MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支持上有差异，Windows 平台支持全功能，Android 仅支持动作和表情捕捉。
+
+| 插件 (模块) | Windows | Android | Linux |
+|---| --- | --- | ---- |
+| MediaPipe4U             | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
+| MediaPipe4ULiveLink     | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
+| GStreamer               | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4UBVH          | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4USpeech       | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4ULLM          | :heavy_check_mark: | :x: |Coming Soon|
 
 
 ## For Windows 
@@ -48,7 +69,7 @@ parent: 安装和配置
 | 5.2 | r21b (25.1.8937393)  | 26 or later |
 
 {: .warning}
-> 仅支持 Android ARM 64 (arm64-v8a) 平台，不支持其他硬件平台。   
+> 仅支持 Android ARM 64 (arm64-v8a) 平台，不支持其他安卓设备（例如 Android x86 ）。   
 >
 > Android 硬件需要满足 UE 开发要求, 具体信息请阅读 Unreal Engine Android 开发的文档。
 
