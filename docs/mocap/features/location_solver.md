@@ -56,7 +56,9 @@ MediaPipe4U 使用一个专门的动画蓝图节点，从动补数据中计算�
 >   
 > 你可以设置 Location Solver 节点上的 **CountdownCalibrationEnabled** 属性来控制是否运行倒计时自动校准。     
 
-:page_with_curl:要了解更多校准的用法，请阅读[校准](../advance/calibration.md)部分文档。
+
+:page_with_curl: 要了解更多校准的用法，请阅读[校准](../advance/calibration.md)部分文档。   
+
 ---   
 
 
