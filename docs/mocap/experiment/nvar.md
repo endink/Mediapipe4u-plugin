@@ -7,6 +7,10 @@ nav_order: 1
 ---
 
 # NvAR 表情捕捉
+{: .d-inline-block }
+
+Windows Only
+{: .label .label-yellow } 
 
 如果你拥有 Nvidia RTX 20XX 或更高级的 GPU，**MediaPipe4UNvAR** 能够帮助你获得一个可以和苹果 Arkit 媲美的表情捕捉方案。
 
