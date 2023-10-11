@@ -74,8 +74,9 @@ MediaPipe4U 中内置了 4 种图像源：
 ## WebcamImageSourceComponent
 
 ### 打开摄像头
-MediaPipe4U 内置的 WebcamImageSourceComponent 提供了摄像头采集画面的支持。   
-{: .note}
+MediaPipe4U 内置的 WebcamImageSourceComponent 提供了摄像头采集画面的支持。      
+
+{: .highlight}
 > Windows 平台摄像头使用 OpenCV 实现，并且只支持 Direct Show 摄像头，如果你的摄像头不支持 Direct Show ，可能无法使用。   
 > Android 平台摄像头使用 Android CameraX 实现。   
 
@@ -109,7 +110,7 @@ StartCamera 通过传递摄像头编号来开启摄像头，你可以通过 Medi
 > 
 > ListWebcams 返回一个 bool 值，指示调用是否成功。
 >
-> 对于安卓，ListWebcams 总是返回 **0** 和 **1** 两个设备 id，**0** 表示前置摄像头， **1** 表示后置摄像头。
+> 对于 Android，ListWebcams 总是返回 **0** 和 **1** 两个设备 id，**0** 表示前置摄像头， **1** 表示后置摄像头。
 
 
 ### 关闭摄像头   
