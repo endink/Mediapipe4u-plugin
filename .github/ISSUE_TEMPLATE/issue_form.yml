@@ -35,6 +35,16 @@ body:
         - Compiled From Source Code
     validations:
       required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Which platform your application used.
+      options:
+        - Windows
+        - Android
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
