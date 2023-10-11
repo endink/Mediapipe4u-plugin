@@ -112,18 +112,12 @@ For the release notes, ref below:
 - [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
 # Download   
+
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/57a395070c8845) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1iFYNzCIvAlGMpq?e=0O6lSE) | 2023-08-29 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/6578dc44a5ec48) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1ekm5kg3XoxnKz2?e=xXhtrk) | 2023-08-29 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/71e9c65db6e443) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz1a0lCHIV21sBtMp?e=vKPzjh) | 2023-08-29 |
-
-
-<!-- | Unreal Engine | China Site | Global Site | Update |
-|---| --- | --- |----|
-| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/357f1ea3468b4e) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3h94Dhx7Lh3-BTv?e=Sdlr1P) | 2023-10-10 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/b33bfdbdcd9a4b) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3d4Gg2CkhsiRYM-?e=cidqQl) | 2023-10-10 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/8beda46e813641) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3aPSP0Pe9Xrl8mA?e=FDXogv) | 2023-10-10 | -->
+| UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
+| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/e910b9a10b1b41) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3s4EyOiiJJ-vzKj?e=2IFkuu) | 2023-10-10 |
+| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/e24b49901a4049) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3muyv-KTSRYEdEj?e=7nneTd) | 2023-10-10 |
 
 <!-- **:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**    -->
 
