@@ -66,7 +66,7 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
 |--------|--------------|----------------------|
 | 5.0 | r21e (21.4.7075529)  | 26 or later |
 | 5.1 | r25b (25.1.8937393)  | 26 or later |
-| 5.2 | r21b (25.1.8937393)  | 26 or later |
+| 5.2 | r25b (25.1.8937393)  | 26 or later |
 
 {: .warning}
 > 仅支持 Android ARM 64 (arm64-v8a) 平台，不支持其他安卓设备（例如 Android x86 ）。   
