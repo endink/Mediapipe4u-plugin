@@ -13,7 +13,7 @@ MediaPipe4U 支持下列的平台：
 - Windows x64 
 - Android arm64-v8a   
 
-{: .warning}
+{: .note}
 > **MediaPipe4U** 不支持 32 位 Windows 平台。   
 > **MediaPipe4U** 不支持非 `arm64-v8a` 的 Android（由于 Launcher 版 Unreal Engine 限制）。
 
@@ -53,8 +53,9 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
 |Windows SDK|10.0.22621 or later|
 |Visual C++ Redistributable|14.36.32532 or later|
 
-> 通常 Visual Studio 2022 17.6.3 或更新的版本中包含了必要的 Visual C++ Redistributable    
-{: .warning}
+{: .note}
+> 通常 Visual Studio 2022 17.6.3 或更新的版本中包含了必要的 Visual C++ Redistributable   
+> 
 > 仅支持 64 位 Windows，不支持 32 位 Windows。
 
 
@@ -68,7 +69,7 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
 | 5.1 | r25b (25.1.8937393)  | 26 or later |
 | 5.2 | r25b (25.1.8937393)  | 26 or later |
 
-{: .warning}
+{: .note}
 > 仅支持 Android ARM 64 (arm64-v8a) 平台，不支持其他安卓设备（例如 Android x86 ）。   
 >
 > Android 硬件需要满足 UE 开发要求, 具体信息请阅读 Unreal Engine Android 开发的文档。

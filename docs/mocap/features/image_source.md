@@ -104,6 +104,8 @@ StartCamera 通过传递摄像头编号来开启摄像头，你可以通过 Medi
 > 其中 Provider 参数表示摄像头提供程序，默认是 OpenCV ，当前仅支持 OpenCV 摄像头实现，因此，你不需要关心这个参数。   
 > 
 > ListWebcams 返回一个 bool 值，指示调用是否成功。
+>
+> 对于安卓，ListWebcams 总是返回 **0** 和 **1** 两个设备，**0** 表示前置摄像头， **1** 表示后置摄像头。
 
 
 ### 关闭摄像头   
@@ -112,6 +114,10 @@ StartCamera 通过传递摄像头编号来开启摄像头，你可以通过 Medi
 ---   
 
 ## GStreamerImageSourceComponent
+{: .d-inline-block }
+
+Windows Only
+{: .label .label-yellow } 
 
 可以使用 GStreamerImageSourceComponent 从一个视频文件或在线流媒体中采集画面来进行动作捕捉。   
 
@@ -143,10 +149,6 @@ Start 函数参数：
 ---   
 
 ## MediaPlayerImageSourceComponent
-{: .d-inline-block }
-
-Beta
-{: .label .label-yellow } 
 
 MediaPipe4U 可以和 Unreal Engine 的 MediaPlayer 集成，从 MediaPlayer 中捕获画面。      
 
