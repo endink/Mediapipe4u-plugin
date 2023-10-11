@@ -73,7 +73,7 @@ MediaPipe4U 中内置了 4 种图像源：
 
 ## WebcamImageSourceComponent
 
-### 打开摄像头
+### 打开摄像头   
 MediaPipe4U 内置的 WebcamImageSourceComponent 提供了摄像头采集画面的支持。      
 
 {: .highlight}
