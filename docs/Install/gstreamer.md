@@ -6,6 +6,10 @@ parent: 安装和配置
 ---
 
 # GStreamer 配置
+{: .d-inline-block }
+
+Current
+{: .label .label-green } 
 
 如果你需要从视频进行动补的功能，必须使用  **MediaPipe4UGStreamer** 和 **GStreamer**， 并且，你还需要配置 GStreamer。
 **MediaPipe4U** 使用 GStreamer 来处理视频流（通过视频进行动作捕捉），
