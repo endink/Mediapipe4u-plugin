@@ -15,7 +15,7 @@ Current
 - [new] :rainbow: Unreal Engine **5.4** 版本支持，我跳过了 5.3 版本，精力有限，实在抱歉。
 - [new] :rainbow: 加入 **Control Rig** 支持 (预览质量). 新的动画蓝图节点 `ControlRigFromPose` 已经可用，可以将任意姿态转换到 ControlRig 蓝图中，方便使用 ControlRig 制作关节限制、全身 IK 等。
 - [new] :fire: 对齐 google mediapipe 到最新版本，使用全新的 holistic task api, 整体追踪方案性能进一步提升，表情算解效果提升。
-- [fix] #130: 当打包游戏时，mediapipe 模型文件丢失.
+- [fix] [#130](https://github.com/endink/Mediapipe4u-plugin/issues/130): 当打包游戏时，mediapipe 模型文件丢失.
 - [improve] 安卓平台性能优化, 现在，M4U 在安卓手机上可以跑到 **15**-**20** fps (CPU: 高通骁龙 870 ).
 - [remove] :nauseated_face: LLM 插件被移除. 由于大语言模型（LLM）本地推理需要苛刻的硬件资源，加之 llama.cpp 长期高频发布，没有稳定版本，暂时移除这个插件，或许将来还会回归。
 - [remove] :nauseated_face: 从这个版本开始,5.0.x 的 Unreal Engine 版本将不再支持. 因为 5.0.X 需要 VS 2019 才能编译，我的开发机中已经不再安装 VS 2019, 非常抱歉 ！旧版的 5.0.x 插件任然可用。

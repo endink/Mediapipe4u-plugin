@@ -46,14 +46,14 @@ Latest update: `20240520`
 - [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
 - [new] :rainbow: **Control Rig** supported (preview). Add a new animation blueprint node `ControlRigFromPose` that used to convert FK poses to Control Rig Blueprints pose.
 - [new] :fire: Upgrade to latest goole mediapipe holistic task api, got better performace for holistic tracking.
-- [fix] #130: When packaging a game, the mediapipe model file is missing.
+- [fix] [#130](https://github.com/endink/Mediapipe4u-plugin/issues/130): When packaging a game, the mediapipe model file is missing.
 - [improve] Optimize android performace, now Android platfrom can reach **15**-**20** fps (CPU: Qualcomm Snapdragon 870 ).
 - [remove] :nauseated_face: LLM plugin has been removed. Because of the high latency of the LLM and the frequent updates of the llama.cpp project for a long time, there is no stable version. So I remove it, and maybe it will come back in the future.
 - [remove] :nauseated_face: Since this version, the 5.0.x version of UnrealEngine is no longer supported. Because 5.0.X requires VS 2019 and VS 2019 is no longer installed on my development PC. Sorry for that, but the older versions of the 5.0.x plugin are still available.
 
 # Known Issue:    
 - Google's new holistic task API doesn't support GPUs, so Android uses CPU inference, and Windows, as always, CPU inference.
-- Sine Unreal Engine 5.4 , the 'OpenCV' engine built-in plugin no longer contains precompiled libraries (dll files), the first time of the engine launched, because M4U dependent on the 'OpenCV' plugin, the UE Editor will try to download the `OpenCV` source code over the internet and compile it, this process may take a long time, it feels like the UE loading is stuck at 75%, please be patient and wait it, for Chinese users, you may also need a VPN networking for that, you can do this manually: #166.
+- Sine Unreal Engine 5.4 , the 'OpenCV' engine built-in plugin no longer contains precompiled libraries (dll files), the first time of the engine launched, because M4U dependent on the 'OpenCV' plugin, the UE Editor will try to download the `OpenCV` source code over the internet and compile it, this process may take a long time, it feels like the UE loading is stuck at 75%, please be patient and wait it, for Chinese users, you may also need a VPN networking for that, you can do this manually: [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166).
 
 
 ## Release Notes
