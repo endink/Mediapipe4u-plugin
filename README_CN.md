@@ -52,7 +52,8 @@
 - [remove] :nauseated_face: 从这个版本开始,5.0.x 的 Unreal Engine 版本将不再支持. 因为 5.0.X 需要 VS 2019 才能编译，我的开发机中已经不再安装 VS 2019, 非常抱歉 ！旧版的 5.0.x 插件任然可用。
 
 # 已知问题    
-Google 新版 holistic task api 没有支持 GPU，所以安卓平台使用 CPU 推理，Windows 一如既往，使用 CPU 推理。
+- Google 新版 holistic task api 没有支持 GPU，所以安卓平台使用 CPU 推理，Windows 一如既往，使用 CPU 推理。
+- Unreal Engine **5.4** 开始，引擎自带的 `OpenCV` 插件不再包含预编译库 (dll 文件)，首次首次引擎时，由于 M4U 依赖 `OpenCV` 插件, UE Editor 启动时将尝试联网下载 `OpenCV` 源码并编译, 这个过程可能耗时较长，感觉像是引擎加载卡在 75%，请耐心等待并项目根目录下的 Saved 目录中的日志确认这个过程是否完成，对于中国用户来说，你可能还需要梯子联网。
 
 
 ## Release Notes
