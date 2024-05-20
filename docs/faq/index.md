@@ -52,7 +52,7 @@ has_children: false
 1. Mediapipe 计算的帧率理想情况下可以达到 30FPS，如果你延迟较多，可能是由于 CPU 计算速度不够，你可以通过降低视频分辨率来提升 MediaPipe 的 FPS，高分辨率并不会带来更好的效果，反而会降低性能，视频分辨率600 * 400 即可让 MediapPipe 运行良好。
 > 对于摄像头动补， **MediaPipeHolisticComponent**的 **StartCamera** 函数支持通过传入 **ResolutionX** 和 **ResolutionY** 参数来调节分辨率，同时 **StartCamera** 函数中的 **FPS** 参数请不要高于 30,摄像头过高的分辨率在一般情况下都没有意义，因为 MediaPipe 的 FPS 并不会很高。   
 
-2. 除了降低视频或摄像头分辨率，如果你视频中的动作较快（例如街舞），你还可以通过降低动补平滑度（具体参考[运行时控制->修改平滑](../advance/runtime_settings_bp.md)小节）来改善动画效果。
+2. 除了降低视频或摄像头分辨率，如果你视频中的动作较快（例如街舞），你还可以通过降低动补平滑度（具体参考[运行时控制->修改平滑](../mocap//advance/solver_bp.md)小节）来改善动画效果。
 
 ---
 

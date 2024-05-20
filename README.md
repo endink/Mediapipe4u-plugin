@@ -41,12 +41,19 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-Latest update: `20231010`
+Latest update: `20240520`
 
-- [new] :rainbow: **MediaPipe4U Mobile** Android packaging support, the development process is fully compatible with Windows.
-- [new] :fire: Both `StartCamera` and `StartImageSource` now support truly blueprint-friendly asynchronous functions.
-- [improve] Optimize frame pipline, huge performance improve, now Windows CPU can reach **25** fps (CPU: AMD 3600, Frame Size: 1280 * 720).
-- [breaking change]:rotating_light:Many functions are now BlueprintPure and may require changes to your blueprint.
+- [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
+- [new] :rainbow: **Control Rig** supported (preview). Add a new animation blueprint node `ControlRigFromPose` that used to convert FW poses to Control Rig Blueprints pose.
+- [new] :fire: Upgrade to latest goole mediapipe holistic task api, got better performace for holistic tracking.
+- [fix] #130: When packaging a game, the mediapipe model file is missing.
+- [improve] Optimize android performace, now Android platfrom can reach **15**-**20** fps (CPU: Qualcomm Snapdragon 870 ).
+- [remove] :nauseated_face: LLM plugin has been removed. Because of the high latency of the LLM and the frequent updates of the llama.cpp project for a long time, there is no stable version. So I remove it, and maybe it will come back in the future.
+- [remove] :nauseated_face: Since this version, the 5.0.x version of UnrealEngine is no longer supported. Because 5.0.X requires VS 2019 and VS 2019 is no longer installed on my development PC. Sorry for that, but the older versions of the 5.0.x plugin are still available.
+
+# Known Issue:    
+Google's new holistic task API doesn't support GPUs, so Android uses CPU inference, and Windows, as always, CPU inference.
+
 
 ## Release Notes
 For the release notes, ref below:
@@ -64,6 +71,7 @@ For the release notes, ref below:
   - Drive 3D avatar
   - Real-time
   - RGB webcam supported
+  - ControlRig supported
 - Face Capture
   - Facial expression.
   - Arkit Blendshape compatible (52 expression) 

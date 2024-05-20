@@ -7,15 +7,23 @@ parent: 更新日志
 
 [简体中文](./index.md)
 
-### 2023-10-10   
-{: .d-inline-block }
 
+### 2024-05-20   
+{: .d-inline-block }
 Current
 {: .label .label-green } 
+- [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
+- [new] :rainbow: **Control Rig** supported. Add a new animation blueprint node `ControlRigFromPose` that used to convert FW poses to Control Rig Blueprints pose.
+- [new] :fire: Upgrade to latest mediapipe holistic task api, got better performace for holistic tracking.
+- [improve] Optimize android performace, now Android platfrom can reach **15**-**20** fps (CPU: Qualcomm Snapdragon 870 ).
+- [remove] :nauseated_face: LLM plugin has been removed. Because of the high latency of the LLM and the frequent updates of the llama.cpp project for a long time, there is no stable version.
+- [remove] :nauseated_face: Since this version, the 5.0.x version of UnrealEngine is no longer supported. Because 5.0.X requires VS 2019 and VS 2019 is no longer installed on my development PC.
+
+### 2023-10-10   
 - [new] :rainbow: **MediaPipe4U Mobile** Android packaging support, the development process is fully compatible with Windows.
 - [new] :fire: Both `StartCamera` and `StartImageSource` now support truly blueprint-friendly asynchronous functions.
 - [improve] Optimize frame pipline, huge performance improve, now Windows CPU can reach **25** fps (CPU: AMD 3600, Frame Size: 1280 * 720).
-- [breaking change]:rotating_light:Many functions are now BlueprintPure and may require changes to your blueprint.
+- [breaking change]:Many functions are now BlueprintPure and may require changes to your blueprint.
 
 ### 2023-08-29    
 - [fix] Fails if the file path contains characters from a Non-English language.

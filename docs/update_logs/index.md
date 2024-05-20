@@ -7,16 +7,23 @@ has_children: true
 
 [English](./en.md)
 
-### 2023-10-10 
+
+### 2024-05-20   
 {: .d-inline-block }
-
 Current
-{: .label .label-green }  
+{: .label .label-green } 
+- [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
+- [new] :rainbow: **Control Rig** supported. Add a new animation blueprint node `ControlRigFromPose` that used to convert FW poses to Control Rig Blueprints pose.
+- [new] :fire: Upgrade to latest mediapipe holistic task api, got better performace for holistic tracking.
+- [improve] Optimize android performace, now Android platfrom can reach **15**-**20** fps (CPU: Qualcomm Snapdragon 870 ).
+- [remove] :nauseated_face: LLM plugin has been removed. Because of the high latency of the LLM and the frequent updates of the llama.cpp project for a long time, there is no stable version.
+- [remove] :nauseated_face: Since this version, the 5.0.x version of UnrealEngine is no longer supported. Because 5.0.X requires VS 2019 and VS 2019 is no longer installed on my development PC.
 
+### 2023-10-10    
 - [new] :rainbow: **MediaPipe4U Mobile** 安卓打包编译支持, 开发体验和 Windows 版本保持一致.
 - [new] :fire: `StartCamera` and `StartImageSource` 现在支持蓝图异步函数，蓝图中可以方便的进行异步操作.
 - [improve] 优化帧处理管道, 带来了巨大的性能提升, 现在 windows 动作捕捉可以达到 **25** fps (CPU: AMD 3600, Frame Size: 1280 * 720).
-- [breaking change]:rotating_light:许多函数改为 `BlueprintPure` 模式， 你可能必须修改你的蓝图.
+- [breaking change]:许多函数改为 `BlueprintPure` 模式， 你可能必须修改你的蓝图.
 
 ### 2023-08-29     
 - [fix] 使用 LLM, ASR 加载模型时，如果文件路径包含非英语语言的字符时会失败。

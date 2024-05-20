@@ -30,6 +30,7 @@ description: "MediaPipe4U Document Site"
   - 3D 模型驱动
   - 实时驱动
   - 支持普通摄像头
+  - ControlRig 支持
 - 表情捕捉
   - 面部表情
   - Arkit Blendshape 兼容 (52 个表情) 
