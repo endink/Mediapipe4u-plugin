@@ -13,7 +13,7 @@ parent: 更新日志
 Current
 {: .label .label-green } 
 - [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
-- [new] :rainbow: **Control Rig** supported. Add a new animation blueprint node `ControlRigFromPose` that used to convert FW poses to Control Rig Blueprints pose.
+- [new] :rainbow: **Control Rig** supported. Add a new animation blueprint node `ControlRigFromPose` that used to convert FK poses to Control Rig Blueprints pose.
 - [new] :fire: Upgrade to latest mediapipe holistic task api, got better performace for holistic tracking.
 - [improve] Optimize android performace, now Android platfrom can reach **15**-**20** fps (CPU: Qualcomm Snapdragon 870 ).
 - [remove] :nauseated_face: LLM plugin has been removed. Because of the high latency of the LLM and the frequent updates of the llama.cpp project for a long time, there is no stable version.
