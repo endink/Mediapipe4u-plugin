@@ -8,17 +8,24 @@ parent: 更新日志
 [简体中文](./index.md)
 
 
-### 2024-05-20   
+### 2024-05-23   
 {: .d-inline-block }
 Current
 {: .label .label-green } 
+- [new] :rainbow: Licenses is no longer required to use MediaPipe4U (all plugin) in the UE editor (you can still use M4U even though the license file has expireds).
 - [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
 - [new] :rainbow: **Control Rig** supported (preview). Add a new animation blueprint node `ControlRigFromPose` that used to convert FK poses to Control Rig Blueprints pose.
 - [new] :fire: Upgrade to latest goole mediapipe holistic task api, got better performace for holistic tracking.
-- [fix] [#130](https://github.com/endink/Mediapipe4u-plugin/issues/130): When packaging a game, the mediapipe model file is missing.
-- [improve] Optimize android performace, now Android platfrom can reach **15**-**20** fps (CPU: Qualcomm Snapdragon 870 ).
+- [new] :rainbow: Add `StopAsync` to `MediaPipeHolisticComponent` to support asynchronous stop Mediapipe.
+- [new] :rainbow: `MediaPipeHolisticComponent` Display "Raw mode" support for Android platform. 
+- [fix] :bug: [#130](https://github.com/endink/Mediapipe4u-plugin/issues/130): When packaging a game, the mediapipe model file is missing.
+- [fix] :bug: [#124](https://github.com/endink/Mediapipe4u-plugin/issues/124): `BVH Recorder` crash if skeleton bone index was not used for compact space pose.
+- [fix] :bug: The `AnchorWidgetInCanvas` function exceeds the size limit when scaling the frame image.
+- [improve] :rose: Optimize android performace, now Android platfrom can reach **15**-**20** fps (CPU: Qualcomm Snapdragon 870 ).
+- [improve] :rose: The Mediapipe4U solver is now adaptive to LOD changes and motion capture can also be done when the LOD changes.
 - [remove] :nauseated_face: LLM plugin has been removed. Because of the high latency of the LLM and the frequent updates of the llama.cpp project for a long time, there is no stable version. So I remove it, and maybe it will come back in the future.
 - [remove] :nauseated_face: Since this version, the 5.0.x version of UnrealEngine is no longer supported. Because 5.0.X requires VS 2019 and VS 2019 is no longer installed on my development PC. Sorry for that, but the older versions of the 5.0.x plugin are still available.
+- [break change] :pill: `ASRCaptureComponent` change name to `SpeechCaptureComponent`;
 
 ### 2023-10-10   
 - [new] :rainbow: **MediaPipe4U Mobile** Android packaging support, the development process is fully compatible with Windows.

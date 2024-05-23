@@ -8,17 +8,24 @@ has_children: true
 [English](./en.md)
 
 
-### 2024-05-20   
+### 2024-05-23      
 {: .d-inline-block }
 Current
 {: .label .label-green } 
+- [new] :rainbow: 在编辑器中使用 MediaPipe4U 不再需要授权（即使授权文件过期，依然可以在编辑器中使用）。
 - [new] :rainbow: Unreal Engine **5.4** 版本支持，我跳过了 5.3 版本，精力有限，实在抱歉。
 - [new] :rainbow: 加入 **Control Rig** 支持 (预览质量). 新的动画蓝图节点 `ControlRigFromPose` 已经可用，可以将任意姿态转换到 ControlRig 蓝图中，方便使用 ControlRig 制作关节限制、全身 IK 等。
 - [new] :fire: 对齐 google mediapipe 到最新版本，使用全新的 holistic task api, 整体追踪方案性能进一步提升，表情算解效果提升。
-- [fix] [#130](https://github.com/endink/Mediapipe4u-plugin/issues/130): 当打包游戏时，mediapipe 模型文件丢失.
-- [improve] 安卓平台性能优化, 现在，M4U 在安卓手机上可以跑到 **15**-**20** fps (CPU: 高通骁龙 870 ).
+- [new] :rainbow: `MediaPipeHolisticComponent` 中加入 `StopAsync` 函数以支持异步停止 mediapipe.
+- [new] :rainbow: Android 平台的 `MediaPipeHolisticComponent` 组件支持 "Raw 模式" 显示帧图像. 
+- [fix] :bug: [#130](https://github.com/endink/Mediapipe4u-plugin/issues/130): 当打包游戏时，mediapipe 模型文件丢失.
+- [fix] :bug: [#124](https://github.com/endink/Mediapipe4u-plugin/issues/124): 当动画中的 CSPose 没有使用骨架（skeleton）的骨骼索引时，BVH Recoder 导致程序崩溃.
+- [fix] :bug: `AnchorWidgetInCanvas` 函数缩放帧图像时大小超出限制.
+- [improve] :rose: 安卓平台性能优化, 现在，M4U 在安卓手机上可以跑到 **15**-**20** fps (CPU: 高通骁龙 870 ).
+- [improve] :rose: 算解器能够适应 LOD 变化，LOD 变化时依然能够求解姿态并进行动作捕捉.
 - [remove] :nauseated_face: LLM 插件被移除. 由于大语言模型（LLM）本地推理需要苛刻的硬件资源，加之 llama.cpp 长期高频发布，没有稳定版本，暂时移除这个插件，或许将来还会回归。
 - [remove] :nauseated_face: 从这个版本开始,5.0.x 的 Unreal Engine 版本将不再支持. 因为 5.0.X 需要 VS 2019 才能编译，我的开发机中已经不再安装 VS 2019, 非常抱歉 ！旧版的 5.0.x 插件任然可用。
+- [break change] :pill: `ASRCaptureComponent` 更名为 `SpeechCaptureComponent`;
 
 ### 2023-10-10    
 - [new] :rainbow: **MediaPipe4U Mobile** 安卓打包编译支持, 开发体验和 Windows 版本保持一致.

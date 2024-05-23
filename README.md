@@ -18,9 +18,9 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/Windows-Win 10/11 X64-brightgreen.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Android->=8.0 (Arm64)-brightgreen.svg"></a>
-  <a href=""><img src="https://img.shields.io/badge/VC++ Runtime->=14.36.32532-aff.svg"></a>
+  <a href=""><img src="https://img.shields.io/badge/MSVC->=14.38.33130-aff.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
-  <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
+  <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.9.6-blue"></a>
 </p>
 <p align="center">
 <a href="https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp">News</a>
@@ -41,19 +41,29 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-Latest update: `20240520`
+Latest update: `20240523`
 
+- [new] :rainbow: Licenses is no longer required to use MediaPipe4U (all plugin) in the UE editor (you can still use all plugins even though the license file has expireds).
 - [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
 - [new] :rainbow: **Control Rig** supported (preview). Add a new animation blueprint node `ControlRigFromPose` that used to convert FK poses to Control Rig Blueprints pose.
 - [new] :fire: Upgrade to latest goole mediapipe holistic task api, got better performace for holistic tracking.
-- [fix] [#130](https://github.com/endink/Mediapipe4u-plugin/issues/130): When packaging a game, the mediapipe model file is missing.
-- [improve] Optimize android performace, now Android platfrom can reach **15**-**20** fps (CPU: Qualcomm Snapdragon 870 ).
+- [new] :rainbow: Add `StopAsync` to `MediaPipeHolisticComponent` to support asynchronous stop Mediapipe.
+- [new] :rainbow: `MediaPipeHolisticComponent` Display "Raw mode" support for Android platform. 
+- [fix] :bug: [#130](https://github.com/endink/Mediapipe4u-plugin/issues/130): When packaging a game, the mediapipe model file is missing.
+- [fix] :bug: [#124](https://github.com/endink/Mediapipe4u-plugin/issues/124): `BVH Recorder` crash if skeleton bone index was not used for compact space pose.
+- [fix] :bug: The `AnchorWidgetInCanvas` function exceeds the size limit when scaling the frame image.
+- [improve] :rose: Optimize android performace, now Android platfrom can reach **15**-**20** fps (CPU: Qualcomm Snapdragon 870 ).
+- [improve] :rose: The Mediapipe4U solver is now adaptive to LOD changes and motion capture can also be done when the LOD changes.
 - [remove] :nauseated_face: LLM plugin has been removed. Because of the high latency of the LLM and the frequent updates of the llama.cpp project for a long time, there is no stable version. So I remove it, and maybe it will come back in the future.
 - [remove] :nauseated_face: Since this version, the 5.0.x version of UnrealEngine is no longer supported. Because 5.0.X requires VS 2019 and VS 2019 is no longer installed on my development PC. Sorry for that, but the older versions of the 5.0.x plugin are still available.
+- [break change] :pill: `ASRCaptureComponent` change name to `SpeechCaptureComponent`;
+- [upgrade]: :placard: Upgrade Windows SDK to 10.0.22621 （Windows 11 SDK）
+- [upgrade]: :placard: Upgrade VC Runtime to 14.38.33130
+- [other]: :placard: [Demo project](https://github.com/endink/MediaPipe4U-Demo ) upgrade to UE5.4, add ControlRig Demo, use [Windwalker Echo](https://www.unrealengine.com/marketplace/en-US/product/windwalker-echo-01) character instead `Kit boy` for facial capture demo.
 
 # Known Issue:    
 - Google's new holistic task API doesn't support GPUs, so Android uses CPU inference, and Windows, as always, CPU inference.
-- Sine Unreal Engine 5.4 , the 'OpenCV' engine built-in plugin no longer contains precompiled libraries (dll files), the first time of the engine launched, because M4U dependent on the 'OpenCV' plugin, the UE Editor will try to download the `OpenCV` source code over the internet and compile it, this process may take a long time, it feels like the UE loading is stuck at 75%, please be patient and wait it, for Chinese users, you may also need a VPN networking for that, you can do this manually: [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166).
+- Sine Unreal Engine 5.4 , the `OpenCV` engine built-in plugin no longer contains precompiled libraries (dll files), the first time of the engine launched, because M4U dependent on the `OpenCV` plugin, the UE Editor will try to download the `OpenCV` source code over the internet and compile it, this process may take a long time, it feels like the UE loading is stuck at 75%, please be patient and wait it, for Chinese users, you may also need a VPN networking for that, you can do this manually: [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166).
 
 
 ## Release Notes
