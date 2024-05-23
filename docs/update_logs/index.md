@@ -199,7 +199,7 @@ Current
 
 :pushpin:**里程碑版本**   
 
-- [new] :fire:预览版质量的 **Nvidia AR** 表情捕捉集成, ([文档](./experiment/README.md)，示例已经包含在 [Demo](https://github.com/endink/MediaPipe4U-Demo) 工程中）
+- [new] :fire:预览版质量的 **Nvidia AR** 表情捕捉集成, ([文档](./experiment/README.md)，示例已经包含在 [Demo](https://gitlab.com/endink/mediapipe4u-demo) 工程中）
 - [new] 手指矫正，解决手指无法伸直的问题（**TODO**:文档暂缺）
 - [new] **MediaPipeHolistic** 生命周期事件(OnInitialized, OnStarted, OnStopeed)蓝图支持
 - [new] 图片、摄像头、视频图像回显都支持开启/关闭 MediaPipe 装饰（Annotated）模式了，便于分析动补帧

@@ -59,7 +59,8 @@ Latest update: `20240523`
 - [break change] :pill: `ASRCaptureComponent` change name to `SpeechCaptureComponent`;
 - [upgrade]: :placard: Upgrade Windows SDK to 10.0.22621 （Windows 11 SDK）
 - [upgrade]: :placard: Upgrade VC Runtime to 14.38.33130
-- [other]: :placard: [Demo project](https://github.com/endink/MediaPipe4U-Demo ) upgrade to UE5.4, add ControlRig Demo, use [Windwalker Echo](https://www.unrealengine.com/marketplace/en-US/product/windwalker-echo-01) character instead `Kit boy` for facial capture demo.
+- [other]: :placard: [Demo project](https://gitlab.com/endink/mediapipe4u-demo) upgrade to UE5.4, add ControlRig Demo, use [Windwalker Echo](https://www.unrealengine.com/marketplace/en-US/product/windwalker-echo-01) character instead `Kit boy` for facial capture demo.
+- [other]: :placard: Due to github storage limitations, the [Demo project](https://gitlab.com/endink/mediapipe4u-demo) has been moved to GitLab.
 
 # Known Issue:    
 - Google's new holistic task API doesn't support GPUs, so Android uses CPU inference, and Windows, as always, CPU inference.
@@ -179,7 +180,7 @@ The license file will be published in the [discussion](https://github.com/endink
   
 # Demo Project
 Please clone this repository to get demo project:   
-- https://github.com/endink/MediaPipe4U-Demo  
+- [https://gitlab.com/endink/mediapipe4u-demo](https://gitlab.com/endink/mediapipe4u-demo)
 
 > The demo project does not contain plugins, you need to download the plugin and copy content to the project's plugins folder to run.
 

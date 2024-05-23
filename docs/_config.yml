@@ -18,7 +18,7 @@ plugins:
 
 nav_external_links:
   - title: Demo Project
-    url: https://github.com/endink/MediaPipe4U-Demo
+    url: https://gitlab.com/endink/mediapipe4u-demo
     hide_icon: false # set to true to hide the external link icon - defaults to false
   - title: GitHub
     url: https://github.com/endink/Mediapipe4u-plugin/

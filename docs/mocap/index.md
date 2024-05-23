@@ -41,4 +41,4 @@ MediaPipe4U 的动作和表情套件，将 Google MediaPipe 技术带入 Unreal 
 
 # UnrealEngine 5.1 Demo 工程
 
-[https://github.com/endink/MediaPipe4U-Demo](https://github.com/endink/MediaPipe4U-Demo)
+[https://gitlab.com/endink/MediaPipe4U-Demo](https://gitlab.com/endink/mediapipe4u-demo)

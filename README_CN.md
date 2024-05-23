@@ -59,7 +59,9 @@
 - [break change] :pill: `ASRCaptureComponent` 更名为 `SpeechCaptureComponent`;
 - [upgrade]: :placard: Windows SDK 升级到 10.0.22621 （Windows 11 SDK）
 - [upgrade]: :placard: Upgrade VC Runtime to 14.38.33130
-- [other]: :placard: [Demo project](https://github.com/endink/MediaPipe4U-Demo ) 升级到 UE5.4, 添加 ControlRig Demo. 使用 [灵风女神厄科](https://www.unrealengine.com/marketplace/en-US/product/windwalker-echo-01) 角色代替“风筝男孩”作为表情捕捉的演示.
+- [other]: :placard: [Demo project](https://gitlab.com/endink/mediapipe4u-demo) 升级到 UE5.4, 添加 ControlRig Demo. 使用 [灵风女神厄科](https://www.unrealengine.com/marketplace/en-US/product/windwalker-echo-01) 角色代替“风筝男孩”作为表情捕捉的演示.
+- [other]: :placard: 由于 github 存储限制, [Demo 工程](https://gitlab.com/endink/mediapipe4u-demo) 迁移到 GitLab.   
+
 
 # 已知问题    
 - Google 新版 holistic task api 没有支持 GPU，所以安卓平台使用 CPU 推理，Windows 一如既往，使用 CPU 推理。
