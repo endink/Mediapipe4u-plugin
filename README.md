@@ -46,7 +46,7 @@ Latest update: `20240524`
 - [new] :rainbow: Licenses is no longer required to use MediaPipe4U (all plugin) in the UE editor (you can still use all plugins even though the license file has expireds).
 - [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
 - [new] :rainbow: **Control Rig** supported (preview). Add a new animation blueprint node `ControlRigFromPose` that used to convert FK poses to Control Rig Blueprints pose.
-- [new] :fire: Upgrade to latest goole mediapipe holistic task api, got better performace for holistic tracking.
+- [new] :fire: Upgrade to latest google mediapipe holistic task api, got better performace for holistic tracking.
 - [new] :rainbow: Add `StopAsync` to `MediaPipeHolisticComponent` to support asynchronous stop Mediapipe.
 - [new] :rainbow: `MediaPipeHolisticComponent` Display "Raw mode" support for Android platform. 
 - [fix] :bug: [#130](https://github.com/endink/Mediapipe4u-plugin/issues/130): When packaging a game, the mediapipe model file is missing.
@@ -64,7 +64,7 @@ Latest update: `20240524`
 
 # Known Issues:    
 - Google's new holistic task API doesn't support GPUs, so Android uses CPU inference, and Windows, as always, CPU inference.
-- Sine Unreal Engine 5.4 , the `OpenCV` engine built-in plugin no longer contains precompiled libraries (dll files), the first time of the engine launched, because M4U dependent on the `OpenCV` plugin, the UE Editor will try to download the `OpenCV` source code over the internet and compile it, this process may take a long time, it feels like the UE loading is stuck at 75%, please be patient and wait it, for Chinese users, you may also need a VPN networking for that, you can do this manually: [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166).
+- Sine Unreal Engine 5.4 , the `OpenCV` engine built-in plugin no longer contains precompiled libraries (.dll files), the first time of the UE Editor launched, because M4U dependent on the `OpenCV` plugin, the UE Editor will try to download the `OpenCV` source code over the internet and compile it, this process may take a long time, it feels like the UE loading is block at 75%, please be patient and wait it done, for Chinese users, you may also need a VPN networking for that, you can do this manually: [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166).
 
 
 ## Release Notes
