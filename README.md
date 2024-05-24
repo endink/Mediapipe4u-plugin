@@ -182,6 +182,11 @@ The license file will be published in the [discussion](https://github.com/endink
 Please clone this repository to get demo project:   
 - [https://gitlab.com/endink/mediapipe4u-demo](https://gitlab.com/endink/mediapipe4u-demo)
 
+Use the git client to get the demo project (require [git](https://git-scm.com/downloads) and [git lfs](https://git-lfs.com/)) :
+```shell
+git lfs clone https://gitlab.com/endink/mediapipe4u-demo.git
+```
+
 > The demo project does not contain plugins, you need to download the plugin and copy content to the project's plugins folder to run.
 
 
