@@ -41,7 +41,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-Latest update: `20240523`
+Latest update: `20240524`
 
 - [new] :rainbow: Licenses is no longer required to use MediaPipe4U (all plugin) in the UE editor (you can still use all plugins even though the license file has expireds).
 - [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
@@ -62,7 +62,7 @@ Latest update: `20240523`
 - [other]: :placard: [Demo project](https://gitlab.com/endink/mediapipe4u-demo) upgrade to UE5.4, add ControlRig Demo, use [Windwalker Echo](https://www.unrealengine.com/marketplace/en-US/product/windwalker-echo-01) character instead `Kit boy` for facial capture demo.
 - [other]: :placard: Due to github storage limitations, the [Demo project](https://gitlab.com/endink/mediapipe4u-demo) has been moved to GitLab.
 
-# Known Issue:    
+# Known Issues:    
 - Google's new holistic task API doesn't support GPUs, so Android uses CPU inference, and Windows, as always, CPU inference.
 - Sine Unreal Engine 5.4 , the `OpenCV` engine built-in plugin no longer contains precompiled libraries (dll files), the first time of the engine launched, because M4U dependent on the `OpenCV` plugin, the UE Editor will try to download the `OpenCV` source code over the internet and compile it, this process may take a long time, it feels like the UE loading is stuck at 75%, please be patient and wait it, for Chinese users, you may also need a VPN networking for that, you can do this manually: [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166).
 
@@ -136,8 +136,9 @@ For the release notes, ref below:
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/e910b9a10b1b41) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3s4EyOiiJJ-vzKj?e=2IFkuu) | 2023-10-10 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/e24b49901a4049) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3muyv-KTSRYEdEj?e=7nneTd) | 2023-10-10 |
+| UE 5.1 | [百度网盘](https://pan.baidu.com/s/1T__6j2KWa2s-fS7nRig26w?pwd=subu) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EVHalB22EFhEmm_eNDr31DMBd5UihE1wLhc96NuonCfgcw?e=Uahr7L) | 2023-05-24 |
+| UE 5.2 | [百度网盘](https://pan.baidu.com/s/1wM6BWNTwp89GF7sw4EhiiA?pwd=emqz) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUrykp_dfTNCp_Gf8nANLvUBEY8LTOAP026F66HDG6kong?e=c99tNu) | 2023-05-24 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1Fv8JhJnfnd-1_tVQhBlTHQ?pwd=g1c1) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EdqA3Q1OGUxPrGl1AelWYOMBOtWzi5xFNyvrJjsX0NsAog?e=luOpcN) | 2023-05-24 |
 
 <!-- **:nauseated_face:Sorry, there is a compilation bug in the latest version, temporarily fall back to version 0718**    -->
 
@@ -157,7 +158,6 @@ Now, M4U support Android and Windows (Linux is coming soom)
 | MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |Coming Soon|
 | MediaPipe4UBVH          | :heavy_check_mark: | :x: |Coming Soon|
 | MediaPipe4USpeech       | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4ULLM          | :heavy_check_mark: | :x: |Coming Soon|
 
 
 # Free License File Release

@@ -41,7 +41,7 @@
 
 # 最新动态
 
-最后更新：`20240523`   
+最后更新：`20240524`   
 
 - [new] :rainbow: 在编辑器中使用 MediaPipe4U 不再需要授权（即使授权文件过期，依然可以在编辑器中使用）。
 - [new] :rainbow: Unreal Engine **5.4** 版本支持，我跳过了 5.3 版本，精力有限，实在抱歉。
@@ -136,8 +136,9 @@
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
-| UE 5.1 | [奶牛快传](https://cowtransfer.com/s/e910b9a10b1b41) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3s4EyOiiJJ-vzKj?e=2IFkuu) | 2023-10-10 |
-| UE 5.2 | [奶牛快传](https://cowtransfer.com/s/e24b49901a4049) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3muyv-KTSRYEdEj?e=7nneTd) | 2023-10-10 |
+| UE 5.1 | [百度网盘](https://pan.baidu.com/s/1T__6j2KWa2s-fS7nRig26w?pwd=subu) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EVHalB22EFhEmm_eNDr31DMBd5UihE1wLhc96NuonCfgcw?e=Uahr7L) | 2023-05-24 |
+| UE 5.2 | [百度网盘](https://pan.baidu.com/s/1wM6BWNTwp89GF7sw4EhiiA?pwd=emqz) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUrykp_dfTNCp_Gf8nANLvUBEY8LTOAP026F66HDG6kong?e=c99tNu) | 2023-05-24 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1Fv8JhJnfnd-1_tVQhBlTHQ?pwd=g1c1) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EdqA3Q1OGUxPrGl1AelWYOMBOtWzi5xFNyvrJjsX0NsAog?e=luOpcN) | 2023-05-24 |
 
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
@@ -158,7 +159,6 @@
 | MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |Coming Soon|
 | MediaPipe4UBVH          | :heavy_check_mark: | :x: |Coming Soon|
 | MediaPipe4USpeech       | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4ULLM          | :heavy_check_mark: | :x: |Coming Soon|
 
 ## 免费授权文件
 
