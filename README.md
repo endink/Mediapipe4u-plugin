@@ -26,7 +26,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 <a href="https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp">News</a>
 | <a href="#document">Document</a>
 | <a href="#download">Download</a>
-| <a href="https://github.com/endink/MediaPipe4U-Demo">Demo Project</a>
+| <a href="https://gitlab.com/endink/MediaPipe4U-Demo" target="_blank">Demo Project</a>
 | <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/M4U_Remoting_App">M4U Remoting(Android App)</a>
 | <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models">Speech Model Packages</a>
 </p>

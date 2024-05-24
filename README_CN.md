@@ -26,7 +26,7 @@
 <a href="https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/">最新动态</a>
 | <a href="https://opensource.labijie.com/Mediapipe4u-plugin">文档</a>
 | <a href="#Download">下载</a>
-| <a href="https://github.com/endink/MediaPipe4U-Demo">Demo 工程</a>
+| <a href="https://gitlab.com/endink/MediaPipe4U-Demo" target="_blank">Demo 工程</a>
 | <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/M4U_Remoting_App">M4U Remoting(Android App)</a>
 | <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models">语音模型包</a>
 </p>
