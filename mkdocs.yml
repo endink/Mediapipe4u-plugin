@@ -24,9 +24,13 @@ plugins:
           build: true
           default: true
           site_name: "MediaPipe4U 文档"
-          nav_translations:
-            Home: 首页
         - locale: en
           name: English
           build: false
           site_name: "MediaPipe4U Documents"
+
+#https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
