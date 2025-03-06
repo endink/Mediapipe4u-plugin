@@ -55,7 +55,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 - [new] Added **C++ Interface**, allowing C++ developers to implement their own pose estimation algorithms to replace Google MediaPipe.  
 - [new] :rainbow: Integrated **NvAR Pose Tracking**, enabling switching between MediaPipe and Nvidia Maxine algorithms.  
 
-> The update includes numerous features and complex testing—please be patient.   
+> The update includes numerous features and complex testing, please be patient.   
 
 # Known Issues:    
 - Google's new holistic task API doesn't support GPUs, so Android uses CPU inference, and Windows, as always, CPU inference.
