@@ -221,15 +221,20 @@ GPU: Nvidia 1660s
 [Youtube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
 
 
-# Acknowledge     
+# Acknowledgements  
 
-1. M4U used [MediaPipe](https://github.com/google/mediapipe) for motion capture and face capture.
-2. M4U used [NVIDIA Maxine AR SDK](https://github.com/NVIDIA/MAXINE-AR-SDK) for facal capture.
-3. M4U used [Paddle Speech](https://github.com/PaddlePaddle/PaddleSpeech) for TTS.
-4. M4U used [FunASR](https://github.com/alibaba-damo-academy/FunASR) for ASR.
-5. M4U used [whisper.cpp](https://github.com/ggerganov/whisper.cpp) for ASR.
-6. M4U used [GStreamer](https://gstreamer.freedesktop.org/) for video and live streaming decoding.
-7. M4U used [llama.cpp](https://github.com/ggerganov/llama.cpp) for inference of LLaMA2 model.
-8. M4U borrowed a lot of code from [PowerIK](https://poweranimated.github.io/) for ground ik.
-9. M4U borrowed a lot of ideas from [Kalidokit](https://github.com/yeemachine/kalidokit) for mocap.
-10. M4U borrowed a lot of code from [wongfei](https://github.com/wongfei) for gstreamer/mediapipe integration.
+We acknowledge the contributions of the following open-source projects and frameworks, which have significantly influenced the development of M4U:  
+
+1. M4U utilizes [MediaPipe](https://github.com/google/mediapipe) for motion and facial capture.  
+2. M4U utilizes the [NVIDIA Maxine AR SDK](https://github.com/NVIDIA/MAXINE-AR-SDK) for advanced facial tracking and capture.  
+3. M4U utilizes [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech) for text-to-speech (TTS) synthesis.  
+4. M4U utilizes [FunASR](https://github.com/alibaba-damo-academy/FunASR) for automatic speech recognition (ASR).  
+5. M4U utilizes [whisper.cpp](https://github.com/ggerganov/whisper.cpp) as an ASR solution.  
+6. M4U utilizes [Sherpa Onnx](https://github.com/k2-fsa/sherpa-onnx) to enhance ASR capabilities.  
+7. M4U utilizes [F5-TTS-ONNX](https://github.com/DakeQQ/F5-TTS-ONNX) for exporting the F5-TTS model.  
+8. M4U utilizes [GStreamer](https://gstreamer.freedesktop.org/) to facilitate video processing and real-time streaming.  
+9. M4U utilizes code from [PowerIK](https://poweranimated.github.io/) for inverse kinematics (IK) and ground adaptation.  
+10. M4U utilizes concepts from [Kalidokit](https://github.com/yeemachine/kalidokit) in the domain of motion capture.  
+11. M4U utilizes code from [wongfei](https://github.com/wongfei) to enhance GStreamer and MediaPipe interoperability.  
+
+We extend our gratitude to the developers and contributors of these projects for their valuable innovations and open-source contributions, which have greatly facilitated the development of MediaPipe4U.  

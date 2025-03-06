@@ -228,3 +228,20 @@ CPU 占用率：20% (测试 DEMO 仅包含 MetahumanLight 场景和 VRM 模型)
 
 国内如果视频无法显示，请访问[B站视频](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
+# 致谢  
+
+我们感谢以下开源项目和框架的贡献，它们对 M4U 的开发产生了重要影响：  
+
+1. M4U 利用 [MediaPipe](https://github.com/google/mediapipe) 进行动作捕捉和人脸捕捉。  
+2. M4U 利用 [NVIDIA Maxine AR SDK](https://github.com/NVIDIA/MAXINE-AR-SDK) 进行高级人脸追踪和捕捉。  
+3. M4U 利用 [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech) 进行文本转语音（TTS）合成。  
+4. M4U 利用 [FunASR](https://github.com/alibaba-damo-academy/FunASR) 进行自动语音识别（ASR）。  
+5. M4U 利用 [whisper.cpp](https://github.com/ggerganov/whisper.cpp) 作为 ASR 解决方案。  
+6. M4U 利用 [Sherpa Onnx](https://github.com/k2-fsa/sherpa-onnx) 提升 ASR 能力。  
+7. M4U 利用 [F5-TTS-ONNX](https://github.com/DakeQQ/F5-TTS-ONNX) 进行 F5-TTS 模型的导出。  
+8. M4U 利用 [GStreamer](https://gstreamer.freedesktop.org/) 实现视频处理与实时流媒体解码。  
+9. M4U 利用 [PowerIK](https://poweranimated.github.io/) 的代码，实现逆向运动学（IK）和地面适配功能。  
+10. M4U 利用 [Kalidokit](https://github.com/yeemachine/kalidokit) 的概念，用于动作捕捉领域。  
+11. M4U 利用 [wongfei](https://github.com/wongfei) 的代码，增强 GStreamer 与 MediaPipe 的互操作性。  
+
+我们向这些项目的开发者和贡献者表示衷心的感谢，他们的创新与开源贡献极大地推动了 M4U 的发展。  
