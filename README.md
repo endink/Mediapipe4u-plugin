@@ -58,8 +58,9 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 > The update includes numerous features and complex testing, please be patient.   
 
 # Known Issues:    
-- Google's new holistic task API doesn't support GPUs, so Android uses CPU inference, and Windows, as always, CPU inference.
-- Sine Unreal Engine 5.4 , the `OpenCV` engine built-in plugin no longer contains precompiled libraries (.dll files), the first time of the UE Editor launched, because M4U dependent on the `OpenCV` plugin, the UE Editor will try to download the `OpenCV` source code over the internet and compile it, this process may take a long time, it feels like the UE loading is block at 75%, please be patient and wait it done, for Chinese users, you may also need a VPN networking for that, you can do this manually: [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166).
+- The new Google Holistic Task API does not support GPU inference. As a result, the Android platform relies on CPU inference, while Windows continues to use CPU inference as usual.  
+- Starting from Unreal Engine **5.4**, the built-in `OpenCV` plugin no longer includes precompiled libraries (DLL files). Upon the first launch of the UE Editor, since M4U depends on the `OpenCV` plugin, the editor will attempt to download the `OpenCV` source code online and compile it on your machine. This process may take a significant amount of time, potentially giving the impression that the engine is stuck at 75% during loading. Please be patient and check the logs in the *Saved* directory under the root folder to verify whether the process has completed. For users in China, you may need a VPN connection. Alternatively, you can follow the steps outlined in [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166) to manually resolve this issue.  
+
 
 
 ## Release Notes
