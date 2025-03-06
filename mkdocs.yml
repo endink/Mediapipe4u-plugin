@@ -1,0 +1,21 @@
+site_name: My Documentation
+theme:
+  name: material
+  language: zh  # 默认语言，可切换为多语言
+
+nav:
+  - Home: index.md
+
+# 开启搜索功能
+extra:
+  search:
+    language: 'zh'
+
+# 支持多语言
+plugins:
+  - search
+  - i18n:
+      default_language: zh
+      languages:
+        en: English
+        zh: 简体中文
