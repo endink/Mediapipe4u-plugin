@@ -28,6 +28,7 @@ exclude:
 plugins:
   - jekyll-default-layout
   - jemoji
+  - jekyll-multiple-languages-plugin
 
 nav_external_links:
   - title: Demo Project
