@@ -18,7 +18,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: pip install mkdocs-material && pip install mkdocs-static-i18nmaterial
 
       - name: Deploy to GitHub Pages
         run: mkdocs gh-deploy --force

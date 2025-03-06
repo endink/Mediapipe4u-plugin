@@ -3,6 +3,7 @@ theme:
   name: material
   language: zh  # 默认语言，可切换为多语言
 
+# https://www.mkdocs.org/user-guide/writing-your-docs/
 nav:
   - Home: index.md
 
@@ -11,11 +12,21 @@ extra:
   search:
     language: 'zh'
 
-# 支持多语言
+# https://ultrabug.github.io/mkdocs-static-i18n/setup/choosing-the-structure/
 plugins:
   - search
   - i18n:
+      docs_structure: suffix
       default_language: zh
       languages:
-        en: English
-        zh: 简体中文
+        - locale: zh
+          name: 简体中文
+          build: true
+          default: true
+          site_name: "MediaPipe4U 文档"
+          nav_translations:
+            Home: 首页
+        - locale: en
+          name: English
+          build: false
+          site_name: "MediaPipe4U Documents"
