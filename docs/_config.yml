@@ -3,20 +3,14 @@ description: UnrealEngine 插件，基于 Google MediaPipe 完成单目单目摄
 
 url: https://opensource.labijie.com
 repository: endink/mediaipe4u-plugin # for github-metadata
-remote_theme: just-the-docs/just-the-docs@v0.5.3
+remote_theme: just-the-docs/just-the-docs@v0.10.1
 # color_scheme: dark
 
+lang: "zh"
 # _config.yml
 languages:
   - en
   - zh
-
-# 在导航栏中加入切换链接
-navbar:
-  - label: "English"
-    url: "/en/"
-  - label: "简体中文"
-    url: "/zh/"
 
 
 exclude:
@@ -37,6 +31,12 @@ nav_external_links:
   - title: GitHub
     url: https://github.com/endink/Mediapipe4u-plugin/
     hide_icon: false # set to true to hide the external link icon - defaults to false
+
+aux_links:
+  Just the Docs on GitHub:
+    - https://opensource.labijie.com/Mediapipe4u-plugin/
+  Just the Docs on GitHub:
+    - https://opensource.labijie.com/Mediapipe4u-plugin/
 
 callouts:
   highlight:
