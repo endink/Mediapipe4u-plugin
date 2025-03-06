@@ -53,7 +53,7 @@
 - [new] :fire: 对齐 google mediapipe 到最新版本。
 - [new] :fire: 添加 Unreal Engine 5.5 支持。
 - [new]: 添加 C++ 接口，C++ 开发者可以实现自己的姿态推理算法来替换 google mediapipe 算法。
-- [new] :rainbow: 加入了 NvAR 姿态捕捉算法，可以在 mediapipe 算法和 Nvidia Maxine 算法之前切换。
+- [new] :rainbow: 加入了 NvAR 姿态捕捉算法，可以在 mediapipe 算法和 Nvidia Maxine 算法之间切换。
 
 > 更新内容较多，测试复杂，请耐心等待
 
