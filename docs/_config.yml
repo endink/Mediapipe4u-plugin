@@ -6,6 +6,19 @@ repository: endink/mediaipe4u-plugin # for github-metadata
 remote_theme: just-the-docs/just-the-docs@v0.5.3
 # color_scheme: dark
 
+# _config.yml
+languages:
+  - en
+  - zh
+
+# 在导航栏中加入切换链接
+navbar:
+  - label: "English"
+    url: "/en/"
+  - label: "简体中文"
+    url: "/zh/"
+
+
 exclude:
   - Makefile
   - CNAME
