@@ -25,7 +25,7 @@ extra:
 plugins:
   - search
   - i18n:
-      docs_structure: folder
+      docs_structure: stuffix
       default_language: zh
       reconfigure_material: true
       fallback_to_default: true
