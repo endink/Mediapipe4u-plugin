@@ -1,8 +1,5 @@
 ---
-layout: default
-nav_order: 1
 title: 环境要求
-parent: 安装和配置
 ---
 
 # 环境要求   
