@@ -8,8 +8,8 @@ theme:
 
 # https://www.mkdocs.org/user-guide/writing-your-docs/
 nav:
-  - Home: index.md
-  - Setup: install/index.md
+  - index.md
+  - install/index.md
 
 exclude_docs: |
   _config.yml   
