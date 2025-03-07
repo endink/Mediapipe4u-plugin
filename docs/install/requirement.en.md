@@ -3,8 +3,9 @@
 *Please read the following sections carefully to confirm whether your environment meets the **MediaPipe4U** requirements.*
 
 MediaPipe4U supports the following platforms:  
-1. Windows x64  
-2. Android arm64-v8a   
+
+- Windows x64  
+- Android arm64-v8a   
 
 !!! warning "Unsupported Platforms"
 
