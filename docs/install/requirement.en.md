@@ -53,8 +53,7 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but the
     | Windows SDK | 10.0.22621 or later |
     | MSVC | 14.38.33130 or later |
 
-    !!! danger "Note"    
-        MSVC 14.39.X and UnrealEngine 5.4.1 may have conflicts. It is recommended to use MSVC version 14.38.X.
+    > :bangbang: MSVC 14.39.X and UnrealEngine 5.4.1 may have conflicts. It is recommended to use MSVC version 14.38.X.
 
 === "Android"
 
