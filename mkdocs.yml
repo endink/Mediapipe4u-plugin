@@ -23,6 +23,8 @@ nav:
     - install/requirement.md
     - install/install.md
     - install/gstreamer.md
+  - FAQ: 
+    - faq/index.md
 
 exclude_docs: |
   _config.yml   
@@ -53,6 +55,7 @@ plugins:
           nav_translations: 
             Home: 首页
             Setup: 安装
+            FAQ: 常见问题
         - locale: en
           name: English
           build: true

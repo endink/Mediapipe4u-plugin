@@ -1,10 +1,3 @@
----
-layout: default
-nav_order: 50
-title: 常见问题
-has_children: false
----
-
 # 常见问题
 
 这里我总结了一些用户经常咨询的问题，如果你遇到问题，可以先在这里找到答案。   
