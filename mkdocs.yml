@@ -1,11 +1,20 @@
 site_name: MediaPipe4U Documentation
+site_url: https://opensource.labijie.com/Mediapipe4u-plugin
+edit_uri: blob/main/docs/
+repo_url: https://github.com/endink/Mediapipe4u-plugin
 theme:
   name: material
   language: zh
 
 # https://www.mkdocs.org/user-guide/writing-your-docs/
 nav:
-  - Home: index.md
+  - index.md
+
+exclude_docs: |
+  _config.yml   
+  debug.yml
+  gemfile
+  Dockerfile
 
 extra:
   search:
