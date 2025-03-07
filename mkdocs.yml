@@ -32,7 +32,7 @@ extra:
 # https://ultrabug.github.io/mkdocs-static-i18n/setup/choosing-the-structure/
 plugins:
   - search
-  - i18n:
+  - i18n: 
       docs_structure: suffix
       default_language: zh
       reconfigure_material: true
@@ -43,7 +43,7 @@ plugins:
           build: true
           default: true
           site_name: "MediaPipe4U 文档"
-          nav_translations:
+          nav_translations: 
             Home: 首页
             Setup: 安装
         - locale: en
@@ -58,7 +58,7 @@ markdown_extensions:
   - pymdownx.superfences
   - attr_list
   - md_in_html
-  - pymdownx.highlight:
+  - pymdownx.highlight: 
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
@@ -70,7 +70,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.emoji:
+  - pymdownx.emoji: 
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - def_list
