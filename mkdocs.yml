@@ -8,6 +8,7 @@ docs_dir: docs/
 theme:
   name: material
   features:
+    - header.autohide
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
