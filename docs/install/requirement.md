@@ -54,11 +54,9 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
     |Unreal Engine |5.1.x, 5.2.x, 5.4.x|
     |Visual Studio 2022 | 17.9.6 or later|
     |Windows SDK| 10.0.22621 or later|
-    |MSVC |14.38.33130 or later|
-
-    !!! danger "注意"    
+    |MSVC |14.38.33130 or later| 
         
-        MSVC 14.39.X 和 UnrealEngine 5.4.1 可能存在冲突，建议使用 14.38.X 版本的 MSVC.
+    > :bangbang: MSVC 14.39.X 和 UnrealEngine 5.4.1 可能存在冲突，建议使用 14.38.X 版本的 MSVC.
 
 === "Android"
 
