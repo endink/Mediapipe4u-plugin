@@ -3,8 +3,8 @@
 *请仔细阅读以下章节，确认你的环境是否满足 **MediaPipe4U** 要求。*
 
 MediaPipe4U 支持下列的平台：      
-- Windows x64 
-- Android arm64-v8a   
+1. Windows x64 
+2. Android arm64-v8a   
 
 !!! warning "不受支持的平台"
 
@@ -47,7 +47,7 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
     |Windows SDK| 10.0.22621 or later|
     |MSVC |14.38.33130 or later|
 
-    !!! note "如何检查环境？"
+    !!! note "如何检查环境？" inline end
 
         通常 Visual Studio 2022 17.9.6 或更新的版本中包含了必要的 MSVC 工具链      
            
@@ -68,8 +68,9 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
     | 5.1 | r25b (25.1.8937393)  | 26 or later |
     | 5.2 | r25b (25.1.8937393)  | 26 or later |
     | 5.4 | r25b (25.1.8937393)  | 26 or later |
+    | 5.5 | r25b (25.1.8937393)  | 26 or later |
 
-    !!! note "注意"
+    !!! note "注意" inline end
 
         - 仅支持 Android ARM 64 (arm64-v8a) 平台，不支持其他安卓设备（例如 Android x86 ）。    
         - Android 硬件需要满足 UE 开发要求, 具体信息请阅读 Unreal Engine Android 开发的文档。
