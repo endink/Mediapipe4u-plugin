@@ -16,7 +16,8 @@ theme:
 # https://www.mkdocs.org/user-guide/writing-your-docs/
 nav:
   - Home: index.md
-  - Setup: install/index.md
+  - Setup: 
+    - install/requirement
 
 exclude_docs: |
   _config.yml   
