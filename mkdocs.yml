@@ -19,7 +19,9 @@ theme:
 nav:
   - Home: index.md
   - Setup: 
-    - install/index.md
+    - install/requirement.md
+    - install/install.md
+    - install/gstreamer.md
 
 exclude_docs: |
   _config.yml   
@@ -38,6 +40,7 @@ plugins:
       docs_structure: suffix
       default_language: zh
       reconfigure_material: true
+      reconfigure_search: true
       fallback_to_default: true
       languages:
         - locale: zh
