@@ -23,6 +23,8 @@ nav:
     - install/requirement.md
     - install/install.md
     - install/gstreamer.md
+  - License: 
+    - licensing/index.md
   - FAQ: 
     - faq/index.md
 
@@ -56,6 +58,7 @@ plugins:
             Home: 首页
             Setup: 安装
             FAQ: 常见问题
+            License: 授权许可
         - locale: en
           name: English
           build: true
