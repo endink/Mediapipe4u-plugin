@@ -42,24 +42,23 @@ description: "MediaPipe4U Document Site"
   - 流媒体 (RTMP/SMTP)
   - 安卓设备（手机、平板） (M4U Remoting)
 - 大语言模型（LLM）
-  - 离线部署和推理
-  - CPU/GPU 推理 
-  - 多模型支持
-     - LLaMA/LLaMA2
-     - ChatGLM (开发中...)
+  - OLLama
 - 语音合成（TTS）
   - 离线合成
   - 实时合成
   - 3D 模型口型同步
   - 多模型支持
-    - PaddleSpeech: 中文、英文
-    - Bart: 13 种语言
+    - PaddleSpeech (ZH\EN)
+    - Kokoro (ZH\EN)
+    - Melo (ZH\EN)
+    - F5-TTS (ZH\EN\KO)
 - 语音识别（ASR）
   - 离线识别
   - 实时识别
   - 多模型支持
-    - FunASR: 中文 
-    - Whisper: 99 种语言
+    - FunASR: (ZH\EN)
+    - Whisper: （99 languages）
+    - FireReadASR: (ZH\EN)
 - 动画导出
   - BVH 数据导出 
 - 纯插件
