@@ -5,11 +5,18 @@ repo_url: https://github.com/endink/Mediapipe4u-plugin
 theme:
   name: material
   language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections-with-sections
+    - toc.integrate
+    - navigation.top
 
 # https://www.mkdocs.org/user-guide/writing-your-docs/
 nav:
-  - index.md
-  - install/index.md
+  - Home: index.md
+  - Setup: install/index.md
 
 exclude_docs: |
   _config.yml   
@@ -35,6 +42,9 @@ plugins:
           build: true
           default: true
           site_name: "MediaPipe4U 文档"
+          nav_translations:
+            Home: 首页
+            Setup: 安装
         - locale: en
           name: English
           build: true
