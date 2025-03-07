@@ -23,7 +23,6 @@ extra:
 
 # https://ultrabug.github.io/mkdocs-static-i18n/setup/choosing-the-structure/
 plugins:
-  - optimize
   - search
   - i18n:
       docs_structure: folder
