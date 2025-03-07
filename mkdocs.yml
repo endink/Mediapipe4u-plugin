@@ -27,7 +27,7 @@ plugins:
           site_name: "MediaPipe4U 文档"
         - locale: en
           name: English
-          build: false
+          build: true
           site_name: "MediaPipe4U Documents"
 
 #https://squidfunk.github.io/mkdocs-material/reference/admonitions/
