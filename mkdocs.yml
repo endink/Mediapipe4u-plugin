@@ -15,20 +15,20 @@ extra:
 plugins:
   - search
   - i18n:
-    docs_structure: folder
-    default_language: zh
-    reconfigure_material: true
-    fallback_to_default: true
-    languages:
-      - locale: zh
-        name: 简体中文
-        build: true
-        default: true
-        site_name: "MediaPipe4U 文档"
-      - locale: en
-        name: English
-        build: false
-        site_name: "MediaPipe4U Documents"
+      docs_structure: folder
+      default_language: zh
+      reconfigure_material: true
+      fallback_to_default: true
+      languages:
+        - locale: zh
+          name: 简体中文
+          build: true
+          default: true
+          site_name: "MediaPipe4U 文档"
+        - locale: en
+          name: English
+          build: false
+          site_name: "MediaPipe4U Documents"
 
 #https://squidfunk.github.io/mkdocs-material/reference/admonitions/
 markdown_extensions:
