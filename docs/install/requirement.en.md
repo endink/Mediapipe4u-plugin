@@ -38,7 +38,7 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but the
 
 === "Windows"
 
-    !!! note "How to Check the Environment?" inline end
+    !!! note inline end "How to Check the Environment?"
 
         Usually, Visual Studio 2022 17.9.6 or later includes the necessary MSVC toolchain.  
         For example, in VS 2022, you can check your MSVC version at the following location:  
@@ -58,7 +58,7 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but the
 
 === "Android"
 
-    !!! note "Note" inline end
+    !!! note inline end "Note"
         - Only Android ARM 64 (arm64-v8a) platforms are supported; other Android devices (e.g., Android x86) are not supported.  
         - Android hardware must meet UE development requirements. For more information, please refer to the Unreal Engine Android development documentation.
 
