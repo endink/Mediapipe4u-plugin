@@ -1,11 +1,4 @@
----
-layout: default
-title: 首页
-nav_order: 0
-description: "MediaPipe4U Document Site"
----
-
-# MediaPipe4U 简介
+## MediaPipe4U 简介
 
 **MediaPipe4U** 是一个 UnrealEngine 插件，将众多复杂技术融合到 Unreal Engine , 提供一站式的数字人开发解决方案。
 
@@ -19,7 +12,7 @@ description: "MediaPipe4U Document Site"
 
 
 
-# 功能
+## 功能
 
 - 动作捕捉
   - 身体运动捕捉
@@ -65,20 +58,18 @@ description: "MediaPipe4U Document Site"
   - 无需外部程序
   - Unreal Engine 中完成一切
 
-# 视频教程
+## 视频教程
 
-## 动作和表情捕捉（Metahuman）
-
-**Youtube (For English)**   
+### Youtube (For English)  
 
 [![MediaPipeU Metahuman Tutorials](https://res.cloudinary.com/marcomontalbano/image/upload/v1680609544/video_to_markdown/images/youtube--XLmKnG6UMzo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=XLmKnG6UMzo "MediaPipeU Metahuman Tutorials")
 
 
-**bilibili (中文)**   
+### bilibili (中文)   
 
 [bilibili](https://www.bilibili.com/video/BV1124y157hz/)
 
-# UnrealEngine 5.4 Demo 工程
+## UnrealEngine Demo 工程
 
 [https://gitlab.com/endink/MediaPipe4U-Demo](https://gitlab.com/endink/mediapipe4u-demo)
 
