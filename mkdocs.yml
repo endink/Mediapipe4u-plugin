@@ -15,7 +15,7 @@ extra:
 plugins:
   - search
   - i18n:
-    docs_structure: suffix
+    docs_structure: folder
     default_language: zh
     fallback_to_default: true
     languages:
