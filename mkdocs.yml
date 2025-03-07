@@ -30,15 +30,16 @@ exclude_docs: |
   Dockerfile
 
 extra:
-  search:
-    language: 'zh'
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ultrabug/mkdocs-static-i18n
+      name: mkdocs-static-i18n on Github
 
 # https://ultrabug.github.io/mkdocs-static-i18n/setup/choosing-the-structure/
 plugins:
   - search
   - i18n: 
       docs_structure: suffix
-      default_language: zh
       reconfigure_material: true
       reconfigure_search: true
       fallback_to_default: true
