@@ -2,9 +2,11 @@ site_name: MediaPipe4U Documentation
 site_url: https://opensource.labijie.com/Mediapipe4u-plugin
 edit_uri: blob/main/docs/
 repo_url: https://github.com/endink/Mediapipe4u-plugin
+
+docs_dir: docs/
+
 theme:
   name: material
-  language: zh
   features:
     - navigation.tabs
     - navigation.tabs.sticky
