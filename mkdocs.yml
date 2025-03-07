@@ -1,4 +1,4 @@
-site_name: My Documentation
+site_name: MediaPipe4U Documentation
 theme:
   name: material
   language: zh
@@ -17,6 +17,7 @@ plugins:
   - i18n:
     docs_structure: folder
     default_language: zh
+    reconfigure_material: true
     fallback_to_default: true
     languages:
       - locale: zh
