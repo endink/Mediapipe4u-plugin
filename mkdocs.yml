@@ -17,7 +17,7 @@ theme:
 nav:
   - Home: index.md
   - Setup: 
-    - install/requirement
+    - install/index.md
 
 exclude_docs: |
   _config.yml   
