@@ -38,6 +38,13 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but the
 
 === "Windows"
 
+    !!! note "How to Check the Environment?" inline end
+
+        Usually, Visual Studio 2022 17.9.6 or later includes the necessary MSVC toolchain.  
+        For example, in VS 2022, you can check your MSVC version at the following location:  
+        `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC`  
+        Only 64-bit Windows is supported; 32-bit Windows is not supported.
+
     | Software | Version |
     |--------|--------------|
     | Operating System | Windows10/11 x64 |
@@ -46,17 +53,14 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but the
     | Windows SDK | 10.0.22621 or later |
     | MSVC | 14.38.33130 or later |
 
-    !!! note "How to Check the Environment?" inline end
-
-        Usually, Visual Studio 2022 17.9.6 or later includes the necessary MSVC toolchain.  
-        For example, in VS 2022, you can check your MSVC version at the following location:  
-        `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC`  
-        Only 64-bit Windows is supported; 32-bit Windows is not supported.
-
     !!! danger "Note"    
         MSVC 14.39.X and UnrealEngine 5.4.1 may have conflicts. It is recommended to use MSVC version 14.38.X.
 
 === "Android"
+
+    !!! note "Note" inline end
+        - Only Android ARM 64 (arm64-v8a) platforms are supported; other Android devices (e.g., Android x86) are not supported.  
+        - Android hardware must meet UE development requirements. For more information, please refer to the Unreal Engine Android development documentation.
 
     | Unreal Engine | NDK Version | Android SDK Version |
     |--------|--------------|----------------------|
@@ -66,6 +70,3 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but the
     | 5.4 | r25b (25.1.8937393)  | 26 or later |
     | 5.5 | r25b (25.1.8937393)  | 26 or later |
 
-    !!! note "Note" inline end
-        - Only Android ARM 64 (arm64-v8a) platforms are supported; other Android devices (e.g., Android x86) are not supported.  
-        - Android hardware must meet UE development requirements. For more information, please refer to the Unreal Engine Android development documentation.
