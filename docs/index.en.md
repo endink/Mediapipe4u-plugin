@@ -6,46 +6,49 @@ hide:
 
 ## Introduction to MediaPipe4U  
 
-**MediaPipe4U** is an Unreal Engine plugin that integrates various complex technologies into Unreal Engine, providing a one-stop solution for digital human development.  
+MediaPipe4U is an Unreal Engine plugin that integrates multiple advanced technologies into Unreal Engine,  
+offering a one-stop solution for digital human development.  
 
 ???+ tip "What You Need to Know"  
-    Although you can obtain a free license file, **MediaPipe4U** is not free software.  
+    While you can obtain a free license file, MediaPipe4U is not free software.    
 
-    - I make no commitments to users utilizing free license files. This includes providing free license files, which may change in the future.  
-      The **MediaPipe4U** plugin includes a license file with a validity period. Typically, this license file will expire within 30 to 60 days (starting from the release date of a new version).  
+    - I make no commitments to users who use the free license file. This includes providing free license files,  
+      and this policy may change in the future.    
+      The MediaPipe4U plugin includes a license file with an expiration date. Typically, this license file  
+      expires 30 to 60 days after the release of a new version.  
 
-    - In other words, the license file must be updated periodically.  
-      For detailed information regarding licensing, please refer to [this section](./licensing/index.md).  
+    - In other words, you must update the license file periodically.    
+      For more details about licensing, please refer to [this section](./licensing/index.md).  
 
 ## Features  
 
-- **Motion Capture**  
-  - Body motion capture  
-  - Finger motion capture  
+- Motion capture  
+  - Full-body motion capture  
+  - Finger tracking  
   - Displacement tracking  
   - 3D model driving  
-  - Real-time driving  
-  - Support for standard cameras  
+  - Real-time motion driving  
+  - Supports standard webcams  
   - ControlRig support  
 
-- **Facial Expression Capture**  
-  - Facial expressions  
-  - ARKit Blendshape compatibility (52 expressions)  
+- Facial capture  
+  - Facial expression tracking  
+  - ARKit Blendshape compatibility (52 blendshapes)  
   - Live Link compatibility  
-  - Real-time driving  
-  - Support for standard cameras  
+  - Real-time facial motion driving  
+  - Supports standard webcams  
 
-- **Multiple Capture Sources**  
-  - Standard cameras  
+- Multiple capture sources  
+  - Standard webcams  
   - Video files  
   - Images  
-  - Streaming media (RTMP/SMTP)  
-  - Android devices (smartphones, tablets) via M4U Remoting  
+  - Streaming (RTMP/SMTP)  
+  - Android devices (phones, tablets) via M4U Remoting  
 
-- **Large Language Models (LLM)**  
+- Large language models (LLM)  
   - OLLama  
 
-- **Text-to-Speech (TTS)**  
+- Text-to-speech (TTS)  
   - Offline synthesis  
   - Real-time synthesis  
   - 3D model lip-syncing  
@@ -55,30 +58,30 @@ hide:
     - Melo (ZH/EN)  
     - F5-TTS (ZH/EN/KO)  
 
-- **Automatic Speech Recognition (ASR)**  
+- Automatic speech recognition (ASR)  
   - Offline recognition  
   - Real-time recognition  
   - Multi-model support  
-    - FunASR: (ZH/EN)  
-    - Whisper: (99 languages)  
-    - FireReadASR: (ZH/EN)  
+    - FunASR (ZH/EN)  
+    - Whisper (99 languages)  
+    - FireReadASR (ZH/EN)  
 
-- **Animation Export**  
+- Animation export  
   - BVH data export  
 
-- **Pure Plugin Implementation**  
-  - No external programs required  
-  - All processes completed within Unreal Engine  
+- Pure plugin  
+  - No external software required  
+  - All functionalities integrated within Unreal Engine  
 
 ## Video Tutorials  
 
-### YouTube (For English)  
+### YouTube (English)  
 
 [![MediaPipeU Metahuman Tutorials](https://res.cloudinary.com/marcomontalbano/image/upload/v1680609544/video_to_markdown/images/youtube--XLmKnG6UMzo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=XLmKnG6UMzo "MediaPipeU Metahuman Tutorials")  
 
 ### Bilibili (Chinese)  
 
-[bilibili](https://www.bilibili.com/video/BV1124y157hz/)  
+[Bilibili](https://www.bilibili.com/video/BV1124y157hz/)  
 
 ## Unreal Engine Demo Project  
 
