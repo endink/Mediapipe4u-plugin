@@ -1,17 +1,13 @@
----
-layout: default
-nav_order: 10
-title: 设备机器码
-parent: 授权许可
----
+# 硬件机器码
 
-# 设备机器码
+如果你购买 MediaPipe4U 的设备授权许可，需要提供硬件机器码[^1]。
 
-如果你购买 MediaPipe4U 的设备授权许可，需要提供设备机器码。
+[^1]: `硬件机器码`: 是指根据 PC 的硬件信息计算得出的，用以标识一台机器的唯一编码，任何硬件的改动（例如更换主板，更换硬盘等，更换 CPU 等操作）都会使得计算结果变化，所以如果你更换硬件，必须对新的硬件设备授权。
 
-{: .warning}
-> 通常你的开发 PC 和实际部署的 PC 可能不是同一个设备，你必须提供实际要部署的设备的机器码，这样我才能为你制作正确的许可证。       
-> 推荐使用[`Device ID Viewer`](#Device-ID-Viewer-获取机器码)获取实际要部署的设备的机器码。
+!!! warning "注意"
+
+    通常你的开发 PC 和实际部署的 PC 可能不是同一个设备，你必须提供实际要部署的设备的机器码，这样我才能为你制作正确的许可证。       
+    推荐使用[`Device ID Viewer`](#Device-ID-Viewer-获取机器码)获取实际要部署的设备的机器码。
 
 获取机器码有以下方式：
 - 在 UE 编辑器中获取机器码
@@ -40,10 +36,11 @@ Device ID Viewer 下载地址：
 [https://github.com/endink/Mediapipe4u-plugin/releases/download/device_id_viewer/DeviceId.exe](https://github.com/endink/Mediapipe4u-plugin/releases/download/device_id_viewer/DeviceId.exe)
 
 
-{: .warning}
-> 经用户反馈，部分杀毒软件会将**Device ID Viewer**误报为病毒。    
-> **Device ID Viewer**会访问 Windows 底层 API 读取硬件信息，但并不会进行任何写操作，也不需要联网，请放心使用。   
-> 你可以关闭杀毒软件后下载查看器程序，获得机器码后将程序删除，然后重新打开杀毒软件。
+!!! warning "特别说明"
+
+    经用户反馈，部分杀毒软件会将**Device ID Viewer**误报为病毒。    
+    **Device ID Viewer**会访问 Windows 底层 API 读取硬件信息，但并不会进行任何写操作，也不需要联网，请放心使用。   
+    你可以关闭杀毒软件后下载查看器程序，获得机器码后将程序删除，然后重新打开杀毒软件。
 
 [![Device Id](images/device.exe.jpg "Device Id")](images/device.exe.jpg)   
 
@@ -53,9 +50,10 @@ Device ID Viewer 下载地址：
 
 [![Device Id](images/device_id_in_log.jpg "Device Id")](images/device_id_in_log.jpg)   
 
-{: .important}
-> 当你要获取其他机器的机器码时，推荐使用[`Device ID Viewer`](#Device-ID-Viewer-获取机器码)读取其他设备的机器码。   
-> 你也可以打包一个程序，放在实际要部署的设备上，启动程序后，在 Saved 文件夹中找到日志文件，从日志文件中找到机器码。
+!!! tip "提示"
+
+    当你要获取其他机器的机器码时，推荐使用[`Device ID Viewer`](#Device-ID-Viewer-获取机器码)读取其他设备的机器码。   
+    你也可以打包一个程序，放在实际要部署的设备上，启动程序后，在 Saved 文件夹中找到日志文件，从日志文件中找到机器码。
 
 ## 在蓝图中获取机器码
 
@@ -63,5 +61,6 @@ Device ID Viewer 下载地址：
 
 [![Device Id](images/device_id_in_bp.jpg "Device Id")](images/device_id_in_bp.jpg)   
 
-{: .highlight}
-> C++ 用户可以通过 **UM4ULicenseBlueprintLibrary** 类访问到这两个蓝图函数。
+!!! tip "提示"
+
+    C++ 用户可以通过 **UM4ULicenseBlueprintLibrary** 类访问到这两个蓝图函数。

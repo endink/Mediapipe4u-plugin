@@ -25,6 +25,10 @@ nav:
     - install/gstreamer.md
   - License: 
     - licensing/index.md
+    - licensing/pay_license.md
+    - licensing/view_license.md
+    - licensing/update_license.md
+    - licensing/device_id.md
   - FAQ: 
     - faq/index.md
 
