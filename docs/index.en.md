@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 ## Introduction to MediaPipe4U  
 
 **MediaPipe4U** is an Unreal Engine plugin that integrates various complex technologies into Unreal Engine, providing a one-stop solution for digital human development.  

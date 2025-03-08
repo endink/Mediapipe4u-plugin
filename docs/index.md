@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 ## MediaPipe4U 简介
 
 **MediaPipe4U** 是一个 UnrealEngine 插件，将众多复杂技术融合到 Unreal Engine , 提供一站式的数字人开发解决方案。
