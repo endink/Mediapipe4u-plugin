@@ -23,6 +23,9 @@ nav:
     - install/requirement.md
     - install/install.md
     - install/gstreamer.md
+  - User Guide: 
+    - Motion&Facial Capture: 
+      - 
   - License: 
     - licensing/index.md
     - licensing/pay_license.md
@@ -67,6 +70,8 @@ plugins:
             Setup: 安装
             FAQ: 常见问题
             License: 授权许可
+            User Guide: 使用指南
+            Motion&Facial Capture: 动作&表情捕捉
         - locale: en
           name: English
           build: true

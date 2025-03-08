@@ -1,76 +1,75 @@
----
-layout: default
-nav_order: 20
-title: GStreamer 配置
-parent: 安装和配置
----
+# Install GStreamer
 
-# GStreamer 配置 
+:material-microsoft-windows:Windows Only  
 
-:fontawesome-brands-windows:Windows Only   
+If you require motion capture functionality from videos, you must use **MediaPipe4UGStreamer** along with **GStreamer**. Additionally, you need to configure GStreamer properly.  
+**MediaPipe4U** utilizes GStreamer to process video streams (for motion capture via video input).
 
-如果你需要从视频进行动补的功能，必须使用  **MediaPipe4UGStreamer** 和 **GStreamer**， 并且，你还需要配置 GStreamer。
-**MediaPipe4U** 使用 GStreamer 来处理视频流（通过视频进行动作捕捉），
+!!! note "Why GStreamer Is Required"
 
-!!! note "为什么使用 GStreamer?"
-
-    UnrealEngine 中的 MediaPlayer 对于一些 H264 编码的视频文件并不能很好的解码。因此，**MediaPipe4U** 使用
-    GStreamer 作为 MediaPlayer 的理想替代品。实际上，GStreamer 的功能非常强大，它支持各种视频文件、视频流（RTMP/FLV等等），WebRTC等等。
+    Unreal Engine’s built-in MediaPlayer may not reliably decode certain H.264-encoded video files. Therefore, **MediaPipe4U** adopts  
+    GStreamer as an ideal alternative to MediaPlayer. In fact, GStreamer is a powerful framework that supports various video formats,  
+    video streaming protocols (RTMP/FLV, etc.), WebRTC, and more.  
     
-    GStreamer 是一个流行的开源库，Nvidia 也用它来开发基于视频的 AI 框架，它绝对是一个可靠的视频处理方案。
+    GStreamer is a widely used open-source library, also leveraged by Nvidia for developing AI frameworks based on video processing.  
+    It is a highly reliable video processing solution.
 
+## Download GStreamer  
 
-## 下载 GStreamer   
+Download both the GStreamer runtime package and development package from the official website.  
 
-到 GStremer 官网下载 GStreamer 开发包和运行库   
+Visit the download page: [https://gstreamer.freedesktop.org/download/](https://gstreamer.freedesktop.org/download/)  
 
-打开下载页面： https://gstreamer.freedesktop.org/download/
+[![GStreamer download](images/gstremer_download.jpg "Download")](images/gstremer_download.jpg)  
 
-[![GStremer download](images/gstremer_download.jpg "download")](images/gstremer_download.jpg)
+!!! warning "Important Notice"
 
-!!! warning "注意"
+    You must download and install **both** the runtime installer and the development installer. Ensure that they are installed  
+    in the **same directory**.
 
-    你需要同时下载运行时(runtime installer) 和 开发包（development installer），安装时请将运行时和开发包安装到同一个目录。
+## Recommended Runtime Installer Setup  
 
+The default runtime installer setup only includes basic decoders and additional unnecessary components.  
+It is recommended to select the **Custom** installation and adjust the options as follows:  
 
-## Runtime installer 安装建议
+### 1. Install the **libav** Plugin Set  
 
-使用默认的运行时安装（Runtime installer）步骤安装之后, GStreamer 只包含基础的解码器，而且包含了多余的组件。因此，建议你选择 Custom 安装做出必要的调整：   
+!!! tip "Tip"
 
-1. 安装 **libav** 插件集   
+    By default, the installation includes only the official GStreamer video decoders. While these are sufficient for decoding  
+    most video files, they may cause issues when handling network video streams.  
+    It is recommended to install the **Libav** library package, which provides more powerful decoders,  
+    supporting most common video formats.
 
-!!! note "推荐安装"
+[![GStreamer Custom Setup](./images/gstreamer_custom_libav_select.jpg "GStreamer Custom Setup")](images/gstreamer_custom_libav_select.jpg)  
 
-    默认只包含了GStramer 官方的视频解码器，这对于解码视频文件已经够用，但是当解码一些网络视频流时会遇到问题，建议安装 Libav 库包装，它会包含一些功能强大的解码器，
-    基本可以解码市面上常见的视频格式。
+### 2. Exclude Unnecessary QT Components  
 
-[![GStremer Custom Setup](./images/gstreamer_custom_libav_select.jpg "GStremer Custom Setup")](images/gstreamer_custom_libav_select.jpg)
+[![GStreamer Custom Setup](./images/gstreamer_custom_qt_exclude.jpg "GStreamer Custom Setup")](images/gstreamer_custom_qt_exclude.jpg)  
 
-2. 排除 QT 相关组件   
+!!! tip "About QT"
 
-[![GStremer Custom Setup](./images/gstreamer_custom_qt_exclude.jpg "GStremer Custom Setup")](images/gstreamer_custom_qt_exclude.jpg)
+    QT is a powerful UI development framework. GStreamer includes support for QT-based development,  
+    but it is **unnecessary** for **MediaPipe4U**.  
+    Excluding these components helps **reduce package size**.
 
-!!! note "关于 QT"
+## Verify GStreamer Environment Variables  
 
-    QT 是一个功能强大的 UI 开发框架，GStreamer 支持 QT 环境下开发。这对于 MediaPipe4U 来说，它是多余的，我们并不需要它，排除这些库可以减小你的打包尺寸。
+If you installed GStreamer using the official installer, the environment variables will be set automatically.  
+However, if you installed GStreamer manually using binary files, you must configure the environment variables manually.  
 
+The **MediaPipe4U** GStreamer plugin checks for the following environment variables to locate the GStreamer libraries:  
 
+- `GSTREAMER_1_0_ROOT_MSVC_X86_64`
+- `GSTREAMER_ROOT`
 
-## 检查 GStreamer 环境变量
+> At least **one** of these environment variables must be set.  
+> The official GStreamer installer will automatically configure `GSTREAMER_1_0_ROOT_MSVC_X86_64`.
 
-如果你使用的安装包，那么会自动配置环境变量，如果你使用二进制（binraries）方式安装，请自行配置环境变量。
+Ensure that at least one of these variables is set, pointing to `<GStreamer Installation Directory>\1.0\msvc_x86_64\`, as shown below:  
 
-**MediaPipe4U** 提供的 **GStreamer** 插件会检查以下环境变量来链接 GStremer 库。
+> *The image is for reference only. You only need to configure one of the variables.*  
 
-- GSTREAMER_1_0_ROOT_MSVC_X86_64
-- GSTREAMER_ROOT
+[![GStreamer Env](images/gstremer_env.jpg "Environment Variable Configuration")](images/gstremer_env.jpg)  
 
-请确保上述环境变量至少存在一个，并且值为 GStremer安装目录\1.0\msvc_x86_64\ , 如下图
-
-> *图片仅为了说明，你只需要配置其中一个环境变量即可*   
-
-[![GStremer Env](images/gstremer_env.jpg "Shiprock")](images/gstremer_env.jpg)
-
-
-
-只要以上配置正确 **MediaPipe4UGStreamer** 和 **GStreamer** 插件 就会正常工作了。
+Once correctly configured, **MediaPipe4UGStreamer** and the **GStreamer plugin** will function as expected.
