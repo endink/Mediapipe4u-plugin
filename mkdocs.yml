@@ -15,6 +15,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.path #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections-with-sections
     - navigation.top
+    - navigation.expand
 
 # https://www.mkdocs.org/user-guide/writing-your-docs/
 nav:
