@@ -7,13 +7,13 @@ docs_dir: docs/
 
 theme:
   name: material
+  palette:
+    primary: teal
   features:
     - header.autohide
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.sections
     - navigation.path #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections-with-sections
-    - toc.integrate
     - navigation.top
 
 # https://www.mkdocs.org/user-guide/writing-your-docs/
@@ -38,6 +38,9 @@ exclude_docs: |
   gemfile
   Dockerfile
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -46,6 +49,7 @@ extra:
 
 # https://ultrabug.github.io/mkdocs-static-i18n/setup/choosing-the-structure/
 plugins:
+  - tags
   - search
   - i18n: 
       docs_structure: suffix

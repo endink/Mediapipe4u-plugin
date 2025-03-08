@@ -9,7 +9,8 @@ If you purchase a device license for MediaPipe4U, you will need to provide the h
     Typically, your development PC and the actual deployment PC might not be the same device. You must provide the machine ID of the actual deployment device so that I can generate the correct license for you.  
     It is recommended to use the [`Device ID Viewer`](#Device-ID-Viewer-获取机器码) to obtain the machine ID of the actual deployment device.
 
-You can obtain the machine ID using the following methods:
+You can obtain the machine ID using the following methods:   
+
 - Retrieve the machine ID in UE Editor
 - Use the Device ID Viewer (Machine ID Viewer) to obtain the machine ID
 - Retrieve the machine ID from the logs

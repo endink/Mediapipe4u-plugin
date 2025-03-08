@@ -1,4 +1,4 @@
-# Installing the Plugin
+# Setup MediaPipe4U
 
 ## Plugin Contents
 
