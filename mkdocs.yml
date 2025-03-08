@@ -72,6 +72,7 @@ plugins:
 markdown_extensions:
   - toc: 
       permalink: true
+  - footnotes
   - admonition
   - pymdownx.details
   - pymdownx.superfences
