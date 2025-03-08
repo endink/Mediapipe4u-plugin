@@ -70,12 +70,14 @@ plugins:
 
 #https://squidfunk.github.io/mkdocs-material/reference/admonitions/
 markdown_extensions:
+  - toc: 
+      permalink: true
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
   - md_in_html
-  - pymdownx.highlight: 
+  - pymdownx.highlight:  #code block
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
@@ -84,7 +86,7 @@ markdown_extensions:
   - tables
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.critic
+  - pymdownx.critic #formatting
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
@@ -95,3 +97,4 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  
