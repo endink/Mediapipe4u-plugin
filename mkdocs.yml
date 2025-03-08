@@ -26,7 +26,9 @@ nav:
   - User Guide: 
     - Motion&Facial Capture: 
       - Quick Start:
-        - mpcap/quick_start/start_mocap.md
+        - mopcap/quick_start/prepare_components.md
+        - mopcap/quick_start/prepare_character.md
+        - mopcap/quick_start/custom_skeleton.md
   - License: 
     - licensing/index.md
     - licensing/pay_license.md

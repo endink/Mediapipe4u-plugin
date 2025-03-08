@@ -1,11 +1,5 @@
----
-layout: default
-nav_order: 10
-title: 准备运行时组件
-parent: 快速入门
-grand_parent: 动作和表情
----
-# 准备 MediaPipe 运行时组件（Component）
+
+# 准备运行时组件
 
 **MediaPipe4U** 运行时需要一些组件，下面分别介绍： 
 
@@ -25,7 +19,7 @@ grand_parent: 动作和表情
 
 ## StaticImageSouceComponent
 
-静态图片图像源，该组件通过输入单张的图片到 MediaPipe 完成算解过程。
+静态图片图像源，该组件通过输入单张的图片到 MediaPipe 完成算解过程。   
 > 注意，单张图片会自动启用 mediapipe static 模式，算解过程将得到优化，所以请勿自己实现单张图片的动补，使用该组件即可
 
 ## GStreamerImageSourceComponent    
@@ -59,6 +53,7 @@ https://google.github.io/mediapipe/solutions/holistic.html
 
 至此，你已经完成了所有运行 **MediaPipe4U** 动作捕捉的准备工作！！！ 
 
-{: .important}
-这是一个快速上手的初级教程，并不包含表情捕捉部分功能。   
-如果你还需要从图像源种进行表情捕捉(Facial Expression Capture)，请阅读][表情捕捉文档](../features/face_link_actor.md)
+!!! note "提示"
+
+    这是一个快速上手的初级教程，并不包含表情捕捉部分功能。   
+    如果你还需要从图像源种进行表情捕捉(Facial Expression Capture)，请阅读][表情捕捉文档](../features/face_link_actor.md)

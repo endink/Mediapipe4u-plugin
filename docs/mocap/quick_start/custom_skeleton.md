@@ -1,10 +1,3 @@
----
-layout: default
-nav_order: 15
-title: 自定义骨骼
-parent: 快速入门
-grand_parent: 动作和表情
----
 # 自定义骨骼
 
 **MediaPipe4U** 提供的了三种骨骼预设，这些骨骼无需手动映射即可开始动补：   
