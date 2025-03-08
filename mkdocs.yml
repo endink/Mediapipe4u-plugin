@@ -25,7 +25,8 @@ nav:
     - install/gstreamer.md
   - User Guide: 
     - Motion&Facial Capture: 
-      - 
+      - Quick Start:
+        - mpcap/quick_start/start_mocap.md
   - License: 
     - licensing/index.md
     - licensing/pay_license.md
@@ -72,6 +73,7 @@ plugins:
             License: 授权许可
             User Guide: 使用指南
             Motion&Facial Capture: 动作&表情捕捉
+            Quick Start: 快速入门
         - locale: en
           name: English
           build: true
