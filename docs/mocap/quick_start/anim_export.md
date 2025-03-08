@@ -1,15 +1,8 @@
----
-layout: default
-nav_order: 60
-title: 动补数据导出
-parent: 快速入门
-grand_parent: 动作和表情
----
 
 # 动补数据导出 
 
 
-## 导出 BVH （since v20221209）
+## 导出 BVH 
 
 动补数据导出通过 **MediaPipe4U** 的扩展插件 **MediaPipe4UBVH** 实现，该插件支持在 MediaPipe 运行期间捕获骨骼动画，并保存为 bvh 文件。   
 动补数据导出功能依赖 MediapPipeAnimInstance ，它和 **MediapPipeAnimInstance** 紧密集成，不可单独使用。
