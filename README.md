@@ -47,7 +47,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 - [new] :rainbow: **Ollama Support**: Integrated with [Ollama](https://ollama.com/) for large language model (LLM) inference, enabling support for various LLMs such as DeepSeek, LLaMA, Phi, Qwen, QWQ, and more.  
 - [new] :rainbow: **Conversation Component `LLMSpeechChatRuntime`**: Integrates LLM, TTS, and ASR, making it easy to implement chatbot functionality in Blueprints.  
 - [new] :rainbow: **New TTS Support**: Added support for [Kokoro](https://github.com/hexgrad/kokoro) and [Melo](https://github.com/myshell-ai/MeloTTS).  
-- [new] :rainbow: **New ASR Support**: Added support for [FunASR](https://github.com/modelscope/FunASR) with hotword recognition and [FireRedASR](https://github.com/FireRedTeam/FireRedASR) (an ASR model open-sourced by Xiaohongshu), [MoonShine](https://github.com/usefulsensors/moonshine)(English).  
+- [new] :rainbow: **New ASR Support**: Added support for [FunASR](https://github.com/modelscope/FunASR)(with hotword), [FireRedASR](https://github.com/FireRedTeam/FireRedASR) (an ASR model open-sourced by Xiaohongshu), [MoonShine](https://github.com/usefulsensors/moonshine)(English).  
 - [new] :rainbow: **Transformer-based TTS Model**: Added support for [F5-TTS](https://github.com/SWivid/F5-TTS), featuring voice cloning capabilities (runs on DirectML, compatible with AMD/Nvidia GPUs).  
 - [new] :rainbow: **Voice Wake-up**: Introduced lightweight voice wake-up inference, supporting custom wake words for ASR activation, as well as independent voice command wake words.  
 - [new] :fire: Updated Google MediaPipe to the latest version.  

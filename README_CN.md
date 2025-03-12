@@ -47,7 +47,7 @@
 - [new] :rainbow: Ollama 支持：接入 [Ollama](https://ollama.com/) 进行大语言模型推理，从而支持了众多 LLM 模型，例如：DeepSeek、LLaMA，Phi, Qwen, QWQ 等。
 - [new] :rainbow: 对话组件 `LLMSpeechChatRuntime`：整合 LLM 、TTS、ASR，可以在蓝图中非常容易实现对话机器人。
 - [new] :rainbow: 添加了新的 TTS 支持：[Kokoro](https://github.com/hexgrad/kokoro), [Melo](https://github.com/myshell-ai/MeloTTS)。 
-- [new] :rainbow: 添加了新的 ASR 支持：[FunASR](https://github.com/modelscope/FunASR) 热词版，[FireRedASR](https://github.com/FireRedTeam/FireRedASR) (小红书开源的 ASR 模型) ,[MoonShine](https://github.com/usefulsensors/moonshine) (English)
+- [new] :rainbow: 添加了新的 ASR 支持：[FunASR](https://github.com/modelscope/FunASR)(热词版)，[FireRedASR](https://github.com/FireRedTeam/FireRedASR) (小红书开源的 ASR 模型) ,[MoonShine](https://github.com/usefulsensors/moonshine) (English)
 - [new] :rainbow: 添加了一个 Transformer 架构 TTS 模型：[F5-TTS](https://github.com/SWivid/F5-TTS)，具备语音克隆能力 （使用 DirectML 推理，AMD/Nvidia GPU 均可）
 - [new] :rainbow: 语音唤醒：使用小模型推理的语音唤醒，支持使用自定义语音唤醒词唤醒 ASR， 也支持独立的语音指令唤醒词功能。
 - [new] :fire: 对齐 google mediapipe 到最新版本。
