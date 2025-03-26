@@ -25,7 +25,7 @@ MediaPipe4U 支持下列的平台：
 
 ## 跨平台支持
 
-MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支持上有差异，Windows 平台支持全功能，Android 仅支持动作和表情捕捉。
+MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支持上有差异，Windows 平台支持全功能，Android 仅支持动作和表情捕捉。   
 
 | 插件 (模块) | Windows | Android | Linux |
 |---| --- | --- | ---- |
@@ -65,6 +65,12 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
 
         - 仅支持 Android ARM 64 (arm64-v8a) 平台，不支持其他安卓设备（例如 Android x86 ）。    
         - Android 硬件需要满足 UE 开发要求, 具体信息请阅读 Unreal Engine Android 开发的文档。
+   
+    Build-tools: 34.0      
+
+    JDK: 17.0.9   
+
+    [ADGE](https://developer.android.com/games/agde): v24.1.99 ('ADGE' 仅当你需要调试 Android C++ 代码时需要)   
 
     |Unreal Engine| NDK Version | Android SDK Version |
     |--------|--------------|----------------------|

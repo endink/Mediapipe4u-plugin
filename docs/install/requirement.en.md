@@ -60,11 +60,17 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but the
 
     !!! note inline end "Note"
         - Only Android ARM 64 (arm64-v8a) platforms are supported; other Android devices (e.g., Android x86) are not supported.  
-        - Android hardware must meet UE development requirements. For more information, please refer to the Unreal Engine Android development documentation.
+        - Android hardware must meet UE development requirements. For more information, please refer to the Unreal Engine Android development documentation.   
+  
+    Build-tools: 34.0      
+
+    JDK: 17.0.9   
+
+    [ADGE](https://developer.android.com/games/agde): v24.1.99 ('ADGE' is only required if you want to debug Android C++)   
+
 
     | Unreal Engine | NDK Version | Android SDK Version |
     |--------|--------------|----------------------|
-    | 5.0 | r21e (21.4.7075529)  | 26 or later |
     | 5.1 | r25b (25.1.8937393)  | 26 or later |
     | 5.2 | r25b (25.1.8937393)  | 26 or later |
     | 5.4 | r25b (25.1.8937393)  | 26 or later |

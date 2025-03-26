@@ -23,55 +23,56 @@ offering a one-stop solution for digital human development.
 ## Features  
 
 - Motion capture  
-  - Full-body motion capture  
-  - Finger tracking  
-  - Displacement tracking  
-  - 3D model driving  
-  - Real-time motion driving  
-  - Supports standard webcams  
-  - ControlRig support  
+    - Full-body motion capture  
+    - Finger tracking  
+    - Displacement tracking  
+    - 3D model driving  
+    - Real-time motion driving  
+    - Supports standard webcams  
+    - ControlRig support  
 
 - Facial capture  
-  - Facial expression tracking  
-  - ARKit Blendshape compatibility (52 blendshapes)  
-  - Live Link compatibility  
-  - Real-time facial motion driving  
-  - Supports standard webcams  
+    - Facial expression tracking  
+    - ARKit Blendshape compatibility (52 blendshapes)  
+    - Live Link compatibility  
+    - Real-time facial motion driving  
+    - Supports standard webcams  
 
 - Multiple capture sources  
-  - Standard webcams  
-  - Video files  
-  - Images  
-  - Streaming (RTMP/SMTP)  
-  - Android devices (phones, tablets) via M4U Remoting  
+    - Standard webcams  
+    - Video files  
+    - Images  
+    - Streaming (RTMP/SMTP)  
+    - Android devices (phones, tablets) via M4U Remoting  
 
 - Large language models (LLM)  
-  - OLLama  
+    - OLLama  
 
 - Text-to-speech (TTS)  
-  - Offline synthesis  
-  - Real-time synthesis  
-  - 3D model lip-syncing  
-  - Multi-model support  
-    - PaddleSpeech (ZH/EN)  
-    - Kokoro (ZH/EN)  
-    - Melo (ZH/EN)  
-    - F5-TTS (ZH/EN/KO)  
+    - Offline synthesis  
+    - Real-time synthesis  
+    - 3D model lip-syncing  
+    - Multi-model support  
+        - PaddleSpeech (ZH/EN)  
+        - Kokoro (ZH/EN)  
+        - Melo (ZH/EN)  
+        - F5-TTS (ZH/EN/KO)  
 
 - Automatic speech recognition (ASR)  
-  - Offline recognition  
-  - Real-time recognition  
-  - Multi-model support  
-    - FunASR (ZH/EN)  
-    - Whisper (99 languages)  
-    - FireReadASR (ZH/EN)  
-
+    - Offline recognition  
+    - Real-time recognition  
+    - Multi-model support  
+        - FunASR (ZH/EN)  
+        - Whisper (99 languages)  
+        - FireReadASR (ZH/EN)  
+        - SenseVoice (ZH、EN、JA、KO、YUE)
+      
 - Animation export  
-  - BVH data export  
+    - BVH data export  
 
 - Pure plugin  
-  - No external software required  
-  - All functionalities integrated within Unreal Engine  
+    - No external software required  
+    - All functionalities integrated within Unreal Engine  
 
 ## Video Tutorials  
 
