@@ -28,7 +28,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 | <a href="#download">Download</a>
 | <a href="https://gitlab.com/endink/MediaPipe4U-Demo" target="_blank">Demo Project</a>
 | <a href="https://github.com/endink/M4URemoting-Android">M4U Remoting Android App (Open Source)</a>
-| <a href="https://huggingface.co/endink/M4U-Speech-Models">Speech Model Packages</a>
+| <a href="https://huggingface.co/endink/M4U-Speech-Models/tree/main">Speech Model Packages</a>
 </p>
 <p align="center">
 <a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/pay_license.html">Free Edtion vs Commercial Edition</a>
@@ -65,7 +65,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 - [break change] :collision:⚠️⚠️⚠️ Motion capture features have been moved to a new plugin: `MediaPipe4UMotion`. This may cause your existing blueprint to break. Please update your blueprint after upgrading.
 - [break change] :collision:⚠️⚠️⚠️ Due to changes in the license format, old licenses are no longer valid. You can now obtain a free license from [here](https://github.com/endink/Mediapipe4u-plugin/releases/tag/license-auto-release).
 
-Speech Model download move to [huggingface](https://huggingface.co/endink/M4U-Speech-Models).   
+Speech Model download move to [huggingface](https://huggingface.co/endink/M4U-Speech-Models/tree/main).   
 
 > Currently, only the Unreal Engine 5.5 version is available; Other versions will be packaged and released later, sorry for that.
 
