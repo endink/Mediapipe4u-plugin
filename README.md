@@ -62,7 +62,8 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 - [improve] :footprints: Demo project now includes LLM integration example.
 - [improve] :footprints: Demo project now includes voice chatbot example.
 - [improve] :footprints: Demo project now supports packaging.
-- [break change] :collision: Motion capture features have been moved to a new plugin: `MediaPipe4UMotion`. This may cause your existing blueprint to break. Please update your blueprint after upgrading.
+- [break change] :collision:⚠️⚠️⚠️ Motion capture features have been moved to a new plugin: `MediaPipe4UMotion`. This may cause your existing blueprint to break. Please update your blueprint after upgrading.
+- [break change] :collision:⚠️⚠️⚠️ Due to changes in the license file format, old licenses are no longer valid. You can now obtain a free license from [here](https://github.com/endink/Mediapipe4u-plugin/releases/tag/license-auto-release).
 
 > Currently, only the Unreal Engine 5.5 version is available; Other versions will be packaged and released later, sorry for that.
 

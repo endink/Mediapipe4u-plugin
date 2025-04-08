@@ -26,11 +26,13 @@ Current
 - [new] :rainbow: 开源了 [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (用于 MediaPipe4U 的 Android 面部程序). 
 - [new] :dizzy: 支持图像源启动（C++），支持完全替代 `google mediapipe` 算法之间切换
 - [new] 新增 [Android Demo 工程](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
-- [improve]：Demo 工程升级到 UE5.5， 新增 `Fake Demo`，一个读取本地文件代替 mediapipe 的 C++ 扩展示例。
-- [improve]：Demo 工程加入语音唤醒部分示例，发音人选择示例
-- [improve]：Demo 工程加入 LLM 示例
-- [improve]：Demo 工程加入语音对话机器人示例
-- [improve]: Demo 工程现在支持了打包
+- [improve]:footprints: Demo 工程升级到 UE5.5， 新增 `Fake Demo`，一个读取本地文件代替 mediapipe 的 C++ 扩展示例。
+- [improve]:footprints: Demo 工程加入语音唤醒部分示例，发音人选择示例
+- [improve]:footprints: Demo 工程加入 LLM 示例
+- [improve]:footprints: Demo 工程加入语音对话机器人示例
+- [improve]:footprints: Demo 工程现在支持了打包
+- [break change] :collision: 动作捕捉部分被拆分到一个独立的 `MediaPipe4UMotion` 插件，这可能导致原有的蓝图失效，升级后你需要调整现有蓝图。
+- [break change] :collision: 由于许可证文件格式变化，原有的许可证将不再可用，今后你可以从[这里](https://github.com/endink/Mediapipe4u-plugin/releases/tag/license-auto-release) 获得免费许可证。
 
 ### 2024-05-24      
 - [new] :rainbow: 在编辑器中使用 MediaPipe4U 不再需要授权（即使授权文件过期，依然可以在编辑器中使用）。

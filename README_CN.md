@@ -63,6 +63,7 @@
 - [improve]:footprints: Demo 工程加入语音对话机器人示例
 - [improve]:footprints: Demo 工程现在支持了打包
 - [break change] :collision: 动作捕捉部分被拆分到一个独立的 `MediaPipe4UMotion` 插件，这可能导致原有的蓝图失效，升级后你需要调整现有蓝图。
+- [break change] :collision: 由于许可证文件格式变化，原有的许可证将不再可用，今后你可以从[这里](https://github.com/endink/Mediapipe4u-plugin/releases/tag/license-auto-release) 获得免费许可证。
 
 > 暂时只有 Unreal Engine 5.5 版本，其随后陆续打包并发布 ...
 
