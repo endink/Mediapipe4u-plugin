@@ -171,7 +171,7 @@ Now, M4U support Android and Windows (Linux is coming soom)
 
 The license file will be published in the [discussion](https://github.com/endink/Mediapipe4u-plugin/discussions/82), and the plugin package file will automatically include an license file.   
 
-# M4U Remoting App
+# M4U Remoting App （Android）
 
 [Got Source Code](https://github.com/endink/M4URemoting-Android)
 

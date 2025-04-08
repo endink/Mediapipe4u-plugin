@@ -167,9 +167,9 @@
 
 授权文件会不定期的在[讨论区](https://github.com/endink/Mediapipe4u-plugin/discussions/82) 中发布, 新版本的插件包中也会自动包含授权文件。   
 
-# M4U Remoting App
+# M4U Remoting App（Android）
 
-[Got Source Code](https://github.com/endink/M4URemoting-Android)
+[获取源码](https://github.com/endink/M4URemoting-Android)
 
 > **About M4U Remoting**   
 >    
