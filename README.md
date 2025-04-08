@@ -55,8 +55,8 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 - [new] :rainbow: Integrated NvAR pose tracking, allowing switching between MediaPipe and Nvidia Maxine algorithms.
 - [new] :rainbow: Open-sourced [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (Android facial module for MediaPipe4U).
 - [new] :dizzy: `Custom mediapipe connector`(C++): Enabling complete replace  `google mediapipe` with you want (#195, #204).
-- [new]: Added `Custom mediapipe feature`(C++): Enabling partial replace  `google mediapipe` with you want (#195, #204).
-- [new] :dizzy: Add a new [Android Demo project](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
+- [new] :dizzy: Added `Custom mediapipe feature`(C++): Enabling partial replace  `google mediapipe` with you want (#195, #204).
+- [new] :rainbow: Add a new [Android Demo project](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
 - [improve] :footprints: Demo project upgraded to UE5.5, added `Fake Demo`, a C++ extension example that reads local files instead of using MediaPipe.
 - [improve] :footprints: Demo project now includes voice wake-up examples and speaker selection demo.
 - [improve] :footprints: Demo project now includes LLM integration example.
