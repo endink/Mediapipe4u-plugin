@@ -169,17 +169,12 @@
 
 # M4U Remoting App
 
-| Android 版本 | 下载连接 | 更新时间 |
-|---| --- | --- |
-| Android 7.0 or later | [Download](https://github.com/endink/Mediapipe4u-plugin/releases/download/M4URemoting_20230421/M4URemoting_20230421.apk) | 2023-04-21 |
+[Got Source Code](https://github.com/endink/M4URemoting-Android)
 
-
-> **关于 M4U Remoting**   
+> **About M4U Remoting**   
 >    
-> <mark>Note</mark>    
-> 这是一个付费授权许包含的功能: 可以从安卓设备中捕捉表情。     
-> 免费授权许可用户也可以在编辑器中体验它, 但是它不能被打包，请悉知。   
-> [M4U Remoting 文档](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)
+> 这是一个安卓端的程序（开源），它能够向 MediaPipe4U Windows 端程序发送表情数据。       
+> 通过它，你能够使用 Android 移动设备完成表情捕捉，并在 Unreal Engine 的角色上呈现表情。
 
 # Demo 工程
 

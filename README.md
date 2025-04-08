@@ -173,17 +173,12 @@ The license file will be published in the [discussion](https://github.com/endink
 
 # M4U Remoting App
 
-| Android Version | Download Link | Update |
-|---| --- | --- |
-| Android 7.0 or later | [Download](https://github.com/endink/Mediapipe4u-plugin/releases/download/M4URemoting_20230421/M4URemoting_20230421.apk) | 2023-04-21 |
-
+[Got Source Code](https://github.com/endink/M4URemoting-Android)
 
 > **About M4U Remoting**   
 >    
-> <mark>Note</mark>    
-> This is a commercial license exclusive feature: capturing facial expressions from android device.   
-> Free license only supports using in UE Editor, cannot be packaged this feature.   
-> [M4U Remoting Document](https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html)
+> This is an open-source Android application that can send facial expression data to the MediaPipe4U program on Windows.     
+> With it, you can perform facial expression capture using an Android mobile device and visualize it on an avatar in Unreal Engine.
   
 # Demo Project
 Please clone this repository to get demo project:   
