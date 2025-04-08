@@ -41,21 +41,31 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
-### Coming Soon (Expected Release Within March) ...  
+### 20250408
 
-- [new] :rainbow: The free version can now package all features, including voice and facial expression capture.  
-- [new] :rainbow: **Ollama Support**: Integrated with [Ollama](https://ollama.com/) for large language model (LLM) inference, enabling support for various LLMs such as DeepSeek, LLaMA, Phi, Qwen, QWQ, and more.  
-- [new] :rainbow: **Conversation Component `LLMSpeechChatRuntime`**: Integrates LLM, TTS, and ASR, making it easy to implement chatbot functionality in Blueprints.  
-- [new] :rainbow: **New TTS Support**: Added support for [Kokoro](https://github.com/hexgrad/kokoro) and [Melo](https://github.com/myshell-ai/MeloTTS).  
-- [new] :rainbow: **New ASR Support**: Added support for [FunASR](https://github.com/modelscope/FunASR)(zh/en with hotword), [FireRedASR](https://github.com/FireRedTeam/FireRedASR) (zh/en), [MoonShine](https://github.com/usefulsensors/moonshine) (en), [SenseVoice](https://github.com/usefulsensors/moonshine) (multilingual: zh/en/ja/ko/yue).  
-- [new] :rainbow: **Transformer-based TTS Model**: Added support for [F5-TTS](https://github.com/SWivid/F5-TTS), voice clone (zero-shot voice generation) ability (runs on DirectML, compatible with AMD/Nvidia GPUs).  
-- [new] :rainbow: **Voice Wake-up**: Introduced lightweight voice wake-up inference, supporting custom wake words for ASR activation, as well as independent voice command wake words.  
-- [new] :fire: Updated Google MediaPipe to the latest version.  
-- [new] :fire: Added support for **Unreal Engine 5.5**.  
-- [new] Added **C++ Interface**, allowing C++ developers to implement their own pose estimation algorithms to replace Google MediaPipe.  
-- [new] :rainbow: Integrated **NvAR Pose Tracking**, enabling switching between MediaPipe and Nvidia Maxine algorithms.  
+- [new] :rainbow: The free version now supports packaging all features, including voice and facial expression capture.
+- [new] :rainbow: Ollama support: Integrated with [Ollama](https://ollama.com/) for large language model inference, enabling support for various LLMs such as DeepSeek, LLaMA, Phi, Qwen, QWQ, and more.
+- [new] :rainbow: Dialogue component `LLMSpeechChatRuntime`: Integrates LLM, TTS, and ASR, making it easy to build chatbot functionality within Blueprints.
+- [new] :rainbow: Added new TTS support: [Kokoro](https://github.com/hexgrad/kokoro), [Melo](https://github.com/myshell-ai/MeloTTS).
+- [new] :rainbow: Added new ASR support: [FunASR](https://github.com/modelscope/FunASR) (Chinese-English with hotword support), [FireRedASR](https://github.com/FireRedTeam/FireRedASR) (Chinese-English/Dialects), [MoonShine](https://github.com/usefulsensors/moonshine) (English), [SenseVoice](https://github.com/usefulsensors/moonshine) (Multilingual: Chinese/English/Japanese/Korean/Cantonese).
+- [new] :rainbow: Added a Transformer-based TTS model: [F5-TTS](https://github.com/SWivid/F5-TTS), capable of zero-shot voice cloning (supports inference with DirectML/CUDA on both AMD and Nvidia GPUs).
+- [new] :rainbow: Voice wake-up: Lightweight model-based voice wake-up, supporting custom wake words to activate ASR and also separate voice command trigger functionality.
+- [new] :fire: Upgraded to the latest version of Google MediaPipe.
+- [new] :fire: Added support for Unreal Engine 5.5.
+- [new]: Added C++ interface allowing C++ developers to implement their own pose inference algorithms to replace Google MediaPipe.
+- [new] :rainbow: Integrated NvAR pose tracking, allowing switching between MediaPipe and Nvidia Maxine algorithms.
+- [new] :rainbow: Open-sourced [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (Android facial module for MediaPipe4U).
+- [new] :dizzy: Image source boot support (C++), enabling complete replacement and switching between `google mediapipe` algorithms.
+- [new] :dizzy: Add a new [Android Demo project](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
+- [improve] :footprints: Demo project upgraded to UE5.5, added `Fake Demo`, a C++ extension example that reads local files instead of using MediaPipe.
+- [improve] :footprints: Demo project now includes voice wake-up examples and speaker selection demo.
+- [improve] :footprints: Demo project now includes LLM integration example.
+- [improve] :footprints: Demo project now includes voice chatbot example.
+- [improve] :footprints: Demo project now supports packaging.
+- [break change] :collision: Motion capture features have been moved to a new plugin: `MediaPipe4UMotion`. This may cause your existing blueprint to break. Please update your blueprint after upgrading.
 
-> The update includes numerous features and complex testing, please be patient.   
+> Currently, only the Unreal Engine 5.5 version is available; Other versions will be packaged and released later, sorry for that.
+
 
 # Known Issues:    
 - The new Google Holistic Task API does not support GPU inference. As a result, the Android platform relies on CPU inference, while Windows continues to use CPU inference as usual.  
@@ -134,7 +144,9 @@ For the release notes, ref below:
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
 | UE 5.1 | [百度网盘](https://pan.baidu.com/s/11C9pmKjRiwwh5e_mw82aTg?pwd=n9he) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERHtOO41t9JMo_rMTYHUl5IBD6yrdmn9rqzi6b1ozQWxnw?e=A1XhVA) | 2023-05-24 |
 | UE 5.2 | [百度网盘](https://pan.baidu.com/s/1mEilhcaMCclXg6V6GhttHg?pwd=7q4p) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EWeByq7iTjdDl02JZbIEHBkBd0zmMjcGMKHl3STOmGrMaA?e=pvrHJi) | 2023-05-24 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1uX96rTNTRTJczUx6KyRFoA?pwd=2nsr) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Eb_LzTgVvONNo3YkMMniREUBx21gJ2RDV2ozPizqLaRnUA?e=ueS8Wr) | 2023-05-24 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/171l1VXfQ0uHfrhr9aUNohQ?pwd=rpwg) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Eb_LzTgVvONNo3YkMMniREUBx21gJ2RDV2ozPizqLaRnUA?e=ueS8Wr) | 2023-05-24 |
+| UE 5.5 | [百度网盘](https://pan.baidu.com/s/171l1VXfQ0uHfrhr9aUNohQ?pwd=rpwg) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ETwJkUUNrRxKjjCp7-xfXVQB0S-Q1PYXr4jajVcr-2zfmg?e=4dRovm) | 2025-04-08 |
+
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
 > Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).
 

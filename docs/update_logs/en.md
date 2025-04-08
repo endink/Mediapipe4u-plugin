@@ -7,11 +7,37 @@ parent: 更新日志
 
 [简体中文](./index.md)
 
+### 2025-04-08   
 
-### 2024-05-24   
 {: .d-inline-block }
 Current
 {: .label .label-green } 
+
+- [new] :rainbow: The free version now supports packaging all features, including voice and facial expression capture.
+- [new] :rainbow: Ollama support: Integrated with [Ollama](https://ollama.com/) for large language model inference, enabling support for various LLMs such as DeepSeek, LLaMA, Phi, Qwen, QWQ, and more.
+- [new] :rainbow: Dialogue component `LLMSpeechChatRuntime`: Integrates LLM, TTS, and ASR, making it easy to build chatbot functionality within Blueprints.
+- [new] :rainbow: Added new TTS support: [Kokoro](https://github.com/hexgrad/kokoro), [Melo](https://github.com/myshell-ai/MeloTTS).
+- [new] :rainbow: Added new ASR support: [FunASR](https://github.com/modelscope/FunASR) (Chinese-English with hotword support), [FireRedASR](https://github.com/FireRedTeam/FireRedASR) (Chinese-English/Dialects), [MoonShine](https://github.com/usefulsensors/moonshine) (English), [SenseVoice](https://github.com/usefulsensors/moonshine) (Multilingual: Chinese/English/Japanese/Korean/Cantonese).
+- [new] :rainbow: Added a Transformer-based TTS model: [F5-TTS](https://github.com/SWivid/F5-TTS), capable of zero-shot voice cloning (supports inference with DirectML/CUDA on both AMD and Nvidia GPUs).
+- [new] :rainbow: Voice wake-up: Lightweight model-based voice wake-up, supporting custom wake words to activate ASR and also separate voice command trigger functionality.
+- [new] :fire: Upgraded to the latest version of Google MediaPipe.
+- [new] :fire: Added support for Unreal Engine 5.5.
+- [new]: Added C++ interface allowing C++ developers to implement their own pose inference algorithms to replace Google MediaPipe.
+- [new] :rainbow: Integrated NvAR pose tracking, allowing switching between MediaPipe and Nvidia Maxine algorithms.
+- [new] :rainbow: Open-sourced [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (Android facial module for MediaPipe4U).
+- [new] :dizzy: Image source boot support (C++), enabling complete replacement and switching between `google mediapipe` algorithms.
+- [new] :dizzy: Add a new [Android Demo project](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
+- [improve] :footprints: Demo project upgraded to UE5.5, added `Fake Demo`, a C++ extension example that reads local files instead of using MediaPipe.
+- [improve] :footprints: Demo project now includes voice wake-up examples and speaker selection demo.
+- [improve] :footprints: Demo project now includes LLM integration example.
+- [improve] :footprints: Demo project now includes voice chatbot example.
+- [improve] :footprints: Demo project now supports packaging.
+- [break change] :collision: Motion capture features have been moved to a new plugin: `MediaPipe4UMotion`. This may cause your existing blueprint to break. Please update your blueprint after upgrading.
+
+
+
+
+### 2024-05-24   
 - [new] :rainbow: Licenses is no longer required to use MediaPipe4U (all plugin) in the UE editor (you can still use M4U even though the license file has expireds).
 - [new] :rainbow: Unreal Engine version **5.4** support, I skipped UE 5.3, I'm sorry for that.
 - [new] :rainbow: **Control Rig** supported (preview). Add a new animation blueprint node `ControlRigFromPose` that used to convert FK poses to Control Rig Blueprints pose.

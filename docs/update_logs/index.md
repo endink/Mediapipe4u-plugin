@@ -5,13 +5,34 @@ title: 更新日志
 has_children: true
 ---
 
-[English](./en.md)
+[English](./en.md)   
 
-
-### 2024-05-24      
+### 2025-04-08     
 {: .d-inline-block }
 Current
 {: .label .label-green } 
+
+- [new] :rainbow: 免费版本现在可以打包所有功能，包括语音和表情捕捉。
+- [new] :rainbow: Ollama 支持：接入 [Ollama](https://ollama.com/) 进行大语言模型推理，从而支持了众多 LLM 模型，例如：DeepSeek、LLaMA，Phi, Qwen, QWQ 等。
+- [new] :rainbow: 对话组件 `LLMSpeechChatRuntime`：整合 LLM 、TTS、ASR，可以在蓝图中非常容易实现对话机器人。
+- [new] :rainbow: 添加了新的 TTS 支持：[Kokoro](https://github.com/hexgrad/kokoro), [Melo](https://github.com/myshell-ai/MeloTTS)。 
+- [new] :rainbow: 添加了新的 ASR 支持：[FunASR](https://github.com/modelscope/FunASR)(中英热词版)，[FireRedASR](https://github.com/FireRedTeam/FireRedASR) (中英/方言) ,[MoonShine](https://github.com/usefulsensors/moonshine) (英语), [SenseVoice](https://github.com/usefulsensors/moonshine) (多语言: 中文/英语/日语/韩语/粤语).
+- [new] :rainbow: 添加了一个 Transformer 架构 TTS 模型：[F5-TTS](https://github.com/SWivid/F5-TTS)，具备零样本语音克隆能力 （使用 DirectML/CUDA 推理，AMD/Nvidia GPU 均可）
+- [new] :rainbow: 语音唤醒：使用小模型推理的语音唤醒，支持使用自定义语音唤醒词唤醒 ASR， 也支持独立的语音指令唤醒词功能。
+- [new] :fire: 对齐 google mediapipe 到最新版本。
+- [new] :fire: 添加 Unreal Engine 5.5 支持。
+- [new]: 添加 C++ 接口，C++ 开发者可以实现自己的姿态推理算法来替换 google mediapipe 算法。
+- [new] :rainbow: 加入了 NvAR 姿态捕捉算法，可以在 mediapipe 算法和 Nvidia Maxine 算法之间切换。
+- [new] :rainbow: 开源了 [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (用于 MediaPipe4U 的 Android 面部程序). 
+- [new] :dizzy: 支持图像源启动（C++），支持完全替代 `google mediapipe` 算法之间切换
+- [new] 新增 [Android Demo 工程](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
+- [improve]：Demo 工程升级到 UE5.5， 新增 `Fake Demo`，一个读取本地文件代替 mediapipe 的 C++ 扩展示例。
+- [improve]：Demo 工程加入语音唤醒部分示例，发音人选择示例
+- [improve]：Demo 工程加入 LLM 示例
+- [improve]：Demo 工程加入语音对话机器人示例
+- [improve]: Demo 工程现在支持了打包
+
+### 2024-05-24      
 - [new] :rainbow: 在编辑器中使用 MediaPipe4U 不再需要授权（即使授权文件过期，依然可以在编辑器中使用）。
 - [new] :rainbow: Unreal Engine **5.4** 版本支持，我跳过了 5.3 版本，精力有限，实在抱歉。
 - [new] :rainbow: 加入 **Control Rig** 支持 (预览质量). 新的动画蓝图节点 `ControlRigFromPose` 已经可用，可以将任意姿态转换到 ControlRig 蓝图中，方便使用 ControlRig 制作关节限制、全身 IK 等。
