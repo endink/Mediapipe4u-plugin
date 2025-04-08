@@ -52,10 +52,10 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 - [new] :rainbow: Voice wake-up: Lightweight model-based voice wake-up, supporting custom wake words to activate ASR and also separate voice command trigger functionality.
 - [new] :fire: Upgraded to the latest version of Google MediaPipe.
 - [new] :fire: Added support for Unreal Engine 5.5.
-- [new]: Added C++ interface allowing C++ developers to implement their own pose inference algorithms to replace Google MediaPipe.
 - [new] :rainbow: Integrated NvAR pose tracking, allowing switching between MediaPipe and Nvidia Maxine algorithms.
 - [new] :rainbow: Open-sourced [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (Android facial module for MediaPipe4U).
-- [new] :dizzy: Image source boot support (C++), enabling complete replacement and switching between `google mediapipe` algorithms.
+- [new] :dizzy: `Custom mediapipe connector`(C++): Enabling complete replace  `google mediapipe` with you want (#195, #204).
+- [new]: Added `Custom mediapipe feature`(C++): Enabling partial replace  `google mediapipe` with you want (#195, #204).
 - [new] :dizzy: Add a new [Android Demo project](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
 - [improve] :footprints: Demo project upgraded to UE5.5, added `Fake Demo`, a C++ extension example that reads local files instead of using MediaPipe.
 - [improve] :footprints: Demo project now includes voice wake-up examples and speaker selection demo.
@@ -63,7 +63,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 - [improve] :footprints: Demo project now includes voice chatbot example.
 - [improve] :footprints: Demo project now supports packaging.
 - [break change] :collision:⚠️⚠️⚠️ Motion capture features have been moved to a new plugin: `MediaPipe4UMotion`. This may cause your existing blueprint to break. Please update your blueprint after upgrading.
-- [break change] :collision:⚠️⚠️⚠️ Due to changes in the license file format, old licenses are no longer valid. You can now obtain a free license from [here](https://github.com/endink/Mediapipe4u-plugin/releases/tag/license-auto-release).
+- [break change] :collision:⚠️⚠️⚠️ Due to changes in the license format, old licenses are no longer valid. You can now obtain a free license from [here](https://github.com/endink/Mediapipe4u-plugin/releases/tag/license-auto-release).
 
 > Currently, only the Unreal Engine 5.5 version is available; Other versions will be packaged and released later, sorry for that.
 

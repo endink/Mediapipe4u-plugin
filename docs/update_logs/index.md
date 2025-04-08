@@ -21,11 +21,11 @@ Current
 - [new] :rainbow: 语音唤醒：使用小模型推理的语音唤醒，支持使用自定义语音唤醒词唤醒 ASR， 也支持独立的语音指令唤醒词功能。
 - [new] :fire: 对齐 google mediapipe 到最新版本。
 - [new] :fire: 添加 Unreal Engine 5.5 支持。
-- [new]: 添加 C++ 接口，C++ 开发者可以实现自己的姿态推理算法来替换 google mediapipe 算法。
 - [new] :rainbow: 加入了 NvAR 姿态捕捉算法，可以在 mediapipe 算法和 Nvidia Maxine 算法之间切换。
 - [new] :rainbow: 开源了 [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (用于 MediaPipe4U 的 Android 面部程序). 
-- [new] :dizzy: 支持图像源启动（C++），支持完全替代 `google mediapipe` 算法之间切换
-- [new] 新增 [Android Demo 工程](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
+- [new] :dizzy: `Custom Mediapipe Connector`（C++）: 自定义连接器, 支持完全替代 `google mediapipe` ，实现自定义逻辑 。
+- [new] :dizzy: `Custom Mediapipe Feature`（C++）: 自定义功能, 支持部分替代 `google mediapipe` ，实现自定义逻辑 。
+- [new] :rainbow: 新增 [Android Demo 工程](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
 - [improve]:footprints: Demo 工程升级到 UE5.5， 新增 `Fake Demo`，一个读取本地文件代替 mediapipe 的 C++ 扩展示例。
 - [improve]:footprints: Demo 工程加入语音唤醒部分示例，发音人选择示例
 - [improve]:footprints: Demo 工程加入 LLM 示例

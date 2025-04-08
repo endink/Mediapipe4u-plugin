@@ -22,10 +22,10 @@ Current
 - [new] :rainbow: Voice wake-up: Lightweight model-based voice wake-up, supporting custom wake words to activate ASR and also separate voice command trigger functionality.
 - [new] :fire: Upgraded to the latest version of Google MediaPipe.
 - [new] :fire: Added support for Unreal Engine 5.5.
-- [new]: Added C++ interface allowing C++ developers to implement their own pose inference algorithms to replace Google MediaPipe.
 - [new] :rainbow: Integrated NvAR pose tracking, allowing switching between MediaPipe and Nvidia Maxine algorithms.
 - [new] :rainbow: Open-sourced [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (Android facial module for MediaPipe4U).
-- [new] :dizzy: Image source boot support (C++), enabling complete replacement and switching between `google mediapipe` algorithms.
+- [new] :dizzy: `Custom mediapipe connector`(C++): Enabling complete replace  `google mediapipe` with you want.
+- [new]: Added `Custom mediapipe feature`(C++): Enabling partial replace  `google mediapipe` with you want.
 - [new] :dizzy: Add a new [Android Demo project](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
 - [improve] :footprints: Demo project upgraded to UE5.5, added `Fake Demo`, a C++ extension example that reads local files instead of using MediaPipe.
 - [improve] :footprints: Demo project now includes voice wake-up examples and speaker selection demo.
