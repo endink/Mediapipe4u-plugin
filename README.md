@@ -148,7 +148,7 @@ For the release notes, ref below:
 | UE 5.1 | [百度网盘](https://pan.baidu.com/s/11C9pmKjRiwwh5e_mw82aTg?pwd=n9he) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERHtOO41t9JMo_rMTYHUl5IBD6yrdmn9rqzi6b1ozQWxnw?e=A1XhVA) | 2023-05-24 |
 | UE 5.2 | [百度网盘](https://pan.baidu.com/s/1mEilhcaMCclXg6V6GhttHg?pwd=7q4p) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EWeByq7iTjdDl02JZbIEHBkBd0zmMjcGMKHl3STOmGrMaA?e=pvrHJi) | 2023-05-24 |
 | UE 5.4 | [百度网盘](https://pan.baidu.com/s/171l1VXfQ0uHfrhr9aUNohQ?pwd=rpwg) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Eb_LzTgVvONNo3YkMMniREUBx21gJ2RDV2ozPizqLaRnUA?e=ueS8Wr) | 2023-05-24 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/171l1VXfQ0uHfrhr9aUNohQ?pwd=rpwg) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ETwJkUUNrRxKjjCp7-xfXVQB0S-Q1PYXr4jajVcr-2zfmg?e=4dRovm) | 2025-04-08 |
+# | UE 5.5 | [百度网盘](https://pan.baidu.com/s/171l1VXfQ0uHfrhr9aUNohQ?pwd=rpwg) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ETwJkUUNrRxKjjCp7-xfXVQB0S-Q1PYXr4jajVcr-2zfmg?e=4dRovm) | 2025-04-08 |
 
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
 > Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).
