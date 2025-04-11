@@ -17,8 +17,15 @@ MediaPipe4U 中内置了 4 种图像源：
 ## 如何使用 Image Source
 
 1. 添加图像源组件（蓝图编辑器中）。
-2. 调用 MediaPipeHolisticComponent 上的 **StartImageSource** 活 **StartImageSourceAsync** 函数从 Image Source 组件中进行动作捕捉。
+2. 调用 `MediaPipeHolisticComponent` 上的 `StartImageSource` 函数从 Image Source 组件中进行动作捕捉。
 3. 调用 Image Source 的"打开"函数，打开摄像头、图片、视频文件等。
+
+!!! tip "提示"  
+
+    以 Async 结尾的函数表示一个异步函数，函数不会阻塞游戏线程，强烈建议优先使用异步函数，例如:   
+
+    - `StartImageSource`: 同步函数
+    - `StartImageSourceAsync`: 异步函数
 
 [![M4U Image Source](./images/image_source/components.jpg "M4U Image Source")](./images/image_source/components.jpg)
 
@@ -48,8 +55,9 @@ MediaPipe4U 中内置了 4 种图像源：
 | SourceHorizontalFlip | 水平反转图像 |
 | SourceResolutionLimits | 限制图像分辨率 |
 
-{: .highlight}
-> 使用 **SourceResolutionLimits** 限制图像源的分辨率，可以有效的提升 mediapipe 算解器的性能。
+!!! tip "提示"  
+
+    使用 **SourceResolutionLimits** 限制图像源的分辨率，可以有效的提升 mediapipe 算解器的性能。
 
 ## StaticImageSourceComponent
 
