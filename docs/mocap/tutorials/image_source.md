@@ -163,7 +163,10 @@ StartCamera 参数：
 
 要运行的的 Gtreamer 表达式：
 例如：
- - playbin uri=https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm ! videoconvert ! video/x-raw,format=(string)RGBA ! appsink name=mediapipe4u_sink
+
+```
+playbin uri=https://xxx.webm ! videoconvert ! video/x-raw,format=(string)RGBA ! appsink name=mediapipe4u_sink
+```
 
 需要注意：
 
