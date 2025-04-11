@@ -14,7 +14,7 @@
 <br>
 <br>
 <a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-red.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.1, 5.2, 5.4, 5.5-purple.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.1, 5.2, 5.4, 5.3， 5.5-purple.svg"></a>
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/Windows-Win 10/11 X64-brightgreen.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Android->=8.0 (Arm64)-brightgreen.svg"></a>
@@ -141,8 +141,9 @@
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
 | UE 5.1 | [百度网盘](https://pan.baidu.com/s/11C9pmKjRiwwh5e_mw82aTg?pwd=n9he) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERHtOO41t9JMo_rMTYHUl5IBD6yrdmn9rqzi6b1ozQWxnw?e=A1XhVA) | 2023-05-24 |
 | UE 5.2 | [百度网盘](https://pan.baidu.com/s/1mEilhcaMCclXg6V6GhttHg?pwd=7q4p) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EWeByq7iTjdDl02JZbIEHBkBd0zmMjcGMKHl3STOmGrMaA?e=pvrHJi) | 2023-05-24 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1DVJfsaOybJDkqIxGDHiScw?pwd=knkf) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUAPrxfPkNNOn8PVEP7KlDIBzmhwP45VxWbi36BZKFEPHA?e=y0ySJv) | 2025-04-09 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1Hu1gfeH9Tdoa-Lube2opAQ?pwd=fd83) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EVpeTPKOeHBKtCHX1jlmPckBxMIx08sh4ce9eqVYuyoGSg?e=eRVi1X) | 2025-04-09 |
+| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1s7hwZeCW96_woOBz3YjP6w?pwd=6sj3) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EVVuDhpx72xHsyMfr7UjFToBf0VTQKrdvSyUZJlH-FXrxw?e=oOSkhu) | 2025-04-11 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1TwFNkycrTRykIgIMyplfdQ?pwd=khx7) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUsd8o6zq8BDkAFhiy4BvyUBGGjRT3Ts0EXQHouwjgIanA?e=B5tPku) | 2025-04-11 |
+| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1WrbM5-44PFwJHM5okXZ83w?pwd=xnpt) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ESPwAR76UTlKlYcxsRLZ6kkBn4hzAx-WjtWxtoLYgheiEA?e=wim2ox) | 2025-04-11 |
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    
