@@ -29,8 +29,9 @@ nav:
       - Quick Start Mocap:
         - mocap/quick_start/prepare_components.md
         - mocap/quick_start/prepare_character.md
-        - mocap/quick_start/custom_skeleton.md
         - mocap/quick_start/start_mocap.md
+      - Tutorials: 
+        - mocap/tutorials/image_source.md
       
   - License: 
     - licensing/index.md
@@ -38,8 +39,12 @@ nav:
     - licensing/view_license.md
     - licensing/update_license.md
     - licensing/device_id.md
+
   - FAQ: 
     - faq/index.md
+
+  - Update Logs: 
+    - update_logs/index.md
 
 exclude_docs: |
   _config.yml   
@@ -79,6 +84,7 @@ plugins:
             User Guide: 使用指南
             Motion&Facial Capture: 动作&表情捕捉
             Quick Start Mocap: 动作捕捉快速入门
+            Update Logs: 更新日志
         - locale: en
           name: English
           build: true
