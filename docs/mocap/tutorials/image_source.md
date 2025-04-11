@@ -145,7 +145,7 @@ StartCamera 参数：
 
 要开打的视频文件或流媒体。     
 例如：   
-   
+
 - C:\MyVide.mp4   
 - C:\MyVide.avi   
 - rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov   
@@ -194,7 +194,8 @@ MediaPipe4U 可以和 Unreal Engine 的 MediaPlayer 集成，从 MediaPlayer 中
 
     `MediaPlayerImageSourceComponent` 是一个 **Beta** 功能，可能存在不稳定性。   
       
-    MediaPlayerImageSourceComponent 仅支持对如下的像素格式解码：
+    MediaPlayerImageSourceComponent 仅支持对如下的像素格式解码：   
+    
     - BGRA
     - YUY2（YUNV, YUYV）
     - NV12
