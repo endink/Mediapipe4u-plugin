@@ -145,6 +145,7 @@ StartCamera 参数：
 
 要开打的视频文件或流媒体。     
 例如：   
+   
 - C:\MyVide.mp4   
 - C:\MyVide.avi   
 - rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov   
