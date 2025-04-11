@@ -108,7 +108,7 @@ StartCamera 参数：
 
 ### 列出摄像头   
 
-`StartCamera`/`StartCameraAsync` 通过传递摄像头编号来开启摄像头，你可以通过 MediaPipe4U 的蓝图函数库中的 **ListWebcams** 函数来列出本地机器中所有的摄像头，数组下标（索引）可用于 DeviceId 参数。  
+`StartCamera`/`StartCameraAsync` 通过传递摄像头编号来开启摄像头，你可以通过 MediaPipe4U 的蓝图函数库中的 `ListWebcams` 函数来列出本地机器中所有的摄像头，数组下标（索引）可用于 DeviceId 参数。  
 
 [![M4U Image Source](./images/image_source/list_webcams.jpg "M4U Image Source")](./images/image_source/list_webcams.jpg)
 
@@ -116,9 +116,9 @@ StartCamera 参数：
 
     其中 Provider 参数表示摄像头提供程序，默认是 OpenCV ，当前仅支持 OpenCV 摄像头实现，因此，你不需要关心这个参数。   
     
-    ListWebcams 返回一个 bool 值，指示调用是否成功。
+    `ListWebcams` 返回一个 bool 值，指示调用是否成功。
     
-    对于 Android，ListWebcams 总是返回 **0** 和 **1** 两个设备 id，**0** 表示前置摄像头， **1** 表示后置摄像头。
+    对于 Android: `ListWebcams` 总是返回 **0** 和 **1** 两个设备 id，**0** 表示前置摄像头， **1** 表示后置摄像头。
 
 
 ### 关闭摄像头   
@@ -135,12 +135,14 @@ StartCamera 参数：
 
 ### 打开文件或流媒体
 
-通过调用 `GStreamerImageSourceComponent` 的 **Start** 函数来打开一个视频文件或流媒体。   
+通过调用 `GStreamerImageSourceComponent` 的 `Start` 函数来打开一个视频文件或流媒体。   
 
 [![M4U Image Source](./images/image_source/gstreamer_start.jpg "M4U Image Source")](./images/image_source/gstreamer_start.jpg)
 
-Start 函数参数：      
-**InFileOrUri**   
+`Start` 函数参数：     
+
+**InFileOrUri**    
+
 要开打的视频文件或流媒体。     
 例如：   
 - C:\MyVide.mp4   
@@ -151,10 +153,30 @@ Start 函数参数：
 
 返回值：指示操作是否成功。
 
+### 使用自定义 GStreamer 表达式
+
+`GStreamerImageSourceComponent` 还提供了 GStreamer 表达式支持（GStreamer Launch）， 通过调用 `StartGStreamerLaunch`。    
+
+`StartGStreamerLaunch` 函数参数： 
+
+**GStreamerCommand**
+
+要运行的的 Gtreamer 表达式：
+例如：
+ - playbin uri=https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm ! videoconvert ! video/x-raw,format=(string)RGBA ! appsink name=mediapipe4u_sink
+
+需要注意：
+
+GStreamer 表达式是一个管道，通过 `|` 分割每一段的处理， MediaPipe4U 定义了自己的 `sink` 处理程序 `mediapipe4u_sink`, 所以要求表达式的最后一段总是 `appsink name=mediapipe4u_sink`。   
+
+`mediapipe4u_sink` 接受 RGBA 格式的图像来进行图像处理。
+
+GStreamer 表达式是一个强大的功能，你可以用它处理流媒体、摄像头，WebRTC 等多种协议的媒体，关于如何使用表达式， 可以参考 GStreamer 官方文档 [GStreamer Launch](https://gstreamer.freedesktop.org/documentation/tools/gst-launch.html)
+
 
 ### 关闭文件或流媒体
 
-通过调用 GStreamerImageSourceComponent 的 Stop 函数来关闭视频文件或流媒体。   
+通过调用 `GStreamerImageSourceComponent` 的 `Stop` 函数来关闭视频文件或流媒体。   
 
 [![M4U Image Source](./images/image_source/gstreamer_stop.jpg "M4U Image Source")](./images/image_source/gstreamer_stop.jpg)   
 
@@ -164,19 +186,20 @@ Start 函数参数：
 
 MediaPipe4U 可以和 Unreal Engine 的 MediaPlayer 集成，从 MediaPlayer 中捕获画面。      
 
-{: .warning}
-> MediaPlayerImageSourceComponent 是一个 Beta 功能，可能存在不稳定性。   
->   
-> MediaPlayerImageSourceComponent 仅支持对如下的像素格式解码：
-> - BGRA
-> - YUY2（YUNV, YUYV）
-> - NV12
-> - NV21
->
-> 当前的 MediaPlayerImageSourceComponent 实现中，不支持高级控制（水平反转、分辨率限制）。
+!!! tip  
+
+    `MediaPlayerImageSourceComponent` 是一个 **Beta** 功能，可能存在不稳定性。   
+      
+    MediaPlayerImageSourceComponent 仅支持对如下的像素格式解码：
+    - BGRA
+    - YUY2（YUNV, YUYV）
+    - NV12
+    - NV21
+    
+    当前的 `MediaPlayerImageSourceComponent` 实现中，不支持高级控制（水平反转、分辨率限制）。
    
 
-推荐使用 GStreamer 图像源来代替 MediaPlayer， 因为 GStreamerImageSourceComponent 有着更好的解码性能，也支持分辨率限制等高级功能。
+> 推荐使用 **GStreamer** 图像源来代替 MediaPlayer， 因为 `GStreamerImageSourceComponent` 有着更好的解码性能，也支持分辨率限制等高级功能。
 
 ### 配置 MediaPlayerImageSourceComponent   
 
@@ -189,9 +212,10 @@ MediaPipe4U 可以和 Unreal Engine 的 MediaPlayer 集成，从 MediaPlayer 中
 
  MediaPlayerImageSourceComponent 会在 MediaPlayer 打开后自动捕捉画面。因此捕捉是通过 MediaPlayer 控制的。
 
- 你可以使用 MediaPlayer 的 Open Source 或 Open Url 函数来开始捕捉画面。   
+ 你可以使用 MediaPlayer 的 `Open Source` 或 `Open Url` 函数来开始捕捉画面。   
+
  下面的蓝图是一个启动 MediaPlayer 捕捉的完整流程：   
 
  [![M4U Image Source](./images/image_source/mp_start.jpg "M4U Image Source")](./images/image_source/mp_start.jpg)
 
- 图中的 Media 是一个 FileMediaSource 实例。
+ 图中的 Media 是一个 `FileMediaSource` 实例。
