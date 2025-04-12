@@ -31,3 +31,18 @@ sequenceDiagram
 - `Image Consumer`：对应 MediaPipe4U 中的 `IImageConsumer`或`IImageConsumerProvider` 接口。
 
 
+## 内置组件
+
+MediaPipe4U 从统一的视觉任务处理管道中受益，插件中内置了两个 `Image Consumer`：
+
+- `ImageSourceComponent`: MediaPipe4U 内置了各种图像提供程序，可以从各类常见的媒体中获取图像，有关 `Image Source` 的更多信息，请阅读 [Image Source 文档](./image_source.md)
+- `MediaPipeHolisticComponent`: 使用 google mediapipe 算法处理图像并计算角色的关节旋转，并将关节旋转应用到 Unreal Engine 中的 3D 骨骼网格体。
+- `MediaPipeFaceLinkActor`: 使用算法（mediapipe, nvar）计算图像中的面部表情系数， 并将面部表情系数通过 `Live Link` 数据传输协议传递到 Unreal Engine 中。   
+
+## 扩展支持
+
+**Image Consumer** 
+
+MediaPipe4U 支持你注册自己的 `Image Consumer` 使用我们提供的视觉任务 Pipline 来处理更多的视觉任务。   
+
+有关 `Image Consumer` 请查阅 Image Consumer 文档。
