@@ -27,13 +27,17 @@ nav:
   - User Guide: 
     - Vision AI: 
       - Quick Start Mocap:
-        - mocap/quick_start/prepare_components.md
-        - mocap/quick_start/prepare_character.md
-        - mocap/quick_start/start_mocap.md
+        - vision/quick_start/prepare_components.md
+        - vision/quick_start/prepare_character.md
+        - vision/quick_start/start_mocap.md
       - Concepts: 
-        - mocap/concepts/overview.md
-        - mocap/concepts/image_source.md
-        - mocap/concepts/image_consumer.md
+        - vision/concepts/overview.md
+        - vision/concepts/image_source.md
+        - vision/concepts/image_consumer.md
+      - Motion Capture:
+        - vision/mocap/mediapipe_holistic_component.md
+        
+
       
   - License: 
     - licensing/index.md
@@ -87,7 +91,7 @@ plugins:
             Concepts: 概念
             Tutorials: 教程
             Vision AI: 视觉 AI
-            Motion&Facial Capture: 动作&表情捕捉
+            Motion Capture: 动作捕捉
             Quick Start Mocap: 动作捕捉快速入门
             Update Logs: 更新日志
         - locale: en
