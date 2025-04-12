@@ -1,4 +1,4 @@
-# ImageConsumer
+# Image Consumer
 
 ## 程序结构
 
