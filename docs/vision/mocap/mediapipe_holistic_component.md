@@ -37,8 +37,8 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 |OverlayAnnotations  | 图像回显  |   enum   |装饰线条显示模式：<br/>`HolisticTracking`: 显示整体装饰线条，包含面部和姿态;<br/>`PoseTracking`: 显示身体姿态装饰线条;<br/>`FaceTracking`: 显示面部装饰线条 |
 |MediaPipeSourceInfo | 视频数据  |struct|这是一个只读的变量，你不应改修，获取当前图像源的信息，例如视频高度、宽度、是否是静态图片|
 |GraphTimeoutSeconds | mediapipe 参数   |int|MediaPipie 计算时图像帧的超时时间，关于这部分信息，请参看 mediapipe bound time 相关文档|
-|bSourceHorizontalFlip | Image Source 控制 | 是否水平翻转图像。 |
-|SourceResolutionLimits | Image Source 控制 | 限制图像分辨率，即图片进入 AI 计算之前进行缩放处理（推荐开启）。  |
+|bSourceHorizontalFlip | Image Source 控制 | bool | 是否水平翻转图像。 |
+|SourceResolutionLimits | Image Source 控制 | enum | 限制图像分辨率，即图片进入 AI 计算之前进行缩放处理（推荐开启）。  |
 
 
 ## 蓝图事件
@@ -53,7 +53,6 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 |OnMediaPipeStopped| 当 MediaPipe 动补停止时回调该委托|
 |OnMediaPipeThreadFault| Mediapipe 工作线程发生错误时回调该委托|
 
-> 注意，`MediaPipeHolisticComponent` 的回调发生在任意线程，如果你需要游戏线程，需要自己切换。
 
 ## 蓝图函数
 
@@ -73,7 +72,7 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 |GetImageSourceFPS| 获取当前 ImageSource 的 FPS，这通常用于评估图像源的性能 |
 |GetVideoTexture| 的回显的纹理对象。 | 
 
-!!! tip 异步函数
+!!! tip "异步函数"
     
     以 `<函数名> + Async` 命名的函数表示异步函数，异步函数通常在 C++ 和蓝图中均可用，它**不会阻塞**游戏线程/UI 线程，建议使用异步函数本来代替同步函数，
     `MediaPipeHolisticComponent` 提供如下异步函数：
@@ -107,4 +106,8 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 |OnMediaPipeHolisticStartFailedTrigger| mediapipe 生命周期 |  mediapipe 处理过程中发生错误时触发 |
 |OnMediaPipeHolisticStartedTrigger| mediapipe 生命周期 |  mediapipe 开始后触发 |
 
-
+!!! warning "注意"
+    
+    `MediaPipeHolisticComponent` **C++** 的回调发生在任意线程，如果你需要在游戏游戏处理逻辑，需要自己切换。
+    
+     **蓝图**事件总是在游戏线程触发。
