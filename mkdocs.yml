@@ -30,8 +30,9 @@ nav:
         - mocap/quick_start/prepare_components.md
         - mocap/quick_start/prepare_character.md
         - mocap/quick_start/start_mocap.md
-      - Tutorials: 
-        - mocap/tutorials/image_source.md
+      - Concepts: 
+        -
+        - mocap/concepts/image_source.md
       
   - License: 
     - licensing/index.md
@@ -82,6 +83,7 @@ plugins:
             FAQ: 常见问题
             License: 授权许可
             User Guide: 使用指南
+            Concepts: 概念
             Tutorials: 教程
             Motion&Facial Capture: 动作&表情捕捉
             Quick Start Mocap: 动作捕捉快速入门
@@ -99,6 +101,10 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - attr_list
   - md_in_html
   - pymdownx.highlight:  #code block
