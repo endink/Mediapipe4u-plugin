@@ -1,5 +1,9 @@
 # MediaPipe Holistic Component
 
+`MediaPipeHolisticComponent` 负责连接 Unreal Engine 和 google mediapipe api， 将 mediapipe 数据引入到 Unreal Engine 中。
+
+> `MediaPipeHolisticComponent` 存在于 `MediaPipe4U` 插件中。
+
 ## Google MediaPipe 概述
 
 Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器 holistic 中， `MediaPipe4U` 将这个计算器封装成 UnrealEngine 组件，
@@ -15,9 +19,21 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 
     由于 `MediaPipeHolisticComponent` 的特殊性，你应该保证整个场景中只有唯一个 `MediaPipeHolisticComponent` 实例。
 
-## Google MediaPipe 参数
+## 属性
 
-`MediaPipeHolisticComponent` 通过 `Options` 变量暴露 google mediapipe 的原始参数。
+|参数名| 分类 | 数据类型 | 说明 |
+|------|------|----|----|
+|VideoDisplay        | 图像回显  |   enum   |图像回显的方式：<br/>`Raw`: 显示原始图像;<br/>`Annotated`: 带 MediaPipe 修饰线条的图像;<br/><br/>注意，`Raw` 显示性能**高于** `Annotated`|
+|OverlayAnnotations  | 图像回显  |   enum   |装饰线条显示模式：<br/>`HolisticTracking`: 显示整体装饰线条，包含面部和姿态;<br/>`PoseTracking`: 显示身体姿态装饰线条;<br/>`FaceTracking`: 显示面部装饰线条 |
+|MediaPipeSourceInfo | 视频数据  |struct|这是一个只读的变量，你不应改修，获取当前图像源的信息，例如视频高度、宽度、是否是静态图片|
+|bSourceHorizontalFlip | Image Source 控制 | bool | 是否水平翻转图像。 |
+|SourceResolutionLimits | Image Source 控制 | enum | 限制图像分辨率，即图片进入 AI 计算之前进行缩放处理（推荐开启）。  |
+|Options | mediapipe 参数 | struct | 为 mediapipe 计算图（calculation graph）提供参数。  |
+|GraphTimeoutSeconds | mediapipe 参数   |int|MediaPipie 计算时图像帧的超时时间，关于这部分信息，请参看 mediapipe bound time 相关文档|
+
+### Options 详情
+
+`MediaPipeHolisticComponent` 通过 `Options` 属性暴露 google mediapipe 的原始参数。
 
 |参数名|类型| 说明|
 |------|----|----|
@@ -30,17 +46,6 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 |SmoothSegmentation| bool | 分割背景时边缘平滑，默认为 **false**，不建议开启，会耗费性能|
 |UsePrevLandmarks| bool | 是否使用上一帧数据优化动补，这个参数由 MediaPipe4U 自动根据环境修改，程序无需关心|
 |CustomParameters| TMap<FString, FString> | 仅 `Custom Connector`（自定义连接器）有效，这个参数会被传递到 Connector 中，关于 `Custom Connector`， 请参阅 Custom Connector 文档。
-
-## 属性
-
-|参数名| 分类 | 数据类型 | 说明 |
-|------|------|----|----|
-|VideoDisplay        | 图像回显  |   enum   |图像回显的方式：<br/>`Raw`: 显示原始图像;<br/>`Annotated`: 带 MediaPipe 修饰线条的图像;<br/><br/>注意，`Raw` 显示性能**高于** `Annotated`|
-|OverlayAnnotations  | 图像回显  |   enum   |装饰线条显示模式：<br/>`HolisticTracking`: 显示整体装饰线条，包含面部和姿态;<br/>`PoseTracking`: 显示身体姿态装饰线条;<br/>`FaceTracking`: 显示面部装饰线条 |
-|MediaPipeSourceInfo | 视频数据  |struct|这是一个只读的变量，你不应改修，获取当前图像源的信息，例如视频高度、宽度、是否是静态图片|
-|GraphTimeoutSeconds | mediapipe 参数   |int|MediaPipie 计算时图像帧的超时时间，关于这部分信息，请参看 mediapipe bound time 相关文档|
-|bSourceHorizontalFlip | Image Source 控制 | bool | 是否水平翻转图像。 |
-|SourceResolutionLimits | Image Source 控制 | enum | 限制图像分辨率，即图片进入 AI 计算之前进行缩放处理（推荐开启）。  |
 
 
 ## 蓝图事件
