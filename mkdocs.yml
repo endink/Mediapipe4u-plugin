@@ -25,7 +25,7 @@ nav:
     - install/install.md
     - install/gstreamer.md
   - User Guide: 
-    - Motion&Facial Capture: 
+    - Vision AI: 
       - Quick Start Mocap:
         - mocap/quick_start/prepare_components.md
         - mocap/quick_start/prepare_character.md
@@ -86,6 +86,7 @@ plugins:
             User Guide: 使用指南
             Concepts: 概念
             Tutorials: 教程
+            Vision AI: 视觉 AI
             Motion&Facial Capture: 动作&表情捕捉
             Quick Start Mocap: 动作捕捉快速入门
             Update Logs: 更新日志
