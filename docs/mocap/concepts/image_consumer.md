@@ -5,7 +5,7 @@
 MediaPipe4U 视觉任务的本质是不停的处理来自图像源的帧（以下简称图像帧）。MediaPipe4U 融合各种不同的 AI、AR 技术，
 这些技术大都通过消费图像帧来完成计算,例如 Google MediaPipe, Nvidia NvAR。MediaPipe4U 使用发布订阅（PUB/SUB）模式向各种不同的技术投递图像，以此融合各种视觉处理技术。
 
-> 图像源请阅读 `Image Source` 部分。
+> 图像源请阅读 [`Image Source` 文档](./image_source.md)。
 
 一个简单的工作流可以表达为如下图
 
