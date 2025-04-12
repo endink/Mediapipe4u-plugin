@@ -1,4 +1,4 @@
-# Image Consumer
+# Image Consumer (C++)
 
 ## 程序结构
 
