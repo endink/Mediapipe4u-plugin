@@ -31,7 +31,7 @@ nav:
         - mocap/quick_start/prepare_character.md
         - mocap/quick_start/start_mocap.md
       - Concepts: 
-        -
+        - mocap/concepts/overview.md
         - mocap/concepts/image_source.md
       
   - License: 
