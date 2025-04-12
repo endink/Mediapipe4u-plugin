@@ -33,6 +33,7 @@ nav:
       - Concepts: 
         - mocap/concepts/overview.md
         - mocap/concepts/image_source.md
+        - mocap/concepts/image_consumer.md
       
   - License: 
     - licensing/index.md

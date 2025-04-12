@@ -1,11 +1,3 @@
----
-layout: default
-title: Image Consumer
-parent: 扩展点
-grand_parent: 动作和表情
-nav_order: 1
----
-
 # ImageConsumer
 
 ## 程序结构
@@ -15,14 +7,15 @@ nav_order: 1
 > 图像源请阅读 **ImageSource** 部分。
 一个简单的工作流可以表达为如下图
 
-[![NvAR](./images/Image_work_flow.jpg "NvAR")](./nvar/Image_work_flow.jpg)
+[![NvAR](./images/image_consumer/Image_work_flow.jpg "NvAR")](./images/image_consumer/Image_work_flow.jpg)
 
 从图中可以看出，所有的 **ImageConsumer** 都消费**同一帧**图像，并且，他们是**串行**运行的（顺序执行），这是为了让底层的线程管理变得简单，同时可以减少内存复制。
 由于这样的设计，在实现 **ImageConsumer** 时就要求 **ImageConsumer** :heavy_exclamation_mark:不能同步消费图片，同步消费将堵塞下一个 Consumer 接收帧。
 
-{: .highlight }
->推荐的 **ImageConsumer** 的简单实现模式：缓冲一个队列，当帧到来时只是简单的将其入队 (Enqueue)，然后通过开启后台线程循环消费队列（Dequeue），或者在UE组件的 Tick
-事件中消费缓冲队列中的帧。
+!!! tip
+
+    推荐的 **ImageConsumer** 的简单实现模式：缓冲一个队列，当帧到来时只是简单的将其入队 (Enqueue)，然后通过开启后台线程循环消费队列（Dequeue），或者在UE组件的 Tick
+	事件中消费缓冲队列中的帧。
 
 ---  
 
@@ -35,8 +28,9 @@ nav_order: 1
 实时上，**ImageSource** 内部维护着一个帧对象池，这实际是一个内存池, 当所有的消费者消费完成时，这一帧数据将重新回到池中，帧的内存可以被反复使用从而降低频繁分配和释放内存的开销。
 池中还有其他的空闲帧内存时，就不用担心因为某个 **ImageSource** 消费过慢而影响其他 **ImageConsumer**，**ImageConsumer** 之间可以并行处理互不干扰。
 
-{: .warning }
-> 如果一个 **ImageConsumer** 拿到图像帧长期不消费（没有 Release），**ImageSource** 帧对象池就会被填满，导致 **ImageSource** 无空闲内存可用，从而不再分发图像帧。
+!!! warning
+
+    如果一个 **ImageConsumer** 拿到图像帧长期不消费（没有 Release），**ImageSource** 帧对象池就会被填满，导致 **ImageSource** 无空闲内存可用，从而不再分发图像帧。
 
 **释放**
 
@@ -154,8 +148,9 @@ FImageWorkflow::Get().UnregisterConsumer(yourInstance);
 
 > 你也可以让这个实例的 **CanConsume** 返回 **false**, 来达到让它"停止工作"的目的。   
 
-{: .warning }
-> 如果一个 Consumer 不需要消费图像帧时候，强烈建议建议注销或者让它“停止工作”，这样可以提高程序的性能。
+!!! warning
+
+    如果一个 Consumer 不需要消费图像帧时候，强烈建议建议注销或者让它“停止工作”，这样可以提高程序的性能。
 
 ## 与 UObject 集成
 
@@ -210,5 +205,5 @@ IImageConsumer* ANvARLiveLinkActor::GetImageConsumer()
 - UnregisterImageConsumer
 
 
-[![ImageConsumer](./images/image_consumer_blueprint_register.jpg "ImageConsumer")](./images/image_consumer_blueprint_register.jpg)
+[![ImageConsumer](./images/image_consumer/blueprint_register.jpg "ImageConsumer")](./images/image_consumer/blueprint_register.jpg)
 

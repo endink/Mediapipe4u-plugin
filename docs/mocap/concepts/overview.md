@@ -57,4 +57,4 @@ MediaPipe4U 从统一的视觉任务处理管道中受益，插件中内置了�
 
 MediaPipe4U 支持你注册自己的 `Image Consumer` 使用我们提供的视觉任务 Pipline 来处理更多的视觉任务。   
 
-有关 `Image Consumer` 请查阅 Image Consumer 文档。
+有关 `Image Consumer` 请查阅 [Image Consumer 文档](./image_consumer.md)。
