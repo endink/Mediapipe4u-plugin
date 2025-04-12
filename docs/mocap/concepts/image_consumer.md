@@ -59,7 +59,7 @@ public:
 |函数|说明|注意事项|
 |----|----|----|
 | CanConsume | 返回一个值，当为 **true** 时，表示可以消费图像帧，ImageSource 将会回调 Consume 函数，如果为 **false** 表示这个 Comsumer 不接受图像帧，ImageSource 将不会再调用 Consume 函数。 | 不再需要消费图像时，可以返回 **false**，达到 "关闭"的功能。|
-| Consume | 用来消费图像帧。<br/>参数说明: `SourceInfo` 图像的高、宽、格式等信息; <br/>`Texture`：图像帧的指针，包含图像数据（字节数组）; |:bangbang:**注意**: <br/>实现 `Consume` 函数不能使用同步模式，堵塞当前线程将导致其他 Consumer 得不到图像帧。|
+| Consume | 用来消费图像帧。<br/><br/>参数说明: <br/>`SourceInfo` 图像的高、宽、格式等信息; <br/>`Texture`：图像帧的指针，包含图像数据（字节数组）; |:bangbang:**注意**: <br/>实现 `Consume` 函数不能使用同步模式，堵塞当前线程将导致其他 Consumer 得不到图像帧。|
 
 > **SourceInfo** 和 **Texture** 都是只读的，你只能读取，不可以修改。   
 > **SourceInfo** 存储帧信息，**Texture** 存储帧数据。
