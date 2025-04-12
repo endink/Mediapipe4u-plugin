@@ -3,7 +3,19 @@
 MediaPipe4U 内部使用一套统一的通用的管道（pipline）来处理视觉任务，包括但不限于动作捕捉、表情捕捉。
 
 
-## 流程
+## 视觉任务流程
+
+视觉任务指在图像应用 AI 算法的一类任务， 我们定义了统一的视觉任务处理管道来完成这些任务。
+
+!!! tip 
+
+    动作、表情捕捉是典型的视觉任务。 
+
+    视觉任务处理流程定义在 `MediaPipe4U` 插件中。   
+
+    动作捕捉组件定义在 `MediaPipe4UMoion` 插件中。
+
+    表情捕捉组件定义在 `MediaPipe4ULiveLink` 插件中。
 
 ``` mermaid
 sequenceDiagram
@@ -25,7 +37,7 @@ sequenceDiagram
 1. 当所有的 `Image Consumer` 处理完成后，`Image Source` 通过 `Poll` 操作拉取下一帧图像，进行下一次处理流程。
 
 
-## 组件和抽象：
+## 组件和抽象
 
 - `Image Source`：对应 MediaPipe4U 中的 `ImageSourceComponent` 接口。
 - `Image Consumer`：对应 MediaPipe4U 中的 `IImageConsumer`或`IImageConsumerProvider` 接口。
