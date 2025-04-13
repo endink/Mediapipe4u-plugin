@@ -36,8 +36,7 @@ nav:
         - vision/mocap/quick_start.md
         - vision/mocap/mediapipe_holistic_component.md
         - vision/mocap/mediapipe_anim_instance.md
-        
-
+        - vision/mocap/solvers.md
       
   - License: 
     - licensing/index.md

@@ -1,10 +1,12 @@
 # MediaPipe Holistic Component
 
+## 概述
+
 `MediaPipeHolisticComponent` 负责连接 Unreal Engine 和 google mediapipe api， 将 mediapipe 数据引入到 Unreal Engine 中。
 
 > `MediaPipeHolisticComponent` 存在于 `MediaPipe4U` 插件中。
 
-## Google MediaPipe 概述
+### Google MediaPipe 介绍
 
 Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器 holistic 中， `MediaPipe4U` 将这个计算器封装成 UnrealEngine 组件，
 公开了 google 几乎所有的图形（graph）参数，它是整个 `MediaPipe4U` 动作和表情捕捉的核心组件，也是动作、表情、手指捕捉的数据来源, 同时，它也是 `MediaPipe4U`
@@ -115,6 +117,6 @@ Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器
 
 !!! warning "注意"
     
-    `MediaPipeHolisticComponent` **C++** 的回调发生在任意线程，如果你需要在游戏游戏处理逻辑，需要自己切换。
+    `MediaPipeHolisticComponent` **C++** 的回调发生在任意线程，如果你需要在游戏游戏处理逻辑，需要自己确保线程安全。
     
      **蓝图**事件总是在游戏线程触发。

@@ -1,6 +1,8 @@
 
 # MediaPipe 动画蓝图
 
+## 概述
+
 `MediaPipeAnimInstance` 类作为 `MediaPipe4U` 动作捕捉的动画蓝图基类，从 `MediaPipeHolisticComponent` 组件中持续获取 mediapipe 数据，
 并将这些数据应用到各个 `MediaPipe4U` 相关的动画蓝图节点。
 
