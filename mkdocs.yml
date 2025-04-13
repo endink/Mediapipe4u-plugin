@@ -42,6 +42,9 @@ nav:
         - vision/mocap/twist_correction.md
         - vision/mocap/calibration.md
         - vision/mocap/runtime_behaviours.md
+        - Solvers Details: 
+          - vision/mocap/pose_solver.md
+          - vision/mocap/location_solver.md
       
   - License: 
     - licensing/index.md
@@ -98,6 +101,7 @@ plugins:
             Motion Capture: 动作捕捉
             Quick Start Mocap: 动作捕捉快速入门
             Update Logs: 更新日志
+            Solvers Details: 算解器细节
         - locale: en
           name: English
           build: true
