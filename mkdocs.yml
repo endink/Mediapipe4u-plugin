@@ -39,6 +39,7 @@ nav:
         - vision/mocap/mediapipe_holistic_component.md
         - vision/mocap/mediapipe_anim_instance.md
         - vision/mocap/custom_skeleton.md
+        - vision/mocap/twist_correction.md
         - vision/mocap/calibration.md
         - vision/mocap/runtime_behaviours.md
       
