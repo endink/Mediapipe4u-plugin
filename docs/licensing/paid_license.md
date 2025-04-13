@@ -36,14 +36,11 @@
     |  动作捕捉        | ✅  | ✅    |    ✅     |  ✅    | |
     |  手指捕捉        | ✅  | ✅    |    ✅     |  ✅    | |
     |  表情捕捉        | ✅  |   ⚪    |    ✅     |    ✅  | |
-    |  M4U Remoting   |  ⚪ |   ⚪ |    ✅    |   ✅ | |
-    |  M4U Remoting Android SDK  |   |        |       |   ✅ | 安卓端源代码 |
+    |  M4U Remoting   |  ✅ |   ✅ |    ✅    |   ✅ | |
+    |  M4U Remoting Android SDK  |  ✅ |    ✅    |    ✅   |   ✅ | 安卓端源代码 |
     |  BVH 导出        | ✅  |  ✅   |    ✅     |  ✅    | |
-    |  虚拟摄像头      |  ⚪  |  ⚪   |    ⚪     |  ✅    | |
-    |  语音套件       |  ⚪  |   ⚪  |     ⚪    |  ✅    | |
-    |  大语言模型（LLM） |  ⚪  |  ⚪   |     ⚪    |  ✅    | Required install [OLLama](https://ollama.com) |
-    |  VMC 数据导出      | ⚪   | ⚪    |    ⚪     |  ✅    | |
-    |  RTMP 推流      |  ⚪  |  ⚪   |   ⚪      |  ✅    | |
+    |  语音套件       |  ✅  |   ⚪  |     ⚪    |  ✅    | |
+    |  大语言模型（LLM） | ✅  |  ⚪   |     ⚪    |  ✅    | Required install [OLLama](https://ollama.com) |
     |  技术支持      |  Github  |  微信  |  微信  |  微信  | 设备授权低于 4 台仅提供 github 支持 |
 
 === "美元价格表（不含税）"
@@ -55,14 +52,11 @@
     |  动作捕捉        | ✅  | ✅    |    ✅     |  ✅    | |
     |  手指捕捉        | ✅  | ✅    |    ✅     |  ✅    | |
     |  表情捕捉        | ✅  |   ⚪    |    ✅     |    ✅  | |
-    |  M4U Remoting   |  ⚪ |   ⚪ |    ✅    |   ✅ | |
-    |  M4U Remoting Android SDK  |   |        |       |   ✅ | 安卓端源代码 |
+    |  M4U Remoting   |  ✅ |   ✅ |    ✅    |   ✅ | |
+    |  M4U Remoting Android SDK  |  ✅ |    ✅    |    ✅   |   ✅ | 安卓端源代码 |
     |  BVH 导出        | ✅  |  ✅   |    ✅     |  ✅    | |
-    |  虚拟摄像头      |  ⚪  |  ⚪   |    ⚪     |  ✅    | |
-    |  语音套件       |  ⚪  |   ⚪  |     ⚪    |  ✅    | |
-    |  大语言模型（LLM） |  ⚪  |  ⚪   |     ⚪    |  ✅    | Required install [OLLama](https://ollama.com) |
-    |  VMC 数据导出      | ⚪   | ⚪    |    ⚪     |  ✅    | |
-    |  RTMP 推流      |  ⚪  |  ⚪   |   ⚪      |  ✅    | |
+    |  语音套件       |  ✅  |   ⚪  |     ⚪    |  ✅    | |
+    |  大语言模型（LLM） |  ✅  |  ⚪   |     ⚪    |  ✅    | Required install [OLLama](https://ollama.com) |
     |  技术支持      |  Github  |  微信  |  微信  |  微信  | 设备授权低于 4 台仅提供 github 支持 |
 
    
