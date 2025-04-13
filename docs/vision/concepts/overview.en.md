@@ -1,4 +1,4 @@
-# Vision Tasks verviews
+# Vision Tasks Overviews
 
 MediaPipe4U internally uses a unified and general-purpose pipeline to handle vision tasks, including but not limited to motion capture and facial expression capture.
 
