@@ -9,6 +9,8 @@ theme:
   name: material
   palette:
     primary: teal
+  icon: 
+    annotation: material/plus-circle
   features:
     - header.autohide
     - navigation.tabs
@@ -26,15 +28,12 @@ nav:
     - install/gstreamer.md
   - User Guide: 
     - Vision AI: 
-      - Quick Start Mocap:
-        - vision/quick_start/prepare_components.md
-        - vision/quick_start/prepare_character.md
-        - vision/quick_start/start_mocap.md
       - Concepts: 
         - vision/concepts/overview.md
         - vision/concepts/image_source.md
         - vision/concepts/image_consumer.md
       - Motion Capture:
+        - vision/mocap/quick_start.md
         - vision/mocap/mediapipe_holistic_component.md
         - vision/mocap/mediapipe_anim_instance.md
         

@@ -38,7 +38,7 @@
 |LiveLinkEnabled| bool | true | 这个属性只是为了方便集成 LiveLink，MediaPipe4U 并未使用该属性， 方便你的蓝图编辑器中通过这个属性用于控制是否启用 LiveLink 连接。 |
 |bDebugDraw| bool | false | 是否在骨骼网格体上绘制一些调试信息。 |
 |CalibrationCountdownSeconds| float | 5 | 校准倒即使，表示 xxxx 秒后开始校准，相信信息请阅读校准部分文档。 |
-|CalibrationPolicy| enum | 校准策略 | `CountdownOnStart`: MediaPipe 开始时进行倒计时； `Manual`: 不使用倒计时，手动调用校准函数来校准。 |
+|CalibrationPolicy| enum | Manual | 校准策略: <br />`CountdownOnStart`: MediaPipe 开始时进行倒计时；<br/> `Manual`: 不使用倒计时，手动调用校准函数来校准。 |
 |BonePreset| enum | UE5 | 骨骼预设, 使用内置的骨骼预设或自定义骨骼预设。 |
 |BoneRemap| MediaPipeRemapAsset 资产 | null | 当 `BonePreset` 为 **Custom** 时， 将从这个属性读取骨骼映射信息， 以完整骨骼网格体骨骼倒 mediapipe 骨骼的映射。 |
 |PoseAsset| PoseAsset 资产 | `null` | 使用一个 PoseAsset 来矫正初始姿态，比如 UnrealEngine5 默认角色初始姿态手指是弯曲的，你可以在这个 PoseAsset 中拉直它来解决这个问题。 |
