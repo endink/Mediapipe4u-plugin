@@ -1,8 +1,7 @@
 ---
-layout: default
-nav_order: 110
-title: 更新日志
-has_children: true
+hide:
+  - navigation
+  - toc
 ---
 
 [English](./en.md)   

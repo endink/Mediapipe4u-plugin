@@ -1,8 +1,7 @@
 ---
-layout: default
-nav_order: 1
-title: English Release Notes
-parent: 更新日志
+hide:
+  - navigation
+  - toc
 ---
 
 [简体中文](./index.md)
