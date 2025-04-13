@@ -49,7 +49,8 @@ nav:
       
   - License: 
     - licensing/index.md
-    - licensing/pay_license.md
+    - licensing/free_license.md
+    - licensing/paid_license.md
     - licensing/view_license.md
     - licensing/update_license.md
     - licensing/device_id.md
