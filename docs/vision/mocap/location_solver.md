@@ -75,6 +75,7 @@ MediaPipe4U 使用一个专门的动画蓝图节点 `MediaPipeLocationSolver`，
 
 
 想快速开始使用 GroundIK，最简单的方法就是观看视频教程：   
+
 - [中文视频（bilibili）](https://www.bilibili.com/video/BV1eY4y1Q7AD)
 - [English Video Tutorial（youtube）](https://youtu.be/cop7_kCaDn4)
    
