@@ -3,9 +3,10 @@
 
 你可能希望在屏幕上显示图像源中的图像，MediaPipe4U 提供了回调函数，方便你在材质或 UMG 渲染图像源中的图片。
 
-[Texture Display](./images/texture_display/texture_callback.jpg "Texture Display")
+![Texture Display](./images/texture_display/texture_callback.jpg "Texture Display")
 
 学习如何显示追踪图像，最简单的方法是观看入门教程：
+
 - [Youtube](https://youtu.be/_6OLqClX-Fw)   
 - [bilibili](https://www.bilibili.com/video/BV1zs4y1978J)   
 
@@ -14,7 +15,8 @@
 `UMediaPipeHolisticComponent` 组件上提供了 `OnVideoTextureCreated` 事件，通过绑定该事件，你可以得到一个 `Texture2D` 对象，使用它来渲染。
 
 该事件是一个多播委托 (蓝图事件)， C++ 定义如下：
-```cpp
+
+```c++
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnVideoTextureCreated, UTexture2D*, NewTexture, int, TextureWidth, int, TextureHeight);
 
 UPROPERTY(Category="MediaPipe | VideoTexture", BlueprintAssignable)

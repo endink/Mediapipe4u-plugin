@@ -9,7 +9,7 @@ grand_parent: 动作和表情
 
 你可能希望在屏幕上显示图像源中的图像，**MediaPipe4U** 提供了回调函数，方便你在材质或 UMG 渲染图像源中的图片。
 
-[![image callback](./images/texture_callback.jpg "Shiprock")](images/texture_callback.jpg)
+![image callback](./images/texture_callback.jpg "Shiprock")
 
 学习如何显示追踪图像，最简单的方法是观看入门教程：
 
