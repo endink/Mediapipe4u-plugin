@@ -44,7 +44,7 @@ MediaPipe4U 支持在运行时动态调整关节扭曲矫正权重，这在你�
     settings.HeadCorrectAlpha = 0.5f;
     settings.WristCorrectAlpha = 0.85f;
     settings.LowerArmCorrectAlpha = 0.15f;
-    UMediaPipeUtils::SetTwistCorrectionSettings(animInstance, settings);
+    UMediaPipeMotionUtils::SetTwistCorrectionSettings(animInstance, settings);
     
     ```
 
