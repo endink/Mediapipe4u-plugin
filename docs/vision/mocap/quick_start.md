@@ -23,7 +23,7 @@
 完成这一步操作后，添加后 Actor (`Actor_QuickStart_Runtime`) 看起来应该如下图:
 
 
-![Actor_QuickStart_Runtime](./images/quick_start/prepare_runtime_actor.jpg "Actor_QuickStart_Runtime"){ align=right }
+![Actor_QuickStart_Runtime](./images/quick_start/prepare_runtime_actor.jpg "Actor_QuickStart_Runtime")
 
 
 ## 准备动补角色
@@ -34,7 +34,7 @@
 
 这个例子中我们将这个动画蓝图命名为 `ABP_Mannequins_MediaPipe`。
 
-![ABP_Mannequins_MediaPipe](./images/quick_start/create_anim_blueprint.jpg "ABP_Mannequins_MediaPipe"){ align=right }
+![ABP_Mannequins_MediaPipe](./images/quick_start/create_anim_blueprint.jpg "ABP_Mannequins_MediaPipe")
 
 打开创建好的动画蓝图，在蓝图编辑器中依次加入如下蓝图节点（注意顺序）:
 
@@ -43,7 +43,7 @@
 - `MediaPipeLocationSolver`: 位置（位移）算解节点
 - `MediaPipeHeadSolver`: 头部算解节点
 
-[ABP_Mannequins_MediaPipe](./images/quick_start/anim_blueprint_graph.jpg "ABP_Mannequins_MediaPipe"){ align=right }
+[ABP_Mannequins_MediaPipe](./images/quick_start/anim_blueprint_graph.jpg "ABP_Mannequins_MediaPipe")
 
 保存并编译这个动画蓝图。
 
@@ -71,7 +71,7 @@
 - `Character_MediaPipe`： 动补角色 （Character）。
 - `Actor_QuickStart_Runtime`: 运行时组件 （Actor）。
 
-![level_quickstart](./images/quick_start/level_quickstart.jpg "level_quickstart"){ align=right }
+![level_quickstart](./images/quick_start/level_quickstart.jpg "level_quickstart")
 
 ### 调用函数
 
