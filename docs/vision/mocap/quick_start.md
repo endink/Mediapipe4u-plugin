@@ -94,7 +94,7 @@
 
 ![start_video_file](./images/quick_start/start_video_file.jpg "start_video_file")
 
-保存并编译关卡蓝图，然后重新运行关卡，将从 `C:\my_video.mp4` 的视频文件中捕获动作，并驱动你的 3D 角色。
+保存并编译关卡蓝图，然后重新运行关卡，将从 `C:\my_video.mp4` 视频文件中捕获动作，并驱动你的 3D 角色。
 
 
 ## 从图片文件中捕捉动作
@@ -105,4 +105,4 @@
 
 ![start_image_file](./images/quick_start/start_image_file.jpg "start_image_file")
 
-保存并编译关卡蓝图，然后重新运行关卡，将从 `C:\my_pose.jpg` 的视频文件中捕获动作，并驱动你的 3D 角色。
+保存并编译关卡蓝图，然后重新运行关卡，将从 `C:\my_picture.jpg` 图片文件中捕获动作，并驱动你的 3D 角色。
