@@ -17,7 +17,7 @@ MediaPipe4U 允许你在运行时动态调整一些参数，例如平滑、滤�
 
 === "C++"
 
-    ```cpp
+    ```c++
     if (Mesh)
 	{
 		UAnimInstance* anim = Mesh->GetAnimInstance()
@@ -41,7 +41,7 @@ MediaPipe4U 允许你在运行时动态调整一些参数，例如平滑、滤�
 
 === "C++"
 
-    ```cpp
+    ```c++
 
     UMediaPipeAnimInstance* animInstance = nullptr;
     if(UMediaPipeMotionUtils::FindMediaPipeAnimationInstance(MediaPipeCharacter, animInstance))
@@ -61,7 +61,7 @@ MediaPipe4U 允许你在运行时动态调整一些参数，例如平滑、滤�
 
 === "C++"
 
-    ```cpp
+    ```c++
 
     UMediaPipeAnimInstance* animInstance = nullptr;
     if(UMediaPipeMotionUtils::FindMediaPipeAnimationInstance(MediaPipeCharacter, animInstance))
@@ -81,7 +81,7 @@ MediaPipe4U 允许你在运行时动态调整一些参数，例如平滑、滤�
 
 === "C++"
 
-    ```cpp
+    ```c++
 
     UMediaPipeAnimInstance* animInstance = nullptr;
     if(UMediaPipeMotionUtils::FindMediaPipeAnimationInstance(MediaPipeCharacter, animInstance))
@@ -103,7 +103,7 @@ MediaPipe4U 允许你在运行时动态调整一些参数，例如平滑、滤�
 
 === "C++"
 
-    ```cpp
+    ```c++
 
     UMediaPipeAnimInstance* animInstance = nullptr;
     if(UMediaPipeMotionUtils::FindMediaPipeAnimationInstance(MediaPipeCharacter, animInstance))
@@ -124,7 +124,7 @@ MediaPipe4U 允许你在运行时动态调整一些参数，例如平滑、滤�
 
 === "C++"
 
-    ```cpp
+    ```c++
 
     UMediaPipeAnimInstance* animInstance = nullptr;
     if(UMediaPipeMotionUtils::FindMediaPipeAnimationInstance(MediaPipeCharacter, animInstance))
@@ -148,7 +148,7 @@ MediaPipe4U 允许你在运行时动态调整一些参数，例如平滑、滤�
 
 === "C++"
 
-    ```cpp
+    ```c++
 
     UMediaPipeAnimInstance* animInstance = nullptr;
     if(UMediaPipeMotionUtils::FindMediaPipeAnimationInstance(MediaPipeCharacter, animInstance))

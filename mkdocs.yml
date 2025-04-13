@@ -12,6 +12,7 @@ theme:
   icon: 
     annotation: material/plus-circle
   features:
+    - content.code.copy
     - header.autohide
     - navigation.tabs
     - navigation.tabs.sticky
