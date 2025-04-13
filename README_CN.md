@@ -161,7 +161,7 @@
 | MediaPipe4ULiveLink     | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
 | GStreamer               | :heavy_check_mark: | :x: |Coming Soon|
 | MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4UBVH          | :heavy_check_mark: | :x: |Coming Soon|
+| MediaPipe4UBVH          | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
 | MediaPipe4USpeech       | :heavy_check_mark: | :x: |Coming Soon|
 
 ## 免费授权文件
