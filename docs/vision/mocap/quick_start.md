@@ -43,7 +43,7 @@
 - `MediaPipeLocationSolver`: 位置（位移）算解节点
 - `MediaPipeHeadSolver`: 头部算解节点
 
-[ABP_Mannequins_MediaPipe](./images/quick_start/anim_blueprint_graph.jpg "ABP_Mannequins_MediaPipe")
+![ABP_Mannequins_MediaPipe](./images/quick_start/anim_blueprint_graph.jpg "ABP_Mannequins_MediaPipe")
 
 保存并编译这个动画蓝图。
 
