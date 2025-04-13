@@ -12,19 +12,13 @@ grand_parent: 动作和表情
 [![image callback](./images/texture_callback.jpg "Shiprock")](images/texture_callback.jpg)
 
 学习如何显示追踪图像，最简单的方法是观看入门教程：
+
 - [Youtube](https://youtu.be/_6OLqClX-Fw)   
 - [bilibili](https://www.bilibili.com/video/BV1zs4y1978J)   
 
 ## 回调事件
 
 **UMediaPipeHolisticComponent** 组件上提供了 OnVideoTextureCreated 事件，通过绑定该事件，你可以得到一个 Texture2D 对象，使用它来渲染。
-
-> 视频动补、图片动补和摄像头动补均可以使用该事件。
-
-蓝图实例如下：
-
-[![OnVideoTextureCreated](./images/video_texture_created_event_blueprint.jpg "OnVideoTextureCreated")](images/video_texture_created_event_blueprint.jpg)
-
 
 该事件是一个多播委托， C++ 定义如下：
 ```cpp
@@ -33,6 +27,14 @@ DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FOnVideoTextureCreated, UTexture2
 UPROPERTY(Category="MediaPipe | VideoTexture", BlueprintAssignable)
 FOnVideoTextureCreated OnVideoTextureCreated;
 ```
+
+
+> 视频动补、图片动补和摄像头动补均可以使用该事件。
+
+蓝图实例如下：
+
+[![OnVideoTextureCreated](./images/video_texture_created_event_blueprint.jpg "OnVideoTextureCreated")](images/video_texture_created_event_blueprint.jpg)
+
 
 
 值得一提的是，为了方便你将图像绘制到 UMG 中，我们提供了一个 **SetTextureToImage** 蓝图函数帮助你对齐图像到 Canvas 的角落。   
