@@ -68,7 +68,7 @@ MediaPipe4U 将从动补数据中算解出关节的旋转，并且驱动 3D 角�
       
     你可以设置 Pose Solver 节点上的 **CountdownCalibrationEnabled** 属性来决定是否在倒计时结束时进行姿势校准。 
      
-:page_with_curl:要了解更多校准的用法，请阅读[校准](../advance/calibration.md)部分文档。
+:page_with_curl:要了解更多校准的用法，请阅读[校准](./calibration.md)部分文档。
 
 ## 调整关节锁定
 

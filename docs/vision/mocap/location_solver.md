@@ -106,26 +106,26 @@ Ground IK 会受到很多参数影响，大多数参数使用默认值是合理�
 
 ### 完整参数说明
 
-**MoveRoot**
+**MoveRoot**   
 默认 Ground IK 会移动盆骨修正位置，通过设置该属性为 true， 可以移动根骨骼来修正位置。
 默认值：**false**      
 
-**RotateFootAlignGround**
+**RotateFootAlignGround**   
 是否旋转脚踝来对齐地面，默认会旋转脚踝来贴合地面。但是，高跟鞋场景旋转会不合时宜，可以通过该属性禁用旋转。   
 默认值：**true**      
 
-**FeetRollSmooth**
+**FeetRollSmooth**   
 脚踝做 Roll 旋转时的平滑度，0-1 之间，数值越大，旋转越平滑。   
 默认值：0.6
 
-**FeetPitchSmooth**
+**FeetPitchSmooth**   
 脚踝做 Pitch 旋转时的平滑度，0-1 之间，数值越大，旋转越平滑。   
 默认值：0.8
 
 **CollisionChannel**     
 射线检测的碰撞通道，确保从脚发出的射线只与地面碰撞   
 
-**HipsRotationMultiplier**  
+**HipsRotationMultiplier**   
 推动盆骨过程中如果法线偏移，轻微的旋转盆骨，该属性控制旋转的倍数
 
 **MaxSquashIterations**  
@@ -134,36 +134,36 @@ Ground IK 会受到很多参数影响，大多数参数使用默认值是合理�
 **MaxStretchIterations**  
 推动盆骨造成腿部舒展时，腿部 IK 算解的迭代次数。
 
-**FeetSmoothSpeed**  
+**FeetSmoothSpeed**   
 当需要移动脚（Foot）的骨骼靠近地面时，通常是脚是增量，非线性的移动，该属性控制 (厘米/秒) 增量的移动速度, 如果抬脚或落脚太快，尝试减小该值, 如果抬脚或落脚太快，尝试增大该值。
 
-**FeetSmoothAngularSpeed**  
+**FeetSmoothAngularSpeed**   
 当需要转动脚（Foot）的骨骼贴合地面时，通常是脚是增量，非线性的旋转，该属性控制 (角度/秒) 增量的角速度。
 
-**FeetDampingDistance**  
+**FeetDampingDistance**   
 抬脚的阻尼高度（厘米），在此高度以下时脚将吸附到地面，只有超过这个值才会抬起腿部，数值约小，对抬腿越敏感。如果你发现无法抬起脚可以尝试减少该值，如果你认为不应该抬脚
 时候脚被抬起可以增大该值，直到合适为止。
 
 
-**JumpVelocityThreshold**  
+**JumpVelocityThreshold**   
 跳跃速度（厘米/秒）阈值，只有角色位移速度超过这个阈值，才认为角色正在跳跃，此时会缓慢降低脚步阻尼以完成起跳。如果视频中的人物需要小的跳跃，可以降低该值，数值越小，对跳跃越敏感。
 如果你发现角色经常离开地面，可以尝试增加该值，这将会加强"地面吸附力", 如果你发现人物无法跳起，可以减少该值，这将会降低"地面吸附力"。
 
-**InertiaSmoothFactor**  
+**InertiaSmoothFactor**   
 惯性平滑因子，当脚移动时，需要消除位移的摇摆，移动过程必须具有增量非线性的阻尼效果，通过这个参数控制这种“移动速度”的平滑，数值越大，平滑度越高。
 
-**FeetVerticalOffset**
+**FeetVerticalOffset**    
 脚垂直方向的偏移量（以厘米为单位），如果模型 IK 计算后脚一直陷入地面或浮空（这或许是建模时脚就和根骨骼不在同一平面），你可以通过这个静态的偏移量修正它，正数表示上推（脚默认陷入地面的情况），负数表示下推（脚浮空的情况）。
 
-**bRotateFootAlignGround**
+**bRotateFootAlignGround**    
 是否通过旋转脚踝将脚掌与地面对齐。
 默认值：true 
 
-**MoveRoot**
+**MoveRoot**    
 默认情况下 Ground IK 拉动盆骨（pelvis）消除脚步悬空或下沉。你可以将该属性设为 true，从而让 Ground IK 拉动根骨骼（不推荐）。
 默认值：false
 
-**PreventSlidingDistance**
+**PreventSlidingDistance**    
 抑制滑步产生，可以通过设置一个以厘米为单位的距离值，在这个范围内的脚步滑步会被尽可能的消除。
 默认值：5
 
