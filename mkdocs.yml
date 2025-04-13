@@ -36,6 +36,7 @@ nav:
         - vision/concepts/image_consumer.md
       - Motion Capture:
         - vision/mocap/mediapipe_holistic_component.md
+        - vision/mocap/mediapipe_anim_instance.md
         
 
       
