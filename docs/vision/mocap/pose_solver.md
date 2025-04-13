@@ -63,10 +63,11 @@ MediaPipe4U 将从动补数据中算解出关节的旋转，并且驱动 3D 角�
 !!! tip
 
     MediaPipe4U 的姿势校准有两种方式：   
-    1. **Countdown**：开始动补同时开始校准倒计时，倒计时结束时自动校准（通过 MediaPipeAnimationInstance 上的 **CalibrateCountdownSeconds** 属性设置）
-    2. **Manual**：手动校准, 通过调用 MediaPipeAnimationInstance 的 **CalibratePose** 函数进行姿势校准。  
+
+    1. `CountdownOnStart`：开始动补同时开始校准倒计时，倒计时结束时自动校准（通过 `MediaPipeAnimationInstance` 上的 `CalibrateCountdownSeconds` 属性设置）
+    2. `Manual`：手动校准, 通过调用 `MediaPipeAnimationInstance` 的 `CalibratePose` 函数进行姿势校准。  
       
-    你可以设置 Pose Solver 节点上的 **CountdownCalibrationEnabled** 属性来决定是否在倒计时结束时进行姿势校准。 
+    你可以设置 Pose Solver 节点上的 `CountdownCalibrationEnabled` 属性来决定是否在倒计时结束时进行姿势校准。 
      
 :page_with_curl:要了解更多校准的用法，请阅读[校准](./calibration.md)部分文档。
 
