@@ -90,7 +90,7 @@
 
 ### 编辑关卡蓝图
 
-调整管卡蓝图， 使用 `GStreamerImageSourceComponent` 来从视频文件中捕捉动作。
+调整关卡蓝图， 使用 `GStreamerImageSourceComponent` 来从视频文件中捕捉动作。
 
 ![start_video_file](./images/quick_start/start_video_file.jpg "start_video_file")
 
@@ -101,7 +101,7 @@
 
 ### 编辑关卡蓝图
 
-调整管卡蓝图， 使用 `GStaticImageSourceComponent` 来从图片文件中捕捉动作。
+调整关卡蓝图， 使用 `GStaticImageSourceComponent` 来从图片文件中捕捉动作。
 
 ![start_image_file](./images/quick_start/start_image_file.jpg "start_image_file")
 
