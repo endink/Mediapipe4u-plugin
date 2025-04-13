@@ -73,7 +73,7 @@
 
 ![level_quickstart](./images/quick_start/level_quickstart.jpg "level_quickstart")
 
-### 调用函数
+### 编辑关卡蓝图
 
 现在打开关卡蓝图 (Level Blueprint) ，在蓝图便器中添加如下节点。
 
@@ -81,6 +81,28 @@
 
 保存并编译关卡蓝图。
 
-## 运行关卡
+### 运行管卡
 
 现在运行这个关卡，将会打开摄像头，并从摄像头中捕获人物运动来驱动你的 3D 角色。
+
+
+## 从视频文件中捕捉动作
+
+### 编辑关卡蓝图
+
+调整管卡蓝图， 使用 `GStreamerImageSourceComponent` 来从视频文件中捕捉动作。
+
+![start_video_file](./images/quick_start/start_video_file.jpg "start_video_file")
+
+保存并编译关卡蓝图，然后重新运行关卡，将从 `C:\my_video.mp4` 的视频文件中捕获动作，并驱动你的 3D 角色。
+
+
+## 从图片文件中捕捉动作
+
+### 编辑关卡蓝图
+
+调整管卡蓝图， 使用 `GStaticImageSourceComponent` 来从图片文件中捕捉动作。
+
+![start_image_file](./images/quick_start/start_image_file.jpg "start_image_file")
+
+保存并编译关卡蓝图，然后重新运行关卡，将从 `C:\my_pose.jpg` 的视频文件中捕获动作，并驱动你的 3D 角色。
