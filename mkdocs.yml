@@ -13,6 +13,7 @@ theme:
     annotation: material/plus-circle
   features:
     - content.code.copy
+    - content.code.select
     - header.autohide
     - navigation.tabs
     - navigation.tabs.sticky
@@ -37,7 +38,8 @@ nav:
         - vision/mocap/quick_start.md
         - vision/mocap/mediapipe_holistic_component.md
         - vision/mocap/mediapipe_anim_instance.md
-        - vision/mocap/solvers.md
+        - vision/mocap/custom_skeleton.md
+        - vision/mocap/runtime_behaviours.md
       
   - License: 
     - licensing/index.md
