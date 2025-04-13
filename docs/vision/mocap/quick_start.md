@@ -101,7 +101,7 @@
 
 ### 编辑关卡蓝图
 
-调整关卡蓝图， 使用 `GStaticImageSourceComponent` 来从图片文件中捕捉动作。
+调整关卡蓝图， 使用 `StaticImageSourceComponent` 来从图片文件中捕捉动作。
 
 ![start_image_file](./images/quick_start/start_image_file.jpg "start_image_file")
 
