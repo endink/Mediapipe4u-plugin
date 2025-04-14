@@ -159,9 +159,9 @@ protected:
 
 
 
-## MediaPipe 地标参考
+## MediaPipe 参考
 
-### 坐标系
+### MediaPipe 3D 坐标系
 
 ![MediaPipe Coordinate](./images/3d_coordinate.jpg "Blazor Pose")
 
@@ -171,4 +171,4 @@ protected:
 
 ### 21 个手部地标
 
-![Blazor Pose](./images/hand-landmarks.png "Blazor Pose"){ width="400" }
+![Blazor Pose](./images/hand-landmarks.png "Blazor Pose")
