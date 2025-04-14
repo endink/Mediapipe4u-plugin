@@ -20,11 +20,11 @@
 
 国内用户如果 Youtube 打不开，请观看 bilibili 站视频：
 
-[B站演示效果](https://www.bilibili.com/video/BV1sD4y1N7HX/?share_source=copy_web&vd_source=f77a8ce9c4c322dcc88515970bea1630)
+[B站演示效果](https://www.bilibili.com/video/BV1sD4y1N7HX/?share_source=copy_web&vd_source=f77a8ce9c4c322dcc88515970bea1630){: target='_blank' }
 
 
 关于 **NvAR** 详细信息，请看这里：     
-[https://developer.nvidia.com/maxine](https://developer.nvidia.com/maxine)
+[https://developer.nvidia.com/maxine](https://developer.nvidia.com/maxine){: target='_blank' }
 
 ## 环境要求
 
@@ -50,7 +50,7 @@ Nvidia Maxine AR SDK | 0.8.2
 
 Nvidia 官方的系统和软件要求请阅读这里：
 
-[https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html](https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html)
+[https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html](https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html){: target='_blank' }
 
 !!! warning
 
@@ -70,7 +70,7 @@ Nvidia 官方的系统和软件要求请阅读这里：
 
 从以下网址下载适合你的显卡的组件包：   
 
-[https://www.nvidia.com/broadcast-sdk-resources](https://www.nvidia.com/broadcast-sdk-resources)
+[https://www.nvidia.com/broadcast-sdk-resources](https://www.nvidia.com/broadcast-sdk-resources){: target='_blank' }
 
 ![NvAR](./images/nvar/download_nvar.jpg "NvAR")
 
