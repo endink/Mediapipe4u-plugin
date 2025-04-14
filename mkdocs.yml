@@ -51,6 +51,7 @@ nav:
           - vision/mocap/switch_anim_blueprint.md
       - Facial Capture: 
         - vision/facial/get_started.md
+        - vision/facial/nvar.md
       - MediaPip4U Remoting: 
         - vision/remoting/get_started.md
 
