@@ -5,12 +5,12 @@
 
 ![M4U Remoting](./images/get_started/remoting_icon.jpg "M4U Remoting")
 
-- MediaPipe4U4U Remoting 是一个 Android App, 旨在将 MediaPipe4U 的捕捉能力延申到移动端（当前仅支持 Android），M4U Remoting 还在成长阶段，目前只具备表情捕捉。       
-- MediaPipe4U4U Remoting 的本质是在移动端运行 google mediapipe 算解器，并将求解的数据结果发送到 Unreal Engine 端，供给 MediaPipe4U 在 Unreal Engine 中完成后续处理（例如：驱动 3D 角色动作）。    
+- `MediaPipe4U Remoting` 是一个 Android App, 旨在将 MediaPipe4U 的捕捉能力延申到移动端（当前仅支持 Android），M4U Remoting 还在成长阶段，目前只具备表情捕捉。       
+- `MediaPipe4U Remoting` 的本质是在移动端运行 google mediapipe 算解器，并将求解的数据结果发送到 Unreal Engine 端，供给 MediaPipe4U 在 Unreal Engine 中完成后续处理（例如：驱动 3D 角色动作）。    
 
 !!! tip
 
-    MediaPipe4U4U Remoting 是一个开源 App， 你可以在这里下载它的源代码：       
+    `MediaPipe4U Remoting` 是一个开源 App， 你可以在这里下载它的源代码：       
     [https://github.com/endink/M4URemoting-Android](https://github.com/endink/M4URemoting-Android)
 
 
@@ -29,7 +29,7 @@ netsh advfirewall firewall add rule name="Port22345" dir=in action=allow protoco
 
 ## 表情捕捉
 
-`MediaPipe4ULiveLink` 插件中内置了名为 **Remoting** 的 Face Solution，用来接收来自 MediaPipe4U Remoting App 捕捉到的表情数据，并通过 Live Link 协议发送到 Live Link 接收端（通常是 LiveLinkPose 动画蓝图节点）。   
+`MediaPipe4ULiveLink` 插件中内置了名为 **Remoting** 的 Face Solution，用来接收来自 `MediaPipe4U Remoting` App 捕捉到的表情数据，并通过 Live Link 协议发送到 Live Link 接收端（通常是 LiveLinkPose 动画蓝图节点）。   
 
 > 移动端表情捕捉不但可以摆脱有线的束缚，因为移动端 mediapipe 支持 GPU 推理，加之它只运行单一的表情算解器，所以通常能够获得比 windows 摄像头更高的算解帧率。   
 > 实测安卓表情捕捉帧率可以达到 30 PFS。
