@@ -54,6 +54,8 @@ nav:
         - vision/facial/nvar.md
       - MediaPip4U Remoting: 
         - vision/remoting/get_started.md
+      - Google MediaPipe Alternate:
+
 
       
   - License: 
@@ -115,6 +117,7 @@ plugins:
             Update Logs: 更新日志
             Solvers Details: 算解器细节
             Advanced Usage: 进阶用法
+            Google MediaPipe Alternate: 替换 Google MediaPipe
         - locale: en
           name: English
           build: true
