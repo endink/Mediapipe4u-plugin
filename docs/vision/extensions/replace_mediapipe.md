@@ -159,12 +159,16 @@ protected:
 
 
 
-## Blazor Pose 地标参考
+## MediaPipe 地标参考
+
+### 坐标系
+
+![MediaPipe Coordinate](./images/3d_coordinate.jpg "Blazor Pose"){ width="400" }
 
 ### 33 个身体地标
 
-![Blazor Pose](./images/pose_landmarks_index.png "Blazor Pose")
+![Blazor Pose](./images/pose_landmarks_index.png "Blazor Pose"){ width="400" }
 
 ### 21 个手部地标
 
-![Blazor Pose](./images/hand-landmarks.png "Blazor Pose")
+![Blazor Pose](./images/hand-landmarks.png "Blazor Pose"){ width="400" }
