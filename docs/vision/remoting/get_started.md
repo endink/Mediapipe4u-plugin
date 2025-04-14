@@ -1,5 +1,7 @@
 
-# MediaPipe4U Remoting 概述
+# 使用 M4U Remoting
+
+## 概述
 
 ![M4U Remoting](./images/get_started/remoting_icon.jpg "M4U Remoting")
 
