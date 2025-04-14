@@ -163,7 +163,7 @@ protected:
 
 ### 坐标系
 
-![MediaPipe Coordinate](./images/3d_coordinate.jpg "Blazor Pose"){ width="400" }
+![MediaPipe Coordinate](./images/3d_coordinate.jpg "Blazor Pose")
 
 ### 33 个身体地标
 
