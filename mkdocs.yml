@@ -46,6 +46,9 @@ nav:
         - Solvers Details: 
           - vision/mocap/pose_solver.md
           - vision/mocap/location_solver.md
+        - Advanced Usage:
+          - vision/mocap/switch_anim_blueprint.md
+
       
   - License: 
     - licensing/index.md
@@ -104,6 +107,7 @@ plugins:
             Quick Start Mocap: 动作捕捉快速入门
             Update Logs: 更新日志
             Solvers Details: 算解器细节
+            Advanced Usage: 进阶用法
         - locale: en
           name: English
           build: true
