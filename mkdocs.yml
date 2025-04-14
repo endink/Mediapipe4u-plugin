@@ -49,12 +49,12 @@ nav:
           - vision/mocap/location_solver.md
         - Advanced Usage:
           - vision/mocap/switch_anim_blueprint.md
+          - vision/extensions/replace_mediapipe.md
       - Facial Capture: 
         - vision/facial/get_started.md
         - vision/facial/nvar.md
       - MediaPip4U Remoting: 
         - vision/remoting/get_started.md
-      - Google MediaPipe Alternate:
 
 
       
@@ -117,7 +117,6 @@ plugins:
             Update Logs: 更新日志
             Solvers Details: 算解器细节
             Advanced Usage: 进阶用法
-            Google MediaPipe Alternate: 替换 Google MediaPipe
         - locale: en
           name: English
           build: true
