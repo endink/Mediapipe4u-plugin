@@ -34,7 +34,7 @@
 |----|--------|
 Windows OS | 64-bit Windows 10 or later
 NVIDIA Graphics Driver for Windows | 511.65 or later
-Nvidia Maxine AR SDK | 0.8.2
+Nvidia Maxine AR SDK | `0.8.2`, `0.8.7`
 
 > MediaPipe4U 的 NvAR 插件无论是开发环境和打包部署后都要求 PC 已经安装 **Nvidia Maxine AR SDK**。   
 > NvAR 插件体积太大（1G以上），让用户自行安装会更方便，否则你的软件包也将非常大。
