@@ -85,7 +85,7 @@ C:\Users\<Your User Name>\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildCon
 
     修改 `BuildConfiguration.xml` 会使本机所有版本的 Unreal Engine 都使用 MSVC `14.38.33130` 编译工程。 
 
-    不建议使用**要高**的`MSVC`版本构建项目，因为这会使得最终运行程序的机器 MSVC 版本要求很高。    
+    **不建议**使用太高的`MSVC`版本构建项目，因为这会使得最终运行程序的机器 MSVC 版本要求很高。    
     目前看来 `14.38.33130` 是一个很好的选择。
 
   
