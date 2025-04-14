@@ -147,8 +147,8 @@
 | UE 5.1 | [百度网盘](https://pan.baidu.com/s/11C9pmKjRiwwh5e_mw82aTg?pwd=n9he) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERHtOO41t9JMo_rMTYHUl5IBD6yrdmn9rqzi6b1ozQWxnw?e=A1XhVA) | 2023-05-24 |
 | UE 5.2 | [百度网盘](https://pan.baidu.com/s/1mEilhcaMCclXg6V6GhttHg?pwd=7q4p) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EWeByq7iTjdDl02JZbIEHBkBd0zmMjcGMKHl3STOmGrMaA?e=pvrHJi) | 2023-05-24 |
 | UE 5.3 | [百度网盘](https://pan.baidu.com/s/1Tn6MIZg4Y1Fe-phcAQJnsw?pwd=wxsj) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EfiygZsL1itJkjs1PiJrCSgByTHg7gGisVqqSlWK2Uz5og?e=Kjq23o) | 2025-04-14 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1uPtxIIR1VAvcFse4o0zI0w?pwd=3f22) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EREEPEx8A61FtXAJrTGyeA0B8QKXFRDJf7sP_lV76keyAg?e=JOpwXW) | 2025-04-14 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1iwSUbqr5P-vA_nRSNoBgXg?pwd=r9vd) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUWxGe7MpLZOpQ53Fe1y1FgBwDmHBL9862To18Qw7Mzd8g?e=zfldQi) | 2025-04-14 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1q4xQM1jaHJJT7-XinxvVwQ?pwd=4bsb) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EREEPEx8A61FtXAJrTGyeA0B8QKXFRDJf7sP_lV76keyAg?e=JOpwXW) | 2025-04-14 |
+| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1hX0dww8AvYUjel9IScSN7g?pwd=fww2) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUWxGe7MpLZOpQ53Fe1y1FgBwDmHBL9862To18Qw7Mzd8g?e=zfldQi) | 2025-04-14 |
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    
