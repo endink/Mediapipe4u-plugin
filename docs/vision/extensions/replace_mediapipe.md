@@ -38,7 +38,7 @@
 ## IMediaPipeHolisticConnector
 
 `MediaPipe4U` 提供了一个 `IMediaPipeHolisticConnector` 用于定义 Unreal Engine 和 google mediapipe api 之间的连接。
-通过在 C++ 中实现一个集成自 `IMediaPipeHolisticConnector` 的类可以替换 `MediaPipe4U` 内置的连接器 (Connector)。
+通过在 C++ 中实现一个继承自 `IMediaPipeHolisticConnector` 的类可以替换 `MediaPipe4U` 内置的连接器 (Connector)。
 
 下面是 `IMediaPipeHolisticConnector` 的 C++ 定义。
 
