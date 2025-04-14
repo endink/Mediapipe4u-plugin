@@ -3,7 +3,8 @@
 
 如果你拥有 Nvidia RTX 20XX 或更高级的 GPU，**MediaPipe4UNvAR** 能够帮助你获得一个可以和苹果 Arkit 媲美的表情捕捉方案。
 
-![NvAR](./nvar/nvidia-rtx-ar.jpg "NvAR")
+![NvAR](./images/nvar/nvidia-rtx-ar.jpg "NvAR")
+
 !!! tip
     阅读本章内容之前，你必须阅读过[使用表情捕捉](./get_started.md)相关文档，否则你可能无法理解后面的内容。
 
