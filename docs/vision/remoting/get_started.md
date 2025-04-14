@@ -14,6 +14,19 @@ MediaPipe4U4U Remoting 的本质是在移动端运行 google mediapipe 算解器
     [https://github.com/endink/M4URemoting-Android](https://github.com/endink/M4URemoting-Android)
 
 
+## Windows 防火墙设置
+
+你的防火墙可能不允许手机访问主机的端口（默认端口 **22345**），你可以通过保存以下内容为 bat 文件并执行，让防火墙允许端口通过。
+
+```powershell
+netsh advfirewall firewall add rule name="Port22345" dir=in action=allow protocol=UDP localport=22345
+```
+
+!!! tip
+
+    上述命令保存为 bat 文件后需要用**管理员身份**执行，对 bat 文件点击鼠标右键，“以管理员身份运行” 即可。
+
+
 ## 表情捕捉
 
 MediaPipe4ULiveLink 插件中内置了名为 **Remoting** 的 Face Solution，用来接收来自 MediaPipe4U Remoting App 捕捉到的表情数据，并通过 Live Link 协议发送到 Live Link 接收端（通常是 LiveLinkPose 动画蓝图节点）。   
@@ -47,17 +60,6 @@ MediaPipe4ULiveLink 插件中内置了名为 **Remoting** 的 Face Solution，�
 
 Remoting App 具有远程控制 MediaPipe4U 的能力，你可以从安卓设备发送校准指令， MediaPipe4U 将进行校准操作，只需在主界面点击 + 按钮。
 
-### 关于防火墙
-
-你的防火墙可能不允许手机访问主机的端口（默认端口 22345），你可以通过保存以下内容为 bat 文件并执行，让防火墙允许端口通过。
-
-```powershell
-netsh advfirewall firewall add rule name="Port22345" dir=in action=allow protocol=UDP localport=22345
-```
-
-!!! tip
-
-    上述命令保存为 bat 文件后需要用**管理员身份**执行，对 bat 文件点击鼠标右键，“以管理员身份运行” 即可。
 
 
 ### 设置说明
