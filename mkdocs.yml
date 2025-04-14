@@ -56,7 +56,7 @@ nav:
       - MediaPip4U Remoting: 
         - vision/remoting/get_started.md
   - Package And Deploy:
-    - pagecage/package_windows.md
+    - package/package_windows.md
 
       
   - License: 
