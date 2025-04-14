@@ -5,8 +5,8 @@
 
 ![M4U Remoting](./images/get_started/remoting_icon.jpg "M4U Remoting")
 
-MediaPipe4U4U Remoting 是一个 Android App, 旨在将 MediaPipe4U 的捕捉能力延申到移动端（当前仅支持 Android），M4U Remoting 还在成长阶段，目前只具备表情捕捉。       
-MediaPipe4U4U Remoting 的本质是在移动端运行 google mediapipe 算解器，并将求解的数据结果发送到 Unreal Engine 端，供给 MediaPipe4U 在 Unreal Engine 中完成后续处理（例如：驱动 3D 角色动作）。    
+- MediaPipe4U4U Remoting 是一个 Android App, 旨在将 MediaPipe4U 的捕捉能力延申到移动端（当前仅支持 Android），M4U Remoting 还在成长阶段，目前只具备表情捕捉。       
+- MediaPipe4U4U Remoting 的本质是在移动端运行 google mediapipe 算解器，并将求解的数据结果发送到 Unreal Engine 端，供给 MediaPipe4U 在 Unreal Engine 中完成后续处理（例如：驱动 3D 角色动作）。    
 
 !!! tip
 
