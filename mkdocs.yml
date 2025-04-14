@@ -107,6 +107,7 @@ plugins:
             Tutorials: 教程
             Vision AI: 视觉 AI
             Motion Capture: 动作捕捉
+            Facial Capture: 表情捕捉
             Quick Start Mocap: 动作捕捉快速入门
             Update Logs: 更新日志
             Solvers Details: 算解器细节
