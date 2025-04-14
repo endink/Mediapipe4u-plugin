@@ -1,46 +1,40 @@
----
-layout: default
-title: 表情捕捉
-parent: 核心功能
-nav_order: 30
-grand_parent: 动作和表情
----
 
-# 表情捕捉
+# 使用表情捕捉
 
-MediaPipe4U 在一个独立的插件中包含了表情捕捉功能，该插件使用一个独立的 Actor（AActor Class）来完成从图像源（ImageSource）中求解 BlendShape 的功能。   
+MediaPipe4U 在插件 `MediaPipe4ULiveLink` 中包含了表情捕捉功能，该插件使用一个独立的 Actor（AActor Class）来完成从图像源（ImageSource）中求解 BlendShape 的功能。   
 
-[![FaceLink](./images/live_link_cover.jpg "FaceLink")](./images/live_link_cover.jpg)
+[FaceLink](./images/get_started/live_link_cover.jpg "FaceLink")
 
 
-{: .highlight }
-> 如果你在 Apple 设备上用过 Epic 的 Live Link Face App ，你可以把这个 Actor 看做 Live Link Face App 的模拟，它从图像源中求解兼容 Apple Arkit 标准的 51 个表情 (tongueOut 不支持)，并通过
-> 和 Live Link Face App 一致的 Live Link 格式数据发送数据，因此你可以像接收 Live Link Face App 一样接收来自 MediaPipe4U 的 BS 计算结果。
-> 
-> 虽然它还不具备 Live Link Face App 的某些功能，例如，数据录制，头部算解等，但是，随着 MediaPipe4U 持续的开发，这些功能将会集成到这个 Actor 中。
+!!! tip
+
+    如果你在 Apple 设备上用过 Epic 的 Live Link Face App ，你可以把这个 Actor 看做 Live Link Face App 的模拟，它从图像源中求解兼容 Apple Arkit 标准的 51 个表情 (tongueOut 不支持)，并通过
+    和 Live Link Face App 一致的 Live Link 格式数据发送数据，因此你可以像接收 Live Link Face App 一样接收来自 MediaPipe4U 的 BS 计算结果。
+    
+    虽然它还不具备 Live Link Face App 的某些功能，例如，数据录制，头部算解等，但是，随着 MediaPipe4U 持续的开发，这些功能将会集成到这个 Actor 中。
 
 
 ---   
 
-## 安装
+## 配置插件
 
-1. 启用 Epic 的 Live Link 插件
-2. 复制 MediaPipe4ULiveLink 文件夹到项目的 Plugins 目录。
-3. 在项目中启用 **MediaPipe Live Link** 插件。
-4. 在插件 C++ 目录中找到 **MediaPipeFaceLinkActor**, 将它拖放到你的 Level 中。
-5. 选中 **MediaPipeFaceLinkActor**，在细节面板中对 Actor 进行配置。
+1. 启用 Epic 的 `Live Link` 插件
+2. 复制 `MediaPipe4ULiveLink` 文件夹到项目的 Plugins 目录。
+3. 在项目中启用 `MediaPipe Live Link` 插件。
+4. 在插件 C++ 目录中找到 `MediaPipeFaceLinkActor`, 将它拖放到你的 Level 中。
+5. 选中 `MediaPipeFaceLinkActor`，在细节面板中对 Actor 进行配置。
    
-[![FaceLink Setup](./images/live_link_actor_setup.jpg "FaceLink Setup")](./images/live_link_actor_setup.jpg)
+![FaceLink Setup](./images/get_started/live_link_actor_setup.jpg "FaceLink Setup")
 
-当 MediaPipe 动作捕捉开始后（ MediaPipeHolisticComponent 组件 Start 之后），会自动开始表情捕捉，并且向 LiveLink 接收端（通常是你的 LiveLinkPose 动画蓝图节点）发送数据。
+当 MediaPipe 动作捕捉开始后（ `MediaPipeHolisticComponent` 组件 Start 之后），会自动开始表情捕捉，并且向 LiveLink 接收端（通常是你的 LiveLinkPose 动画蓝图节点）发送数据。
 
 ---   
 
 ## 属性
 
-MediaPipeFaceLinkActor 属性很少，表情捕捉本身也不需要太多参数，MediaPipeFaceLinkActor 参数使用默认值已经工作良好。
+`MediaPipeFaceLinkActor` 属性很少，表情捕捉本身也不需要太多参数，`MediaPipeFaceLinkActor` 参数使用默认值已经工作良好。
 
-[![FaceLink properties](./images/live_link_actor_detals.jpg "FaceLink properties")](./images/live_link_actor_detals.jpg)
+![FaceLink properties](./images/get_started/live_link_actor_detals.jpg "FaceLink properties")
 
 **FaceSolution**    
 FaceSolution 属性表示要使用的方案名称。FaceLinkActor 可以支持在多种 BlendShape (BS) 求解算法中切换，这里的每一种算法就是一个方案（Face Solution）"。   
@@ -77,31 +71,35 @@ FaceSolution 属性表示要使用的方案名称。FaceLinkActor 可以支持�
 
 ## Face Solution
 
-MediaPipeFaceLinkActor 通过 Face Solution 支持不同的算法，因为某些算法对硬件可能有特殊要求，可以选择适合你的 Face Solution 进行面补。   
+`MediaPipeFaceLinkActor` 通过 Face Solution 支持不同的算法，因为某些算法对硬件可能有特殊要求，可以选择适合你的 Face Solution 进行面补。   
 
-**支持的 Face Solution 名称:**
+### 内置的 Face Solution
+
 - MediaPipe
 - Remoting (需要使用 M4URemoting App, 付费版)
 - NvAR (需要 MediaPipe4U NvAR 插件)   
   
 > 目前来说 NvAR 方案精度高于 MediaPipe。
 
-{:.important}
-> 当 MediaPipe4U 动作捕捉开始以后，虽然你可以设置 FaceSolution，但是它并不会生效，必须停止动作捕捉再启动才能切换方案。简单来说，FaceSolution 不能 mediapipe 运行过程中切换。
+!!! warning
 
-你可以通过蓝图库 MediaPipeLiveLinkBlueprintLibrary 中的函数 **ListFaceSolutions** 列出当前可用的方案：
+ 当 MediaPipe4U 动作捕捉开始以后，虽然你可以设置 `FaceSolution`，但是它并不会生效，必须停止动作捕捉再启动才能切换方案。   
+ 
+ 简单来说，`FaceSolution` 不能在 mediapipe 运行过程中切换。
 
-[![List face solutions](./images/live_link_actor_list_face_solution.jpg "List face solutions")](./images/live_link_actor_detals.jpg)
+你可以通过蓝图库 `MediaPipeLiveLinkBlueprintLibrary` 中的函数 `ListFaceSolutions` 列出当前可用的方案：
+
+![List face solutions](./images/get_started/live_link_actor_list_face_solution.jpg "List face solutions")
 
 该函数返回一个方案列表和方案个数。
 
 
-## 平滑   
+## 动画平滑   
 
-MediaPipeFaceLinkActor 可以按面容的不同区域来平滑表情，主要通过 **SmoothParams** 属性来进行设置。   
+`MediaPipeFaceLinkActor` 可以按面容的不同区域来平滑表情，主要通过 `SmoothParams` 属性来进行设置。   
 
 
-**SmoothParams** 属性如下：      
+`SmoothParams` 属性如下：      
 
 
 |          属性        |               说明                    |
@@ -118,13 +116,13 @@ MediaPipeFaceLinkActor 可以按面容的不同区域来平滑表情，主要通
 
 
 
-> 如果你在动画蓝图中进行平滑处理，请通过 **SmoothEnabled** 函数关闭插件内置的平滑。   
+> 如果你在动画蓝图中进行平滑处理或算法自带了平滑，请通过 `SmoothEnabled` 函数关闭插件内置的平滑。   
 
 ---   
    
-## 事件通知
+## 事件
 
-[![Events](./images/live_link_actor_events.jpg "Events")](./images/live_link_actor_events.jpg)
+![Events](./images/get_started/live_link_actor_events.jpg "Events")
 
 MediaPipeFaceLinkActor 不支持手动启动/停止，而是自动跟随 mediapipe 启停。为此，MediaPipeFaceLinkActor 暴露了必要的事件，让你知道它何时启动和停止。   
 
@@ -142,37 +140,40 @@ MediaPipeFaceLinkActor 不支持手动启动/停止，而是自动跟随 mediapi
 ## 校准
 
 从不同的人面容中捕捉的表情可能会产生差异，例如一个人的眼睛大小可能影响 EyeBlink 相关的 BS 数值，为此 MediaPipeFaceLinkActor 提供了对面容进行校准的功能。
-完成面容校准仅需调用 **PerformCalibration** 函数。
+完成面容校准仅需调用 `PerformCalibration` 函数。
 
-[![PerformCalibration](./images/live_link_perform_calibration.jpg "PerformCalibration")](./images/live_link_perform_calibration.jpg)
+![PerformCalibration](./images/get_started/live_link_perform_calibration.jpg "PerformCalibration")
 
-{: .warning}
-> **PerformCalibration** 是一个异步函数，调用结束时面容并不会理解被校准，它需要等待下一帧 blend shapes 数据才能完成校准, 完成校准后会通过 **OnFaceCalibrated** 事件来
-> 通知应用程序。   
->
-> 同时你需要注意，**PerformCalibration** 必须在 mediapipe 运行过程中调用才能校准，因为它需要 bs 数据帧，如果在 mediapipe 停止状态调用 **PerformCalibration**，
-> 将永远不会触发 **OnFaceCalibrated** 回调。
->
-> 可以通过 **MediaPipeHolisticComponent::IsRunning** 函数或 **MediaPipeAnimationInstance::IsMediaPipeRunning** 函数来判断 mediapipe 是否正在运行。
+!!! warning
+
+    `PerformCalibration` 是一个异步函数，调用结束时面容并不会理解被校准，它需要等待下一帧 blend shapes 数据才能完成校准, 完成校准后会通过 `OnFaceCalibrated` 事件来
+    通知应用程序。   
+    
+    `PerformCalibration` 必须在 mediapipe 运行过程中调用才能校准，因为它需要 bs 数据帧，如果在 mediapipe 停止状态调用 `PerformCalibration`，
+    将永远不会触发 `OnFaceCalibrated` 回调。
+    
+    可以通过 `MediaPipeHolisticComponent::IsRunning` 函数或 `MediaPipeAnimationInstance::IsMediaPipeRunning` 函数来判断 mediapipe 是否正在运行。
 
 
-如果你希望使用上次的校准数据（虽然并不推荐这样做）来校准面容，你也可以使用 **PerformCalibrationImmediately** 函数通过传递一个帧数据来立即校准。
-PerformCalibrationImmediately 函数不关心 mediapipe 是否正在运行，因此你可以在任何时候校准面容。
+如果你希望使用上次的校准数据（虽然并不推荐这样做）来校准面容，你也可以使用 `PerformCalibrationImmediately` 函数通过传递一个帧数据来立即校准。
+`PerformCalibrationImmediately` 函数不关心 mediapipe 是否正在运行，因此你可以在任何时候校准面容。
 
-{: .warning}
-> 虽然你可以在任何情况下使用 PerformCalibrationImmediately 函数，但是你必须确保你将要校准的 Face Solution 和用来校准的帧数据是相同的 Face Solution，你应该注意下面的问题：    
-> 1. 由于 **MediaPipeFaceLinkActor** 存在自动降级行为，要获取实际正在使用的 FaceSolution， 你不能通过 **FaceSolution** 来获取，而应该使用 **GetActualFaceSolution**
-> 函数来获取正在运行的方案。
-> 2. 必须注意： GetActualFaceSolution 仅在 mediapipe 运行过程中才能返回正确的方案名称，如果 mediapipe 停止，它将返回空字符串。
->
-> 综上，不建议你在 mediapipe 停止时进行面容校准，这会增加很多不必要的麻烦，建议你永远在 mediapipe 运行过程中进行面容校准操作。
+!!! tip
+
+    虽然你可以在任何情况下使用 PerformCalibrationImmediately 函数，但是你必须确保你将要校准的 Face Solution 和用来校准的帧数据是相同的 Face Solution，你应该注意下面的问题：    
+
+    1. 由于 `MediaPipeFaceLinkActor` 存在自动降级行为，要获取实际正在使用的 FaceSolution， 你不能通过 `FaceSolution` 来获取，而应该使用 `GetActualFaceSolution`
+    函数来获取正在运行的方案。
+    2. 必须注意： `GetActualFaceSolution` 仅在 mediapipe 运行过程中才能返回正确的方案名称，如果 mediapipe 停止，它将返回空字符串。
+    
+    综上，不建议你在 mediapipe 停止时进行面容校准，这会增加很多不必要的麻烦，建议你永远在 mediapipe 运行过程中进行面容校准操作。
 
 
 ### 校准数据清理   
 
-校准后将记录面容的信息，你可以通过 **UnCalibration** 函数来清理这些校准数据。
+校准后将记录面容的信息，你可以通过 `UnCalibration` 函数来清理这些校准数据。
 
-[![UnCalibration](./images/live_link_un_calibration.jpg "UnCalibration")](./images/live_link_un_calibration.jpg)
+![UnCalibration](./images/get_started/live_link_un_calibration.jpg "UnCalibration")
 
 ---   
    
@@ -180,7 +181,7 @@ PerformCalibrationImmediately 函数不关心 mediapipe 是否正在运行，因
 
 为了方便开发，你也可以在编辑器中进行校准操作，细节面板中提供了校准和清理校准的按钮。
 
-[![PerformCalibration](./images/live_link_calibration_buttons.jpg "PerformCalibration")](./images/live_link_calibration_buttons.jpg)
+![PerformCalibration](./images/get_started/live_link_calibration_buttons.jpg "PerformCalibration")
 
 
 # 不同 Face Solution 对 Blend Shapes 的支持

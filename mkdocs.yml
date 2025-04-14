@@ -49,6 +49,8 @@ nav:
           - vision/mocap/location_solver.md
         - Advanced Usage:
           - vision/mocap/switch_anim_blueprint.md
+      - Facial Capture: 
+        - vision/facial/get_started.md
 
       
   - License: 

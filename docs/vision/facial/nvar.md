@@ -1,34 +1,21 @@
----
-layout: default
-title: NvAR 表情捕捉
-parent: 实验性功能
-grand_parent: 动作和表情
-nav_order: 1
----
-
 # NvAR 表情捕捉
-{: .d-inline-block }
 
-Windows Only
-{: .label .label-yellow } 
 
 如果你拥有 Nvidia RTX 20XX 或更高级的 GPU，**MediaPipe4UNvAR** 能够帮助你获得一个可以和苹果 Arkit 媲美的表情捕捉方案。
 
-[![NvAR](./nvar/nvidia-rtx-ar.jpg "NvAR")](./nvar/nvidia-rtx-ar.jpg)
-
-{: .waning}
-> 阅读本章内容之前，你必须阅读过[ MediaPipe LiveLink 表情捕捉](../features/face_link_actor.md)相关文档，否则你可能无法理解后面的内容。
+![NvAR](./nvar/nvidia-rtx-ar.jpg "NvAR")
+!!! tip
+    阅读本章内容之前，你必须阅读过[使用表情捕捉](./get_started.md)相关文档，否则你可能无法理解后面的内容。
 
 ---
 
-**MediaPipe4U** 封装了一个名为 **MediaPipe4UNvAR** 的插件，将 Nvidia 的算法注册成 MediaPipe LiveLink 插件中的一个 BlendShapes 求解方案（Face Solution）。 
-你可以通过设置 **MediaPipeFaceLinkActor** （MediaPipe LiveLink 插件中的 Actor）的 FaceSolution 属性为 **NvAR** 来使用它。
+`MediaPipe4U` 封装了一个名为 `MediaPipe4UNvAR` 的插件，将 Nvidia 的算法注册成 MediaPipe LiveLink 插件中的一个 BlendShapes 求解方案（Face Solution）。    
 
-
+你可以通过设置 `MediaPipeFaceLinkActor` （MediaPipe LiveLink 插件中的 Actor）的 `FaceSolution` 属性为 **NvAR** 来使用它。
 
 演示效果：
 
-[![MediaPipe4UNvAR](https://res.cloudinary.com/marcomontalbano/image/upload/v1675773553/video_to_markdown/images/youtube--bPKSgkCx2kw-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://youtu.be/bPKSgkCx2kw "MediaPipe4UNvAR")
+![MediaPipe4UNvAR](https://res.cloudinary.com/marcomontalbano/image/upload/v1675773553/video_to_markdown/images/youtube--bPKSgkCx2kw-c05b58ac6eb4c4700831b2b3070cd403.jpg "MediaPipe4UNvAR")
 
 国内用户如果 Youtube 打不开，请观看 bilibili 站视频：
 
@@ -38,7 +25,7 @@ Windows Only
 关于 **NvAR** 详细信息，请看这里：     
 [https://developer.nvidia.com/maxine](https://developer.nvidia.com/maxine)
 
-## 系统要求
+## 环境要求
 
 ### 软件要求
 
@@ -64,40 +51,42 @@ Nvidia 官方的系统和软件要求请阅读这里：
 
 [https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html](https://docs.nvidia.com/deeplearning/maxine/ar-sdk-system-guide/index.html)
 
-{: .warning}
->不同的显卡有不同的可再发行组件包。例如：你的 GPU 是 Nvidia 2060， 你不能安装 30XX 的可再发行组件包，这可能导致 NvAR 无法正常工作。
+!!! warning
 
-### UnrealEngine 插件依赖
+    不同的显卡有不同的可再发行组件包。例如：你的 GPU 是 Nvidia 2060， 你不能安装 30XX 的可再发行组件包，这可能导致 NvAR 无法正常工作。
+
+### 插件依赖
 
 请启用以下 UnrealEngine 插件：   
 
 - MediaPipe4U
-- MediaPipe Live Link
+- MediaPipeLiveLink
 
 
 ## 开始使用
 
-### 1. 安装 Nvidia 的可再发行组件包（Redistributable SDK package)
+### 安装 Nvidia 的可再发行组件包（Redistributable SDK package)
 
 从以下网址下载适合你的显卡的组件包：   
 
 [https://www.nvidia.com/broadcast-sdk-resources](https://www.nvidia.com/broadcast-sdk-resources)
 
-[![NvAR](./nvar/download_nvar.jpg "NvAR")](nvar/download_nvar.jpg)
+![NvAR](./images/nvar/download_nvar.jpg "NvAR")
 
 
 
-### 2. 安装 MediaPipe4UNvAr 插件   
+### 安装 MediaPipe4UNvAr 插件   
 
-从下载的 MediaPipe4U 插件目录找到 **MediaPipe4UNvAR** 目录，将它复制到你的 Unreal Engine 项目 **Plugins** 目录并启用它.   
+从下载的 MediaPipe4U 插件目录找到 `MediaPipe4UNvAR` 目录，将它复制到你的 Unreal Engine 项目 **Plugins** 目录并启用它.   
 
-[![NvAR](./nvar/nvar_plugin_install.jpg "NvAR")](./nvar/nvar_plugin_install.jpg)   
+![NvAR](./images/nvar/nvar_plugin_install.jpg "NvAR")
 
-此时，MediaPipe4UNvAr 会自动注册一个名为 **NvAR** 的 Face Solution 到 **MediaPipeFaceLinkActor** (MediaPipe LiveLink 插件中的 Actor), 你可以在 MediaPipeFaceLinkActor 中使用它。
+此时，`MediaPipe4UNvAR` 会自动注册一个名为 **NvAR** 的 Face Solution 到 `MediaPipeFaceLinkActor` (MediaPipe LiveLink 插件中的 Actor), 你可以在 `MediaPipeFaceLinkActor` 中使用它。
 
-{: .important}
-> MediaPipe4UNvAr 只一个包含算法的插件，本身不包含任何 Unreal Engine 功能，使用这套算法进行表情捕捉你需要 MediaPipe Live Link 插件。
-> 关于如何使用 MediaPipeFaceLinkActor 进行面部捕捉，请阅读：[表情捕捉](../features/face_link_actor.md)
+!!! tip
+
+    MediaPipe4UNvAr 只一个包含算法的插件，本身不包含任何 Unreal Engine 功能，使用这套算法进行表情捕捉你需要 MediaPipe Live Link 插件。    
+    关于如何使用 MediaPipeFaceLinkActor 进行面部捕捉，请阅读：[使用表情捕捉](./get_started.md)
 
 
 
