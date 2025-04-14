@@ -5,10 +5,12 @@ hide:
 
 [English](./en.md)   
 
+### 20250414   
+
+- [fix] :rainbow: Running for a long time may cause motion capture to crash.
+- [upgrade] :rainbow: `NvAR` Plugin Upgrade to Nvidia Maxine AR 0.8.7.
+
 ### 2025-04-08     
-{: .d-inline-block }
-Current
-{: .label .label-green } 
 
 - [new] :rainbow: 免费版本现在可以打包所有功能，包括语音和表情捕捉。
 - [new] :rainbow: Ollama 支持：接入 [Ollama](https://ollama.com/) 进行大语言模型推理，从而支持了众多 LLM 模型，例如：DeepSeek、LLaMA，Phi, Qwen, QWQ 等。

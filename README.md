@@ -41,6 +41,11 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 
 # What's news
 
+### 20250414   
+
+- [fix] :rainbow: Running for a long time may cause motion capture to crash.
+- [upgrade] :rainbow: `NvAR` Plugin Upgrade to Nvidia Maxine AR 0.8.7.
+
 ### 20250408
 
 - [new] :rainbow: The free version now supports packaging all features, including voice and facial expression capture.
@@ -147,9 +152,9 @@ For the release notes, ref below:
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
 | UE 5.1 | [百度网盘](https://pan.baidu.com/s/11C9pmKjRiwwh5e_mw82aTg?pwd=n9he) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERHtOO41t9JMo_rMTYHUl5IBD6yrdmn9rqzi6b1ozQWxnw?e=A1XhVA) | 2023-05-24 |
 | UE 5.2 | [百度网盘](https://pan.baidu.com/s/1mEilhcaMCclXg6V6GhttHg?pwd=7q4p) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EWeByq7iTjdDl02JZbIEHBkBd0zmMjcGMKHl3STOmGrMaA?e=pvrHJi) | 2023-05-24 |
-| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1s7hwZeCW96_woOBz3YjP6w?pwd=6sj3) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EVVuDhpx72xHsyMfr7UjFToBf0VTQKrdvSyUZJlH-FXrxw?e=oOSkhu) | 2025-04-11 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1TwFNkycrTRykIgIMyplfdQ?pwd=khx7) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUsd8o6zq8BDkAFhiy4BvyUBGGjRT3Ts0EXQHouwjgIanA?e=B5tPku) | 2025-04-11 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1WrbM5-44PFwJHM5okXZ83w?pwd=xnpt) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ESPwAR76UTlKlYcxsRLZ6kkBn4hzAx-WjtWxtoLYgheiEA?e=wim2ox) | 2025-04-11 |
+| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1Tn6MIZg4Y1Fe-phcAQJnsw?pwd=wxsj) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EfiygZsL1itJkjs1PiJrCSgByTHg7gGisVqqSlWK2Uz5og?e=Kjq23o) | 2025-04-14 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1uPtxIIR1VAvcFse4o0zI0w?pwd=3f22) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EREEPEx8A61FtXAJrTGyeA0B8QKXFRDJf7sP_lV76keyAg?e=JOpwXW) | 2025-04-14 |
+| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1iwSUbqr5P-vA_nRSNoBgXg?pwd=r9vd) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUWxGe7MpLZOpQ53Fe1y1FgBwDmHBL9862To18Qw7Mzd8g?e=zfldQi) | 2025-04-14 |
 
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
 > Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).

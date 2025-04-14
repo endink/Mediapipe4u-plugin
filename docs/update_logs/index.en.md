@@ -5,11 +5,12 @@ hide:
 
 [简体中文](./index.md)
 
-### 2025-04-08   
+### 20250414
 
-{: .d-inline-block }
-Current
-{: .label .label-green } 
+- [fix] :rainbow: 长时间运行可能导致动作捕捉崩溃.
+- [upgrade] :rainbow: `NvAR` 升级到 Nvidia Maxine AR 0.8.7.
+
+### 2025-04-08   
 
 - [new] :rainbow: The free version now supports packaging all features, including voice and facial expression capture.
 - [new] :rainbow: Ollama support: Integrated with [Ollama](https://ollama.com/) for large language model inference, enabling support for various LLMs such as DeepSeek, LLaMA, Phi, Qwen, QWQ, and more.

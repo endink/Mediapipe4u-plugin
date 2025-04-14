@@ -41,6 +41,11 @@
 
 # 最新动态
 
+### 20250414
+
+- [fix] :rainbow: 长时间运行可能导致动作捕捉崩溃.
+- [upgrade] :rainbow: `NvAR` 升级到 Nvidia Maxine AR 0.8.7.
+
 ### 20250408
 
 - [new] :rainbow: 免费版本现在可以打包所有功能，包括语音和表情捕捉。
@@ -141,9 +146,9 @@
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
 | UE 5.1 | [百度网盘](https://pan.baidu.com/s/11C9pmKjRiwwh5e_mw82aTg?pwd=n9he) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERHtOO41t9JMo_rMTYHUl5IBD6yrdmn9rqzi6b1ozQWxnw?e=A1XhVA) | 2023-05-24 |
 | UE 5.2 | [百度网盘](https://pan.baidu.com/s/1mEilhcaMCclXg6V6GhttHg?pwd=7q4p) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EWeByq7iTjdDl02JZbIEHBkBd0zmMjcGMKHl3STOmGrMaA?e=pvrHJi) | 2023-05-24 |
-| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1s7hwZeCW96_woOBz3YjP6w?pwd=6sj3) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EVVuDhpx72xHsyMfr7UjFToBf0VTQKrdvSyUZJlH-FXrxw?e=oOSkhu) | 2025-04-11 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1TwFNkycrTRykIgIMyplfdQ?pwd=khx7) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUsd8o6zq8BDkAFhiy4BvyUBGGjRT3Ts0EXQHouwjgIanA?e=B5tPku) | 2025-04-11 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1WrbM5-44PFwJHM5okXZ83w?pwd=xnpt) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ESPwAR76UTlKlYcxsRLZ6kkBn4hzAx-WjtWxtoLYgheiEA?e=wim2ox) | 2025-04-11 |
+| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1Tn6MIZg4Y1Fe-phcAQJnsw?pwd=wxsj) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EfiygZsL1itJkjs1PiJrCSgByTHg7gGisVqqSlWK2Uz5og?e=Kjq23o) | 2025-04-14 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1uPtxIIR1VAvcFse4o0zI0w?pwd=3f22) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EREEPEx8A61FtXAJrTGyeA0B8QKXFRDJf7sP_lV76keyAg?e=JOpwXW) | 2025-04-14 |
+| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1iwSUbqr5P-vA_nRSNoBgXg?pwd=r9vd) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUWxGe7MpLZOpQ53Fe1y1FgBwDmHBL9862To18Qw7Mzd8g?e=zfldQi) | 2025-04-14 |
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    
