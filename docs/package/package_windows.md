@@ -61,7 +61,7 @@ MediaPipe4U 使用 VS2022 构建，你必须具备以下环境
 
 编辑 Unreal Engine 的 Build 配置文件，这个文件通常在如下位置：
 
-*C:\Users\<Your User Name>\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml*  
+*C:\Users\&lt;Your User Name&rt;\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml*  
 
 在这个 XML 文件的配置节 `WindowsPlatform` 下添加 `CompilerVersion` 配置 Unreal Engine 使用指定 MSVC 版本编译。
 
