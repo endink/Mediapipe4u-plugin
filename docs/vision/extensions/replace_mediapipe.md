@@ -25,7 +25,7 @@
     `x` 和 `x`: 分别由图像宽度和高度归一化为 [0.0，1.0] 的地标坐标, 原点 [0.0, 0.0] 是图片的左上角;    
     `z`: 表示以 hips 中点处的深度为原点的地标深度，该值越小，地标越靠近相机。`z` 的大小使用与 `x` 大致相同的比例。
   
-    其中 `PoseWorldLandmark` 是 **NormalizedLandmark**，其余均为 **Landmark**。
+    > `MediaPipe4U` 中 `PoseWorldLandmark` 使用的是 **NormalizedLandmark**，其余均为 **Landmark**。
 
 
 ## 实现步骤
