@@ -204,7 +204,7 @@ public class MyProjectTarget : TargetRules
 
 ---   
 
-## 手动 Copy C++ 链接符号文件
+### 手动 Copy C++ 链接符号文件
 
 - 在项目根目录下（.uproject 文件所在目录）新建 `copy_intermediate.bat` 文件，用记事本打开它，复制下面的文件内容：
 
@@ -252,6 +252,5 @@ pause
 ---   
 
 ### 打包你的项目
-
 
 如果一切顺利，现在你的项目就会成功打包了。
