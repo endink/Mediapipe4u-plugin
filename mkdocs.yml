@@ -55,7 +55,8 @@ nav:
         - vision/facial/nvar.md
       - MediaPip4U Remoting: 
         - vision/remoting/get_started.md
-
+  - Package And Deploy:
+    - pagecage/package_windows.md
 
       
   - License: 
@@ -117,6 +118,7 @@ plugins:
             Update Logs: 更新日志
             Solvers Details: 算解器细节
             Advanced Usage: 进阶用法
+            Package And Deploy: 打包部署
         - locale: en
           name: English
           build: true
