@@ -208,7 +208,7 @@ public class MyProjectTarget : TargetRules
 
 ---   
 
-### 手动 Copy C++ 链接符号文件
+### 复制 C++ 链接符号文件
 
 - 在项目根目录下（.uproject 文件所在目录）新建 `copy_intermediate.bat` 文件，用记事本打开它，复制下面的文件内容：
 
