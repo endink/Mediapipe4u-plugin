@@ -51,7 +51,11 @@ MediaPipe4U 使用 VS2022 构建，你必须具备以下环境
 
 ## 配置 Unreal Engine 编译器版本
 
-当你的机器下安装了多个 MSVC （这里的 MSVC 指 VC Toolchain）版本时， Unreal Engine 会尝试一超 会先尝试查找引擎首选（不同版本的 Unreal Engine 有不同的首选 MSVC 版本）的 MSVC 版本来编译，如果找不到这个版本的 MSVC， 将使用你机器上的最新版本。    
+当你的机器下安装了多个 MSVC （这里的 MSVC 指 VC Toolchain）版本时， Unreal Engine 会先尝试查找引擎首选的 MSVC 版本来编译，如果找不到这个版本的 MSVC， 将使用你机器上的最新版本。    
+
+!!! tip
+
+    不同版本的 Unreal Engine 有不同的首选 MSVC 版本。
 
 你可以通过以下方式，手动配置 Unreal Engine 构建使用的 MSVC 版本。
 
