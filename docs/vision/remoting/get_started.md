@@ -10,7 +10,7 @@
 
 !!! tip
 
-    ![M4U Remoting](./images/get_started/remoting_icon.jpg "M4U Remoting")
+    ![M4U Remoting](./images/get_started/remoting_icon.jpg "M4U Remoting"){ align=left }
 
     `MediaPipe4U Remoting` 是一个开源 App， 你可以在这里下载它的源代码：       
     [https://github.com/endink/M4URemoting-Android](https://github.com/endink/M4URemoting-Android)
