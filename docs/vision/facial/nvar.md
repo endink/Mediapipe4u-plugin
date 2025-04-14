@@ -1,7 +1,7 @@
 # NvAR 表情捕捉
 
 
-如果你拥有 Nvidia RTX 20XX 或更高级的 GPU，**MediaPipe4UNvAR** 能够帮助你获得一个可以和苹果 Arkit 媲美的表情捕捉方案。
+如果你拥有 Nvidia RTX 20XX 或更高级的 GPU，**MediaPipe4UNvAR** 能够帮助你获得一个可以和苹果 ARKit 媲美的表情捕捉方案。
 
 ![NvAR](./images/nvar/nvidia-rtx-ar.jpg "NvAR")
 
@@ -76,7 +76,7 @@ Nvidia 官方的系统和软件要求请阅读这里：
 
 
 
-### 安装 MediaPipe4UNvAr 插件   
+### 安装 MediaPipe4UNvAR 插件   
 
 从下载的 MediaPipe4U 插件目录找到 `MediaPipe4UNvAR` 目录，将它复制到你的 Unreal Engine 项目 **Plugins** 目录并启用它.   
 
@@ -86,12 +86,12 @@ Nvidia 官方的系统和软件要求请阅读这里：
 
 !!! tip
 
-    MediaPipe4UNvAr 只一个包含算法的插件，本身不包含任何 Unreal Engine 功能，使用这套算法进行表情捕捉你需要 MediaPipe Live Link 插件。    
+    MediaPipe4UNvAR 只一个包含算法的插件，本身不包含任何 Unreal Engine 功能，使用这套算法进行表情捕捉你需要 MediaPipe Live Link 插件。    
     关于如何使用 MediaPipeFaceLinkActor 进行面部捕捉，请阅读：[使用表情捕捉](./get_started.md)
 
 
 
-**NvAR Arkit 表情支持情况**   
+## NvAR 对 ARKit 表情的支持
 
 |名称|说明|NvAR 支持|
 |----|----|--------|
