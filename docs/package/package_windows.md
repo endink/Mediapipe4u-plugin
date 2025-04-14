@@ -65,7 +65,7 @@ C:\Users\<Your User Name>\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildCon
 
 在这个 XML 文件的配置节 `WindowsPlatform` 下添加 `CompilerVersion` 配置 Unreal Engine 使用指定 MSVC 版本编译。
 
-例如下面的例子展示了配置 Unreal Engine 使用 `14.38.33130` 版本的 MSVC 编译。
+下面的例子展示了配置 Unreal Engine 使用 `14.38.33130` 版本的 MSVC 编译。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
