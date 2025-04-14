@@ -95,12 +95,18 @@ protected:
     - `Disconnect`: 内置的 Connector 在 MediaPipeHolisticComponent 卸载 ( Uninitialize ) 时调用, 自定义 Connector 在 UMediaPipeHolisticComponent 的 `Stop`/`StopAsync` 函数调用时调用该函数。
 
 
-一般来说自定义实现 Connector 时，下面的函数实现是可以选的：
+
+实现自定义 Connector 时，下面的函数实现是可以选的：
 
 - `ConfigureGraph`： 配置 mediapipe 图形，自定义 Connector 时直接返回 **true** 即可。
 - `EnableFrameCallback`: 允许 frame 回调， 自定义 Connector 可以什么都不做。
 - `Connect`: 如果你在 `StartPipeline` 中处理逻辑，直接返回 **true** 即可。
 - `Disconnect`: 如果你在 `StopPipeline` 中处理逻辑，直接返回 **true** 即可。
+
+
+实现自定义 Connector 时，下面的函数无需实现：
+
+- `PushFrameToPipeline`： 当 ImageSource 的模式是 **Push** 时，这个函数接受主动推送帧， 由于自定义 Connector 目前不使用 ImageSource ， 因此你无需实现它。
 
 
 
