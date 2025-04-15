@@ -96,7 +96,8 @@ Vad 激进程度， 越激进（VAD 是在语音中发现人声的模块， 可�
 |HasASRVoice         | 指示 ASR 是否当前是否识别到人声。  |
 |IsASRWakeUpRunning  | 指示 ASR 唤醒模型是否正在运行。  |
 |IsASRWakeUpAvailable| 指示 ASR 唤醒功能是否可用。 |
-|IsSpeaking          | 指示 TTS 是否正在朗读。 |
+|IsCapturing         | 指示 ASR 是否正在捕获音频。 |
+|IsCaptureStopping   | 指示 ASR 是否正在停止捕获音频。 |
 |IsASRAwake          | 指示 ASR 是否处于"清醒"（已经被唤醒）状态。 |
 |KeepASRAwake        | 重置唤醒计时器，让 ASR 保持"清醒"状态。 |
 |SleepASR            | 让 ASR 进入"沉睡"状态（需要被唤醒）。|
