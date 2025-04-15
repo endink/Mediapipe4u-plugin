@@ -9,6 +9,10 @@
 2. 通过细节面板配置 ASR 。
 3. 调用 `AMediaPipeSpeechActor` 的 `StartCaptureMicrophone`/`StartCaptureAudio` 等函数进行语音识别。
 
+!!! tip "集成语音唤醒"
+
+    关于 ASR 如何与语音唤醒集成使用，请阅读[语音唤醒](./wakeup.md)文档。
+
 
 ---   
 ## 属性
