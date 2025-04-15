@@ -54,6 +54,7 @@ Vad 激进程度， 越激进（VAD 是在语音中发现人声的模块， 可�
 
 **Trigger**    
 语音识别触发模式，默认为静音触发模式。
+
 - `Mute`: 静音时触发，当发现语音中的人声，发生停顿（停顿的时长由 `TriggerMuteSeconds` 决定）时自动开始语音识别。
 - `ManualStop`: 手动触发，当调用 `MediaPipeSpeechActor` 的 `StopCapture` 或 `StopCaptureAsync` 函数时候开始语音识别。
 
