@@ -7,6 +7,7 @@
 
 1. 向场景中添加 `AMediaPipeSpeechActor` 组件 。
 2. 通过细节面板配置 ASR 。
+3. 调用 `AMediaPipeSpeechActor` 的 `StartCaptureMicrophone`/`StartCaptureAudio` 等函数进行语音识别。
 
 
 ---   
@@ -19,6 +20,7 @@
 
 **LoadASROnStart**     
 当程序启动后自动加载模型包的方式。   
+
 - Disabled: 不在启动程序后加载 TTS 模型。
 - Async: 异步加载模型（在线程池线程中）。
 - Sync: 同步加载模型（在游戏线程中）。
@@ -101,7 +103,7 @@ Vad 激进程度， 越激进（VAD 是在语音中发现人声的模块， 可�
 |CanStartCapture     | 指示 ASR 是否能够开始捕获音频。 |
 |StartCaptureMicrophone | 开始从麦克风捕获音频进行语音识别。|
 |StartCaptureAudio   | 开始从`音频组件`中捕获音频进行语音识别。|
-|StopCapture         | 停止捕获音频。<br/> 参数:<br/> - `bSetToSleep`: 参数表示是否让 ASR 进入"沉睡"状态, 如果为 **false**, ASR 只是暂停捕获，如果当前 ASR 已经被唤醒，下次开始时无需唤醒； 如果为 **true**， 下次开始捕获时 ASR 需要被唤醒。|
+|StopCapture         | 停止捕获音频。<br/> 参数:<br/> `bSetToSleep`: 参数表示是否让 ASR 进入"沉睡"状态, 如果为 **false**, ASR 只是暂停捕获，如果当前 ASR 已经被唤醒，下次开始时无需唤醒； 如果为 **true**， 下次开始捕获时 ASR 需要被唤醒。|
 
 
 ## 异步函数
@@ -110,7 +112,7 @@ Vad 激进程度， 越激进（VAD 是在语音中发现人声的模块， 可�
 |----------|------------|
 |LoadASRAsync     | 当 `LoadASROnStart` 属性未 **Disabled** 时，不会自动加载 ASR，需要使用这个函数手动加载 。|
 |StartCaptureMicrophoneAsync   | 开始从麦克风捕获音频。|
-|StopCaptureAsync    |  停止捕获音频。<br/> 参数:<br/> - `bSetToSleep`: 参数表示是否让 ASR 进入"沉睡"状态, 如果为 **false**, ASR 只是暂停捕获，如果当前 ASR 已经被唤醒，下次开始时无需唤醒； 如果为 **true**， 下次开始捕获时 ASR 需要被唤醒。|
+|StopCaptureAsync    |  停止捕获音频。<br/> 参数:<br/> `bSetToSleep`: 参数表示是否让 ASR 进入"沉睡"状态, 如果为 **false**, ASR 只是暂停捕获，如果当前 ASR 已经被唤醒，下次开始时无需唤醒； 如果为 **true**， 下次开始捕获时 ASR 需要被唤醒。|
 
 
 ## 蓝图函数库
