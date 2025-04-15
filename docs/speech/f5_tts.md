@@ -12,9 +12,10 @@ F5-TTS 是由上海交通大学、剑桥大学和吉利汽车研究院（宁波�
 
 ## F5-TTS 语音包
 
-`MediaPipe4U` 提供了 F5-TTS 模型的语音包，可以通过下面的链接下载：   
+`MediaPipe4U` 提供了 F5-TTS 模型的语音包，你可以打开 MediaPipe4U 的[语音模型包下载页](https://huggingface.co/endink/M4U-Speech-Models/tree/main){: target='_blank'}，
+找到 F5 语音包并下载它。  
 
-[tts_f5_zh_en_1.0.0.zip](https://huggingface.co/endink/M4U-Speech-Models/blob/main/tts_f5_zh_en_1.0.0.zip)
+![Download F5 TTS](./images/f5_tts/download_f5_tts.jpg "Download F5 TTS")
 
 ## 系统要求
 
