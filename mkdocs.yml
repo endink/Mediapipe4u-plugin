@@ -60,11 +60,11 @@ nav:
         - speech/quick_start.md
         - speech/setup_models.md
         - speech/local_tts.md
+        - Generative TTS:
+          - speech/f5_tts.md
         - speech/local_asr.md
         - speech/wakeup.md
         - speech/lipsync.md
-        - Generative TTS:
-          - speech/f5_tts.md
     - Large Language Models (LLM):
         - llm/quick_start.md
   - Package And Deploy:
