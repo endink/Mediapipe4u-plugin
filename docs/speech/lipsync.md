@@ -1,4 +1,4 @@
-# 使用口型同步(Lip Sync)
+# 口型同步(Lip Sync)
 
 MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步的能力。   
 
@@ -72,7 +72,7 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 当动画蓝图节点启用了全局参数时（`UseGlobalParameters` 为 **true**），可以在蓝图中动态调整口型动画的参数。   
 你可以在任意蓝图中调用 `SetGlobLipSyncParameters` 函数：
 
-![Set Global Params](./images/lipsync/set_global_params.jpg.jpg "Set Global Params")
+![Set Global Params](./images/lipsync/set_global_params.jpg "Set Global Params")
 
 ## 开始口型同步
 
