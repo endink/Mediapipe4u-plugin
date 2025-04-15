@@ -30,6 +30,12 @@ CUDA 要求：
 | CUDA Toolkit | `12.x` (推荐 `12.6`) | https://developer.nvidia.com/cuda-toolkit |
 | CUDNN | `9.x`（推荐 `9.8`） | https://developer.nvidia.com/cuda-toolkit |
 
+### 如何确认 F5-TTS 已经使用 CUDA 加载
+
+你可以通过观察日志，确认 F-TTS 是用 CUDA 加载：
+
+![Makesure CUDA](./images/f5_tts/ensure_f5_cuda.jpg "Makesure CUDA")
+
 ## 基本使用
 
 F5-TTS 语音包的使用与其他 TTS 语音包使用没有区别，但是 F5-TTS 具备了其他语音模型包没有包含的语音克隆能力。
