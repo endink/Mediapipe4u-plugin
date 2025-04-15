@@ -61,8 +61,9 @@ FaceSolution 属性表示要使用的方案名称。FaceLinkActor 可以支持�
 是否启用头部旋转求解，如果为 true ，会额外传递三个曲线到 LiveLink, 它们分别是 **HeadPitch**, **HeadRoll**, **HeadYaw**。   
 默认值: **true**
 
-{: .warning}
-> 并不是所有的 Face Solution 都支持头部旋转求解，你的程序应该考虑不同方案对头部旋转的支持会不同。
+!!! tip
+
+    并不是所有的 Face Solution 都支持头部旋转求解，你的程序应该考虑不同方案对头部旋转的支持会不同。
 
 **Disabled**  
 是否禁用 MediaPipe4U 的 BS 求解，当设置为 **true**，将不再发送 MediaPipeFaceLinkActor 数据。

@@ -4,10 +4,11 @@
 
 ## 安装模型包
 
-在开始使用语音套件之前，你必须先下载和安装语音模型包。从 [https://huggingface.co/endink/M4U-Speech-Models](https://huggingface.co/endink/M4U-Speech-Models/tree/main) 页面中找到语音模型， 下载对应语言的模型包。
+在开始使用语音套件之前，你必须先下载和安装语音模型包。   
+从 [https://huggingface.co/endink/M4U-Speech-Models](https://huggingface.co/endink/M4U-Speech-Models/tree/main) 页面中找到语音模型， 下载对应语言的模型包。
 
 
-关于语音模型下载和安装的详细说明，请阅读[插件配置](./config.md)文档。   
+关于语音模型下载和安装的详细说明，请阅读[安装语音模型](./setup_models.md)文档。   
 
 ## 使用 MediaPipeSpeechActor
 
@@ -90,7 +91,7 @@
 
 制作一个姿势资产（PoseAsset） 包含 15 个音素曲线（这里我将这个 Pose Asset 命名为 **Pose_LipSync**）。
 
-[![speech](./images/qs_pose_asset.jpg "speech")](./images/qs_pose_asset.jpg)
+[![speech](./images/lipsync/qs_pose_asset.jpg "speech")](./images/lipsync/qs_pose_asset.jpg)
 
 > SIL 为自然状态下的面容。   
 > 音素表情请参考[Lipsync文档](./lipsync.md)或[OVRLipSync文档](https://developer.oculus.com/documentation/unreal/audio-ovrlipsync-viseme-reference)
@@ -100,7 +101,7 @@
 
 在动画蓝图中添加 `MediaPipe LipSync` 节点和 Evalute Pose 节点。
 
-[![speech](./images/lip_sync_anim_blueprint.jpg "speech")](./images/lip_sync_anim_blueprint.jpg)
+![Lip Sync Anim Node](./images/lipsync/anim_blueprint.jpg "Lip Sync Anim Node")
 
 
 ### 打开口型同步
