@@ -18,9 +18,9 @@ theme:
     - header.autohide
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.path #https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections-with-sections
+    - navigation.path
     - navigation.top
-    - navigation.expand
+    - navigation.sections
 
 # https://www.mkdocs.org/user-guide/writing-your-docs/
 nav:
@@ -92,6 +92,7 @@ extra:
 plugins:
   - tags
   - search
+  - badges
   - i18n: 
       docs_structure: suffix
       reconfigure_material: true
@@ -136,7 +137,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - attr_list
+  - attr_list #Grid
   - md_in_html
   - pymdownx.highlight:  #code block
       anchor_linenums: true
