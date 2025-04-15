@@ -59,6 +59,7 @@ nav:
       - TTS And ASR:
         - speech/quick_start.md
     - Large Language Models (LLM):
+        - llm/quick_start.md
   - Package And Deploy:
     - package/package_windows.md
 
