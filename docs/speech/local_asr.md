@@ -21,7 +21,7 @@
 **LoadASROnStart**     
 当程序启动后自动加载模型包的方式。   
 
-- Disabled: 不在启动程序后加载 TTS 模型。
+- Disabled: 不在启动程序后加载 ASR 模型。
 - Async: 异步加载模型（在线程池线程中）。
 - Sync: 同步加载模型（在游戏线程中）。
 
@@ -30,7 +30,7 @@
     当设置加载方式为异步加载（Async）时，你可以通过 `OnASRLoaded` 事件来获得模型加载完成的通知。
 
 **ASRSolutionName**   
-表示 ASR 使用的方案，一般来说离线 TTS 使用 **Local** 即可。
+表示 ASR 使用的方案，一般来说离线 ASR 使用 **Local** 即可。
 
 **SaveASRAudioFile**    
 是否将音频保存为语音文件（.wav），这通常用于调试。
