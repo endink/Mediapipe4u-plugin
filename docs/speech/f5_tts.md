@@ -36,6 +36,13 @@ CUDA 要求：
 
 ![Makesure CUDA](./images/f5_tts/ensure_f5_cuda.jpg "Makesure CUDA")
 
+!!! tip
+
+    你还可以通过环境变量来设置 CUDA 和 CUDNN 路径：
+  
+    - `M4U_CUDA_HOME`： Cuda 路径
+    - `M4U_CUDNN_HOME`： Cuda 路径
+
 ## 基本使用
 
 F5-TTS 语音包的使用与其他 TTS 语音包使用没有区别，但是 F5-TTS 具备了其他语音模型包没有包含的语音克隆能力。
