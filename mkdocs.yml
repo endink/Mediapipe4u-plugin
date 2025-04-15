@@ -63,6 +63,8 @@ nav:
         - speech/local_asr.md
         - speech/wakeup.md
         - speech/lipsync.md
+        - Generative TTS:
+          - speech/f5_tts.md
     - Large Language Models (LLM):
         - llm/quick_start.md
   - Package And Deploy:
@@ -133,6 +135,7 @@ plugins:
             Audio AI: 声学 AI
             Large Language Models (LLM): 大语言模型 (LLM)
             TTS And ASR: 语音识别与合成
+            Generative TTS: 生成式 TTS
         - locale: en
           name: English
           build: true
