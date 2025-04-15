@@ -29,8 +29,8 @@ CUDA 要求：
 
 | 组件 | 版本要求 | 下载地址 |
 |---------|----------|-----------|
-| CUDA Toolkit | `12.x` (推荐 `12.6`) | https://developer.nvidia.com/cuda-toolkit |
-| CUDNN | `9.x`（推荐 `9.8`） | https://developer.nvidia.com/cuda-toolkit |
+| CUDA Toolkit | `12.x` (推荐 `12.6`) | [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit){: target='_blank'} |
+| CUDNN | `9.x`（推荐 `9.8`） | [https://developer.nvidia.com/cudnn-downloads](https://developer.nvidia.com/cudnn-downloads){: target='_blank'} |
 
 ### 如何确认 F5-TTS 已经使用 CUDA 加载
 
