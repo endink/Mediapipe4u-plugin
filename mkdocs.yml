@@ -55,6 +55,10 @@ nav:
         - vision/facial/nvar.md
       - MediaPip4U Remoting: 
         - vision/remoting/get_started.md
+    - Audio AI: 
+      - TTS And ASR:
+        - speech/quick_start.md
+    - Large Language Models (LLM):
   - Package And Deploy:
     - package/package_windows.md
 
@@ -120,6 +124,9 @@ plugins:
             Solvers Details: 算解器细节
             Advanced Usage: 进阶用法
             Package And Deploy: 打包部署
+            Audio AI: 声学 AI
+            Large Language Models (LLM): 大语言模型 (LLM)
+            TTS And ASR: 语音识别与合成
         - locale: en
           name: English
           build: true
