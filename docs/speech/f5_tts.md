@@ -41,7 +41,7 @@ CUDA 要求：
     你还可以通过环境变量来设置 CUDA 和 CUDNN 路径：
   
     - `M4U_CUDA_HOME`： Cuda 路径
-    - `M4U_CUDNN_HOME`： Cuda 路径
+    - `M4U_CUDNN_HOME`： Cudnn 路径
 
 ## 基本使用
 
