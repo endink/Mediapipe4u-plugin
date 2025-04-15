@@ -9,7 +9,7 @@ F5-TTS 是由上海交通大学、剑桥大学和吉利汽车研究院（宁波�
 
 了解 F5-TTS 详细信息，请访问：   
 
-[https://github.com/SWivid/F5-TTS](https://github.com/SWivid/F5-TTS)
+[https://github.com/SWivid/F5-TTS](https://github.com/SWivid/F5-TTS){: target='_blank'}，
 
 
 ## F5-TTS 语音包
