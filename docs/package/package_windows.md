@@ -26,8 +26,8 @@
 MediaPipe4U 使用 VS2022 构建，你必须具备以下环境
 
 - Visual Studio 2022
-- WINSDK: 10.0.22621 or later ([下载地址](https://developer.microsoft.com/zh-cn/windows/downloads/windows-sdk/))
-- MSVC 38.33130 or later  
+- WINSDK: `10.0.22621` or later ([下载地址](https://developer.microsoft.com/zh-cn/windows/downloads/windows-sdk/))
+- MSVC `14.38.33130` or later  
 
 > 打包后程序的部署环境：    
 > 
