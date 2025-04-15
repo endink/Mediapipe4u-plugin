@@ -60,6 +60,7 @@ nav:
         - speech/quick_start.md
         - speech/setup_models.md
         - speech/local_tts.md
+        - speech/local_asr.md
         - speech/lipsync.md
     - Large Language Models (LLM):
         - llm/quick_start.md

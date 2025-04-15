@@ -53,7 +53,7 @@ TTS 加载结束时回调的事件。
 
 
 **OnTTSCompleted**    
-TTS 模型完成推理时发生，这个时候已经输出的音频数据，但是音频播放不一定完成。
+TTS 模型完成文本转语音时（推理完成）发生，这个时候已经输出的音频数据，但是音频播放不一定完成。
 
 
 **OnTTSWaveReceived**   
@@ -95,6 +95,11 @@ TTS 完成一块音频数据的朗读时发生。
 |LoadTTSAsync     | 当 `LoadTTSOnStart` 属性未 **Disabled** 时，不会自动加载 TTS，需要使用这个函数手动加载 。|
 |SpeakTextAsync   | 朗读文本。<br />参数 `StopPrevious` 表示是否停止正在进行的朗读，即打断现有的朗读。|
 |StopTextAsync    | 停止朗读。|
+
+
+## 蓝图函数库
+
+- `ListTTSSolutions`: 列出当前可以使用的 TTS 方案。
 
 
 
