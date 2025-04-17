@@ -85,11 +85,11 @@ protected:
 ```
 
 
-### 声明周期函数
+### 生命周期函数
 
 !!! tip
 
-    在 `MediaPipe4U` 中 `IMediaPipeHolisticConnector` 调用顺序（声明周期）如下：
+    在 `MediaPipe4U` 中 `IMediaPipeHolisticConnector` 调用顺序（生命周期）如下：
     
     **Connect** --->> **StartPipeline** --->> **StopPipeline** --->> **Disconnect**
     
