@@ -21,7 +21,7 @@
 
 === "ARKit 表情表情方案"
 
-    制作 52 个和 Apple ARKit 匹配的表情动画，每一个表情是一个 BlendShape 或者是 PoseAsset 中的一条曲线。     
+    制作 **52** 个和 Apple ARKit 匹配的表情动画，每一个表情是一个 BlendShape 或者是 PoseAsset 中的一条曲线。     
 
     具体表情参考请查看 [Apple 官方文档](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation){: target='_blank'}    
     也可以这个网站： [https://arkit-face-blendshapes.com/](https://arkit-face-blendshapes.com/){: target='_blank'}。  
@@ -32,7 +32,7 @@
 
 === "音素（Viseme）表情方案"
 
-    制作 15 个和 OVRLipSync 匹配的口型动画，每一个口型是一个 BlendShape 或者是 PoseAsset 中的一条曲线。   
+    制作 **15** 个和 OVRLipSync 匹配的口型动画，每一个口型是一个 BlendShape 或者是 PoseAsset 中的一条曲线。   
 
     ![Pose Asset Visemes](./images/lipsync/pose_asset_visemes.jpg "Pose Asset Visemes")
 
