@@ -31,7 +31,7 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 
 === "音素（Viseme）表情方案"
 
-    制作 15 个和 OVRLipSync 匹配的唇形动画，每一个唇形是一个 BlendShape 或者是 PoseAsset 中的一条曲线。   
+    制作 15 个和 OVRLipSync 匹配的口型动画，每一个口型是一个 BlendShape 或者是 PoseAsset 中的一条曲线。   
 
     ![Pose Asset Visemes](./images/lipsync/pose_asset_visemes.jpg "Pose Asset Visemes")
 
