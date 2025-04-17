@@ -90,7 +90,7 @@
 
 ### 准备动画资产
 
-制作一个姿势资产（PoseAsset） 兼容 Arkit 标准（包含 **52** 条曲线，命名不区分大小写）
+制作一个姿势资产（PoseAsset） 兼容 *ARkit Blend Shape* 标准（包含 **52** 条曲线，命名不区分大小写）
 
 [![speech](./images/lipsync/pose_asset_arkit.jpg "speech")](./images/lipsync/pose_asset_arkit.jpg){: width='300'}
 

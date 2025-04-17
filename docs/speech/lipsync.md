@@ -15,7 +15,7 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 
 
 
-## 制作口型动画资产(PoseAsset)   
+## 制作口型动画资产 (PoseAsset)   
 
 `MediaPipe4U` 支持多种口型动画方案。   
 你可以使用任何一种方案制作一个 PoseAsset 来包含这些曲线。
