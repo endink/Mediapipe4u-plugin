@@ -7,7 +7,7 @@
 
 ## 制作口型动画资产 (PoseAsset)   
 
-`MediaPipe4U` 支持多种口型动画方案。   
+`MediaPipe4U` 支持多种口型动画方案, 默认使用 **ARKit** 表情。   
 你可以使用任何一种方案制作一个 PoseAsset 来包含这些曲线。
 
 - `音素表情`：兼容音素口型的 **15** 种表情动画。
@@ -15,7 +15,7 @@
 
 !!! tip "如何选择口型动画方案"
 
-    默认使用 ARKit 方案，大多数的`数字人`或 `VTuber` 模型都兼容了 ARKit 表情，可能已经内置了符合 ARKit 标准的 PoseAsset。   
+    大多数的`数字人`或 `VTuber` 模型都兼容了 ARKit 表情，可能已经内置了符合 ARKit 标准的 PoseAsset。   
     
     如果你想要更好的口型效果，使用 `ZBrush` 等工具制作音素（Viseme）曲线可能是更好的选择。
 
