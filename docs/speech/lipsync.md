@@ -1,18 +1,6 @@
 # 口型同步(Lip Sync)
 
-MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步的能力。   
-
-!!! warning
-    OVRLipSync 库中包单独 Facebook(Meta) License 文件，请严格遵守这些条款。   
-            
-    MediaPipe4U 依据 [Meta Platforms Technologies SDK License](https://developer.oculus.com/licenses/oculussdk/) 协议 1.1.1 内容分发 OVRLipSync 中的库，并且已在插件中包含单独的 License 文件。   
-    
-    > 1.1.1 If the SDK includes any libraries,
-    > sample source code, or other materials that we make available specifically for incorporation in your Application (as indicated by applicable documentation), 
-    > you may incorporate those materials and reproduce and distribute them as part of your Application, including by distributing those materials to third parties contributing to your     Application.   
-    >   
-    > 对协议的理解如有不妥，请与我联系，我将迅速下架 LipSync 功能。
-
+`MediaPipe4U` 中的 `MediaPipe4USpeech` 插件支持了实时的语音和口型动画同步，帮助你生成逼真的 3D 角色朗读效果。
 
 
 ## 制作口型动画资产 (PoseAsset)   
@@ -132,6 +120,24 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 ## 开始口型同步
 
 完成以上操作后，当 TTS 开始朗读 (调用 `MediaPipeSpeechActor` 的 `SpeakTextAsync` 函数)，3D 角色就会根据朗读内容生成和文本一致的口型动画。
+
+## OvrLipSync License
+
+`MediaPipe4USpeech` 通过集成 `OVRLipSync` C++ 库来生成音素的 Blend Shape 值。   
+
+!!! warning "OvrLipSync"
+
+    OVRLipSync 库中包单独 Facebook(Meta) License 文件，请严格遵守这些条款。   
+            
+    MediaPipe4U 依据 [Meta Platforms Technologies SDK License](https://developer.oculus.com/licenses/oculussdk/) 协议 1.1.1 内容分发 OVRLipSync 中的库，并且已在插件中包含单独的 License 文件。   
+    
+    > 1.1.1 If the SDK includes any libraries,
+    > sample source code, or other materials that we make available specifically for incorporation in your Application (as indicated by applicable documentation), 
+    > you may incorporate those materials and reproduce and distribute them as part of your Application, including by distributing those materials to third parties contributing to your     Application.   
+    >   
+    
+    如果我对协议的理解有不妥之处，请与我联系，我将迅速下架 LipSync 功能。
+
 
 ## 附录
 
