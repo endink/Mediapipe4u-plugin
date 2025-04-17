@@ -55,7 +55,7 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 
 ![lipsync anim](./images/lipsync/anim_blueprint.jpg "lipsync anim")
 
-> 说明，上图中的 Pose_LipSync 是一个 Evalute Pose 节点。
+> 说明，上图中的 ARKit_PoseAsset 是一个 Evalute Pose 节点。
 
 
 ### LipSync 节点属性
@@ -69,11 +69,13 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 **MaxDelaySeconds**   
 语音延迟时间，以秒为单位，当使用分段语音块时，如果收到的语音数据帧延迟高于这个时间，该帧将不再执行口型动画。
 
-**CurveSolution**    
+**CurveSolution** :rainbow:    
 表情动画的曲线方案。
 
 - `OculusViseme`: 表示使用音素曲线，要求你在 PoseAsset 种包含 **15** 条音素 (Visemes) 曲线。
 - `ARKit`: 表示使用 ARKit 表情动画曲线，要求你在 PoseAsset 种包含 **52** 条 ARKit 表情曲线。
+
+> 你使用的 PoseAsset 类型必须和 `CurveSolution` 设置一致。
 
 默认值: `ARKit`
 
