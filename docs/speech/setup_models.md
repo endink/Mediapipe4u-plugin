@@ -25,7 +25,7 @@
 1. 在项目设置页左侧点击`插件(Plugins) >> MediaPipe4U Speech`菜单项打开 MediaPipe4U Speech 插件设置页。
 1. 在 MediaPipe4U Speech 插件设置页总点击 `Import Speech Models` 按钮，选择下载的 .zip 文件完成模型包安装。
 
-![Import Models](./images/setup_models/import_models_in_ue.jpg "Import Models"){ width="300" }
+![Import Models](./images/setup_models/import_models_in_ue.jpg "Import Models")
 
 !!! tip
 
