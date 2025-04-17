@@ -25,7 +25,7 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 
 !!! tip
 
-    默认使用 ARKit 方案，大多数的`数字人`或 `VTuber` 产品都兼容了 ARKit 表情，可能已经内置了符合 ARKit 标准的 PoseAsset。   
+    默认使用 ARKit 方案，大多数的`数字人`或 `VTuber` 模型都兼容了 ARKit 表情，可能已经内置了符合 ARKit 标准的 PoseAsset。   
     
     如果你想要更好的口型效果，使用 `ZBrush` 等工具制作音素（Viseme）曲线可能是更好的选择。
 
