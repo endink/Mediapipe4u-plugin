@@ -15,13 +15,6 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 
 
 
-## 开启口型同步
-
-在 `MediaPipeSpeechActor` 中打开口型同步
-
-![Enable LipSync](./images/quick_start/speech_actor_enable_lipsync.jpg "Enable LipSync") 
-
-
 ## 制作口型动画资产(PoseAsset)   
 
 `MediaPipe4U` 支持多种口型动画方案。   
@@ -37,24 +30,28 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 
     制作 15 个和 OVRLipSync 匹配的唇形动画，每一个唇形是一个 BlendShape 或者是 PoseAsset 中的一条曲线。   
 
+    ![Pose Asset Visemes](./images/lipsync/pose_asset_visemes.jpg "Pose Asset Visemes"){: width='300'}
+
     具体唇形参考请查看 [OVRLipSync 文档](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference){: target='_blank'}     
     也可以参考此文档最后的附录（来自 Facebook 网站截图）。   
        
-    Pose Asset 中的曲线名称或者 BlendShape 名称约定为： SIL、PP、FF、TH、DD、KK、CH、SS、NN、RR、AA、E、I、O、U (不区分大小写)  
+    > Pose Asset 中的曲线名称或者 BlendShape 名称约定为： SIL、PP、FF、TH、DD、KK、CH、SS、NN、RR、AA、E、I、O、U (不区分大小写)  
 
-== "ARKit 表情表情方案"
+=== "ARKit 表情表情方案"
 
     制作 52 个和 Apple ARKit 匹配的表情动画，每一个表情是一个 BlendShape 或者是 PoseAsset 中的一条曲线。     
 
     具体表情参考请查看 [Apple 官方文档](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)   {: target='_blank'}    
-    也可以这个网站： [https://arkit-face-blendshapes.com/](https://arkit-face-blendshapes.com/){: target='_blank'}。   
+    也可以这个网站： [https://arkit-face-blendshapes.com/](https://arkit-face-blendshapes.com/){: target='_blank'}。  
+
+    ![Pose Asset ARKit](./images/lipsync/pose_asset_arkit.jpg "Pose Asset ARKit"){: width='300'} 
        
-    Pose Asset 中的曲线名称或者 BlendShape 名称，遵循 Apple ARKit 的 **52** 个曲线名称标准（不区分大小写）。 
+    > Pose Asset 中的曲线名称或者 BlendShape 名称，遵循 Apple ARKit 的 **52** 个曲线名称标准（不区分大小写）。 
 
 
-### LipSync 动画蓝图节点
+###LipSync 动画蓝图节点
 
-在动画蓝图中添加 `MediaPipe LipSync` 节点，如果你使用 PoseAsset ，还需要添加 Evalute Pose 节点。
+创建动画蓝图，并在动画蓝图中添加 `MediaPipe LipSync` 节点，如果你使用 PoseAsset ，还需要添加 Evalute Pose 节点。
 
 ![lipsync anim](./images/lipsync/anim_blueprint.jpg "lipsync anim")
 
@@ -117,69 +114,79 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 
 ![Set Global Params](./images/lipsync/set_global_params.jpg "Set Global Params")
 
+
+### 创建 Character
+
+1. 创建一个 `Character`，将 `Mesh` 上的动画蓝图指定为上面添加了 `MediaPipe LipSync` 节点的动画蓝图。   
+2. 将这个 `Character` 放入场景 (Level) 中。
+3. 将 `MediaPipeSpeechActor` 的 `LipSyncCharacter` 设置为这个 `Character`。 
+4. 检查 `MediaPipeSpeechActor` 中的 `LipSync` 已经打开。
+
+![Enable LipSync](./images/lipsync/lip_sync_details.jpg "Enable LipSync") 
+
 ## 开始口型同步
 
 完成以上操作后，当 TTS 开始朗读 (调用 `MediaPipeSpeechActor` 的 `SpeakTextAsync` 函数)，3D 角色就会根据朗读内容生成和文本一致的口型动画。
 
 ## 附录
 
-### OVRLipSync 唇形
+=== "OVRLipSync 口型参考"
 
-> 你也可以转到[Facebook 网站](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference){: taget='_blank'}阅读详细信息。
+    > 你也可以转到[Facebook 网站](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference){: taget='_blank'}阅读详细信息。
 
-![lipsync visemes](./images/lipsync/lip_sync_visemes.jpg "lipsync visemes")
+    ![lipsync visemes](./images/lipsync/lip_sync_visemes.jpg "lipsync visemes")
 
-### ARKit 曲线（BS）名称
+=== "ARKit 曲线（BS）名称"
 
--  1: *eyeBlinkLeft*,
--  2: *eyeLookDownLeft*,
--  3: *eyeLookInLeft*,
--  4: *eyeLookOutLeft*,
--  5: *eyeLookUpLeft*,
--  6: *eyeSquintLeft*,
--  7: *eyeWideLeft*,
--  8: *eyeBlinkRight*,
--  9: *eyeLookDownRight*,
--  10: *eyeLookInRight*,
--  11: *eyeLookOutRight*,
--  12: *eyeLookUpRight*,
--  13: *eyeSquintRight*,
--  14: *eyeWideRight*,
--  15: *jawForward*,
--  16: *jawLeft*,
--  17: *jawRight*,
--  18: *jawOpen*,
--  19: *mouthClose*,
--  20: *mouthFunnel*,
--  21: *mouthPucker*,
--  22: *mouthRight*,
--  23: *mouthLeft*,
--  24: *mouthSmileLeft*,
--  25: *mouthSmileRight*,
--  26: *mouthFrownRight*,
--  27: *mouthFrownLeft*,
--  28: *mouthDimpleLeft*,
--  29: *mouthDimpleRight*,
--  30: *mouthStretchLeft*,
--  31: *mouthStretchRight*,
--  32: *mouthRollLower*,
--  33: *mouthRollUpper*,
--  34: *mouthShrugLower*,
--  35: *mouthShrugUpper*,
--  36: *mouthPressLeft*,
--  37: *mouthPressRight*,
--  38: *mouthLowerDownLeft*,
--  39: *mouthLowerDownRight*,
--  40: *mouthUpperUpLeft*,
--  41: *mouthUpperUpRight*,
--  42: *browDownLeft*,
--  43: *browDownRight*,
--  44: *browInnerUp*,
--  45: *browOuterUpLeft*,
--  46: *browOuterUpRight*,
--  47: *cheekPuff*,
--  48: *cheekSquintLeft*,
--  49: *cheekSquintRight*,
--  50: *noseSneerLeft*,
--  51: *noseSneerRight*,
--  52: *tongueOut*
+    -  1: *eyeBlinkLeft*,
+    -  2: *eyeLookDownLeft*,
+    -  3: *eyeLookInLeft*,
+    -  4: *eyeLookOutLeft*,
+    -  5: *eyeLookUpLeft*,
+    -  6: *eyeSquintLeft*,
+    -  7: *eyeWideLeft*,
+    -  8: *eyeBlinkRight*,
+    -  9: *eyeLookDownRight*,
+    -  10: *eyeLookInRight*,
+    -  11: *eyeLookOutRight*,
+    -  12: *eyeLookUpRight*,
+    -  13: *eyeSquintRight*,
+    -  14: *eyeWideRight*,
+    -  15: *jawForward*,
+    -  16: *jawLeft*,
+    -  17: *jawRight*,
+    -  18: *jawOpen*,
+    -  19: *mouthClose*,
+    -  20: *mouthFunnel*,
+    -  21: *mouthPucker*,
+    -  22: *mouthRight*,
+    -  23: *mouthLeft*,
+    -  24: *mouthSmileLeft*,
+    -  25: *mouthSmileRight*,
+    -  26: *mouthFrownRight*,
+    -  27: *mouthFrownLeft*,
+    -  28: *mouthDimpleLeft*,
+    -  29: *mouthDimpleRight*,
+    -  30: *mouthStretchLeft*,
+    -  31: *mouthStretchRight*,
+    -  32: *mouthRollLower*,
+    -  33: *mouthRollUpper*,
+    -  34: *mouthShrugLower*,
+    -  35: *mouthShrugUpper*,
+    -  36: *mouthPressLeft*,
+    -  37: *mouthPressRight*,
+    -  38: *mouthLowerDownLeft*,
+    -  39: *mouthLowerDownRight*,
+    -  40: *mouthUpperUpLeft*,
+    -  41: *mouthUpperUpRight*,
+    -  42: *browDownLeft*,
+    -  43: *browDownRight*,
+    -  44: *browInnerUp*,
+    -  45: *browOuterUpLeft*,
+    -  46: *browOuterUpRight*,
+    -  47: *cheekPuff*,
+    -  48: *cheekSquintLeft*,
+    -  49: *cheekSquintRight*,
+    -  50: *noseSneerLeft*,
+    -  51: *noseSneerRight*,
+    -  52: *tongueOut*

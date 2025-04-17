@@ -81,7 +81,8 @@
 1. 准备动画资产
 2. 添加动画蓝图节点
 3. 打开口型同步
-4. 开始朗读
+4. 创建 `Character` ，并设置为 `MediaPipeSpeechActor` 的 `LipSyncCharacter` 属性
+5. 开始朗读
 
 
 下面，详细介绍这些步骤的操作方法。
@@ -89,12 +90,9 @@
 
 ### 准备动画资产
 
-制作一个姿势资产（PoseAsset） 包含 15 个音素曲线（这里我将这个 Pose Asset 命名为 **Pose_LipSync**）。
+制作一个姿势资产（PoseAsset） 兼容 Arkit 标准（包含 **52** 条曲线，命名不区分大小写）
 
-[![speech](./images/lipsync/qs_pose_asset.jpg "speech")](./images/lipsync/qs_pose_asset.jpg)
-
-> SIL 为自然状态下的面容。   
-> 音素表情请参考[Lipsync文档](./lipsync.md)或[OVRLipSync文档](https://developer.oculus.com/documentation/unreal/audio-ovrlipsync-viseme-reference)
+[![speech](./images/lipsync/pose_asset_arkit.jpg "speech")](./images/lipsync/pose_asset_arkit.jpg){: width='300'}
 
 
 ### 添加动画蓝图节点
@@ -104,13 +102,16 @@
 ![Lip Sync Anim Node](./images/lipsync/anim_blueprint.jpg "Lip Sync Anim Node")
 
 
-### 打开口型同步
+### 创建 Character
 
-检查 `MediaPipeSpeechActor` 中的 LipSync 已经打开。
+1. 创建一个 `Character`，将 `Mesh` 上的动画蓝图指定为上面添加了 `MediaPipe LipSync` 节点的动画蓝图。   
+2. 将这个 `Character` 放入场景 (Level) 中。
+3. 将 `MediaPipeSpeechActor` 的 `LipSyncCharacter` 设置为这个 `Character`。
+4. 检查 `MediaPipeSpeechActor` 中的 `LipSync` 已经打开。
 
 
-![speech](./images/quick_start/speech_actor_enable_lipsync.jpg "speech")
+![speech](./images/lipsync/lip_sync_details.jpg "speech")
 
 ### 开始朗读
 
-此时，当 `MediaPipeSpeechActor` 的 `SpeakTextAsync` 函数被调用，3D 角色就会根据朗读内容生成和文本一致的口型动画。
+此时，当 `MediaPipeSpeechActor` 的 `SpeakTextAsync` 函数被调用， 就会朗读文本, 并在 `Character`  生成和发音一致的口型动画。
