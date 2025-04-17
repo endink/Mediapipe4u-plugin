@@ -30,7 +30,7 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
 
     制作 15 个和 OVRLipSync 匹配的唇形动画，每一个唇形是一个 BlendShape 或者是 PoseAsset 中的一条曲线。   
 
-    ![Pose Asset Visemes](./images/lipsync/pose_asset_visemes.jpg "Pose Asset Visemes"){: width='300'}
+    ![Pose Asset Visemes](./images/lipsync/pose_asset_visemes.jpg "Pose Asset Visemes")
 
     具体唇形参考请查看 [OVRLipSync 文档](https://developer.oculus.com/documentation/unity/audio-ovrlipsync-viseme-reference){: target='_blank'}     
     也可以参考此文档最后的附录（来自 Facebook 网站截图）。   
@@ -44,7 +44,7 @@ MediaPipe4USpeech 通过集成 `OVRLipSync` 组件，提供声音和口型同步
     具体表情参考请查看 [Apple 官方文档](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)   {: target='_blank'}    
     也可以这个网站： [https://arkit-face-blendshapes.com/](https://arkit-face-blendshapes.com/){: target='_blank'}。  
 
-    ![Pose Asset ARKit](./images/lipsync/pose_asset_arkit.jpg "Pose Asset ARKit"){: width='300'} 
+    ![Pose Asset ARKit](./images/lipsync/pose_asset_arkit.jpg "Pose Asset ARKit")
        
     > Pose Asset 中的曲线名称或者 BlendShape 名称，遵循 Apple ARKit 的 **52** 个曲线名称标准（不区分大小写）。 
 
