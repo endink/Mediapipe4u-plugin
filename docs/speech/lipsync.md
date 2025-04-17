@@ -13,11 +13,22 @@
 - `音素表情`：兼容音素口型的 **15** 种表情动画。
 - `ARKit 表情`：兼容 ARKit 的 **52** 种表情动画。
 
-!!! tip
+!!! tip "如何选择口型动画方案"
 
     默认使用 ARKit 方案，大多数的`数字人`或 `VTuber` 模型都兼容了 ARKit 表情，可能已经内置了符合 ARKit 标准的 PoseAsset。   
     
     如果你想要更好的口型效果，使用 `ZBrush` 等工具制作音素（Viseme）曲线可能是更好的选择。
+
+=== "ARKit 表情表情方案"
+
+    制作 52 个和 Apple ARKit 匹配的表情动画，每一个表情是一个 BlendShape 或者是 PoseAsset 中的一条曲线。     
+
+    具体表情参考请查看 [Apple 官方文档](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation){: target='_blank'}    
+    也可以这个网站： [https://arkit-face-blendshapes.com/](https://arkit-face-blendshapes.com/){: target='_blank'}。  
+
+    ![Pose Asset ARKit](./images/lipsync/pose_asset_arkit.jpg "Pose Asset ARKit")
+       
+    > Pose Asset 中的曲线名称或者 BlendShape 名称，遵循 Apple ARKit 的 **52** 个曲线名称标准（不区分大小写）。 
 
 === "音素（Viseme）表情方案"
 
@@ -30,16 +41,6 @@
        
     > Pose Asset 中的曲线名称或者 BlendShape 名称约定为： SIL、PP、FF、TH、DD、KK、CH、SS、NN、RR、AA、E、I、O、U (不区分大小写)  
 
-=== "ARKit 表情表情方案"
-
-    制作 52 个和 Apple ARKit 匹配的表情动画，每一个表情是一个 BlendShape 或者是 PoseAsset 中的一条曲线。     
-
-    具体表情参考请查看 [Apple 官方文档](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation){: target='_blank'}    
-    也可以这个网站： [https://arkit-face-blendshapes.com/](https://arkit-face-blendshapes.com/){: target='_blank'}。  
-
-    ![Pose Asset ARKit](./images/lipsync/pose_asset_arkit.jpg "Pose Asset ARKit")
-       
-    > Pose Asset 中的曲线名称或者 BlendShape 名称，遵循 Apple ARKit 的 **52** 个曲线名称标准（不区分大小写）。 
 
 
 ### MediaPipe LipSync 动画蓝图节点
