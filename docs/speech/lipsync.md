@@ -1,8 +1,8 @@
 # 口型同步(Lip Sync)
 
-`MediaPipe4U` 中的 `MediaPipe4USpeech` 插件支持了实时的语音和口型动画同步，帮助你生成逼真的 3D 角色朗读效果。
+`MediaPipe4U` 中的 `MediaPipe4USpeech` 插件支持了实时的, 离线的语音和口型动画同步功能，帮助你生成逼真的 3D 角色朗读效果。
 
-此文档详细介绍如何在 TTS 基础上集成口型同步功能。
+此文档详细介绍如何在 TTS 基础上集成口型同步。
 
 
 ## 制作口型动画资产 (PoseAsset)   
