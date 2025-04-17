@@ -97,10 +97,6 @@
 是否使用全局口型动画参数。开启它能够支持运行时动态调整口型动画。   
 默认值：**true**
 
-!!! warning
-
-    全局参数设置会影响所有的 LipSync 动画蓝图节点。   
-    当场景中有多个 LipSync 节点或多个动画蓝图都包含 LipSync 节时应该将 UseGlobalParameters 设为 false，
 
 
 ### 创建 Character
@@ -118,11 +114,17 @@
 
 ## 运行时设置口型动画
 
-当 `MediaPipe LipSync` 动画蓝图节点启用了全局参数时（`UseGlobalParameters` 为 **true**），你还可以在其他蓝图中动态调整口型动画的参数。   
+当 `MediaPipe LipSync` 动画蓝图节点**启用**了*全局参数*时（`UseGlobalParameters` 为 **true**），你还可以在其他蓝图中动态调整口型动画的参数。   
 
 在蓝图中调用 `SetGlobLipSyncParameters` 函数：
 
 ![Set Global Params](./images/lipsync/set_global_params.jpg "Set Global Params")
+
+
+!!! warning
+
+    *全局参数*设置会影响所有的 LipSync 动画蓝图节点。   
+    当场景中有多个 LipSync 节点或多个动画蓝图都包含 LipSync 节时应该将 UseGlobalParameters 设为 false，
 
 
 ## OvrLipSync License
