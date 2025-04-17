@@ -1,6 +1,6 @@
 # 离线语音合成 (TTS)
 
-MediaPipe4USpeech 提供离线 TTS 能力, 支持你将文本转为 PCM 音频数据并使用 Unreal Engine 播放。   
+MediaPipe4USpeech 提供离线，实时的文本转语音能力, 支持你将文本转为 PCM 音频数据并使用 Unreal Engine 播放。   
 
 ---   
 
