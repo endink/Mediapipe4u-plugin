@@ -69,15 +69,16 @@ graph TD
   C --> D{Recognize ?}
 
   D -->|Yes| E{Output Text};
-  E --> A
+  E --> H
  
   D -->|No| F{Exceed KeepAwakeSeconds?};
 
   F --> |Yes| G{Sleep ASR}
-  G --> A
-  F --> |No| A
+  G --> H{Loop Next}
+  F --> |No| H
   
-  C ---->|No| A;
+  C ---->|No| H;
+  
 ```
 
 ## 独立使用
