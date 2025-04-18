@@ -35,6 +35,13 @@ CUDA 要求：
 | CUDA Toolkit | `12.x` (推荐 `12.6`) | [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit){: target='_blank'} |
 | CUDNN | `9.x`（推荐 `9.8`） | [https://developer.nvidia.com/cudnn-downloads](https://developer.nvidia.com/cudnn-downloads){: target='_blank'} |
 
+!!! tip "显存要求"
+
+    最低显存：**4G** 空闲显存。        
+    建议显存： **6G** 或以上空闲显存。    
+
+    你还要考虑 Unreal Engine 显存占用，如果显存不足，将导致 Unreal Engine 显存溢出。
+
 
 
 ## F5-TTS 语音包
