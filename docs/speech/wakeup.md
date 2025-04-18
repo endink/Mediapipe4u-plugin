@@ -58,26 +58,26 @@ ASR 要满足下列条件才会进入唤醒流程：
 
 调用 `MediaPipeSpeechActor` 的 `StartCaptureMicrophoneAsync` 开始从麦克风中捕捉音频，此时要求先用唤醒词唤醒，之后才能进行语音识别。
 
-下面是一个大致的 ASR 唤醒处理流程：
+??? note "带语音唤醒的 ASR 流程"
 
-``` mermaid
-graph TD
-  A[Audio] --> B{ASR Awake?};
-  B --> |Yes| D{Recognize ?};
-  B --> |No| C{Do Wake Up}
-  C --> |Success| D
-  C --> |Failure| H{Loop Next}
-
-  D -->|Yes| E{Output Text};
-  E --> H
- 
-  D -->|No| F{Exceed KeepAwakeSeconds?};
-
-  F --> |Yes| G{Sleep ASR}
-  G --> H
-  F --> |No| H
-  
-```
+    ``` mermaid
+    graph TD
+      A[Audio] --> B{ASR Awake?};
+      B --> |Yes| D{Recognize ?};
+      B --> |No| C{Do Wake Up}
+      C --> |Success| D
+      C --> |Failure| H{Loop Next}
+    
+      D -->|Yes| E{Output Text};
+      E --> H
+     
+      D -->|No| F{Exceed KeepAwakeSeconds?};
+    
+      F --> |Yes| G{Sleep ASR}
+      G --> H
+      F --> |No| H
+      
+    ```
 
 ## 独立使用
 
