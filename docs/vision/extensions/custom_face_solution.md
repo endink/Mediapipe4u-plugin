@@ -42,8 +42,8 @@ public:
 #### 函数介绍
 |函数| 说明  |
 |-----|---------|
-|IsEnabled| 方案是否可用，通过实现这个函数，你还可以在内部动态控制方案的开启/关闭。<br/> 例如： 当 `Initialize` 时，应该让方案不可用，这时可以返回 **false**。 |
-|Initialize| 方案初始化，你可以从输入参数中获取表情捕捉初始化的上下文 `FFaceSolutionInitializationContext` 来初始化你的算法。 |
+|IsEnabled| 方案是否可用，通过实现这个函数，可以在内部动态控制方案的可用性。<br/> 例如： 当 `Initialize` 时，应该让方案不可用，这时可以返回 **false**。 |
+|Initialize| 方案初始化，可以从输入参数中获取表情捕捉初始化的上下文 `FFaceSolutionInitializationContext` 来初始化你的算法。 |
 |UnInitialize| 方案的卸载清理操作 |
 |IsSolveFromImageFrame| 指示你的方案是否需要 `MediaPipe4U` 给你投递图像（`IMediaPipeTexture`）来进行计算。<br/> 举例：<br> `Remoting` 方案不需要投递图像，因为它利用安卓摄像头的画面的计算表情。<br/> `NvAR` 方案通过使用 `MediaPipe4U` 中的图像（来自 Image Source 的图像）来计算表情。   |
 |SolveFrame | 当 `IsSolveFromImageFrame` 返回是 **true** 时，可以从这个函数接收来自 `MediaPipe4U` 的图像并计算表情。 |
