@@ -21,7 +21,7 @@ F5-TTS 是由上海交通大学、剑桥大学和吉利汽车研究院（宁波�
 
     对于 Nvidia GPU 会优先使用 CUDA 进行推理，这要求你安装 Cuda 12 和 Cudnn 9.x。   
 
-    如果你的显卡不支持 CUDA 12 （例如 **AMD** 显卡或较旧的 Nvida 显卡）或没有 Cuda, Cudnn 版本不对，会使用 DirectML 进行推理 （无需安装任何软件，Windows 支持）， 如果 GPU 性能不够可能会有明显延迟。
+    如果你的显卡不支持 CUDA 12 （例如 **AMD** 显卡或较旧的 Nvida 显卡）或 Cuda, Cudnn 版本不对，会使用 DirectML 进行推理 （无需安装任何软件，Windows 支持）， 如果 GPU 性能不够可能会有明显延迟。
 
     > 实测同样的 GPU ， CUDA 性能是 DirectML 的**2.5 倍**左右。 
 
