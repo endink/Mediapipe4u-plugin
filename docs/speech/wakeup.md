@@ -64,9 +64,10 @@ ASR 要满足下列条件才会进入唤醒流程：
 graph TD
   A[Audio] --> B{ASR Awake?};
   B --> |Yes| C{ASR};
+  B --> |No| H{Loop Next}
   B --> C{Do Wake Up};
   C --> |Success| D{Recognize ?}
-  c --> |No| H{Loop Next}
+  c --> |No| H
 
   D -->|Yes| E{Output Text};
   E --> H
