@@ -78,7 +78,7 @@ FFaceSolutionManager::Get().RegisterSolution(FName("NvAR"), MakeShared<FNvARFace
 
 ## 注销方案
 
-通常在你的 Module 被卸载时，你应该你应该注销你的方案。
+通常在你的 Module 被卸载时，应该注销你的方案。
 
 通过调用 `FFaceSolutionManager` 的 `UnregisterSolution` 函数注册你的方案。   
 
