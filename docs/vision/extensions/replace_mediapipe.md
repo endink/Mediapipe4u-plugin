@@ -131,9 +131,9 @@ protected:
 | OnMediaPipeFailedTrigger | int64 | `MediaPipeHolisticComponent` 错误处理。<br />参数：<br>`session id`: 来自 `StartPipeline` 的第一个参数。 |
 | OnMediaPipeFrameTrigger | IMediaPipeOutFrame | 输出图像， `MediaPipeHolisticComponent` 用它来回显图像。 |
 
-!!! tip "FMediaPipeFrameEvent 中的 IMediaPipeOutFrame"
+!!! tip "IMediaPipeOutFrame"
 
-	IMediaPipeOutFrame 是表示回显的图像的接口，在内置 MediaPipeConnector 中通常是带有装饰线条的图片帧。   
+	`IMediaPipeOutFrame` 是表示回显的图像的接口，在内置 MediaPipeConnector 中通常是带有装饰线条的图片帧。   
 
 	这个接口必须实现引用计数功能（类似智能指针）。   
 
