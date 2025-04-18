@@ -44,7 +44,7 @@ ASR 要满足下列条件才会进入唤醒流程：
 !!! tip
 
     当 `MediaPipeSpeechActor` 与唤醒集成后，  `MediaPipeSpeechActor` 将会接管 `MediaPipeSpeechWakeUpActor`。   
-    
+
     无需关心 `MediaPipeSpeechWakeUpActor` 组件的打开和关闭;   
     无需在 `MediaPipeSpeechWakeUpActor` 上配置唤醒词;   
     你只需要在 `MediaPipeSpeechActor` 中完成设置;
@@ -60,7 +60,7 @@ ASR 要满足下列条件才会进入唤醒流程：
   - `CloseOnASRStopped`: 设为 **true** 时，当 ASR 停止后，将自动关闭 `MediaPipeSpeechWakeUpActor`, 否则，你需要手动调用 `MediaPipeSpeechWakeUpActor` 的 `Close` 函数来关闭它。
 
 
-### 语音唤醒并语音识别
+### 语音唤醒后开始识别
 
 调用 `MediaPipeSpeechActor` 的 `StartCaptureMicrophoneAsync` 开始从麦克风中捕捉音频，此时要求先用唤醒词唤醒，之后才能进行语音识别。
 
