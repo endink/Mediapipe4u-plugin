@@ -56,7 +56,7 @@ public:
 ## 注册方案
 
 方案通常在你的 Module 加载时，进行注册。   
-一个方案通常要求有唯一的名称，名称在注册时提供。   
+一个方案通常要求有**唯一**的名称，名称在注册时提供。   
 通过调用 `FFaceSolutionManager` 的 `RegisterSolution` 函数注册方案。   
 
 
