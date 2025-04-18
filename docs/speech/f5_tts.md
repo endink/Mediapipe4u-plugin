@@ -19,9 +19,11 @@ F5-TTS 是由上海交通大学、剑桥大学和吉利汽车研究院（宁波�
 
     由于 F5-TTS 采用生成式架构，模型较大，使用 CPU 推理性能**无法满足**实时性需求，因此，如果你使用 F5-TTS 语音包，将自动使用 GPU 进行推理。
 
-    对于 Nvidia GPU 会优先使用 CUDA 进行推理，这要求你安装 Cuda 12 和 Cudnn 9.x， 实测同样的 GPU ， CUDA 性能是 DirectML 的**2.5 倍**左右。    
+    对于 Nvidia GPU 会优先使用 CUDA 进行推理，这要求你安装 Cuda 12 和 Cudnn 9.x。   
 
-    如果你的显卡不支持 CUDA 12 （例如 **AMD** 显卡或较旧的 Nvida 显卡）会使用 DirectML 进行推理 （无需安装任何软件，Windows 支持）， 如果 GPU 性能不够可能会有明显延迟。
+    如果你的显卡不支持 CUDA 12 （例如 **AMD** 显卡或较旧的 Nvida 显卡）或没有 Cuda, Cudnn 版本不对，会使用 DirectML 进行推理 （无需安装任何软件，Windows 支持）， 如果 GPU 性能不够可能会有明显延迟。
+
+    > 实测同样的 GPU ， CUDA 性能是 DirectML 的**2.5 倍**左右。 
 
     **CPU** 可以完成推理，但是性能低下，基本无法使用，如果你对你的 CPU 很自信，那么你也可以尝试。
 
