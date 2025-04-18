@@ -53,6 +53,7 @@ nav:
       - Facial Capture: 
         - vision/facial/get_started.md
         - vision/facial/nvar.md
+        - extensions/facial/custom_face_solution.md
       - MediaPip4U Remoting: 
         - vision/remoting/get_started.md
     - Audio AI: 

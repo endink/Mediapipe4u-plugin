@@ -84,9 +84,9 @@ FaceSolution 属性表示要使用的方案名称。FaceLinkActor 可以支持�
 
 !!! warning
 
- 当 MediaPipe4U 动作捕捉开始以后，虽然你可以设置 `FaceSolution`，但是它并不会生效，必须停止动作捕捉再启动才能切换方案。   
+   当 MediaPipe4U 动作捕捉开始以后，虽然你可以设置 `FaceSolution`，但是它并不会生效，必须停止动作捕捉再启动才能切换方案。   
  
- 简单来说，`FaceSolution` 不能在 mediapipe 运行过程中切换。
+   简单来说，`FaceSolution` **不能**在 mediapipe 运行过程中切换。
 
 你可以通过蓝图库 `MediaPipeLiveLinkBlueprintLibrary` 中的函数 `ListFaceSolutions` 列出当前可用的方案：
 
