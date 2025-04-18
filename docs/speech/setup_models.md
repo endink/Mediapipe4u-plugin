@@ -22,6 +22,8 @@
 
 ### 在 Unreal Editor 中安装
 
+这是最省事省力的安装一个语音包的方法, **推荐**使用此方法安装模型包。
+
 1. 在 [语音模型发布页](https://huggingface.co/endink/M4U-Speech-Models/tree/main){: target='_blank'} 下载模型包（通常是一个 .zip 压缩文件）
 1. 打开 UE Editor，点击`编辑 >> 项目设置` （`Editor >> Project Settings`）菜单打开项目设置页。
 1. 在项目设置页左侧点击`插件(Plugins) >> MediaPipe4U Speech`菜单项打开 MediaPipe4U Speech 插件设置页。
