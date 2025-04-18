@@ -66,7 +66,7 @@ graph TD
   B --> |Yes| D{Recognize ?};
   B --> |No| C{Do Wake Up}
   C --> |Success| D
-  C --> |Failure| H{Wait Next Audio}
+  C --> |Failure| H{Loop Next}
 
   D -->|Yes| E{Output Text};
   E --> H
