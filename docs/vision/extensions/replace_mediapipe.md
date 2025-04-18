@@ -129,7 +129,7 @@ protected:
 | OnFaceLandmarksTrigger | Landmark | `MediaPipeAnimInstance` 用它计算人物头部转动（ `MediaPipe Head Solver` 动画蓝图节点 ）。 |
 | OnImageSizeDetectedTrigger | Landmark | `MediaPipeAnimInstance` 用根据它配合 `PoseLandmarks` 计算人物位置（ `MediaPipe Location Solver` 动画蓝图节点 ）。 |
 | OnMediaPipeFailedTrigger | int64 | `MediaPipeHolisticComponent` 错误处理。<br />参数：<br>`session id`: 来自 `StartPipeline` 的第一个参数。 |
-| OnMediaPipeFrameTrigger | -- | 输出图像， `MediaPipeHolisticComponent` 用它来回显图像。 |
+| OnMediaPipeFrameTrigger | IMediaPipeOutFrame | 输出图像， `MediaPipeHolisticComponent` 用它来回显图像。 |
 
 !!! tip "FMediaPipeFrameEvent 中的 IMediaPipeOutFrame"
 
