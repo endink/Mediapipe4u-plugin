@@ -128,4 +128,3 @@ ASR 要满足下列条件才会进入唤醒流程：
 
 ![Close Wake Up](./images/wakeup/close_wakeup.jpg)
 
-## 与 ASR 集成
