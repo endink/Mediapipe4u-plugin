@@ -92,7 +92,7 @@ ASR 要满足下列条件才会进入唤醒流程：
 
     综上所述,目前 `MediaPipeSpeechWakeUpActor` 独立使用时仅提供从原始 PCM 数据中检测唤醒词。
 
-## 添加 MediaPipeSpeechWakeUpActor
+### 添加 MediaPipeSpeechWakeUpActor
 
 现在向场景 (Level) 中放入一个 `MediaPipeSpeechWakeUpActor` ，并配置唤醒词。
 
