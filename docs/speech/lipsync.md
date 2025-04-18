@@ -98,7 +98,12 @@
 是否使用全局口型动画参数。开启它能够支持运行时动态调整口型动画。   
 默认值：**true**
 
+### 创建重定向资产 (可选)
 
+当你的曲线名称不符合标准时，可以创建重定向资产，并通过 `VisemeCurveRetargetAsset` 或 `ARKitCurveRetargetAsset` 使用它。   
+在内容浏览器空白处点击鼠标右键，可以看到创建资产的菜单:
+
+![Create Reamp Assets](./images/lipsync/create_remap_asset.jpg)
 
 ### 创建 Character
 
