@@ -63,7 +63,7 @@ ASR 要满足下列条件才会进入唤醒流程：
 ``` mermaid
 graph TD
   A[Audio] --> B{ASR Awake?};
-  B --> |Yes|C{ASR};
+  B --> |Yes| C{ASR};
   B --> C{Do Wake Up};
   C -->|Yes| C
   C --> D{Recognize ?}
