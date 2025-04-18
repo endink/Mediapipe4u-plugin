@@ -118,6 +118,32 @@ protected:
 
 以 **On** 开头，并且以 **Trigger** 结束的函数表示当自定义算法求解出数据时需要触发的事件，你实现的事件越多，功能就越完整。
 
+|函数| 数据类型 | 受影响功能 |
+|--------|----------|-------|
+| OnPoseLandmarksTrigger | 主要数据 | `MediaPipeAnimInstance` 用它计算人物位置（ `MediaPipe Location Solver` 动画蓝图节点 ）。 |
+| OnPoseWorldLandmarksTrigger | NormalizedLandmark | `MediaPipeAnimInstance` 用它计算人物姿势（ `MediaPipe Pose Solver` 动画蓝图节点 ）。 |
+| OnLeftHandLandmarksTrigger | Landmark | `MediaPipeAnimInstance` 用它计算人物**左手**的姿势和手腕翻转（ `MediaPipe Hand Solver` 动画蓝图节点 ）。 |
+| OnRightHandLandmarksTrigger | Landmark | `MediaPipeAnimInstance` 用它计算人物**右手**的姿势和手腕翻转（ `MediaPipe Hand Solver` 动画蓝图节点 ）。 |
+| OnFaceBlendShapesTrigger | Blend Shape Map | `MediaPipeLiveLinkActor` 用它计算人物表情。 |
+| OnFaceGeometryTrigger | Landmark | 无 |
+| OnFaceLandmarksTrigger | Landmark | `MediaPipeAnimInstance` 用它计算人物头部转动（ `MediaPipe Head Solver` 动画蓝图节点 ）。 |
+| OnImageSizeDetectedTrigger | Landmark | `MediaPipeAnimInstance` 用根据它配合 `PoseLandmarks` 计算人物位置（ `MediaPipe Location Solver` 动画蓝图节点 ）。 |
+| OnMediaPipeFailedTrigger | int64 | `MediaPipeHolisticComponent` 错误处理。<br />参数：<br>`session id`: 来自 `StartPipeline` 的第一个参数。 |
+| OnMediaPipeFrameTrigger | -- | 输出图像， `MediaPipeHolisticComponent` 用它来回显图像。 |
+
+!!! tip "FMediaPipeFrameEvent 中的 IMediaPipeOutFrame"
+
+	IMediaPipeOutFrame 是表示回显的图像的接口，在内置 MediaPipeConnector 中通常是带有装饰线条的图片帧。   
+
+	这个接口必须实现引用计数功能（类似智能指针）。   
+
+	特别说明几个函数：
+
+	`IncreaseReferenceCount`: 引用计数 **+** 1，当你输出时，引用计数为 *1*。
+	`Release`: 引用计数 **-** 1，当引用为 **0** 时，必须释放内存。 
+
+	> 如果你觉得回显图像不是必要的，你的连接器可以没有 OnMediaPipeFrame 事件（永远不触发 `OnMediaPipeFrameTrigger`）。
+
 ### 监听支持函数
 
 `AddListener` 和 `RemoveListener` 为外部提供数据监听器支持，`MediaPipe4U` 中通过这些函数完成其他功能。
