@@ -44,8 +44,10 @@ ASR 要满足下列条件才会进入唤醒流程：
 !!! tip
 
     当 `MediaPipeSpeechActor` 与唤醒集成后，  `MediaPipeSpeechActor` 将会接管 `MediaPipeSpeechWakeUpActor`。   
-    无需关心 `MediaPipeSpeechWakeUpActor` 组件的打开和关闭， 也无需在 `MediaPipeSpeechWakeUpActor` 上配置唤醒词。   
-    你只需要在 `MediaPipeSpeechActor` 中完成设置。
+    
+    无需关心 `MediaPipeSpeechWakeUpActor` 组件的打开和关闭;   
+    无需在 `MediaPipeSpeechWakeUpActor` 上配置唤醒词;   
+    你只需要在 `MediaPipeSpeechActor` 中完成设置;
 
 下面是 `MediaPipeSpeechActor` 上唤醒功能相关属性:   
 
