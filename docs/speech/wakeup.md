@@ -99,8 +99,6 @@ ASR 要满足下列条件才会进入唤醒流程：
 
 现在向场景 (Level) 中放入一个 `MediaPipeSpeechWakeUpActor` ，并配置唤醒词。
 
-![WakeUp Details](./images/wakeup/wakeup_actor_details.jpg)
-
 ![Wake Up Actor Details](./images/wakeup/wakeup_actor_details.jpg)
 
 !!! warning "注意"
