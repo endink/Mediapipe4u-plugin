@@ -8,6 +8,7 @@
 1. 向场景中添加 `AMediaPipeSpeechActor` 组件 。
 2. 通过细节面板配置 ASR 。
 3. 调用 `AMediaPipeSpeechActor` 的 `StartCaptureMicrophone`/`StartCaptureAudio` 等函数进行语音识别。
+4. 在 `AMediaPipeSpeechActor` 的 `OnTextRecognized` 时间中获得从语音中识别到的文本。
 
 !!! tip "集成语音唤醒"
 
