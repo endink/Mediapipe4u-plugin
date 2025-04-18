@@ -7,13 +7,13 @@
 
 ## 制作口型动画资产 (PoseAsset)   
 
-`MediaPipe4U` 支持多种口型动画方案, 默认使用 **ARKit** 表情。   
+`MediaPipe4U` 支持多种口型动画方案 (Curve Schema), 默认使用 **ARKit** 表情。   
 你可以使用任何一种方案制作一个 PoseAsset 来包含这些曲线。
 
 - `音素表情`：兼容音素口型的 **15** 种表情动画。
 - `ARKit 表情`：兼容 ARKit 的 **52** 种表情动画。
 
-!!! tip "如何选择口型动画方案"
+!!! tip "如何选择口型动画方案 (Curve Schema)"
 
     大多数的`数字人`或 `VTuber` 模型都兼容了 ARKit 表情，可能已经内置了符合 ARKit 标准的 PoseAsset。   
     
@@ -63,7 +63,7 @@
 **MaxDelaySeconds**   
 语音延迟时间，以秒为单位，当使用分段语音块时，如果收到的语音数据帧延迟高于这个时间，该帧将不再执行口型动画。
 
-**CurveSolution** :rainbow:    
+:rainbow: **CurveSchema**     
 表情动画的曲线方案。
 
 - `OculusViseme`: 表示使用音素曲线，要求你在 PoseAsset 种包含 **15** 条音素 (Visemes) 曲线。
