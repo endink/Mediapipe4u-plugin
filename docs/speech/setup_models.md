@@ -1,6 +1,6 @@
 # 安装语音模型
 
-由于语音模型包体积庞大，插件中不包含语音模型包，你需要自单独下载，语音模型包在 [语音模型包发布页](https://huggingface.co/endink/M4U-Speech-Models/tree/main){: target='_blank'} 中提供了下载连接。   
+由于语音模型包体积庞大，插件中不包含语音模型包，你需要单独下载，语音模型包在 [语音模型包发布页](https://huggingface.co/endink/M4U-Speech-Models/tree/main){: target='_blank'} 中提供了下载连接。   
 
 !!! tip
 
