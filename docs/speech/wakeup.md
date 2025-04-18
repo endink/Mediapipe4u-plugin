@@ -61,14 +61,13 @@ ASR 要满足下列条件才会进入唤醒流程：
 下面是一个大致的 ASR 唤醒处理流程：
 
 ``` mermaid
-graph LR
+graph TD
   A[StartASR] --> B{Wait Audio Input ...};
   B --> C{Do Wake Up};
   C -->|Yes| D{Text Recognized?};
 
   D -->|Yes| E{Output Recognized Text};
-  E --> F{Reset WakeUp Time Counter}
-  F -->|Process Nex Audio Frame|C
+  E -->|Process Next Audio|C
  
   D -->|No| F{Wake Up Exceed KeepAwakeSeconds?};
   F --> |Yes| B
