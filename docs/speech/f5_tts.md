@@ -9,7 +9,30 @@ F5-TTS 是由上海交通大学、剑桥大学和吉利汽车研究院（宁波�
 
 了解 F5-TTS 详细信息，请访问：   
 
-[https://github.com/SWivid/F5-TTS](https://github.com/SWivid/F5-TTS){: target='_blank'}，
+[https://github.com/SWivid/F5-TTS](https://github.com/SWivid/F5-TTS){: target='_blank'}
+
+## 系统要求
+
+**推荐**使用 CUDA 进行推理，`MediaPipe4U` 加载 F5-TTS 模型时，将自动检查本机 CUDA 环境，如果 CUDA 环境不满足，将切换到 DirectML 进行推理。
+
+!!! warning "推理延迟"
+
+    由于 F5-TTS 采用生成式架构，模型较大，使用 CPU 推理性能**无法满足**实时性需求，因此，如果你使用 F5-TTS 语音包，将自动使用 GPU 进行推理。
+
+    对于 Nvidia GPU 会优先使用 CUDA 进行推理，这要求你安装 Cuda 12 和 Cudnn 9.x， 实测同样的 GPU ， CUDA 性能是 DirectML 的**2.5 倍**左右。    
+
+    如果你的显卡不支持 CUDA 12 （例如 **AMD** 显卡或较旧的 Nvida 显卡）会使用 DirectML 进行推理 （无需安装任何软件，Windows 支持）， 如果 GPU 性能不够可能会有明显延迟。
+
+    **CPU** 可以完成推理，但是性能低下，基本无法使用，如果你对你的 CPU 很自信，那么你也可以尝试。
+
+
+CUDA 要求：
+
+| 组件 | 版本要求 | 下载地址 |
+|---------|----------|-----------|
+| CUDA Toolkit | `12.x` (推荐 `12.6`) | [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit){: target='_blank'} |
+| CUDNN | `9.x`（推荐 `9.8`） | [https://developer.nvidia.com/cudnn-downloads](https://developer.nvidia.com/cudnn-downloads){: target='_blank'} |
+
 
 
 ## F5-TTS 语音包
@@ -19,18 +42,7 @@ F5-TTS 是由上海交通大学、剑桥大学和吉利汽车研究院（宁波�
 
 ![Download F5 TTS](./images/f5_tts/download_f5_tts.jpg "Download F5 TTS")
 
-## 系统要求
 
-由于 F5-TTS 采用生成式架构，模型较大，使用 CPU 推理性能**无法满足**实时性需求，因此，如果你使用 F5-TTS 语音包，将自动使用 GPU 进行推理。
-
-我们**推荐**使用 CUDA 进行推理，`MediaPipe4U` 加载 F5-TTS 模型时，将自动检查本机 CUDA 环境，如果 CUDA 环境不满足，将切换到 DirectML 进行推理。
-
-CUDA 要求：
-
-| 组件 | 版本要求 | 下载地址 |
-|---------|----------|-----------|
-| CUDA Toolkit | `12.x` (推荐 `12.6`) | [https://developer.nvidia.com/cuda-toolkit](https://developer.nvidia.com/cuda-toolkit){: target='_blank'} |
-| CUDNN | `9.x`（推荐 `9.8`） | [https://developer.nvidia.com/cudnn-downloads](https://developer.nvidia.com/cudnn-downloads){: target='_blank'} |
 
 ### 如何确认 F5-TTS 已经使用 CUDA 加载
 
