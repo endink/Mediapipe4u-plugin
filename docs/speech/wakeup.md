@@ -67,7 +67,7 @@ graph TD
   B --> |No| C{Loop Next}
   B --> C{Do Wake Up};
   C --> |Success| D
-  c --> |No| H
+  C --> |No| H
 
   D -->|Yes| E{Output Text};
   E --> H
