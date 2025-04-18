@@ -19,7 +19,7 @@
     
     如果你想要更好的口型效果，使用 `ZBrush` 等工具制作音素（Viseme）曲线可能是更好的选择。
 
-=== "ARKit 表情表情方案"
+=== "ARKit Curve Schema"
 
     制作 **52** 个和 Apple ARKit 匹配的表情动画，每一个表情是一个 BlendShape 或者是 PoseAsset 中的一条曲线。     
 
@@ -30,7 +30,7 @@
        
     > Pose Asset 中的曲线名称或者 BlendShape 名称，遵循 Apple ARKit 的 **52** 个曲线名称标准（不区分大小写）。 
 
-=== "音素（Viseme）表情方案"
+=== "Oculus Viseme Curve Schema"
 
     制作 **15** 个和 OVRLipSync 匹配的口型动画，每一个口型是一个 BlendShape 或者是 PoseAsset 中的一条曲线。   
 
