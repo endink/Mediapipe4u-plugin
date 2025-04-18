@@ -65,7 +65,6 @@ graph TD
   A[Audio] --> B{ASR Awake?};
   B --> |Yes| C{ASR};
   B --> C{Do Wake Up};
-  C -->|Yes| C
   C --> D{Recognize ?}
 
   D -->|Yes| E{Output Text};
