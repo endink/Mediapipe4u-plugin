@@ -22,6 +22,7 @@
 
 ![Wake Up Model Installed](./images/wakeup/wakeup_installed.jpg)
 
+---
 
 ## 与 ASR 集成使用
 
@@ -78,6 +79,8 @@ ASR 要满足下列条件才会进入唤醒流程：
       F --> |No| H
       
     ```
+
+---
 
 ## 独立使用
 
