@@ -65,7 +65,8 @@ graph TD
   A[Audio] --> B{ASR Awake?};
   B --> |Yes| C{ASR};
   B --> C{Do Wake Up};
-  C --> D{Recognize ?}
+  C --> |Success| D{Recognize ?}
+  c --> |No| H{Loop Next}
 
   D -->|Yes| E{Output Text};
   E --> H
@@ -73,7 +74,7 @@ graph TD
   D -->|No| F{Exceed KeepAwakeSeconds?};
 
   F --> |Yes| G{Sleep ASR}
-  G --> H{Loop Next}
+  G --> H
   F --> |No| H
   
   C ---->|No| H;
