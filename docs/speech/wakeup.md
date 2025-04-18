@@ -45,7 +45,7 @@ ASR 要满足下列条件才会进入唤醒流程：
 
 下面是 `MediaPipeSpeechActor` 上唤醒功能相关属性:   
 
--`WakeUp`: 用于与 ASR 功能集成的 `MediaPipeSpeechWakeUpActor` 实例。
+- `WakeUp`: 用于与 ASR 功能集成的 `MediaPipeSpeechWakeUpActor` 实例。
 - `WakeUpOptions`: 语音唤醒相关选项。
 
   - `Enabled`: 是否启用语音唤醒。
