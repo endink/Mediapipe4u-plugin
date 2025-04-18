@@ -13,7 +13,7 @@ F5-TTS 是由上海交通大学、剑桥大学和吉利汽车研究院（宁波�
 
 ## 系统要求
 
-**推荐**使用 CUDA 进行推理，`MediaPipe4U` 加载 F5-TTS 模型时，将自动检查本机 CUDA 环境，如果 CUDA 环境不满足，将切换到 DirectML 进行推理。
+**推荐**使用 **CUDA** 进行推理，`MediaPipe4U` 加载 F5-TTS 模型时，将自动检查本机 CUDA 环境，如果 CUDA 环境不满足，将切换到 DirectML 进行推理。
 
 !!! warning "推理延迟"
 
