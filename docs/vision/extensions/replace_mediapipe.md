@@ -97,7 +97,6 @@ protected:
 	B --> C{StopPipeline}
 	C --> D{Disconnect}
 	```
-    **Connect** --->> **StartPipeline** --->> **StopPipeline** --->> **Disconnect**
     
     - `Connect`: 内置的 Connector 在 MediaPipeHolisticComponent 初始化时调用, 自定义 Connector 在 UMediaPipeHolisticComponent 的 StartXXX 函数调用时调用。
     - `StartPipeline`: UMediaPipeHolisticComponent 的 StartXX 函数调用时调用。
