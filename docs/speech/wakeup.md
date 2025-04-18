@@ -62,18 +62,22 @@ ASR 要满足下列条件才会进入唤醒流程：
 
 ``` mermaid
 graph TD
-  A[StartASR] --> B{Wait Audio Input ...};
+  A[Audio] --> B{ASR Awake?};
+  B --> |Yes|C{ASR};
   B --> C{Do Wake Up};
-  C -->|Yes| D{Text Recognized?};
+  C -->|Yes| C
+  C --> D{Recognize ?}
 
   D -->|Yes| E{Output Text};
-  E -->|Process Next Audio|D
+  E --> A
  
   D -->|No| F{Exceed KeepAwakeSeconds?};
-  F --> |Yes| B
-  F --> |No| C
+
+  F --> |Yes| G{Sleep ASR}
+  G --> A
+  F --> |No| A
   
-  C ---->|No| B;
+  C ---->|No| A;
 ```
 
 ## 独立使用
