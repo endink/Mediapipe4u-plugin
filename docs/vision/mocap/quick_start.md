@@ -88,8 +88,6 @@
 
 ## 从视频文件中捕捉动作
 
-### 编辑关卡蓝图
-
 调整关卡蓝图， 使用 `GStreamerImageSourceComponent` 来从视频文件中捕捉动作。
 
 ![start_video_file](./images/quick_start/start_video_file.jpg "start_video_file")
@@ -98,8 +96,6 @@
 
 
 ## 从图片文件中捕捉动作
-
-### 编辑关卡蓝图
 
 调整关卡蓝图， 使用 `StaticImageSourceComponent` 来从图片文件中捕捉动作。
 
