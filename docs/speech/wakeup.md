@@ -66,10 +66,10 @@ graph TD
   B --> C{Do Wake Up};
   C -->|Yes| D{Text Recognized?};
 
-  D -->|Yes| E{Output Recognized Text};
+  D -->|Yes| E{Output Text};
   E -->|Process Next Audio|D
  
-  D -->|No| F{Wake Up Exceed KeepAwakeSeconds?};
+  D -->|No| F{Exceed KeepAwakeSeconds?};
   F --> |Yes| B
   F --> |No| C
   
