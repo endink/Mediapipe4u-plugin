@@ -26,12 +26,15 @@
 <a href="https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/">最新动态</a>
 | <a href="https://opensource.labijie.com/Mediapipe4u-plugin">文档</a>
 | <a href="#Download">下载</a>
-| <a href="https://gitlab.com/endink/MediaPipe4U-Demo" target="_blank">Demo 工程</a>
 | <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/M4U_Remoting_App">M4U Remoting(Android App)</a>
 | <a href="https://huggingface.co/endink/M4U-Speech-Models/tree/main">语音模型包</a>
 </p>
 <p align="center">
 <a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/pay_license.html">免费版 vs 付费版</a>
+</p>
+
+<p align="center">
+Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Windows)</a> | <a href="https://gitlab.com/endink/mediapipe4u-android-demo">Android Demo</a>
 </p>
 </p>
 
