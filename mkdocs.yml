@@ -69,6 +69,7 @@ nav:
     - Large Language Models (LLM):
         - llm/quick_start.md
   - Package And Deploy:
+    - package/plugin_content.md
     - package/package_windows.md
 
       
