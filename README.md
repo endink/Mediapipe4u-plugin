@@ -193,8 +193,10 @@ The license file will be published in the [discussion](https://github.com/endink
   
 # Demo Project
 
-Please clone this repository to get demo project:   
-- [https://gitlab.com/endink/mediapipe4u-demo](https://gitlab.com/endink/mediapipe4u-demo)
+Please clone this repository to get demo project:    
+- [https://gitlab.com/endink/mediapipe4u-demo (Windows Demo)](https://gitlab.com/endink/mediapipe4u-demo)
+- [https://gitlab.com/endink/mediapipe4u-android-demo (Android Demo)](https://gitlab.com/endink/mediapipe4u-android-demo)
+
 
 Use the git client to get the demo project (require [git](https://git-scm.com/downloads) and [git lfs](https://git-lfs.com/)) :
 
