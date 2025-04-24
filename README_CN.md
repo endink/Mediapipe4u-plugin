@@ -192,8 +192,17 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 - [https://gitlab.com/endink/mediapipe4u-demo](https://gitlab.com/endink/mediapipe4u-demo)
 
 使用 git 客户端获取 Demo 工程 (必须安装 [git](https://git-scm.com/downloads) 和 [git lfs](https://git-lfs.com/)) :
+
+> Windows Demo 是一个全功能的 Demo， 如果你正在学习 `MediaPipe4U` 用法，推荐使用 Windows Demo.   
+
+Windows Demo:
 ```shell
 git lfs clone https://gitlab.com/endink/mediapipe4u-demo.git
+```
+
+Android Demo:
+```shell
+git lfs clone https://gitlab.com/endink/mediapipe4u-android-demo.git
 ```
 
 > Demo 工程不包含插件，你需要自行下载插件，放到该工程的 Plugins 目录
