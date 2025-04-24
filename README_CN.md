@@ -187,10 +187,10 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 
 # Demo 工程
 
-克隆或下载下列 Github 仓库获的 Demo 工程源代码:
+克隆或下载下列 Github 仓库获的 Demo 工程源代码:   
 
-- [https://gitlab.com/endink/mediapipe4u-demo (Windows Demo)](https://gitlab.com/endink/mediapipe4u-demo)
-- [https://gitlab.com/endink/mediapipe4u-android-demo (Android Demo)](https://gitlab.com/endink/mediapipe4u-android-demo)
+- `Windows Demo`: [https://gitlab.com/endink/mediapipe4u-demo](https://gitlab.com/endink/mediapipe4u-demo)
+- `Android Demo`: [https://gitlab.com/endink/mediapipe4u-android-demo](https://gitlab.com/endink/mediapipe4u-android-demo)
 
 使用 git 客户端获取 Demo 工程 (必须安装 [git](https://git-scm.com/downloads) 和 [git lfs](https://git-lfs.com/)) :
 
