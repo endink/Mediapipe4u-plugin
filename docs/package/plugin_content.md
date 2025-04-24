@@ -6,7 +6,7 @@
 
 <div class="grid cards" markdown>
 
--   __`MediaPipe4U`__
+-   __MediaPipe4U__
 
     ---
 
