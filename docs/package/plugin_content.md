@@ -10,10 +10,9 @@
 
     ---
 
-    MediaPipe4U 最基础的插件，它包含了 OpenCV\MediaPipe\DirectML 等基础框架和
-    MediaPipe4U 的公共代码（如图像源：摄像头源，静态图源）。 除了 `GStreamer`插件，MediaPipe4U 的其他所有插件都依赖它。   
+    MediaPipe4U 最基础的插件和基础功能，除了 `GStreamer`插件，MediaPipe4U 的其他所有插件都依赖它。   
 
-    依赖：无
+    依赖：`无`
 
     :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android }
 
@@ -23,7 +22,7 @@
 
     这是 GStreamer 程序在 Unreal Engine 中的包装，可以让你在 Unreal Engine 中使用 GStreamer 。    
 
-    依赖：无
+    依赖：`无`
 
     :fontawesome-brands-windows:{ .windows }
 
