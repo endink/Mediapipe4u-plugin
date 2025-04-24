@@ -33,7 +33,8 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 <a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/pay_license.html">Free Edtion vs Commercial Edition</a>
 </p>
 
-<p align="center">
+<br>
+<p align="left">
 Demo Projects: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Windows)</a> | <a href="https://gitlab.com/endink/mediapipe4u-android-demo">Android Demo</a>
 </p>
 

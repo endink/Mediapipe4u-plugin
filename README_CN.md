@@ -32,8 +32,8 @@
 <p align="center">
 <a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/pay_license.html">免费版 vs 付费版</a>
 </p>
-
-<p align="center">
+<br>
+<p align="left">
 Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Windows)</a> | <a href="https://gitlab.com/endink/mediapipe4u-android-demo">Android Demo</a>
 </p>
 </p>
