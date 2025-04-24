@@ -13,6 +13,7 @@
     MediaPipe4U 最基础的插件和基础功能，除了 `GStreamer`插件，MediaPipe4U 的其他所有插件都依赖它。   
 
     依赖：`无`
+
 -   :fontawesome-brands-windows:{ .windows } __GStreamer__
 
     ---
@@ -29,7 +30,7 @@
 
     依赖： 
      
-    - MediaPipe4U
+    - `MediaPipe4U`
 
 -   :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android } __MediaPipe4ULiveLink__
 
@@ -39,8 +40,8 @@
 
     依赖：   
 
-    - MediaPipe4U
-    - MediaPipe4UMotion
+    - `MediaPipe4U`
+    - `MediaPipe4UMotion`
   
 -   :fontawesome-brands-windows:{ .windows } __MediaPipe4UGStreamer__
 
@@ -50,8 +51,8 @@
 
     依赖：
 
-    - MediaPipe4U
-    - GStreamer
+    - `MediaPipe4U`
+    - `GStreamer`
 
 -   :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android } __MediaPipe4UBVH__
 
@@ -61,8 +62,8 @@
 
     依赖：
 
-    - MediaPipe4U
-    - MediaPipe4UMotion
+    - `MediaPipe4U`
+    - `MediaPipe4UMotion`
 
 -   :fontawesome-brands-windows:{ .windows } __MediaPipe4UNvAR__
 
@@ -73,8 +74,8 @@
 
     依赖：
 
-    - MediaPipe4U
-    - MediaPipe4ULiveLink
+    - `MediaPipe4U`
+    - `MediaPipe4ULiveLink`
     
 -   :fontawesome-brands-windows:{ .windows } __MediaPipe4USpeech__
 
@@ -84,7 +85,7 @@
 
     依赖：
 
-    - MediaPipe4U
+    - `MediaPipe4U`
 
 -   :fontawesome-brands-windows:{ .windows } __MediaPipe4ULLM__
 
@@ -94,7 +95,7 @@
 
     依赖：
 
-    - MediaPipe4U
+    - `MediaPipe4U`
 
 -  :fontawesome-brands-windows:{ .windows }  __MediaPipe4ULLMSpeech__
 
@@ -104,9 +105,9 @@
 
     依赖：
 
-    - MediaPipe4U
-    - MediaPipe4USpeech
-    - MediaPipe4ULLM
+    - `MediaPipe4U`
+    - `MediaPipe4USpeech`
+    - `MediaPipe4ULLM`
 
 </div>
 
