@@ -6,17 +6,14 @@
 
 <div class="grid cards" markdown>
 
--   __MediaPipe4U__
+-   :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android } __MediaPipe4U__
 
     ---
 
     MediaPipe4U 最基础的插件和基础功能，除了 `GStreamer`插件，MediaPipe4U 的其他所有插件都依赖它。   
 
     依赖：`无`
-
-    :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android }
-
--   __GStreamer__
+-   :fontawesome-brands-windows:{ .windows } __GStreamer__
 
     ---
 
@@ -24,9 +21,7 @@
 
     依赖：`无`
 
-    :fontawesome-brands-windows:{ .windows }
-
--   __MediaPipe4UMotion__
+-   :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android } __MediaPipe4UMotion__
 
     ---
 
@@ -36,9 +31,7 @@
      
     - MediaPipe4U
 
-    :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android }
-
--   __MediaPipe4ULiveLink__
+-   :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android } __MediaPipe4ULiveLink__
 
     ---
 
@@ -48,10 +41,8 @@
 
     - MediaPipe4U
     - MediaPipe4UMotion
-
-    :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android }
-
--   __MediaPipe4UGStreamer__
+  
+-   :fontawesome-brands-windows:{ .windows } __MediaPipe4UGStreamer__
 
     ---
 
@@ -62,9 +53,7 @@
     - MediaPipe4U
     - GStreamer
 
-    :fontawesome-brands-windows:{ .windows }
-
--   __MediaPipe4UBVH__
+-   :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android } __MediaPipe4UBVH__
 
     ---
 
@@ -75,9 +64,7 @@
     - MediaPipe4U
     - MediaPipe4UMotion
 
-    :fontawesome-brands-windows:{ .windows }  :fontawesome-brands-android:{ .android }
-
--   __MediaPipe4UNvAR__
+-   :fontawesome-brands-windows:{ .windows } __MediaPipe4UNvAR__
 
     ---
 
@@ -88,10 +75,8 @@
 
     - MediaPipe4U
     - MediaPipe4ULiveLink
-
-    :fontawesome-brands-windows:{ .windows }
-
--   __MediaPipe4USpeech__
+    
+-   :fontawesome-brands-windows:{ .windows } __MediaPipe4USpeech__
 
     ---
 
@@ -101,9 +86,7 @@
 
     - MediaPipe4U
 
-    :fontawesome-brands-windows:{ .windows }
-
--   __MediaPipe4ULLM__
+-   :fontawesome-brands-windows:{ .windows } __MediaPipe4ULLM__
 
     ---
 
@@ -113,9 +96,7 @@
 
     - MediaPipe4U
 
-    :fontawesome-brands-windows:{ .windows }
-
--   __MediaPipe4ULLMSpeech__
+-  :fontawesome-brands-windows:{ .windows }  __MediaPipe4ULLMSpeech__
 
     ---
 
@@ -126,10 +107,6 @@
     - MediaPipe4U
     - MediaPipe4USpeech
     - MediaPipe4ULLM
-
-    :fontawesome-brands-windows:{ .windows }
-
-
 
 </div>
 
