@@ -92,7 +92,6 @@
 动画曲线重定向资产，当你已经有 52 种 **ARKit** 曲线，但是这些曲线名称和标准 ARKit 曲线要求的名称**不一致**时，你可以添加一个重定向资产来映射你自己的曲线名称到标准曲线名称。   
 仅当 `CurveSolution` 值为 **ARKit** 有效。
 
-默认值： `WeightedMovingAverage`   
 
 **UseGlobalParameters**   
 是否使用全局口型动画参数。开启它能够支持运行时动态调整口型动画。   
