@@ -46,10 +46,17 @@ Demo Projects: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (W
 
 # What's news
 
-### 20250414   
+### 20250501  
 
-- [fix] :rainbow: Running for a long time may cause motion capture to crash.
-- [upgrade] :rainbow: `NvAR` Plugin Upgrade to Nvidia Maxine AR 0.8.7.
+- [new] :rainbow: Lip Sync now supports ARKit blendshapes (you can use ARKit curves to drive lip sync animation).
+- [fix] :rainbow: Fixed a crash caused by `GStreamer` under specific concurrent conditions.
+- [fix] :rainbow: Fixed incorrect parsing of the Paddle TTS model.
+- [fix] :rainbow: The synchronous `StartCamera` function in `MediaPipeHolistic` was blocking the game thread, causing freezes.
+- [fix] :rainbow: Fixed a turn-based logic error in `LLMChatRuntime`.
+- [improve] :rainbow: Added joint constraints to motion capture, resulting in improved accuracy.
+- [break change] :collision: `Pose Solver` no longer requires manual adjustment of spine rotation mode. `MediaPipe4U` now determines the rotation mode automatically, and spine rotation-related properties have been removed.
+
+
 
 ### 20250408
 
@@ -157,9 +164,9 @@ For the release notes, ref below:
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
 | UE 5.1 | [百度网盘](https://pan.baidu.com/s/11C9pmKjRiwwh5e_mw82aTg?pwd=n9he) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERHtOO41t9JMo_rMTYHUl5IBD6yrdmn9rqzi6b1ozQWxnw?e=A1XhVA) | 2023-05-24 |
 | UE 5.2 | [百度网盘](https://pan.baidu.com/s/1mEilhcaMCclXg6V6GhttHg?pwd=7q4p) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EWeByq7iTjdDl02JZbIEHBkBd0zmMjcGMKHl3STOmGrMaA?e=pvrHJi) | 2023-05-24 |
-| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1Tn6MIZg4Y1Fe-phcAQJnsw?pwd=wxsj) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EfiygZsL1itJkjs1PiJrCSgByTHg7gGisVqqSlWK2Uz5og?e=Kjq23o) | 2025-04-14 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1q4xQM1jaHJJT7-XinxvVwQ?pwd=4bsb) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EREEPEx8A61FtXAJrTGyeA0B8QKXFRDJf7sP_lV76keyAg?e=JOpwXW) | 2025-04-14 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1hX0dww8AvYUjel9IScSN7g?pwd=fww2) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EUWxGe7MpLZOpQ53Fe1y1FgBwDmHBL9862To18Qw7Mzd8g?e=zfldQi) | 2025-04-14 |
+| UE 5.3 | [百度网盘](https://pan.baidu.com/s/15bSYlqy_kUgklvD50fvmcA?pwd=gec3) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EcBaznj3pYRMhs2-PwiniVcBM1ai63t7csF6ZjocmF7tsQ?e=hUSA8G) | 2025-05-01 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1zgEGa_0lVdPVg9Lp5hutYg?pwd=tt6x) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERwPTCAYValHjoK9leg7yyEB-2VfnRW7eRu1U9C4-DLIHw?e=Gjlfa6) | 2025-05-01 |
+| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1whLBVAuztoUzJGOivC-8Bw?pwd=eiw8) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EX1AztxZD4FHgYs4xqQ3X4wB1lNauxY4UEKnq_ucUrZKPw?e=Z4k705) | 2025-05-01 |
 
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
 > Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).

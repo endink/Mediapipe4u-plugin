@@ -5,6 +5,16 @@ hide:
 
 [English](./en.md)   
 
+### 20250501
+
+- [new] :rainbow: Lip Sync 兼容了 Arkit 表情（可以使用 Arkit 曲线实现口型同步动画）。
+- [fix] :rainbow: `GStreamer` 特殊条件并发时导致程序崩溃。
+- [fix] :rainbow: Paddle TTS 模型解析不正确。
+- [fix] :rainbow: `MediaPipeHolistic` 的 `StartCamera` 同步函数阻塞了游戏线程， 导致卡死。
+- [fix] :rainbow: `LLMChatRuntime` 回合制逻辑错误。
+- [improve] :rainbow: 动作捕捉中加入了关节限制，现在动作捕捉更加精准。
+- [break change] :collision: `Pose Sovler` 不再需要手工调整脊柱旋转模式， `MediaPipe4U` 自己决定旋转模式， 脊柱旋转相关属性被移除。
+
 ### 20250414   
 
 - [fix] :rainbow: Running for a long time may cause motion capture to crash.

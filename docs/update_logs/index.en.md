@@ -5,6 +5,17 @@ hide:
 
 [简体中文](./index.md)
 
+### 20250501  
+
+- [new] :rainbow: Lip Sync now supports ARKit blendshapes (you can use ARKit curves to drive lip sync animation).
+- [fix] :rainbow: Fixed a crash caused by `GStreamer` under specific concurrent conditions.
+- [fix] :rainbow: Fixed incorrect parsing of the Paddle TTS model.
+- [fix] :rainbow: The synchronous `StartCamera` function in `MediaPipeHolistic` was blocking the game thread, causing freezes.
+- [fix] :rainbow: Fixed a turn-based logic error in `LLMChatRuntime`.
+- [improve] :rainbow: Added joint constraints to motion capture, resulting in improved accuracy.
+- [break change] :collision: `Pose Solver` no longer requires manual adjustment of spine rotation mode. `MediaPipe4U` now determines the rotation mode automatically, and spine rotation-related properties have been removed.
+
+
 ### 20250414
 
 - [fix] :rainbow: 长时间运行可能导致动作捕捉崩溃.
