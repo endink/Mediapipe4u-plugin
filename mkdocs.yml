@@ -71,6 +71,7 @@ nav:
   - Package And Deploy:
     - package/plugin_content.md
     - package/package_windows.md
+    - package/package_android.md
 
       
   - License: 
