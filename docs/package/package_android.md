@@ -18,7 +18,7 @@ MediaPipe4U 在以下环境通过打包测试， 建议你使用以下环境打�
 2. `Android SDK`：34
 3. `Android Build Tools`: 34.0
 4. `JDK`: 17.0.9
-5. `NDK`: r25b
+5. `NDK`: r25b (25.1.8937393)
 6. `Gradle`: 8.7
 
 > 你可以使用 Android Studio 安装 Android SDK、NDK, Build Tools。
