@@ -50,7 +50,11 @@ Android 打包部署到真机后，可能出现 `Failed to open descriptor file`
 
 ![Failed to open descriptor file](./images/failed_to_open_descriptor.webp)
 
-这个问题是 Unreal Engine 的一个祖传错误，没有标准的解决方案，如果出现这个错误，首先，删除构建缓存, 它们是工程根目录下的这些目录：
+这个问题是 Unreal Engine 的一个祖传错误，没有标准的解决方案，如果出现这个错误, 我们可以尝试如下步骤解决它：   
+
+### 常规处理方法
+
+首先，删除构建缓存, 它们是工程根目录下的这些目录：
 
 - Binarires
 - Build 
@@ -66,6 +70,7 @@ Android 打包部署到真机后，可能出现 `Failed to open descriptor file`
 
 最后，重新打包。
 
+### 使用 ADGE 代替 UE Editor
 
 如果上述方案依然无效，那么，可以使用 ADGE 代替 Unreal Engine Editor 打包工程， 步骤如下：   
 
