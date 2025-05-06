@@ -43,6 +43,10 @@ MediaPipe4U 在以下环境通过打包测试， 建议你使用以下环境打�
 
 ![Android Package](./images/android_package.jpg)
 
+关于详细的 Android 打包流程，请 Unreal Engine 官方参考：
+
+[https://dev.epicgames.com/documentation/en-us/unreal-engine/packaging-android-projects-in-unreal-engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/packaging-android-projects-in-unreal-engine){: target='_blank'}
+
 
 ##  Failed to open descriptor file 错误
 
@@ -87,5 +91,5 @@ Android 打包部署到真机后，可能出现 `Failed to open descriptor file`
     AGDE 使用方法可以参考[Unreal Engine 官方文档](https://dev.epicgames.com/documentation/en-us/unreal-engine/debugging-unreal-engine-projects-for-android-in-visual-studio-with-the-agde-plugin){: target='_blank'}。   
 
 	AGDE 的主要作用是可以调试 C++ 安卓代码，并且可以通过 VS 来部署代码到设备。       
-	
+
 	它的缺点是无法调试 Java 代码，如果需要调试 Java 代码，需要使用 Android Studio。
