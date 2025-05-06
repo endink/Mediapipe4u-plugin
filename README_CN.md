@@ -44,15 +44,9 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 
 # 最新动态
 
-### 20250501
+### 20250506
 
-- [new] :rainbow: Lip Sync 兼容了 Arkit 表情（可以使用 Arkit 曲线实现口型同步动画）。
-- [fix] :rainbow: `GStreamer` 特殊条件并发时导致程序崩溃。
-- [fix] :rainbow: Paddle TTS 模型解析不正确。
-- [fix] :rainbow: `MediaPipeHolistic` 的 `StartCamera` 同步函数阻塞了游戏线程， 导致卡死。
-- [fix] :rainbow: `LLMChatRuntime` 回合制逻辑错误。
-- [improve] :rainbow: 动作捕捉中加入了关节限制，现在动作捕捉更加精准。
-- [break change] :collision: `Pose Sovler` 不再需要手工调整脊柱旋转模式， `MediaPipe4U` 自己决定旋转模式， 脊柱旋转相关属性被移除。
+- [fix] :rainbow: 动作捕捉在 `Android` 平台无法工作 ([#221](https://github.com/endink/Mediapipe4u-plugin/issues/221), [#190](https://github.com/endink/Mediapipe4u-plugin/issues/221))。 
 
 ### 20250408
 
@@ -154,9 +148,9 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
 | UE 5.1 | [百度网盘](https://pan.baidu.com/s/11C9pmKjRiwwh5e_mw82aTg?pwd=n9he) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERHtOO41t9JMo_rMTYHUl5IBD6yrdmn9rqzi6b1ozQWxnw?e=A1XhVA) | 2023-05-24 |
 | UE 5.2 | [百度网盘](https://pan.baidu.com/s/1mEilhcaMCclXg6V6GhttHg?pwd=7q4p) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EWeByq7iTjdDl02JZbIEHBkBd0zmMjcGMKHl3STOmGrMaA?e=pvrHJi) | 2023-05-24 |
-| UE 5.3 | [百度网盘](https://pan.baidu.com/s/15bSYlqy_kUgklvD50fvmcA?pwd=gec3) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EcBaznj3pYRMhs2-PwiniVcBM1ai63t7csF6ZjocmF7tsQ?e=hUSA8G) | 2025-05-01 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1zgEGa_0lVdPVg9Lp5hutYg?pwd=tt6x) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERwPTCAYValHjoK9leg7yyEB-2VfnRW7eRu1U9C4-DLIHw?e=Gjlfa6) | 2025-05-01 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1whLBVAuztoUzJGOivC-8Bw?pwd=eiw8) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EX1AztxZD4FHgYs4xqQ3X4wB1lNauxY4UEKnq_ucUrZKPw?e=Z4k705) | 2025-05-01 |
+| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1vZ3VI76KQUnh10Sks2Q_GA?pwd=uegk) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ESmhoeLjDN1KrvBhZ2bskWwB6gV80vK1HvHeKn2I1dcF5w?e=Z2Vy3e) | 2025-05-06 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1MEqzqBxRerZHZiBY2Q4lgw?pwd=7wet) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Ec8eTAxDzilIvNCd2WclAvIBdCReBilaRYhxE2GJGa6ELg?e=xu2Lk3) | 2025-05-06 |
+| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1KGqJe6dlIkF_T9Rbv9qbrg?pwd=6csi) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ETwL3vzsvldGvDNUr9TB708BtR8jaqUqDzqXFHZrqB0lRA?e=FIgNE3) | 2025-05-06 |
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    

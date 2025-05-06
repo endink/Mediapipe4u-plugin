@@ -5,6 +5,10 @@ hide:
 
 [English](./en.md)   
 
+### 20250506
+
+- [fix] :rainbow: 动作捕捉在 `Android` 平台无法工作 ([#221](https://github.com/endink/Mediapipe4u-plugin/issues/221), [#190](https://github.com/endink/Mediapipe4u-plugin/issues/221))。
+
 ### 20250501
 
 - [new] :rainbow: Lip Sync 兼容了 Arkit 表情（可以使用 Arkit 曲线实现口型同步动画）。
