@@ -80,7 +80,7 @@ Android 打包部署到真机后，可能出现 `Failed to open descriptor file`
 3. 使用 Visual Studio 编译工程（配置为 Windows, Development），这一步主要为了让工程可以在 UE Editor 中打开。
 4. 打开 UE Edtitor , 选择 `Development` 模式 打包 (Package) Android  工程，注意：**不要**以任何模式运行 Android 工程， 仅执行 Package 。
 5. 打包完成后关闭 UE Editor。
-6. 打开 Visual Studio 选择你的真机，选择 `Development` 模式直接运行调试， 这是 VS 将开始编译 Android C++ 代码，之后自动部署 APK 到你的 Android 设备。
+6. 打开 Visual Studio 选择你的真机，选择 `Development` 模式直接运行调试， 这时 Visual Studio 将开始编译 Android C++ 代码，之后自动部署 APK 到你的 Android 设备。
 
 !!! tip ADGE 详细使用方法
     
