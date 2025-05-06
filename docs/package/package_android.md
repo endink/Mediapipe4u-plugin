@@ -70,18 +70,22 @@ Android 打包部署到真机后，可能出现 `Failed to open descriptor file`
 
 最后，重新打包。
 
-### 使用 ADGE 代替 UE Editor
+### 使用 AGDE 代替 UE Editor
 
-如果上述方案依然无效，那么，可以使用 ADGE 代替 Unreal Engine Editor 打包工程， 步骤如下：   
+如果上述方案依然无效，那么，可以使用 AGDE 代替 Unreal Engine Editor 打包工程， 步骤如下：   
 
 
-1. 安装 ADGE 插件到 Visual Studio
+1. 安装 AGDE 插件到 Visual Studio
 2. 删除构建缓存目录：Binarires、Build、Intermediate
 3. 使用 Visual Studio 编译工程（配置为 Windows, Development），这一步主要为了让工程可以在 UE Editor 中打开。
 4. 打开 UE Edtitor , 选择 `Development` 模式 打包 (Package) Android  工程，注意：**不要**以任何模式运行 Android 工程， 仅执行 Package 。
 5. 打包完成后关闭 UE Editor。
 6. 打开 Visual Studio 选择你的真机，选择 `Development` 模式直接运行调试， 这时 Visual Studio 将开始编译 Android C++ 代码，之后自动部署 APK 到你的 Android 设备。
 
-!!! tip ADGE 详细使用方法
+!!! tip AGDE 详细使用方法
     
-    ADGE 使用方法可以参考[Unreal Engine 官方文档](https://dev.epicgames.com/documentation/en-us/unreal-engine/debugging-unreal-engine-projects-for-android-in-visual-studio-with-the-agde-plugin){: target='_blank'}。
+    AGDE 使用方法可以参考[Unreal Engine 官方文档](https://dev.epicgames.com/documentation/en-us/unreal-engine/debugging-unreal-engine-projects-for-android-in-visual-studio-with-the-agde-plugin){: target='_blank'}。   
+
+	AGDE 的主要作用是可以调试 C++ 安卓代码，并且可以通过 VS 来部署代码到设备。       
+	
+	它的缺点是无法调试 Java 代码，如果需要调试 Java 代码，需要使用 Android Studio。
