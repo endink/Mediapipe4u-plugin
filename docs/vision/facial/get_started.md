@@ -147,7 +147,7 @@ MediaPipeFaceLinkActor 不支持手动启动/停止，而是自动跟随 mediapi
 
 !!! warning
 
-    `PerformCalibration` 是一个异步函数，调用结束时面容并不会理解被校准，它需要等待下一帧 blend shapes 数据才能完成校准, 完成校准后会通过 `OnFaceCalibrated` 事件来
+    `PerformCalibration` 是一个异步函数，调用结束时面容并不会立即被校准，它需要等待下一帧 blend shapes 数据才能完成校准, 完成校准后会通过 `OnFaceCalibrated` 事件来
     通知应用程序。   
     
     `PerformCalibration` 必须在 mediapipe 运行过程中调用才能校准，因为它需要 bs 数据帧，如果在 mediapipe 停止状态调用 `PerformCalibration`，

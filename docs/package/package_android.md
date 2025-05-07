@@ -31,7 +31,7 @@ MediaPipe4U 在以下环境通过打包测试， 建议你使用以下环境打�
 
 !!! warning
 	
-	UE Editor 默认可能使用 `DebugGame` 打包， `MediaPipe4U` 由于是预编译插件，不支持此打包模式，请切换到 `Development` 和 `Shipping` 默认。
+	UE Editor 默认可能使用 `DebugGame` 打包， `MediaPipe4U` 由于是预编译插件，不支持此打包模式，请切换到 `Development` 或 `Shipping` 模式。
 
 	如果使用 Debug Game 打包，你将收到如下错误：   
 
