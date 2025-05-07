@@ -89,6 +89,28 @@ Nvidia 官方的系统和软件要求请阅读这里：
     MediaPipe4UNvAR 只一个包含算法的插件，本身不包含任何 Unreal Engine 功能，使用这套算法进行表情捕捉你需要 MediaPipe Live Link 插件。    
     关于如何使用 MediaPipeFaceLinkActor 进行面部捕捉，请阅读：[使用表情捕捉](./get_started.md)
 
+### 头部旋转曲线
+
+NvAR 支持在 BS 中包含头部旋转曲线， `MediaPipe4U` 归一化定义如下: 
+
+| 曲线名称 | 取值范围 | 欧拉角范围 |
+|---------|----------|------------|
+| HeadPitch |-1.0 ~ 1.0  | -45° ~ 45° |
+| HeadYaw   |-1.0 ~ 1.0  | -90° ~ 90° |
+| HeadRoll  |-1.0 ~ 1.0  | -60° ~ 60° |
+
+通过这些曲线可以很容易的还原到欧拉角，用以转动头部骨骼:
+
+```
+
+PitchDegrees = HeadPitch * 45.0
+YawDegrees = HeadYaw * 90.0
+RollDegrees = HeadPitch * 60.0
+
+```
+
+
+
 
 
 ## NvAR 对 ARKit 表情的支持
