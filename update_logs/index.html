@@ -1,0 +1,3368 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/">
+      
+      
+        <link rel="prev" href="../faq/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Index - MediaPipe4U 文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17%2013h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/badge.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#20250506" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="MediaPipe4U 文档" class="md-header__button md-logo" aria-label="MediaPipe4U 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MediaPipe4U 文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Index
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../en/update_logs/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/endink/Mediapipe4u-plugin" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../install/requirement/" class="md-tabs__link">
+          
+  
+  
+  安装
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../vision/concepts/overview/" class="md-tabs__link">
+          
+  
+  
+  使用指南
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../package/plugin_content/" class="md-tabs__link">
+          
+  
+  
+  打包部署
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../licensing/" class="md-tabs__link">
+          
+  
+  
+  授权许可
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../faq/" class="md-tabs__link">
+          
+  
+  
+  常见问题
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  更新日志
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MediaPipe4U 文档" class="md-nav__button md-logo" aria-label="MediaPipe4U 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MediaPipe4U 文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/endink/Mediapipe4u-plugin" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    安装
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            安装
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/requirement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    环境要求
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    安装 MediaPipe4U
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/gstreamer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    安装 GStreamer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    使用指南
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            使用指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    视觉 AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            视觉 AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    概念
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            概念
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/concepts/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉任务概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/concepts/image_source/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Source
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/concepts/image_consumer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Consumer (C++)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    动作捕捉
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            动作捕捉
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    快速入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/mediapipe_holistic_component/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MediaPipe Holistic Component
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/mediapipe_anim_instance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MediaPipe 动画蓝图
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/custom_skeleton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自定义骨骼
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/texture_display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    回显图像
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/twist_correction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关节扭曲校正
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    校准（标定）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/runtime_behaviours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行时控制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2_9" id="__nav_3_1_2_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    算解器细节
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            算解器细节
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/pose_solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    姿势算解节点
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/location_solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    位置算解节点
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2_10" id="__nav_3_1_2_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    进阶用法
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            进阶用法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/mocap/switch_anim_blueprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行时切换动画蓝图
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/extensions/replace_mediapipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    整体替换 Google MediaPipe (C++)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_3" id="__nav_3_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    表情捕捉
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            表情捕捉
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/facial/get_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用表情捕捉
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/facial/nvar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NvAR 表情捕捉
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/extensions/custom_face_solution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自定义算法 (C++)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_4" id="__nav_3_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MediaPip4U Remoting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            MediaPip4U Remoting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vision/remoting/get_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用 M4U Remoting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    声学 AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            声学 AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    语音识别与合成
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            语音识别与合成
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speech/quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    快速入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speech/setup_models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    安装语音模型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speech/local_tts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    离线语音合成 (TTS)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_1_4" id="__nav_3_2_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    生成式 TTS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            生成式 TTS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speech/f5_tts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    F5-TTS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speech/local_asr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    离线语音识别 (ASR)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speech/wakeup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    语音唤醒
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../speech/lipsync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    口型同步(Lip Sync)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    大语言模型 (LLM)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            大语言模型 (LLM)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../llm/quick_start.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    None
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    打包部署
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            打包部署
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package/plugin_content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    插件和依赖
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package/package_windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows 打包
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../package/package_android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android 打包
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    授权许可
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            授权许可
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    软件授权
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing/free_license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    免费许可证下载
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing/paid_license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    付费版本
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing/view_license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何查看授权有效期
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing/update_license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何更新许可证
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../licensing/device_id/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    硬件机器码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            常见问题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    更新日志
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            更新日志
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#20250506" class="md-nav__link">
+    <span class="md-ellipsis">
+      20250506
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20250501" class="md-nav__link">
+    <span class="md-ellipsis">
+      20250501
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20250414" class="md-nav__link">
+    <span class="md-ellipsis">
+      20250414
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      2025-04-08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2024-05-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2024-05-24
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-10-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-10-10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-08-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-08-29
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-08-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-08-17
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-08-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-08-11
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-08-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-08-07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-07-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-07-18
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-06-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-06-28
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-06-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-06-20
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-06-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-06-17
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-05-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-05-21
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-04-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-04-23
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-04-08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-04-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-04-03
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-04-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-04-01
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-03-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-03-16
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-03-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-03-11
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-03-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-03-09
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-02-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-02-27
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-02-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-02-25
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-02-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-02-12
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-02-10-milestone" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-02-10 （milestone）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-01-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-01-15
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-01-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-01-06
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-01-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-01-04
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-12-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-12-20
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-11-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-11-25
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-11-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-11-22
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-11-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-11-18
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-11-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-11-12
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#20250506" class="md-nav__link">
+    <span class="md-ellipsis">
+      20250506
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20250501" class="md-nav__link">
+    <span class="md-ellipsis">
+      20250501
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20250414" class="md-nav__link">
+    <span class="md-ellipsis">
+      20250414
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      2025-04-08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2024-05-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      2024-05-24
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-10-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-10-10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-08-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-08-29
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-08-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-08-17
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-08-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-08-11
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-08-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-08-07
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-07-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-07-18
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-06-28" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-06-28
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-06-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-06-20
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-06-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-06-17
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-05-21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-05-21
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-04-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-04-23
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-04-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-04-08
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-04-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-04-03
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-04-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-04-01
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-03-16" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-03-16
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-03-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-03-11
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-03-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-03-09
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-02-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-02-27
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-02-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-02-25
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-02-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-02-12
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-02-10-milestone" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-02-10 （milestone）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-01-15" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-01-15
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-01-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-01-06
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-01-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      2023-01-04
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-12-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-12-20
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-11-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-11-25
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-11-22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-11-22
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-11-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-11-18
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-11-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      2022-11-12
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+  <h1>Index</h1>
+
+<p><a href="./en.md">English</a>   </p>
+<h3 id="20250506">20250506<a class="headerlink" href="#20250506" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 动作捕捉在 <code>Android</code> 平台无法工作 (<a href="https://github.com/endink/Mediapipe4u-plugin/issues/221">#221</a>, <a href="https://github.com/endink/Mediapipe4u-plugin/issues/221">#190</a>)。</li>
+</ul>
+<h3 id="20250501">20250501<a class="headerlink" href="#20250501" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> Lip Sync 兼容了 Arkit 表情（可以使用 Arkit 曲线实现口型同步动画）。</li>
+<li>[fix] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> <code>GStreamer</code> 特殊条件并发时导致程序崩溃。</li>
+<li>[fix] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> Paddle TTS 模型解析不正确。</li>
+<li>[fix] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> <code>MediaPipeHolistic</code> 的 <code>StartCamera</code> 同步函数阻塞了游戏线程， 导致卡死。</li>
+<li>[fix] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> <code>LLMChatRuntime</code> 回合制逻辑错误。</li>
+<li>[improve] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 动作捕捉中加入了关节限制，现在动作捕捉更加精准。</li>
+<li>[break change] <img alt="💥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4a5.svg" title=":collision:" /> <code>Pose Sovler</code> 不再需要手工调整脊柱旋转模式， <code>MediaPipe4U</code> 自己决定旋转模式， 脊柱旋转相关属性被移除。</li>
+</ul>
+<h3 id="20250414">20250414<a class="headerlink" href="#20250414" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> Running for a long time may cause motion capture to crash.</li>
+<li>[upgrade] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> <code>NvAR</code> Plugin Upgrade to Nvidia Maxine AR 0.8.7.</li>
+</ul>
+<h3 id="2025-04-08">2025-04-08<a class="headerlink" href="#2025-04-08" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 免费版本现在可以打包所有功能，包括语音和表情捕捉。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> Ollama 支持：接入 <a href="https://ollama.com/">Ollama</a> 进行大语言模型推理，从而支持了众多 LLM 模型，例如：DeepSeek、LLaMA，Phi, Qwen, QWQ 等。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 对话组件 <code>LLMSpeechChatRuntime</code>：整合 LLM 、TTS、ASR，可以在蓝图中非常容易实现对话机器人。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 添加了新的 TTS 支持：<a href="https://github.com/hexgrad/kokoro">Kokoro</a>, <a href="https://github.com/myshell-ai/MeloTTS">Melo</a>。 </li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 添加了新的 ASR 支持：<a href="https://github.com/modelscope/FunASR">FunASR</a>(中英热词版)，<a href="https://github.com/FireRedTeam/FireRedASR">FireRedASR</a> (中英/方言) ,<a href="https://github.com/usefulsensors/moonshine">MoonShine</a> (英语), <a href="https://github.com/usefulsensors/moonshine">SenseVoice</a> (多语言: 中文/英语/日语/韩语/粤语).</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 添加了一个 Transformer 架构 TTS 模型：<a href="https://github.com/SWivid/F5-TTS">F5-TTS</a>，具备零样本语音克隆能力 （使用 DirectML/CUDA 推理，AMD/Nvidia GPU 均可）</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 语音唤醒：使用小模型推理的语音唤醒，支持使用自定义语音唤醒词唤醒 ASR， 也支持独立的语音指令唤醒词功能。</li>
+<li>[new] <img alt="🔥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f525.svg" title=":fire:" /> 对齐 google mediapipe 到最新版本。</li>
+<li>[new] <img alt="🔥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f525.svg" title=":fire:" /> 添加 Unreal Engine 5.5 支持。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 加入了 NvAR 姿态捕捉算法，可以在 mediapipe 算法和 Nvidia Maxine 算法之间切换。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 开源了 <a href="https://github.com/endink/M4URemoting-Android">MediaPipe4U Remoting</a> (用于 MediaPipe4U 的 Android 面部程序). </li>
+<li>[new] <img alt="💫" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4ab.svg" title=":dizzy:" /> <code>Custom Mediapipe Connector</code>（C++）: 自定义连接器, 支持完全替代 <code>google mediapipe</code> ，实现自定义逻辑 。</li>
+<li>[new] <img alt="💫" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4ab.svg" title=":dizzy:" /> <code>Custom Mediapipe Feature</code>（C++）: 自定义功能, 支持部分替代 <code>google mediapipe</code> ，实现自定义逻辑 。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 新增 <a href="https://gitlab.com/endink/mediapipe4u-android-demo">Android Demo 工程</a> (Gitlab)</li>
+<li>[improve]<img alt="👣" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f463.svg" title=":footprints:" /> Demo 工程升级到 UE5.5， 新增 <code>Fake Demo</code>，一个读取本地文件代替 mediapipe 的 C++ 扩展示例。</li>
+<li>[improve]<img alt="👣" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f463.svg" title=":footprints:" /> Demo 工程加入语音唤醒部分示例，发音人选择示例</li>
+<li>[improve]<img alt="👣" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f463.svg" title=":footprints:" /> Demo 工程加入 LLM 示例</li>
+<li>[improve]<img alt="👣" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f463.svg" title=":footprints:" /> Demo 工程加入语音对话机器人示例</li>
+<li>[improve]<img alt="👣" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f463.svg" title=":footprints:" /> Demo 工程现在支持了打包</li>
+<li>[break change] <img alt="💥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4a5.svg" title=":collision:" /> 动作捕捉部分被拆分到一个独立的 <code>MediaPipe4UMotion</code> 插件，这可能导致原有的蓝图失效，升级后你需要调整现有蓝图。</li>
+<li>[break change] <img alt="💥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4a5.svg" title=":collision:" /> 由于许可证文件格式变化，原有的许可证将不再可用，今后你可以从<a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/license-auto-release">这里</a> 获得免费许可证。</li>
+</ul>
+<h3 id="2024-05-24">2024-05-24<a class="headerlink" href="#2024-05-24" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 在编辑器中使用 MediaPipe4U 不再需要授权（即使授权文件过期，依然可以在编辑器中使用）。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> Unreal Engine <strong>5.4</strong> 版本支持，我跳过了 5.3 版本，精力有限，实在抱歉。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 加入 <strong>Control Rig</strong> 支持 (预览质量). 新的动画蓝图节点 <code>ControlRigFromPose</code> 已经可用，可以将任意姿态转换到 ControlRig 蓝图中，方便使用 ControlRig 制作关节限制、全身 IK 等。</li>
+<li>[new] <img alt="🔥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f525.svg" title=":fire:" /> 对齐 google mediapipe 到最新版本，使用全新的 holistic task api, 整体追踪方案性能进一步提升，表情算解效果提升。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> <code>MediaPipeHolisticComponent</code> 中加入 <code>StopAsync</code> 函数以支持异步停止 mediapipe.</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> Android 平台的 <code>MediaPipeHolisticComponent</code> 组件支持 "Raw 模式" 显示帧图像. </li>
+<li>[fix] <img alt="🐛" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f41b.svg" title=":bug:" /> <a href="https://github.com/endink/Mediapipe4u-plugin/issues/130">#130</a>: 当打包游戏时，mediapipe 模型文件丢失.</li>
+<li>[fix] <img alt="🐛" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f41b.svg" title=":bug:" /> <a href="https://github.com/endink/Mediapipe4u-plugin/issues/124">#124</a>: 当动画中的 CSPose 没有使用骨架（skeleton）的骨骼索引时，BVH Recoder 导致程序崩溃.</li>
+<li>[fix] <img alt="🐛" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f41b.svg" title=":bug:" /> <code>AnchorWidgetInCanvas</code> 函数缩放帧图像时大小超出限制.</li>
+<li>[improve] <img alt="🌹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f339.svg" title=":rose:" /> 安卓平台性能优化, 现在，M4U 在安卓手机上可以跑到 <strong>15</strong>-<strong>20</strong> fps (CPU: 高通骁龙 870 ).</li>
+<li>[improve] <img alt="🌹" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f339.svg" title=":rose:" /> 算解器能够适应 LOD 变化，LOD 变化时依然能够求解姿态并进行动作捕捉.</li>
+<li>[remove] <img alt="🤢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f922.svg" title=":nauseated_face:" /> LLM 插件被移除. 由于大语言模型（LLM）本地推理需要苛刻的硬件资源，加之 llama.cpp 长期高频发布，没有稳定版本，暂时移除这个插件，或许将来还会回归。</li>
+<li>[remove] <img alt="🤢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f922.svg" title=":nauseated_face:" /> 从这个版本开始,5.0.x 的 Unreal Engine 版本将不再支持. 因为 5.0.X 需要 VS 2019 才能编译，我的开发机中已经不再安装 VS 2019, 非常抱歉 ！旧版的 5.0.x 插件任然可用。</li>
+<li>[break change] <img alt="💊" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f48a.svg" title=":pill:" /> <code>ASRCaptureComponent</code> 更名为 <code>SpeechCaptureComponent</code>;</li>
+</ul>
+<h3 id="2023-10-10">2023-10-10<a class="headerlink" href="#2023-10-10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> <strong>MediaPipe4U Mobile</strong> 安卓打包编译支持, 开发体验和 Windows 版本保持一致.</li>
+<li>[new] <img alt="🔥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f525.svg" title=":fire:" /> <code>StartCamera</code> and <code>StartImageSource</code> 现在支持蓝图异步函数，蓝图中可以方便的进行异步操作.</li>
+<li>[improve] 优化帧处理管道, 带来了巨大的性能提升, 现在 windows 动作捕捉可以达到 <strong>25</strong> fps (CPU: AMD 3600, Frame Size: 1280 * 720).</li>
+<li>[breaking change]:许多函数改为 <code>BlueprintPure</code> 模式， 你可能必须修改你的蓝图.</li>
+</ul>
+<h3 id="2023-08-29">2023-08-29<a class="headerlink" href="#2023-08-29" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix] 使用 LLM, ASR 加载模型时，如果文件路径包含非英语语言的字符时会失败。</li>
+<li>[fix] LLM , ASR 打包可能出现无法运行。</li>
+<li>[fix] 打开动画蓝图时出现错误: <a href="https://github.com/endink/Mediapipe4u-plugin/issues/104">#104</a>, <a href="https://github.com/endink/Mediapipe4u-plugin/issues/101">#101</a></li>
+</ul>
+<h3 id="2023-08-17">2023-08-17<a class="headerlink" href="#2023-08-17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> Speech 语音识别 （ASR） 加入 <a href="https://github.com/openai/whisper">whisper</a> 模型支持（GPU 加速）。   </li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 大语言模型（LLM）支持使用 CUDA 推理(<a href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda.html">文档</a>)。  </li>
+<li>[fix] 修复 Speech 模型导入界面卡住的问题（<a href="https://github.com/endink/Mediapipe4u-plugin/issues/96">#96</a>）。</li>
+<li>[fix] LLM 推理过程可能导致内存泄露。</li>
+</ul>
+<h3 id="2023-08-11">2023-08-11<a class="headerlink" href="#2023-08-11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" />聊天运行时（LLMSpeechChatRuntime），仅需要很少简单的蓝图就可以构建复杂的的聊天和问答程序。   </li>
+<li>[new] 大语言模型加载时支持预热（WarmUp），解决第一轮对话反应慢的问题。  </li>
+<li>[new] LipSync 支持了 Remap 资产，曲线名称不必遵循 Facebook 的 Viseme 名称，可以运行时映射。    </li>
+<li>[new] SpeechActor 加入了蓝图函数（IsTTSReady/IsTTSReady）, 用来检查模型是否已经加载。    </li>
+<li>[imporve] SpeechActor::IsTTSSpeaking 现在可以精准判断是否还在朗读。   </li>
+<li>[fix] Speech 可能因为编码问题，在磁盘创建无效的空文件夹。   </li>
+<li>[fix] Issues fixed: <a href="https://github.com/endink/Mediapipe4u-plugin/issues/96">#95</a>, <a href="https://github.com/endink/Mediapipe4u-plugin/issues/96">#96</a></li>
+</ul>
+<h3 id="2023-08-07">2023-08-07<a class="headerlink" href="#2023-08-07" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" />新增大语言模型（LLM）功能，支持离线部署并推理 LLaMA2 模型(<a href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/">文档</a>)。   </li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" />新增 LLM Speech 功能，集成语音插件到 LLM， 可以自动朗读模型生成结果。</li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" />发布新的 ONNX 语音模型包（音质更好），新增四个语音模型包：中文、中文男声、英文、英文女声（<a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/speech_models">语音包发布页</a>）。</li>
+<li>[new] TTS 推理支持 Onnx 推理，可以使用质量更高的声码器。   </li>
+<li>[new] 加入异步开启摄像头支持（StartCameraAsync），防止摄像头启动时界面卡顿。   </li>
+<li>[new] MediaPipeSpeechActor 中加入 TTS 蓝图操作函数（LocalTTSComponent 部分函数不再支持蓝图访问）。   </li>
+<li>[improve] TTS 支持文本朗读排队，可以连续朗读多个文本（SpeakText 函数新增 StopPrevious 参数）。   </li>
+<li>[improve] 移除 pdb 文件，进一步缩减打包尺寸。   </li>
+<li>[improve] 当 NvAR SDK 未安装时打包不会再失败，而是给出警告信息。   </li>
+<li>[fix] 修复表情捕捉时如果开启 Unreal Engine 的 LiveLink 界面将导致程序崩溃。   </li>
+<li>[fix] 修复语音识别事件中直接进行 UI 处理时程序崩溃（<a href="https://github.com/endink/Mediapipe4u-plugin/issues/90">#90</a>）。   </li>
+<li>[fix] 修复 Pose Asset Baker 工具在 UE 5.2 版本使用崩溃问题 (<a href="https://github.com/endink/Mediapipe4u-plugin/issues/88">#88</a>)。</li>
+<li>[fix] TTS 停止朗读小概率发生无法停止。</li>
+<li>[fix] TTS/ASR 解析文件夹时编码存在问题，可能导致在磁盘创建错误的文件夹。</li>
+</ul>
+<h3 id="2023-07-18">2023-07-18<a class="headerlink" href="#2023-07-18" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] 支持在插件配置界面中更新许可证（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license.html">文档</a>）。   </li>
+<li>[new] 支持在插件配置界面中更新语音模型（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/config.html">文档</a>）。   </li>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" /> 加入离线语音识别（ASR）功能（需要下载模型包）从麦克风识别语音并转为文字(<a href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start.html">文档</a>)。   </li>
+<li>[new] 支持从蓝图中更新许可证，方便从自己的服务器分发许可证到客户端。   </li>
+<li>[improve] <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44d.svg" title=":thumbsup:" /> MediaPipe 升级到 0.10.2, 更新了 google 模型，使用新的 mediapipe solution api，表情捕捉大幅改进，普通摄像头的表情捕捉已经处于 Production Ready 水平了。   </li>
+<li>[improve] 使用 Pose Tracker 装饰线条（Annotion）时，不再绘制 ROI 红色线框（详情: <a href="https://github.com/endink/Mediapipe4u-plugin/issues/81">#81</a>）。   </li>
+<li>[improve] GStreamer 打包时不再打包无用的 PC (C++ package config) 文件，进一步减小打包尺寸。   </li>
+<li>[fix] 暂时移除 FixMediaPipe，因为它会导致腿部跳变（详情: <a href="https://github.com/endink/Mediapipe4u-plugin/issues/81">#81</a>）。    </li>
+</ul>
+<h3 id="2023-06-28">2023-06-28<a class="headerlink" href="#2023-06-28" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] <img alt="🌈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f308.svg" title=":rainbow:" />MediaPlayerImageSource: 支持从 Unreal Engine 的 MediaPlayer 中捕获画面作为图像源（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/image_source.html">文档</a>）。     </li>
+<li>[new] 上半身锁定：支持设置上半身三个轴向的锁定 (<a href="https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html">文档</a>)。      </li>
+<li>[fix] 修复校准时初始关节带有旋转角时产生的校准错误。   </li>
+<li>[fix] 阻尼算法造成的关节扭曲矫正错误。   </li>
+<li>[fix] 半身模式时校准无法正常工作。   </li>
+</ul>
+<h3 id="2023-06-20">2023-06-20<a class="headerlink" href="#2023-06-20" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] Pose Solver: 支持开启/关闭姿势优化的具体项。   </li>
+<li>[improve] 缩减编译后的体积（磁盘空间占用从 10GB 降低到 6GB）。    </li>
+<li>[fix] 脊柱旋转模式时可能造成姿势校准不正确。        </li>
+</ul>
+<h3 id="2023-06-17">2023-06-17<a class="headerlink" href="#2023-06-17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] 新增姿态校准功能，纠正 mediapipe 原始数据中脊柱、小腿没有伸直的问题（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html">文档</a>）。     </li>
+<li>[new] 新增手动校准功能，姿势校准，位置校准均支持手动校准和自动校准设置（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/mocap/advance/calibration.html">文档</a>）。    </li>
+<li>[new] 新增脊柱旋转模式，有助于运动中稳定脚部（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/mocap/features/pose_solver.html">文档</a>）。    </li>
+<li>[new] 手指捕捉手掌丢失时回弹处理规则 。   </li>
+<li>[new] UE Editor 动补工具加入关节锁定、校准等功能。   </li>
+<li>[new] UE Editor 动补工具支持对视频文件快进、暂停。   </li>
+<li>[improve] mediapipe 升级到最新版（<a href="https://github.com/google/mediapipe/releases/tag/v0.10.1">v0.10.1</a>）。     </li>
+<li>[improve] Hand Solver：加入手腕旋转阻尼，防止跳变。     </li>
+<li>[improve] LocationSolver: Location IK 算法改进，位移计算更合理。     </li>
+<li>[improve] Ground IK: 脚步和脚踝旋转平滑。     </li>
+<li>[improve] Ground IK: 加入脚步限滑，改善脚步抖动问题。    </li>
+<li>[fix] GroundIK: 检测脚踝位置不正确。     </li>
+<li>[fix] GroundIK: 节点 FeetVerticalOffset 等几个属性设置无效。      </li>
+<li>[fix] ControlRigPose Baker 工具生成的 PoseAsset 不正确。   </li>
+</ul>
+<h3 id="2023-05-21">2023-05-21<a class="headerlink" href="#2023-05-21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] 新增 <strong>MediaPipe4USpeech</strong> 插件支持离线 TTS 和音唇同步（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/">文档</a>）。   </li>
+<li>[new] ControlRigPose 烘焙工具，方便制作 Metahuman 的口型资产。   </li>
+<li>[fix] 移除工具箱材质，使用 C++ 动态创建，修复 UE5.0 打包材质问题。   </li>
+</ul>
+<h3 id="2023-04-23">2023-04-23<a class="headerlink" href="#2023-04-23" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] <img alt="🔥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f525.svg" title=":fire:" />加入 M4U Remoting, 支持从安卓设备捕捉表情（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/features/m4u_remoting.html">文档</a>）。      </li>
+<li>[new] Android 面补工具开放下载（商业授权功能，免费授权无法打包）   </li>
+<li>[new] UE 编辑器工具新功能：    </li>
+<li>LiveLink 追踪   </li>
+<li>位移、姿势校准   </li>
+<li>
+<p>面容校准   </p>
+</li>
+<li>
+<p>[new] 统一位置、姿态校准，从 AnimationInstance 访问 CalibrationCountDownSeconds 等参数；现在，支持手动校准位置和姿势（<img alt="🔴" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f534.svg" title=":red_circle:" />Break Changes）。   </p>
+</li>
+<li>[fix] 动补回调包发生错误时可能导致 texture 被占用无法释放   </li>
+<li>[fix] 退出编辑器时概率引发崩溃   </li>
+<li>[fix] UE 工具箱状态不同步   </li>
+</ul>
+<h3 id="2023-04-08">2023-04-08<a class="headerlink" href="#2023-04-08" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] 添加 UE 编辑器工具箱功能，方便在编辑器中调试参数 (<a href="https://opensource.labijie.com/Mediapipe4u-plugin/features/ue_editor_toolkits.html">文档</a>)</li>
+</ul>
+<h3 id="2023-04-03">2023-04-03<a class="headerlink" href="#2023-04-03" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix] LOD 变化时，如果骨骼变化，引发程序崩溃</li>
+<li>[fix] MediaPipe 表情解算 BrowDown 时右眼误差</li>
+<li>[fix] UE Editor 中 LiveLink管理器状态和 MediaPipeFaceLinkActor 不一致</li>
+<li>[fix] LiveLink Source 无法删除的问题 </li>
+</ul>
+<h3 id="2023-04-01">2023-04-01<a class="headerlink" href="#2023-04-01" title="Permanent link">&para;</a></h3>
+<p>全新的 MediaPipe BlendShapes 求解器，不依赖 Nvidia GPU，兼容苹果 51 个 Arkit 表情 (<a href="https://opensource.labijie.com/Mediapipe4u-plugin/features/face_link_actor.html">文档</a>)。</p>
+<ul>
+<li>[new] MediaPipe4U 的 LiveLink 统一成全新的 MediaPipeFaceLinkActor（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/features/location_solver.html">文档</a>），支持在 MediaPipe/NvAR 算法切换，可以自动降级算法。 </li>
+<li>[new] 全新的面容校准（Face Calibration）算法。</li>
+<li>[new] 动态 MediaPipe Graph 构造支持，支持切换装饰线条显示风格，Pose/Holistic/Face 之间切换。</li>
+<li>[new] 位置校准倒计时读秒蓝图支持，方便集成校准 UI (请下载最新的 Demo Project 查看)。</li>
+<li>[new] GStreamer 使用<a href="https://gstreamer.freedesktop.org/documentation/playback/uridecodebin.html">GStreamer uridecodebin</a>工作流，支持从 HTTP/RTSP/RMTP/M3U8 等网络协议中解析视频流（#37）。</li>
+<li>[improve] Pose Solver 优化（Optimization）加入膝盖极像矫正。</li>
+<li>[improve] GStreamer 显示警告信息，更容易定位产生错误的原因。</li>
+<li>[improve] MediaPipe 更新到 0.9.2，TFLite 模型更新到最新。</li>
+<li>[improve] MediaPipe/NvAr 连接库不再使用嵌入 CRT。</li>
+<li>[improve] MediaPipe/NvAr 中的 OpenCV 支持 Highgui，方便图形调试。</li>
+<li>[fix] 某些视频文件在缩放时产生异常（#43）。</li>
+<li>[fix] StaticImageSource 可能引发图片未释放的警告。</li>
+<li>[fix] GStreamer 出现错误不会自动关闭 Pipline, 从而导致下次启动异常。</li>
+</ul>
+<h3 id="2023-03-16">2023-03-16<a class="headerlink" href="#2023-03-16" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] 位置算解节点加入 GroundIK，支持将脚贴合到地面（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/features/location_solver.html">文档</a>） </li>
+<li>[fix] 动画蓝图切换后资源重复释放 (#30)，问题无法复现，需要等待反馈者测试</li>
+<li>[fix] BVH 插件骨骼节点索引错误 （#28）</li>
+</ul>
+<h3 id="2023-03-11">2023-03-11<a class="headerlink" href="#2023-03-11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix] Unreal Engine 5.1 打包后启动程序死锁（卡住，Blocking）</li>
+</ul>
+<h3 id="2023-03-09">2023-03-09<a class="headerlink" href="#2023-03-09" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] Unreal Engine 5.1 版本加入 NvAR 表情捕捉支持</li>
+</ul>
+<h3 id="2023-02-27">2023-02-27<a class="headerlink" href="#2023-02-27" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] NvAR 统计数据加入（<a href="https://opensource.labijie.com/Mediapipe4u-plugin/advance/stats.html">文档</a>）</li>
+<li>[imporve] GStreamer 升级到 1.22.0 （如果出现 GStreamer 相关编译错误，请重新安装 GStreamer Runtime 和 SDK）</li>
+<li>[fix] <img alt="💥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4a5.svg" title=":boom:" /><img alt="👊" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44a.svg" title=":punch:" /><img alt="👊" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44a.svg" title=":punch:" /><img alt="👊" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44a.svg" title=":punch:" /> 修复 MediaPipe NvAR 史诗级 BUG，随着启停次数增加，NvAR 帧率逐渐下降 (<mark>如果你使用了 MediaPipe4UNvAR , 必须更新此版本！！！</mark>)</li>
+<li>[fix] 修复 0225 版本编译错误</li>
+</ul>
+<h3 id="2023-02-25">2023-02-25<a class="headerlink" href="#2023-02-25" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] 加入了指标统计，可以通过 Stat 查看关键性能数据 （<a href="https://opensource.labijie.com/Mediapipe4u-plugin/advance/stats.html">文档</a>）</li>
+<li>[new] 支持获取图像源的 FPS，方便排查性能问题 </li>
+<li>[new] IK 驱动模式，方便集成 ControlRig (<mark>实验性</mark>)</li>
+<li>[imporve] 移除 protobuf 依赖，避免使用 protobuf 的项目打包出现冲突</li>
+<li>[imporve] 优先摄像头 RBG 编码，某些摄像头默认 YUV 编码时帧率过低</li>
+<li>[fix] 编辑器中强行退出游戏可能导致崩溃</li>
+</ul>
+<h3 id="2023-02-12">2023-02-12<a class="headerlink" href="#2023-02-12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] MediaPipeAnimInstance 增加手动连接 MediaPipe 功能，当场景中存在多个带有 MediaPipe 动画蓝图的角色时，你可以手动控制驱动其中一个</li>
+<li>[new] 支持动态切换动画蓝图（SetAnimInstanceClass）后连接 MediaPipe</li>
+<li>[fix] 网络游戏模式下，<strong>MediaPipeAnimInstance</strong> 可能会崩溃 <a href="https://github.com/endink/Mediapipe4u-plugin/issues/20">BUG #20</a></li>
+<li>[fix] 摄像头动补在 Annotated 回显模式下工作不正常</li>
+</ul>
+<h3 id="2023-02-10-milestone">2023-02-10 （milestone）<a class="headerlink" href="#2023-02-10-milestone" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>重构底层代码，一致的图片处理工作流，减少了一次图片内存复制，这个版本带来了帧率提升   </p>
+</blockquote>
+<p><img alt="📌" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4cc.svg" title=":pushpin:" /><strong>里程碑版本</strong>   </p>
+<ul>
+<li>[new] <img alt="🔥" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f525.svg" title=":fire:" />预览版质量的 <strong>Nvidia AR</strong> 表情捕捉集成, (<a href="./experiment/README.md">文档</a>，示例已经包含在 <a href="https://gitlab.com/endink/mediapipe4u-demo">Demo</a> 工程中）</li>
+<li>[new] 手指矫正，解决手指无法伸直的问题（<strong>TODO</strong>:文档暂缺）</li>
+<li>[new] <strong>MediaPipeHolistic</strong> 生命周期事件(OnInitialized, OnStarted, OnStopeed)蓝图支持</li>
+<li>[new] 图片、摄像头、视频图像回显都支持开启/关闭 MediaPipe 装饰（Annotated）模式了，便于分析动补帧</li>
+<li>[new] 摄像头捕捉加入了限制图片分辨率能力，在低端机器上可以提升帧率 (<strong>TODO</strong>:文档暂缺)</li>
+<li>[new] 全新重构的图片工作流，可以和任何第三方图片处理库集成（集成用例： NvAR 集成，<a href="./extensions/image_consumer.md">文档</a>）</li>
+<li>[new] 修正头部算解器（HeadSolver） Roll 偏差</li>
+<li>[new] <strong>MediaPipeLiveLink</strong> 可以被禁用，多个主题(LiveLink Subject)同时工作时，禁用不需要的主题可以避免不必要的开销</li>
+<li>[imporve] 更易于实现的自定义图像源基类 <strong>MediaPipeImageSourceComponent</strong> (C++)</li>
+<li>[imporve] <strong>MediaPipeRemapAsset</strong> 现在可以在编辑器中导入/导出 Json 文件，方便在多人开发时共享资产</li>
+<li>[imporve] 摄像头动补也使用异步模式回显图片，提高了性能和帧率</li>
+<li>[fix] <strong>MediaPipeLinkLink</strong> 表情捕捉卡顿的严重性能问题 (Big Bug)</li>
+<li>[fix] 重置缓存可能存在线程不安全问题，（<a href="https://github.com/endink/Mediapipe4u-plugin/issues/18">BUG #18</a>） </li>
+<li>[fix] 骨骼绑定缺失时可能引起的程序崩溃</li>
+<li>[fix] 快速反复启停时导致静态图片绘制出错</li>
+</ul>
+<h3 id="2023-01-15">2023-01-15<a class="headerlink" href="#2023-01-15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new]前胸关节如果未配置映射，自动获取颈骨（neck）的父关节作为前胸</li>
+<li>[new]头部算解器添加新的滤波算法，减少抖动（效果明显）</li>
+<li>[new]半身模式不只是锁定关节了，半身模式脊柱骨骼添加新的滤波算法（效果明显）</li>
+<li>[new]<strong>StandardMediaPipeAnimInstance</strong> 正式可用，可以通过 C++ 代码为角色动态设置 MediaPipe 动补（运行时附加动画蓝图，不用在编辑器中绑定骨骼制作动画蓝图，适用于动态加载模型场景）</li>
+<li>[fix]自定义骨骼无效（<a href="https://github.com/endink/Mediapipe4u-plugin/issues/13">issue #13</a> 无法验证，本机测试无误）</li>
+<li>[fix]编辑器模式下，偶尔多播委托失效导致动补停住</li>
+<li>[fix]图片动补模式下，当前图片源（ImageSource）属性为空</li>
+<li>
+<p>[fix]半身动补模式，头部扭曲矫正可能失效</p>
+</li>
+<li>
+<p>[improve]mediapipe 底层代码改进，开启关闭 pipeline 现在是线程安全的，回调事件只会在游戏线程执行（方便更新 UI）</p>
+</li>
+<li>[improve]提高膝盖极向准确性，减少膝盖扭曲（膝盖极像开关即将移除）</li>
+</ul>
+<h3 id="2023-01-06">2023-01-06<a class="headerlink" href="#2023-01-06" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix]骨骼层级刷新错误（<a href="https://github.com/endink/Mediapipe4u-plugin/issues/10">issue #10</a>, 感谢 <strong><a href="https://github.com/Muscaric">Muscaric</a></strong> 提供反馈）</li>
+</ul>
+<h3 id="2023-01-04">2023-01-04<a class="headerlink" href="#2023-01-04" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix]带有初始旋转角度的模型扭曲矫正错误</li>
+<li>[new]扭曲矫正开关，可以控制是否开启扭曲矫正</li>
+<li>[new]表情捕捉标定功能加入</li>
+<li>[new]表情捕捉重制:</li>
+<li>[new]表情降噪与平滑参数</li>
+<li>[new]膝盖极像开关（矫正膝盖侧弯问题）</li>
+<li>[new]表情平滑支持分别设置脸部和眼部平滑</li>
+<li>[new]表情捕捉加入虹膜追踪</li>
+</ul>
+<h3 id="2022-12-20">2022-12-20<a class="headerlink" href="#2022-12-20" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] BVH 导出</li>
+<li>[new] 头部算解器（从 face mesh 计算头部旋转）</li>
+<li>[new] 关节扭曲校正</li>
+<li>[new] 关节二次平滑支持（C++）</li>
+<li>[new] 前胸 (chest) 关节映射</li>
+<li>[fix] 侧身时位移计算错误</li>
+<li>[fix] 脊柱锁定不生效</li>
+</ul>
+<h3 id="2022-11-25">2022-11-25<a class="headerlink" href="#2022-11-25" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix] Pose 算解器骨骼映射索引超出范围错误，感谢网友 <strong><a href="https://github.com/tiantianaixuexi">tiantianaixuexi</a></strong> 提交反馈（#3）</li>
+<li>[improve] 骨骼缓存时机变为第一帧数据，解决多次重复发生缓存</li>
+</ul>
+<h3 id="2022-11-22">2022-11-22<a class="headerlink" href="#2022-11-22" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[new] 集成 UnrealEngine OpenCV，升级到 4.5.5</li>
+<li>[fix] Pose 算解器骨骼缓存 BUG</li>
+<li>[new] 兼容UrealEngine 5.1 API (目前仍然使用 5.0 编译)</li>
+</ul>
+<h3 id="2022-11-18">2022-11-18<a class="headerlink" href="#2022-11-18" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix] 自定义骨骼映射无效的严重 BUG， 感谢网友 <strong><a href="https://github.com/Gobcurry">Gobcurry</a></strong> 抽出宝贵时间发现问题。（issue: #2）</li>
+<li>[new] 新增骨骼映射资产 (Remap Asset)，动画蓝图骨骼映射使用映射资产。</li>
+<li>[new] 手腕扭曲矫正，通过肘部随动旋转简单矫正手腕扭曲变形。</li>
+<li>[remove] 动画蓝图中移除 BoneSettings 变量，不再通过 BoneSettings 配置骨骼，请使用新的映射资产映射。</li>
+</ul>
+<h3 id="2022-11-12">2022-11-12<a class="headerlink" href="#2022-11-12" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[fix] 图片动补重复释放内存引起崩溃的问题</li>
+<li>[fix] 启动时 GStreamer 未配置导致 UE Editor 崩溃，改为延迟启动</li>
+<li>[fix] 上半身模式脊柱锁定无效问题</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/ultrabug/mkdocs-static-i18n" target="_blank" rel="noopener" title="mkdocs-static-i18n on Github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "content.code.copy", "content.code.select", "header.autohide", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.sections"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../assets/javascripts/badge.js" async></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,2914 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/mediapipe_holistic_component/">
+      
+      
+        <link rel="prev" href="../quick_start/">
+      
+      
+        <link rel="next" href="../mediapipe_anim_instance/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>MediaPipe Holistic Component - MediaPipe4U 文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17%2013h-4v4h-2v-4H7v-2h4V7h2v4h4m-5-9A10%2010%200%200%200%202%2012a10%2010%200%200%200%2010%2010%2010%2010%200%200%200%2010-10A10%2010%200%200%200%2012%202%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/badge.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mediapipe-holistic-component" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="MediaPipe4U 文档" class="md-header__button md-logo" aria-label="MediaPipe4U 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MediaPipe4U 文档
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MediaPipe Holistic Component
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../en/vision/mocap/mediapipe_holistic_component/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/endink/Mediapipe4u-plugin" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../install/requirement/" class="md-tabs__link">
+          
+  
+  
+  安装
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../concepts/overview/" class="md-tabs__link">
+          
+  
+  
+  使用指南
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../package/plugin_content/" class="md-tabs__link">
+          
+  
+  
+  打包部署
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../licensing/" class="md-tabs__link">
+          
+  
+  
+  授权许可
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../faq/" class="md-tabs__link">
+          
+  
+  
+  常见问题
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../update_logs/" class="md-tabs__link">
+          
+  
+  
+  更新日志
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MediaPipe4U 文档" class="md-nav__button md-logo" aria-label="MediaPipe4U 文档" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MediaPipe4U 文档
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/endink/Mediapipe4u-plugin" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    首页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    安装
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            安装
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../install/requirement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    环境要求
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../install/install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    安装 MediaPipe4U
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../install/gstreamer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    安装 GStreamer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    使用指南
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            使用指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    视觉 AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            视觉 AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    概念
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            概念
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉任务概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/image_source/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Source
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts/image_consumer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Consumer (C++)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    动作捕捉
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            动作捕捉
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    快速入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    MediaPipe Holistic Component
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    MediaPipe Holistic Component
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概述
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-mediapipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google MediaPipe 介绍
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      属性
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options 详情
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      蓝图事件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      蓝图函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ 事件
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mediapipe_anim_instance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MediaPipe 动画蓝图
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom_skeleton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自定义骨骼
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../texture_display/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    回显图像
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../twist_correction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关节扭曲校正
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    校准（标定）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../runtime_behaviours/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行时控制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2_9" id="__nav_3_1_2_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    算解器细节
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            算解器细节
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pose_solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    姿势算解节点
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../location_solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    位置算解节点
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_2_10" id="__nav_3_1_2_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    进阶用法
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_1_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            进阶用法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../switch_anim_blueprint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行时切换动画蓝图
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/replace_mediapipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    整体替换 Google MediaPipe (C++)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_3" id="__nav_3_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    表情捕捉
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            表情捕捉
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facial/get_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用表情捕捉
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../facial/nvar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NvAR 表情捕捉
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../extensions/custom_face_solution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自定义算法 (C++)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_4" id="__nav_3_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MediaPip4U Remoting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            MediaPip4U Remoting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../remoting/get_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用 M4U Remoting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    声学 AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            声学 AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    语音识别与合成
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            语音识别与合成
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../speech/quick_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    快速入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../speech/setup_models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    安装语音模型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../speech/local_tts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    离线语音合成 (TTS)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_1_4" id="__nav_3_2_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    生成式 TTS
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            生成式 TTS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../speech/f5_tts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    F5-TTS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../speech/local_asr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    离线语音识别 (ASR)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../speech/wakeup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    语音唤醒
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../speech/lipsync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    口型同步(Lip Sync)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    大语言模型 (LLM)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            大语言模型 (LLM)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/quick_start.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    None
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    打包部署
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            打包部署
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../package/plugin_content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    插件和依赖
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../package/package_windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Windows 打包
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../package/package_android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android 打包
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    授权许可
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            授权许可
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../licensing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    软件授权
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../licensing/free_license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    免费许可证下载
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../licensing/paid_license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    付费版本
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../licensing/view_license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何查看授权有效期
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../licensing/update_license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    如何更新许可证
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../licensing/device_id/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    硬件机器码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            常见问题
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    更新日志
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            更新日志
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../update_logs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      概述
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#google-mediapipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google MediaPipe 介绍
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      属性
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options 详情
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      蓝图事件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      蓝图函数
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++ 事件
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="mediapipe-holistic-component">MediaPipe Holistic Component<a class="headerlink" href="#mediapipe-holistic-component" title="Permanent link">&para;</a></h1>
+<h2 id="_1">概述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><code>MediaPipeHolisticComponent</code> 负责连接 Unreal Engine 和 google mediapipe api， 将 mediapipe 数据引入到 Unreal Engine 中。</p>
+<blockquote>
+<p><code>MediaPipeHolisticComponent</code> 存在于 <code>MediaPipe4U</code> 插件中。</p>
+</blockquote>
+<h3 id="google-mediapipe">Google MediaPipe 介绍<a class="headerlink" href="#google-mediapipe" title="Permanent link">&para;</a></h3>
+<p>Google mediapipe 将 Pose, Hand, Face 地标融合到一个同一个的计算器 holistic 中， <code>MediaPipe4U</code> 将这个计算器封装成 UnrealEngine 组件，
+公开了 google 几乎所有的图形（graph）参数，它是整个 <code>MediaPipe4U</code> 动作和表情捕捉的核心组件，也是动作、表情、手指捕捉的数据来源, 同时，它也是 <code>MediaPipe4U</code>
+的启动器，整个动补过程都由它发起。</p>
+<p><a href="../images/holistic_component/holistic.gif"><img alt="MediaPipe4U" src="../images/holistic_component/holistic.gif" title="MediaPipe4U" /></a></p>
+<blockquote>
+<p>有关 google mediapipe holistic 详细信息，请访问这里： <br />
+<a href="https://ai.google.dev/edge/mediapipe/solutions/vision/holistic_landmarker">https://ai.google.dev/edge/mediapipe/solutions/vision/holistic_landmarker</a></p>
+</blockquote>
+<div class="admonition warning 限制">
+<p class="admonition-title">Warning</p>
+<p>由于 <code>MediaPipeHolisticComponent</code> 的特殊性，你应该保证整个场景中只有唯一个 <code>MediaPipeHolisticComponent</code> 实例。</p>
+</div>
+<h2 id="_2">属性<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>分类</th>
+<th>数据类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VideoDisplay</td>
+<td>图像回显</td>
+<td>enum</td>
+<td>图像回显的方式：<br/><code>Raw</code>: 显示原始图像;<br/><code>Annotated</code>: 带 MediaPipe 修饰线条的图像;<br/><br/>注意，<code>Raw</code> 显示性能<strong>高于</strong> <code>Annotated</code></td>
+</tr>
+<tr>
+<td>OverlayAnnotations</td>
+<td>图像回显</td>
+<td>enum</td>
+<td>装饰线条显示模式：<br/><code>HolisticTracking</code>: 显示整体装饰线条，包含面部和姿态;<br/><code>PoseTracking</code>: 显示身体姿态装饰线条;<br/><code>FaceTracking</code>: 显示面部装饰线条</td>
+</tr>
+<tr>
+<td>MediaPipeSourceInfo</td>
+<td>视频数据</td>
+<td>struct</td>
+<td>这是一个只读的变量，你不应改修，获取当前图像源的信息，例如视频高度、宽度、是否是静态图片</td>
+</tr>
+<tr>
+<td>bSourceHorizontalFlip</td>
+<td>Image Source 控制</td>
+<td>bool</td>
+<td>是否水平翻转图像。</td>
+</tr>
+<tr>
+<td>SourceResolutionLimits</td>
+<td>Image Source 控制</td>
+<td>enum</td>
+<td>限制图像分辨率，即图片进入 AI 计算之前进行缩放处理（推荐开启）。</td>
+</tr>
+<tr>
+<td>Options</td>
+<td>mediapipe 参数</td>
+<td>struct</td>
+<td>为 mediapipe 计算图（calculation graph）提供参数。</td>
+</tr>
+<tr>
+<td>GraphTimeoutSeconds</td>
+<td>mediapipe 参数</td>
+<td>int</td>
+<td>MediaPipie 计算时图像帧的超时时间，关于这部分信息，请参看 mediapipe bound time 相关文档</td>
+</tr>
+</tbody>
+</table>
+<h3 id="options">Options 详情<a class="headerlink" href="#options" title="Permanent link">&para;</a></h3>
+<p><code>MediaPipeHolisticComponent</code> 通过 <code>Options</code> 属性暴露 google mediapipe 的原始参数。</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>InputAngle</td>
+<td>enum</td>
+<td>它可以控制让 mediapipe 来旋转图像，不建议使用，因为这回造成和原始图像不一致，优先在 <strong>ImageSource</strong> 上处理图像</td>
+</tr>
+<tr>
+<td>InputVerticallyFlipped</td>
+<td>bool</td>
+<td>让 mediapipe 垂直翻转，不建议使用，因为这回造成和原始图像不一致，优先在 <strong>ImageSource</strong> 上处理图像</td>
+</tr>
+<tr>
+<td>InputVerticallyFlipped</td>
+<td>bool</td>
+<td>让 mediapipe 水平翻转，不建议使用，因为这回造成和原始图像不一致，优先在 <strong>ImageSource</strong> 上处理图像</td>
+</tr>
+<tr>
+<td>ModelComplexity</td>
+<td>enum</td>
+<td>mediapipe 提供的模型复杂度，Lite, Full, Heavy，一般设置为 Full 即可</td>
+</tr>
+<tr>
+<td>SmoothLandmarks</td>
+<td>bool</td>
+<td>是否平滑地标，这回影响计算结果，默认为 <strong>true</strong></td>
+</tr>
+<tr>
+<td>EnableSegmentation</td>
+<td>bool</td>
+<td>是否分割背景，默认为 <strong>false</strong>，不建议开启，会耗费性能</td>
+</tr>
+<tr>
+<td>SmoothSegmentation</td>
+<td>bool</td>
+<td>分割背景时边缘平滑，默认为 <strong>false</strong>，不建议开启，会耗费性能</td>
+</tr>
+<tr>
+<td>UsePrevLandmarks</td>
+<td>bool</td>
+<td>是否使用上一帧数据优化动补，这个参数由 MediaPipe4U 自动根据环境修改，程序无需关心</td>
+</tr>
+<tr>
+<td>CustomParameters</td>
+<td>TMap<FString, FString></td>
+<td>仅 <code>Custom Connector</code>（自定义连接器）有效，这个参数会被传递到 Connector 中，关于 <code>Custom Connector</code>， 请参阅 Custom Connector 文档。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">蓝图事件<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><code>MediaPipeHolisticComponent</code> 提供了蓝图可用的生命周期事件（多播委托）</p>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OnVideoTextureCreated</td>
+<td>当回显的视频图像创建时回调该委托</td>
+</tr>
+<tr>
+<td>OnMediaPipeInitialized</td>
+<td>当 MediaPipe 完成初始化时回调该委托</td>
+</tr>
+<tr>
+<td>OnMediaPipeStarted</td>
+<td>当 MediaPipe 动补启动时回调该委托</td>
+</tr>
+<tr>
+<td>OnMediaPipeStopped</td>
+<td>当 MediaPipe 动补停止时回调该委托</td>
+</tr>
+<tr>
+<td>OnMediaPipeThreadFault</td>
+<td>Mediapipe 工作线程发生错误时回调该委托</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">蓝图函数<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>StartCamera</td>
+<td>启动摄像头动补, 建议使用<strong>异步函数</strong>代替。</td>
+</tr>
+<tr>
+<td>StartImageSource</td>
+<td>启动其他类型的图像源动补, 建议使用<strong>异步函数</strong>代替。</td>
+</tr>
+<tr>
+<td>Stop</td>
+<td>停止动补, 建议使用<strong>异步函数</strong>代替。</td>
+</tr>
+<tr>
+<td>IsNativeImageSource</td>
+<td>指示当前图像源是一个 Native (普通 C++ 实现)图像源还是一个 UObject 图像源，为 <strong>true</strong> 表示 Native 图像源，反之，是一个 UObject 图像源，如果 MediaPipe 没有运行，会返回 false</td>
+</tr>
+<tr>
+<td>IsRunning</td>
+<td>用来判断 MediaPipe 是否已经启动</td>
+</tr>
+<tr>
+<td>GetCurrentCameraParams</td>
+<td>获取当前正在运行的摄像头参数。注意：StartCamera传入的参数可能和此方法返回不一致，设备不支持传入的分辨率或帧率时会自动使用合适的参数打开摄像头</td>
+</tr>
+<tr>
+<td>IsWebcamCapture</td>
+<td>当前捕获的图像源是否是摄像头</td>
+</tr>
+<tr>
+<td>IsVideoTextureAvailable</td>
+<td>回显纹理对象是否可用。</td>
+</tr>
+<tr>
+<td>IsStaticImageSource</td>
+<td>是否是静态图像源。一般来说，图片是静态图像源，视频为非静态图像源</td>
+</tr>
+<tr>
+<td>GetFrameSize</td>
+<td>获取当前的帧尺寸（高、宽）, 建议从 <code>MediaPipeSourceInfo</code> 属性获取来代替。</td>
+</tr>
+<tr>
+<td>GetSourceTextureAspectRatio</td>
+<td>获取图像源的高宽比, 建议从 <code>MediaPipeSourceInfo</code> 属性获取来代替。</td>
+</tr>
+<tr>
+<td>GetImageSourceFPS</td>
+<td>获取当前 ImageSource 的 FPS，这通常用于评估图像源的性能</td>
+</tr>
+<tr>
+<td>GetVideoTexture</td>
+<td>的回显的纹理对象。</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">异步函数</p>
+<p>以 <code>&lt;函数名&gt; + Async</code> 命名的函数表示异步函数，异步函数通常在 C++ 和蓝图中均可用，它<strong>不会阻塞</strong>游戏线程/UI 线程，建议使用异步函数本来代替同步函数，
+<code>MediaPipeHolisticComponent</code> 提供如下异步函数：</p>
+<ul>
+<li>StartImageSourceAsync</li>
+<li>StartCameraAsync</li>
+<li>StopAsync</li>
+<li>StartCustomConnectorAsync (C++)</li>
+</ul>
+</div>
+<h2 id="c">C++ 事件<a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
+<p>如果你希望获得 google mediapip 的原始数据，例如地标（Landmarks）, 你必须使用 C++ 编程，不支持蓝图。  </p>
+<p>你可以通过下面的函数获得相关订阅事件 (Unreal Event) 来侦听来自 mediapipe 的原始数据。</p>
+<table>
+<thead>
+<tr>
+<th>获取事件的函数</th>
+<th>分类</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PoseLandmarksEventTrigger</td>
+<td>mediapipe 数据</td>
+<td>获得 Pose 地标</td>
+</tr>
+<tr>
+<td>LeftHandLandmarksEventTrigger</td>
+<td>mediapipe 数据</td>
+<td>获得左手地标</td>
+</tr>
+<tr>
+<td>RightHandLandmarksEventTrigger</td>
+<td>mediapipe 数据</td>
+<td>获得右手地标</td>
+</tr>
+<tr>
+<td>FaceLandmarksEventTrigger</td>
+<td>mediapipe 数据</td>
+<td>获得 FaceMesh 地标</td>
+</tr>
+<tr>
+<td>PoseWorldLandmarksEventTrigger</td>
+<td>mediapipe 数据</td>
+<td>获得 3D 化的 Pose 地标</td>
+</tr>
+<tr>
+<td>FaceGeometryEventTrigger</td>
+<td>mediapipe 数据</td>
+<td>获得 FaceGeometry 数据（地标，顶点）</td>
+</tr>
+<tr>
+<td>FaceBlendShapesEventTrigger</td>
+<td>mediapipe 数据</td>
+<td>获得面部表情系数 BlendShapes 数据</td>
+</tr>
+<tr>
+<td>VideoTextureCreatedEventTrigger</td>
+<td>mediapipe 数据</td>
+<td>获得带有 mediapipe 地标的帧图像</td>
+</tr>
+<tr>
+<td>OnMediaPipeHolisticStoppingTrigger</td>
+<td>mediapipe 生命周期</td>
+<td>当开始停止 mediapipe 时触发</td>
+</tr>
+<tr>
+<td>OnMediaPipeHolisticStoppedTrigger</td>
+<td>mediapipe 生命周期</td>
+<td>当 mediapipe 停止后时触发</td>
+</tr>
+<tr>
+<td>BeforeMediaPipeHolisticStartTrigger</td>
+<td>mediapipe 生命周期</td>
+<td>mediapipe 开始以前触发</td>
+</tr>
+<tr>
+<td>OnMediaPipeHolisticStartFailedTrigger</td>
+<td>mediapipe 生命周期</td>
+<td>mediapipe 处理过程中发生错误时触发</td>
+</tr>
+<tr>
+<td>OnMediaPipeHolisticStartedTrigger</td>
+<td>mediapipe 生命周期</td>
+<td>mediapipe 开始后触发</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p><code>MediaPipeHolisticComponent</code> <strong>C++</strong> 的回调发生在任意线程，如果你需要在游戏游戏处理逻辑，需要自己确保线程安全。</p>
+<p><strong>蓝图</strong>事件总是在游戏线程触发。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/ultrabug/mkdocs-static-i18n" target="_blank" rel="noopener" title="mkdocs-static-i18n on Github" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.code.copy", "content.code.select", "header.autohide", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.sections"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../assets/javascripts/badge.js" async></script>
+      
+    
+  </body>
+</html>

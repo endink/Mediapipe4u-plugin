@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/faq/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/faq/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/install/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/install/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/install/gstreamer/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/install/gstreamer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/install/gstreamer/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/install/install/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/install/install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/install/install/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/install/requirement/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/install/requirement/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/install/requirement/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/licensing/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/licensing/device_id/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/device_id/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/device_id/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/licensing/free_license/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/free_license/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/free_license/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/licensing/paid_license/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/paid_license/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/paid_license/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/update_license/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/licensing/view_license/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/view_license/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/view_license/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/llm/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/llm/chat_runtime/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/chat_runtime/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/chat_runtime/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/llm/completion_args/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/completion_args/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/completion_args/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/cuda/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/llm/llm_tools/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/llm_tools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/llm_tools/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/llm/requirement/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/requirement/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/requirement/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/llm/usage/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/usage/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/usage/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/package/package_android/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/package/package_android/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/package/package_android/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/package/package_windows/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/package/package_windows/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/package/package_windows/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/package/plugin_content/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/package/plugin_content/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/package/plugin_content/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/speech/f5_tts/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/f5_tts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/f5_tts/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/speech/lipsync/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/lipsync/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/lipsync/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/speech/local_asr/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/local_asr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/local_asr/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/speech/local_tts/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/local_tts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/local_tts/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/quick_start/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/speech/setup_models/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/setup_models/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/setup_models/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/speech/wakeup/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/wakeup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/wakeup/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/ue_tools/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/ue_tools/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/ue_tools/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/ue_tools/control_rig_pose_baker/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/ue_tools/control_rig_pose_baker/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/ue_tools/control_rig_pose_baker/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/update_logs/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/finger_correction/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/finger_correction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/finger_correction/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/flip_frame/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/flip_frame/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/flip_frame/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/image_consumer/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/image_consumer/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/image_consumer/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/image_source/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/image_source/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/image_source/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/overview/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/overview/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/stats/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/stats/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/stats/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/extensions/custom_face_solution/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/extensions/custom_face_solution/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/extensions/custom_face_solution/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/extensions/replace_mediapipe/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/extensions/replace_mediapipe/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/extensions/replace_mediapipe/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/facial/get_started/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/facial/get_started/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/facial/get_started/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/facial/nvar/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/facial/nvar/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/facial/nvar/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/features/m4u_remoting/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/features/m4u_remoting/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/features/m4u_remoting/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/features/ue_editor_toolkits/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/features/ue_editor_toolkits/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/features/ue_editor_toolkits/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/calibration/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/calibration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/calibration/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/custom_skeleton/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/custom_skeleton/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/custom_skeleton/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/location_solver/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/location_solver/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/location_solver/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/mediapipe_anim_instance/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/mediapipe_anim_instance/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/mediapipe_anim_instance/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/mediapipe_holistic_component/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/mediapipe_holistic_component/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/mediapipe_holistic_component/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/pose_solver/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/pose_solver/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/pose_solver/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/quick_start/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/quick_start/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/runtime_behaviours/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/runtime_behaviours/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/runtime_behaviours/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/switch_anim_blueprint/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/switch_anim_blueprint/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/switch_anim_blueprint/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/texture_display/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/texture_display/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/texture_display/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/twist_correction/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/twist_correction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/twist_correction/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/anim_export/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/anim_export/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/anim_export/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/anim_mode_switch/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/anim_mode_switch/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/anim_mode_switch/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/custom_skeleton/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/custom_skeleton/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/custom_skeleton/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/head_solver/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/head_solver/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/head_solver/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/prepare_character/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/prepare_character/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/prepare_character/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/prepare_components/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/prepare_components/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/prepare_components/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/start_mocap/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/start_mocap/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/start_mocap/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/texture_display/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/texture_display/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/texture_display/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/vision/remoting/get_started/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/remoting/get_started/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/remoting/get_started/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/faq/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/faq/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/faq/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/install/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/install/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/install/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/install/gstreamer/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/install/gstreamer/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/install/gstreamer/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/install/install/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/install/install/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/install/install/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/install/requirement/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/install/requirement/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/install/requirement/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/device_id/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/device_id/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/device_id/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/free_license/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/free_license/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/free_license/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/paid_license/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/paid_license/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/paid_license/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/update_license/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/update_license/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/update_license/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/view_license/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/view_license/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/view_license/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/chat_runtime/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/chat_runtime/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/chat_runtime/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/completion_args/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/completion_args/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/completion_args/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/cuda/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/cuda/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/cuda/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/llm_tools/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/llm_tools/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/llm_tools/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/requirement/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/requirement/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/requirement/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/usage/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/llm/usage/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/llm/usage/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/package/package_android/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/package/package_android/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/package/package_android/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/package/package_windows/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/package/package_windows/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/package/package_windows/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/package/plugin_content/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/package/plugin_content/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/package/plugin_content/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/f5_tts/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/f5_tts/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/f5_tts/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/lipsync/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/lipsync/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/lipsync/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/local_asr/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/local_asr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/local_asr/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/local_tts/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/local_tts/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/local_tts/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/quick_start/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/quick_start/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/setup_models/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/setup_models/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/setup_models/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/wakeup/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/speech/wakeup/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/speech/wakeup/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/ue_tools/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/ue_tools/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/ue_tools/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/ue_tools/control_rig_pose_baker/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/ue_tools/control_rig_pose_baker/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/ue_tools/control_rig_pose_baker/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/update_logs/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/update_logs/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/finger_correction/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/finger_correction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/finger_correction/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/flip_frame/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/flip_frame/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/flip_frame/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/image_consumer/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/image_consumer/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/image_consumer/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/image_source/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/image_source/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/image_source/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/overview/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/overview/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/overview/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/stats/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/concepts/stats/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/concepts/stats/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/extensions/custom_face_solution/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/extensions/custom_face_solution/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/extensions/custom_face_solution/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/extensions/replace_mediapipe/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/extensions/replace_mediapipe/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/extensions/replace_mediapipe/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/facial/get_started/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/facial/get_started/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/facial/get_started/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/facial/nvar/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/facial/nvar/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/facial/nvar/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/features/m4u_remoting/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/features/m4u_remoting/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/features/m4u_remoting/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/features/ue_editor_toolkits/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/features/ue_editor_toolkits/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/features/ue_editor_toolkits/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/calibration/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/calibration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/calibration/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/custom_skeleton/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/custom_skeleton/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/custom_skeleton/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/location_solver/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/location_solver/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/location_solver/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/mediapipe_anim_instance/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/mediapipe_anim_instance/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/mediapipe_anim_instance/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/mediapipe_holistic_component/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/mediapipe_holistic_component/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/mediapipe_holistic_component/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/pose_solver/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/pose_solver/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/pose_solver/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/quick_start/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/quick_start/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/quick_start/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/runtime_behaviours/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/runtime_behaviours/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/runtime_behaviours/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/switch_anim_blueprint/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/switch_anim_blueprint/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/switch_anim_blueprint/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/texture_display/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/texture_display/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/texture_display/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/twist_correction/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/mocap/twist_correction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/mocap/twist_correction/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/anim_export/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/anim_export/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/anim_export/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/anim_mode_switch/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/anim_mode_switch/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/anim_mode_switch/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/custom_skeleton/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/custom_skeleton/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/custom_skeleton/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/head_solver/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/head_solver/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/head_solver/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/prepare_character/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/prepare_character/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/prepare_character/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/prepare_components/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/prepare_components/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/prepare_components/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/start_mocap/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/start_mocap/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/start_mocap/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/texture_display/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/quick_start/texture_display/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/quick_start/texture_display/"/>
+    </url>
+    <url>
+        <loc>https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/remoting/get_started/</loc>
+        <lastmod>2025-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://opensource.labijie.com/Mediapipe4u-plugin/en/vision/remoting/get_started/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://opensource.labijie.com/Mediapipe4u-plugin/vision/remoting/get_started/"/>
+    </url>
+</urlset>
