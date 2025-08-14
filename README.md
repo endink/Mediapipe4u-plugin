@@ -154,9 +154,6 @@ For the release notes, ref below:
 
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-<!-- | UE 5.0 | [奶牛快传](https://cowtransfer.com/s/206ee1ac88964c) | [One Drive](https://1drv.ms/u/s!AkmROUeQfSBjz3pSY7YV9R7Rg87d?e=e3whKG) | 2023-10-10 |
-| UE 5.1 | [百度网盘](https://pan.baidu.com/s/11C9pmKjRiwwh5e_mw82aTg?pwd=n9he) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ERHtOO41t9JMo_rMTYHUl5IBD6yrdmn9rqzi6b1ozQWxnw?e=A1XhVA) | 2023-05-24 |
-| UE 5.2 | [百度网盘](https://pan.baidu.com/s/1mEilhcaMCclXg6V6GhttHg?pwd=7q4p) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EWeByq7iTjdDl02JZbIEHBkBd0zmMjcGMKHl3STOmGrMaA?e=pvrHJi) | 2023-05-24 | -->
 | UE 5.3 | [百度网盘](https://pan.baidu.com/s/1vZ3VI76KQUnh10Sks2Q_GA?pwd=uegk) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ESmhoeLjDN1KrvBhZ2bskWwB6gV80vK1HvHeKn2I1dcF5w?e=Z2Vy3e) | 2025-05-06 |
 | UE 5.4 | [百度网盘](https://pan.baidu.com/s/1MEqzqBxRerZHZiBY2Q4lgw?pwd=7wet) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Ec8eTAxDzilIvNCd2WclAvIBdCReBilaRYhxE2GJGa6ELg?e=xu2Lk3) | 2025-05-06 |
 | UE 5.5 | [百度网盘](https://pan.baidu.com/s/1KGqJe6dlIkF_T9Rbv9qbrg?pwd=6csi) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ETwL3vzsvldGvDNUr9TB708BtR8jaqUqDzqXFHZrqB0lRA?e=FIgNE3) | 2025-05-06 |
