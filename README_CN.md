@@ -30,7 +30,7 @@
 | <a href="https://huggingface.co/endink/M4U-Speech-Models/tree/main">语音模型包</a>
 </p>
 <p align="center">
-<a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/pay_license.html">免费版 vs 付费版</a>
+<a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/paid_license/">免费版 vs 付费版</a>
 </p>
 <br>
 <p align="left">

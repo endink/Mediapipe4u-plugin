@@ -30,7 +30,7 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 | <a href="https://huggingface.co/endink/M4U-Speech-Models/tree/main">Speech Model Packages</a>
 </p>
 <p align="center">
-<a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/pay_license.html">Free Edtion vs Commercial Edition</a>
+<a href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/paid_license/">Free Edtion vs Commercial Edition</a>
 </p>
 
 <br>
