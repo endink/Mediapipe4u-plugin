@@ -46,6 +46,10 @@ Demo Projects: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (W
 
 # What's news
 
+### 20250517
+- [new] Add support for Unreal Engine **5.1**
+- [new] Add support for Unreal Engine **5.2**
+
 ### 20250506  
 
 - [fix] :rainbow: Motion capture not worked on `Android`  ([#221](https://github.com/endink/Mediapipe4u-plugin/issues/221), [#190](https://github.com/endink/Mediapipe4u-plugin/issues/221))。 

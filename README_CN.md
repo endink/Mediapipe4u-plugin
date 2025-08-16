@@ -44,6 +44,10 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 
 # 最新动态
 
+### 20250517
+- [new] 新增 Unreal Engine **5.1** 支持
+- [new] 新增 Unreal Engine **5.2** 支持
+
 ### 20250506
 
 - [fix] :rainbow: 动作捕捉在 `Android` 平台无法工作 ([#221](https://github.com/endink/Mediapipe4u-plugin/issues/221), [#190](https://github.com/endink/Mediapipe4u-plugin/issues/221))。 
