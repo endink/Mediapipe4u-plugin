@@ -14,7 +14,7 @@
 <br>
 <br>
 <a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-red.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.2 to 5.5-purple.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.1 to 5.5-purple.svg"></a>
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/Windows-Win 10/11 X64-brightgreen.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Android->=8.0 (Arm64)-brightgreen.svg"></a>
@@ -144,6 +144,7 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 # Download
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
+| UE 5.1 | [百度网盘](https://pan.baidu.com/s/140bAv1aQWjr8ZTxLmyBweA?pwd=5w9x) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Ee58exFB2XdKnqrf5szUyz4B9L5-m9wXCSf1Q1bGuREQFw?e=ozXUIZ) | 2025-08-17 |
 | UE 5.2 | [百度网盘](https://pan.baidu.com/s/1pQb5aCzyxngo77SutLxslw?pwd=gyn5) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EXWwSQP4Z19AlAdj61kD388BHdURs_RwQqW43ZkXkJW7yA?e=nMm6n0) | 2025-08-16 |
 | UE 5.3 | [百度网盘](https://pan.baidu.com/s/1vZ3VI76KQUnh10Sks2Q_GA?pwd=uegk) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ESmhoeLjDN1KrvBhZ2bskWwB6gV80vK1HvHeKn2I1dcF5w?e=Z2Vy3e) | 2025-05-06 |
 | UE 5.4 | [百度网盘](https://pan.baidu.com/s/1MEqzqBxRerZHZiBY2Q4lgw?pwd=7wet) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Ec8eTAxDzilIvNCd2WclAvIBdCReBilaRYhxE2GJGa6ELg?e=xu2Lk3) | 2025-05-06 |
