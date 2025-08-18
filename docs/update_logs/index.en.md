@@ -5,6 +5,12 @@ hide:
 
 [简体中文](./index.md)
 
+### 20250518
+
+- [new] Unreal Engine **5.6** support.
+- [fix] When using **NvAR** to capture head rotation, negative angle values are handled incorrectly. [#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)
+- [fix] Package failed on Unreal Engine versions **5.3** or lower. [#237](https://github.com/endink/Mediapipe4u-plugin/issues/237)
+
 ### 20250506
 
 - [fix] :rainbow: 动作捕捉在 `Android` 平台无法工作 ([#221](https://github.com/endink/Mediapipe4u-plugin/issues/221), [#190](https://github.com/endink/Mediapipe4u-plugin/issues/221))。 

@@ -44,9 +44,10 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 
 # 最新动态
 
-### 20250517
-- [new] 新增 Unreal Engine **5.1** 支持
-- [new] 新增 Unreal Engine **5.2** 支持
+### 20250518   
+- [new] 新增 Unreal Engine **5.6** 支持。
+- [fix] 当使用 **NvAR** 捕获头部旋转时, 负向角度处理不正确。[#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)
+- [fix] 使用 UE **5.3** 或更低版本打包时，可能出现错。 [#237](https://github.com/endink/Mediapipe4u-plugin/issues/237)
 
 ### 20250506
 
@@ -148,11 +149,12 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 # Download
 |UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
 |---| --- | --- |----|
-| UE 5.1 | [百度网盘](https://pan.baidu.com/s/140bAv1aQWjr8ZTxLmyBweA?pwd=5w9x) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Ee58exFB2XdKnqrf5szUyz4B9L5-m9wXCSf1Q1bGuREQFw?e=ozXUIZ) | 2025-08-17 |
-| UE 5.2 | [百度网盘](https://pan.baidu.com/s/1pQb5aCzyxngo77SutLxslw?pwd=gyn5) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EXWwSQP4Z19AlAdj61kD388BHdURs_RwQqW43ZkXkJW7yA?e=nMm6n0) | 2025-08-16 |
-| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1vZ3VI76KQUnh10Sks2Q_GA?pwd=uegk) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ESmhoeLjDN1KrvBhZ2bskWwB6gV80vK1HvHeKn2I1dcF5w?e=Z2Vy3e) | 2025-05-06 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1MEqzqBxRerZHZiBY2Q4lgw?pwd=7wet) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Ec8eTAxDzilIvNCd2WclAvIBdCReBilaRYhxE2GJGa6ELg?e=xu2Lk3) | 2025-05-06 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1KGqJe6dlIkF_T9Rbv9qbrg?pwd=6csi) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ETwL3vzsvldGvDNUr9TB708BtR8jaqUqDzqXFHZrqB0lRA?e=FIgNE3) | 2025-05-06 |
+| UE 5.1 | [百度网盘](https://pan.baidu.com/s/12WRySI0I-P4tOvy1tEAtrQ?pwd=xbdx) | [Google Drive](https://drive.google.com/file/d/1w4csyhJmgFm8qC94Ehen-x8nrrubZopQ/view?usp=sharing) | 2025-08-18 |
+| UE 5.2 | [百度网盘](https://pan.baidu.com/s/1FWOgIqoMYiel7V7ARyYbJA?pwd=bhtc) | [Google Drive](https://drive.google.com/file/d/1wGUhKq4dXDZT4LBZXCn3egL4q1ss2NXG/view?usp=sharing) | 2025-08-18 |
+| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1JB9-btsJFED996vy2y4akw?pwd=msj1) | [Google Drive](https://drive.google.com/file/d/1HgFERx5K65MyTwsSSBdkSUO17tvYzjRL/view?usp=sharing) | 2025-08-18 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1N4NFWIso-aJ7tUHnBMvnrA?pwd=rpfq) | [Google Drive](https://drive.google.com/file/d/1XjN3SyB54XPSTgHzWwM1TiGRYBOAK5vO/view?usp=sharing) | 2025-08-18 |
+| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1UlyIbVRrwqTPb2BnBMnSdQ?pwd=jbmm) | [Google Drive](https://drive.google.com/file/d/1AVD1BKrfGegv6MXoSrDIHBQXNFATW6Mb/view?usp=sharing) | 2025-08-18 |
+| UE 5.6 | [百度网盘](https://pan.baidu.com/s/1-CYpI1tJixu3d250K5UUhQ?pwd=9h9i) | [Google Drive](https://drive.google.com/file/d/1QVPnCdI6CJaiGYquWuNEte5Pc9FvbZnB/view?usp=sharing) | 2025-08-18 |
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    

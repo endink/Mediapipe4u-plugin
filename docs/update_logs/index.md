@@ -5,6 +5,12 @@ hide:
 
 [English](./en.md)   
 
+### 20250518
+
+- [new] 新增 Unreal Engine **5.6** 支持。
+- [fix] 当使用 **NvAR** 捕获头部旋转时, 负向角度处理不正确。[#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)
+- [fix] 使用 **5.3** 或更低版本的 Unreal Engine 打包时，可能出现错。 [#237](https://github.com/endink/Mediapipe4u-plugin/issues/237)
+
 ### 20250506
 
 - [fix] :rainbow: 动作捕捉在 `Android` 平台无法工作 ([#221](https://github.com/endink/Mediapipe4u-plugin/issues/221), [#190](https://github.com/endink/Mediapipe4u-plugin/issues/221))。

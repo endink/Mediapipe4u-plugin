@@ -46,9 +46,10 @@ Demo Projects: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (W
 
 # What's news
 
-### 20250517
-- [new] Add support for Unreal Engine **5.1**
-- [new] Add support for Unreal Engine **5.2**
+### 20250518   
+- [new] Unreal Engine **5.6** support.
+- [fix] When using **NvAR** to capture head rotation, negative angle values are handled incorrectly. [#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)
+- [fix] Package failed on Unreal Engine versions **5.3** or lower. [#237](https://github.com/endink/Mediapipe4u-plugin/issues/237)
 
 ### 20250506  
 
@@ -155,13 +156,15 @@ For the release notes, ref below:
 - [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
 # Download   
+
 | Unreal Engine | China Site | Global Site | Update |
 |---| --- | --- |----|
-| UE 5.1 | [百度网盘](https://pan.baidu.com/s/140bAv1aQWjr8ZTxLmyBweA?pwd=5w9x) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Ee58exFB2XdKnqrf5szUyz4B9L5-m9wXCSf1Q1bGuREQFw?e=ozXUIZ) | 2025-08-17 |
-| UE 5.2 | [百度网盘](https://pan.baidu.com/s/1pQb5aCzyxngo77SutLxslw?pwd=gyn5) | [One Drive](https://1drv.ms/u/c/63207d9047399149/EXWwSQP4Z19AlAdj61kD388BHdURs_RwQqW43ZkXkJW7yA?e=nMm6n0) | 2025-08-16 |
-| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1vZ3VI76KQUnh10Sks2Q_GA?pwd=uegk) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ESmhoeLjDN1KrvBhZ2bskWwB6gV80vK1HvHeKn2I1dcF5w?e=Z2Vy3e) | 2025-05-06 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1MEqzqBxRerZHZiBY2Q4lgw?pwd=7wet) | [One Drive](https://1drv.ms/u/c/63207d9047399149/Ec8eTAxDzilIvNCd2WclAvIBdCReBilaRYhxE2GJGa6ELg?e=xu2Lk3) | 2025-05-06 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1KGqJe6dlIkF_T9Rbv9qbrg?pwd=6csi) | [One Drive](https://1drv.ms/u/c/63207d9047399149/ETwL3vzsvldGvDNUr9TB708BtR8jaqUqDzqXFHZrqB0lRA?e=FIgNE3) | 2025-05-06 |
+| UE 5.1 | [百度网盘](https://pan.baidu.com/s/12WRySI0I-P4tOvy1tEAtrQ?pwd=xbdx) | [Google Drive](https://drive.google.com/file/d/1w4csyhJmgFm8qC94Ehen-x8nrrubZopQ/view?usp=sharing) | 2025-08-18 |
+| UE 5.2 | [百度网盘](https://pan.baidu.com/s/1FWOgIqoMYiel7V7ARyYbJA?pwd=bhtc) | [Google Drive](https://drive.google.com/file/d/1wGUhKq4dXDZT4LBZXCn3egL4q1ss2NXG/view?usp=sharing) | 2025-08-18 |
+| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1JB9-btsJFED996vy2y4akw?pwd=msj1) | [Google Drive](https://drive.google.com/file/d/1HgFERx5K65MyTwsSSBdkSUO17tvYzjRL/view?usp=sharing) | 2025-08-18 |
+| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1N4NFWIso-aJ7tUHnBMvnrA?pwd=rpfq) | [Google Drive](https://drive.google.com/file/d/1XjN3SyB54XPSTgHzWwM1TiGRYBOAK5vO/view?usp=sharing) | 2025-08-18 |
+| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1UlyIbVRrwqTPb2BnBMnSdQ?pwd=jbmm) | [Google Drive](https://drive.google.com/file/d/1AVD1BKrfGegv6MXoSrDIHBQXNFATW6Mb/view?usp=sharing) | 2025-08-18 |
+| UE 5.6 | [百度网盘](https://pan.baidu.com/s/1-CYpI1tJixu3d250K5UUhQ?pwd=9h9i) | [Google Drive](https://drive.google.com/file/d/1QVPnCdI6CJaiGYquWuNEte5Pc9FvbZnB/view?usp=sharing) | 2025-08-18 |
 
 > Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
 > Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).
