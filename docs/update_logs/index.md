@@ -5,7 +5,7 @@ hide:
 
 [English](./en.md)   
 
-### 20250518
+### 20250818
 
 - [new] 新增 Unreal Engine **5.6** 支持。
 - [fix] 当使用 **NvAR** 捕获头部旋转时, 负向角度处理不正确。[#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)

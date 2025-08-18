@@ -5,7 +5,7 @@ hide:
 
 [简体中文](./index.md)
 
-### 20250518
+### 20250818
 
 - [new] Unreal Engine **5.6** support.
 - [fix] When using **NvAR** to capture head rotation, negative angle values are handled incorrectly. [#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)

@@ -46,7 +46,8 @@ Demo Projects: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (W
 
 # What's news
 
-### 20250518   
+### 20250818    
+
 - [new] Unreal Engine **5.6** support.
 - [fix] When using **NvAR** to capture head rotation, negative angle values are handled incorrectly. [#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)
 - [fix] Package failed on Unreal Engine versions **5.3** or lower. [#237](https://github.com/endink/Mediapipe4u-plugin/issues/237)

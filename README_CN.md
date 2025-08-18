@@ -44,7 +44,7 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 
 # 最新动态
 
-### 20250518   
+### 20250818   
 - [new] 新增 Unreal Engine **5.6** 支持。
 - [fix] 当使用 **NvAR** 捕获头部旋转时, 负向角度处理不正确。[#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)
 - [fix] 使用 UE **5.3** 或更低版本打包时，可能出现错。 [#237](https://github.com/endink/Mediapipe4u-plugin/issues/237)
