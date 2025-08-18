@@ -67,7 +67,7 @@ nav:
         - speech/wakeup.md
         - speech/lipsync.md
     - Large Language Models (LLM):
-        - llm/quick_start.md
+        - llm/overview.md
   - Package And Deploy:
     - package/plugin_content.md
     - package/package_windows.md
