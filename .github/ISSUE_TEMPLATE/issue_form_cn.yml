@@ -6,8 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-         感谢你报告关于 MediaPipe4U 的问题，请认真填写这个表单，帮助我节约时间，每个人的时间都是有限的!
-         当我解答你的问题后，希望你也给我反馈，让我知道问题是否解决，这是 github 提 issue 的基本准则 ！
+         感谢你报告关于 MediaPipe4U 的问题，请认真填写这个表单，帮助我节约时间，每个人的时间都是有限的!   
+         当我解答你的问题后，希望你也给我反馈，让我知道问题是否解决，这是 github 提 issue 的基本准则 ！   
+         （ PS: 为我的 github 点星，你的举手之劳， 我前进的动力 ）   
   - type: input
     id: m4uver
     attributes:
@@ -27,6 +28,19 @@ body:
         - 5.3.x
         - 5.4.x
         - 5.5.x
+        - 5.6.x
+    validations:
+      required: true
+  - type: dropdown
+    id: ueversion
+    attributes:
+      label: 插件类型
+      description: 你使用的插件类型
+      options:
+        - 完整插件（从网盘下载）
+        - 基础插件（从 Fab 商城购买）
+    validations:
+      required: true
     validations:
       required: true
   - type: dropdown

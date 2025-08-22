@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thank you for reporting an issue with MediaPipe4U. Please fill out this form carefully to help me save time—everyone’s time is limited!   
+        After I address your question, I hope you can provide feedback so I know whether the issue was resolved. This is a basic guideline for submitting issues on GitHub.   
+        (BTW.: Give my GitHub a star—your small gesture is my motivation to keep going!)   
   - type: input
     id: m4uver
     attributes:
@@ -26,6 +28,17 @@ body:
         - 5.3.x
         - 5.4.x
         - 5.5.x
+        - 5.6.x
+    validations:
+      required: true
+  - type: dropdown
+    id: ueversion
+    attributes:
+      label: Plugin Type
+      description: The type of plugin you are using
+      options:
+        - Full Plugin (downloaded from cloud)
+        - Basic Plugin (purchased from Fab Store)
     validations:
       required: true
   - type: dropdown
