@@ -17,7 +17,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: ueversion
+    id: plugin_type
     attributes:
       label: UE Version
       description: Which version of Unreal Engine you used.
