@@ -122,24 +122,17 @@ For the release notes, ref below:
   - Living Stream (RTMP/SMTP)
   - Android Device (M4U Remoting)
 - LLM
-  - Offline
-  - CPU/GPU Inference 
-  - Multiple models
-    - LLaMA/LLaMA2
-    - ChatGLM (work in progress)
+  - [Ollama](https://ollama.com/) Support
 - TTS
   - Offline
   - Real-time
   - Lip-Sync
-  - Multiple models
-    - Paddle Speech: Chinese, English 
-    - Bark: 13 languages (work in progress)
+  - Multiple models ([Model Zoo](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
+  - Wake Word (like `Hey Siri`)
 - ASR
   - Offline
   - Real-time
-  - Multiple models
-    - FunASR: Chinese 
-    - Whisper: 99 languages
+  - Multiple models ([Model Zoo](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
 - Animation Data Export
   - BVH export 
 - Pure plugins
