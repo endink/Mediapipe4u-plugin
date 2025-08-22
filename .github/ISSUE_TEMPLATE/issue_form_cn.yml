@@ -32,7 +32,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: plugin_type
+    id: plugintype
     attributes:
       label: 插件类型
       description: 你使用的插件类型
