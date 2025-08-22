@@ -122,11 +122,11 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
   - 实时合成
   - 3D 模型口型同步
   - 多模型支持 ([浏览模型](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
-  - 语音唤醒 (类似 `小爱同学`、 `小度小度`)
 - 语音识别（ASR）
   - 离线识别
   - 实时识别
   - 多模型支持 ([浏览模型](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
+  - 语音唤醒 (类似 `小爱同学`、 `小度小度`)
 - 动画导出
   - BVH 数据导出 
 - 纯插件

@@ -128,11 +128,11 @@ For the release notes, ref below:
   - Real-time
   - Lip-Sync
   - Multiple models ([Model Zoo](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
-  - Wake Word (like `Hey Siri`)
 - ASR
   - Offline
   - Real-time
   - Multiple models ([Model Zoo](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
+  - Wake Word (like `Hey Siri`)
 - Animation Data Export
   - BVH export 
 - Pure plugins
