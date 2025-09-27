@@ -14,12 +14,15 @@
 
 MediaPipe4U 在以下环境通过打包测试， 建议你使用以下环境打包 Android 工程：
 
-1. `Android Studio`： 2024.3.1。   
-2. `Android SDK`：34
-3. `Android Build Tools`: 34.0
-4. `JDK`: 17.0.9
-5. `NDK`: r25b (25.1.8937393)
-6. `Gradle`: 8.7
+| UE VERSION | Android SDK Version | NDK Version | JDK Version | Gradle |
+|------|----------------|-------------|-----------|-----|
+| 5.1 | 34 | r21e (`21.4.7075529`) | 17 | 8.x |
+| 5.2 | 34 | r25b (`25.1.8937393`) | 17 | 8.x |
+| 5.3 | 34 | r25b (`25.1.8937393`) | 17 | 8.x |
+| 5.4 | 34 | r25b (`25.1.8937393`) | 17 | 8.x |
+| 5.5 | 34 | r25b (`25.1.8937393`) | 17 | 8.x |
+| 5.6 | 34 | r27b (`27.1.12297006`) | 17 | 8.x |
+
 
 > 你可以使用 Android Studio 安装 Android SDK、NDK, Build Tools。
    
