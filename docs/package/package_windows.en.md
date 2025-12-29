@@ -55,7 +55,7 @@ When multiple MSVC versions (VC toolchains) are installed on your machine, Unrea
 
 You can manually configure which MSVC version Unreal Engine uses by editing the Unreal Engine build configuration file, which is usually located at:
 
-{++C:\Users\<Your User Name>\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml++}
+{++C:\Users\&lt;Your User Name&gt;\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml++}
 
 Under the `WindowsPlatform` section in this XML file, add `CompilerVersion` to specify the MSVC version used by Unreal Engine.
 
