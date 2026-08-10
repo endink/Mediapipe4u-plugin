@@ -49,7 +49,7 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but fea
         Only 64-bit Windows is supported; 32-bit Windows is not supported.  
 
     |UE Version| VC Toolchain | Windows SDK Version|
-    |--------|-----|----|------|
+    |--------|-----|------|
     | 5.1 | 14.38.33130 (17.8) | 10.0.22621 or later|
     | 5.2 | 14.38.33130 (17.8) | 10.0.22621 or later|
     | 5.3 | 14.38.33130 (17.8) | 10.0.22621 or later|
@@ -57,7 +57,7 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but fea
     | 5.5 | 14.38.33130 (17.8) | 10.0.22621 or later|
     | 5.6 | 14.38.33130 (17.8) | 10.0.22621 or later|
     | 5.7 | 14.44.35207 (17.14) | 10.0.22621 or later|
-    | 5.7 | 14.44.35207 (17.14) | 10.0.22621 or later|
+    | 5.8 | 14.44.35207 (17.14) | 10.0.22621 or later|
         
 
 === "Android"
