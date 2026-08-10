@@ -8,3 +8,4 @@ Apply these rules whenever editing translated documentation under `docs/`.
 4. Translate prose only. Do not translate code, commands, API/class/property names, file paths, URLs, identifiers, product names, version numbers, or values that must be copied verbatim.
 5. Keep source line ordering. Translate table cell text without changing columns, separators, alignment, or whitespace that affects rendering.
 6. Before finishing, verify every Chinese `docs/**/*.md` file has a matching `.en.md` file, and compare each pair's Markdown structure (including fenced-code and admonition delimiters).
+7. Translate with Codex's own language capability. Do not send project documentation to third-party translation services unless the user explicitly authorizes the service and the document disclosure.
