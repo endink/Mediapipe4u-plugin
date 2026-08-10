@@ -32,7 +32,7 @@ Visit the download page: [https://gstreamer.freedesktop.org/download/](https://g
 The default runtime installer setup only includes basic decoders and additional unnecessary components.  
 It is recommended to select the **Custom** installation and adjust the options as follows:  
 
-### 1. Install the **libav** Plugin Set  
+1. Install the **libav** Plugin Set  
 
 !!! tip "Tip"
 
@@ -43,7 +43,7 @@ It is recommended to select the **Custom** installation and adjust the options a
 
 [![GStreamer Custom Setup](./images/gstreamer_custom_libav_select.jpg "GStreamer Custom Setup")](images/gstreamer_custom_libav_select.jpg)  
 
-### 2. Exclude Unnecessary QT Components  
+2. Exclude Unnecessary QT Components  
 
 [![GStreamer Custom Setup](./images/gstreamer_custom_qt_exclude.jpg "GStreamer Custom Setup")](images/gstreamer_custom_qt_exclude.jpg)  
 

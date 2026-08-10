@@ -37,7 +37,7 @@ This error occurs when the linker cannot find the required `.lib` files. There a
 
 1. A **Clean** operation was performed during compilation. Since this is a precompiled plugin, **Clean** removes the precompiled `.lib` files. To resolve this, re-download the plugin and copy it to the `Plugins` directory.
 2. You are using the GStreamer plugin but have not installed the GStreamer SDK. The project may compile successfully because the `.obj` files are already built, but packaging requires linking to GStreamer headers, which causes the error.  
-   > If you do not need video-based motion capture, you can remove the GStreamer-related plugins from your project.
+> If you do not need video-based motion capture, you can remove the GStreamer-related plugins from your project.
 
 ## How can I select the correct camera if my computer has multiple cameras?
 
@@ -51,8 +51,7 @@ Typically, the first camera is `0`, the second is `1`, and so on.
 
 1. The ideal frame rate for MediaPipe calculations is 30 FPS. If you experience significant delays, your CPU may not be fast enough. Lowering the video resolution can improve the MediaPipe FPS.  
    High resolutions do not enhance accuracy but instead reduce performance. A resolution of `600x400` is sufficient for smooth operation.  
-   > For camera-based motion capture, the **StartCamera** function in **MediaPipeHolisticComponent** allows adjusting resolution via the **ResolutionX** and **ResolutionY** parameters.  
-   > Additionally, the **FPS** parameter should not exceed 30, as a higher resolution will not improve performance in most cases.
+> For camera-based motion capture, the **StartCamera** function in **MediaPipeHolisticComponent** allows adjusting resolution via the **ResolutionX** and **ResolutionY** parameters. The **FPS** parameter of **StartCamera** should not exceed 30. Excessively high camera resolution is generally meaningless because MediaPipe's FPS is not very high.   
 
 2. Besides reducing video or camera resolution, if your video contains fast movements (e.g., breakdancing), you can also reduce motion smoothing to improve animation responsiveness.  
    (For details, refer to [Runtime Control -> Adjusting Smoothing](../mocap//advance/solver_bp.md).)

@@ -7,7 +7,7 @@ If you purchase a device license for MediaPipe4U, you will need to provide the h
 !!! warning "Note"
 
     Typically, your development PC and the actual deployment PC might not be the same device. You must provide the machine ID of the actual deployment device so that I can generate the correct license for you.  
-    It is recommended to use the [`Device ID Viewer`](#Device-ID-Viewer-获取机器码) to obtain the machine ID of the actual deployment device.
+    It is recommended to use the [`Device ID Viewer`](#retrieving-the-machine-id-using-device-id-viewer) to obtain the machine ID of the actual deployment device.
 
 You can obtain the machine ID using the following methods:   
 
@@ -50,7 +50,7 @@ When MediaPipe4U starts, it prints a log table that includes the machine ID.
 
 !!! tip "Tip"
 
-    When you need to obtain the machine ID from other machines, it is recommended to use the [`Device ID Viewer`](#Device-ID-Viewer-获取机器码) to read the machine ID from other devices.  
+    When you need to obtain the machine ID from other machines, it is recommended to use the [`Device ID Viewer`](#retrieving-the-machine-id-using-device-id-viewer) to read the machine ID from other devices.  
     Alternatively, you can package a program, deploy it on the target device, run the program, and then find the log file in the Saved folder. You can then extract the machine ID from the log file.
 
 ## Retrieving the Machine ID in Blueprint

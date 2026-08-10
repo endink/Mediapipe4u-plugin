@@ -3,7 +3,7 @@
 You can use **MediaPipe4U** for any commercial project, even if you are using the free version (Trial License), without worrying about licensing issues.  
 However, if you find this plugin useful and your project cannot accept frequent (30-day) license updates, you may consider purchasing the paid version.
 
-## Payment Methods
+# Payment Methods
 
 Currently, **MediaPipe4U** offers two licensing models::
 
@@ -25,29 +25,10 @@ Note that the device license is non-transferable. This model relies on hardware 
 
 ---
 
-## Pricing
+# Pricing
 
 As development continues, pricing may change as more features are added. Existing paid users will be notified in advance of any price adjustments.  
 If you are not comfortable with a new price, you can continue using the version you purchased at the original price, with long-term bug fix support.
-
-=== "USD Pricing Table (Excluding Tax)"
-
-    |        | Trial | Starter | Professional | Ultimate | Description |
-    |:---------------|:-----:|:--------:|:------------:|:--------:|:------------|
-    |  Annual Price (Per Year/Per Project)  | Free  | $800   | $1200   | $1600   | |
-    |  Device Price (Per Device)            | Free  | $250   | $300    | $350    | |
-    |  Motion Capture                       | ✅    | ✅      | ✅       | ✅      | |
-    |  Finger Capture                       | ✅    | ✅      | ✅       | ✅      | |
-    |  Facial Capture                       | ✅    | ⚪      | ✅       | ✅      | |
-    |  M4U Remoting                         | ⚪    | ⚪      | ✅       | ✅      | |
-    |  M4U Remoting Android SDK             |      |        |         | ✅      | Android SDK Source Code |
-    |  BVH Export                           | ✅    | ✅      | ✅       | ✅      | |
-    |  Virtual Camera                       | ⚪    | ⚪      | ⚪       | ✅      | |
-    |  Speech Suite                         | ⚪    | ⚪      | ⚪       | ✅      | |
-    |  Large Language Model (LLM)           | ⚪    | ⚪      | ⚪       | ✅      | Requires installation of [OLLama](https://ollama.com) |
-    |  VMC Data Export                      | ⚪    | ⚪      | ⚪       | ✅      | |
-    |  RTMP Streaming                       | ⚪    | ⚪      | ⚪       | ✅      | |
-    |  Technical Support                    | Github | WeChat | WeChat  | WeChat  | Support limited to GitHub for fewer than 4 device licenses |
 
 === "RMB Pricing Table (Excluding Tax)"
 
@@ -58,14 +39,27 @@ If you are not comfortable with a new price, you can continue using the version 
     |  Motion Capture                       | ✅    | ✅      | ✅       | ✅      | |
     |  Finger Capture                       | ✅    | ✅      | ✅       | ✅      | |
     |  Facial Capture                       | ✅    | ⚪      | ✅       | ✅      | |
-    |  M4U Remoting                         | ⚪    | ⚪      | ✅       | ✅      | |
-    |  M4U Remoting Android SDK             |      |        |         | ✅      | Android SDK Source Code |
+    |  M4U Remoting                         | ✅    | ✅      | ✅       | ✅      | |
+    |  M4U Remoting Android SDK             | ✅    | ✅      | ✅       | ✅      | Android Source Code |
     |  BVH Export                           | ✅    | ✅      | ✅       | ✅      | |
-    |  Virtual Camera                       | ⚪    | ⚪      | ⚪       | ✅      | |
-    |  Speech Suite                         | ⚪    | ⚪      | ⚪       | ✅      | |
-    |  Large Language Model (LLM)           | ⚪    | ⚪      | ⚪       | ✅      | Requires installation of [OLLama](https://ollama.com) |
-    |  VMC Data Export                      | ⚪    | ⚪      | ⚪       | ✅      | |
-    |  RTMP Streaming                       | ⚪    | ⚪      | ⚪       | ✅      | |
+    |  Speech Suite                         | ✅    | ⚪      | ⚪       | ✅      | |
+    |  Large Language Model (LLM)           | ✅    | ⚪      | ⚪       | ✅      | Required install [OLLama](https://ollama.com) |
+    |  Technical Support                    | Github | WeChat | WeChat  | WeChat  | Support limited to GitHub for fewer than 4 device licenses |
+
+=== "USD Pricing Table (Excluding Tax)"
+
+    |        | Trial | Starter | Professional | Ultimate | Description |
+    |:---------------|:-----:|:--------:|:------------:|:--------:|:------------|
+    |  Annual Price (Per Year/Per Project)  | Free  | $800   | $1200   | $1600   | |
+    |  Device Price (Per Device)            | Free  | $250   | $300    | $350    | |
+    |  Motion Capture                       | ✅    | ✅      | ✅       | ✅      | |
+    |  Finger Capture                       | ✅    | ✅      | ✅       | ✅      | |
+    |  Facial Capture                       | ✅    | ⚪      | ✅       | ✅      | |
+    |  M4U Remoting                         | ✅    | ✅      | ✅       | ✅      | |
+    |  M4U Remoting Android SDK             | ✅    | ✅      | ✅       | ✅      | Android Source Code |
+    |  BVH Export                           | ✅    | ✅      | ✅       | ✅      | |
+    |  Speech Suite                         | ✅    | ⚪      | ⚪       | ✅      | |
+    |  Large Language Model (LLM)           | ✅    | ⚪      | ⚪       | ✅      | Required install [OLLama](https://ollama.com) |
     |  Technical Support                    | Github | WeChat | WeChat  | WeChat  | Support limited to GitHub for fewer than 4 device licenses |
 
 
@@ -80,5 +74,5 @@ If you are not comfortable with a new price, you can continue using the version 
 
 # Payment Methods
 
-- **For users in China**, please contact me via **QQ: 27292911**.  
-- **For international users**, please contact me via **Email: sharping@outlook.com**.
+For users in China, contact me about payment via QQ: 27292911.   
+For international users, contact me via Email: sharping@outlook.com.
