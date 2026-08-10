@@ -42,22 +42,24 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
 
     !!! note inline end "如何检查环境？"
 
-        通常 Visual Studio 2022 17.9.6 或更新的版本中包含了必要的 MSVC 工具链      
+        通常 Visual Studio 2022 最新版本中包含了必要的 MSVC 工具链      
            
         以 VS 2022 为例，可以在以下位置查看你的 MSVC 版本：   
         `C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC`   
            
         仅支持 64 位 Windows，不支持 32 位 Windows。   
 
-    |软件|版本|
-    |--------|--------------|
-    |操作系统|Windows10/11 x64|
-    |Unreal Engine |5.1.x, 5.2.x, 5.4.x|
-    |Visual Studio 2022 | 17.9.6 or later|
-    |Windows SDK| 10.0.22621 or later|
-    |MSVC |14.38.33130 or later| 
+    |UE 版本| VC 工具链 | Windows SDK 版本|
+    |--------|-----|----|------|
+    | 5.1 | 14.38.33130 (17.8) | 10.0.22621 or later|
+    | 5.2 | 14.38.33130 (17.8) | 10.0.22621 or later|
+    | 5.3 | 14.38.33130 (17.8) | 10.0.22621 or later|
+    | 5.4 | 14.38.33130 (17.8) | 10.0.22621 or later|
+    | 5.5 | 14.38.33130 (17.8) | 10.0.22621 or later|
+    | 5.6 | 14.38.33130 (17.8) | 10.0.22621 or later|
+    | 5.7 | 14.44.35207 (17.14) | 10.0.22621 or later|
+    | 5.7 | 14.44.35207 (17.14) | 10.0.22621 or later|
         
-    > :bangbang: MSVC 14.39.X 和 UnrealEngine 5.4.1 可能存在冲突，建议使用 14.38.X 版本的 MSVC.
 
 === "Android"
 
@@ -79,6 +81,9 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
     | 5.2 | r25b (25.1.8937393)  | 26 or later |
     | 5.4 | r25b (25.1.8937393)  | 26 or later |
     | 5.5 | r25b (25.1.8937393)  | 26 or later |
+    | 5.6 | r27b (27.1.12297006)  | 26 or later |
+    | 5.7 | r27c (27.2.12479018)  | 26 or later |
+    | 5.8 | r27c (27.2.12479018)  | 26 or later |
 
     
 

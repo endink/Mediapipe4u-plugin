@@ -45,7 +45,7 @@ For convenience, the documentation categorizes engines into two types:
     You can use Visual Studio Installer to install the required MSVC toolchains. For example, the toolchain corresponding to `14.38.33130` is:
     `MSVC v143 - VS 2022 C++ x64/x86 build tools (v14.38-17.8)`
 
-## Configuring the Unreal Engine Compiler Version
+## Configuring the Host MSVC Compiler Version
 
 When multiple MSVC versions (VC toolchains) are installed on your machine, Unreal Engine will first try to find its preferred MSVC version. If that version is not found, it will use the latest available version installed on your system.
 
@@ -80,6 +80,44 @@ The following example configures Unreal Engine to use MSVC version `14.38.33130`
 
     It is **not recommended** to use an excessively new MSVC version, as it will increase the MSVC runtime requirements on the target machine.
     Currently, `14.38.33130` is a very good choice.
+    
+
+## Configuring the MSVC Compiler Version for a Single Project
+
+The `BuildConfiguration.xml` file described above changes the UE compiler version for the entire machine. If you only want to change it for an individual project, you can use one of the following approaches:
+
+### Option 1: Hard-code It in Target.cs (Recommended)
+Set it in the `.Target.cs` constructor under the project's `Source` directory. It takes effect after the configuration is loaded and can also override the local global XML configuration:
+> UE must be a C++ project for these two files to exist.   
+
+```csharp
+public XXXTarget(TargetInfo Target) : base(Target)
+{
+    Type = TargetType.Editor;
+    DefaultBuildSettings = BuildSettingsVersion.V7;
+    IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+    ExtraModuleNames.Add("RPG_G1");
+
+    WindowsPlatform.CompilerVersion = "14.38.33130";
+}
+```
+
+### Option 2: Project-level BuildConfiguration.xml
+UBT also reads the configuration under the project directory, which has a higher priority than the local global configuration:       
+```
+<YouGameFolder>\Saved\UnrealBuildTool\BuildConfiguration.xml
+```
+Example content:
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration xmlns="https://www.unrealengine.com/BuildConfiguration">
+    <WindowsPlatform>
+        <CompilerVersion>14.38.33130</CompilerVersion>
+    </WindowsPlatform>
+</Configuration>
+```
+
+  
 
 ## Packaging with Launcher Build Engine
 

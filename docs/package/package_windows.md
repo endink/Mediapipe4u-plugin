@@ -49,7 +49,7 @@ MediaPipe4U 使用 VS2022 构建，你必须具备以下环境
     `MSVC v143 - VS 2022 C++ x64/x86 build tools (v14.38-17.8)`
     
 
-## 配置 Unreal Engine 编译器版本
+## 为主机配置 MSVC 编译器版本
 
 当你的机器下安装了多个 MSVC （这里的 MSVC 指 VC Toolchain）版本时， Unreal Engine 会先尝试查找引擎首选的 MSVC 版本来编译，如果找不到这个版本的 MSVC， 将使用你机器上的最新版本。    
 
@@ -87,6 +87,42 @@ MediaPipe4U 使用 VS2022 构建，你必须具备以下环境
 
     **不建议**使用太高的`MSVC`版本构建项目，因为这会使得最终运行程序的机器 MSVC 版本要求很高。    
     目前看来 `14.38.33130` 是一个很好的选择。
+    
+
+## 为单个项目配置 MSVC 编译器版本
+
+上述的 BuildConfiguration.xml 将修改整个机器上的 UE 编译器版本，如果你只想为个别项目修改，可以使用如下方案：
+
+### 方案 1：在 Target.cs 里写死（推荐）
+在项目 Source 目录的 .Target.cs / .Target.cs 构造函数里设置，会在配置加载之后生效，同样能覆盖本机全局 XML：
+> UE 必须是 C++ 项目才有这两个文件   
+
+```csharp
+public XXXTarget(TargetInfo Target) : base(Target)
+{
+    Type = TargetType.Editor;
+    DefaultBuildSettings = BuildSettingsVersion.V7;
+    IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+    ExtraModuleNames.Add("RPG_G1");
+
+    WindowsPlatform.CompilerVersion = "14.38.33130";
+}
+```
+
+### 方案 2：项目级 BuildConfiguration.xml
+UBT 会额外读取项目目录下的配置，且优先级高于本机全局配置：       
+```
+<YouGameFolder>\Saved\UnrealBuildTool\BuildConfiguration.xml
+```
+内容示例：
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration xmlns="https://www.unrealengine.com/BuildConfiguration">
+    <WindowsPlatform>
+        <CompilerVersion>14.38.33130</CompilerVersion>
+    </WindowsPlatform>
+</Configuration>
+```
 
   
 
