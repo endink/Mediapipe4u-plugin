@@ -44,7 +44,7 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 
 # 最新动态
 
-### 20250811
+### 20260811
 
 - [new] :rainbow: 新增 Unreal Engine **5.7** 和 **5.8** 支持
 - [new] :rainbow: 添加 `VideoPlayerImageSource`, 支持打开 Android 相册中的视频文件进行动作和表情捕捉
@@ -156,6 +156,7 @@ UnrealEngine **5.1** - **5.8**
 
 - [Google Drive](https://drive.google.com/drive/folders/1d0_I-TeJUMLeDD4RKWeqA9ewKDzwIXYB?usp=sharing)
 - [百度网盘](https://pan.baidu.com/s/1u_JRN5qNufBsCe2qRN-Auw?pwd=m487)
+
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    
