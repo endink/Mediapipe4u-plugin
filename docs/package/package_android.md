@@ -12,16 +12,7 @@
 
 ## Android 打包配置
 
-MediaPipe4U 在以下环境通过打包测试， 建议你使用以下环境打包 Android 工程：
-
-| UE VERSION | Min SDK Version | NDK Version | JDK Version | Gradle |
-|------|----------------|-------------|-----------|-----|
-| 5.1 | 30 | r21e (`21.4.7075529`) | 17 | 8.x |
-| 5.2 | 30 | r25b (`25.1.8937393`) | 17 | 8.x |
-| 5.3 | 30 | r25b (`25.1.8937393`) | 17 | 8.x |
-| 5.4 | 30 | r25b (`25.1.8937393`) | 17 | 8.x |
-| 5.5 | 34 | r25b (`25.1.8937393`) | 17 | 8.x |
-| 5.6 | 34 | r27b (`27.1.12297006`) | 17 | 8.x |
+MediaPipe4U 的 Android 打包环境要求以[环境要求](../install/requirement.md)为准。
 
 
 > 你可以使用 Android Studio 安装 Android SDK、NDK, Build Tools。
@@ -70,7 +61,7 @@ Android 打包部署到真机后，可能出现 `Failed to open descriptor file`
 
 其次，检查如下设置：
 
-- NDK 使用和 Unreal Engine 文档中一致的版本
+- NDK 使用[环境要求](../install/requirement.md)中与 Unreal Engine 版本对应的版本
 - 将构建切换到 `Development` （如果你正在使用 `Shipping`）
 - 在 `Project Settings` 的 `Android SDK` 中明确设置你本机的 SDK 和 NDK 路径
 - 设置 SDK API Level 为 `matchndk`

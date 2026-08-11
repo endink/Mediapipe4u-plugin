@@ -23,11 +23,7 @@
 
 ## 打包环境
 
-MediaPipe4U 使用 VS2022 构建，你必须具备以下环境
-
-- Visual Studio 2022
-- WINSDK: `10.0.22621` or later ([下载地址](https://developer.microsoft.com/zh-cn/windows/downloads/windows-sdk/))
-- MSVC `14.38.33130` or later  
+MediaPipe4U 的 Windows 打包环境要求以[环境要求](../install/requirement.md)为准。
 
 > 打包后程序的部署环境：    
 > 
@@ -147,7 +143,7 @@ Launcher 版引擎构打包不需要特别处理，正常打包即可，文档�
 ```json
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.0",
+	"EngineAssociation": "5.1",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -167,6 +163,10 @@ Launcher 版引擎构打包不需要特别处理，正常打包即可，文档�
 		},
 		{
 			"Name": "MediaPipe4U",
+			"Enabled": true
+		},
+		{
+			"Name": "MediaPipe4UPremium",
 			"Enabled": true
 		},
         {
@@ -209,7 +209,7 @@ Launcher 版引擎构打包不需要特别处理，正常打包即可，文档�
 }
 ```
 
-> **MyPorject** 例子中，工程使用了所有的 `MediaPipe4U` 插件，你可以根据你的需求选择需要的插件，例如你只需要动补功能，你只需要配置 `MediaPipe4U` 和 `MediaPipe4UMotion` 。
+> **MyPorject** 例子中，工程启用了当前发布包中的所有插件。你可以根据需求选择插件，但必须同时启用[插件和依赖](./plugin_content.md)中列出的直接依赖；例如只使用动作捕捉时，至少需要 `MediaPipe4U`、`MediaPipe4UPremium` 和 `MediaPipe4UMotion`。
 
 ---   
 
@@ -258,12 +258,16 @@ set PROJECT_MODULE_NAME=MyProject
 set DEV_DIR=%TARGET_DIR%\Build\Win64\%PROJECT_MODULE_NAME%\
 
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4U\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UPremium\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UMotion\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\GStreamer\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UGStreamer\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UBVH\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4ULiveLink\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UNvAR\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
-xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4Speech\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4USpeech\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4ULLM\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4ULLMSpeech\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 
 pause
 ```

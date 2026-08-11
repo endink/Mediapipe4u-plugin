@@ -2,12 +2,16 @@
 
 ## 插件内容
 
-**MediaPipe4U** 中包含多个 Unreal Engine 插件，下面是插件介绍。你可以根据需要在你的项目中引入这些插件。
+**MediaPipe4U** 中包含多个 Unreal Engine 插件。完整的插件目录和依赖关系请参阅[插件和依赖](../package/plugin_content.md)；下面仅介绍主要功能插件。
 
 `MediaPipe4U`
 
 :   这是 MediaPipe4U 最基础的插件，它包含了 OpenCV\MediaPipe\DirectML 等基础框架和
     MediaPipe4U 的公共代码（如图像源：摄像头源，静态图源）。 除了 `GStreamer`插件，MediaPipe4U 的其他所有插件都依赖它。
+
+`MediaPipe4UPremium`
+
+:   高级功能的基础插件，包含授权、GPU、远程传输、编辑器和文件功能模块。
 
 `GStreamer`
 
@@ -48,9 +52,11 @@
 ## 安装步骤
 
 ---
-1. 拷贝以下目录到 [UE项目根目录]/Plugins
+1. 从下载的 MediaPipe4U 插件包中拷贝所选插件及其直接依赖到 [UE项目根目录]/Plugins。例如，使用视频表情捕捉时，需要拷贝：
 
    - MediaPipe4U
+   - MediaPipe4UPremium
+   - MediaPipe4UMotion
    - GStreamer
    - MediaPipe4UGStreamer
    - MediaPipe4ULiveLink
@@ -68,6 +74,8 @@
   ├─Plugins
   │  ├─GStreamer
   │  ├─MediaPipe4U
+  │  ├─MediaPipe4UPremium
+  │  ├─MediaPipe4UMotion
   │  ├─MediaPipe4UGStreamer
   │  ├─MediaPipe4ULiveLink
   │  ├─其他
@@ -79,5 +87,3 @@
 1. 打开 UE Editor, 确保以下插件已经启用
 
   [![启用插件](images/plugin_enable.jpg "Shiprock")](images/plugin_enable.jpg)
-
-

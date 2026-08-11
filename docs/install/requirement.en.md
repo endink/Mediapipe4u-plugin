@@ -7,6 +7,8 @@ MediaPipe4U supports the following platforms:
 - Windows x64 
 - Android arm64-v8a   
 
+MediaPipe4U requires Unreal Engine 5.1 or later.
+
 !!! warning "Unsupported Platforms"
 
     **MediaPipe4U** does not support 32-bit Windows platforms.  
@@ -26,15 +28,7 @@ MediaPipe4U supports the following platforms:
 
 MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but feature support differs: Windows supports all features, while Android supports only motion and facial expression capture.   
 
-| Plugin (Module) | Windows | Android | Linux |
-|---| --- | --- | ---- |
-| MediaPipe4U             | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
-| MediaPipe4ULiveLink     | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
-| GStreamer               | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4UBVH          | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4USpeech       | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4ULLM          | :heavy_check_mark: | :x: |Coming Soon|
+For all plugin directories and their dependencies, see [Plugins and Dependencies](../package/plugin_content.en.md). When packaging for a target platform, enable only the plugins and dependencies available for that platform.
 
 
 === "Windows"
@@ -75,7 +69,6 @@ MediaPipe4U currently supports Windows x64 and Android arm-64 platforms, but fea
 
     |Unreal Engine| NDK Version | Android SDK Version |
     |--------|--------------|----------------------|
-    | 5.0 | r21e (21.4.7075529)  | 26 or later |
     | 5.1 | r25b (25.1.8937393)  | 26 or later |
     | 5.2 | r25b (25.1.8937393)  | 26 or later |
     | 5.4 | r25b (25.1.8937393)  | 26 or later |

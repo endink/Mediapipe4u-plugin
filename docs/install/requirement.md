@@ -7,6 +7,8 @@ MediaPipe4U 支持下列的平台：
 - Windows x64 
 - Android arm64-v8a   
 
+MediaPipe4U 最低支持 Unreal Engine 5.1。
+
 !!! warning "不受支持的平台"
 
     **MediaPipe4U** 不支持 32 位 Windows 平台。   
@@ -27,15 +29,7 @@ MediaPipe4U 支持下列的平台：
 
 MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支持上有差异，Windows 平台支持全功能，Android 仅支持动作和表情捕捉。   
 
-| 插件 (模块) | Windows | Android | Linux |
-|---| --- | --- | ---- |
-| MediaPipe4U             | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
-| MediaPipe4ULiveLink     | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
-| GStreamer               | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4UGStreamer    | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4UBVH          | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4USpeech       | :heavy_check_mark: | :x: |Coming Soon|
-| MediaPipe4ULLM          | :heavy_check_mark: | :x: |Coming Soon|
+所有插件目录及其依赖关系请参阅[插件和依赖](../package/plugin_content.md)。打包目标平台时，只能启用该平台可用的插件及其依赖。
 
 
 === "Windows"
@@ -76,7 +70,6 @@ MediaPipe4U 目前支持 Windows x64 和 Android arm-64 平台，但是功能支
 
     |Unreal Engine| NDK Version | Android SDK Version |
     |--------|--------------|----------------------|
-    | 5.0 | r21e (21.4.7075529)  | 26 or later |
     | 5.1 | r25b (25.1.8937393)  | 26 or later |
     | 5.2 | r25b (25.1.8937393)  | 26 or later |
     | 5.4 | r25b (25.1.8937393)  | 26 or later |

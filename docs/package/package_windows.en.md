@@ -21,11 +21,7 @@ For convenience, the documentation categorizes engines into two types:
 
 ## Packaging Environment
 
-`MediaPipe4U` is built using VS2022. You must have the following environment:
-
-- Visual Studio 2022
-- Windows SDK: `10.0.22621` or later ([Download](https://developer.microsoft.com/zh-cn/windows/downloads/windows-sdk/))
-- MSVC `14.38.33130` or later
+For Windows packaging, refer to the [Environment Requirements](../install/requirement.en.md) for the MediaPipe4U requirements.
 
 > Deployment environment for the packaged program:
 >
@@ -141,7 +137,7 @@ In the `MyProject.uproject` file, all plugins used by `MediaPipe4U` are already 
 ```json
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.0",
+	"EngineAssociation": "5.1",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -161,6 +157,10 @@ In the `MyProject.uproject` file, all plugins used by `MediaPipe4U` are already 
 		},
 		{
 			"Name": "MediaPipe4U",
+			"Enabled": true
+		},
+		{
+			"Name": "MediaPipe4UPremium",
 			"Enabled": true
 		},
         {
@@ -203,7 +203,7 @@ In the `MyProject.uproject` file, all plugins used by `MediaPipe4U` are already 
 }
 ```
 
-> In the **MyProject** example, the project uses all `MediaPipe4U` plugins. You can select only the plugins you need. For example, if you only need motion capture, you only need `MediaPipe4U` and `MediaPipe4UMotion`.
+> In the **MyProject** example, the project enables every plugin in the current release package. You can select only the plugins you need, but must also enable their direct dependencies listed in [Plugins and Dependencies](./plugin_content.en.md). For example, motion capture requires at least `MediaPipe4U`, `MediaPipe4UPremium`, and `MediaPipe4UMotion`.
 
 ---
 
@@ -250,12 +250,16 @@ set PROJECT_MODULE_NAME=MyProject
 set DEV_DIR=%TARGET_DIR%\Build\Win64\%PROJECT_MODULE_NAME%\
 
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4U\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UPremium\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UMotion\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\GStreamer\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UGStreamer\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UBVH\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4ULiveLink\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4UNvAR\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
-xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4Speech\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4USpeech\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4ULLM\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
+xcopy /S /Y "%PLUGIN_DIR%\MediaPipe4ULLMSpeech\Intermediate\Build\Win64\UnrealGame\" "%DEV_DIR%"
 
 pause
 ```

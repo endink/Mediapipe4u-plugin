@@ -6,21 +6,12 @@ In most cases, `MediaPipe4U` can be packaged and distributed with your project, 
 
 1. On Android, `MediaPipe4U` supports only `Development` and `Shipping` packages; `DebugGame` is **not supported**.
 2. `MediaPipe4U` supports only `arm64` (`ARMv8-A`), and **does not support** packaging for other platforms such as x64.
-3. Some MediaPipe4U plugins **do not support** Android and must be removed from Android projects. See [Plugins and Dependencies](./plugin_content.md).
+3. Some MediaPipe4U plugins **do not support** Android and must be removed from Android projects. See [Plugins and Dependencies](./plugin_content.en.md).
 
 
 ## Android Packaging Configuration
 
-MediaPipe4U has been packaging-tested with the following environments, which are recommended:
-
-| UE VERSION | Min SDK Version | NDK Version | JDK Version | Gradle |
-|------|----------------|-------------|-----------|-----|
-| 5.1 | 30 | r21e (`21.4.7075529`) | 17 | 8.x |
-| 5.2 | 30 | r25b (`25.1.8937393`) | 17 | 8.x |
-| 5.3 | 30 | r25b (`25.1.8937393`) | 17 | 8.x |
-| 5.4 | 30 | r25b (`25.1.8937393`) | 17 | 8.x |
-| 5.5 | 34 | r25b (`25.1.8937393`) | 17 | 8.x |
-| 5.6 | 34 | r27b (`27.1.12297006`) | 17 | 8.x |
+For Android packaging, refer to the [Environment Requirements](../install/requirement.en.md) for the MediaPipe4U requirements.
 
 
 > Use Android Studio to install the Android SDK, NDK, and Build Tools.
@@ -69,7 +60,7 @@ First, delete these build-cache directories from the project root:
 
 Then check these settings:
 
-- Use the NDK version specified by the Unreal Engine documentation
+- Use the NDK version for your Unreal Engine version in the [Environment Requirements](../install/requirement.en.md)
 - Switch the build to `Development` if currently using `Shipping`
 - Explicitly set local SDK and NDK paths under `Android SDK` in Project Settings
 - Set SDK API Level to `matchndk`

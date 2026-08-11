@@ -2,11 +2,15 @@
 
 ## Plugin Contents
 
-**MediaPipe4U** includes multiple Unreal Engine plugins. Below is an introduction to these plugins. You can integrate them into your project as needed.
+**MediaPipe4U** includes multiple Unreal Engine plugins. For the complete plugin directories and dependencies, see [Plugins and Dependencies](../package/plugin_content.en.md); the major feature plugins are introduced below.
 
 `MediaPipe4U`
 
 :   This is the core plugin of MediaPipe4U. It includes foundational frameworks such as OpenCV, MediaPipe, and DirectML, as well as common code for MediaPipe4U (e.g., image sources: camera sources, static image sources). Except for the `GStreamer` plugin, all other plugins in MediaPipe4U depend on it.
+
+`MediaPipe4UPremium`
+
+:   The foundation for advanced features, including licensing, GPU, remoting, editor, and file modules.
 
 `GStreamer`
 
@@ -47,9 +51,11 @@
 ## Setup in Unreal Engine
 
 ---
-1. Copy the following directories to `[UE Project Root Directory]/Plugins`:
+1. Copy the selected plugins and their direct dependencies from the downloaded MediaPipe4U plugin package to `[UE Project Root Directory]/Plugins`. For example, video-based facial-expression capture requires:
 
    - MediaPipe4U
+   - MediaPipe4UPremium
+   - MediaPipe4UMotion
    - GStreamer
    - MediaPipe4UGStreamer
    - MediaPipe4ULiveLink
@@ -66,6 +72,8 @@
    ├─Plugins
    │ ├─GStreamer
    │ ├─MediaPipe4U
+   │ ├─MediaPipe4UPremium
+   │ ├─MediaPipe4UMotion
    │ ├─MediaPipe4UGStreamer
    │ ├─MediaPipe4ULiveLink
    │ ├─Others
