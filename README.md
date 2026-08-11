@@ -1,11 +1,11 @@
-[简体中文](./README_CN.md)
+[中文](./README_CN.md)
 <br>
 <br>
-<p align="center">
+<p align="center" style="font-size:64px">
 <img alt="MediaPipe4U" src="./logo.png">
 <p>
 <p align="center">
-An Unreal Engine plugin that helps you use AI and ML techniques in your unreal engine project.
+An Unreal Engine plugin that helps you integrate artificial intelligence and machine learning technologies.
 <br>
 <br>
 <img alt="Windows" src="./readme_images/windows_logo.svg">
@@ -14,160 +14,160 @@ An Unreal Engine plugin that helps you use AI and ML techniques in your unreal e
 <br>
 <br>
 <a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-red.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.1 to 5.6-purple.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.1 to 5.8-purple.svg"></a>
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/Windows-Win 10/11 X64-brightgreen.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Android->=8.0 (Arm64)-brightgreen.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/MSVC->=14.38.33130-aff.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Windows SDK->=10.0.22621-orange.svg"></a>
-  <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.9.6-blue"></a>
+  <a href=""><img src="https://img.shields.io/badge/Visual Sutdio->=2022.17.6.3-blue"></a>
 </p>
 <p align="center">
-<a href="https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp">News</a>
-| <a href="#document">Document</a>
-| <a href="#download">Download</a>
-| <a href="https://github.com/endink/M4URemoting-Android">M4U Remoting Android App (Open Source)</a>
+<a href="https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/">Latest News</a>
+| <a href="https://opensource.labijie.com/Mediapipe4u-plugin">Documentation</a>
+| <a href="#Download">Download</a>
+| <a href="https://github.com/endink/Mediapipe4u-plugin/releases/tag/M4U_Remoting_App">M4U Remoting(Android App)</a>
 | <a href="https://huggingface.co/endink/M4U-Speech-Models/tree/main">Speech Model Packages</a>
 </p>
 <p align="center">
-<a href="https://opensource.labijie.com/Mediapipe4u-plugin/en/licensing/paid_license/">Free Edtion vs Commercial Edition</a>
+<a href="https://opensource.labijie.com/Mediapipe4u-plugin/licensing/paid_license/">Free vs. Paid Edition</a>
 </p>
-
 <br>
 <p align="left">
 Demo Projects: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Windows)</a> | <a href="https://gitlab.com/endink/mediapipe4u-android-demo">Android Demo</a>
 </p>
-
 </p>
 
 # Introduction
 
-**MediaPipe4U** provides a suite of libraries and tools that allow you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques to your Unreal Engine projects. You can integrate these solutions into your UE project immediately and customize them to meet your needs. The suite includes motion capture, facial expression capture for your 3D avatar, text-to-speech (TTS), speech recognition (ASR), and more. All features are real-time, offline, low-latency, and easy to use.
+**MediaPipe4U** provides a suite of components and tools that let you quickly apply artificial intelligence (AI) and machine learning (ML) technologies in Unreal Engine projects. You can immediately integrate these solutions into your UE projects and customize them to your needs. They include motion capture, facial expression capture, text-to-speech (TTS), automatic speech recognition (ASR), and more. All features are real-time, offline, low-latency, and easy to use.
 
-# What's news
+# Latest News
 
-### 20250818    
+### 20250811
 
-- [new] Unreal Engine **5.6** support.
-- [fix] When using **NvAR** to capture head rotation, negative angle values are handled incorrectly. [#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)
-- [fix] Package failed on Unreal Engine versions **5.3** or lower. [#237](https://github.com/endink/Mediapipe4u-plugin/issues/237)
+- [new] :rainbow: Added Unreal Engine **5.7** and **5.8** support
+- [new] :rainbow: Added `VideoPlayerImageSource`, which supports opening video files from the Android gallery for motion and expression capture
+- [fix] Bug fixes: [#243](https://github.com/endink/Mediapipe4u-plugin/issues/243), [#262](https://github.com/endink/Mediapipe4u-plugin/issues/252)
+- [fix] Fixed a crash when stopping motion capture
 
-### 20250506  
+### 20250818   
+- [new] Added Unreal Engine **5.6** support.
+- [fix] Incorrect negative-angle handling when using **NvAR** to capture head rotation. [#122](https://github.com/endink/Mediapipe4u-plugin/issues/222)
+- [fix] Packaging with UE **5.3** or earlier may fail. [#237](https://github.com/endink/Mediapipe4u-plugin/issues/237)
 
-- [fix] :rainbow: Motion capture not worked on `Android`  ([#221](https://github.com/endink/Mediapipe4u-plugin/issues/221), [#190](https://github.com/endink/Mediapipe4u-plugin/issues/221))。 
+### 20250506
 
+- [fix] :rainbow: Motion capture did not work on the `Android` platform ([#221](https://github.com/endink/Mediapipe4u-plugin/issues/221), [#190](https://github.com/endink/Mediapipe4u-plugin/issues/221)). 
 
 ### 20250408
 
-- [new] :rainbow: The free version now supports packaging all features, including voice and facial expression capture.
-- [new] :rainbow: Ollama support: Integrated with [Ollama](https://ollama.com/) for large language model inference, enabling support for various LLMs such as DeepSeek, LLaMA, Phi, Qwen, QWQ, and more.
-- [new] :rainbow: Dialogue component `LLMSpeechChatRuntime`: Integrates LLM, TTS, and ASR, making it easy to build chatbot functionality within Blueprints.
-- [new] :rainbow: Added new TTS support: [Kokoro](https://github.com/hexgrad/kokoro), [Melo](https://github.com/myshell-ai/MeloTTS).
-- [new] :rainbow: Added new ASR support: [FunASR](https://github.com/modelscope/FunASR) (Chinese-English with hotword support), [FireRedASR](https://github.com/FireRedTeam/FireRedASR) (Chinese-English/Dialects), [MoonShine](https://github.com/usefulsensors/moonshine) (English), [SenseVoice](https://github.com/usefulsensors/moonshine) (Multilingual: Chinese/English/Japanese/Korean/Cantonese).
-- [new] :rainbow: Added a Transformer-based TTS model: [F5-TTS](https://github.com/SWivid/F5-TTS), capable of zero-shot voice cloning (supports inference with DirectML/CUDA on both AMD and Nvidia GPUs).
-- [new] :rainbow: Voice wake-up: Lightweight model-based voice wake-up, supporting custom wake words to activate ASR and also separate voice command trigger functionality.
-- [new] :fire: Upgraded to the latest version of Google MediaPipe.
-- [new] :fire: Added support for Unreal Engine 5.5.
-- [new] :rainbow: Integrated NvAR pose tracking, allowing switching between MediaPipe and Nvidia Maxine algorithms.
-- [new] :rainbow: Open-sourced [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (Android facial module for MediaPipe4U).
-- [new] :dizzy: `Custom mediapipe connector`(C++): Enabling complete replace  `google mediapipe` with you want (#195, #204).
-- [new] :dizzy: Added `Custom mediapipe feature`(C++): Enabling partial replace  `google mediapipe` with you want (#195, #204).
-- [new] :rainbow: Add a new [Android Demo project](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
-- [improve] :footprints: Demo project upgraded to UE5.5, added `Fake Demo`, a C++ extension example that reads local files instead of using MediaPipe.
-- [improve] :footprints: Demo project now includes voice wake-up examples and speaker selection demo.
-- [improve] :footprints: Demo project now includes LLM integration example.
-- [improve] :footprints: Demo project now includes voice chatbot example.
-- [improve] :footprints: Demo project now supports packaging.
-- [break change] :collision:⚠️⚠️⚠️ Motion capture features have been moved to a new plugin: `MediaPipe4UMotion`. This may cause your existing blueprint to break. Please update your blueprint after upgrading.
-- [break change] :collision:⚠️⚠️⚠️ Due to changes in the license format, old licenses are no longer valid. You can now obtain a free license from [here](https://github.com/endink/Mediapipe4u-plugin/releases/tag/license-auto-release).
+- [new] :rainbow: The free edition can now package all features, including speech and expression capture.
+- [new] :rainbow: Ollama support: integrate [Ollama](https://ollama.com/) for large language model inference, supporting many LLMs such as DeepSeek, LLaMA, Phi, Qwen, and QWQ.
+- [new] :rainbow: Dialogue component `LLMSpeechChatRuntime`: integrates LLM, TTS, and ASR, making it easy to implement chatbots in Blueprints.
+- [new] :rainbow: Added new TTS support: [Kokoro](https://github.com/hexgrad/kokoro), [Melo](https://github.com/myshell-ai/MeloTTS). 
+- [new] :rainbow: Added new ASR support: [FunASR](https://github.com/modelscope/FunASR) (Chinese/English hotword edition), [FireRedASR](https://github.com/FireRedTeam/FireRedASR) (Chinese/English/dialects), [MoonShine](https://github.com/usefulsensors/moonshine) (English), [SenseVoice](https://github.com/usefulsensors/moonshine) (multilingual: Chinese/English/Japanese/Korean/Cantonese).
+- [new] :rainbow: Added a Transformer-based TTS model: [F5-TTS](https://github.com/SWivid/F5-TTS), with zero-shot voice cloning capabilities (DirectML/CUDA inference; AMD and Nvidia GPUs supported)
+- [new] :rainbow: Voice wake-up: small-model inference-based voice wake-up, supporting custom wake words to activate ASR and standalone voice-command wake words.
+- [new] :fire: Updated Google MediaPipe to the latest version.
+- [new] :fire: Added Unreal Engine 5.5 support.
+- [new] :rainbow: Added the NvAR pose capture algorithm, allowing switching between MediaPipe and Nvidia Maxine algorithms.
+- [new] :rainbow: Open-sourced [MediaPipe4U Remoting](https://github.com/endink/M4URemoting-Android) (an Android facial-capture app for MediaPipe4U). 
+- [new] :dizzy: `Custom Mediapipe Connector` (C++): a custom connector that can completely replace `google mediapipe` to implement custom logic (#195, #204).
+- [new] :dizzy: `Custom Mediapipe Feature` (C++): a custom feature that can partially replace `google mediapipe` to implement custom logic (#195, #204).
+- [new] :rainbow: Added the [Android Demo project](https://gitlab.com/endink/mediapipe4u-android-demo) (Gitlab)
+- [improve]:footprints: Upgraded the Demo project to UE5.5 and added `Fake Demo`, a C++ extension example that reads local files instead of MediaPipe.
+- [improve]:footprints: Added voice wake-up and speaker-selection examples to the Demo project
+- [improve]:footprints: Added LLM examples to the Demo project
+- [improve]:footprints: Added voice chatbot examples to the Demo project
+- [improve]:footprints: The Demo project now supports packaging
+- [break change] :collision: Motion capture has been split into a standalone `MediaPipe4UMotion` plugin. This may break existing Blueprints; update your Blueprints after upgrading.
+- [break change] :collision: Due to changes in the license-file format, existing licenses will no longer work. You can obtain free licenses [here](https://github.com/endink/Mediapipe4u-plugin/releases/tag/license-auto-release) going forward.
 
-Speech Model download move to [huggingface](https://huggingface.co/endink/M4U-Speech-Models/tree/main).   
+Speech package downloads have moved to [huggingface](https://huggingface.co/endink/M4U-Speech-Models/tree/main).   
 
-> Currently, only the Unreal Engine 5.5 version is available; Other versions will be packaged and released later, sorry for that.
+> Only the Unreal Engine 5.5 version is currently available; other versions will be packaged and released subsequently ...
 
 
-# Known Issues:    
-- The new Google Holistic Task API does not support GPU inference. As a result, the Android platform relies on CPU inference, while Windows continues to use CPU inference as usual.  
-- Starting from Unreal Engine **5.4**, the built-in `OpenCV` plugin no longer includes precompiled libraries (DLL files). Upon the first launch of the UE Editor, since M4U depends on the `OpenCV` plugin, the editor will attempt to download the `OpenCV` source code online and compile it on your machine. This process may take a significant amount of time, potentially giving the impression that the engine is stuck at 75% during loading. Please be patient and check the logs in the *Saved* directory under the root folder to verify whether the process has completed. For users in China, you may need a VPN connection. Alternatively, you can follow the steps outlined in [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166) to manually resolve this issue.  
-
+# Known Issues    
+- The new Google Holistic Task API does not support GPU, so Android uses CPU inference; as before, Windows also uses CPU inference.
+- Starting with Unreal Engine **5.4**, the built-in `OpenCV` plugin no longer includes precompiled libraries (DLL files). On the first launch of the UE Editor, because M4U depends on the `OpenCV` plugin, the UE Editor will attempt to download the `OpenCV` source code and compile it on your computer. This may take a long time and make it appear that the engine is stuck at 75% loading. Please wait patiently and check the logs in the Saved directory under the project root to confirm that the process has completed. Users in China may also need a proxy to access the Internet. You can also follow the steps in [#166](https://github.com/endink/Mediapipe4u-plugin/discussions/166) to solve this manually.
 
 
 ## Release Notes
-For the release notes, ref below:
-- [Release Notes (English, it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/update_logs/?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)   
-- [Release Notes (简体中文)](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)   
+For more updates, see the update log:
+- [Update Log](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  
+
+:green_heart:All features are pure C++, with no Python or external programs required.
 
 # Features
 
-:green_heart:All features are pure C++,  no Python or external programs required.
-
 - Motion Capture
-  - Motion of the body
-  - Motion of the fingers
-  - Movement
-  - Drive 3D avatar
-  - Real-time
-  - RGB webcam supported
-  - ControlRig supported
-- Face Capture
-  - Facial expression.
-  - Arkit Blendshape compatible (52 expression) 
-  - Live link compatible
-  - Real-time
-  - RGB webcam supported
-- Multi-source Capture
-  - RGB WebCam
-  - Video File
-  - Image
-  - Living Stream (RTMP/SMTP)
-  - Android Device (M4U Remoting)
-- LLM
-  - [Ollama](https://ollama.com/) Support
-- TTS
-  - Offline
-  - Real-time
-  - Lip-Sync
-  - Multiple models ([Model Zoo](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
-- ASR
-  - Offline
-  - Real-time
-  - Multiple models ([Model Zoo](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
-  - Wake Word (like `Hey Siri`)
-- Animation Data Export
-  - BVH export 
-- Pure plugins
+  - Body motion capture
+  - Finger motion capture
+  - Translation capture
+  - 3D model driving
+  - Real-time driving
+  - Supports standard cameras
+  - ControlRig support
+- Expression Capture
+  - Facial expressions
+  - Arkit Blendshape compatible (52 expressions) 
+  - Live Link compatible
+  - Real-time driving
+  - Supports standard cameras
+- Multiple Capture Sources
+  - Standard cameras
+  - Video files
+  - Images
+  - Streaming media (RTMP/SMTP)
+  - Android devices (phones and tablets) (M4U Remoting)
+- Large Language Models (LLM)
+  - [Ollama](https://ollama.com/) support
+- Text-to-Speech (TTS)
+  - Offline synthesis
+  - Real-time synthesis
+  - 3D model lip-sync
+  - Multi-model support ([Browse models](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
+- Automatic Speech Recognition (ASR)
+  - Offline recognition
+  - Real-time recognition
+  - Multi-model support ([Browse models](https://huggingface.co/endink/M4U-Speech-Models/tree/main))
+  - Voice wake-up (similar to `Xiao Ai Tong Xue` and `Xiao Du Xiao Du`)
+- Animation Export
+  - BVH data export 
+- Plugin Only
   - No external programs required
-  - All in Unreal Engine
+  - Everything is done in Unreal Engine
 
-# Document
+# Documentation
 
-- [中文文档](https://opensource.labijie.com/Mediapipe4u-plugin/)   
+- [Simplified Chinese](https://opensource.labijie.com/Mediapipe4u-plugin/)   
 
-- [English (sorry it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sch=http&_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
+- [English](https://opensource.labijie.com/Mediapipe4u-plugin/en/)
 
 - [日本語 (申し訳ありませんが、それは単なるGoogle翻訳です)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ja&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
 - [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
-# Download   
+# Download
 
-| Unreal Engine | China Site | Global Site | Update |
-|---| --- | --- |----|
-| UE 5.1 | [百度网盘](https://pan.baidu.com/s/12WRySI0I-P4tOvy1tEAtrQ?pwd=xbdx) | [Google Drive](https://drive.google.com/file/d/1w4csyhJmgFm8qC94Ehen-x8nrrubZopQ/view?usp=sharing) | 2025-08-18 |
-| UE 5.2 | [百度网盘](https://pan.baidu.com/s/1FWOgIqoMYiel7V7ARyYbJA?pwd=bhtc) | [Google Drive](https://drive.google.com/file/d/1wGUhKq4dXDZT4LBZXCn3egL4q1ss2NXG/view?usp=sharing) | 2025-08-18 |
-| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1JB9-btsJFED996vy2y4akw?pwd=msj1) | [Google Drive](https://drive.google.com/file/d/1HgFERx5K65MyTwsSSBdkSUO17tvYzjRL/view?usp=sharing) | 2025-08-18 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1N4NFWIso-aJ7tUHnBMvnrA?pwd=rpfq) | [Google Drive](https://drive.google.com/file/d/1XjN3SyB54XPSTgHzWwM1TiGRYBOAK5vO/view?usp=sharing) | 2025-08-18 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1UlyIbVRrwqTPb2BnBMnSdQ?pwd=jbmm) | [Google Drive](https://drive.google.com/file/d/1AVD1BKrfGegv6MXoSrDIHBQXNFATW6Mb/view?usp=sharing) | 2025-08-18 |
-| UE 5.6 | [百度网盘](https://pan.baidu.com/s/1-CYpI1tJixu3d250K5UUhQ?pwd=9h9i) | [Google Drive](https://drive.google.com/file/d/1QVPnCdI6CJaiGYquWuNEte5Pc9FvbZnB/view?usp=sharing) | 2025-08-18 |
+UnrealEngine **5.1** - **5.8** 
 
-> Because the plugin is precompiled and contains a large number of C++ link symbols and debug symbols, it will cost **10G** disk space after decompression (most files are UE-generated binaries in Intermediate).   
-> Don't need to worry about disk usage, this is just disk usage during development, after the project is packaged, the plug-in disk usage is **300M** only (most files are GStreamer dynamic library and speech models).
+- [Google Drive](https://drive.google.com/drive/folders/1d0_I-TeJUMLeDD4RKWeqA9ewKDzwIXYB?usp=sharing)
+- [Baidu Netdisk](https://pan.baidu.com/s/1u_JRN5qNufBsCe2qRN-Auw?pwd=m487)
 
-# Cross Platform    
+To learn what was included in each release, visit the [**Update Log**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/) page  
+   
+> Because the plugin uses precompiled binaries and includes a large number of C++ linker symbols and debug symbols, it occupies **5G** of disk space after extraction (mostly UE-generated code in Intermediate)   
+> You do not need to worry about disk usage. This is only disk usage during development; after packaging the project, the plugin uses approximately **200M** of disk space (mainly GStreamer dynamic libraries)
 
-Now, M4U support Android and Windows (Linux is coming soom)
 
-| Plugins (Modules) | Windows | Android | Linux |
+# Cross-platform  
+
+M4U now supports Android and Windows (Linux support is coming soon), but platform support differs slightly.
+
+| Plugin (Module) | Windows | Android | Linux |
 |---| --- | --- | ---- |
 | MediaPipe4U             | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
 | MediaPipe4ULiveLink     | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
@@ -176,30 +176,29 @@ Now, M4U support Android and Windows (Linux is coming soom)
 | MediaPipe4UBVH          | :heavy_check_mark: | :heavy_check_mark: |Coming Soon|
 | MediaPipe4USpeech       | :heavy_check_mark: | :x: |Coming Soon|
 
+## Free License Files
 
-# Free License File Release
+License files are periodically published in the [Discussions](https://github.com/endink/Mediapipe4u-plugin/discussions/82), and are also automatically included in new plugin packages.   
 
-The license file will be published in the [discussion](https://github.com/endink/Mediapipe4u-plugin/discussions/82), and the plugin package file will automatically include an license file.   
+# M4U Remoting App (Android)
 
-# M4U Remoting App （Android）
-
-[Got Source Code](https://github.com/endink/M4URemoting-Android)
+[Get the source code](https://github.com/endink/M4URemoting-Android)
 
 > **About M4U Remoting**   
 >    
-> This is an open-source Android application that can send facial expression data to the MediaPipe4U program on Windows.     
-> With it, you can perform facial expression capture using an Android mobile device and visualize it on an avatar in Unreal Engine.
-  
-# Demo Project
+> This is an open-source Android application that can send expression data to the MediaPipe4U Windows application.       
+> With it, you can use an Android mobile device for expression capture and display expressions on Unreal Engine characters.
 
-Please clone this repository to get demo project:    
+# Demo Projects
+
+Clone or download the source code for the Demo projects from the following GitHub repositories:   
+
 - `Windows Demo`: [https://gitlab.com/endink/mediapipe4u-demo](https://gitlab.com/endink/mediapipe4u-demo)
 - `Android Demo`: [https://gitlab.com/endink/mediapipe4u-android-demo](https://gitlab.com/endink/mediapipe4u-android-demo)
 
+Use a Git client to obtain the Demo projects (you must install [git](https://git-scm.com/downloads) and [git lfs](https://git-lfs.com/)) :
 
-Use the git client to get the demo project (require [git](https://git-scm.com/downloads) and [git lfs](https://git-lfs.com/)) :
-
-> The Windows Demo is a full-featured demo, and it is recommended to use the Windows Demo if you are learning how to use the `MediaPipe4U`.
+> Windows Demo is a full-featured demo. If you are learning how to use `MediaPipe4U`, the Windows Demo is recommended.   
 
 Windows Demo:
 ```shell
@@ -211,63 +210,68 @@ Android Demo:
 git lfs clone https://gitlab.com/endink/mediapipe4u-android-demo.git
 ```
 
-> The demo project does not contain plugins, you need to download the plugin and copy content to the project's plugins folder to run.
+> The Demo projects do not include the plugin. Download the plugin yourself and place it in the project's Plugins directory.
 
 
-# Video Channels
+<!-- [![MediaPipe4U](./cover.gif "MediaPipe4U")](./cover.gif) -->
 
-**Video Tutorials (English)**
+# Plugin Videos
+
+**English Video Tutorial (YouTube)**
 
 [![MediaPipeU Metahuman Tutorials](https://res.cloudinary.com/marcomontalbano/image/upload/v1680609544/video_to_markdown/images/youtube--XLmKnG6UMzo-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=XLmKnG6UMzo "MediaPipeU Metahuman Tutorials")
 
-**Video Tutorials (Chinese)**
+**Chinese Video Tutorial (bilibili)**
 
 [bilibili](https://www.bilibili.com/video/BV1124y157hz/)
+ 
+
+## FAQ
+
+If you encounter a problem, first check the [FAQ](./faq), which collects issues encountered by many users and may include yours. If you cannot find it in the FAQ, submit an issue on GitHub first; direct messages may cause me to forget the problem.
+
+## Performance
+
+Because the Windows version of MediaPipe does not support GPU inference, Windows relies on the CPU for human-pose prediction (see MediaPipe for details):
+
+**Test Environment**
+
+CPU: AMD 3600 CPU   
+Memory: 32GB   
+GPU: 1660s (this GPU does not support ray tracing)   
 
 
-# FAQ
+**Performance:** 
 
-If you have any questiongs, please check [FAQ](./faq) first. The problems listed there may be also yours. If you can’t find an answer in the FAQ, please post an issue. Private message or emal may cause the question to be mised .
+Frame rate (fps): 18-24  
 
-# Performance
+CPU utilization: 20% (the test DEMO contains only the MetahumanLight scene and VRM model)  
 
-Since the Windows version of MediaPipe does not support GPU inference, Windows relies on the CPU to inferring human pose estimation (see MediaPipe offical site for more details).
-
-
-**Evaluation** 
-
-Frame Rate： 18-24 fps 
-
-CPU usage：20% (Based on DEMO project)  
-
-**Testing Evnrioment**
-
-CPU： AMD 3600 CPU   
-RAM: 32GB   
-GPU: Nvidia 1660s
 
 
 # Follow Me
 
-[bilibili](https://space.bilibili.com/481665211)   
+[Bilibili](https://space.bilibili.com/481665211)   
 
-[Youtube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
+[YouTube](https://www.youtube.com/channel/UCiOTp6S7N3GX46_nLQ17CrA)   
 
+
+Users in China who cannot view the video can visit the [Bilibili video](https://www.bilibili.com/video/BV1JD4y1r7ow)   
 
 # Acknowledgements  
 
-We acknowledge the contributions of the following open-source projects and frameworks, which have significantly influenced the development of M4U:  
+We thank the following open-source projects and frameworks for their contributions, which have had an important impact on the development of M4U:  
 
-1. M4U utilizes [MediaPipe](https://github.com/google/mediapipe) for motion and facial capture.  
-2. M4U utilizes the [NVIDIA Maxine AR SDK](https://github.com/NVIDIA/MAXINE-AR-SDK) for advanced facial tracking and capture.  
-3. M4U utilizes [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech) for text-to-speech (TTS) synthesis.  
-4. M4U utilizes [FunASR](https://github.com/alibaba-damo-academy/FunASR) for automatic speech recognition (ASR).  
-5. M4U utilizes [whisper.cpp](https://github.com/ggerganov/whisper.cpp) as an ASR solution.  
-6. M4U utilizes [Sherpa Onnx](https://github.com/k2-fsa/sherpa-onnx) to enhance ASR capabilities.  
-7. M4U utilizes [F5-TTS-ONNX](https://github.com/DakeQQ/F5-TTS-ONNX) for exporting the F5-TTS model.  
-8. M4U utilizes [GStreamer](https://gstreamer.freedesktop.org/) to facilitate video processing and real-time streaming.  
-9. M4U utilizes code from [PowerIK](https://poweranimated.github.io/) for inverse kinematics (IK) and ground adaptation.  
-10. M4U utilizes concepts from [Kalidokit](https://github.com/yeemachine/kalidokit) in the domain of motion capture.  
-11. M4U utilizes code from [wongfei](https://github.com/wongfei) to enhance GStreamer and MediaPipe interoperability.  
+1. M4U uses [MediaPipe](https://github.com/google/mediapipe) for motion capture and face capture.  
+2. M4U uses [NVIDIA Maxine AR SDK](https://github.com/NVIDIA/MAXINE-AR-SDK) for advanced face tracking and capture.  
+3. M4U uses [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech) for text-to-speech (TTS) synthesis.  
+4. M4U uses [FunASR](https://github.com/alibaba-damo-academy/FunASR) for automatic speech recognition (ASR).  
+5. M4U uses [whisper.cpp](https://github.com/ggerganov/whisper.cpp) as an ASR solution.  
+6. M4U uses [Sherpa Onnx](https://github.com/k2-fsa/sherpa-onnx) to enhance ASR capabilities.  
+7. M4U uses [F5-TTS-ONNX](https://github.com/DakeQQ/F5-TTS-ONNX) to export F5-TTS models.  
+8. M4U uses [GStreamer](https://gstreamer.freedesktop.org/) for video processing and real-time streaming-media decoding.  
+9. M4U uses code from [PowerIK](https://poweranimated.github.io/) to implement inverse kinematics (IK) and ground adaptation.  
+10. M4U uses concepts from [Kalidokit](https://github.com/yeemachine/kalidokit) in the motion-capture domain.  
+11. M4U uses code from [wongfei](https://github.com/wongfei) to enhance interoperability between GStreamer and MediaPipe.  
 
-We extend our gratitude to the developers and contributors of these projects for their valuable innovations and open-source contributions, which have greatly facilitated the development of MediaPipe4U.  
+We extend our sincere thanks to the developers and contributors of these projects. Their innovation and open-source contributions have greatly advanced M4U.  

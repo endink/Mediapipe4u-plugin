@@ -5,6 +5,13 @@ hide:
 
 [English](./en.md)   
 
+### 20250811
+
+- [new] :rainbow: 新增 Unreal Engine **5.7** 和 **5.8** 支持
+- [new] :rainbow: 添加 `VideoPlayerImageSource`, 支持打开 Android 相册中的视频文件进行动作和表情捕捉
+- [fix] Bug 修复： [#243](https://github.com/endink/Mediapipe4u-plugin/issues/243), [#262](https://github.com/endink/Mediapipe4u-plugin/issues/252)
+- [fix] 关闭动补崩溃
+
 ### 20250818
 
 - [new] 新增 Unreal Engine **5.6** 支持。

@@ -14,7 +14,7 @@
 <br>
 <br>
 <a href=""><img src="https://img.shields.io/badge/Platform-Windows, Android-red.svg"></a>
-<a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.1 to 5.6-purple.svg"></a>
+<a href=""><img src="https://img.shields.io/badge/Unreal Engine-5.1 to 5.8-purple.svg"></a>
 <p align="center">
   <a href=""><img src="https://img.shields.io/badge/Windows-Win 10/11 X64-brightgreen.svg"></a>
   <a href=""><img src="https://img.shields.io/badge/Android->=8.0 (Arm64)-brightgreen.svg"></a>
@@ -43,6 +43,13 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 **MediaPipe4U**  提供了一系列的套件和工具，让你在虚幻引擎项目中快速应用人工智能（AI）和机器学习（ML）技术。您可以立即将这些解决方案集成到你的 UE 项目中，并根据您的需求对其进行自定义。包括动作捕捉、面部表情捕捉、语音合成 （TTS）、语音识别 （ASR） 等。所有功能都是实时的、离线的、低延迟的和易于使用的。
 
 # 最新动态
+
+### 20250811
+
+- [new] :rainbow: 新增 Unreal Engine **5.7** 和 **5.8** 支持
+- [new] :rainbow: 添加 `VideoPlayerImageSource`, 支持打开 Android 相册中的视频文件进行动作和表情捕捉
+- [fix] Bug 修复： [#243](https://github.com/endink/Mediapipe4u-plugin/issues/243), [#262](https://github.com/endink/Mediapipe4u-plugin/issues/252)
+- [fix] 关闭动补崩溃
 
 ### 20250818   
 - [new] 新增 Unreal Engine **5.6** 支持。
@@ -137,21 +144,18 @@ Demo 工程: <a href="https://gitlab.com/endink/MediaPipe4U-Demo">Full Demo (Win
 
 - [简体中文](https://opensource.labijie.com/Mediapipe4u-plugin/)   
 
-- [English (sorry it's google translate)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sch=http&_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
+- [English](https://opensource.labijie.com/Mediapipe4u-plugin/en/)
 
 - [日本語 (申し訳ありませんが、それは単なるGoogle翻訳です)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ja&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
 - [한국어 (죄송합니다, 이것은 단지 구글 번역입니다)](https://opensource-labijie-com.translate.goog/Mediapipe4u-plugin/?_x_tr_sl=zh-CN&_x_tr_tl=ko&_x_tr_hl=zh-CN&_x_tr_pto=wapp)
 
 # Download
-|UE 版本| 下载地址 1 | 下载地址 2 | 更新时间 |
-|---| --- | --- |----|
-| UE 5.1 | [百度网盘](https://pan.baidu.com/s/12WRySI0I-P4tOvy1tEAtrQ?pwd=xbdx) | [Google Drive](https://drive.google.com/file/d/1w4csyhJmgFm8qC94Ehen-x8nrrubZopQ/view?usp=sharing) | 2025-08-18 |
-| UE 5.2 | [百度网盘](https://pan.baidu.com/s/1FWOgIqoMYiel7V7ARyYbJA?pwd=bhtc) | [Google Drive](https://drive.google.com/file/d/1wGUhKq4dXDZT4LBZXCn3egL4q1ss2NXG/view?usp=sharing) | 2025-08-18 |
-| UE 5.3 | [百度网盘](https://pan.baidu.com/s/1JB9-btsJFED996vy2y4akw?pwd=msj1) | [Google Drive](https://drive.google.com/file/d/1HgFERx5K65MyTwsSSBdkSUO17tvYzjRL/view?usp=sharing) | 2025-08-18 |
-| UE 5.4 | [百度网盘](https://pan.baidu.com/s/1N4NFWIso-aJ7tUHnBMvnrA?pwd=rpfq) | [Google Drive](https://drive.google.com/file/d/1XjN3SyB54XPSTgHzWwM1TiGRYBOAK5vO/view?usp=sharing) | 2025-08-18 |
-| UE 5.5 | [百度网盘](https://pan.baidu.com/s/1UlyIbVRrwqTPb2BnBMnSdQ?pwd=jbmm) | [Google Drive](https://drive.google.com/file/d/1AVD1BKrfGegv6MXoSrDIHBQXNFATW6Mb/view?usp=sharing) | 2025-08-18 |
-| UE 5.6 | [百度网盘](https://pan.baidu.com/s/1-CYpI1tJixu3d250K5UUhQ?pwd=9h9i) | [Google Drive](https://drive.google.com/file/d/1QVPnCdI6CJaiGYquWuNEte5Pc9FvbZnB/view?usp=sharing) | 2025-08-18 |
+
+UnrealEngine **5.1** - **5.8** 
+
+- [Google Drive](https://drive.google.com/drive/folders/1d0_I-TeJUMLeDD4RKWeqA9ewKDzwIXYB?usp=sharing)
+- [百度网盘](https://pan.baidu.com/s/1u_JRN5qNufBsCe2qRN-Auw?pwd=m487)
 
 如果你想了解每一次发布包含的更新内容，请访问 [**更新日志**](https://opensource.labijie.com/Mediapipe4u-plugin/update_logs/)  页面  
    

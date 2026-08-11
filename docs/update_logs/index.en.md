@@ -5,6 +5,13 @@ hide:
 
 [Simplified Chinese](./index.md)
 
+### 20250811
+
+- [new] :rainbow: Added Unreal Engine **5.7** and **5.8** support
+- [new] :rainbow: Added `VideoPlayerImageSource`, which supports opening video files from the Android gallery for motion and expression capture
+- [fix] Bug fixes: [#243](https://github.com/endink/Mediapipe4u-plugin/issues/243), [#262](https://github.com/endink/Mediapipe4u-plugin/issues/252)
+- [fix] Fixed a crash when stopping motion capture
+
 ### 20250818
 
 - [new] Unreal Engine **5.6** support.
