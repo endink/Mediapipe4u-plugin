@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700" role="img" aria-labelledby="title desc">
+<title id="title">MediaPipe4U Plugin Dependency Tree</title><desc id="desc">A unique-node, transitive-reduced dependency tree derived from local uplugin Plugins arrays. Excluded and external plugins are omitted.</desc>
+<defs>
+<linearGradient id="header" x1="0" x2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#172554"/></linearGradient>
+<filter id="shadow" x="-15%" y="-20%" width="130%" height="150%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity=".14"/></filter>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#64748b"/></marker>
+<style>.edge{fill:none;stroke:#94a3b8;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}.card{fill:#fff;stroke:#d8e1ee;stroke-width:1.5}.node{filter:url(#shadow)}.name{font:600 16px Arial,sans-serif;fill:#172033}.title{font:700 25px Arial,sans-serif;fill:#fff}.legend{font:600 12px Arial,sans-serif;fill:#e2e8f0}.foot{font:12px Arial,sans-serif;fill:#94a3b8}</style>
+<g id="windows"><path d="M0 0h8v8H0z" fill="#f25022"/><path d="M10 0h8v8h-8z" fill="#7fba00"/><path d="M0 10h8v8H0z" fill="#00a4ef"/><path d="M10 10h8v8h-8z" fill="#ffb900"/></g>
+<g id="android" fill="#3ddc84"><rect x="2" y="7" width="16" height="10" rx="4"/><path d="M4 7a6 6 0 0 1 12 0z"/><path d="M5 3 2 0M15 3 18 0" stroke="#3ddc84" stroke-width="1.6" stroke-linecap="round"/><circle cx="7" cy="7" r=".8" fill="#fff"/><circle cx="13" cy="7" r=".8" fill="#fff"/></g>
+</defs>
+<rect width="1600" height="700" fill="#f8fafc"/><rect x="24" y="20" width="1552" height="82" rx="16" fill="url(#header)"/>
+<text x="54" y="70" class="title">MediaPipe4U Plugin Dependency Tree</text><g transform="translate(1250 51)"><use href="#windows"/><text x="28" y="14" class="legend">Windows</text><use href="#android" x="120"/><text x="148" y="14" class="legend">Android</text></g>
+<!-- Tree edges: dependent → dependency; redundant transitive edges are omitted. -->
+<g>
+<path class="edge" d="M330 164H400"/><path class="edge" d="M330 164H710V274H750"/>
+<path class="edge" d="M330 284H750"/>
+<path class="edge" d="M330 404H400"/><path class="edge" d="M330 404H365V484H400"/>
+<path class="edge" d="M330 554H710V554H720V314H750"/>
+<path class="edge" d="M680 554H710V314H750"/>
+<path class="edge" d="M980 284H1010V354H1040"/>
+<path class="edge" d="M680 404H1010V354H1040"/><path class="edge" d="M680 484H1010V354H1040"/>
+<path class="edge" d="M1270 354H1330"/>
+</g>
+<!-- Leaf plugins -->
+<g class="node" transform="translate(50 130)"><rect class="card" width="280" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4UGStreamer</text><use href="#windows" x="230" y="42"/><use href="#android" x="254" y="42"/></g>
+<g class="node" transform="translate(50 250)"><rect class="card" width="280" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4UBVH</text><use href="#windows" x="230" y="42"/><use href="#android" x="254" y="42"/></g>
+<g class="node" transform="translate(50 370)"><rect class="card" width="280" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4ULLMSpeech</text><use href="#windows" x="254" y="42"/></g>
+<g class="node" transform="translate(50 520)"><rect class="card" width="280" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4UNvAR</text><use href="#windows" x="254" y="42"/></g>
+<!-- Shared plugins -->
+<g class="node" transform="translate(400 130)"><rect class="card" width="280" height="68" rx="14"/><text x="18" y="32" class="name">GStreamer</text><use href="#windows" x="230" y="42"/><use href="#android" x="254" y="42"/></g>
+<g class="node" transform="translate(400 370)"><rect class="card" width="280" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4ULLM</text><use href="#windows" x="254" y="42"/></g>
+<g class="node" transform="translate(400 450)"><rect class="card" width="280" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4USpeech</text><use href="#windows" x="254" y="42"/></g>
+<g class="node" transform="translate(400 520)"><rect class="card" width="280" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4ULiveLink</text><use href="#windows" x="230" y="42"/><use href="#android" x="254" y="42"/></g>
+<!-- Foundation plugins -->
+<g class="node" transform="translate(750 250)"><rect class="card" width="230" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4UMotion</text><use href="#windows" x="180" y="42"/><use href="#android" x="204" y="42"/></g>
+<g class="node" transform="translate(1040 320)"><rect class="card" width="230" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4UPremium</text><use href="#windows" x="180" y="42"/><use href="#android" x="204" y="42"/></g>
+<g class="node" transform="translate(1330 320)"><rect class="card" width="230" height="68" rx="14"/><text x="18" y="32" class="name">MediaPipe4U</text><use href="#windows" x="180" y="42"/><use href="#android" x="204" y="42"/></g>
+<text x="50" y="660" class="foot">Drawn by Codex</text>
+</svg>
