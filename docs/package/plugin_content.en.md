@@ -99,3 +99,8 @@ The cards above list every Unreal Engine plugin in the current release package. 
 !!! tip
 
     Pay attention to cross-platform support. The icons show the platforms supported by each plugin; when packaging for Android, include only Android-supported plugins and their dependencies.
+
+
+### Plugin Dependency Graph
+
+![dependecies](images/dependencies.svg)

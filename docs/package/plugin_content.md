@@ -99,3 +99,9 @@
 !!! tip
 
     你还应该注意这些插件的跨平台支持。图标显示了插件支持的平台；打包 Android 平台时，只能包含支持 Android 的插件及其依赖。
+
+
+### 依赖关系图
+
+
+![dependecies](images/dependencies.svg)
